@@ -1,6 +1,6 @@
 # Vesti health report
 
-Run: 2026-11-02T20:05:15.555Z  |  items: 230  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-02T20:08:53.095Z  |  items: 230  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
 - All checks passed. Nothing to do.
@@ -8,30 +8,20 @@ Run: 2026-11-02T20:05:15.555Z  |  items: 230  |  front-page clusters: 10 (10 mul
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 50 | 0.1h | 100% | 8% | 2 |
+| N1 | yes | 50 | 0.2h | 100% | 8% | 2 |
 | Nova.rs | yes | 50 | 0.1h | 100% | 2% | 1 |
-| B92 | yes | 20 | 0.3h | 100% | 0% | 0 |
-| Blic | yes | 70 | 0.0h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.1h | 100% | 20% | 0 |
-| RTS | yes | 20 | 0.4h | 100% | 5% | 0 |
+| B92 | yes | 20 | 0.4h | 100% | 0% | 0 |
+| Blic | yes | 70 | 0.1h | 100% | 0% | 0 |
+| Politika | yes | 20 | 0.2h | 100% | 20% | 0 |
+| RTS | yes | 20 | 0.5h | 100% | 5% | 0 |
 
 ## Front page right now
-1. [multi, 5 outlets, score 59] "Nova" i u utorak na kioscima: O Davoru Macuri, kapilarnim glasovima u zatvorima, spisku pomilovanih...
-   - also (n1): Ninić podneo krivičnu prijavu TOK-u protiv Orlića: "Zaposleni u BIA imali radnu obavezu da skupljaju glasove za SNS"
-   - also (n1): "Štab", "kapilari" i kvote: Ninić tvrdi da ima dokaze kako su upravnici zatvora obezbeđivali glasove za SNS
-   - also (b92): Priveden Davor Macura; Oglasili se Javno tužilaštvo za organizovani kriminal i MUP
-   - also (nova): Advokat Ninić razotkrio sistem prikupljanja kapilarnih glasova u srpskim zatvorima: JTOK-u podneo prijavu protiv 63 osobe, prvi na spisku ministar pravde
-   - also (rts): Davoru Macuri određeno zadržavanje, osumnjičen da je izneo novac iz trezora "Alta banke"
-   - also (nova): Ubrzano prebacivali novac u Moskvu i Skoplje, Narodna banka omogućila nesmetani transfer: Šta piše u krivičnoj prijavi koju je podneo Ninić protiv Davora Macure, menadžmenta Alta banke i rukovodstva NBS
-   - also (blic): OGLASIO SE MUP POVODOM HAPŠENJA DAVORA MACURE I NJEGOVIH SARADNIKA! Sumnja se da su ovako izneli više od 382 miliona evra iz trezora, određeno im zadržavanje
-   - also (blic): "SUMNJA SE DA JE IZ TREZORA IZNEO VIŠE OD 382 MILIONA EVRA" Oglasilo se tužilaštvo o hapšenju Davora Macure: "Lišena slobode i dva lica za koja se sumnja da su mu to omogućila"
-2. [multi, 5 outlets, score 55.7] Makron razgovarao sa Srdanovićem: Čestitam Studentskoj listi, nastavljamo da pratimo Srbiju na evropskom putu
+1. [multi, 5 outlets, score 55.6] Makron razgovarao sa Srdanovićem: Čestitam Studentskoj listi, nastavljamo da pratimo Srbiju na evropskom putu
    - also (b92): Makron čestitao Srdanoviću na izbornoj pobedi i potvrdio podršku evropskom putu
-   - also (blic): AMERIKA POZIVA EVROPU DA NASTAVI KUPOVINU RUSKOG GASA Vitkof i Kušner predstavili novi plan: Otkriveni detalji razgovora u Moskvi i Kijevu
    - also (blic): MAKRON RAZGOVARAO SA ILIJOM SRDANOVIĆEM Evo šta je predsednik Francuske poručio Studentskoj listi: "U ovome smo odlučni"
    - also (n1): Makron čestitao Srdanoviću pobedu
    - also (nova): Makron razgovarao sa Ilijom Srdanovićem: "Čestitao sam mu na ubedljivoj pobedi na izborima"
-3. [multi, 5 outlets, score 54.2] Dijana Hrkalović među petoro pomilovanih Vučićevom odlukom - Viši sud u Beogradu objavio spisak
+2. [multi, 5 outlets, score 54.2] Dijana Hrkalović među petoro pomilovanih Vučićevom odlukom - Viši sud u Beogradu objavio spisak
    - also (rts): Viši sud u Novom Sadu saopštio 18 imena pomilovanih Vučićevom odlukom
    - also (b92): Viši sud u Beogradu objavio imena petoro pomilovanih u postupcima pred tim sudom
    - also (b92): Viši sud u Novom Sadu objavio imena 18 pomilovanih u postupcima pred tim sudom
@@ -40,6 +30,11 @@ Run: 2026-11-02T20:05:15.555Z  |  items: 230  |  front-page clusters: 10 (10 mul
    - also (n1): Viši sud u Novom Sadu objavio spisak pomilovanih, među njima i osumnjičeni za napad na građane: Gorski Matović, Stevica Kiš, Aleksandar Kocić...
    - also (nova): Aleksandar Vučić pomilovao Dijanu Hrkalović i još četiri osobe: Oslobođena krivičnog gonjenja za trgovinu uticajem
    - also (blic): Ovo je spisak pomilovanih u Višem sudu u Beogradu i Višem sudu u Novom Sadu
+3. [multi, 4 outlets, score 43.6] Priveden Davor Macura; Oglasili se Javno tužilaštvo za organizovani kriminal i MUP
+   - also (rts): Davoru Macuri određeno zadržavanje, osumnjičen da je izneo novac iz trezora "Alta banke"
+   - also (nova): Ubrzano prebacivali novac u Moskvu i Skoplje, Narodna banka omogućila nesmetani transfer: Šta piše u krivičnoj prijavi koju je podneo Ninić protiv Davora Macure, menadžmenta Alta banke i rukovodstva NBS
+   - also (blic): OGLASIO SE MUP POVODOM HAPŠENJA DAVORA MACURE I NJEGOVIH SARADNIKA! Sumnja se da su ovako izneli više od 382 miliona evra iz trezora, određeno im zadržavanje
+   - also (blic): "SUMNJA SE DA JE IZ TREZORA IZNEO VIŠE OD 382 MILIONA EVRA" Oglasilo se tužilaštvo o hapšenju Davora Macure: "Lišena slobode i dva lica za koja se sumnja da su mu to omogućila"
 4. [multi, 3 outlets, score 38.4] RIK doneo rešenja o izmenama biračkih odbora za izbore za članove saveta nacionalnih manjina
    - also (n1): RIK: Na izborima za savete nacionalnih manjina 204 posmatrača, predaja izbornog materijala od sutra
    - also (nova): RIK: Na izborima za savete nacionalnih manjina 204 posmatrača, predaja izbornog materijala od sutra
