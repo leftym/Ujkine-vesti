@@ -1,6 +1,6 @@
 # Probe
 
-Run: 2026-11-02T21:47:33.807Z
+Run: 2026-11-02T21:51:59.129Z
 
 ## B92 feeds
 RSS directory page https://www.b92.net/info/rss/: 17731 bytes; feed-like links found: 0
@@ -20,16 +20,16 @@ RSS directory page https://www.b92.net/info/rss/: 17731 bytes; feed-like links f
 - https://www.b92.net/info/rss/drustvo.xml -> ERROR HTTP_404
 - https://www.b92.net/rss/ -> 226741 bytes, 0 items, newest -, oldest -
 - https://www.b92.net/rss -> 226741 bytes, 0 items, newest -, oldest -
-- https://www.b92.net/feed/ -> 17705 bytes, 20 items, newest 2026-11-02T21:40:00.000Z, oldest 2026-11-02T20:22:00.000Z
+- https://www.b92.net/feed/ -> 17599 bytes, 20 items, newest 2026-11-02T21:44:00.000Z, oldest 2026-11-02T20:28:00.000Z
+    * Brest prekinuo negativan niz i odneo bodove iz Lorijena | 2026-11-02T21:44 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/lige-petice/281693/liga-1-9-kolo-lorijen-brest-02/vest
     * Parma ponizila Samardžićevu Atalantu u Bergamu – tri gola za ubedljiv trijumf gostiju | 2026-11-02T21:40 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/lige-petice/281691/atalanta-parma-serija-a-10-kolo/vest
     * Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase | 2026-11-02T21:36 | cats=["Najnovije"] | https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest
     * Živković u Grčkoj do kraja karijere? | 2026-11-02T21:21 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/vesti/281609/zivkovic-u-grckoj-do-kraja-karijere/vest
     * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T21:15 | cats=["Najnovije"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
     * Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude" | 2026-11-02T21:13 | cats=["Najnovije"] | https://www.b92.net/info/svet/281687/oglasio-se-zelenski-nakon-ruskog-napada-na-zaporosku-oblast/vest
-    * Karlik: "Razumem navijače i ljubav prema Željku, ali nismo ga mi izbacili" | 2026-11-02T21:08 | cats=["Najnovije"] | https://www.b92.net/sport/kosarka/euroleague/281686/karlik-dzons-o-zeljku-obradovicu/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 597667 bytes, 65 headline-like links
+homepage: 597664 bytes, 65 headline-like links
 - Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu | https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest | in feeds: vesti.xml,
 - Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana  | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest | in feeds: vesti.xml,
 - Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest | in feeds: vesti.xml
@@ -64,7 +64,7 @@ homepage: 597667 bytes, 65 headline-like links
 ef="https://www.b92.net/svi-komentari/281690" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest"> <span data-upscore-title > Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase </span> </a></h2> <p class="news-item-description">Istražitelji su otkrili ogromnu pošiljku koka
 ```
 ```html
- <p class="news-item-date"> 2.11.2026.</p> <p class="news-item-before-time"> <span class="before-time-number">6</span> <span class="before-time-text">min</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281680" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_s.webp?timestamp=1793654698" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_kf.jpg?timestamp=1793654698" alt="Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
+ <p class="news-item-date"> 2.11.2026.</p> <p class="news-item-before-time"> <span class="before-time-number">12</span> <span class="before-time-text">min</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281680" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_s.webp?timestamp=1793654698" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_kf.jpg?timestamp=1793654698" alt="Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
 ```
 ```html
 ef="https://www.b92.net/svi-komentari/281680" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest"> <span data-upscore-title > Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO </span> </a></h2> <p class="news-item-description">Američki predsednik Donald Tramp završio je k
