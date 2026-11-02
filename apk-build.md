@@ -1,7 +1,10 @@
-# APK build run 8: success
-commit: 95aed05361f65d76a845d9c14b3010adbdb73687
+# APK build run 9: success
+commit: caedf1f6bfe59cd18265c93cafe57427d56e45d1
 
 ```
+> Task :app:processReleaseResources
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:dexBuilderRelease
 > Task :capacitor-cordova-android-plugins:bundleLibRuntimeToJarRelease
 > Task :app:mergeReleaseShaders
 > Task :app:compileReleaseShaders NO-SOURCE
@@ -9,10 +12,7 @@ commit: 95aed05361f65d76a845d9c14b3010adbdb73687
 > Task :capacitor-android:mergeReleaseShaders
 > Task :capacitor-android:compileReleaseShaders NO-SOURCE
 > Task :capacitor-android:generateReleaseAssets UP-TO-DATE
-> Task :app:processReleaseResources
 > Task :capacitor-android:mergeReleaseAssets
-> Task :app:compileReleaseJavaWithJavac
-> Task :app:dexBuilderRelease
 > Task :capacitor-app:mergeReleaseShaders
 > Task :capacitor-app:compileReleaseShaders NO-SOURCE
 > Task :capacitor-app:generateReleaseAssets UP-TO-DATE
@@ -29,11 +29,11 @@ commit: 95aed05361f65d76a845d9c14b3010adbdb73687
 > Task :app:compressReleaseAssets
 > Task :app:extractReleaseVersionControlInfo
 > Task :app:extractProguardFiles
+> Task :app:mergeReleaseGlobalSynthetics
 > Task :capacitor-android:processReleaseJavaRes NO-SOURCE
 > Task :capacitor-android:createFullJarRelease
 > Task :capacitor-android:extractProguardFiles
 > Task :capacitor-android:generateReleaseLintModel
-> Task :app:mergeReleaseGlobalSynthetics
 > Task :capacitor-android:prepareLintJarForPublish
 > Task :capacitor-app:processReleaseJavaRes NO-SOURCE
 > Task :capacitor-app:createFullJarRelease
@@ -53,8 +53,8 @@ commit: 95aed05361f65d76a845d9c14b3010adbdb73687
 > Task :capacitor-app:checkReleaseAarMetadata
 > Task :app:generateReleaseLintVitalReportModel
 > Task :capacitor-app:stripReleaseDebugSymbols NO-SOURCE
-> Task :capacitor-app:copyReleaseJniLibsProjectAndLocalJars
 > Task :capacitor-app:extractDeepLinksForAarRelease
+> Task :capacitor-app:copyReleaseJniLibsProjectAndLocalJars
 > Task :capacitor-app:extractReleaseAnnotations
 > Task :capacitor-app:mergeReleaseGeneratedProguardFiles
 > Task :capacitor-app:mergeReleaseConsumerProguardFiles
@@ -73,8 +73,9 @@ commit: 95aed05361f65d76a845d9c14b3010adbdb73687
 > Task :capacitor-android:checkReleaseAarMetadata
 > Task :capacitor-browser:bundleReleaseLocalLintAar
 > Task :capacitor-android:stripReleaseDebugSymbols NO-SOURCE
-> Task :capacitor-android:copyReleaseJniLibsProjectAndLocalJars
 > Task :capacitor-android:extractDeepLinksForAarRelease
+> Task :capacitor-android:copyReleaseJniLibsProjectAndLocalJars
+> Task :app:mergeExtDexRelease
 > Task :capacitor-android:extractReleaseAnnotations
 > Task :capacitor-android:mergeReleaseGeneratedProguardFiles
 > Task :capacitor-android:mergeReleaseConsumerProguardFiles
@@ -89,7 +90,6 @@ commit: 95aed05361f65d76a845d9c14b3010adbdb73687
 > Task :capacitor-cordova-android-plugins:mergeReleaseGeneratedProguardFiles
 > Task :capacitor-cordova-android-plugins:mergeReleaseConsumerProguardFiles
 > Task :capacitor-cordova-android-plugins:mergeReleaseJavaResource
-> Task :app:mergeExtDexRelease
 > Task :capacitor-cordova-android-plugins:syncReleaseLibJars
 > Task :capacitor-cordova-android-plugins:bundleReleaseLocalLintAar
 > Task :capacitor-android:writeReleaseLintModelMetadata
@@ -102,10 +102,10 @@ commit: 95aed05361f65d76a845d9c14b3010adbdb73687
 > Task :capacitor-cordova-android-plugins:generateReleaseLintVitalModel
 > Task :app:processReleaseJavaRes NO-SOURCE
 > Task :app:mergeDexRelease
-> Task :app:compileReleaseArtProfile
 > Task :app:mergeReleaseJavaResource
-> Task :app:collectReleaseDependencies
 > Task :app:optimizeReleaseResources
+> Task :app:compileReleaseArtProfile
+> Task :app:collectReleaseDependencies
 > Task :app:sdkReleaseDependencyData
 > Task :app:validateSigningRelease
 > Task :app:writeReleaseAppMetadata
@@ -125,8 +125,8 @@ commit: 95aed05361f65d76a845d9c14b3010adbdb73687
 > Task :capacitor-app:assembleRelease
 > Task :capacitor-cordova-android-plugins:bundleReleaseAar
 > Task :capacitor-cordova-android-plugins:mapReleaseSourceSetPaths
-> Task :capacitor-browser:verifyReleaseResources
 > Task :capacitor-cordova-android-plugins:mergeReleaseResources
+> Task :capacitor-browser:verifyReleaseResources
 > Task :capacitor-browser:assembleRelease
 > Task :capacitor-cordova-android-plugins:verifyReleaseResources
 > Task :capacitor-cordova-android-plugins:assembleRelease
@@ -140,7 +140,7 @@ commit: 95aed05361f65d76a845d9c14b3010adbdb73687
 > Task :app:packageRelease
 > Task :app:createReleaseApkListingFileRedirect
 > Task :app:assembleRelease
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_3-1793650153425.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_3-1793652583544.json
 
 [Incubating] Problems report is available at: file:///home/runner/work/Ujkine-vesti/Ujkine-vesti/android/build/reports/problems/problems-report.html
 
@@ -150,6 +150,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 36s
+BUILD SUCCESSFUL in 27s
 204 actionable tasks: 204 executed
 ```
