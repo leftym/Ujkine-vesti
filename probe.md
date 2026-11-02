@@ -15,8 +15,8 @@ RSS directory page https://www.b92.net/info/rss/: 17834 bytes; feed-like links f
 - https://www.b92.net/info/rss/hronika.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/ekonomija.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/drustvo.xml -> ERROR HTTP_404
-- https://www.b92.net/rss/ -> 226741 bytes, 0 items, newest -, oldest -
-- https://www.b92.net/rss -> 226741 bytes, 0 items, newest -, oldest -
+- https://www.b92.net/rss/ -> 226753 bytes, 0 items, newest -, oldest -
+- https://www.b92.net/rss -> 226753 bytes, 0 items, newest -, oldest -
 - https://www.b92.net/feed/ -> 17702 bytes, 20 items, newest 2026-11-02T21:21:00.000Z, oldest 2026-11-02T20:20:00.000Z
     * Živković u Grčkoj do kraja karijere? | 2026-11-02T21:21 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/vesti/281609/zivkovic-u-grckoj-do-kraja-karijere/vest
     * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T21:15 | cats=["Najnovije"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
@@ -26,7 +26,7 @@ RSS directory page https://www.b92.net/info/rss/: 17834 bytes; feed-like links f
     * "Mačak u šeširu" donosi više od nestašluka: Velika porodična avantura u bioskopima FOTO/VIDEO | 2026-11-02T20:59 | cats=["Najnovije"] | https://www.b92.net/kultura/filmtv/281670/film-macak-u-sesiru-u-ada-molu-i-druzenje-sa-glumcima/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 597845 bytes, 63 headline-like links
+homepage: 597820 bytes, 64 headline-like links
 - Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana  | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest | in feeds: vesti.xml,
 - Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest | in feeds: vesti.xml
 - Sekulović saslušan u tužilaštvu, predložen pritvor | https://www.b92.net/info/hronika/281659/sekulovic-saslusan-u-tuzilastvu-predlozen-pritvor/vest | in feeds: vesti.xml
@@ -52,6 +52,13 @@ homepage: 597845 bytes, 63 headline-like links
 - &quot;Mačak u šeširu&quot; donosi više od nestašluka: Velika porodična avantura u bioskopi | https://www.b92.net/kultura/filmtv/281670/film-macak-u-sesiru-u-ada-molu-i-druzenje-sa-glumcima/vest | in feeds: NONE
 - Preminuo Huan Atkins: Trebalo da nastupi u Beogradu | https://www.b92.net/zivot/aktuelno/281649/preminuo-huan-atkins-dj-tehno-muzike/vest | in feeds: NONE
 - Partizan opet stao kada je bilo najpotrebnije – duplo ništa!; Penjaroja ponosan posle sveg | https://www.b92.net/sport/kosarka/euroleague/280869/uzivo-zagliris-partizan-9-kolo-evrolige/vest | in feeds: NONE
+
+### B92 homepage markup samples (to find where story images live)
+```html
+```html
+```html
+```html
+img tags on homepage: 188; with data-src: 0; picture/source: 538
 
 ## YouTube
 ### N1
