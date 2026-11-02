@@ -1,18 +1,18 @@
 # Feed check
 
-Run: 2026-11-02T21:31:23.074Z
+Run: 2026-11-02T21:34:32.493Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 45 | https://n1info.rs/feed/ | 45 | 2 |
+| N1 | yes | 44 | https://n1info.rs/feed/ | 44 | 2 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 1 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +74) | 28 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +74) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"politika":12,"drustvo":9,"svet":5,"region":4,"ostalo":3,"zivot":4,"ekonomija":7,"hronika":1}
+Categories: {"politika":11,"drustvo":9,"svet":5,"region":4,"ostalo":3,"zivot":4,"ekonomija":7,"hronika":1}
 - [politika] "Mogu da ti kažem, ali bez mikrofona": Meštani o tome kako je Zukorlićeva lista stigla od nula do 53 glasa u selu kod Aleksinca
 - [drustvo] Studenti u blokadi: Očekujemo obustavu radova na brzoj pruzi kroz Pantelej u Nišu
 - [svet] Netanjahu otvoren za formiranje "široke nacionalne vlade", pod uslovom da on bude na čelu
@@ -41,22 +41,22 @@ Uncategorized sample (for tuning):
 - Dnevnik - Cela emisija - 1.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-1112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"sport":14,"svet":9,"kultura":7,"zdravlje":6,"zivot":18,"ekonomija":9,"tehnologija":5,"hronika":3,"zabava":5,"drustvo":1,"politika":2,"region":1}
+Categories: {"sport":13,"svet":10,"zivot":18,"kultura":3,"hronika":3,"zdravlje":3,"zabava":6,"ekonomija":9,"drustvo":3,"tehnologija":4,"politika":6,"region":2}
 - [sport] Živković u Grčkoj do kraja karijere?
 - [svet] Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO
-- [kultura] Ko će biti novi Džejms Bond? Tri glumca u trci, četvrti kandidat obavijen velom misterije
 - [svet] Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude"
-- [zdravlje] Beli ili zeleni čaj: Koji je bolji za zdravlje i zašto ih stručnjaci posebno izdvajaju?
-- [kultura] Istorijski uspeh Kristofera Nolana: "Odiseja" ušla među najuspešnije filmove svih vremena VIDEO
+- [sport] Karlik: "Razumem navijače i ljubav prema Željku, ali nismo ga mi izbacili"
+- [zivot] "Beli prah na stolu i gomila seksualnih igračaka": Sobarica otkrila šta je zatekla u hrvatskom hotelu
+- [zivot] Veštačka inteligencija preuzima deo posla: Evo kako ćete ubuduće zakazivati pasoš i ličnu kartu
 
 ## Blic
-Categories: {"zabava":25,"zdravlje":2,"hronika":6,"svet":8,"drustvo":5,"zivot":9,"politika":5,"ekonomija":8,"kultura":2}
+Categories: {"svet":9,"zabava":25,"zdravlje":2,"hronika":6,"drustvo":5,"zivot":9,"politika":5,"ekonomija":7,"kultura":2}
+- [svet] "AMERIKA JE NA KORAK OD NUKLEARNOG UDARA" Jezivo upozorenje Takera Karlsona uzdrmalo svet, oglasio se Tramp
 - [zabava] POZNATA GLUMICA PREŠLA 42 KILOMETARA BICIKLOM KROZ BOKU KOTORSKU Pokazala da je u top formi i tačnu rutu kojom se kretala: Oduševila sve kondicijom
 - [zabava] PEVAČICA PROSLAVILA 45. ROĐENDAN Zbog ljubavi otišla iz Srbije, pa usledio razvod: "Nismo se razišli prijateljski"
 - [zabava] (VIDEO) "OTKRIVAJU MI POČETAK KANCERA MATERICE, A JA BEBU U STOMAKU" Ivana Šašić u suzama o najtežim borbama: "Imala sam dva carska i jednu operaciju za 10 meseci"
 - [zdravlje] Naučnici prvi put detaljno mapirali nerve klitorisa i došli do novog otkrića koje ih iznenadilo
 - [zabava] SIN ODBIO DA BUDE UZ MELINU NA NJEN POSEBAN DAN Ovo je kap koja je prelila čašu između njih: "Meni je stvarno žao, imam grižu savesti", Harisova bivša je ovako pričala o deci
-- [hronika] (FOTO) AKO JE VIDITE, ZOVITE POLICIJU - SLEDI I NAGRADA! Nišlijka sa misterioznim tetovažama krije tajnu plena od 40 MILIONA EVRA: Holandska policija nudi bogatstvo, a poslednji put je viđena u OVOM GRADU
 
 ## Politika
 Categories: {"svet":7,"hronika":1,"ostalo":3,"sport":2,"politika":5,"kultura":2}
