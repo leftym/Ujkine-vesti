@@ -1,6 +1,6 @@
 # Feed check
 
-Run: 2026-11-02T19:25:59.000Z
+Run: 2026-11-02T20:01:46.456Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
@@ -12,13 +12,13 @@ Run: 2026-11-02T19:25:59.000Z
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"politika":14,"drustvo":6,"ostalo":4,"ekonomija":12,"zivot":3,"hronika":3,"region":4,"svet":4}
-- [politika] Ninić podneo krivičnu prijavu TOK-u protiv Orlića: Zaposleni u BIA imali radnu obavezu da skupljaju glasove za SNS
+Categories: {"svet":4,"drustvo":7,"zivot":4,"politika":14,"ostalo":4,"ekonomija":11,"hronika":2,"region":4}
+- [svet] Grupa koja zastupa velike proizvođače automobila pozvala američke kongresmene da zabrane uvoz kineskih vozila
+- [drustvo] Studentkinja Nikolina Sinđelić: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
+- [zivot] Semenke koje su odlične za srce i krvne sudove: Kardiolog objašnjava zašto ih treba češće jesti
+- [politika] Ninić podneo krivičnu prijavu TOK-u protiv Orlića: "Zaposleni u BIA imali radnu obavezu da skupljaju glasove za SNS"
 - [politika] Portal 021: Desetine miliona iz budžeta ove godine za novosadske medije bliske bivšoj vlasti
 - [politika] Ilić: Vučićeva pomilovanja suprotna Ustavu, tužilaštvo da ispita njegovu krivičnu odgovornost
-- [drustvo] Savet roditelja OŠ "Banović Strahinja" traži od ministra prosvete da hitno razreši direktorku i privremeni organ upravljanja
-- [ostalo] Macron congratulates Srdanovic on election victory
-- [politika] Kuzmanović (Studentska lista): Preduzete sve mere da se spreči uništavanje dokaza
   - flagged (self): Studio live, utorak u 12h: Vučićeva pomilovanja https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/
   - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
 
@@ -29,48 +29,51 @@ Uncategorized sample (for tuning):
 - ANEM: 111 attacks on journalists this year, just three convictions | https://n1info.rs/english/news/anem-111-attacks-on-journalists-this-year-just-three-convictions/ | tags: ["News","convictions","anem","attacks on journalists"]
 
 ## Nova.rs
-Categories: {"zabava":12,"kultura":3,"sport":9,"politika":2,"ekonomija":4,"drustvo":6,"hronika":12,"svet":2}
-- [zabava] Napeto u "Najvećem gubitniku": Gledajte novu epizodu večeras na TV Nova
-- [kultura] Intervju Željko Hubač: Da nije bilo Nove, bio bi mrak. Vučiću želim dug život i pošteno suđenje ako je za nešto odgovoran
-- [zabava] Baka Prase do juče se šlihtao Vučiću, a sad moli studente za oproštaj: "Bio sam pohlepan, sramota me je"
-- [sport] Haos u srpskom vaterpolu, Nova.rs donosi detalje: "Šapić hteo da preuzme Zvezdu, nisam hteo protiv dece Srbije"
-- [politika] Kuzmanović (SL): Režim bi hteo da nas prikaže nesposobnim, što nije tačno nego su oni ogrezli u kriminalu i korupciji i to nećemo dopustiti
-- [sport] VIDEO Osuđeni narko-diler i bivši potpredsednik države postigao gol u 65. godini života: Sam sebe stavio u tim i postavio za kapitena
+Categories: {"zabava":12,"drustvo":6,"sport":10,"ekonomija":5,"ostalo":1,"politika":3,"kultura":2,"hronika":10,"svet":1}
+- [zabava] Zašto Željko Mitrović otpušta silne radnike, kada je u ogromnom plusu?
+- [drustvo] "Nova" i u utorak na kioscima: O Davoru Macuri, kapilarnim glasovima u zatvorima, spisku pomilovanih...
+- [sport] Stranci pitali Novaka o padu SNS režima i napadima koje je doživljavao od strane vlasti, on poslao moćnu poruku
+- [ekonomija] Miketić izneo tvrdnje o vezama Alta banke, Agencije za osiguranje depozita i ljudi povezanih sa SNS-om: Pominje Sinišu Malog, Jorgovanku Tabaković i prodaju imovine Beobanke
+- [ostalo] Dnevnik - Cela emisija - 1.11.2026.
+- [politika] Kreni-Promeni: Šapić ispraznio kasu Beograda, državna kasa se koristi kao SNS-ov bankomat
   - flagged (self): Gledajte uživo Dnevnik TV Nova https://nova.rs/vesti/drustvo/gledajte-uzivo-dnevnik-tv-nova-02-11-2026/
 
+Uncategorized sample (for tuning):
+- Dnevnik - Cela emisija - 1.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-1112026/ | tags: ["Emisije","dnevnik cela emisija"]
+
 ## B92
-Categories: {"politika":5,"hronika":3,"region":2,"svet":7,"drustvo":3}
+Categories: {"svet":7,"politika":6,"hronika":2,"region":2,"drustvo":3}
+- [svet] Novine: "Podeljena vlast je deo istorije Amerike"; "Referendum o Trampovoj vladavini"
+- [politika] RIK doneo rešenja o izmenama biračkih odbora za izbore za članove saveta nacionalnih manjina
 - [politika] Vučić razgovarao sa izraelskim premijerom: "Netanjahu mi je zahvalio za dugogodišnju uspešnu saradnju"
 - [hronika] Sekulović saslušan u tužilaštvu, predložen pritvor
 - [region] Meloni dočekala posmrtne ostatke vojnika poginulih u BiH na aerodromu u Rimu FOTO
 - [svet] Merc zna ime Štajnmajerove naslednice; "To mora da bude žena"
-- [svet] Tamanjenje dronova; Masovno odlaze – ne žele da ginu; Pogođene važne mete FOTO/VIDEO
-- [svet] Bivši premijer: "Putina ne treba potceniti – on je inteligentan, manipulativan i istinski zao"
 
 ## Blic
-Categories: {"zivot":10,"svet":8,"ekonomija":9,"hronika":7,"zabava":19,"zdravlje":2,"politika":6,"drustvo":6,"kultura":3}
-- [zivot] Stručnjaci se slažu - frižider može da TROŠI VIŠE STRUJE i to zbog prašine: Jedno mesto mnogi zaboravljaju da očiste
-- [svet] (FOTO) OVO JE NATALIJA KOJA JE BILA ZA KOMANDAMA AVIONA SMRTI! Imala je samo 20 godina: Letelica upala u "ugao mrtvačkog sanduka", a njene poslednje reči LEDE KRV
-- [zivot] U HRVATSKOJ PROGLAŠEN DAN ŽALOSTI ZBOG SMRTI MIŠE KOVAČA Ispraćaj legendarnog pevača će trajati tri dana
-- [ekonomija] Bio sam poljoprivrednik, pa preduzetnik: Koju penziju ću primati i kada će mi novac leći na račun?
-- [hronika] SUPRUGU ŠUTIRAO PO GLAVI I TELU Užas u Kruševcu: Muškarac uhapšen zbog nasilja u porodici
-- [svet] "USLEDIO JE DRUGI UDAR SA JOŠ DEVET BOMBI" Rusija zasula sklonište, najmanje 18 ljudi poginulo: Oglasio se Zelenski
+Categories: {"zivot":11,"svet":9,"zabava":20,"drustvo":6,"politika":6,"ekonomija":9,"hronika":6,"zdravlje":1,"kultura":2}
+- [zivot] EVO KAKO ĆE BITI SAHRANJEN MIŠO KOVAČ Porodica imala poseban zahtev
+- [svet] TERITORIJA 3 PUTA VEĆA OD SRBIJE NA IVICI NOVOG SUKOBA! Drama u UN: Ruski veto srušio plan Amerike, istorijska misija NESTALA preko noći!
+- [zabava] ISKRENO O STRASNOJ VEZI SA BIVŠIM MUŽEM ČUVENE GLUMICE Princeza Jelisaveta otkrila: "Šarmantan, sa prelepim glasom", progovorila i o NAJVEĆEM PROBLEMU u njihovoj romansi
+- [drustvo] Zašto moramo da dokazujemo internetu da smo ljudi i šta se zapravo krije iza dugmeta "NISAM ROBOT"
+- [zabava] BIVŠI ZADRUGAR POSTAO OTAC Stavio sina na grudi i dao mu MOĆNO IME: "Najsrećniji sam čovek na svetu, dobro mi došao"
+- [politika] "POZVAO ME JE DA GA POSETIM U IZRAELU" Vučić razgovarao s Netanjahuom: "Uspeli smo da podignemo odnos dve zemlje na viši nivo"
 
 ## Politika
-Categories: {"ekonomija":4,"drustvo":3,"hronika":3,"politika":2,"svet":2,"ostalo":5,"sport":1}
-- [ekonomija] Prepreka evropskim kompanijama u fazi rasta
-- [drustvo] Francuskoj preti novi talas štrajkova, matura ugrožena zbog blokada škola
-- [drustvo] A sada pakao, rođaci…
-- [ekonomija] Nobelovac Šehtman u Beogradu: Državna podrška startapima isplativa investicija
-- [hronika] Sekulović saslušan u tužilaštvu, predložen pritvor
-- [politika] Predizborni spisak Vučićevih pomilovanja bio netačan
+Categories: {"politika":3,"ostalo":5,"kultura":1,"sport":2,"svet":2,"drustvo":2,"hronika":2,"ekonomija":3}
+- [politika] Pobednici na američkim izborima biće proglašavani pre prebrojavanja svih glasova
+- [ostalo] Otkriveno novo veliko nalazište cirkona u Kini
+- [kultura] Film „Slet 1988” otvorio jubilarni festival „Prvi kadar”
+- [politika] Vučić razgovarao sa Netanjahuom, izraelski premijer ga pozvao da poseti Izrael
+- [sport] Đoković sutra protiv Vašeroa na startu u Parizu
+- [svet] Prodaja automobila u Italiji porasla 4,8 odsto u oktobru
 
 Uncategorized sample (for tuning):
+- Otkriveno novo veliko nalazište cirkona u Kini | https://www.politika.rs/scc/clanak/799166/otkriveno-novo-veliko-nalaziste-cirkona-u-kini | tags: []
+- Bivša saradnica Zelenskog govorila o zloupotrebama humanitarne pomoći | https://www.politika.rs/scc/clanak/799161/bivsa-saradnica-zelenskog-govorila-o-zloupotrebama-humanitarne-pomoci | tags: []
+- Lekorni naredne nedelje sa srednjoškolcima | https://www.politika.rs/scc/clanak/799160/lekorni-naredne-nedelje-sa-srednjoskolcima | tags: []
 - Mamdani: Agenti ICE nemaju pravo da koriste gradsku imovinu za svoje akcije | https://www.politika.rs/scc/clanak/799152/mamdani-agenti-ice-nemaju-pravo-da-koriste-gradsku-imovinu-za-svoje-akcije | tags: []
 - Saga o Šapcu i poznatim Šapčanima | https://www.politika.rs/scc/clanak/798905/saga-o-sapcu-i-poznatim-sapcanima | tags: []
-- Traže zabranu brojanja poštanskih glasova iz Kalifornije | https://www.politika.rs/scc/clanak/799145/traze-zabranu-brojanja-postanskih-glasova-iz-kalifornije | tags: []
-- Život okružen umetnošću | https://www.politika.rs/scc/clanak/798847/zivot-okruzen-umetnoscu | tags: []
-- Humanoidni roboti u Kini savladali planinsku stazu na takmičenju u planinarenju | https://www.politika.rs/scc/clanak/799143/humanoidni-roboti-u-kini-savladali-planinsku-stazu-na-takmicenju-u-planinarenju | tags: []
 
 ## RTS
 Categories: {"drustvo":5,"ekonomija":3,"hronika":6,"zivot":1,"politika":4,"ostalo":1}
