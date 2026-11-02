@@ -35,6 +35,19 @@ Text size: the big **A-** / **A+** buttons at the top (6 levels, default already
 ### If the build fails
 Open the failed run in the Actions tab and send me the red step's log.
 
+## Front page: "Najvažnije danas"
+
+No outlet publishes a "most read" feed, so importance is estimated (`lib/top.js`): stories covered by several of the six outlets rank highest, then how prominently each outlet places them in its own feed, then recency. Single-outlet stories only make the list if the outlet puts them at the very top. Shown only when no filter or search is active.
+
+## Reading articles
+
+Tapping a story opens the **in-app reader**: headline, text and photos with scripts, ad blocks and "read also" teasers removed. "Otvori original" opens the real page as an in-app overlay (it still has the outlet's ads; use it only when the reader shows too little text).
+
+## Review agent
+
+- GitHub Actions runs a **daily health report** (05:30 Hawaii time, also on every push): feeds up/stale, images, uncategorized share, ad false positives/misses, front-page sanity. It lands on the `ci-logs` branch (`health.md`, `history/`).
+- `.claude/agents/vesti-reviewer.md` is a read-only Claude subagent. Ask Claude Code in this repo: *"use the vesti-reviewer agent"* and it reads those reports plus the code and returns a verdict, up to 5 ranked recommendations with proposed changes, and what to ignore.
+
 ## Browser / PWA version (optional)
 
 Needs the Node server (`npm start`) on a host with HTTPS. Same UI, same filters, installs via "Add to Home screen".

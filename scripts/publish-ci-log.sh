@@ -8,6 +8,7 @@ tmp="$(mktemp -d)"
 if ! git clone -q --depth 1 --branch ci-logs "$url" "$tmp" 2>/dev/null; then
   git init -q "$tmp"; git -C "$tmp" checkout -q -b ci-logs; git -C "$tmp" remote add origin "$url"
 fi
+mkdir -p "$(dirname "$tmp/$name")"
 cp "$src" "$tmp/$name"
 cd "$tmp"
 git config user.name "github-actions"; git config user.email "actions@users.noreply.github.com"

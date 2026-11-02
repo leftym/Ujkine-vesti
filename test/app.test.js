@@ -41,7 +41,7 @@ test('aggregates, categorizes and flags ads', async () => {
   assert.equal(st.nova.ok, false, 'nova is down in this test');
 
   // N1 images + entity decoding
-  assert.equal(by('n1').length, 3);
+  assert.equal(by('n1').length, 4);
   assert.equal(find(/Pariz/).title, 'Tenis: Đoković igra u Parizu & osvaja set');
   assert.equal(by('n1')[0].image !== undefined, true);
 
@@ -69,6 +69,10 @@ test('aggregates, categorizes and flags ads', async () => {
   for (const re of [/Pariz/, /Vučić/, /AMSS/, /Zvezda pobedila/, /iPhone/, /kamatne/]) {
     assert.ok(clean.find((i) => re.test(i.title)), 'real news must not be flagged: ' + re);
   }
+
+  // front page: the story covered by three outlets is first
+  assert.equal(data.top[0].kind, 'multi');
+  assert.deepEqual([...data.top[0].sources].sort(), ['b92', 'n1', 'politika']);
 
   // sorted newest first
   const ts = data.items.map((i) => i.published);
@@ -102,6 +106,9 @@ test('reader mode keeps body text, drops ads/teasers/nav', async () => {
   assert.doesNotMatch(texts, /Pročitajte i/);
   assert.doesNotMatch(texts, /Reklama reklama/);
   assert.doesNotMatch(texts, /Meni stavka/);
+  const imgs = art.blocks.filter((b) => b.t === 'img');
+  assert.deepEqual(imgs.map((b) => b.src), ['https://www.rts.rs/media/sednica.jpg', 'https://www.rts.rs/media/second.jpg']);
+  assert.match(imgs[0].text, /Sednica Vlade Srbije/);
 });
 
 test('article proxy only fetches the six outlets (no SSRF)', async () => {
@@ -116,4 +123,31 @@ test('static files + path traversal guard', async () => {
   assert.equal((await get(server, '/manifest.webmanifest')).status, 200);
   assert.notEqual((await get(server, '/..%2f..%2fserver.js')).status, 200);
   assert.ok((await get(server, '/')).headers['content-security-policy']);
+});
+
+test('top stories: same story across outlets outranks single-outlet items', () => {
+  const { computeTop } = require('../lib/top');
+  const now = Date.parse('2026-11-02T12:00:00Z');
+  const mk = (id, source, title, rank, hoursAgo = 2, image = null) => ({
+    id, source, title, rank, image, ad: null, published: new Date(now - hoursAgo * 3600e3).toISOString(),
+  });
+  const items = [
+    mk('a1', 'n1', 'Sekulović saslušan u tužilaštvu, predložen pritvor', 4),
+    mk('a2', 'b92', 'Sekulović saslušan u tužilaštvu, predložen pritvor', 1, 2, 'https://img/x.jpg'),
+    mk('a3', 'politika', 'Sekulović saslušan u tužilaštvu; tužilac predlaže pritvor', 7),
+    mk('b1', 'blic', 'Zvezda dočekuje Partizan u večitom derbiju', 0),
+    mk('c1', 'rts', 'Vremenska prognoza za utorak: sunčano i hladno', 12),
+    mk('d1', 'nova', 'Stari tekst o nečemu sasvim drugom i nevažnom', 0, 60),
+    { ...mk('e1', 'n1', 'Sponzorisano: kupite sada jeftino', 0), ad: 'sponsored' },
+  ];
+  for (let i = 0; i < 10; i++) items.push(mk('f' + i, i % 2 ? 'nova' : 'rts', 'Nasumična vest broj ' + i + ' o različitim stvarima ' + 'x'.repeat(i + 3), 20 + i));
+  const top = computeTop(items, { now });
+  assert.equal(top[0].kind, 'multi');
+  assert.deepEqual([...top[0].sources].sort(), ['b92', 'n1', 'politika']);
+  assert.equal(top[0].lead, 'a2', 'lead prefers the item with an image and best feed position');
+  assert.equal(top[0].ids.length, 3);
+  const all = top.flatMap((c) => c.ids);
+  assert.ok(!all.includes('e1'), 'ads never make the front page');
+  assert.ok(!all.includes('d1'), 'items older than 36h are ignored');
+  assert.ok(!all.includes('c1'), 'low-placed single-outlet items are not "important"');
 });

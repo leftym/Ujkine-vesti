@@ -80,7 +80,7 @@ async function article(url) {
   if (!/^https?:$/.test(u.protocol) || !SOURCES.some((s) => host === s.host || host.endsWith('.' + s.host))) {
     throw new Error('host not allowed');
   }
-  const art = extractArticle(await fetchText(u.href), { latin: true });
+  const art = extractArticle(await fetchText(u.href), { latin: true, base: u.href });
   if (!art.blocks.length) throw new Error('no readable text found');
   return art;
 }

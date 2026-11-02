@@ -105,3 +105,19 @@ textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--line); borde
 .icon.txt { width: auto; min-width: 48px; padding: 0 6px; font-size: 22px !important; height: 48px; min-width: 52px; border-radius: 12px; font-weight: 700; font-size: 1.05rem; border: 1px solid var(--line); margin-right: 6px; }
 .icon.txt:disabled { opacity: 0.35; }
 .actions { align-items: center; }
+
+.topnews { display: grid; gap: 10px; margin-bottom: 6px; }
+.topnews h3, .sechead { margin: 8px 2px 0; font-size: 1.05rem; letter-spacing: -0.01em; }
+.sechead { margin-top: 14px; color: var(--muted); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+.tgroup { display: grid; gap: 0; border-radius: 14px; background: var(--card); border: 1px solid var(--line); overflow: hidden; }
+.tgroup .card { border: 0; border-radius: 0; }
+.tgroup.hero .card { flex-direction: column-reverse; }
+.tgroup.hero .card img { width: 100%; height: auto; max-height: 220px; aspect-ratio: 16 / 9; }
+.tgroup.hero .card h2 { font-size: 1.2rem; }
+.outlets { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 0 12px 12px; }
+.outlets .lbl { font-size: 0.78rem; color: var(--muted); margin-right: 2px; }
+.opill { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; padding: 2px 10px; border: 1px solid var(--line); border-radius: 16px; background: var(--chip); font-size: 0.8rem; }
+.opill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+#readerBody figure { margin: 0 0 16px; }
+#readerBody figure img { margin: 0; }
+#readerBody figcaption { margin-top: 6px; font-size: 0.85rem; color: var(--muted); }

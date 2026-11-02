@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '30 15 * * *'   # daily 05:30 Hawaii time: health report for the review agent
 
 permissions:
   contents: write   # needed to publish the APK as a GitHub Release
@@ -14,6 +16,7 @@ concurrency:
 
 jobs:
   apk:
+    if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -93,8 +96,14 @@ jobs:
           node-version: 22
       - name: Check the six live feeds
         run: node scripts/feed-check.js feed-check.md
-      - name: Publish report to ci-logs branch
+      - name: Health report for the review agent
+        run: node scripts/health-report.js health.md
+      - name: Publish reports to ci-logs branch
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
-        run: scripts/publish-ci-log.sh feed-check.md feed-check.md
+        run: |
+          scripts/publish-ci-log.sh feed-check.md feed-check.md
+          [ -f health.md ] && scripts/publish-ci-log.sh health.md health.md
+          [ -f health.md ] && scripts/publish-ci-log.sh health.md "history/health-$(date -u +%F).md"
+          exit 0

@@ -84,7 +84,7 @@ function createServer({ fetchText = defaultFetchText } = {}) {
           return sendJson(res, 400, { error: 'host not allowed' });
         }
         const html = await fetchText(target.href, { timeoutMs: 9000 });
-        const art = extractArticle(html, { latin: url.searchParams.get('latin') !== '0' });
+        const art = extractArticle(html, { latin: url.searchParams.get('latin') !== '0', base: target.href });
         if (!art.blocks.length) return sendJson(res, 422, { error: 'no readable text found' });
         return sendJson(res, 200, art, { 'cache-control': 'public, max-age=300' });
       }

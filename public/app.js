@@ -171,14 +171,60 @@
     return a;
   }
 
+  function topSection(byId, hiddenOk) {
+    const sec = el('section', 'topnews');
+    sec.append(el('h3', null, 'Najvažnije danas'));
+    let n = 0;
+    for (const c of DATA.top || []) {
+      const lead = byId.get(c.lead);
+      if (!lead || !hiddenOk(lead)) continue;
+      const wrap = el('div', 'tgroup' + (n === 0 ? ' hero' : ''));
+      wrap.append(card(lead));
+      const row = el('div', 'outlets');
+      row.append(el('span', 'lbl', c.kind === 'multi' ? 'Pišu (' + c.outlets + '):' : 'Izdvaja:'));
+      for (const id of c.ids) {
+        const it = byId.get(id);
+        if (!it) continue;
+        const src = DATA.sources.find((s) => s.id === it.source);
+        const b = el('button', 'opill');
+        b.type = 'button';
+        const d = el('span', 'dot');
+        d.style.setProperty('--c', src.color);
+        b.append(d, src.name);
+        b.addEventListener('click', () => openItem(it));
+        row.append(b);
+      }
+      wrap.append(row);
+      sec.append(wrap);
+      if (++n >= 8) break;
+    }
+    return n ? sec : null;
+  }
+
   function render() {
     if (!DATA) return;
     renderChips();
-    const { list, adsRemoved } = filtered();
-    renderStatus(adsRemoved, list.length);
+    const { list: all, adsRemoved } = filtered();
     const box = $('#list');
     box.replaceChildren();
-    if (!list.length) {
+
+    // front page: most important stories first (only when no filter/search is active)
+    let list = all;
+    const noFilters = !S.sources.length && !S.cats.length && !S.q.trim();
+    if (noFilters && DATA.top && DATA.top.length) {
+      const byId = new Map(DATA.items.map((i) => [i.id, i]));
+      const visible = new Set(all.map((i) => i.id));
+      const sec = topSection(byId, (it) => visible.has(it.id));
+      if (sec) {
+        box.append(sec);
+        const inTop = new Set();
+        for (const c of DATA.top) for (const id of c.ids) inTop.add(id);
+        list = all.filter((i) => !inTop.has(i.id));
+        box.append(el('h3', 'sechead', 'Sve vesti'));
+      }
+    }
+    renderStatus(adsRemoved, all.length);
+    if (!list.length && !box.children.length) {
       box.append(el('div', 'empty', 'Nema vesti za izabrane filtere.'));
     } else {
       for (const it of list.slice(0, shown)) box.append(card(it));
@@ -216,6 +262,7 @@
     const dlg = $('#reader');
     const body = $('#readerBody');
     $('#openOriginal').href = it.url;
+    $('#openOriginal').dataset.url = it.url;
     body.replaceChildren(el('h1', null, it.title), el('p', 'note', 'Učitavanje…'));
     dlg.showModal();
     dlg.scrollTop = 0;
@@ -228,7 +275,20 @@
         img.addEventListener('error', () => img.remove());
         body.append(img);
       }
-      for (const b of art.blocks) body.append(el(b.t === 'h' ? 'h3' : 'p', null, b.text));
+      for (const b of art.blocks) {
+        if (b.t === 'img') {
+          if (!/^https:/.test(b.src)) continue;
+          const fig = el('figure');
+          const im = el('img');
+          im.src = b.src; im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer';
+          im.addEventListener('error', () => fig.remove());
+          fig.append(im);
+          if (b.text) fig.append(el('figcaption', null, b.text));
+          body.append(fig);
+        } else {
+          body.append(el(b.t === 'h' ? 'h3' : 'p', null, b.text));
+        }
+      }
     } catch {
       body.replaceChildren(
         el('h1', null, it.title),
@@ -262,6 +322,11 @@
     $('#openSettings').addEventListener('click', () => $('#settings').showModal());
     $('#closeSettings').addEventListener('click', () => $('#settings').close());
     $('#closeReader').addEventListener('click', () => $('#reader').close());
+    // On the phone, "original" opens as an in-app overlay (Chrome Custom Tab) instead of switching apps
+    $('#openOriginal').addEventListener('click', (e) => {
+      const B = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.Browser;
+      if (NATIVE && B && B.open) { e.preventDefault(); B.open({ url: e.currentTarget.dataset.url }); }
+    });
     for (const d of document.querySelectorAll('dialog')) {
       d.addEventListener('click', (e) => { if (e.target === d) d.close(); });
     }
