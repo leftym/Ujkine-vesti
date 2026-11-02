@@ -8,7 +8,7 @@ const { getNews } = require('../lib/aggregate');
 const { SOURCES } = require('../lib/sources');
 const { tokens } = require('../lib/text');
 
-const SOFT_PROMO = /\b(popust\w*|akcij[ae]|kupite|kupujte|ponuda|ponude|gratis|osvojite|nagradn\w*|rasprodaj\w*|jeftin\w*|povoljn\w*|besplatn\w*|promo\w*|sponzor\w*)\b/i;
+const SOFT_PROMO = /\b(popust\w*|kupite|kupujte|ponuda|ponude|gratis|osvojite|nagradn\w*|rasprodaj\w*|jeftin\w*|povoljn\w*|besplatn\w*|promo\w*|sponzor\w*)\b/i;
 const STOPWORDS = new Set('koji koja koje kako nakon posle zbog gde kada sada jedan jedna novi nova nove godine danas juce'.split(' '));
 
 (async () => {
@@ -66,7 +66,9 @@ const STOPWORDS = new Set('koji koja koje kako nakon posle zbog gde kada sada je
   const top = data.top || [];
   const multi = top.filter((c) => c.kind === 'multi');
   if (!multi.length) add('MED', 'Front page', 'No story matched across outlets today. Either the news day is fragmented or the headline matching in lib/top.js is too strict.');
-  if (multi.length > 7) add('LOW', 'Front page', `${multi.length} multi-outlet clusters: confirm they are real matches, not over-merged (see list).`);
+  for (const c of top) {
+    if (c.ids.length > 10) add('LOW', 'Front page', `Cluster "${(byId.get(c.lead) || {}).title}" has ${c.ids.length} items: chained matches may have merged related but different stories.`);
+  }
 
   const order = { HIGH: 0, MED: 1, LOW: 2 };
   recs.sort((a, b) => order[a.sev] - order[b.sev]);

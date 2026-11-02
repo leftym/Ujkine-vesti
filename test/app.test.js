@@ -151,3 +151,20 @@ test('top stories: same story across outlets outranks single-outlet items', () =
   assert.ok(!all.includes('d1'), 'items older than 36h are ignored');
   assert.ok(!all.includes('c1'), 'low-placed single-outlet items are not "important"');
 });
+
+test('top stories: two common words are not enough to merge different stories', () => {
+  const { computeTop } = require('../lib/top');
+  const now = Date.parse('2026-11-02T12:00:00Z');
+  const mk = (id, source, title, rank) => ({ id, source, title, rank, image: null, ad: null, published: new Date(now - 3600e3).toISOString() });
+  const items = [
+    mk('m1', 'n1', 'Makron razgovarao sa Srdanovićem: čestitam Studentskoj listi, nastavljamo evropski put', 0),
+    mk('m2', 'b92', 'Makron čestitao Srdanoviću na pobedi i potvrdio podršku evropskom putu', 1),
+    mk('g1', 'blic', 'Amerika poziva Evropu da nastavi kupovinu ruskog gasa: detalji razgovora u Moskvi', 0),
+  ];
+  // "evropa/razgovor" appear all over the news day, so they must not glue stories together
+  for (let i = 0; i < 8; i++) items.push(mk('x' + i, ['nova', 'rts', 'politika', 'blic'][i % 4], `Evropska komisija razgovori o različitoj temi broj ${i} ${'q'.repeat(i + 4)}`, 30 + i));
+  const top = computeTop(items, { now });
+  const macron = top.find((c) => c.ids.includes('m1'));
+  assert.ok(macron && macron.ids.includes('m2'), 'real match still merges');
+  assert.ok(!macron.ids.includes('g1'), 'gas story must stay separate');
+});
