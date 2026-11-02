@@ -1,16 +1,16 @@
 # Probe
 
-Run: 2026-11-02T21:34:32.548Z
+Run: 2026-11-02T21:47:33.807Z
 
 ## B92 feeds
-RSS directory page https://www.b92.net/info/rss/: 17839 bytes; feed-like links found: 0
-- https://www.b92.net/info/rss/vesti.xml -> 17914 bytes, 20 items, newest 2026-11-02T21:15:00.000Z, oldest 2026-11-02T16:13:00.000Z
+RSS directory page https://www.b92.net/info/rss/: 17731 bytes; feed-like links found: 0
+- https://www.b92.net/info/rss/vesti.xml -> 17788 bytes, 20 items, newest 2026-11-02T21:36:00.000Z, oldest 2026-11-02T16:19:00.000Z
+    * Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase | 2026-11-02T21:36 | cats=["Info"] | https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest
     * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T21:15 | cats=["Info"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
     * Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude" | 2026-11-02T21:13 | cats=["Info"] | https://www.b92.net/info/svet/281687/oglasio-se-zelenski-nakon-ruskog-napada-na-zaporosku-oblast/vest
     * Začarani krug odmazde može da bude pokrenut svakog trenutka – a to će značiti apsolutni rat | 2026-11-02T20:48 | cats=["Info"] | https://www.b92.net/info/svet/281679/wsj-saveznici-sad-u-zalivu-se-spremaju-za-nove-napade-na-iran/vest
     * Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO | 2026-11-02T20:43 | cats=["Info"] | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest
     * Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | 2026-11-02T20:15 | cats=["Info"] | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest
-    * Novine: "Podeljena vlast je deo istorije Amerike"; "Referendum o Trampovoj vladavini" | 2026-11-02T19:46 | cats=["Info"] | https://www.b92.net/info/razno/281665/novine-podeljena-vlast-je-deo-istorije-amerike-referendum-o-trampovoj-vladavini/vest
 - https://www.b92.net/info/rss/svevesti.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/najnovije.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/info.xml -> ERROR HTTP_404
@@ -20,20 +20,20 @@ RSS directory page https://www.b92.net/info/rss/: 17839 bytes; feed-like links f
 - https://www.b92.net/info/rss/drustvo.xml -> ERROR HTTP_404
 - https://www.b92.net/rss/ -> 226741 bytes, 0 items, newest -, oldest -
 - https://www.b92.net/rss -> 226741 bytes, 0 items, newest -, oldest -
-- https://www.b92.net/feed/ -> 17707 bytes, 20 items, newest 2026-11-02T21:21:00.000Z, oldest 2026-11-02T20:20:00.000Z
+- https://www.b92.net/feed/ -> 17705 bytes, 20 items, newest 2026-11-02T21:40:00.000Z, oldest 2026-11-02T20:22:00.000Z
+    * Parma ponizila Samardžićevu Atalantu u Bergamu – tri gola za ubedljiv trijumf gostiju | 2026-11-02T21:40 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/lige-petice/281691/atalanta-parma-serija-a-10-kolo/vest
+    * Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase | 2026-11-02T21:36 | cats=["Najnovije"] | https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest
     * Živković u Grčkoj do kraja karijere? | 2026-11-02T21:21 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/vesti/281609/zivkovic-u-grckoj-do-kraja-karijere/vest
     * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T21:15 | cats=["Najnovije"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
     * Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude" | 2026-11-02T21:13 | cats=["Najnovije"] | https://www.b92.net/info/svet/281687/oglasio-se-zelenski-nakon-ruskog-napada-na-zaporosku-oblast/vest
     * Karlik: "Razumem navijače i ljubav prema Željku, ali nismo ga mi izbacili" | 2026-11-02T21:08 | cats=["Najnovije"] | https://www.b92.net/sport/kosarka/euroleague/281686/karlik-dzons-o-zeljku-obradovicu/vest
-    * Uhapšen muškarac kod Kruševca: Sumnja se da je vanbračnu suprugu tukao rukama i nogama | 2026-11-02T20:59 | cats=["Najnovije"] | https://www.b92.net/lokal/krusevac/hronika/281685/uhapsen-muskarac-kod-krusevca-sumnja-se-da-je-vanbracnu-suprugu-tukao-rukama-i-nogama/vest
-    * "Mačak u šeširu" donosi više od nestašluka: Velika porodična avantura u bioskopima FOTO/VIDEO | 2026-11-02T20:59 | cats=["Najnovije"] | https://www.b92.net/kultura/filmtv/281670/film-macak-u-sesiru-u-ada-molu-i-druzenje-sa-glumcima/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 597823 bytes, 64 headline-like links
+homepage: 597667 bytes, 65 headline-like links
+- Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu | https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest | in feeds: vesti.xml,
 - Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana  | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest | in feeds: vesti.xml,
 - Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest | in feeds: vesti.xml
 - Sekulović saslušan u tužilaštvu, predložen pritvor | https://www.b92.net/info/hronika/281659/sekulovic-saslusan-u-tuzilastvu-predlozen-pritvor/vest | in feeds: vesti.xml
-- Zelenski: &quot;Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude&quot; | https://www.b92.net/info/svet/281687/oglasio-se-zelenski-nakon-ruskog-napada-na-zaporosku-oblast/vest | in feeds: vesti.xml,
 - uživo Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FO | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest | in feeds: vesti.xml,
 - Grom iz vedra neba: Trinkijeri odvodi Zvezdinog najboljeg – ponuda koja se ne odbija | https://www.b92.net/sport/kosarka/euroleague/281684/sdna-paok-nudi-krisu-dzonsu-tri-miliona-evra-godisnje/vest | in feeds: NONE
 - Ovo je evropska sila u proizvodnji oružja: Industrija vredi milijarde evra | https://www.b92.net/biz/svet/vesti/281614/ceska-vojna-industrija-belezi-rekordni-rast-izvoza-i-prihoda/vest | in feeds: NONE
@@ -46,7 +46,7 @@ homepage: 597823 bytes, 64 headline-like links
 - Neverovatan podvig u Kini: Roboti se popeli na vrh svete planine uz 3.100 stepenika FOTO | https://www.b92.net/tehnopolis/aktuelno/281663/prvo-svetsko-takmicenje-u-planinarenju-robota-odrzano-u-kini-savladali-3100-stepenika-na-planini-tai/vest | in feeds: NONE
 - &quot;Želeo je da umre u naručju svoje supruge&quot;; Potresan oproštaj Gejts Mekfaden od  | https://www.b92.net/zivot/aktuelno/281628/gejts-mekfaden-se-oprostila-od-patrika-stjuarta-zeleo-je-da-umre-u-zeninom-narucju/vest | in feeds: NONE
 - Tramp želi da vrati ruski gas u Evropu | https://www.b92.net/biz/svet/vesti/281479/tramp-zeli-da-vrati-ruski-gas-u-evropu/vest | in feeds: NONE
-- Brnabić: &quot;Komesari SL nikako da shvate – Vučić je lider opozicije, koja ima više od 1 | https://www.b92.net/info/politika/281599/brnabic-komesari-sl-nikako-da-shvate-vucic-je-lider-opozicije-koja-ima-vise-od-17-miliona-glasova/vest | in feeds: vesti.xml
+- Brnabić: &quot;Komesari SL nikako da shvate – Vučić je lider opozicije, koja ima više od 1 | https://www.b92.net/info/politika/281599/brnabic-komesari-sl-nikako-da-shvate-vucic-je-lider-opozicije-koja-ima-vise-od-17-miliona-glasova/vest | in feeds: NONE
 - Priveden Davor Macura; Oglasili se Javno tužilaštvo za organizovani kriminal i MUP | https://www.b92.net/info/hronika/281470/priveden-davor-macura-oglasili-se-javno-tuzilastvo-za-organizovani-kriminal-i-mup/vest | in feeds: NONE
 - Rusija ovo nikad nije učinila: Evo kako je nastavila da izvozi ključnu robu | https://www.b92.net/biz/svet/vesti/281441/arktik-kao-nova-ruska-izvozna-ruta/vest | in feeds: NONE
 - Priča Petra Sukačeva: Od dečaka koji je autobusom satima putovao na treninge do dresa Srbi | https://www.b92.net/sport/fudbal/srpski-fudbal/280953/expertiva-45-epizoda-petar-sukacev-fudbaler-vojvodine-video/vest | in feeds: NONE
@@ -58,16 +58,16 @@ homepage: 597823 bytes, 64 headline-like links
 
 ### B92 homepage markup samples (to find where story images live)
 ```html
-="icon"> <svg width='10' height="9"> <use xlink:href="/files/b92/fontawesome/solid.svg#chevron-right"></use> </svg> </span> </a> </div> <div class="selected-news-box"> <article class="news-item " data-upscore-object-id="281680" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_s.webp?timestamp=1793654698" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_kf.jpg?timestamp=1793654698" alt="Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
+="icon"> <svg width='10' height="9"> <use xlink:href="/files/b92/fontawesome/solid.svg#chevron-right"></use> </svg> </span> </a> </div> <div class="selected-news-box"> <article class="news-item " data-upscore-object-id="281690" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2024-10-28/76745_11064748_s.webp?timestamp=1793655375" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2024-10-28/76745_11064748_kf.jpg?timestamp=1793655375" alt="Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
+```
+```html
+ef="https://www.b92.net/svi-komentari/281690" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest"> <span data-upscore-title > Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase </span> </a></h2> <p class="news-item-description">Istražitelji su otkrili ogromnu pošiljku koka
+```
+```html
+ <p class="news-item-date"> 2.11.2026.</p> <p class="news-item-before-time"> <span class="before-time-number">6</span> <span class="before-time-text">min</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281680" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_s.webp?timestamp=1793654698" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_kf.jpg?timestamp=1793654698" alt="Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
 ```
 ```html
 ef="https://www.b92.net/svi-komentari/281680" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest"> <span data-upscore-title > Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO </span> </a></h2> <p class="news-item-description">Američki predsednik Donald Tramp završio je k
-```
-```html
- <p class="news-item-date"> 2.11.2026.</p> <p class="news-item-before-time"> <span class="before-time-number">48</span> <span class="before-time-text">min</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281675" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2024-05-07/24469_shutterstock-2369175167_s.webp?timestamp=1793652816" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2024-05-07/24469_shutterstock-2369175167_kf.jpg?timestamp=1793652816" alt="Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
-```
-```html
- class="news-item-comments-number">0</a> <a href="https://www.b92.net/svi-komentari/281675" class="news-item-author"></a> </div> <div class="news-item-data"> <span class="news-item-category" style="color:#106DB9" > Pale se alarmi u SAD </span> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest"> <span data-upscore-title > Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada </span> </a></h2> <p class="news-item-description">Meteorolozi su predvideli da se sutra očekuje
 ```
 img tags on homepage: 188; with data-src: 0; picture/source: 538
 
