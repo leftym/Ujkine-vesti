@@ -1,6 +1,6 @@
 # Feed check
 
-Run: 2026-11-02T20:01:46.456Z
+Run: 2026-11-02T20:05:15.504Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
@@ -60,20 +60,19 @@ Categories: {"zivot":11,"svet":9,"zabava":20,"drustvo":6,"politika":6,"ekonomija
 - [politika] "POZVAO ME JE DA GA POSETIM U IZRAELU" Vučić razgovarao s Netanjahuom: "Uspeli smo da podignemo odnos dve zemlje na viši nivo"
 
 ## Politika
-Categories: {"politika":3,"ostalo":5,"kultura":1,"sport":2,"svet":2,"drustvo":2,"hronika":2,"ekonomija":3}
+Categories: {"kultura":2,"politika":4,"ostalo":4,"sport":1,"svet":2,"drustvo":2,"hronika":2,"ekonomija":3}
+- [kultura] Dastin Hofman: Snimanje filma Diplomac bilo užasno iskustvo
+- [politika] Netanjahu o formiranju široke nacionalne vlade
 - [politika] Pobednici na američkim izborima biće proglašavani pre prebrojavanja svih glasova
 - [ostalo] Otkriveno novo veliko nalazište cirkona u Kini
 - [kultura] Film „Slet 1988” otvorio jubilarni festival „Prvi kadar”
 - [politika] Vučić razgovarao sa Netanjahuom, izraelski premijer ga pozvao da poseti Izrael
-- [sport] Đoković sutra protiv Vašeroa na startu u Parizu
-- [svet] Prodaja automobila u Italiji porasla 4,8 odsto u oktobru
 
 Uncategorized sample (for tuning):
 - Otkriveno novo veliko nalazište cirkona u Kini | https://www.politika.rs/scc/clanak/799166/otkriveno-novo-veliko-nalaziste-cirkona-u-kini | tags: []
 - Bivša saradnica Zelenskog govorila o zloupotrebama humanitarne pomoći | https://www.politika.rs/scc/clanak/799161/bivsa-saradnica-zelenskog-govorila-o-zloupotrebama-humanitarne-pomoci | tags: []
 - Lekorni naredne nedelje sa srednjoškolcima | https://www.politika.rs/scc/clanak/799160/lekorni-naredne-nedelje-sa-srednjoskolcima | tags: []
 - Mamdani: Agenti ICE nemaju pravo da koriste gradsku imovinu za svoje akcije | https://www.politika.rs/scc/clanak/799152/mamdani-agenti-ice-nemaju-pravo-da-koriste-gradsku-imovinu-za-svoje-akcije | tags: []
-- Saga o Šapcu i poznatim Šapčanima | https://www.politika.rs/scc/clanak/798905/saga-o-sapcu-i-poznatim-sapcanima | tags: []
 
 ## RTS
 Categories: {"drustvo":5,"ekonomija":3,"hronika":6,"zivot":1,"politika":4,"ostalo":1}
