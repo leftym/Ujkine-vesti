@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Vesti</string>
+    <string name="title_activity_main">Vesti</string>
+    <string name="package_name">app.vesti.news</string>
+    <string name="custom_url_scheme">app.vesti.news</string>
+</resources>

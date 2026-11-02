@@ -1,0 +1,22 @@
+{
+  "name": "vesti",
+  "version": "1.0.0",
+  "description": "Filtered Serbian news reader (N1, Nova.rs, B92, Blic, Politika, RTS): web server + Android app",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "demo": "node test/demo.js",
+    "test": "node --test test/app.test.js",
+    "build:web": "node scripts/build-web.js"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/cli": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "esbuild": "^0.28.2"
+  }
+}

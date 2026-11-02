@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
+<title>Vesti</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <h1>Vesti</h1>
+  <div class="actions">
+    <button id="fsDown" class="icon txt" aria-label="Manja slova">A&minus;</button>
+    <button id="fsUp" class="icon txt" aria-label="Veća slova">A+</button>
+    <button id="refresh" class="icon" aria-label="Osveži">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>
+    </button>
+    <button id="openSettings" class="icon" aria-label="Podešavanja">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="filters">
+  <div class="chips" id="srcChips" role="group" aria-label="Izvori"></div>
+  <div class="chips" id="catChips" role="group" aria-label="Kategorije"></div>
+  <input id="q" type="search" placeholder="Pretraga…" enterkeyhint="search" autocomplete="off" aria-label="Pretraga">
+</div>
+
+<p id="status" class="status" aria-live="polite">Učitavanje…</p>
+<main id="list"></main>
+<div class="more"><button id="more" hidden>Prikaži još</button></div>
+
+<dialog id="reader" aria-label="Čitač">
+  <div class="sheet-bar">
+    <button id="closeReader" class="icon" aria-label="Zatvori">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <a id="openOriginal" class="btn" target="_blank" rel="noopener noreferrer">Otvori original ↗</a>
+  </div>
+  <article id="readerBody"></article>
+</dialog>
+
+<dialog id="settings" aria-label="Podešavanja">
+  <div class="sheet-bar">
+    <strong>Podešavanja</strong>
+    <button id="closeSettings" class="icon" aria-label="Zatvori">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="settings-body">
+    <label class="row"><input type="checkbox" id="optAds"> <span>Sakrij oglase i sponzorisane tekstove</span></label>
+    <label class="row"><input type="checkbox" id="optBetting"> <span>Sakrij kladionice i kvote</span></label>
+    <label class="row"><input type="checkbox" id="optReader"> <span>Čitaj u aplikaciji (bez reklama)</span></label>
+    <label class="col"><span>Sakrij vesti koje sadrže (reči odvojene zarezom)</span>
+      <textarea id="optMuted" rows="3" placeholder="rijaliti, horoskop, zadruga"></textarea>
+    </label>
+    <h2>Stanje izvora</h2>
+    <ul id="diag" class="diag"></ul>
+  </div>
+</dialog>
+
+<script src="/app.js"></script>
+</body>
+</html>
