@@ -152,17 +152,18 @@ test('top stories: same story across outlets outranks single-outlet items', () =
   assert.ok(!all.includes('c1'), 'low-placed single-outlet items are not "important"');
 });
 
-test('top stories: two common words are not enough to merge different stories', () => {
+test('top stories: three generic word-roots are not enough to merge different stories', () => {
   const { computeTop } = require('../lib/top');
   const now = Date.parse('2026-11-02T12:00:00Z');
   const mk = (id, source, title, rank) => ({ id, source, title, rank, image: null, ad: null, published: new Date(now - 3600e3).toISOString() });
   const items = [
-    mk('m1', 'n1', 'Makron razgovarao sa Srdanovićem: čestitam Studentskoj listi, nastavljamo evropski put', 0),
-    mk('m2', 'b92', 'Makron čestitao Srdanoviću na pobedi i potvrdio podršku evropskom putu', 1),
-    mk('g1', 'blic', 'Amerika poziva Evropu da nastavi kupovinu ruskog gasa: detalji razgovora u Moskvi', 0),
+    mk('m1', 'n1', 'Makron razgovarao sa Srdanovićem: čestitam Studentskoj listi, nastavljamo da pratimo Srbiju na evropskom putu', 0),
+    mk('m2', 'b92', 'Makron čestitao Srdanoviću na izbornoj pobedi i potvrdio podršku evropskom putu', 1),
+    // shares "evrop", "nasta", "razgo" with m1 but is a different story
+    mk('g1', 'blic', 'Amerika poziva Evropu da nastavi kupovinu ruskog gasa: otkriveni detalji razgovora u Moskvi i Kijevu', 0),
   ];
-  // "evropa/razgovor" appear all over the news day, so they must not glue stories together
-  for (let i = 0; i < 8; i++) items.push(mk('x' + i, ['nova', 'rts', 'politika', 'blic'][i % 4], `Evropska komisija razgovori o različitoj temi broj ${i} ${'q'.repeat(i + 4)}`, 30 + i));
+  for (let i = 0; i < 3; i++) items.push(mk('e' + i, ['nova', 'rts', 'politika'][i], `Evropska komisija o drugoj temi broj ${i} ${'q'.repeat(i + 4)}`, 30 + i));
+  for (let i = 0; i < 6; i++) items.push(mk('x' + i, ['nova', 'rts', 'politika'][i % 3], `Sasvim nepovezana vest broj ${i} ${'z'.repeat(i + 4)}`, 40 + i));
   const top = computeTop(items, { now });
   const macron = top.find((c) => c.ids.includes('m1'));
   assert.ok(macron && macron.ids.includes('m2'), 'real match still merges');
