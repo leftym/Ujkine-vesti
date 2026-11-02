@@ -1,4 +1,7 @@
 # Probe
+
+Run: 2026-11-02T21:31:23.131Z
+
 ## B92 feeds
 RSS directory page https://www.b92.net/info/rss/: 17839 bytes; feed-like links found: 0
 - https://www.b92.net/info/rss/vesti.xml -> 17914 bytes, 20 items, newest 2026-11-02T21:15:00.000Z, oldest 2026-11-02T16:13:00.000Z
@@ -26,7 +29,7 @@ RSS directory page https://www.b92.net/info/rss/: 17839 bytes; feed-like links f
     * "Mačak u šeširu" donosi više od nestašluka: Velika porodična avantura u bioskopima FOTO/VIDEO | 2026-11-02T20:59 | cats=["Najnovije"] | https://www.b92.net/kultura/filmtv/281670/film-macak-u-sesiru-u-ada-molu-i-druzenje-sa-glumcima/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 597835 bytes, 64 headline-like links
+homepage: 597828 bytes, 64 headline-like links
 - Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana  | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest | in feeds: vesti.xml,
 - Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest | in feeds: vesti.xml
 - Sekulović saslušan u tužilaštvu, predložen pritvor | https://www.b92.net/info/hronika/281659/sekulovic-saslusan-u-tuzilastvu-predlozen-pritvor/vest | in feeds: vesti.xml
@@ -55,9 +58,17 @@ homepage: 597835 bytes, 64 headline-like links
 
 ### B92 homepage markup samples (to find where story images live)
 ```html
+="icon"> <svg width='10' height="9"> <use xlink:href="/files/b92/fontawesome/solid.svg#chevron-right"></use> </svg> </span> </a> </div> <div class="selected-news-box"> <article class="news-item " data-upscore-object-id="281680" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_s.webp?timestamp=1793654698" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_kf.jpg?timestamp=1793654698" alt="Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
+```
 ```html
+ef="https://www.b92.net/svi-komentari/281680" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest"> <span data-upscore-title > Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO </span> </a></h2> <p class="news-item-description">Američki predsednik Donald Tramp završio je k
+```
 ```html
+ <p class="news-item-date"> 2.11.2026.</p> <p class="news-item-before-time"> <span class="before-time-number">45</span> <span class="before-time-text">min</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281675" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2024-05-07/24469_shutterstock-2369175167_s.webp?timestamp=1793652816" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2024-05-07/24469_shutterstock-2369175167_kf.jpg?timestamp=1793652816" alt="Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
+```
 ```html
+ class="news-item-comments-number">0</a> <a href="https://www.b92.net/svi-komentari/281675" class="news-item-author"></a> </div> <div class="news-item-data"> <span class="news-item-category" style="color:#106DB9" > Pale se alarmi u SAD </span> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest"> <span data-upscore-title > Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada </span> </a></h2> <p class="news-item-description">Meteorolozi su predvideli da se sutra očekuje
+```
 img tags on homepage: 188; with data-src: 0; picture/source: 538
 
 ## YouTube
@@ -72,7 +83,7 @@ homepage YouTube channel links: https://www.youtube.com/@N1infoTV ; https://www.
 feed https://nova.rs/feed/: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/channel/UCloa3CgQMtGSeqjLkpQlEFg
   https://www.youtube.com/channel/UCloa3CgQMtGSeqjLkpQlEFg -> id UCloa3CgQMtGSeqjLkpQlEFg
-  video feed OK: 15 videos, newest 2026-11-02T20:42: DNEVNIK - CELA EMISIJA - 02.11.2026. | thumb yes
+  video feed OK: 15 videos, newest 2026-11-02T21:15: Šta se dešava sa dokumentacijom u Čačku? | thumb yes
 ### B92
 feed https://www.b92.net/feed/: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/@B92TV
