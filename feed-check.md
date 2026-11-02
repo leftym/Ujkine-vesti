@@ -1,6 +1,6 @@
 # Feed check
 
-Run: 2026-11-02T20:05:15.504Z
+Run: 2026-11-02T20:08:53.053Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
@@ -51,13 +51,13 @@ Categories: {"svet":7,"politika":6,"hronika":2,"region":2,"drustvo":3}
 - [svet] Merc zna ime Štajnmajerove naslednice; "To mora da bude žena"
 
 ## Blic
-Categories: {"zivot":11,"svet":9,"zabava":20,"drustvo":6,"politika":6,"ekonomija":9,"hronika":6,"zdravlje":1,"kultura":2}
+Categories: {"svet":9,"zabava":21,"zivot":10,"drustvo":6,"politika":6,"ekonomija":9,"hronika":6,"zdravlje":1,"kultura":2}
+- [svet] ALARM NA NAJVIŠEM NIVOU ZBOG UREĐAJA KOJI SVI IMAJU! Misteriozni napadi širom Evrope i SAD izazvali PANIKU: Bukti na sve strane, sumnja se da iza svega stoje ONI!
+- [zabava] (Foto) JOVANA JEREMIĆ KUPILA ĆERKI LEI ČIZME NA ŠTIKLU Odvela je u butik, pa se pohvalila: "Jao kako su ti lepe, skroz su elegantne"
 - [zivot] EVO KAKO ĆE BITI SAHRANJEN MIŠO KOVAČ Porodica imala poseban zahtev
 - [svet] TERITORIJA 3 PUTA VEĆA OD SRBIJE NA IVICI NOVOG SUKOBA! Drama u UN: Ruski veto srušio plan Amerike, istorijska misija NESTALA preko noći!
 - [zabava] ISKRENO O STRASNOJ VEZI SA BIVŠIM MUŽEM ČUVENE GLUMICE Princeza Jelisaveta otkrila: "Šarmantan, sa prelepim glasom", progovorila i o NAJVEĆEM PROBLEMU u njihovoj romansi
 - [drustvo] Zašto moramo da dokazujemo internetu da smo ljudi i šta se zapravo krije iza dugmeta "NISAM ROBOT"
-- [zabava] BIVŠI ZADRUGAR POSTAO OTAC Stavio sina na grudi i dao mu MOĆNO IME: "Najsrećniji sam čovek na svetu, dobro mi došao"
-- [politika] "POZVAO ME JE DA GA POSETIM U IZRAELU" Vučić razgovarao s Netanjahuom: "Uspeli smo da podignemo odnos dve zemlje na viši nivo"
 
 ## Politika
 Categories: {"kultura":2,"politika":4,"ostalo":4,"sport":1,"svet":2,"drustvo":2,"hronika":2,"ekonomija":3}
