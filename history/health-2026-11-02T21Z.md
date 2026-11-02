@@ -1,6 +1,6 @@
 # Vesti health report
 
-Run: 2026-11-02T21:24:58.863Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-02T21:29:04.980Z  |  items: 285  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
 1. **LOW** [B92] Only 35% of items have an image. Check the raw feed for a non-standard image tag (as with RTS <thumb>).
@@ -9,28 +9,28 @@ Run: 2026-11-02T21:24:58.863Z  |  items: 290  |  front-page clusters: 10 (10 mul
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 50 | 0.1h | 100% | 12% | 2 |
+| N1 | yes | 45 | 0.2h | 100% | 7% | 2 |
 | Nova.rs | yes | 50 | 0.1h | 100% | 2% | 1 |
 | B92 | yes | 80 | 0.1h | 35% | 0% | 0 |
-| Blic | yes | 70 | 0.2h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.3h | 100% | 20% | 0 |
-| RTS | yes | 20 | 0.1h | 100% | 0% | 0 |
+| Blic | yes | 70 | 0.3h | 100% | 0% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 15% | 0 |
+| RTS | yes | 20 | 0.2h | 100% | 0% | 0 |
 
 ## Front page right now
 1. [multi, 4 outlets, score 46.1] Poštanska štedionica zatražila od NBS dodatni stručni nadzor u praćenju likvidnosti i finansijskih tokova
    - also (nova): Poštanska štedionica traži da NBS dodatno nadzire njenu likvidnost i finansijske tokove
    - also (n1): Poštanska štedionica sama tražila od NBS pojačani nadzor: Uvedene dodatne procedure za određene transakcije
    - also (b92): Banka Poštanska štedionica tražila od NBS dodatni nadzor likvidnosti i finansijskih tokova
-2. [multi, 4 outlets, score 44.8] EPS, EMS, Telekom, Vodovod… : Koje državne firme su čuvale novac u Alta banci Davora Macure, kojoj je oduzeta dozvola za rad
+2. [multi, 4 outlets, score 44.3] EPS, EMS, Telekom, Vodovod… : Koje državne firme su čuvale novac u Alta banci Davora Macure, kojoj je oduzeta dozvola za rad
    - also (rts): Narodna banka Srbije oduzela dozvolu za izdavanje elektronskog novca Alta grupi
    - also (n1): NBS oduzela dozvolu i platnoj instituciji Alta group DOO: Sredstva korisnika platnih usluga su zaštićena
    - also (blic): NBS oduzela dozvolu i kompaniji ALTA GROUP: Evo šta to znači za korisnike
-3. [multi, 3 outlets, score 39] Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
-   - also (nova): Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
-   - also (n1): Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Krička prema studentima
-4. [multi, 3 outlets, score 38.9] Mladić iz Srbije nestao tokom uspona na Triglav, spasioci pronašli njegove stvari u snegu
+3. [multi, 3 outlets, score 38.9] Mladić iz Srbije nestao tokom uspona na Triglav, spasioci pronašli njegove stvari u snegu
    - also (nova): Državljanin Srbije nestao prilikom uspona na Triglav: Spasioci pronašli njegove stvari
    - also (n1): Državljanin Srbije nestao prilikom uspona na Triglav: Spasioci pronašli njegove stvari
+4. [multi, 3 outlets, score 38.4] Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
+   - also (nova): Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
+   - also (n1): Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Krička prema studentima
 5. [multi, 3 outlets, score 38.3] Saslušan načelnik Službe za suzbijanje kriminala Boško Sekulović, tužilaštvo traži pritvor
    - also (b92): Sekulović saslušan u tužilaštvu, predložen pritvor
    - also (blic): SASLUŠAN NAČELNIK SLUŽBE ZA SUZBIJANJE KRIMINALA Boško Sekulović izneo odbranu, tužilaštvo traži pritvor
@@ -53,20 +53,17 @@ Run: 2026-11-02T21:24:58.863Z  |  items: 290  |  front-page clusters: 10 (10 mul
 
 ## Details
 ### N1
-Categories: {"drustvo":9,"ostalo":6,"svet":5,"region":4,"zivot":4,"politika":14,"ekonomija":7,"hronika":1}
+Categories: {"drustvo":9,"svet":5,"region":4,"ostalo":3,"zivot":4,"politika":12,"ekonomija":7,"hronika":1}
 Flagged:
 - (self) Studio live, utorak u 12h: Vučićeva pomilovanja <https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/>
 - (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
 Uncategorized sample:
-- Statistics office: Serbia’s GDP growth at 4% in Q3 <https://n1info.rs/english/news/statistics-office-serbias-gdp-growth-at-4-in-q3/> tags=["News","economy","gdp","rzs"]
 - Utisak nedelje: Ognjen Radonjić, Vuk Cvijić, Vida Petrović Škero (1.11.2026) <https://n1info.rs/video/utisak-nedelje-ognjen-radonjic-vuk-cvijic-vida-petrovic-skero-1112026/> tags=["Video","utisak video","utisak nedelje","video"]
-- Macron congratulates Srdanovic on election victory <https://n1info.rs/english/news/macron-congratulates-srdanovic-on-election-victory/> tags=["News","ilija srdanovic","france","2026 elections","emmanuel macron","student list"]
 - Dnevnik u 19 (01.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-01-novembar-2026/> tags=["Dnevnik","dnevnik u 19","najvažnije vesti","vesti dana","dnevnik 19","dnevnik"]
 - Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
-- ANEM: 111 attacks on journalists this year, just three convictions <https://n1info.rs/english/news/anem-111-attacks-on-journalists-this-year-just-three-convictions/> tags=["News","convictions","anem","attacks on journalists"]
 
 ### Nova.rs
-Categories: {"sport":11,"politika":4,"zabava":12,"hronika":9,"zivot":1,"svet":1,"ekonomija":5,"drustvo":5,"ostalo":1,"kultura":1}
+Categories: {"hronika":9,"sport":11,"politika":4,"zabava":12,"zivot":1,"svet":1,"ekonomija":5,"drustvo":5,"ostalo":1,"kultura":1}
 Flagged:
 - (self) Gledajte uživo Dnevnik TV Nova <https://nova.rs/vesti/drustvo/gledajte-uzivo-dnevnik-tv-nova-02-11-2026/>
 Uncategorized sample:
@@ -79,12 +76,11 @@ Categories: {"sport":14,"svet":9,"kultura":7,"zdravlje":6,"zivot":18,"ekonomija"
 Categories: {"zabava":25,"zdravlje":2,"hronika":6,"svet":8,"drustvo":5,"zivot":9,"politika":5,"ekonomija":8,"kultura":2}
 
 ### Politika
-Categories: {"hronika":1,"svet":6,"ostalo":4,"sport":2,"politika":5,"kultura":2}
+Categories: {"svet":7,"hronika":1,"ostalo":3,"sport":2,"politika":5,"kultura":2}
 Uncategorized sample:
 - Stiže novo zahlađenje: u Srbiji sutra kiša, na planinama sneg <https://www.politika.rs/scc/clanak/799185/stize-novo-zahladenje-u-srbiji-sutra-kisa-na-planinama-sneg> tags=[]
 - Savana Gatri ponovo moli za pomoć u pronalaženju majke: Ne možemo da nastavimo dalje <https://www.politika.rs/scc/clanak/799173/savana-gatri-ponovo-moli-za-pomoc-u-pronalazenju-majke-ne-mozemo-da-nastavimo-dalje> tags=[]
 - Otkriveno novo veliko nalazište cirkona u Kini <https://www.politika.rs/scc/clanak/799166/otkriveno-novo-veliko-nalaziste-cirkona-u-kini> tags=[]
-- Bivša saradnica Zelenskog govorila o zloupotrebama humanitarne pomoći <https://www.politika.rs/scc/clanak/799161/bivsa-saradnica-zelenskog-govorila-o-zloupotrebama-humanitarne-pomoci> tags=[]
 
 ### RTS
 Categories: {"hronika":6,"region":2,"drustvo":5,"ekonomija":3,"zivot":1,"politika":3}
