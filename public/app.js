@@ -151,7 +151,7 @@
     s.append(dot, src.name);
     meta.append(s, el('span', null, ago(it.published)));
     if (cat && cat.id !== 'ostalo') meta.append(el('span', 'tag', cat.label));
-    if (it.ad) meta.append(el('span', 'adbadge', it.ad === 'betting' ? 'KLADIONICA' : 'OGLAS'));
+    if (it.ad) meta.append(el('span', 'adbadge', it.ad === 'betting' ? 'KLADIONICA' : it.ad === 'self' ? 'NAJAVA' : 'OGLAS'));
     body.append(meta, el('h2', null, it.title));
     if (it.summary) body.append(el('p', null, it.summary));
     a.append(body);

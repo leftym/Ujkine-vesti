@@ -48,6 +48,7 @@ test('aggregates, categorizes and flags ads', async () => {
   // Cyrillic -> Latin
   const budget = find(/usvojila novi/i);
   assert.match(budget.title, /Vlada usvojila novi budžet/);
+  assert.equal(budget.image, 'https://www.rts.rs/upload/thumbnail/a.png');
   assert.equal(budget.category, 'politika');
   assert.equal(find(/saobraćajna nesreća/i).category, 'hronika');
 
