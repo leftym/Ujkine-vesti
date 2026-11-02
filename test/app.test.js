@@ -74,6 +74,14 @@ test('aggregates, categorizes and flags ads', async () => {
   assert.deepEqual(ts, [...ts].sort().reverse());
 });
 
+test('betting detection needs sport context', () => {
+  const { detectAd } = require('../lib/classify');
+  const pol = { url: 'https://n1info.rs/vesti/glasanje/', title: '"Štab", "kapilari" i kvote: Ninić tvrdi da ima dokaze o glasovima za SNS', categories: ['Vesti'] };
+  assert.equal(detectAd(pol), null);
+  assert.equal(detectAd({ url: 'https://x.rs/sport/a', title: 'Kvote za derbi: najbolji tiket', categories: [] }), 'betting');
+  assert.equal(detectAd({ url: 'https://x.rs/a', title: 'Nova kladionica nudi bonus dobrodošlice', categories: [] }), 'betting');
+});
+
 test('reader mode keeps body text, drops ads/teasers/nav', async () => {
   const u = 'https://www.rts.rs/vesti/politika/12345/budzet.html';
   const { status, body } = await get(server, '/api/article?url=' + encodeURIComponent(u));

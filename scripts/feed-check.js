@@ -28,6 +28,18 @@ const { getNews } = require('../lib/aggregate');
     L.push('Categories: ' + JSON.stringify(cats));
     for (const i of items.slice(0, 6)) L.push(`- [${i.category}${i.ad ? ' / AD:' + i.ad : ''}] ${i.title}`);
     for (const i of items.filter((x) => x.ad).slice(0, 5)) L.push(`  - flagged (${i.ad}): ${i.title} ${i.url}`);
+    const other = items.filter((i) => i.category === 'ostalo').slice(0, 8);
+    if (other.length) {
+      L.push('', 'Uncategorized sample (for tuning):');
+      for (const i of other) L.push(`- ${i.title} | ${i.url} | tags: ${JSON.stringify(i.tags)}`);
+    }
+    if (st.ok && st.feed && items.length && items.filter((i) => i.image).length === 0) {
+      try {
+        const xml = await defaultFetchText(st.feed);
+        const m = xml.match(/<item\b[\s\S]*?<\/item>/i);
+        L.push('', 'No images found. First raw item:', '```xml', (m ? m[0] : xml).slice(0, 2500), '```');
+      } catch (e) { L.push('raw fetch failed: ' + e.message); }
+    }
     L.push('');
   }
   fs.writeFileSync(process.argv[2] || 'feed-check.md', L.join('\n'));
