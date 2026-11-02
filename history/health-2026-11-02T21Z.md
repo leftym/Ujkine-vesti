@@ -1,54 +1,59 @@
 # Vesti health report
 
-Run: 2026-11-02T21:17:15.101Z  |  items: 230  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-02T21:21:59.230Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-- All checks passed. Nothing to do.
+1. **LOW** [B92] Only 34% of items have an image. Check the raw feed for a non-standard image tag (as with RTS <thumb>).
+2. **LOW** [B92] Possible ads NOT flagged: "Grom iz vedra neba: Trinkijeri odvodi Zvezdinog najboljeg – ponuda koja se ne odbija"; "Evo kako da uštedite ako planirate skijanje u Srbiji: Do ovog datuma traje popust"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 50 | 0.0h | 100% | 12% | 2 |
-| Nova.rs | yes | 50 | 0.2h | 100% | 2% | 1 |
-| B92 | yes | 20 | 0.1h | 100% | 0% | 0 |
-| Blic | yes | 70 | 0.1h | 100% | 0% | 0 |
+| N1 | yes | 50 | 0.1h | 100% | 12% | 2 |
+| Nova.rs | yes | 50 | 0.1h | 100% | 2% | 1 |
+| B92 | yes | 80 | 0.1h | 34% | 9% | 0 |
+| Blic | yes | 70 | 0.2h | 100% | 0% | 0 |
 | Politika | yes | 20 | 0.2h | 100% | 20% | 0 |
-| RTS | yes | 20 | 0.4h | 100% | 0% | 0 |
+| RTS | yes | 20 | 0.0h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 3 outlets, score 39] Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
-   - also (nova): Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
-   - also (n1): Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Krička prema studentima
-2. [multi, 3 outlets, score 38.9] Mladić iz Srbije nestao tokom uspona na Triglav, spasioci pronašli njegove stvari u snegu
-   - also (nova): Državljanin Srbije nestao prilikom uspona na Triglav: Spasioci pronašli njegove stvari
-   - also (n1): Državljanin Srbije nestao prilikom uspona na Triglav: Spasioci pronašli njegove stvari
-3. [multi, 3 outlets, score 38.4] Saslušan načelnik Službe za suzbijanje kriminala Boško Sekulović, tužilaštvo traži pritvor
-   - also (b92): Sekulović saslušan u tužilaštvu, predložen pritvor
-   - also (blic): SASLUŠAN NAČELNIK SLUŽBE ZA SUZBIJANJE KRIMINALA Boško Sekulović izneo odbranu, tužilaštvo traži pritvor
-4. [multi, 3 outlets, score 37.4] Nikolina Sinđelić za RTS: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
-   - also (nova): Studentkinja Nikolina Sinđelić više od godinu dana nije saslušana po prijavi protiv Marka Kričaka
-   - also (n1): Studentkinja Nikolina Sinđelić: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
-5. [multi, 3 outlets, score 36.1] Poštanska štedionica zatražila od NBS dodatni stručni nadzor u praćenju likvidnosti i finansijskih tokova
+1. [multi, 4 outlets, score 46.1] Poštanska štedionica zatražila od NBS dodatni stručni nadzor u praćenju likvidnosti i finansijskih tokova
    - also (nova): Poštanska štedionica traži da NBS dodatno nadzire njenu likvidnost i finansijske tokove
    - also (n1): Poštanska štedionica sama tražila od NBS pojačani nadzor: Uvedene dodatne procedure za određene transakcije
-6. [multi, 3 outlets, score 35.7] RIK doneo rešenja o izmenama biračkih odbora za izbore za članove saveta nacionalnih manjina
+   - also (b92): Banka Poštanska štedionica tražila od NBS dodatni nadzor likvidnosti i finansijskih tokova
+2. [multi, 4 outlets, score 44.8] EPS, EMS, Telekom, Vodovod… : Koje državne firme su čuvale novac u Alta banci Davora Macure, kojoj je oduzeta dozvola za rad
+   - also (rts): Narodna banka Srbije oduzela dozvolu za izdavanje elektronskog novca Alta grupi
+   - also (n1): NBS oduzela dozvolu i platnoj instituciji Alta group DOO: Sredstva korisnika platnih usluga su zaštićena
+   - also (blic): NBS oduzela dozvolu i kompaniji ALTA GROUP: Evo šta to znači za korisnike
+3. [multi, 3 outlets, score 39] Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
+   - also (nova): Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
+   - also (n1): Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Krička prema studentima
+4. [multi, 3 outlets, score 38.9] Mladić iz Srbije nestao tokom uspona na Triglav, spasioci pronašli njegove stvari u snegu
+   - also (nova): Državljanin Srbije nestao prilikom uspona na Triglav: Spasioci pronašli njegove stvari
+   - also (n1): Državljanin Srbije nestao prilikom uspona na Triglav: Spasioci pronašli njegove stvari
+5. [multi, 3 outlets, score 38.4] Saslušan načelnik Službe za suzbijanje kriminala Boško Sekulović, tužilaštvo traži pritvor
+   - also (b92): Sekulović saslušan u tužilaštvu, predložen pritvor
+   - also (blic): SASLUŠAN NAČELNIK SLUŽBE ZA SUZBIJANJE KRIMINALA Boško Sekulović izneo odbranu, tužilaštvo traži pritvor
+6. [multi, 3 outlets, score 37.4] Uhapšen muškarac kod Kruševca: Sumnja se da je vanbračnu suprugu tukao rukama i nogama
+   - also (politika): Uhapšen Kruševljanin, tukao vanbračnu suprugu
+   - also (blic): SUPRUGU ŠUTIRAO PO GLAVI I TELU Užas u Kruševcu: Muškarac uhapšen zbog nasilja u porodici
+7. [multi, 3 outlets, score 37.4] Nikolina Sinđelić za RTS: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
+   - also (nova): Studentkinja Nikolina Sinđelić više od godinu dana nije saslušana po prijavi protiv Marka Kričaka
+   - also (n1): Studentkinja Nikolina Sinđelić: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
+8. [multi, 3 outlets, score 35.7] RIK doneo rešenja o izmenama biračkih odbora za izbore za članove saveta nacionalnih manjina
    - also (n1): RIK: Na izborima za savete nacionalnih manjina 204 posmatrača, predaja izbornog materijala od sutra
    - also (nova): RIK: Na izborima za savete nacionalnih manjina 204 posmatrača, predaja izbornog materijala od sutra
-7. [multi, 3 outlets, score 35.2] Vučić razgovarao sa izraelskim premijerom: "Netanjahu mi je zahvalio za dugogodišnju uspešnu saradnju"
+9. [multi, 3 outlets, score 35.2] Vučić razgovarao sa izraelskim premijerom: "Netanjahu mi je zahvalio za dugogodišnju uspešnu saradnju"
    - also (politika): Vučić razgovarao sa Netanjahuom, izraelski premijer ga pozvao da poseti Izrael
    - also (blic): "POZVAO ME JE DA GA POSETIM U IZRAELU" Vučić razgovarao s Netanjahuom: "Uspeli smo da podignemo odnos dve zemlje na viši nivo"
-8. [multi, 3 outlets, score 33.9] Makron razgovarao sa Srdanovićem: Čestitam Studentskoj listi, nastavljamo da pratimo Srbiju na evropskom putu
-   - also (b92): Makron čestitao Srdanoviću na izbornoj pobedi i potvrdio podršku evropskom putu
-   - also (blic): MAKRON RAZGOVARAO SA ILIJOM SRDANOVIĆEM Evo šta je predsednik Francuske poručio Studentskoj listi: "U ovome smo odlučni"
-9. [multi, 3 outlets, score 33.3] NBS oduzela dozvolu i platnoj instituciji Alta group DOO: Sredstva korisnika platnih usluga su zaštićena
-   - also (nova): Oglasila se NBS: Objavljeno kako će biti zaštićeni korisnici Alta Group nakon oduzimanja dozvole
-   - also (blic): NBS oduzela dozvolu i kompaniji ALTA GROUP: Evo šta to znači za korisnike
-10. [multi, 2 outlets, score 28.5] Netanjahu otvoren za formiranje "široke nacionalne vlade", pod uslovom da on bude na čelu
-   - also (politika): Netanjahu o formiranju široke nacionalne vlade
+10. [multi, 3 outlets, score 34] Dijana Hrkalović među petoro pomilovanih Vučićevom odlukom - Viši sud u Beogradu objavio spisak
+   - also (rts): Viši sud u Novom Sadu saopštio 18 imena pomilovanih Vučićevom odlukom
+   - also (n1): Koga je sve Vučić pomilovao: "Porše" ekipa, Dijana Hrkalović, vozač koji je pregazio studentkinju...
+   - also (blic): Ovo je spisak pomilovanih u Višem sudu u Beogradu i Višem sudu u Novom Sadu
 
 ## Details
 ### N1
-Categories: {"ostalo":6,"svet":5,"region":4,"drustvo":8,"zivot":5,"politika":14,"ekonomija":7,"hronika":1}
+Categories: {"drustvo":9,"ostalo":6,"svet":5,"region":4,"zivot":4,"politika":14,"ekonomija":7,"hronika":1}
 Flagged:
 - (self) Studio live, utorak u 12h: Vučićeva pomilovanja <https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/>
 - (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
@@ -61,14 +66,21 @@ Uncategorized sample:
 - ANEM: 111 attacks on journalists this year, just three convictions <https://n1info.rs/english/news/anem-111-attacks-on-journalists-this-year-just-three-convictions/> tags=["News","convictions","anem","attacks on journalists"]
 
 ### Nova.rs
-Categories: {"politika":4,"zabava":12,"hronika":9,"sport":10,"zivot":1,"svet":1,"ekonomija":6,"drustvo":5,"ostalo":1,"kultura":1}
+Categories: {"sport":11,"politika":4,"zabava":12,"hronika":9,"zivot":1,"svet":1,"ekonomija":5,"drustvo":5,"ostalo":1,"kultura":1}
 Flagged:
 - (self) Gledajte uživo Dnevnik TV Nova <https://nova.rs/vesti/drustvo/gledajte-uzivo-dnevnik-tv-nova-02-11-2026/>
 Uncategorized sample:
 - Dnevnik - Cela emisija - 1.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-1112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"svet":9,"politika":6,"hronika":1,"region":2,"drustvo":2}
+Categories: {"svet":10,"kultura":7,"zdravlje":6,"sport":12,"zivot":17,"ekonomija":9,"tehnologija":5,"hronika":3,"ostalo":7,"drustvo":1,"politika":2,"region":1}
+Uncategorized sample:
+- Šest nedelja od porođaja zasijala je u donjem vešu, pa poručila: "Ušivali su jastučiće u moje grudnjake" FOTO <https://superzena.b92.net/zivoti-poznatih/aktuelno/281682/barbara-palvin-o-povratku-na-pistu-sest-nedelja-nakon-porodjaja/vest> tags=["Najnovije"]
+- Novembar neće biti običan mesec: Jednom znaku donosi emotivne obrte i važne lekcije <https://superzena.b92.net/astro/aktuelno/281671/jedan-horoskopski-znak-u-novembru-dobija-nove-prilike-i-izazove/vest> tags=[]
+- Koja kola voze CS2 profesionalci? <https://www.b92.net/esports/cs2/281551/koja-kola-voze-cs2-profesionalci/vest> tags=[]
+- Spojila horor i seksepil: Zgodna Albanka u svom najizazovnijem izdanju FOTO <https://superzena.b92.net/zivoti-poznatih/aktuelno/281554/dua-lipa-za-noc-vestica-bila-nikad-izazovnija/vest> tags=[]
+- Lepa milijarderka zabrinula ljude: "Sama kost i koža, dajte joj nešto da jede" FOTO <https://superzena.b92.net/zivoti-poznatih/aktuelno/281561/nikola-pelc-ponovo-na-udaru-zbog-mrsavog-izgleda/vest> tags=[]
+- Da li znate šta je "teorija kutija"? Muškarci imaju ove tri kategorije za žene <https://superzena.b92.net/ljubav-i-strast/veze-i-odnosi/281658/sta-je-teorija-kutija/vest> tags=["Najnovije"]
 
 ### Blic
 Categories: {"zabava":25,"zdravlje":2,"hronika":6,"svet":8,"drustvo":5,"zivot":9,"politika":5,"ekonomija":8,"kultura":2}
@@ -82,4 +94,4 @@ Uncategorized sample:
 - Bivša saradnica Zelenskog govorila o zloupotrebama humanitarne pomoći <https://www.politika.rs/scc/clanak/799161/bivsa-saradnica-zelenskog-govorila-o-zloupotrebama-humanitarne-pomoci> tags=[]
 
 ### RTS
-Categories: {"region":2,"hronika":6,"drustvo":5,"ekonomija":3,"zivot":1,"politika":3}
+Categories: {"hronika":6,"region":2,"drustvo":5,"ekonomija":3,"zivot":1,"politika":3}
