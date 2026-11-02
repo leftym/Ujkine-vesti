@@ -1,6 +1,6 @@
 # Feed check
 
-Run: 2026-11-02T21:47:33.753Z
+Run: 2026-11-02T21:51:59.086Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
@@ -12,13 +12,13 @@ Run: 2026-11-02T21:47:33.753Z
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"politika":12,"drustvo":9,"svet":5,"region":4,"ostalo":3,"zivot":4,"ekonomija":7,"hronika":1}
+Categories: {"svet":6,"politika":11,"drustvo":9,"region":4,"ostalo":3,"zivot":4,"ekonomija":7,"hronika":1}
+- [svet] N1 u Izraelu: Ko bi mogao da formira novu vladu i koliku ulogu u tome imaju izbori u SAD
 - [politika] Udruženje iz Vrbasa podnelo krivičnu prijavu protiv dve osobe, tvrdi da su kupovale glasove za SNS
 - [politika] "Mogu da ti kažem, ali bez mikrofona": Meštani o tome kako je Zukorlićeva lista stigla od nula do 53 glasa u selu kod Aleksinca
 - [drustvo] Studenti u blokadi: Očekujemo obustavu radova na brzoj pruzi kroz Pantelej u Nišu
 - [svet] Netanjahu otvoren za formiranje "široke nacionalne vlade", pod uslovom da on bude na čelu
 - [region] Naloženo blokiranje još 104 veb-stranice za igre na sreću u S. Makedoniji
-- [ostalo] Utisak nedelje: Ognjen Radonjić, Vuk Cvijić, Vida Petrović Škero (1.11.2026)
   - flagged (self): Studio live, utorak u 12h: Vučićeva pomilovanja https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/
   - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
 
@@ -74,7 +74,7 @@ Uncategorized sample (for tuning):
 
 ## RTS
 Categories: {"hronika":7,"region":2,"drustvo":4,"ekonomija":3,"zivot":1,"politika":3}
-- [hronika] Uhapšen muškarac kod Kruševca zbog nasilja u porodici
+- [hronika] Uhapšen muškarac iz okoline Kruševca zbog nasilja u porodici
 - [hronika] Dijana Hrkalović među petoro pomilovanih Vučićevom odlukom - Viši sud u Beogradu objavio spisak
 - [region] Mladić iz Srbije nestao tokom uspona na Triglav, spasioci pronašli njegove stvari u snegu
 - [region] BiH: Šestorica Srba osuđena za ubistvo i deportaciju meštana iz Novoseoca 1992. godine
