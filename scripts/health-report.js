@@ -8,7 +8,7 @@ const { getNews } = require('../lib/aggregate');
 const { SOURCES } = require('../lib/sources');
 const { tokens } = require('../lib/text');
 
-const SOFT_PROMO = /\b(popust\w*|kupite|kupujte|ponuda|ponude|gratis|osvojite|nagradn\w*|rasprodaj\w*|jeftin\w*|povoljn\w*|besplatn\w*|promo\w*|sponzor\w*)\b/i;
+const SOFT_PROMO = /\b(popust\w*|kupite|kupujte|gratis|osvojite|nagradn\w*|rasprodaj\w*|jeftin\w*|povoljn\w*|besplatn\w*|promo\w*|sponzor\w*)\b/i;
 const STOPWORDS = new Set('koji koja koje kako nakon posle zbog gde kada sada jedan jedna novi nova nove godine danas juce'.split(' '));
 
 (async () => {

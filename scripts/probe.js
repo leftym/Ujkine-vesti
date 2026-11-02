@@ -65,6 +65,19 @@ const short = (s, n = 110) => String(s || '').replace(/\s+/g, ' ').slice(0, n);
   } else out('homepage fetch failed: ' + JSON.stringify(home));
   out('');
 
+  out('### B92 homepage markup samples (to find where story images live)');
+  if (typeof home === 'string') {
+    let n = 0;
+    for (const m of home.matchAll(/<a\b[^>]*href=["'][^"']+\/vest["'][^>]*>/gi)) {
+      if (n++ >= 4) break;
+      const start = m.index;
+      const end = home.indexOf('</a>', start) + 4;
+      out('```html', home.slice(Math.max(0, start - 500), Math.min(home.length, end + 100)).replace(/\s+/g, ' '), '```');
+    }
+    out('img tags on homepage: ' + (home.match(/<img\b/gi) || []).length + '; with data-src: ' + (home.match(/<img\b[^>]*data-src/gi) || []).length + '; picture/source: ' + (home.match(/<source\b/gi) || []).length);
+  }
+  out('');
+
   // ---- 2. YouTube ---------------------------------------------------------
   out('## YouTube');
   const YT = /(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/gi;
