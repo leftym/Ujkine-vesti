@@ -1,6 +1,6 @@
 # Feed check
 
-Run: 2026-11-02T21:28:45.427Z
+Run: 2026-11-02T21:31:23.074Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
@@ -12,13 +12,13 @@ Run: 2026-11-02T21:28:45.427Z
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"drustvo":9,"svet":5,"region":4,"ostalo":3,"zivot":4,"politika":12,"ekonomija":7,"hronika":1}
+Categories: {"politika":12,"drustvo":9,"svet":5,"region":4,"ostalo":3,"zivot":4,"ekonomija":7,"hronika":1}
+- [politika] "Mogu da ti kažem, ali bez mikrofona": Meštani o tome kako je Zukorlićeva lista stigla od nula do 53 glasa u selu kod Aleksinca
 - [drustvo] Studenti u blokadi: Očekujemo obustavu radova na brzoj pruzi kroz Pantelej u Nišu
 - [svet] Netanjahu otvoren za formiranje "široke nacionalne vlade", pod uslovom da on bude na čelu
 - [region] Naloženo blokiranje još 104 veb-stranice za igre na sreću u S. Makedoniji
 - [ostalo] Utisak nedelje: Ognjen Radonjić, Vuk Cvijić, Vida Petrović Škero (1.11.2026)
 - [drustvo] Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Krička prema studentima
-- [region] Šibenik se pesmom oprostio od Miša Kovača
   - flagged (self): Studio live, utorak u 12h: Vučićeva pomilovanja https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/
   - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
 
@@ -51,12 +51,12 @@ Categories: {"sport":14,"svet":9,"kultura":7,"zdravlje":6,"zivot":18,"ekonomija"
 
 ## Blic
 Categories: {"zabava":25,"zdravlje":2,"hronika":6,"svet":8,"drustvo":5,"zivot":9,"politika":5,"ekonomija":8,"kultura":2}
+- [zabava] POZNATA GLUMICA PREŠLA 42 KILOMETARA BICIKLOM KROZ BOKU KOTORSKU Pokazala da je u top formi i tačnu rutu kojom se kretala: Oduševila sve kondicijom
 - [zabava] PEVAČICA PROSLAVILA 45. ROĐENDAN Zbog ljubavi otišla iz Srbije, pa usledio razvod: "Nismo se razišli prijateljski"
 - [zabava] (VIDEO) "OTKRIVAJU MI POČETAK KANCERA MATERICE, A JA BEBU U STOMAKU" Ivana Šašić u suzama o najtežim borbama: "Imala sam dva carska i jednu operaciju za 10 meseci"
 - [zdravlje] Naučnici prvi put detaljno mapirali nerve klitorisa i došli do novog otkrića koje ih iznenadilo
 - [zabava] SIN ODBIO DA BUDE UZ MELINU NA NJEN POSEBAN DAN Ovo je kap koja je prelila čašu između njih: "Meni je stvarno žao, imam grižu savesti", Harisova bivša je ovako pričala o deci
 - [hronika] (FOTO) AKO JE VIDITE, ZOVITE POLICIJU - SLEDI I NAGRADA! Nišlijka sa misterioznim tetovažama krije tajnu plena od 40 MILIONA EVRA: Holandska policija nudi bogatstvo, a poslednji put je viđena u OVOM GRADU
-- [svet] HOĆE LI UKRAJINA OSTATI BEZ AMERIČKE PODRŠKE? Tramp pojačava pritisak, izbori donose prekretnicu
 
 ## Politika
 Categories: {"svet":7,"hronika":1,"ostalo":3,"sport":2,"politika":5,"kultura":2}
