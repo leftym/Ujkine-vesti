@@ -1,6 +1,6 @@
 # Vesti health report
 
-Run: 2026-11-02T21:29:04.980Z  |  items: 285  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-02T21:31:44.673Z  |  items: 285  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
 1. **LOW** [B92] Only 35% of items have an image. Check the raw feed for a non-standard image tag (as with RTS <thumb>).
@@ -9,12 +9,12 @@ Run: 2026-11-02T21:29:04.980Z  |  items: 285  |  front-page clusters: 10 (10 mul
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 45 | 0.2h | 100% | 7% | 2 |
+| N1 | yes | 45 | 0.0h | 100% | 7% | 2 |
 | Nova.rs | yes | 50 | 0.1h | 100% | 2% | 1 |
-| B92 | yes | 80 | 0.1h | 35% | 0% | 0 |
-| Blic | yes | 70 | 0.3h | 100% | 0% | 0 |
+| B92 | yes | 80 | 0.2h | 35% | 0% | 0 |
+| Blic | yes | 70 | 0.1h | 100% | 0% | 0 |
 | Politika | yes | 20 | 0.1h | 100% | 15% | 0 |
-| RTS | yes | 20 | 0.2h | 100% | 0% | 0 |
+| RTS | yes | 20 | 0.0h | 100% | 0% | 0 |
 
 ## Front page right now
 1. [multi, 4 outlets, score 46.1] Poštanska štedionica zatražila od NBS dodatni stručni nadzor u praćenju likvidnosti i finansijskih tokova
@@ -46,14 +46,13 @@ Run: 2026-11-02T21:29:04.980Z  |  items: 285  |  front-page clusters: 10 (10 mul
 9. [multi, 3 outlets, score 35.2] Vučić razgovarao sa izraelskim premijerom: "Netanjahu mi je zahvalio za dugogodišnju uspešnu saradnju"
    - also (politika): Vučić razgovarao sa Netanjahuom, izraelski premijer ga pozvao da poseti Izrael
    - also (blic): "POZVAO ME JE DA GA POSETIM U IZRAELU" Vučić razgovarao s Netanjahuom: "Uspeli smo da podignemo odnos dve zemlje na viši nivo"
-10. [multi, 3 outlets, score 34] Dijana Hrkalović među petoro pomilovanih Vučićevom odlukom - Viši sud u Beogradu objavio spisak
-   - also (rts): Viši sud u Novom Sadu saopštio 18 imena pomilovanih Vučićevom odlukom
-   - also (n1): Koga je sve Vučić pomilovao: "Porše" ekipa, Dijana Hrkalović, vozač koji je pregazio studentkinju...
-   - also (blic): Ovo je spisak pomilovanih u Višem sudu u Beogradu i Višem sudu u Novom Sadu
+10. [multi, 3 outlets, score 33.7] Đoković sutra protiv Vašeroa na startu u Parizu
+   - also (b92): Zabrinjavajuće scene pred start u Parizu: Đoković ima problem?! FOTO/VIDEO
+   - also (nova): Niko kao Đoković u Parizu, "paklen" put do titule i Torina
 
 ## Details
 ### N1
-Categories: {"drustvo":9,"svet":5,"region":4,"ostalo":3,"zivot":4,"politika":12,"ekonomija":7,"hronika":1}
+Categories: {"politika":12,"drustvo":9,"svet":5,"region":4,"ostalo":3,"zivot":4,"ekonomija":7,"hronika":1}
 Flagged:
 - (self) Studio live, utorak u 12h: Vučićeva pomilovanja <https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/>
 - (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
@@ -73,7 +72,7 @@ Uncategorized sample:
 Categories: {"sport":14,"svet":9,"kultura":7,"zdravlje":6,"zivot":18,"ekonomija":9,"tehnologija":5,"hronika":3,"zabava":5,"drustvo":1,"politika":2,"region":1}
 
 ### Blic
-Categories: {"zabava":25,"zdravlje":2,"hronika":6,"svet":8,"drustvo":5,"zivot":9,"politika":5,"ekonomija":8,"kultura":2}
+Categories: {"svet":9,"zabava":25,"zdravlje":2,"hronika":6,"drustvo":5,"zivot":9,"politika":5,"ekonomija":7,"kultura":2}
 
 ### Politika
 Categories: {"svet":7,"hronika":1,"ostalo":3,"sport":2,"politika":5,"kultura":2}
