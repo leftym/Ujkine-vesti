@@ -82,6 +82,13 @@ test('betting detection needs sport context', () => {
   assert.equal(detectAd({ url: 'https://x.rs/a', title: 'Nova kladionica nudi bonus dobrodošlice', categories: [] }), 'betting');
 });
 
+test('deep URL sections and promos', () => {
+  const { classify, detectAd } = require('../lib/classify');
+  assert.equal(classify({ url: 'https://www.politika.rs/scc/clanak/799150/sport/tenis/sasa-zverev', title: 'Saša Zverev srećan', categories: [] }), 'sport');
+  assert.equal(classify({ url: 'https://www.blic.rs/slobodno-vreme/x/abc', title: 'Islanđani se greju noću', categories: [] }), 'zivot');
+  assert.equal(detectAd({ url: 'https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik/', title: 'Gledajte Dnevnik u 19h', categories: [] }), 'self');
+});
+
 test('reader mode keeps body text, drops ads/teasers/nav', async () => {
   const u = 'https://www.rts.rs/vesti/politika/12345/budzet.html';
   const { status, body } = await get(server, '/api/article?url=' + encodeURIComponent(u));

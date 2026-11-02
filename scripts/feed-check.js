@@ -37,7 +37,8 @@ const { getNews } = require('../lib/aggregate');
       try {
         const xml = await defaultFetchText(st.feed);
         const m = xml.match(/<item\b[\s\S]*?<\/item>/i);
-        L.push('', 'No images found. First raw item:', '```xml', (m ? m[0] : xml).slice(0, 2500), '```');
+        const raw = (m ? m[0] : xml).replace(/<content:encoded>[\s\S]*?<\/content:encoded>/i, '<content:encoded>…</content:encoded>').replace(/<description>[\s\S]*?<\/description>/i, '<description>…</description>');
+        L.push('', 'No images found. First raw item (text bodies elided):', '```xml', raw.slice(0, 2500), '```');
       } catch (e) { L.push('raw fetch failed: ' + e.message); }
     }
     L.push('');
