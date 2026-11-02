@@ -50,8 +50,12 @@ test('aggregates, categorizes and flags ads', async () => {
   assert.ok(macura, 'homepage-only story is present');
   assert.equal(macura.title.startsWith('Priveden'), true, '"uživo" prefix removed');
   assert.equal(macura.category, 'hronika');
-  assert.ok(Math.abs(Date.parse(macura.published) - Date.parse('2026-11-02T13:00:00Z')) < 5 * 60e3, 'time interpolated between article numbers');
-  assert.equal(find(/NBS izdala obaveštenje/).category, 'ekonomija');
+  assert.ok(Math.abs(Date.parse(macura.published) - Date.parse('2026-11-02T20:45:00Z')) < 60e3, 'time from B92\'s own "45 min" label');
+  assert.equal(macura.image, 'https://www.b92.net/data/images/2026-11-02/1_kf.jpg?timestamp=1', 'photo taken from the homepage block');
+  assert.match(macura.summary, /detalje hapšenja/);
+  const nbs = find(/NBS izdala obaveštenje/);
+  assert.equal(nbs.category, 'ekonomija');
+  assert.ok(Math.abs(Date.parse(nbs.published) - Date.parse('2026-11-02T12:18:00Z')) < 5 * 60e3, 'plain-link fallback: time interpolated between article numbers');
   assert.equal(data.items.filter((i) => /referentni tekst o politici/.test(i.title)).length, 1, 'same story in feed and homepage is not duplicated');
   assert.ok(find(/referentni tekst o politici/).rank <= 2, 'rank is the best of feed position and homepage position');
 

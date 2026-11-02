@@ -43,10 +43,28 @@ No outlet publishes a "most read" feed, so importance is estimated (`lib/top.js`
 
 Tapping a story opens the **in-app reader**: headline, text and photos with scripts, ad blocks and "read also" teasers removed. "Otvori original" opens the real page as an in-app overlay (it still has the outlet's ads; use it only when the reader shows too little text).
 
-## Review agent
+## Video tab
+
+Latest videos from each outlet's official YouTube channel (public channel feeds, no API key; channel ids in `lib/videos.js`). Tapping a video opens it in the YouTube app. None of the outlets' news feeds contain YouTube links; videos embedded in an article show up in the reader as a red "Pogledaj video na YouTube-u" button.
+
+## Screen theme
+
+Follows the phone's light/dark setting by default. Settings > "Izgled ekrana" lets the reader force Light or Dark.
+
+## B92
+
+B92's feeds are thin ("Info" = world news for ~5h, "Najnovije" = last hour) and miss what B92 puts at the top of its homepage. The app merges both feeds and reads the homepage story blocks too (`lib/b92.js`: photo, description, "45 min" age).
+
+## Review agents
+
+Two read-only Claude agents live in `.claude/agents/`:
+- `vesti-reviewer`: feed health, ad flags, categories, front page, build status, from the daily CI reports.
+- `mobile-news-reviewer`: an experienced mobile-news product lead. Runs the app on phone-sized screens (tap targets, contrast, largest text, offline states, Serbian wording) and returns ranked fixes. Ask Claude Code in this repo: *"use the mobile-news-reviewer agent"*.
+
+### Daily health reports
 
 - GitHub Actions runs the **health report twice a day** (03:30 UTC = early morning in Serbia, 16:00 UTC = early morning in Hawaii) and on every push: feeds up/stale, images, uncategorized share, ad false positives/misses, front-page sanity. It lands on the `ci-logs` branch (`health.md`, `history/`).
-- `.claude/agents/vesti-reviewer.md` is a read-only Claude subagent. Ask Claude Code in this repo: *"use the vesti-reviewer agent"* and it reads those reports plus the code and returns a verdict, up to 5 ranked recommendations with proposed changes, and what to ignore.
+- Ask Claude Code in this repo: *"use the vesti-reviewer agent"* and it reads those reports plus the code and returns a verdict, up to 5 ranked recommendations with proposed changes, and what to ignore.
 
 ## Browser / PWA version (optional)
 
