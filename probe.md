@@ -1,6 +1,6 @@
 # Probe
 
-Run: 2026-11-02T21:31:23.131Z
+Run: 2026-11-02T21:34:32.548Z
 
 ## B92 feeds
 RSS directory page https://www.b92.net/info/rss/: 17839 bytes; feed-like links found: 0
@@ -29,7 +29,7 @@ RSS directory page https://www.b92.net/info/rss/: 17839 bytes; feed-like links f
     * "Mačak u šeširu" donosi više od nestašluka: Velika porodična avantura u bioskopima FOTO/VIDEO | 2026-11-02T20:59 | cats=["Najnovije"] | https://www.b92.net/kultura/filmtv/281670/film-macak-u-sesiru-u-ada-molu-i-druzenje-sa-glumcima/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 597828 bytes, 64 headline-like links
+homepage: 597823 bytes, 64 headline-like links
 - Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana  | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest | in feeds: vesti.xml,
 - Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest | in feeds: vesti.xml
 - Sekulović saslušan u tužilaštvu, predložen pritvor | https://www.b92.net/info/hronika/281659/sekulovic-saslusan-u-tuzilastvu-predlozen-pritvor/vest | in feeds: vesti.xml
@@ -64,7 +64,7 @@ homepage: 597828 bytes, 64 headline-like links
 ef="https://www.b92.net/svi-komentari/281680" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest"> <span data-upscore-title > Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO </span> </a></h2> <p class="news-item-description">Američki predsednik Donald Tramp završio je k
 ```
 ```html
- <p class="news-item-date"> 2.11.2026.</p> <p class="news-item-before-time"> <span class="before-time-number">45</span> <span class="before-time-text">min</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281675" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2024-05-07/24469_shutterstock-2369175167_s.webp?timestamp=1793652816" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2024-05-07/24469_shutterstock-2369175167_kf.jpg?timestamp=1793652816" alt="Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
+ <p class="news-item-date"> 2.11.2026.</p> <p class="news-item-before-time"> <span class="before-time-number">48</span> <span class="before-time-text">min</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281675" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2024-05-07/24469_shutterstock-2369175167_s.webp?timestamp=1793652816" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2024-05-07/24469_shutterstock-2369175167_kf.jpg?timestamp=1793652816" alt="Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
 ```
 ```html
  class="news-item-comments-number">0</a> <a href="https://www.b92.net/svi-komentari/281675" class="news-item-author"></a> </div> <div class="news-item-data"> <span class="news-item-category" style="color:#106DB9" > Pale se alarmi u SAD </span> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest"> <span data-upscore-title > Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada </span> </a></h2> <p class="news-item-description">Meteorolozi su predvideli da se sutra očekuje
