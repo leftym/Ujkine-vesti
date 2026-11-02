@@ -1,22 +1,18 @@
 # Vesti health report
 
-Run: 2026-11-02T20:01:46.493Z  |  items: 230  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-02T20:05:15.555Z  |  items: 230  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [Nova.rs] Possible ads NOT flagged: "Ko je priveo načelnika UKP Krička i po čijem nalogu? Penzionisani policijski general i advokat upozoravaju na sukob dve struje u MUP-u, ali i otvaraju pitanje motiva akcije"
-2. **LOW** [B92] Primary feed URL is dead; fallback https://www.b92.net/info/rss/vesti.xml is working. Make it the first entry in lib/sources.js so startup is faster.
-3. **LOW** [Blic] Possible ads NOT flagged: "(FOTO) VATROGASCI IZVLAČILI RADNIKA IZ RUPE DUBOKE 3 METRA Ovako je izgledala akcija spasavanja na gradilištu na Vračaru: Muškarac prevezen u Urgentni centar"
-4. **LOW** [Politika] Possible ads NOT flagged: "Mamdani: Agenti ICE nemaju pravo da koriste gradsku imovinu za svoje akcije"
-5. **LOW** [Front page] 10 multi-outlet clusters: confirm they are real matches, not over-merged (see list).
+- All checks passed. Nothing to do.
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
 | N1 | yes | 50 | 0.1h | 100% | 8% | 2 |
-| Nova.rs | yes | 50 | 0.0h | 100% | 2% | 1 |
+| Nova.rs | yes | 50 | 0.1h | 100% | 2% | 1 |
 | B92 | yes | 20 | 0.3h | 100% | 0% | 0 |
-| Blic | yes | 70 | 0.2h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.2h | 100% | 25% | 0 |
+| Blic | yes | 70 | 0.0h | 100% | 0% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 20% | 0 |
 | RTS | yes | 20 | 0.4h | 100% | 5% | 0 |
 
 ## Front page right now
@@ -56,14 +52,14 @@ Run: 2026-11-02T20:01:46.493Z  |  items: 230  |  front-page clusters: 10 (10 mul
 7. [multi, 3 outlets, score 37.3] Sekulović saslušan u tužilaštvu, predložen pritvor
    - also (blic): SASLUŠAN NAČELNIK SLUŽBE ZA SUZBIJANJE KRIMINALA Boško Sekulović izneo odbranu, tužilaštvo traži pritvor
    - also (politika): Sekulović saslušan u tužilaštvu, predložen pritvor
-8. [multi, 3 outlets, score 34.9] U HRVATSKOJ PROGLAŠEN DAN ŽALOSTI ZBOG SMRTI MIŠE KOVAČA Ispraćaj legendarnog pevača će trajati tri dana
+8. [multi, 3 outlets, score 33.8] U HRVATSKOJ PROGLAŠEN DAN ŽALOSTI ZBOG SMRTI MIŠE KOVAČA Ispraćaj legendarnog pevača će trajati tri dana
    - also (nova): Sutra u Hrvatskoj Dan žalosti zbog smrti Miše Kovača
    - also (n1): U Hrvatskoj u utorak Dan žalosti zbog smrti Miše Kovača
    - also (blic): Oglasila se ćerka Miše Kovača prvi put nakon njegove smrti: Podelila sećanje na oca
 9. [multi, 3 outlets, score 33.5] NBS oduzela dozvolu i platnoj instituciji Alta group DOO: Sredstva korisnika platnih usluga su zaštićena
    - also (nova): Oglasila se NBS: Objavljeno kako će biti zaštićeni korisnici Alta Group nakon oduzimanja dozvole
    - also (blic): NBS oduzela dozvolu i kompaniji ALTA GROUP: Evo šta to znači za korisnike
-10. [multi, 2 outlets, score 29] Nikolina Sinđelić za RTS: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
+10. [multi, 2 outlets, score 28.9] Nikolina Sinđelić za RTS: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
    - also (n1): Studentkinja Nikolina Sinđelić: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
 
 ## Details
@@ -89,16 +85,15 @@ Uncategorized sample:
 Categories: {"svet":7,"politika":6,"hronika":2,"region":2,"drustvo":3}
 
 ### Blic
-Categories: {"zivot":11,"svet":9,"zabava":20,"drustvo":6,"politika":6,"ekonomija":9,"hronika":6,"zdravlje":1,"kultura":2}
+Categories: {"svet":9,"zabava":21,"zivot":10,"drustvo":6,"politika":6,"ekonomija":9,"hronika":6,"zdravlje":1,"kultura":2}
 
 ### Politika
-Categories: {"politika":3,"ostalo":5,"kultura":1,"sport":2,"svet":2,"drustvo":2,"hronika":2,"ekonomija":3}
+Categories: {"kultura":2,"politika":4,"ostalo":4,"sport":1,"svet":2,"drustvo":2,"hronika":2,"ekonomija":3}
 Uncategorized sample:
 - Otkriveno novo veliko nalazište cirkona u Kini <https://www.politika.rs/scc/clanak/799166/otkriveno-novo-veliko-nalaziste-cirkona-u-kini> tags=[]
 - Bivša saradnica Zelenskog govorila o zloupotrebama humanitarne pomoći <https://www.politika.rs/scc/clanak/799161/bivsa-saradnica-zelenskog-govorila-o-zloupotrebama-humanitarne-pomoci> tags=[]
 - Lekorni naredne nedelje sa srednjoškolcima <https://www.politika.rs/scc/clanak/799160/lekorni-naredne-nedelje-sa-srednjoskolcima> tags=[]
 - Mamdani: Agenti ICE nemaju pravo da koriste gradsku imovinu za svoje akcije <https://www.politika.rs/scc/clanak/799152/mamdani-agenti-ice-nemaju-pravo-da-koriste-gradsku-imovinu-za-svoje-akcije> tags=[]
-- Saga o Šapcu i poznatim Šapčanima <https://www.politika.rs/scc/clanak/798905/saga-o-sapcu-i-poznatim-sapcanima> tags=[]
 
 ### RTS
 Categories: {"drustvo":5,"ekonomija":3,"hronika":6,"zivot":1,"politika":4,"ostalo":1}
