@@ -56,12 +56,12 @@ jobs:
             -PvName=1.0.${{ github.run_number }} 2>&1 | tee ../gradle.log
 
       - name: Name the APK
-        run: cp android/app/build/outputs/apk/release/app-release.apk Vesti.apk
+        run: cp android/app/build/outputs/apk/release/app-release.apk UjkineVesti.apk
 
       - uses: actions/upload-artifact@v4
         with:
-          name: Vesti-apk
-          path: Vesti.apk
+          name: UjkineVesti-apk
+          path: UjkineVesti.apk
 
       - name: Publish build summary to ci-logs branch
         if: always()
@@ -83,9 +83,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "v1.0.${{ github.run_number }}" Vesti.apk \
-            --title "Vesti 1.0.${{ github.run_number }}" \
-            --notes "Download Vesti.apk on the phone and open it to install (allow 'install unknown apps' for the browser if asked)." \
+          gh release create "v1.0.${{ github.run_number }}" UjkineVesti.apk \
+            --title "Ujkine Vesti 1.0.${{ github.run_number }}" \
+            --notes "Download UjkineVesti.apk on the phone and open it to install (allow 'install unknown apps' for the browser if asked)." \
             --latest
 
   feed-check:

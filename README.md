@@ -1,4 +1,4 @@
-# Vesti
+# Ujkine Vesti
 
 Filtered Serbian news on your phone: N1, Nova.rs, B92, Blic, Politika, RTS in one feed.
 Filter by outlet and category, hide sponsored/betting items, mute words, read articles without page ads.
@@ -23,8 +23,8 @@ The phone needs a URL to reach the server. Pick one:
 The app is the same UI, but the feeds are fetched on the phone itself (native HTTP, so no server and no CORS). Nothing to host.
 
 1. Create an empty **private** GitHub repo and push this folder to `main`.
-2. GitHub Actions (`.github/workflows/android.yml`) builds a signed `Vesti.apk` (about 5 min) and publishes it as a **Release**. Re-run any time from the Actions tab > "Run workflow".
-3. On the Samsung: open the repo's Releases page in Chrome, download `Vesti.apk`, open it. Android asks once to allow "install unknown apps" for Chrome; allow it.
+2. GitHub Actions (`.github/workflows/android.yml`) builds a signed `UjkineVesti.apk` (about 5 min) and publishes it as a **Release**. Re-run any time from the Actions tab > "Run workflow".
+3. On the Samsung: open the repo's Releases page in Chrome, download `UjkineVesti.apk`, open it. Android asks once to allow "install unknown apps" for Chrome; allow it.
 4. Updates: push a change, wait for the new release, download and open the new APK. It installs over the old one and keeps his settings (same signing key, rising version number).
 
 Text size: the big **A-** / **A+** buttons at the top (6 levels, default already larger than normal). Remembered.

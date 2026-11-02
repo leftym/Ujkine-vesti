@@ -1,5 +1,5 @@
 'use strict';
-const VERSION = 'vesti-v3';
+const VERSION = 'vesti-v4';
 const SHELL = ['/', '/style.css', '/app.js', '/manifest.webmanifest', '/icon.svg'];
 
 self.addEventListener('install', (e) => {

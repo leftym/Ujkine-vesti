@@ -1,6 +1,6 @@
 {
-  "name": "Vesti",
-  "short_name": "Vesti",
+  "name": "Ujkine Vesti",
+  "short_name": "Ujkine Vesti",
   "description": "Filtrirane vesti: N1, Nova.rs, B92, Blic, Politika, RTS",
   "lang": "sr",
   "start_url": "/",

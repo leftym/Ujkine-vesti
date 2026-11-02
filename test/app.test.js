@@ -5,6 +5,11 @@ const http = require('http');
 
 const { fetchText } = require('./mock');
 
+// Freeze the clock: fixtures are dated 2026-11-02 and the engine drops items older than 7 days,
+// so without this the tests would start failing a week after they were written.
+const FIXED_NOW = Date.parse('2026-11-02T21:30:00Z');
+Date.now = () => FIXED_NOW;
+
 const { createServer } = require('../server');
 const { clearCache } = require('../lib/aggregate');
 
@@ -36,9 +41,19 @@ test('aggregates, categorizes and flags ads', async () => {
   // per-source status
   const st = Object.fromEntries(data.status.map((s) => [s.id, s]));
   assert.ok(st.n1.ok && st.rts.ok && st.politika.ok && st.blic.ok);
-  assert.ok(st.b92.ok, 'b92 should be found by auto-discovery');
-  assert.match(st.b92.feed, /pronadjen\.xml$/);
-  assert.equal(st.nova.ok, false, 'nova is down in this test');
+  assert.ok(st.b92.ok);
+  assert.match(st.b92.feed, /b92\.net\/feed\/.*vesti\.xml.*homepage/, 'b92 uses both feeds and the homepage');
+  assert.ok(st.nova.ok && /alt\.xml$/.test(st.nova.feed), 'nova feed is found by auto-discovery');
+
+  // B92 homepage headlines that are in no feed are added, with section from the URL and an estimated time
+  const macura = find(/Priveden Davor Macura/);
+  assert.ok(macura, 'homepage-only story is present');
+  assert.equal(macura.title.startsWith('Priveden'), true, '"uživo" prefix removed');
+  assert.equal(macura.category, 'hronika');
+  assert.ok(Math.abs(Date.parse(macura.published) - Date.parse('2026-11-02T13:00:00Z')) < 5 * 60e3, 'time interpolated between article numbers');
+  assert.equal(find(/NBS izdala obaveštenje/).category, 'ekonomija');
+  assert.equal(data.items.filter((i) => /referentni tekst o politici/.test(i.title)).length, 1, 'same story in feed and homepage is not duplicated');
+  assert.ok(find(/referentni tekst o politici/).rank <= 2, 'rank is the best of feed position and homepage position');
 
   // N1 images + entity decoding
   assert.equal(by('n1').length, 4);
@@ -109,6 +124,8 @@ test('reader mode keeps body text, drops ads/teasers/nav', async () => {
   const imgs = art.blocks.filter((b) => b.t === 'img');
   assert.deepEqual(imgs.map((b) => b.src), ['https://www.rts.rs/media/sednica.jpg', 'https://www.rts.rs/media/second.jpg']);
   assert.match(imgs[0].text, /Sednica Vlade Srbije/);
+  const vids = art.blocks.filter((b) => b.t === 'video');
+  assert.deepEqual(vids.map((b) => b.id), ['dQw4w9WgXcQ'], 'YouTube embed kept, ad iframe dropped');
 });
 
 test('article proxy only fetches the six outlets (no SSRF)', async () => {
@@ -168,4 +185,30 @@ test('top stories: three generic word-roots are not enough to merge different st
   const macron = top.find((c) => c.ids.includes('m1'));
   assert.ok(macron && macron.ids.includes('m2'), 'real match still merges');
   assert.ok(!macron.ids.includes('g1'), 'gas story must stay separate');
+});
+
+test('video tab data: channel feeds, tolerant of one channel being down', async () => {
+  const { clearVideoCache } = require('../lib/videos');
+  clearVideoCache();
+  const { status, body } = await get(server, '/api/videos');
+  assert.equal(status, 200);
+  const v = JSON.parse(body);
+  const st = Object.fromEntries(v.status.map((s) => [s.source, s]));
+  assert.equal(st.blic.ok, false);
+  assert.ok(st.n1.ok && st.rts.ok && st.b92.ok);
+  const n1 = v.items.filter((i) => i.source === 'n1');
+  assert.equal(n1.length, 1, 'the 2-month-old video is dropped');
+  assert.equal(n1[0].title, 'Dnevnik 02.11.2026.', 'Cyrillic title transliterated');
+  assert.equal(n1[0].url, 'https://www.youtube.com/watch?v=AAAAAAAAAAA');
+  assert.match(n1[0].image, /^https:\/\/i1\.ytimg\.com\//);
+});
+
+test('B92 article numbers give time estimates', () => {
+  const { estimateTs, idOf } = require('../lib/b92');
+  assert.equal(idOf('https://www.b92.net/info/svet/281687/x/vest'), 281687);
+  assert.equal(idOf('https://www.b92.net/info/vesti/5/x'), null);
+  const known = [{ id: 100000, ts: 1000e3 }, { id: 100100, ts: 1000e3 + 6000e3 }];
+  assert.equal(estimateTs(100050, known, 8000e3), 1000e3 + 3000e3);
+  assert.ok(estimateTs(99900, known, 8000e3) < 1000e3, 'older ids extrapolate backwards');
+  assert.equal(estimateTs(100050, [], 777), 777, 'no reference points: now');
 });

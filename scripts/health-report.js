@@ -36,7 +36,7 @@ const STOPWORDS = new Set('koji koja koje kako nakon posle zbog gde kada sada je
 
     if (!st.ok) add('HIGH', s.name, `No working feed. Tried: ${(st.tried || []).join(' | ')}. Find the current RSS URL (page source: link rel=alternate) and put it first in lib/sources.js.`);
     else {
-      if (st.feed !== s.feeds[0]) add('LOW', s.name, `Primary feed URL is dead; fallback ${st.feed} is working. Make it the first entry in lib/sources.js so startup is faster.`);
+      if (!s.merge && st.feed !== s.feeds[0]) add('LOW', s.name, `Primary feed URL is dead; fallback ${st.feed} is working. Make it the first entry in lib/sources.js so startup is faster.`);
       if (n < 10) add('MED', s.name, `Only ${n} items in the feed; the outlet may have changed or truncated its feed.`);
       if (ageH > 8) add('MED', s.name, `Newest story is ${ageH.toFixed(1)}h old: feed may be stale or cached by the outlet.`);
       if (img < 80) add('LOW', s.name, `Only ${img}% of items have an image. Check the raw feed for a non-standard image tag (as with RTS <thumb>).`);

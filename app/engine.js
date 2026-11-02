@@ -7,6 +7,7 @@ const { getNews } = require('../lib/aggregate');
 const { CATEGORIES } = require('../lib/classify');
 const { extractArticle } = require('../lib/article');
 const { SOURCES } = require('../lib/sources');
+const { getVideos } = require('../lib/videos');
 
 const CACHE_KEY = 'vesti.cache.v1';
 const UA = 'Mozilla/5.0 (Linux; Android 14; SM-S921B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Mobile Safari/537.36';
@@ -85,4 +86,18 @@ async function article(url) {
   return art;
 }
 
-window.VestiEngine = { news, article };
+const VIDEO_KEY = 'vesti.videos.v1';
+async function videos(force) {
+  const data = await getVideos(fetchText, { force });
+  if (data.items.length) {
+    try { localStorage.setItem(VIDEO_KEY, JSON.stringify(data)); } catch { /* storage full */ }
+    return { data, fromCache: false };
+  }
+  try {
+    const cached = JSON.parse(localStorage.getItem(VIDEO_KEY) || 'null');
+    if (cached) return { data: cached, fromCache: true };
+  } catch { /* ignore */ }
+  return { data, fromCache: false };
+}
+
+window.VestiEngine = { news, article, videos };

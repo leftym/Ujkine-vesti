@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+<title>Kanal</title>
+<entry><id>yt:video:AAAAAAAAAAA</id><yt:videoId>AAAAAAAAAAA</yt:videoId><title>Дневник 02.11.2026.</title><link rel="alternate" href="https://www.youtube.com/watch?v=AAAAAAAAAAA"/><published>2026-11-02T19:00:00+00:00</published><media:group><media:title>x</media:title><media:thumbnail url="https://i1.ytimg.com/vi/AAAAAAAAAAA/hqdefault.jpg" width="480" height="360"/></media:group></entry>
+<entry><id>yt:video:BBBBBBBBBBB</id><yt:videoId>BBBBBBBBBBB</yt:videoId><title>Stari snimak</title><link rel="alternate" href="https://www.youtube.com/watch?v=BBBBBBBBBBB"/><published>2026-09-01T10:00:00+00:00</published><media:group><media:thumbnail url="https://i1.ytimg.com/vi/BBBBBBBBBBB/hqdefault.jpg"/></media:group></entry>
+</feed>

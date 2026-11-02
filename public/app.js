@@ -6,11 +6,14 @@
   const PAGE = 40;
 
   const SCALES = [1, 1.15, 1.3, 1.5, 1.75, 2];
-  const DEFAULTS = { fs: 2, sources: [], cats: [], q: '', hideAds: true, hideBetting: true, reader: true, muted: '' };
+  const DEFAULTS = { theme: 'auto', fs: 2, sources: [], cats: [], q: '', hideAds: true, hideBetting: true, reader: true, muted: '' };
   let S = loadSettings();
   let DATA = null;
   let fromCache = false;
   let shown = PAGE;
+  let VIDEOS = null;
+  let view = 'news';
+  let videosFromCache = false;
 
   const NATIVE = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform() && window.VestiEngine);
   const api = {
@@ -19,6 +22,12 @@
       const r = await fetch('/api/news' + (force ? '?refresh=1' : ''));
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return { data: await r.json(), fromCache: r.headers.get('x-from-cache') === '1' };
+    },
+    async videos(force) {
+      if (NATIVE) return window.VestiEngine.videos(force);
+      const r = await fetch('/api/videos' + (force ? '?refresh=1' : ''));
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return { data: await r.json(), fromCache: false };
     },
     async article(url) {
       if (NATIVE) return window.VestiEngine.article(url);
@@ -33,6 +42,13 @@
   }
   function saveSettings() {
     try { localStorage.setItem(KEY, JSON.stringify(S)); } catch { /* private mode */ }
+  }
+
+  function applyTheme() {
+    if (!['auto', 'light', 'dark'].includes(S.theme)) S.theme = 'auto';
+    // auto = no attribute: CSS follows the phone's light/dark setting
+    if (S.theme === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', S.theme);
   }
 
   function applyFs() {
@@ -171,6 +187,93 @@
     return a;
   }
 
+  // Open a link outside the app. On the phone this hands YouTube links to the YouTube app if installed.
+  function openExternal(url) {
+    const P = window.Capacitor && window.Capacitor.Plugins;
+    if (NATIVE && P && P.AppLauncher && P.AppLauncher.openUrl) {
+      P.AppLauncher.openUrl({ url }).catch(() => { if (P.Browser && P.Browser.open) P.Browser.open({ url }); });
+    } else if (NATIVE && P && P.Browser && P.Browser.open) {
+      P.Browser.open({ url });
+    } else {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  }
+
+  function videoCard(v) {
+    const src = DATA.sources.find((s) => s.id === v.source);
+    const a = el('article', 'vcard');
+    a.tabIndex = 0;
+    a.setAttribute('role', 'link');
+    const th = el('div', 'thumb');
+    const img = el('img');
+    img.src = v.image; img.alt = ''; img.loading = 'lazy'; img.referrerPolicy = 'no-referrer';
+    img.addEventListener('error', () => img.remove());
+    th.append(img, el('span', 'play', '▶'));
+    const body = el('div', 'body');
+    const meta = el('div', 'meta');
+    const s = el('span', 'src');
+    const dot = el('span', 'dot');
+    dot.style.setProperty('--c', src ? src.color : '#888');
+    s.append(dot, src ? src.name : v.source);
+    meta.append(s, el('span', null, ago(v.published)));
+    body.append(meta, el('h2', null, v.title));
+    a.append(th, body);
+    const open = () => openExternal(v.url);
+    a.addEventListener('click', open);
+    a.addEventListener('keydown', (e) => { if (e.key === 'Enter') open(); });
+    return a;
+  }
+
+  function renderVideos() {
+    renderChips();
+    const box = $('#list');
+    box.replaceChildren();
+    const st = $('#status');
+    st.replaceChildren();
+    if (!VIDEOS) { st.append('Učitavanje videa…'); $('#more').hidden = true; return; }
+    const q = fold(S.q.trim());
+    const list = VIDEOS.items.filter((v) =>
+      (!S.sources.length || S.sources.includes(v.source)) && (!q || fold(v.title).includes(q)));
+    const t = new Date(VIDEOS.updatedAt).toLocaleTimeString('sr-RS', { hour: '2-digit', minute: '2-digit' });
+    st.append((videosFromCache ? 'Offline · sačuvano ' : 'Ažurirano ') + t + ' · ' + list.length + ' snimaka');
+    const bad = VIDEOS.status.filter((x) => !x.ok).map((x) => (DATA.sources.find((s) => s.id === x.source) || { name: x.source }).name);
+    if (bad.length) st.append(el('span', 'warn', ' · nedostupno: ' + bad.join(', ')));
+
+    const yt = el('button', 'ytopen', '▶  Otvori YouTube');
+    yt.type = 'button';
+    yt.addEventListener('click', () => openExternal('https://www.youtube.com/'));
+    box.append(yt);
+    if (!list.length) box.append(el('div', 'empty', 'Nema snimaka za izabrane filtere.'));
+    for (const v of list.slice(0, shown)) box.append(videoCard(v));
+    $('#more').hidden = list.length <= shown;
+  }
+
+  async function loadVideos(force) {
+    const btn = $('#refresh');
+    btn.classList.add('spin');
+    try {
+      const res = await api.videos(force);
+      VIDEOS = res.data;
+      videosFromCache = res.fromCache;
+    } catch (e) {
+      if (!VIDEOS) $('#status').textContent = 'Ne mogu da učitam video. Proveri vezu i pokušaj ponovo.';
+    } finally {
+      btn.classList.remove('spin');
+      if (view === 'video') render();
+    }
+  }
+
+  function setView(v) {
+    view = v;
+    $('#tabNews').setAttribute('aria-pressed', String(v === 'news'));
+    $('#tabVideo').setAttribute('aria-pressed', String(v === 'video'));
+    $('#catChips').hidden = v === 'video';
+    shown = PAGE;
+    if (v === 'video' && !VIDEOS) loadVideos(false);
+    render();
+    window.scrollTo({ top: 0 });
+  }
+
   function topSection(byId, hiddenOk) {
     const sec = el('section', 'topnews');
     sec.append(el('h3', null, 'Najvažnije danas'));
@@ -203,6 +306,7 @@
 
   function render() {
     if (!DATA) return;
+    if (view === 'video') { renderVideos(); return; }
     renderChips();
     const { list: all, adsRemoved } = filtered();
     const box = $('#list');
@@ -285,6 +389,12 @@
           fig.append(im);
           if (b.text) fig.append(el('figcaption', null, b.text));
           body.append(fig);
+        } else if (b.t === 'video') {
+          if (!/^[\w-]{11}$/.test(b.id)) continue;
+          const btn = el('button', 'ytbtn', '▶  Pogledaj video na YouTube-u');
+          btn.type = 'button';
+          btn.addEventListener('click', () => openExternal('https://www.youtube.com/watch?v=' + b.id));
+          body.append(btn);
         } else {
           body.append(el(b.t === 'h' ? 'h3' : 'p', null, b.text));
         }
@@ -314,6 +424,10 @@
 
   function bindSettings() {
     const ads = $('#optAds'), bet = $('#optBetting'), rd = $('#optReader'), mu = $('#optMuted');
+    for (const r of document.querySelectorAll('input[name="theme"]')) {
+      r.checked = r.value === S.theme;
+      r.addEventListener('change', () => { if (r.checked) { S.theme = r.value; applyTheme(); saveSettings(); } });
+    }
     ads.checked = S.hideAds; bet.checked = S.hideBetting; rd.checked = S.reader; mu.value = S.muted;
     ads.addEventListener('change', () => { S.hideAds = ads.checked; changed(); });
     bet.addEventListener('change', () => { S.hideBetting = bet.checked; changed(); });
@@ -340,7 +454,9 @@
     clearTimeout(qTimer);
     qTimer = setTimeout(() => { S.q = q.value; changed(); }, 180);
   });
-  $('#refresh').addEventListener('click', () => load(true));
+  $('#refresh').addEventListener('click', () => (view === 'video' ? loadVideos(true) : load(true)));
+  $('#tabNews').addEventListener('click', () => setView('news'));
+  $('#tabVideo').addEventListener('click', () => setView('video'));
   $('#more').addEventListener('click', () => { shown += PAGE; render(); });
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible' && DATA && Date.now() - Date.parse(DATA.updatedAt) > 5 * 60 * 1000) load(false);
@@ -349,6 +465,7 @@
   $('#fsDown').addEventListener('click', () => { S.fs--; applyFs(); saveSettings(); });
   $('#fsUp').addEventListener('click', () => { S.fs++; applyFs(); saveSettings(); });
   applyFs();
+  applyTheme();
 
   bindSettings();
   load(false);

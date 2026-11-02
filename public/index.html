@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
-<title>Vesti</title>
+<title>Ujkine Vesti</title>
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/icon-192.png">
@@ -13,7 +13,7 @@
 </head>
 <body>
 <header class="top">
-  <h1>Vesti</h1>
+  <h1>Ujkine Vesti</h1>
   <div class="actions">
     <button id="fsDown" class="icon txt" aria-label="Manja slova">A&minus;</button>
     <button id="fsUp" class="icon txt" aria-label="Veća slova">A+</button>
@@ -25,6 +25,11 @@
     </button>
   </div>
 </header>
+
+<nav class="tabs" aria-label="Prikaz">
+  <button id="tabNews" class="tab" type="button" aria-pressed="true">Vesti</button>
+  <button id="tabVideo" class="tab" type="button" aria-pressed="false">Video</button>
+</nav>
 
 <div class="filters">
   <div class="chips" id="srcChips" role="group" aria-label="Izvori"></div>
@@ -54,6 +59,12 @@
     </button>
   </div>
   <div class="settings-body">
+    <fieldset class="theme">
+      <legend>Izgled ekrana</legend>
+      <label class="row"><input type="radio" name="theme" value="auto"> <span>Kao telefon (automatski)</span></label>
+      <label class="row"><input type="radio" name="theme" value="light"> <span>Svetao</span></label>
+      <label class="row"><input type="radio" name="theme" value="dark"> <span>Taman</span></label>
+    </fieldset>
     <label class="row"><input type="checkbox" id="optAds"> <span>Sakrij oglase i sponzorisane tekstove</span></label>
     <label class="row"><input type="checkbox" id="optBetting"> <span>Sakrij kladionice i kvote</span></label>
     <label class="row"><input type="checkbox" id="optReader"> <span>Čitaj u aplikaciji (bez reklama)</span></label>

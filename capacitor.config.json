@@ -1,6 +1,6 @@
 {
   "appId": "app.vesti.news",
-  "appName": "Vesti",
+  "appName": "Ujkine Vesti",
   "webDir": "www",
   "server": { "androidScheme": "https" },
   "android": { "allowMixedContent": false }

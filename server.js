@@ -1,6 +1,7 @@
 'use strict';
 // Vesti: zero-dependency Node server. Serves the PWA and two JSON endpoints:
 //   GET /api/news[?refresh=1]      merged, categorized feed from all six outlets
+//   GET /api/videos[?refresh=1]    latest videos from the outlets' YouTube channels
 //   GET /api/article?url=...       reader-mode text for an article (allow-listed hosts only)
 
 const http = require('http');
@@ -8,6 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const { SOURCES } = require('./lib/sources');
 const { getNews } = require('./lib/aggregate');
+const { getVideos } = require('./lib/videos');
 const { CATEGORIES } = require('./lib/classify');
 const { extractArticle } = require('./lib/article');
 
@@ -75,6 +77,10 @@ function createServer({ fetchText = defaultFetchText } = {}) {
       if (url.pathname === '/api/news') {
         const data = await getNews(fetchText, { force: url.searchParams.get('refresh') === '1' });
         return sendJson(res, 200, { ...data, categories: CATEGORIES });
+      }
+
+      if (url.pathname === '/api/videos') {
+        return sendJson(res, 200, await getVideos(fetchText, { force: url.searchParams.get('refresh') === '1' }));
       }
 
       if (url.pathname === '/api/article') {
