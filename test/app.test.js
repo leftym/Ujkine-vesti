@@ -89,6 +89,8 @@ test('aggregates, categorizes and flags ads', async () => {
   assert.equal(data.top[0].kind, 'multi');
   assert.deepEqual([...data.top[0].sources].sort(), ['b92', 'n1', 'politika']);
 
+  assert.ok(!data.items.some((i) => /\/english\//.test(i.url)), "N1's English edition is excluded");
+
   // sorted newest first
   const ts = data.items.map((i) => i.published);
   assert.deepEqual(ts, [...ts].sort().reverse());

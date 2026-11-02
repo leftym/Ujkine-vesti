@@ -54,8 +54,8 @@
   function applyFs() {
     S.fs = Math.min(SCALES.length - 1, Math.max(0, Number(S.fs) || 0));
     document.documentElement.style.setProperty('--fs', SCALES[S.fs]);
-    $('#fsDown').disabled = S.fs === 0;
-    $('#fsUp').disabled = S.fs === SCALES.length - 1;
+    for (const id of ['#fsDown', '#rFsDown']) $(id).disabled = S.fs === 0;
+    for (const id of ['#fsUp', '#rFsUp']) $(id).disabled = S.fs === SCALES.length - 1;
   }
 
   const fold = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'dj');
@@ -142,8 +142,8 @@
     const st = $('#status');
     st.replaceChildren();
     const t = new Date(DATA.updatedAt).toLocaleTimeString('sr-RS', { hour: '2-digit', minute: '2-digit' });
-    const parts = [(fromCache ? 'Offline · sačuvano ' : 'Ažurirano ') + t, count + ' vesti'];
-    if (adsRemoved) parts.push('uklonjeno ' + adsRemoved);
+    const parts = [(fromCache ? 'Bez interneta · sačuvano u ' : 'Ažurirano u ') + t, count + ' vesti'];
+    if (adsRemoved) parts.push('sakriveno ' + adsRemoved);
     st.append(parts.join(' · '));
     const bad = DATA.status.filter((x) => !x.ok).map((x) => DATA.sources.find((s) => s.id === x.id).name);
     if (bad.length) {
@@ -235,7 +235,7 @@
     const list = VIDEOS.items.filter((v) =>
       (!S.sources.length || S.sources.includes(v.source)) && (!q || fold(v.title).includes(q)));
     const t = new Date(VIDEOS.updatedAt).toLocaleTimeString('sr-RS', { hour: '2-digit', minute: '2-digit' });
-    st.append((videosFromCache ? 'Offline · sačuvano ' : 'Ažurirano ') + t + ' · ' + list.length + ' snimaka');
+    st.append((videosFromCache ? 'Bez interneta · sačuvano u ' : 'Ažurirano u ') + t + ' · ' + list.length + ' snimaka');
     const bad = VIDEOS.status.filter((x) => !x.ok).map((x) => (DATA.sources.find((s) => s.id === x.source) || { name: x.source }).name);
     if (bad.length) st.append(el('span', 'warn', ' · nedostupno: ' + bad.join(', ')));
 
@@ -284,7 +284,7 @@
       const wrap = el('div', 'tgroup' + (n === 0 ? ' hero' : ''));
       wrap.append(card(lead));
       const row = el('div', 'outlets');
-      row.append(el('span', 'lbl', c.kind === 'multi' ? 'Pišu (' + c.outlets + '):' : 'Izdvaja:'));
+      row.append(el('span', 'lbl', c.kind === 'multi' ? 'Javljaju (' + c.outlets + '):' : 'Javlja:'));
       for (const id of c.ids) {
         const it = byId.get(id);
         if (!it) continue;
@@ -304,12 +304,27 @@
     return n ? sec : null;
   }
 
+  function showNoNews() {
+    const box = $('#list');
+    box.replaceChildren();
+    $('#status').textContent = '';
+    const wrap = el('div', 'empty');
+    wrap.append(el('p', null, 'Nema internet veze, ili vesti trenutno nisu dostupne. Vesti će se pojaviti čim se veza vrati.'));
+    const retry = el('button', 'btn big', 'Pokušaj ponovo');
+    retry.type = 'button';
+    retry.addEventListener('click', () => load(true));
+    wrap.append(retry);
+    box.append(wrap);
+    $('#more').hidden = true;
+  }
+
   function render() {
     if (!DATA) return;
     if (view === 'video') { renderVideos(); return; }
     renderChips();
-    const { list: all, adsRemoved } = filtered();
     const box = $('#list');
+    if (!DATA.items.length) { showNoNews(); return; }
+    const { list: all, adsRemoved } = filtered();
     box.replaceChildren();
 
     // front page: most important stories first (only when no filter/search is active)
@@ -348,13 +363,20 @@
     const btn = $('#refresh');
     btn.classList.add('spin');
     try {
-      const res = await api.news(force);
+      const res = await Promise.race([
+        api.news(force),
+        new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 30000)),
+      ]);
       fromCache = res.fromCache;
       DATA = res.data;
       render();
       renderDiag();
     } catch (e) {
-      if (!DATA) $('#status').textContent = 'Ne mogu da učitam vesti. Proveri vezu i pokušaj ponovo.';
+      if (!DATA) showNoNews();
+      else {
+        const st = $('#status');
+        st.replaceChildren(el('span', 'warn', 'Osvežavanje nije uspelo. Prikazane su ranije vesti.'));
+      }
     } finally {
       btn.classList.remove('spin');
     }
@@ -402,7 +424,7 @@
     } catch {
       body.replaceChildren(
         el('h1', null, it.title),
-        el('p', 'note', 'Tekst nije moguće izdvojiti (sajt možda traži pretplatu). Otvori original gore.'),
+        el('p', 'note', 'Tekst nije moguće prikazati (sajt možda traži pretplatu). Dodirni „Otvori original“ gore.'),
       );
     }
   }
@@ -415,7 +437,7 @@
       const name = DATA.sources.find((s) => s.id === st.id).name;
       const li = el('li');
       li.append(el('strong', null, name + ' '));
-      li.append(el('span', st.ok ? 'ok' : 'bad', st.ok ? 'radi · ' + st.count : st.stale ? 'greška (stari podaci)' : 'ne radi'));
+      li.append(el('span', st.ok ? 'ok' : 'bad', st.ok ? 'radi (' + st.count + ' vesti)' : st.stale ? 'greška (stari podaci)' : 'ne radi'));
       if (st.ok && st.feed) li.append(el('small', null, st.feed));
       if (!st.ok && st.tried && st.tried.length) li.append(el('small', null, st.tried.join('  •  ')));
       ul.append(li);
@@ -462,8 +484,9 @@
     if (document.visibilityState === 'visible' && DATA && Date.now() - Date.parse(DATA.updatedAt) > 5 * 60 * 1000) load(false);
   });
 
-  $('#fsDown').addEventListener('click', () => { S.fs--; applyFs(); saveSettings(); });
-  $('#fsUp').addEventListener('click', () => { S.fs++; applyFs(); saveSettings(); });
+  const bumpFs = (d) => { S.fs += d; applyFs(); saveSettings(); };
+  for (const id of ['#fsDown', '#rFsDown']) $(id).addEventListener('click', () => bumpFs(-1));
+  for (const id of ['#fsUp', '#rFsUp']) $(id).addEventListener('click', () => bumpFs(1));
   applyFs();
   applyTheme();
 
@@ -476,7 +499,11 @@
     if (App && App.addListener) {
       App.addListener('backButton', () => {
         const open = document.querySelector('dialog[open]');
-        if (open) open.close(); else if (App.minimizeApp) App.minimizeApp(); else App.exitApp();
+        if (open) open.close();
+        else if (view === 'video') setView('news');
+        else if (S.sources.length || S.cats.length || S.q) { S.sources = []; S.cats = []; S.q = ''; q.value = ''; changed(); }
+        else if (window.scrollY > 50) window.scrollTo({ top: 0, behavior: 'smooth' });
+        else if (App.minimizeApp) App.minimizeApp(); else App.exitApp();
       });
     }
   } else if ('serviceWorker' in navigator) {
