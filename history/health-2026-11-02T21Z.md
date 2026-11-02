@@ -1,6 +1,6 @@
 # Vesti health report
 
-Run: 2026-11-02T21:47:54.826Z  |  items: 285  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-02T21:52:21.971Z  |  items: 285  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
 1. **LOW** [B92] Possible ads NOT flagged: "Evo kako da uštedite ako planirate skijanje u Srbiji: Do ovog datuma traje popust"
@@ -8,15 +8,15 @@ Run: 2026-11-02T21:47:54.826Z  |  items: 285  |  front-page clusters: 10 (10 mul
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 45 | 0.1h | 100% | 7% | 2 |
+| N1 | yes | 45 | 0.0h | 100% | 7% | 2 |
 | Nova.rs | yes | 50 | 0.4h | 100% | 2% | 1 |
 | B92 | yes | 80 | 0.0h | 95% | 0% | 0 |
 | Blic | yes | 70 | 0.2h | 100% | 0% | 0 |
 | Politika | yes | 20 | 0.2h | 100% | 15% | 0 |
-| RTS | yes | 20 | 0.0h | 100% | 0% | 0 |
+| RTS | yes | 20 | 0.1h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 4 outlets, score 49] Uhapšen muškarac kod Kruševca zbog nasilja u porodici
+1. [multi, 4 outlets, score 49] Uhapšen muškarac iz okoline Kruševca zbog nasilja u porodici
    - also (b92): Uhapšen muškarac kod Kruševca: Sumnja se da je vanbračnu suprugu tukao rukama i nogama
    - also (politika): Uhapšen Kruševljanin, tukao vanbračnu suprugu
    - also (blic): SUPRUGU ŠUTIRAO PO GLAVI I TELU Užas u Kruševcu: Muškarac uhapšen zbog nasilja u porodici
@@ -41,20 +41,19 @@ Run: 2026-11-02T21:47:54.826Z  |  items: 285  |  front-page clusters: 10 (10 mul
 7. [multi, 3 outlets, score 36.8] Nikolina Sinđelić za RTS: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
    - also (nova): Studentkinja Nikolina Sinđelić više od godinu dana nije saslušana po prijavi protiv Marka Kričaka
    - also (n1): Studentkinja Nikolina Sinđelić: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
-8. [multi, 3 outlets, score 35.1] RIK doneo rešenja o izmenama biračkih odbora za izbore za članove saveta nacionalnih manjina
+8. [multi, 3 outlets, score 34.6] RIK doneo rešenja o izmenama biračkih odbora za izbore za članove saveta nacionalnih manjina
    - also (nova): RIK: Na izborima za savete nacionalnih manjina 204 posmatrača, predaja izbornog materijala od sutra
    - also (n1): RIK: Na izborima za savete nacionalnih manjina 204 posmatrača, predaja izbornog materijala od sutra
-9. [multi, 3 outlets, score 34.6] Vučić razgovarao sa izraelskim premijerom: "Netanjahu mi je zahvalio za dugogodišnju uspešnu saradnju"
+9. [multi, 3 outlets, score 34.1] Vučić razgovarao sa izraelskim premijerom: "Netanjahu mi je zahvalio za dugogodišnju uspešnu saradnju"
    - also (politika): Vučić razgovarao sa Netanjahuom, izraelski premijer ga pozvao da poseti Izrael
    - also (blic): "POZVAO ME JE DA GA POSETIM U IZRAELU" Vučić razgovarao s Netanjahuom: "Uspeli smo da podignemo odnos dve zemlje na viši nivo"
-10. [multi, 3 outlets, score 33.9] Dijana Hrkalović među petoro pomilovanih Vučićevom odlukom - Viši sud u Beogradu objavio spisak
-   - also (rts): Viši sud u Novom Sadu saopštio 18 imena pomilovanih Vučićevom odlukom
-   - also (b92): Viši sud u Beogradu objavio imena petoro pomilovanih u postupcima pred tim sudom
-   - also (blic): Ovo je spisak pomilovanih u Višem sudu u Beogradu i Višem sudu u Novom Sadu
+10. [multi, 3 outlets, score 33.6] Đoković sutra protiv Vašeroa na startu u Parizu
+   - also (b92): Zabrinjavajuće scene pred start u Parizu: Đoković ima problem?! FOTO/VIDEO
+   - also (nova): Niko kao Đoković u Parizu, "paklen" put do titule i Torina
 
 ## Details
 ### N1
-Categories: {"politika":12,"drustvo":9,"svet":5,"region":4,"ostalo":3,"zivot":4,"ekonomija":7,"hronika":1}
+Categories: {"svet":6,"politika":11,"drustvo":9,"region":4,"ostalo":3,"zivot":4,"ekonomija":7,"hronika":1}
 Flagged:
 - (self) Studio live, utorak u 12h: Vučićeva pomilovanja <https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/>
 - (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
@@ -71,7 +70,7 @@ Uncategorized sample:
 - Dnevnik - Cela emisija - 1.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-1112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"sport":13,"svet":11,"zivot":16,"kultura":4,"hronika":3,"zdravlje":3,"zabava":6,"ekonomija":9,"tehnologija":4,"drustvo":3,"politika":6,"region":2}
+Categories: {"svet":12,"sport":13,"zivot":16,"kultura":4,"hronika":3,"zdravlje":3,"ekonomija":9,"tehnologija":4,"zabava":6,"drustvo":2,"politika":6,"region":2}
 
 ### Blic
 Categories: {"hronika":7,"zivot":8,"svet":9,"zabava":25,"zdravlje":2,"drustvo":5,"politika":5,"ekonomija":7,"kultura":2}
