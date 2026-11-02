@@ -8,7 +8,7 @@ const { parseFeed, discoverFeeds } = require('../lib/rss');
 const { SOURCES } = require('../lib/sources');
 
 const L = [];
-const out = (s = '') => L.push(s);
+const out = (...a) => { if (!a.length) L.push(''); a.forEach((x) => L.push(x)); };
 const safe = async (fn, fallback = null) => { try { return await fn(); } catch (e) { return fallback === null ? { __err: e.code || e.message } : fallback; } };
 const short = (s, n = 110) => String(s || '').replace(/\s+/g, ' ').slice(0, n);
 
