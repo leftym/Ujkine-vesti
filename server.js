@@ -113,4 +113,4 @@ if (require.main === module) {
   createServer().listen(port, '0.0.0.0', () => console.log('Vesti listening on :' + port));
 }
 
-module.exports = { createServer };
+module.exports = { createServer, defaultFetchText };

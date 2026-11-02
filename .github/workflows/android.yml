@@ -42,12 +42,13 @@ jobs:
           npx cap sync android
 
       - name: Build signed release APK
+        shell: bash
         working-directory: android
         run: |
           chmod +x gradlew
-          ./gradlew assembleRelease --no-daemon \
+          ./gradlew assembleRelease --no-daemon --console=plain \
             -PvCode=${{ github.run_number }} \
-            -PvName=1.0.${{ github.run_number }}
+            -PvName=1.0.${{ github.run_number }} 2>&1 | tee ../gradle.log
 
       - name: Name the APK
         run: cp android/app/build/outputs/apk/release/app-release.apk Vesti.apk
@@ -57,6 +58,22 @@ jobs:
           name: Vesti-apk
           path: Vesti.apk
 
+      - name: Publish build summary to ci-logs branch
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          {
+            echo "# APK build run ${{ github.run_number }}: $JOB_STATUS"
+            echo "commit: ${{ github.sha }}"
+            echo
+            echo '```'
+            tail -n 150 gradle.log 2>/dev/null || echo "(no gradle log: build did not get that far)"
+            echo '```'
+          } > apk-build.md
+          scripts/publish-ci-log.sh apk-build.md apk-build.md
+
       - name: Publish release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -65,3 +82,19 @@ jobs:
             --title "Vesti 1.0.${{ github.run_number }}" \
             --notes "Download Vesti.apk on the phone and open it to install (allow 'install unknown apps' for the browser if asked)." \
             --latest
+
+  feed-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check the six live feeds
+        run: node scripts/feed-check.js feed-check.md
+      - name: Publish report to ci-logs branch
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/publish-ci-log.sh feed-check.md feed-check.md
