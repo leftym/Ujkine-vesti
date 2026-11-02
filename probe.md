@@ -1,9 +1,9 @@
 # Probe
 ## B92 feeds
-RSS directory page https://www.b92.net/info/rss/: 17993 bytes; feed-like links found: 0
-- https://www.b92.net/info/rss/vesti.xml -> 17909 bytes, 20 items, newest 2026-11-02T21:13:00.000Z, oldest 2026-11-02T16:13:00.000Z
+RSS directory page https://www.b92.net/info/rss/: 17834 bytes; feed-like links found: 0
+- https://www.b92.net/info/rss/vesti.xml -> 17909 bytes, 20 items, newest 2026-11-02T21:15:00.000Z, oldest 2026-11-02T16:13:00.000Z
+    * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T21:15 | cats=["Info"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
     * Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude" | 2026-11-02T21:13 | cats=["Info"] | https://www.b92.net/info/svet/281687/oglasio-se-zelenski-nakon-ruskog-napada-na-zaporosku-oblast/vest
-    * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T20:57 | cats=["Info"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
     * Začarani krug odmazde može da bude pokrenut svakog trenutka – a to će značiti apsolutni rat | 2026-11-02T20:48 | cats=["Info"] | https://www.b92.net/info/svet/281679/wsj-saveznici-sad-u-zalivu-se-spremaju-za-nove-napade-na-iran/vest
     * Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO | 2026-11-02T20:43 | cats=["Info"] | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest
     * Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | 2026-11-02T20:15 | cats=["Info"] | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest
@@ -17,16 +17,16 @@ RSS directory page https://www.b92.net/info/rss/: 17993 bytes; feed-like links f
 - https://www.b92.net/info/rss/drustvo.xml -> ERROR HTTP_404
 - https://www.b92.net/rss/ -> 226741 bytes, 0 items, newest -, oldest -
 - https://www.b92.net/rss -> 226741 bytes, 0 items, newest -, oldest -
-- https://www.b92.net/feed/ -> 17649 bytes, 20 items, newest 2026-11-02T21:14:00.000Z, oldest 2026-11-02T20:20:00.000Z
-    * Oklahoma povlači dres Rasela Vestbruka | 2026-11-02T21:14 | cats=["Najnovije"] | https://www.b92.net/sport/kosarka/nba/281688/oklahoma-povlaci-dres-rasela-vestbruka/vest
+- https://www.b92.net/feed/ -> 17702 bytes, 20 items, newest 2026-11-02T21:21:00.000Z, oldest 2026-11-02T20:20:00.000Z
+    * Živković u Grčkoj do kraja karijere? | 2026-11-02T21:21 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/vesti/281609/zivkovic-u-grckoj-do-kraja-karijere/vest
+    * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T21:15 | cats=["Najnovije"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
     * Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude" | 2026-11-02T21:13 | cats=["Najnovije"] | https://www.b92.net/info/svet/281687/oglasio-se-zelenski-nakon-ruskog-napada-na-zaporosku-oblast/vest
     * Karlik: "Razumem navijače i ljubav prema Željku, ali nismo ga mi izbacili" | 2026-11-02T21:08 | cats=["Najnovije"] | https://www.b92.net/sport/kosarka/euroleague/281686/karlik-dzons-o-zeljku-obradovicu/vest
     * Uhapšen muškarac kod Kruševca: Sumnja se da je vanbračnu suprugu tukao rukama i nogama | 2026-11-02T20:59 | cats=["Najnovije"] | https://www.b92.net/lokal/krusevac/hronika/281685/uhapsen-muskarac-kod-krusevca-sumnja-se-da-je-vanbracnu-suprugu-tukao-rukama-i-nogama/vest
     * "Mačak u šeširu" donosi više od nestašluka: Velika porodična avantura u bioskopima FOTO/VIDEO | 2026-11-02T20:59 | cats=["Najnovije"] | https://www.b92.net/kultura/filmtv/281670/film-macak-u-sesiru-u-ada-molu-i-druzenje-sa-glumcima/vest
-    * Grom iz vedra neba: Trinkijeri odvodi Zvezdinog najboljeg – ponuda koja se ne odbija | 2026-11-02T20:58 | cats=["Najnovije"] | https://www.b92.net/sport/kosarka/euroleague/281684/sdna-paok-nudi-krisu-dzonsu-tri-miliona-evra-godisnje/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 597847 bytes, 63 headline-like links
+homepage: 597845 bytes, 63 headline-like links
 - Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana  | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest | in feeds: vesti.xml,
 - Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest | in feeds: vesti.xml
 - Sekulović saslušan u tužilaštvu, predložen pritvor | https://www.b92.net/info/hronika/281659/sekulovic-saslusan-u-tuzilastvu-predlozen-pritvor/vest | in feeds: vesti.xml
@@ -67,7 +67,7 @@ homepage YouTube channel links: https://www.youtube.com/channel/UCloa3CgQMtGSeqj
   https://www.youtube.com/channel/UCloa3CgQMtGSeqjLkpQlEFg -> id UCloa3CgQMtGSeqjLkpQlEFg
   video feed OK: 15 videos, newest 2026-11-02T20:42: DNEVNIK - CELA EMISIJA - 02.11.2026. | thumb yes
 ### B92
-feed https://www.b92.net/info/rss/vesti.xml: 0 distinct YouTube video links in the raw feed
+feed https://www.b92.net/feed/: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/@B92TV
   https://www.youtube.com/@B92TV -> id UCOJ46tnlQ39S11UreLtkq5Q  name B92 TV
   video feed OK: 15 videos, newest 2026-11-02T19:00: expertIVA 45 | Petar Sukačev: Od dečaka koji je satima autobusom putovao na tren | thumb yes
