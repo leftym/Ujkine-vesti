@@ -1,7 +1,7 @@
 # Probe
 ## B92 feeds
-RSS directory page https://www.b92.net/info/rss/: 17834 bytes; feed-like links found: 0
-- https://www.b92.net/info/rss/vesti.xml -> 17909 bytes, 20 items, newest 2026-11-02T21:15:00.000Z, oldest 2026-11-02T16:13:00.000Z
+RSS directory page https://www.b92.net/info/rss/: 17839 bytes; feed-like links found: 0
+- https://www.b92.net/info/rss/vesti.xml -> 17914 bytes, 20 items, newest 2026-11-02T21:15:00.000Z, oldest 2026-11-02T16:13:00.000Z
     * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T21:15 | cats=["Info"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
     * Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude" | 2026-11-02T21:13 | cats=["Info"] | https://www.b92.net/info/svet/281687/oglasio-se-zelenski-nakon-ruskog-napada-na-zaporosku-oblast/vest
     * Začarani krug odmazde može da bude pokrenut svakog trenutka – a to će značiti apsolutni rat | 2026-11-02T20:48 | cats=["Info"] | https://www.b92.net/info/svet/281679/wsj-saveznici-sad-u-zalivu-se-spremaju-za-nove-napade-na-iran/vest
@@ -15,9 +15,9 @@ RSS directory page https://www.b92.net/info/rss/: 17834 bytes; feed-like links f
 - https://www.b92.net/info/rss/hronika.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/ekonomija.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/drustvo.xml -> ERROR HTTP_404
-- https://www.b92.net/rss/ -> 226753 bytes, 0 items, newest -, oldest -
-- https://www.b92.net/rss -> 226753 bytes, 0 items, newest -, oldest -
-- https://www.b92.net/feed/ -> 17702 bytes, 20 items, newest 2026-11-02T21:21:00.000Z, oldest 2026-11-02T20:20:00.000Z
+- https://www.b92.net/rss/ -> 226741 bytes, 0 items, newest -, oldest -
+- https://www.b92.net/rss -> 226741 bytes, 0 items, newest -, oldest -
+- https://www.b92.net/feed/ -> 17707 bytes, 20 items, newest 2026-11-02T21:21:00.000Z, oldest 2026-11-02T20:20:00.000Z
     * Živković u Grčkoj do kraja karijere? | 2026-11-02T21:21 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/vesti/281609/zivkovic-u-grckoj-do-kraja-karijere/vest
     * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T21:15 | cats=["Najnovije"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
     * Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude" | 2026-11-02T21:13 | cats=["Najnovije"] | https://www.b92.net/info/svet/281687/oglasio-se-zelenski-nakon-ruskog-napada-na-zaporosku-oblast/vest
@@ -26,7 +26,7 @@ RSS directory page https://www.b92.net/info/rss/: 17834 bytes; feed-like links f
     * "Mačak u šeširu" donosi više od nestašluka: Velika porodična avantura u bioskopima FOTO/VIDEO | 2026-11-02T20:59 | cats=["Najnovije"] | https://www.b92.net/kultura/filmtv/281670/film-macak-u-sesiru-u-ada-molu-i-druzenje-sa-glumcima/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 597820 bytes, 64 headline-like links
+homepage: 597835 bytes, 64 headline-like links
 - Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana  | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest | in feeds: vesti.xml,
 - Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest | in feeds: vesti.xml
 - Sekulović saslušan u tužilaštvu, predložen pritvor | https://www.b92.net/info/hronika/281659/sekulovic-saslusan-u-tuzilastvu-predlozen-pritvor/vest | in feeds: vesti.xml
