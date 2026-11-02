@@ -203,10 +203,14 @@ test('video tab data: channel feeds, tolerant of one channel being down', async 
   assert.equal(st.blic.ok, false);
   assert.ok(st.n1.ok && st.rts.ok && st.b92.ok);
   const n1 = v.items.filter((i) => i.source === 'n1');
-  assert.equal(n1.length, 1, 'the 2-month-old video is dropped');
-  assert.equal(n1[0].title, 'Dnevnik 02.11.2026.', 'Cyrillic title transliterated');
-  assert.equal(n1[0].url, 'https://www.youtube.com/watch?v=AAAAAAAAAAA');
-  assert.match(n1[0].image, /^https:\/\/i1\.ytimg\.com\//);
+  assert.equal(n1.length, 2, 'the 2-month-old video is dropped, the Short is kept');
+  const normal = n1.find((i) => !i.short);
+  assert.equal(normal.title, 'Dnevnik 02.11.2026.', 'Cyrillic title transliterated');
+  assert.equal(normal.url, 'https://www.youtube.com/watch?v=AAAAAAAAAAA');
+  assert.match(normal.image, /^https:\/\/i1\.ytimg\.com\//);
+  const short = n1.find((i) => i.short);
+  assert.equal(short.url, 'https://www.youtube.com/shorts/CCCCCCCCCCC');
+  assert.equal(short.videoId, 'CCCCCCCCCCC');
 });
 
 test('B92 article numbers give time estimates', () => {
@@ -217,4 +221,20 @@ test('B92 article numbers give time estimates', () => {
   assert.equal(estimateTs(100050, known, 8000e3), 1000e3 + 3000e3);
   assert.ok(estimateTs(99900, known, 8000e3) < 1000e3, 'older ids extrapolate backwards');
   assert.equal(estimateTs(100050, [], 777), 777, 'no reference points: now');
+});
+
+test('Latin to Cyrillic', () => {
+  const { toCyr, cyrToFold } = require('../public/cyr.js');
+  const cases = {
+    'Vlada usvojila budžet': 'Влада усвојила буџет',
+    'Ljubljana': 'Љубљана', 'Njegoš': 'Његош', 'Đoković': 'Ђоковић', 'džep': 'џеп', 'Džon': 'Џон',
+    'LJUBAV': 'ЉУБАВ', 'RTS': 'РТС', 'N1': 'Н1', 'FOTO/VIDEO': 'ФОТО/ВИДЕО',
+    'pre 2 sata': 'пре 2 сата', '2.11.2026.': '2.11.2026.',
+  };
+  for (const [lat, cyr] of Object.entries(cases)) assert.equal(toCyr(lat), cyr, lat);
+  // brands, web addresses and foreign words are left alone
+  for (const keep of ['YouTube', 'iPhone', 'Nova.rs', 'n1info.rs/feed/', 'Maxwell', 'Twitter']) assert.equal(toCyr(keep), keep, keep);
+  assert.equal(toCyr(toCyr('Vesti')), 'Вести', 'running it twice changes nothing');
+  // searching in Cyrillic finds Latin headlines
+  assert.equal(cyrToFold('Ђоковић шампион'), 'djokovic sampion');
 });

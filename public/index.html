@@ -33,8 +33,12 @@
 
 <div class="filters">
   <div class="chips" id="srcChips" role="group" aria-label="Izvori"></div>
-  <div class="chips" id="catChips" role="group" aria-label="Kategorije"></div>
-  <input id="q" type="search" placeholder="Pretraži vesti…" enterkeyhint="search" autocomplete="off" aria-label="Pretraga">
+  <button id="moreBtn" class="morebtn" type="button" aria-expanded="false">Teme i pretraga ▾</button>
+  <div id="morePanel" hidden>
+    <div class="chips" id="catChips" role="group" aria-label="Teme"></div>
+    <input id="q" type="search" placeholder="Pretraži vesti…" enterkeyhint="search" autocomplete="off" aria-label="Pretraga">
+  </div>
+  <div class="chips" id="vidChips" role="group" aria-label="Vrsta snimaka" hidden></div>
 </div>
 
 <p id="status" class="status" aria-live="polite">Učitavanje…</p>
@@ -50,9 +54,12 @@
       <button id="rFsDown" class="icon txt" type="button" aria-label="Manja slova">A&minus;</button>
       <button id="rFsUp" class="icon txt" type="button" aria-label="Veća slova">A+</button>
     </span>
-    <a id="openOriginal" class="btn" target="_blank" rel="noopener noreferrer">Otvori original ↗</a>
+    <button id="shareBtn" class="btn share" type="button">Podeli</button>
   </div>
   <article id="readerBody"></article>
+  <div class="reader-foot">
+    <a id="openOriginal" class="btn" target="_blank" rel="noopener noreferrer">Otvori original na sajtu ↗</a>
+  </div>
 </dialog>
 
 <dialog id="settings" aria-label="Podešavanja">
@@ -64,11 +71,18 @@
   </div>
   <div class="settings-body">
     <fieldset class="theme">
+      <legend>Pismo</legend>
+      <label class="row"><input type="radio" name="script" value="lat"> <span>Latinica</span></label>
+      <label class="row"><input type="radio" name="script" value="cyr"> <span>Ćirilica</span></label>
+    </fieldset>
+    <fieldset class="theme">
       <legend>Izgled ekrana</legend>
       <label class="row"><input type="radio" name="theme" value="auto"> <span>Kao telefon (automatski)</span></label>
       <label class="row"><input type="radio" name="theme" value="light"> <span>Svetao</span></label>
       <label class="row"><input type="radio" name="theme" value="dark"> <span>Taman</span></label>
     </fieldset>
+    <label class="row"><input type="checkbox" id="optImages"> <span>Prikaži slike uz vesti</span></label>
+    <label class="row"><input type="checkbox" id="optSummary"> <span>Prikaži kratak opis ispod naslova</span></label>
     <label class="row"><input type="checkbox" id="optAds"> <span>Sakrij oglase i sponzorisane tekstove</span></label>
     <label class="row"><input type="checkbox" id="optBetting"> <span>Sakrij kladionice i kvote</span></label>
     <label class="row"><input type="checkbox" id="optReader"> <span>Čitaj u aplikaciji (bez reklama)</span></label>
@@ -80,6 +94,7 @@
   </div>
 </dialog>
 
+<script src="/cyr.js"></script>
 <script src="/app.js"></script>
 </body>
 </html>

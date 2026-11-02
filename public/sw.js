@@ -1,6 +1,6 @@
 'use strict';
-const VERSION = 'vesti-v4';
-const SHELL = ['/', '/style.css', '/app.js', '/manifest.webmanifest', '/icon.svg'];
+const VERSION = 'vesti-v5';
+const SHELL = ['/', '/style.css', '/app.js', '/cyr.js', '/manifest.webmanifest', '/icon.svg'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));

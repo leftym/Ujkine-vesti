@@ -5,8 +5,8 @@
   const KEY = 'vesti.settings.v1';
   const PAGE = 40;
 
-  const SCALES = [1, 1.15, 1.3, 1.5, 1.75, 2];
-  const DEFAULTS = { theme: 'auto', fs: 2, sources: [], cats: [], q: '', hideAds: true, hideBetting: true, reader: true, muted: '' };
+  const SCALES = [1, 1.15, 1.3, 1.5, 1.75, 2, 2.3];
+  const DEFAULTS = { script: 'lat', images: false, summary: false, theme: 'auto', fs: 2, sources: [], cats: [], q: '', hideAds: true, hideBetting: true, reader: true, muted: '' };
   let S = loadSettings();
   let DATA = null;
   let fromCache = false;
@@ -14,6 +14,9 @@
   let VIDEOS = null;
   let view = 'news';
   let videosFromCache = false;
+  let panelOpen = false;
+  let onlyShorts = false;
+  let currentItem = null;
 
   const NATIVE = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform() && window.VestiEngine);
   const api = {
@@ -58,7 +61,7 @@
     for (const id of ['#fsUp', '#rFsUp']) $(id).disabled = S.fs === SCALES.length - 1;
   }
 
-  const fold = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'dj');
+  const fold = (s) => window.VestiCyr.cyrToFold(String(s || '').toLowerCase()).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'dj');
 
   function el(tag, cls, text) {
     const e = document.createElement(tag);
@@ -72,7 +75,7 @@
     if (m < 1) return 'upravo';
     if (m < 60) return 'pre ' + m + ' min';
     const h = Math.round(m / 60);
-    if (h < 24) return 'pre ' + h + ' h';
+    if (h < 24) return 'pre ' + h + (h % 10 === 1 && h !== 11 ? ' sat' : h % 10 >= 2 && h % 10 <= 4 && (h < 10 || h > 20) ? ' sata' : ' sati');
     const d = Math.round(h / 24);
     return d === 1 ? 'juče' : 'pre ' + d + ' dana';
   }
@@ -142,9 +145,7 @@
     const st = $('#status');
     st.replaceChildren();
     const t = new Date(DATA.updatedAt).toLocaleTimeString('sr-RS', { hour: '2-digit', minute: '2-digit' });
-    const parts = [(fromCache ? 'Bez interneta · sačuvano u ' : 'Ažurirano u ') + t, count + ' vesti'];
-    if (adsRemoved) parts.push('sakriveno ' + adsRemoved);
-    st.append(parts.join(' · '));
+    st.append((fromCache ? 'Bez interneta · sačuvano u ' : 'Ažurirano u ') + t);
     const bad = DATA.status.filter((x) => !x.ok).map((x) => DATA.sources.find((s) => s.id === x.id).name);
     if (bad.length) {
       const w = el('span', 'warn', ' · nedostupno: ' + bad.join(', '));
@@ -154,7 +155,6 @@
 
   function card(it) {
     const src = DATA.sources.find((s) => s.id === it.source);
-    const cat = DATA.categories.find((c) => c.id === it.category);
     const a = el('article', 'card' + (it.ad ? ' isad' : ''));
     a.tabIndex = 0;
     a.setAttribute('role', 'link');
@@ -166,13 +166,12 @@
     dot.style.setProperty('--c', src.color);
     s.append(dot, src.name);
     meta.append(s, el('span', null, ago(it.published)));
-    if (cat && cat.id !== 'ostalo') meta.append(el('span', 'tag', cat.label));
     if (it.ad) meta.append(el('span', 'adbadge', it.ad === 'betting' ? 'KLADIONICA' : it.ad === 'self' ? 'NAJAVA' : 'OGLAS'));
     body.append(meta, el('h2', null, it.title));
-    if (it.summary) body.append(el('p', null, it.summary));
+    if (S.summary && it.summary) body.append(el('p', null, it.summary));
     a.append(body);
 
-    if (it.image) {
+    if (S.images && it.image) {
       const img = el('img');
       img.src = it.image;
       img.alt = '';
@@ -216,6 +215,7 @@
     dot.style.setProperty('--c', src ? src.color : '#888');
     s.append(dot, src ? src.name : v.source);
     meta.append(s, el('span', null, ago(v.published)));
+    if (v.short) meta.append(el('span', 'adbadge short', 'KRATKI'));
     body.append(meta, el('h2', null, v.title));
     a.append(th, body);
     const open = () => openExternal(v.url);
@@ -233,16 +233,21 @@
     if (!VIDEOS) { st.append('Učitavanje videa…'); $('#more').hidden = true; return; }
     const q = fold(S.q.trim());
     const list = VIDEOS.items.filter((v) =>
-      (!S.sources.length || S.sources.includes(v.source)) && (!q || fold(v.title).includes(q)));
+      (!S.sources.length || S.sources.includes(v.source)) && (!onlyShorts || v.short) && (!q || fold(v.title).includes(q)));
     const t = new Date(VIDEOS.updatedAt).toLocaleTimeString('sr-RS', { hour: '2-digit', minute: '2-digit' });
-    st.append((videosFromCache ? 'Bez interneta · sačuvano u ' : 'Ažurirano u ') + t + ' · ' + list.length + ' snimaka');
+    st.append((videosFromCache ? 'Bez interneta · sačuvano u ' : 'Ažurirano u ') + t);
     const bad = VIDEOS.status.filter((x) => !x.ok).map((x) => (DATA.sources.find((s) => s.id === x.source) || { name: x.source }).name);
     if (bad.length) st.append(el('span', 'warn', ' · nedostupno: ' + bad.join(', ')));
 
+    const row = el('div', 'ytrow');
     const yt = el('button', 'ytopen', '▶  Otvori YouTube');
     yt.type = 'button';
     yt.addEventListener('click', () => openExternal('https://www.youtube.com/'));
-    box.append(yt);
+    const sh = el('button', 'ytopen alt', 'Kratki video');
+    sh.type = 'button';
+    sh.addEventListener('click', () => openExternal('https://www.youtube.com/shorts'));
+    row.append(yt, sh);
+    box.append(row);
     if (!list.length) box.append(el('div', 'empty', 'Nema snimaka za izabrane filtere.'));
     for (const v of list.slice(0, shown)) box.append(videoCard(v));
     $('#more').hidden = list.length <= shown;
@@ -267,7 +272,6 @@
     view = v;
     $('#tabNews').setAttribute('aria-pressed', String(v === 'news'));
     $('#tabVideo').setAttribute('aria-pressed', String(v === 'video'));
-    $('#catChips').hidden = v === 'video';
     shown = PAGE;
     if (v === 'video' && !VIDEOS) loadVideos(false);
     render();
@@ -318,8 +322,27 @@
     $('#more').hidden = true;
   }
 
+  // "Teme i pretraga" stays folded away unless he opens it or a topic/search is active
+  function syncPanel() {
+    const hasFilter = S.cats.length > 0 || S.q.trim() !== '';
+    const open = view === 'news' && (panelOpen || hasFilter);
+    $('#morePanel').hidden = !open;
+    $('#moreBtn').hidden = view !== 'news';
+    $('#moreBtn').setAttribute('aria-expanded', String(open));
+    $('#moreBtn').textContent = open ? 'Sakrij teme i pretragu ▴' : 'Teme i pretraga ▾';
+    const vc = $('#vidChips');
+    vc.hidden = view !== 'video';
+    if (view === 'video') {
+      vc.replaceChildren(
+        chip('Svi snimci', !onlyShorts, () => { onlyShorts = false; render(); }),
+        chip('Kratki video', onlyShorts, () => { onlyShorts = true; render(); }),
+      );
+    }
+  }
+
   function render() {
     if (!DATA) return;
+    syncPanel();
     if (view === 'video') { renderVideos(); return; }
     renderChips();
     const box = $('#list');
@@ -387,6 +410,7 @@
     if (!S.reader) { window.open(it.url, '_blank', 'noopener,noreferrer'); return; }
     const dlg = $('#reader');
     const body = $('#readerBody');
+    currentItem = it;
     $('#openOriginal').href = it.url;
     $('#openOriginal').dataset.url = it.url;
     body.replaceChildren(el('h1', null, it.title), el('p', 'note', 'Učitavanje…'));
@@ -395,7 +419,7 @@
     try {
       const art = await api.article(it.url);
       body.replaceChildren(el('h1', null, art.title || it.title));
-      if (art.image && /^https:/.test(art.image)) {
+      if (S.images && art.image && /^https:/.test(art.image)) {
         const img = el('img');
         img.src = art.image; img.alt = ''; img.referrerPolicy = 'no-referrer';
         img.addEventListener('error', () => img.remove());
@@ -403,7 +427,7 @@
       }
       for (const b of art.blocks) {
         if (b.t === 'img') {
-          if (!/^https:/.test(b.src)) continue;
+          if (!S.images || !/^https:/.test(b.src)) continue;
           const fig = el('figure');
           const im = el('img');
           im.src = b.src; im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer';
@@ -424,7 +448,7 @@
     } catch {
       body.replaceChildren(
         el('h1', null, it.title),
-        el('p', 'note', 'Tekst nije moguće prikazati (sajt možda traži pretplatu). Dodirni „Otvori original“ gore.'),
+        el('p', 'note', 'Tekst nije moguće prikazati (sajt možda traži pretplatu). Dodirni „Otvori original na sajtu“ ispod.'),
       );
     }
   }
@@ -438,14 +462,26 @@
       const li = el('li');
       li.append(el('strong', null, name + ' '));
       li.append(el('span', st.ok ? 'ok' : 'bad', st.ok ? 'radi (' + st.count + ' vesti)' : st.stale ? 'greška (stari podaci)' : 'ne radi'));
-      if (st.ok && st.feed) li.append(el('small', null, st.feed));
-      if (!st.ok && st.tried && st.tried.length) li.append(el('small', null, st.tried.join('  •  ')));
+      for (const txt of [st.ok && st.feed, !st.ok && st.tried && st.tried.length && st.tried.join('  •  ')]) {
+        if (!txt) continue;
+        const sm = el('small', null, txt);
+        sm.dataset.keep = '1';
+        li.append(sm);
+      }
       ul.append(li);
     }
   }
 
   function bindSettings() {
     const ads = $('#optAds'), bet = $('#optBetting'), rd = $('#optReader'), mu = $('#optMuted');
+    for (const r of document.querySelectorAll('input[name="script"]')) {
+      r.checked = r.value === S.script;
+      r.addEventListener('change', () => { if (r.checked) { S.script = r.value; saveSettings(); applyScript(); } });
+    }
+    const im = $('#optImages'), sm = $('#optSummary');
+    im.checked = S.images; sm.checked = S.summary;
+    im.addEventListener('change', () => { S.images = im.checked; changed(); });
+    sm.addEventListener('change', () => { S.summary = sm.checked; changed(); });
     for (const r of document.querySelectorAll('input[name="theme"]')) {
       r.checked = r.value === S.theme;
       r.addEventListener('change', () => { if (r.checked) { S.theme = r.value; applyTheme(); saveSettings(); } });
@@ -477,6 +513,17 @@
     qTimer = setTimeout(() => { S.q = q.value; changed(); }, 180);
   });
   $('#refresh').addEventListener('click', () => (view === 'video' ? loadVideos(true) : load(true)));
+  $('#moreBtn').addEventListener('click', () => { panelOpen = !panelOpen; syncPanel(); applyScript(); });
+  $('#shareBtn').addEventListener('click', async () => {
+    if (!currentItem) return;
+    const data = { title: currentItem.title, text: currentItem.title, url: currentItem.url };
+    const P = window.Capacitor && window.Capacitor.Plugins;
+    try {
+      if (NATIVE && P && P.Share && P.Share.share) await P.Share.share({ ...data, dialogTitle: 'Podeli vest' });
+      else if (navigator.share) await navigator.share(data);
+      else if (navigator.clipboard) await navigator.clipboard.writeText(currentItem.title + ' ' + currentItem.url);
+    } catch { /* he closed the share sheet */ }
+  });
   $('#tabNews').addEventListener('click', () => setView('news'));
   $('#tabVideo').addEventListener('click', () => setView('video'));
   $('#more').addEventListener('click', () => { shown += PAGE; render(); });
@@ -490,8 +537,43 @@
   applyFs();
   applyTheme();
 
+  // ---- Cyrillic: convert every visible text on the page (and keep converting what the app adds) ----
+  const latinOf = new WeakMap();       // text node -> its Latin original
+  const phOf = new WeakMap();          // element -> Latin placeholder
+  let scriptTimer = null;
+  const scriptObserver = new MutationObserver(() => {
+    if (scriptTimer) return;
+    scriptTimer = requestAnimationFrame(() => { scriptTimer = null; applyScript(); });
+  });
+  function applyScript() {
+    scriptObserver.disconnect();
+    const cyr = S.script === 'cyr';
+    const tw = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = tw.nextNode())) {
+      const p = n.parentElement;
+      if (!p || p.closest('script, style, textarea, [data-keep]')) continue;
+      const orig = latinOf.get(n);
+      if (cyr) {
+        const base = orig !== undefined && n.nodeValue === window.VestiCyr.toCyr(orig) ? orig : n.nodeValue;
+        const out = window.VestiCyr.toCyr(base);
+        if (out !== n.nodeValue) { latinOf.set(n, base); n.nodeValue = out; }
+      } else if (orig !== undefined) {
+        n.nodeValue = orig;
+        latinOf.delete(n);
+      }
+    }
+    for (const e of document.querySelectorAll('[placeholder]')) {
+      if (cyr) { if (!phOf.has(e)) phOf.set(e, e.placeholder); e.placeholder = window.VestiCyr.toCyr(phOf.get(e)); }
+      else if (phOf.has(e)) { e.placeholder = phOf.get(e); phOf.delete(e); }
+    }
+    document.documentElement.lang = cyr ? 'sr-Cyrl' : 'sr-Latn';
+    if (cyr) scriptObserver.observe(document.body, { childList: true, subtree: true, characterData: true });
+  }
+
   bindSettings();
   load(false);
+  applyScript();
 
   if (NATIVE) {
     // Android back button: close an open sheet first, otherwise send the app to the background
