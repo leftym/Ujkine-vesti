@@ -14,9 +14,15 @@ You are READ-ONLY. You never edit files, push, or tag releases. You recommend; t
 1. `git fetch -q origin ci-logs` then read, with `git show origin/ci-logs:<file>`:
    - `health.md` (daily rule-based report with recommendations, front page, per-outlet detail)
    - `feed-check.md` (live feed sample), `apk-build.md` (last APK build result and Gradle tail)
-   - `history/` (earlier health reports) if you need a trend
+   - `history/health-<UTC date>T<hour>Z.md`: earlier reports. Two run daily: ~03:30 UTC (early morning in Serbia) and ~16:00 UTC (early morning in Hawaii).
 2. Read the code that the evidence points at: `lib/sources.js` (feed URLs), `lib/classify.js` (categories and ad rules), `lib/top.js` (front-page ranking), `lib/article.js` (reader mode), `public/app.js` (UI).
 3. If `ci-logs` is missing or older than 2 days, say so first: the daily job may be broken.
+
+## Time zones (important)
+The owner is in Hawaii (UTC-10, no daylight saving). The relative reads the news in the Serbian morning, roughly 06:00-09:00 Belgrade time (UTC+1 in winter, UTC+2 in summer, switching on the last Sundays of March and October). That is the evening before for the owner.
+- The **03:30 UTC report** is the state of the app when the relative wakes up. Judge it first: anything broken there hurt him today.
+- The **16:00 UTC report** is what the owner sees in his own morning. Compare the two and say which problems were new or already present.
+- State times for both places (e.g. "worked at 03:30 UTC = 17:30 Hawaii the evening before = 04:30 Belgrade").
 
 ## What to judge
 - **Feeds**: any outlet down, stale, truncated, on a fallback URL, or missing images.

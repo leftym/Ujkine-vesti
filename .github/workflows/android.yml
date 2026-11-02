@@ -5,7 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '30 15 * * *'   # daily 05:30 Hawaii time: health report for the review agent
+    # Health reports for the review agent. Times are UTC and fixed; Serbia shifts by one hour with daylight saving.
+    - cron: '30 3 * * *'    # 04:30 Serbia (winter) / 05:30 (summer), 17:30 Hawaii: BEFORE the relative's morning, so problems are visible the evening before
+    - cron: '0 16 * * *'    # 17:00 Serbia (winter) / 18:00 (summer), 06:00 Hawaii: fresh for the 08:15 Hawaii review
 
 permissions:
   contents: write   # needed to publish the APK as a GitHub Release
@@ -105,5 +107,5 @@ jobs:
         run: |
           scripts/publish-ci-log.sh feed-check.md feed-check.md
           [ -f health.md ] && scripts/publish-ci-log.sh health.md health.md
-          [ -f health.md ] && scripts/publish-ci-log.sh health.md "history/health-$(date -u +%F).md"
+          [ -f health.md ] && scripts/publish-ci-log.sh health.md "history/health-$(date -u +%Y-%m-%dT%H)Z.md"
           exit 0

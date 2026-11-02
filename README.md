@@ -45,7 +45,7 @@ Tapping a story opens the **in-app reader**: headline, text and photos with scri
 
 ## Review agent
 
-- GitHub Actions runs a **daily health report** (05:30 Hawaii time, also on every push): feeds up/stale, images, uncategorized share, ad false positives/misses, front-page sanity. It lands on the `ci-logs` branch (`health.md`, `history/`).
+- GitHub Actions runs the **health report twice a day** (03:30 UTC = early morning in Serbia, 16:00 UTC = early morning in Hawaii) and on every push: feeds up/stale, images, uncategorized share, ad false positives/misses, front-page sanity. It lands on the `ci-logs` branch (`health.md`, `history/`).
 - `.claude/agents/vesti-reviewer.md` is a read-only Claude subagent. Ask Claude Code in this repo: *"use the vesti-reviewer agent"* and it reads those reports plus the code and returns a verdict, up to 5 ranked recommendations with proposed changes, and what to ignore.
 
 ## Browser / PWA version (optional)
@@ -65,3 +65,13 @@ Needs the Node server (`npm start`) on a host with HTTPS. Same UI, same filters,
 - Ads are removed at the **headline level** (sponsored items) and **article level** (reader mode). Banner ads on the outlets' own pages are only avoided when you read in-app.
 - Categories are heuristic. Wrong ones are fixed by adding keywords in `lib/classify.js`.
 - Nothing de-duplicates the same story across outlets yet.
+
+## Daily schedule at a glance
+
+| What | UTC | Serbia (winter / summer) | Hawaii |
+|---|---|---|---|
+| Health report 1 (before the relative's morning) | 03:30 | 04:30 / 05:30 | 17:30 (day before) |
+| Health report 2 | 16:00 | 17:00 / 18:00 | 06:00 |
+| Claude morning review (scheduled task) | 18:15 | 19:15 / 20:15 | 08:15 |
+
+Serbia moves between UTC+1 and UTC+2 on the last Sundays of March and October; Hawaii never changes.
