@@ -1,6 +1,6 @@
 # Feed check
 
-Run: 2026-11-02T19:22:48.899Z
+Run: 2026-11-02T19:25:59.000Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
@@ -9,16 +9,16 @@ Run: 2026-11-02T19:22:48.899Z
 | B92 | yes | 20 | https://www.b92.net/info/rss/vesti.xml | 20 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
-| RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 0 | 0 |
+| RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"politika":13,"drustvo":6,"ostalo":5,"ekonomija":12,"zivot":3,"hronika":3,"region":4,"svet":4}
+Categories: {"politika":14,"drustvo":6,"ostalo":4,"ekonomija":12,"zivot":3,"hronika":3,"region":4,"svet":4}
+- [politika] Ninić podneo krivičnu prijavu TOK-u protiv Orlića: Zaposleni u BIA imali radnu obavezu da skupljaju glasove za SNS
 - [politika] Portal 021: Desetine miliona iz budžeta ove godine za novosadske medije bliske bivšoj vlasti
 - [politika] Ilić: Vučićeva pomilovanja suprotna Ustavu, tužilaštvo da ispita njegovu krivičnu odgovornost
 - [drustvo] Savet roditelja OŠ "Banović Strahinja" traži od ministra prosvete da hitno razreši direktorku i privremeni organ upravljanja
 - [ostalo] Macron congratulates Srdanovic on election victory
 - [politika] Kuzmanović (Studentska lista): Preduzete sve mere da se spreči uništavanje dokaza
-- [ostalo] Dnevnik u 19 (01.11.2026)
   - flagged (self): Studio live, utorak u 12h: Vučićeva pomilovanja https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/
   - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
 
@@ -27,7 +27,6 @@ Uncategorized sample (for tuning):
 - Dnevnik u 19 (01.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-01-novembar-2026/ | tags: ["Dnevnik","dnevnik u 19","najvažnije vesti","vesti dana","dnevnik 19","dnevnik"]
 - Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
 - ANEM: 111 attacks on journalists this year, just three convictions | https://n1info.rs/english/news/anem-111-attacks-on-journalists-this-year-just-three-convictions/ | tags: ["News","convictions","anem","attacks on journalists"]
-- Press: Željko Bodrožić (2.11.2026) | https://n1info.rs/video/novi-dan/press-zeljko-bodrozic-2112026/ | tags: ["Novi dan","željko bodrožić","video","press","novi dan"]
 
 ## Nova.rs
 Categories: {"zabava":12,"kultura":3,"sport":9,"politika":2,"ekonomija":4,"drustvo":6,"hronika":12,"svet":2}
@@ -84,19 +83,3 @@ Categories: {"drustvo":5,"ekonomija":3,"hronika":6,"zivot":1,"politika":4,"ostal
 
 Uncategorized sample (for tuning):
 - U selu Zimonjić, kod Kanjiže, počelo uređivanje arteskog bunara | https://www.rts.rs/vesti/srbija-danas/6074552/u-selu-zimonjic-kod-kanjize-pocelo-uredjivanje-arteskog-bunara.html | tags: ["Srbija danas"]
-
-No images found. First raw item (text bodies elided):
-```xml
-<item>
-		<title>Николина Синђелић за РТС: Више од годину дана нисам саслушана по пријави против Марка Кричка</title>
-                <link>https://www.rts.rs/vesti/drustvo/6074887/nikolina-sindjelic-za-rts-vise-od-godinu-dana-nisam-saslusana-po-prijavi-protiv-marka-kricka.html</link>
-                <description>…</description>
-		<content:encoded>…</content:encoded>
-                <pubDate>Mon, 2 Nov 2026 20:13:43 +0100</pubDate>
-                <category>Друштво</category>
-                
-                <guid>https://www.rts.rs/vesti/drustvo/6074887/nikolina-sindjelic-za-rts-vise-od-godinu-dana-nisam-saslusana-po-prijavi-protiv-marka-kricka.html</guid>
-                <thumb><img src="https://www.rts.rs/upload/thumbnail//media/2026/10/2/19/0/715/5999831/thumbs/14281997/Nikolina-Sindjelic-RTS.png/Nikolina-Sindjelic-RTS.png" /></thumb>
-                <image><img src="https://www.rts.rs/upload/thumbnail//" /></image>
-            </item>
-```
