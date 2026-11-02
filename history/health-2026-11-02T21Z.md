@@ -1,20 +1,20 @@
 # Vesti health report
 
-Run: 2026-11-02T21:21:59.230Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-02T21:24:58.863Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [B92] Only 34% of items have an image. Check the raw feed for a non-standard image tag (as with RTS <thumb>).
-2. **LOW** [B92] Possible ads NOT flagged: "Grom iz vedra neba: Trinkijeri odvodi Zvezdinog najboljeg – ponuda koja se ne odbija"; "Evo kako da uštedite ako planirate skijanje u Srbiji: Do ovog datuma traje popust"
+1. **LOW** [B92] Only 35% of items have an image. Check the raw feed for a non-standard image tag (as with RTS <thumb>).
+2. **LOW** [B92] Possible ads NOT flagged: "Evo kako da uštedite ako planirate skijanje u Srbiji: Do ovog datuma traje popust"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
 | N1 | yes | 50 | 0.1h | 100% | 12% | 2 |
 | Nova.rs | yes | 50 | 0.1h | 100% | 2% | 1 |
-| B92 | yes | 80 | 0.1h | 34% | 9% | 0 |
+| B92 | yes | 80 | 0.1h | 35% | 0% | 0 |
 | Blic | yes | 70 | 0.2h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.2h | 100% | 20% | 0 |
-| RTS | yes | 20 | 0.0h | 100% | 0% | 0 |
+| Politika | yes | 20 | 0.3h | 100% | 20% | 0 |
+| RTS | yes | 20 | 0.1h | 100% | 0% | 0 |
 
 ## Front page right now
 1. [multi, 4 outlets, score 46.1] Poštanska štedionica zatražila od NBS dodatni stručni nadzor u praćenju likvidnosti i finansijskih tokova
@@ -31,15 +31,15 @@ Run: 2026-11-02T21:21:59.230Z  |  items: 290  |  front-page clusters: 10 (10 mul
 4. [multi, 3 outlets, score 38.9] Mladić iz Srbije nestao tokom uspona na Triglav, spasioci pronašli njegove stvari u snegu
    - also (nova): Državljanin Srbije nestao prilikom uspona na Triglav: Spasioci pronašli njegove stvari
    - also (n1): Državljanin Srbije nestao prilikom uspona na Triglav: Spasioci pronašli njegove stvari
-5. [multi, 3 outlets, score 38.4] Saslušan načelnik Službe za suzbijanje kriminala Boško Sekulović, tužilaštvo traži pritvor
+5. [multi, 3 outlets, score 38.3] Saslušan načelnik Službe za suzbijanje kriminala Boško Sekulović, tužilaštvo traži pritvor
    - also (b92): Sekulović saslušan u tužilaštvu, predložen pritvor
    - also (blic): SASLUŠAN NAČELNIK SLUŽBE ZA SUZBIJANJE KRIMINALA Boško Sekulović izneo odbranu, tužilaštvo traži pritvor
-6. [multi, 3 outlets, score 37.4] Uhapšen muškarac kod Kruševca: Sumnja se da je vanbračnu suprugu tukao rukama i nogama
-   - also (politika): Uhapšen Kruševljanin, tukao vanbračnu suprugu
-   - also (blic): SUPRUGU ŠUTIRAO PO GLAVI I TELU Užas u Kruševcu: Muškarac uhapšen zbog nasilja u porodici
-7. [multi, 3 outlets, score 37.4] Nikolina Sinđelić za RTS: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
+6. [multi, 3 outlets, score 37.4] Nikolina Sinđelić za RTS: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
    - also (nova): Studentkinja Nikolina Sinđelić više od godinu dana nije saslušana po prijavi protiv Marka Kričaka
    - also (n1): Studentkinja Nikolina Sinđelić: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
+7. [multi, 3 outlets, score 36.9] Uhapšen muškarac kod Kruševca: Sumnja se da je vanbračnu suprugu tukao rukama i nogama
+   - also (politika): Uhapšen Kruševljanin, tukao vanbračnu suprugu
+   - also (blic): SUPRUGU ŠUTIRAO PO GLAVI I TELU Užas u Kruševcu: Muškarac uhapšen zbog nasilja u porodici
 8. [multi, 3 outlets, score 35.7] RIK doneo rešenja o izmenama biračkih odbora za izbore za članove saveta nacionalnih manjina
    - also (n1): RIK: Na izborima za savete nacionalnih manjina 204 posmatrača, predaja izbornog materijala od sutra
    - also (nova): RIK: Na izborima za savete nacionalnih manjina 204 posmatrača, predaja izbornog materijala od sutra
@@ -73,14 +73,7 @@ Uncategorized sample:
 - Dnevnik - Cela emisija - 1.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-1112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"svet":10,"kultura":7,"zdravlje":6,"sport":12,"zivot":17,"ekonomija":9,"tehnologija":5,"hronika":3,"ostalo":7,"drustvo":1,"politika":2,"region":1}
-Uncategorized sample:
-- Šest nedelja od porođaja zasijala je u donjem vešu, pa poručila: "Ušivali su jastučiće u moje grudnjake" FOTO <https://superzena.b92.net/zivoti-poznatih/aktuelno/281682/barbara-palvin-o-povratku-na-pistu-sest-nedelja-nakon-porodjaja/vest> tags=["Najnovije"]
-- Novembar neće biti običan mesec: Jednom znaku donosi emotivne obrte i važne lekcije <https://superzena.b92.net/astro/aktuelno/281671/jedan-horoskopski-znak-u-novembru-dobija-nove-prilike-i-izazove/vest> tags=[]
-- Koja kola voze CS2 profesionalci? <https://www.b92.net/esports/cs2/281551/koja-kola-voze-cs2-profesionalci/vest> tags=[]
-- Spojila horor i seksepil: Zgodna Albanka u svom najizazovnijem izdanju FOTO <https://superzena.b92.net/zivoti-poznatih/aktuelno/281554/dua-lipa-za-noc-vestica-bila-nikad-izazovnija/vest> tags=[]
-- Lepa milijarderka zabrinula ljude: "Sama kost i koža, dajte joj nešto da jede" FOTO <https://superzena.b92.net/zivoti-poznatih/aktuelno/281561/nikola-pelc-ponovo-na-udaru-zbog-mrsavog-izgleda/vest> tags=[]
-- Da li znate šta je "teorija kutija"? Muškarci imaju ove tri kategorije za žene <https://superzena.b92.net/ljubav-i-strast/veze-i-odnosi/281658/sta-je-teorija-kutija/vest> tags=["Najnovije"]
+Categories: {"sport":14,"svet":9,"kultura":7,"zdravlje":6,"zivot":18,"ekonomija":9,"tehnologija":5,"hronika":3,"zabava":5,"drustvo":1,"politika":2,"region":1}
 
 ### Blic
 Categories: {"zabava":25,"zdravlje":2,"hronika":6,"svet":8,"drustvo":5,"zivot":9,"politika":5,"ekonomija":8,"kultura":2}
