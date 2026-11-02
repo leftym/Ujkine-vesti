@@ -233,8 +233,13 @@ test('Latin to Cyrillic', () => {
   };
   for (const [lat, cyr] of Object.entries(cases)) assert.equal(toCyr(lat), cyr, lat);
   // brands, web addresses and foreign words are left alone
-  for (const keep of ['YouTube', 'iPhone', 'Nova.rs', 'n1info.rs/feed/', 'Maxwell', 'Twitter']) assert.equal(toCyr(keep), keep, keep);
+  for (const keep of ['YouTube', 'iPhone', 'n1info.rs/feed/', 'Maxwell', 'Twitter']) assert.equal(toCyr(keep), keep, keep);
   assert.equal(toCyr(toCyr('Vesti')), 'Вести', 'running it twice changes nothing');
+  assert.equal(toCyr('Nova.rs'), 'Нова.рс', 'outlet names convert too');
+  assert.equal(toCyr('injekcija'), 'инјекција');
+  assert.equal(toCyr('nadživeti'), 'надживети');
+  assert.equal(toCyr('Google i Facebook'), 'Google и Facebook');
+  assert.equal(toCyr('Njegoš'), 'Његош', 'ordinary nj is still one letter');
   // searching in Cyrillic finds Latin headlines
   assert.equal(cyrToFold('Ђоковић шампион'), 'djokovic sampion');
 });

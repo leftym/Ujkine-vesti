@@ -47,6 +47,10 @@ Tapping a story opens the **in-app reader**: headline, text and photos with scri
 
 Latest videos from each outlet's official YouTube channel (public channel feeds, no API key; channel ids in `lib/videos.js`). Tapping a video opens it in the YouTube app. None of the outlets' news feeds contain YouTube links; videos embedded in an article show up in the reader as a red "Pogledaj video na YouTube-u" button.
 
+## Made for an older reader
+
+Photos and one-line summaries are off by default (Settings switches), "Teme i pretraga" is folded behind one button, text has 7 sizes (default 1.3x) with A-/A+ also inside the article, and the screen shows nothing but the news while everything is healthy. Settings > "Pismo" converts the whole app, including article text, between Latin and Cyrillic (`public/cyr.js`; search works in both scripts). "Podeli" in an article, and under each video, opens the phone's share sheet (Viber, Line, ...). The Video tab includes YouTube Shorts.
+
 ## Screen theme
 
 Follows the phone's light/dark setting by default. Settings > "Izgled ekrana" lets the reader force Light or Dark.

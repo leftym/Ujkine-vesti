@@ -6,13 +6,13 @@
   const PAGE = 40;
 
   const SCALES = [1, 1.15, 1.3, 1.5, 1.75, 2, 2.3];
-  const DEFAULTS = { script: 'lat', images: false, summary: false, theme: 'auto', fs: 2, sources: [], cats: [], q: '', hideAds: true, hideBetting: true, reader: true, muted: '' };
+  const DEFAULTS = { view: 'news', script: 'lat', images: false, summary: false, theme: 'auto', fs: 2, sources: [], cats: [], q: '', hideAds: true, hideBetting: true, reader: true, muted: '' };
   let S = loadSettings();
   let DATA = null;
   let fromCache = false;
   let shown = PAGE;
   let VIDEOS = null;
-  let view = 'news';
+  let view = 'news';  // set from the saved choice below
   let videosFromCache = false;
   let panelOpen = false;
   let onlyShorts = false;
@@ -144,13 +144,13 @@
   function renderStatus(adsRemoved, count) {
     const st = $('#status');
     st.replaceChildren();
+    // nothing is shown while everything is fine; he only hears about it when it matters
     const t = new Date(DATA.updatedAt).toLocaleTimeString('sr-RS', { hour: '2-digit', minute: '2-digit' });
-    st.append((fromCache ? 'Bez interneta · sačuvano u ' : 'Ažurirano u ') + t);
-    const bad = DATA.status.filter((x) => !x.ok).map((x) => DATA.sources.find((s) => s.id === x.id).name);
-    if (bad.length) {
-      const w = el('span', 'warn', ' · nedostupno: ' + bad.join(', '));
-      st.append(w);
-    }
+    const parts = [];
+    if (fromCache) parts.push('Bez interneta. Prikazane su vesti sačuvane u ' + t + '.');
+    else if (DATA.status.some((x) => !x.ok)) parts.push('Neki mediji trenutno nisu dostupni.');
+    st.hidden = parts.length === 0;
+    if (parts.length) st.append(parts.join(' '));
   }
 
   function card(it) {
@@ -217,11 +217,25 @@
     meta.append(s, el('span', null, ago(v.published)));
     if (v.short) meta.append(el('span', 'adbadge short', 'KRATKI'));
     body.append(meta, el('h2', null, v.title));
+    const sh = el('button', 'vshare', 'Podeli');
+    sh.type = 'button';
+    sh.addEventListener('click', (e) => { e.stopPropagation(); shareLink(v.title, v.url); });
+    body.append(sh);
     a.append(th, body);
     const open = () => openExternal(v.url);
     a.addEventListener('click', open);
     a.addEventListener('keydown', (e) => { if (e.key === 'Enter') open(); });
     return a;
+  }
+
+  async function shareLink(title, url) {
+    const data = { title, text: title, url };
+    const P = window.Capacitor && window.Capacitor.Plugins;
+    try {
+      if (NATIVE && P && P.Share && P.Share.share) await P.Share.share({ ...data, dialogTitle: 'Podeli' });
+      else if (navigator.share) await navigator.share(data);
+      else if (navigator.clipboard) await navigator.clipboard.writeText(title + ' ' + url);
+    } catch { /* he closed the share sheet */ }
   }
 
   function renderVideos() {
@@ -230,24 +244,16 @@
     box.replaceChildren();
     const st = $('#status');
     st.replaceChildren();
-    if (!VIDEOS) { st.append('Učitavanje videa…'); $('#more').hidden = true; return; }
+    if (!VIDEOS) { st.hidden = false; st.append('Učitavanje videa…'); $('#more').hidden = true; return; }
     const q = fold(S.q.trim());
     const list = VIDEOS.items.filter((v) =>
       (!S.sources.length || S.sources.includes(v.source)) && (!onlyShorts || v.short) && (!q || fold(v.title).includes(q)));
     const t = new Date(VIDEOS.updatedAt).toLocaleTimeString('sr-RS', { hour: '2-digit', minute: '2-digit' });
-    st.append((videosFromCache ? 'Bez interneta · sačuvano u ' : 'Ažurirano u ') + t);
-    const bad = VIDEOS.status.filter((x) => !x.ok).map((x) => (DATA.sources.find((s) => s.id === x.source) || { name: x.source }).name);
-    if (bad.length) st.append(el('span', 'warn', ' · nedostupno: ' + bad.join(', ')));
+    const note = videosFromCache ? 'Bez interneta. Prikazani su snimci sačuvani u ' + t + '.'
+      : VIDEOS.status.some((x) => !x.ok) ? 'Neki kanali trenutno nisu dostupni.' : '';
+    st.hidden = !note;
+    if (note) st.append(note);
 
-    const row = el('div', 'ytrow');
-    const yt = el('button', 'ytopen', '▶  Otvori YouTube');
-    yt.type = 'button';
-    yt.addEventListener('click', () => openExternal('https://www.youtube.com/'));
-    const sh = el('button', 'ytopen alt', 'Kratki video');
-    sh.type = 'button';
-    sh.addEventListener('click', () => openExternal('https://www.youtube.com/shorts'));
-    row.append(yt, sh);
-    box.append(row);
     if (!list.length) box.append(el('div', 'empty', 'Nema snimaka za izabrane filtere.'));
     for (const v of list.slice(0, shown)) box.append(videoCard(v));
     $('#more').hidden = list.length <= shown;
@@ -270,6 +276,8 @@
 
   function setView(v) {
     view = v;
+    S.view = v;
+    saveSettings();
     $('#tabNews').setAttribute('aria-pressed', String(v === 'news'));
     $('#tabVideo').setAttribute('aria-pressed', String(v === 'video'));
     shown = PAGE;
@@ -329,7 +337,8 @@
     $('#morePanel').hidden = !open;
     $('#moreBtn').hidden = view !== 'news';
     $('#moreBtn').setAttribute('aria-expanded', String(open));
-    $('#moreBtn').textContent = open ? 'Sakrij teme i pretragu ▴' : 'Teme i pretraga ▾';
+    $('#moreBtn').textContent = open ? 'Zatvori ▴' : 'Teme i pretraga ▾';
+    $('#ytrow').hidden = view !== 'video';
     const vc = $('#vidChips');
     vc.hidden = view !== 'video';
     if (view === 'video') {
@@ -514,16 +523,8 @@
   });
   $('#refresh').addEventListener('click', () => (view === 'video' ? loadVideos(true) : load(true)));
   $('#moreBtn').addEventListener('click', () => { panelOpen = !panelOpen; syncPanel(); applyScript(); });
-  $('#shareBtn').addEventListener('click', async () => {
-    if (!currentItem) return;
-    const data = { title: currentItem.title, text: currentItem.title, url: currentItem.url };
-    const P = window.Capacitor && window.Capacitor.Plugins;
-    try {
-      if (NATIVE && P && P.Share && P.Share.share) await P.Share.share({ ...data, dialogTitle: 'Podeli vest' });
-      else if (navigator.share) await navigator.share(data);
-      else if (navigator.clipboard) await navigator.clipboard.writeText(currentItem.title + ' ' + currentItem.url);
-    } catch { /* he closed the share sheet */ }
-  });
+  $('#shareBtn').addEventListener('click', () => { if (currentItem) shareLink(currentItem.title, currentItem.url); });
+  $('#ytOpen').addEventListener('click', () => openExternal('https://www.youtube.com/'));
   $('#tabNews').addEventListener('click', () => setView('news'));
   $('#tabVideo').addEventListener('click', () => setView('video'));
   $('#more').addEventListener('click', () => { shown += PAGE; render(); });
@@ -536,6 +537,7 @@
   for (const id of ['#fsUp', '#rFsUp']) $(id).addEventListener('click', () => bumpFs(1));
   applyFs();
   applyTheme();
+  if (S.view === 'video') { view = 'video'; $('#tabNews').setAttribute('aria-pressed', 'false'); $('#tabVideo').setAttribute('aria-pressed', 'true'); loadVideos(false); }
 
   // ---- Cyrillic: convert every visible text on the page (and keep converting what the app adds) ----
   const latinOf = new WeakMap();       // text node -> its Latin original
