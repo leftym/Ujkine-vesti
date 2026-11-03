@@ -1,6 +1,6 @@
 # Vesti health report
 
-Run: 2026-11-03T08:08:14.926Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-03T08:11:12.769Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
 1. **MED** [Politika] 35% of stories are uncategorized ("Ostalo"). Common words in them: istoriji(1), drzave(1), ciklon(1), murasu(1), stigao(1), kopna(1), indiji(1), evakuisane(1). Add section names / keyword stems in lib/classify.js.
@@ -9,12 +9,12 @@ Run: 2026-11-03T08:08:14.926Z  |  items: 286  |  front-page clusters: 10 (10 mul
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 46 | 0.0h | 100% | 15% | 1 |
-| Nova.rs | yes | 50 | 0.0h | 100% | 4% | 0 |
+| N1 | yes | 46 | 0.1h | 100% | 15% | 1 |
+| Nova.rs | yes | 50 | 0.1h | 100% | 4% | 0 |
 | B92 | yes | 80 | 0.0h | 95% | 1% | 0 |
 | Blic | yes | 70 | 0.0h | 100% | 1% | 0 |
-| Politika | yes | 20 | 0.1h | 100% | 35% | 0 |
-| RTS | yes | 20 | 0.0h | 100% | 0% | 0 |
+| Politika | yes | 20 | 0.2h | 100% | 35% | 0 |
+| RTS | yes | 20 | 0.1h | 100% | 0% | 0 |
 
 ## Front page right now
 1. [multi, 6 outlets, score 66.5] Marku Kričku i Bošku Sekuloviću određen pritvor do 30 dana
@@ -26,10 +26,10 @@ Run: 2026-11-03T08:08:14.926Z  |  items: 286  |  front-page clusters: 10 (10 mul
    - also (blic): ODREĐEN PRITVOR KRIČKU I SEKULOVIĆU! Viši sud doneo odluku nakon hapšenja načelnika UKP i SSK zbog zloupotrebe položaja
    - also (n1): Studentkinja Nikolina Sinđelić: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
    - also (nova): Studentkinja Nikolina Sinđelić više od godinu dana nije saslušana po prijavi protiv Marka Kričaka
-2. [multi, 4 outlets, score 47] "Istina je": Prvo oglašavanje Uroša Živkovića nakon što mu je zapaljen auto
-   - also (b92): Oglasio se Uroš Živković nakon što mu je zapaljen auto: "Molim vas za razumevanje"
+2. [multi, 4 outlets, score 46.9] "Istina je": Prvo oglašavanje Uroša Živkovića nakon što mu je zapaljen auto
    - also (politika): Automobil izgoreo na parkingu na Čukarici, sumnja se da je požar podmetnut
    - also (b92): Zapaljen džip Uroša Živkovića: Drama na Čukarici, požar izbio rano jutros
+   - also (b92): Oglasio se Uroš Živković nakon što mu je zapaljen auto: "Molim vas za razumevanje"
    - also (nova): Zapaljen džip Uroša Živkovića: Sumnja se da je požar podmetnut
    - also (blic): OGLASIO SE UROŠ ŽIVKOVIĆ NAKON ŠTO MU JE ZAPALJEN DŽIP: "Molim vas za razumevanje"
    - also (blic): ZAPALJEN DŽIP UROŠA ŽIVKOVIĆA Požar izbio rano jutros na Čukarici
@@ -47,7 +47,7 @@ Run: 2026-11-03T08:08:14.926Z  |  items: 286  |  front-page clusters: 10 (10 mul
    - also (nova): Kako je lista Usamea Zukorlića za 12 glasova "otela" mandat Studentskoj listi: Izveštaj Crte i zapisnik s jednog biračkog mesta sve govore
 8. [multi, 2 outlets, score 25.4] Pravi jesenji dan u Srbiji – oblačno i hladno, povremeno s kišom
    - also (nova): Hladno i oblačno, povremeno sa kišom, na planinama moguć sneg
-9. [multi, 2 outlets, score 25.3] Ovaj čovek sa "Studentske liste" će biti novi ministar policije? Imao kontroverzne izjave
+9. [multi, 2 outlets, score 24.8] Ovaj čovek sa "Studentske liste" će biti novi ministar policije? Imao kontroverzne izjave
    - also (blic): (FOTO) OVAJ ČOVEK SA STUDENTSKE LISTE ĆE BITI NOVI MINISTAR POLICIJE? Imao kontroverzne izjave, evo šta misle analitičari koji podržavaju studente o njemu na čelu najmoćnijeg ministarstva
 10. [multi, 2 outlets, score 24.8] BIRODI: Nalazi ODIHR-a osnov za razmatranje postupanja TV Informer
    - also (nova): BIRODI: Nalazi ODIHR-a osnov za razmatranje postupanja TV Informer
@@ -72,12 +72,12 @@ Uncategorized sample:
 - Dnevnik - Cela emisija - 1.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-1112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"zivot":20,"sport":12,"svet":13,"politika":2,"ekonomija":9,"drustvo":3,"hronika":4,"kultura":4,"zdravlje":4,"tehnologija":4,"ostalo":1,"zabava":4}
+Categories: {"svet":13,"zivot":20,"sport":12,"politika":2,"ekonomija":9,"drustvo":3,"hronika":4,"kultura":4,"zdravlje":4,"tehnologija":4,"ostalo":1,"zabava":4}
 Uncategorized sample:
 - Na današnji dan, 3. novembar <https://www.b92.net/info/razno/281697/na-danasnji-dan-3-novembar/vest> tags=["Info"]
 
 ### Blic
-Categories: {"zivot":10,"drustvo":8,"ekonomija":12,"zabava":17,"hronika":7,"kultura":1,"svet":12,"zdravlje":1,"politika":1,"ostalo":1}
+Categories: {"hronika":8,"zivot":10,"drustvo":8,"ekonomija":12,"zabava":16,"kultura":1,"svet":12,"zdravlje":1,"politika":1,"ostalo":1}
 Uncategorized sample:
 - Naslovna strana za 3.11. <https://www.blic.rs/print/naslovna-strana-za-311/mbbjg1z> tags=[]
 
