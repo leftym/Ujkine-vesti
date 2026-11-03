@@ -1,86 +1,95 @@
 # Vesti health report
 
-Run: 2026-11-02T21:52:21.971Z  |  items: 285  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-03T08:08:14.926Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [B92] Possible ads NOT flagged: "Evo kako da uštedite ako planirate skijanje u Srbiji: Do ovog datuma traje popust"
+1. **MED** [Politika] 35% of stories are uncategorized ("Ostalo"). Common words in them: istoriji(1), drzave(1), ciklon(1), murasu(1), stigao(1), kopna(1), indiji(1), evakuisane(1). Add section names / keyword stems in lib/classify.js.
+2. **LOW** [B92] Possible ads NOT flagged: "Evo kako da uštedite ako planirate skijanje u Srbiji: Do ovog datuma traje popust"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 45 | 0.0h | 100% | 7% | 2 |
-| Nova.rs | yes | 50 | 0.4h | 100% | 2% | 1 |
-| B92 | yes | 80 | 0.0h | 95% | 0% | 0 |
-| Blic | yes | 70 | 0.2h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.2h | 100% | 15% | 0 |
-| RTS | yes | 20 | 0.1h | 100% | 0% | 0 |
+| N1 | yes | 46 | 0.0h | 100% | 15% | 1 |
+| Nova.rs | yes | 50 | 0.0h | 100% | 4% | 0 |
+| B92 | yes | 80 | 0.0h | 95% | 1% | 0 |
+| Blic | yes | 70 | 0.0h | 100% | 1% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 35% | 0 |
+| RTS | yes | 20 | 0.0h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 4 outlets, score 49] Uhapšen muškarac iz okoline Kruševca zbog nasilja u porodici
-   - also (b92): Uhapšen muškarac kod Kruševca: Sumnja se da je vanbračnu suprugu tukao rukama i nogama
-   - also (politika): Uhapšen Kruševljanin, tukao vanbračnu suprugu
-   - also (blic): SUPRUGU ŠUTIRAO PO GLAVI I TELU Užas u Kruševcu: Muškarac uhapšen zbog nasilja u porodici
-2. [multi, 4 outlets, score 48.3] Mladić iz Srbije nestao tokom uspona na Triglav, spasioci pronašli njegove stvari u snegu
-   - also (nova): Državljanin Srbije nestao prilikom uspona na Triglav: Spasioci pronašli njegove stvari
-   - also (n1): Državljanin Srbije nestao prilikom uspona na Triglav: Spasioci pronašli njegove stvari
-   - also (b92): Mladić iz Srbije nestao na Triglavu: Pronađene njegove stvari i tragovi u snegu, potraga u toku
-3. [multi, 4 outlets, score 45.5] Poštanska štedionica zatražila od NBS dodatni stručni nadzor u praćenju likvidnosti i finansijskih tokova
-   - also (nova): Poštanska štedionica traži da NBS dodatno nadzire njenu likvidnost i finansijske tokove
-   - also (n1): Poštanska štedionica sama tražila od NBS pojačani nadzor: Uvedene dodatne procedure za određene transakcije
-   - also (b92): Banka Poštanska štedionica tražila od NBS dodatni nadzor likvidnosti i finansijskih tokova
-4. [multi, 4 outlets, score 44.2] EPS, EMS, Telekom, Vodovod… : Koje državne firme su čuvale novac u Alta banci Davora Macure, kojoj je oduzeta dozvola za rad
-   - also (rts): Narodna banka Srbije oduzela dozvolu za izdavanje elektronskog novca Alta grupi
-   - also (n1): NBS oduzela dozvolu i platnoj instituciji Alta group DOO: Sredstva korisnika platnih usluga su zaštićena
-   - also (blic): NBS oduzela dozvolu i kompaniji ALTA GROUP: Evo šta to znači za korisnike
-5. [multi, 3 outlets, score 37.9] Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
-   - also (nova): Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
-   - also (n1): Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Krička prema studentima
-6. [multi, 3 outlets, score 37.8] Saslušan načelnik Službe za suzbijanje kriminala Boško Sekulović, tužilaštvo traži pritvor
-   - also (b92): Sekulović saslušan u tužilaštvu, predložen pritvor
-   - also (blic): SASLUŠAN NAČELNIK SLUŽBE ZA SUZBIJANJE KRIMINALA Boško Sekulović izneo odbranu, tužilaštvo traži pritvor
-7. [multi, 3 outlets, score 36.8] Nikolina Sinđelić za RTS: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
-   - also (nova): Studentkinja Nikolina Sinđelić više od godinu dana nije saslušana po prijavi protiv Marka Kričaka
+1. [multi, 6 outlets, score 66.5] Marku Kričku i Bošku Sekuloviću određen pritvor do 30 dana
+   - also (b92): Sud odredio pritvor Kričku i Sekuloviću
+   - also (politika): Sud odredio pritvor od 30 dana za Marka Krička i Boška Sekulovića
+   - also (rts): Nikolina Sinđelić za RTS: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
+   - also (n1): Određen pritvor do 30 dana Marku Kričku i Bošku Sekuloviću
+   - also (nova): Marku Kričku i Bošku Sekuloviću određen pritvor do 30 dana
+   - also (blic): ODREĐEN PRITVOR KRIČKU I SEKULOVIĆU! Viši sud doneo odluku nakon hapšenja načelnika UKP i SSK zbog zloupotrebe položaja
    - also (n1): Studentkinja Nikolina Sinđelić: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
-8. [multi, 3 outlets, score 34.6] RIK doneo rešenja o izmenama biračkih odbora za izbore za članove saveta nacionalnih manjina
-   - also (nova): RIK: Na izborima za savete nacionalnih manjina 204 posmatrača, predaja izbornog materijala od sutra
-   - also (n1): RIK: Na izborima za savete nacionalnih manjina 204 posmatrača, predaja izbornog materijala od sutra
-9. [multi, 3 outlets, score 34.1] Vučić razgovarao sa izraelskim premijerom: "Netanjahu mi je zahvalio za dugogodišnju uspešnu saradnju"
-   - also (politika): Vučić razgovarao sa Netanjahuom, izraelski premijer ga pozvao da poseti Izrael
-   - also (blic): "POZVAO ME JE DA GA POSETIM U IZRAELU" Vučić razgovarao s Netanjahuom: "Uspeli smo da podignemo odnos dve zemlje na viši nivo"
-10. [multi, 3 outlets, score 33.6] Đoković sutra protiv Vašeroa na startu u Parizu
-   - also (b92): Zabrinjavajuće scene pred start u Parizu: Đoković ima problem?! FOTO/VIDEO
-   - also (nova): Niko kao Đoković u Parizu, "paklen" put do titule i Torina
+   - also (nova): Studentkinja Nikolina Sinđelić više od godinu dana nije saslušana po prijavi protiv Marka Kričaka
+2. [multi, 4 outlets, score 47] "Istina je": Prvo oglašavanje Uroša Živkovića nakon što mu je zapaljen auto
+   - also (b92): Oglasio se Uroš Živković nakon što mu je zapaljen auto: "Molim vas za razumevanje"
+   - also (politika): Automobil izgoreo na parkingu na Čukarici, sumnja se da je požar podmetnut
+   - also (b92): Zapaljen džip Uroša Živkovića: Drama na Čukarici, požar izbio rano jutros
+   - also (nova): Zapaljen džip Uroša Živkovića: Sumnja se da je požar podmetnut
+   - also (blic): OGLASIO SE UROŠ ŽIVKOVIĆ NAKON ŠTO MU JE ZAPALJEN DŽIP: "Molim vas za razumevanje"
+   - also (blic): ZAPALJEN DŽIP UROŠA ŽIVKOVIĆA Požar izbio rano jutros na Čukarici
+3. [multi, 3 outlets, score 36.9] Nestašica vode u Blacu, proglašena vanredna situacija
+   - also (blic): NESTAŠICA VODE U OVOM GRADU U SRBIJI! Odmah proglašena vanredna situacija: Nadležni građanima uputili HITNO UPOZORENJE
+   - also (nova): Nestašica vode u Blacu, proglašena vanredna situacija: Bez vode 2.500 domaćinstava
+4. [multi, 3 outlets, score 33.7] Četiri osobe povređene u četiri udesa tokom noći u Beogradu
+   - also (b92): Hitna pomoć: Četiri osobe lakše povređene u četiri udesa u Beogradu
+   - also (nova): Četiri osobe lakše povređene u četiri saobraćajne nezgode u Beogradu
+5. [multi, 2 outlets, score 29] Sindikat Fakulteta tehničkih nauka u Novom Sadu traži ostavku dekana Borisa Dumnića
+   - also (politika): Sindikat traži ostavke rukovodstva ansambla „Kolo”
+6. [multi, 2 outlets, score 29] Zildžović o slučaju Alta banke: Ne može troje ljudi da iznese toliki novac, potrebna ozbiljna istraga
+   - also (politika): Slučaj Alta banke izolovan i specifičan
+7. [multi, 2 outlets, score 28] Dimitrijević: Zukorlićeva lista zadržava mandat i ako se utvrdi kupovina glasova u Aleksincu
+   - also (nova): Kako je lista Usamea Zukorlića za 12 glasova "otela" mandat Studentskoj listi: Izveštaj Crte i zapisnik s jednog biračkog mesta sve govore
+8. [multi, 2 outlets, score 25.4] Pravi jesenji dan u Srbiji – oblačno i hladno, povremeno s kišom
+   - also (nova): Hladno i oblačno, povremeno sa kišom, na planinama moguć sneg
+9. [multi, 2 outlets, score 25.3] Ovaj čovek sa "Studentske liste" će biti novi ministar policije? Imao kontroverzne izjave
+   - also (blic): (FOTO) OVAJ ČOVEK SA STUDENTSKE LISTE ĆE BITI NOVI MINISTAR POLICIJE? Imao kontroverzne izjave, evo šta misle analitičari koji podržavaju studente o njemu na čelu najmoćnijeg ministarstva
+10. [multi, 2 outlets, score 24.8] BIRODI: Nalazi ODIHR-a osnov za razmatranje postupanja TV Informer
+   - also (nova): BIRODI: Nalazi ODIHR-a osnov za razmatranje postupanja TV Informer
 
 ## Details
 ### N1
-Categories: {"svet":6,"politika":11,"drustvo":9,"region":4,"ostalo":3,"zivot":4,"ekonomija":7,"hronika":1}
+Categories: {"drustvo":8,"zivot":7,"politika":11,"svet":7,"hronika":3,"ostalo":7,"ekonomija":1,"region":2}
 Flagged:
-- (self) Studio live, utorak u 12h: Vučićeva pomilovanja <https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/>
-- (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
+- (self) Gledajte UŽIVO Novi dan: Trvenja na Medicinskom fakultetu <https://n1info.rs/najave-emisija/novi-dan-trvenja-na-medicinskom-fakultetu/>
 Uncategorized sample:
+- Gledajte UŽIVO Novi dan: Trvenja na Medicinskom fakultetu <https://n1info.rs/najave-emisija/novi-dan-trvenja-na-medicinskom-fakultetu/> tags=["Najave emisija","novi dan","najave emisija"]
+- BIRODI: Nalazi ODIHR-a osnov za razmatranje postupanja TV Informer <https://n1info.rs/vesti/birodi-nalazi-odihr-a-osnov-za-razmatranje-postupanja-tv-informer/> tags=["Vesti","izbori 2026","izveštavanje","mediji","odihr","birodi"]
+- AMSS: Sneg na putevima na visokim planinama, neophodna zimska oprema <https://n1info.rs/vesti/amss-sneg-na-putevima-na-visokim-planinama-neophodna-zimska-oprema/> tags=["Vesti","amss","putevi","sneg","zimska oprema"]
+- Na današnji dan, 3. novembar: Umrli Miljenko Dereta, Anri Matis, En Burda... <https://n1info.rs/vesti/na-danasnji-dan-3-novembar-2026-godine/> tags=["Vesti","na današnji dan"]
+- Civilni odbor BCBP traži da nadležni ispitaju tvrdnje o praćenju aktiviste Lazara Dinića i da ga zaštite <https://n1info.rs/vesti/civilni-odbor-bcbp-trazi-da-nadlezni-ispitaju-tvrdnje-o-pracenju-aktiviste-lazara-dinica-i-da-ga-zastite/> tags=["Vesti","bcbp","beogradski centar za bezbednosnu politiku","lazar dinić","praćenje"]
 - Utisak nedelje: Ognjen Radonjić, Vuk Cvijić, Vida Petrović Škero (1.11.2026) <https://n1info.rs/video/utisak-nedelje-ognjen-radonjic-vuk-cvijic-vida-petrovic-skero-1112026/> tags=["Video","utisak video","utisak nedelje","video"]
-- Dnevnik u 19 (01.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-01-novembar-2026/> tags=["Dnevnik","dnevnik u 19","najvažnije vesti","vesti dana","dnevnik 19","dnevnik"]
-- Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
 
 ### Nova.rs
-Categories: {"hronika":9,"sport":11,"politika":4,"zabava":12,"zivot":1,"svet":1,"ekonomija":5,"drustvo":5,"ostalo":1,"kultura":1}
-Flagged:
-- (self) Gledajte uživo Dnevnik TV Nova <https://nova.rs/vesti/drustvo/gledajte-uzivo-dnevnik-tv-nova-02-11-2026/>
+Categories: {"sport":12,"svet":4,"ostalo":2,"zabava":6,"zivot":6,"hronika":10,"politika":3,"drustvo":4,"ekonomija":3}
 Uncategorized sample:
+- Probudi se - Cela emisija - 2.11.2026. <https://nova.rs/emisije/probudi-se-cela-emisija-2112026/> tags=["Emisije","probudi se cela emisija"]
 - Dnevnik - Cela emisija - 1.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-1112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"svet":12,"sport":13,"zivot":16,"kultura":4,"hronika":3,"zdravlje":3,"ekonomija":9,"tehnologija":4,"zabava":6,"drustvo":2,"politika":6,"region":2}
+Categories: {"zivot":20,"sport":12,"svet":13,"politika":2,"ekonomija":9,"drustvo":3,"hronika":4,"kultura":4,"zdravlje":4,"tehnologija":4,"ostalo":1,"zabava":4}
+Uncategorized sample:
+- Na današnji dan, 3. novembar <https://www.b92.net/info/razno/281697/na-danasnji-dan-3-novembar/vest> tags=["Info"]
 
 ### Blic
-Categories: {"hronika":7,"zivot":8,"svet":9,"zabava":25,"zdravlje":2,"drustvo":5,"politika":5,"ekonomija":7,"kultura":2}
+Categories: {"zivot":10,"drustvo":8,"ekonomija":12,"zabava":17,"hronika":7,"kultura":1,"svet":12,"zdravlje":1,"politika":1,"ostalo":1}
+Uncategorized sample:
+- Naslovna strana za 3.11. <https://www.blic.rs/print/naslovna-strana-za-311/mbbjg1z> tags=[]
 
 ### Politika
-Categories: {"ekonomija":1,"svet":6,"hronika":1,"ostalo":3,"sport":2,"politika":5,"kultura":2}
+Categories: {"svet":5,"ostalo":7,"hronika":4,"region":2,"ekonomija":1,"sport":1}
 Uncategorized sample:
-- Stiže novo zahlađenje: u Srbiji sutra kiša, na planinama sneg <https://www.politika.rs/scc/clanak/799185/stize-novo-zahladenje-u-srbiji-sutra-kisa-na-planinama-sneg> tags=[]
-- Savana Gatri ponovo moli za pomoć u pronalaženju majke: Ne možemo da nastavimo dalje <https://www.politika.rs/scc/clanak/799173/savana-gatri-ponovo-moli-za-pomoc-u-pronalazenju-majke-ne-mozemo-da-nastavimo-dalje> tags=[]
-- Otkriveno novo veliko nalazište cirkona u Kini <https://www.politika.rs/scc/clanak/799166/otkriveno-novo-veliko-nalaziste-cirkona-u-kini> tags=[]
+- Prva žena u istoriji na čelu države <https://www.politika.rs/scc/clanak/799196/prva-zena-u-istoriji-na-celu-drzave> tags=[]
+- Ciklon „Murasu” stigao do kopna u Indiji, evakuisane hiljade ljudi <https://www.politika.rs/scc/clanak/799242/ciklon-murasu-stigao-do-kopna-u-indiji-evakuisane-hiljade-ljudi> tags=[]
+- Severna Koreja odbacila optužbe FBI za krađu šest milijardi dolara i optužila SAD <https://www.politika.rs/scc/clanak/799239/severna-koreja-odbacila-optuzbe-fbi-za-kradu-sest-milijardi-dolara-i-optuzila-sad> tags=[]
+- Sindikat traži ostavke rukovodstva ansambla „Kolo” <https://www.politika.rs/scc/clanak/799189/sindikat-trazi-ostavke-rukovodstva-ansambla-kolo> tags=[]
+- Kovačević: Promena vlasti u Srbiji pokazala je kome je zapravo smetala Srbija <https://www.politika.rs/scc/clanak/799238/kovacevic-promena-vlasti-u-srbiji-pokazala-je-kome-je-zapravo-smetala-srbija> tags=[]
+- Ko danas uređuje stvarnost <https://www.politika.rs/scc/clanak/799187/ko-danas-ureduje-stvarnost> tags=[]
 
 ### RTS
-Categories: {"hronika":7,"region":2,"drustvo":4,"ekonomija":3,"zivot":1,"politika":3}
+Categories: {"hronika":3,"politika":2,"ekonomija":3,"svet":3,"drustvo":5,"zivot":2,"region":2}
