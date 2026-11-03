@@ -243,3 +243,10 @@ test('Latin to Cyrillic', () => {
   // searching in Cyrillic finds Latin headlines
   assert.equal(cyrToFold('Ђоковић шампион'), 'djokovic sampion');
 });
+
+test('every outlet has an https icon address and the API passes it on', async () => {
+  const { SOURCES } = require('../lib/sources');
+  for (const s of SOURCES) assert.match(s.icon || '', /^https:\/\//, s.id);
+  const data = JSON.parse((await get(server, '/api/news')).body);
+  assert.ok(data.sources.every((s) => /^https:/.test(s.icon)), 'icons reach the app');
+});

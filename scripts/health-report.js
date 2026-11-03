@@ -61,6 +61,18 @@ const STOPWORDS = new Set('koji koja koje kako nakon posle zbog gde kada sada je
     details.push('');
   }
 
+  // outlet icons are loaded from the outlets' own sites; tell the owner when one stops working
+  for (const s of SOURCES) {
+    if (!s.icon) continue;
+    try {
+      const r = await fetch(s.icon, { redirect: 'follow', signal: AbortSignal.timeout(8000), headers: { 'user-agent': 'Mozilla/5.0 (Linux; Android 14) Chrome/130 Mobile Safari/537.36' } });
+      const type = r.headers.get('content-type') || '';
+      if (!r.ok || !/image|icon|octet/.test(type)) add('LOW', s.name, `Icon address returns HTTP ${r.status} (${type.split(';')[0] || 'no type'}); the app shows a colored dot instead. Find the current icon (page source: link rel=icon / apple-touch-icon) and update icon in lib/sources.js.`);
+    } catch (e) {
+      add('LOW', s.name, `Icon address unreachable (${e.message}); the app shows a colored dot instead.`);
+    }
+  }
+
   // front-page ranking sanity
   const byId = new Map(data.items.map((i) => [i.id, i]));
   const top = data.top || [];

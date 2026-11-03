@@ -6,7 +6,7 @@
   const PAGE = 40;
 
   const SCALES = [1, 1.15, 1.3, 1.5, 1.75, 2, 2.3];
-  const DEFAULTS = { view: 'news', script: 'lat', images: false, summary: false, theme: 'auto', fs: 2, sources: [], cats: [], q: '', hideAds: true, hideBetting: true, reader: true, muted: '' };
+  const DEFAULTS = { view: 'news', script: 'lat', logos: true, images: false, summary: false, theme: 'auto', fs: 2, sources: [], cats: [], q: '', hideAds: true, hideBetting: true, reader: true, muted: '' };
   let S = loadSettings();
   let DATA = null;
   let fromCache = false;
@@ -109,11 +109,28 @@
   }
 
   // ---- rendering -----------------------------------------------------------
-  function chip(label, pressed, onClick, color) {
+  // Small mark in front of an outlet name: the outlet's own icon (loaded from its site), or a colored dot
+  function mark(src) {
+    const wrap = el('span', 'mark');
+    const dot = el('span', 'dot');
+    dot.style.setProperty('--c', src ? src.color : '#888');
+    wrap.append(dot);
+    if (S.logos && src && src.icon) {
+      const img = el('img', 'logo');
+      img.alt = ''; img.referrerPolicy = 'no-referrer'; img.loading = 'lazy'; img.src = src.icon;
+      img.addEventListener('load', () => dot.remove());
+      img.addEventListener('error', () => img.remove());
+      wrap.append(img);
+    }
+    return wrap;
+  }
+
+  function chip(label, pressed, onClick, color, src) {
     const b = el('button', 'chip');
     b.type = 'button';
     b.setAttribute('aria-pressed', String(pressed));
-    if (color) { const d = el('span', 'dot'); d.style.setProperty('--c', color); b.append(d); }
+    if (src) b.append(mark(src));
+    else if (color) { const d = el('span', 'dot'); d.style.setProperty('--c', color); b.append(d); }
     b.append(label);
     b.addEventListener('click', onClick);
     return b;
@@ -128,7 +145,7 @@
     const src = $('#srcChips');
     src.replaceChildren(chip('Svi', S.sources.length === 0, () => { S.sources = []; changed(); }));
     for (const s of DATA.sources) {
-      src.append(chip(s.name, S.sources.includes(s.id), () => { toggle(S.sources, s.id); changed(); }, s.color));
+      src.append(chip(s.name, S.sources.includes(s.id), () => { toggle(S.sources, s.id); changed(); }, s.color, s));
     }
 
     const present = new Set(DATA.items.map((i) => i.category));
@@ -162,9 +179,7 @@
     const body = el('div', 'body');
     const meta = el('div', 'meta');
     const s = el('span', 'src');
-    const dot = el('span', 'dot');
-    dot.style.setProperty('--c', src.color);
-    s.append(dot, src.name);
+    s.append(mark(src), src.name);
     meta.append(s, el('span', null, ago(it.published)));
     if (it.ad) meta.append(el('span', 'adbadge', it.ad === 'betting' ? 'KLADIONICA' : it.ad === 'self' ? 'NAJAVA' : 'OGLAS'));
     body.append(meta, el('h2', null, it.title));
@@ -211,9 +226,7 @@
     const body = el('div', 'body');
     const meta = el('div', 'meta');
     const s = el('span', 'src');
-    const dot = el('span', 'dot');
-    dot.style.setProperty('--c', src ? src.color : '#888');
-    s.append(dot, src ? src.name : v.source);
+    s.append(mark(src), src ? src.name : v.source);
     meta.append(s, el('span', null, ago(v.published)));
     if (v.short) meta.append(el('span', 'adbadge short', 'KRATKI'));
     body.append(meta, el('h2', null, v.title));
@@ -303,9 +316,7 @@
         const src = DATA.sources.find((s) => s.id === it.source);
         const b = el('button', 'opill');
         b.type = 'button';
-        const d = el('span', 'dot');
-        d.style.setProperty('--c', src.color);
-        b.append(d, src.name);
+        b.append(mark(src), src.name);
         b.addEventListener('click', () => openItem(it));
         row.append(b);
       }
@@ -487,8 +498,9 @@
       r.checked = r.value === S.script;
       r.addEventListener('change', () => { if (r.checked) { S.script = r.value; saveSettings(); applyScript(); } });
     }
-    const im = $('#optImages'), sm = $('#optSummary');
-    im.checked = S.images; sm.checked = S.summary;
+    const im = $('#optImages'), sm = $('#optSummary'), lg = $('#optLogos');
+    im.checked = S.images; sm.checked = S.summary; lg.checked = S.logos;
+    lg.addEventListener('change', () => { S.logos = lg.checked; changed(); });
     im.addEventListener('change', () => { S.images = im.checked; changed(); });
     sm.addEventListener('change', () => { S.summary = sm.checked; changed(); });
     for (const r of document.querySelectorAll('input[name="theme"]')) {
