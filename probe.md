@@ -1,16 +1,16 @@
 # Probe
 
-Run: 2026-11-02T21:51:59.129Z
+Run: 2026-11-03T08:07:54.782Z
 
 ## B92 feeds
-RSS directory page https://www.b92.net/info/rss/: 17731 bytes; feed-like links found: 0
-- https://www.b92.net/info/rss/vesti.xml -> 17788 bytes, 20 items, newest 2026-11-02T21:36:00.000Z, oldest 2026-11-02T16:19:00.000Z
-    * Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase | 2026-11-02T21:36 | cats=["Info"] | https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest
-    * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T21:15 | cats=["Info"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
-    * Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude" | 2026-11-02T21:13 | cats=["Info"] | https://www.b92.net/info/svet/281687/oglasio-se-zelenski-nakon-ruskog-napada-na-zaporosku-oblast/vest
-    * Začarani krug odmazde može da bude pokrenut svakog trenutka – a to će značiti apsolutni rat | 2026-11-02T20:48 | cats=["Info"] | https://www.b92.net/info/svet/281679/wsj-saveznici-sad-u-zalivu-se-spremaju-za-nove-napade-na-iran/vest
-    * Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO | 2026-11-02T20:43 | cats=["Info"] | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest
-    * Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | 2026-11-02T20:15 | cats=["Info"] | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest
+RSS directory page https://www.b92.net/info/rss/: 17369 bytes; feed-like links found: 0
+- https://www.b92.net/info/rss/vesti.xml -> 17231 bytes, 20 items, newest 2026-11-03T07:55:00.000Z, oldest 2026-11-02T21:36:00.000Z
+    * Vojska na nogama; Testirana kasetna bojeva glava; Uništava se pred sobom | 2026-11-03T07:55 | cats=["Info"] | https://www.b92.net/info/svet/281730/severna-koreja-testirala-kasetne-bojeve-glave/vest
+    * Vučić razgovarao sa predsednikom Uzbekistana: "Rekao mi je da budem ponosan na rezultate" FOTO | 2026-11-03T07:53 | cats=["Info"] | https://www.b92.net/info/politika/281731/vucic-razgovarao-sa-predsednikom-uzbekistana-rekao-mi-je-da-budem-ponosan-na-rezultate-foto/vest
+    * Rusi nemilosrdno bombarduju; Stižu prvi snimci; Ljude traže pod ruševinama FOTO/VIDEO | 2026-11-03T07:28 | cats=["Info"] | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest
+    * Ova zemlja je u kolapsu: 300.000 ljudi napustilo domove; "Plaćaju surovu cenu..." VIDEO | 2026-11-03T07:43 | cats=["Info"] | https://www.b92.net/info/svet/281718/sukobi-u-jemenu-300000-ljudi-napustilo-domove/vest
+    * Kričak i Sekulović izneli odbranu u tužilaštvu | 2026-11-03T07:28 | cats=["Info"] | https://www.b92.net/info/hronika/281719/kricak-i-sekulovic-izneli-odbranu-u-tuzilastvu/vest
+    * Iran pogubio dvojicu muškaraca FOTO | 2026-11-03T07:19 | cats=["Info"] | https://www.b92.net/info/svet/281713/iran-pogubio-dvojicu-muskaraca-zbog-ubistava-policajaca/vest
 - https://www.b92.net/info/rss/svevesti.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/najnovije.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/info.xml -> ERROR HTTP_404
@@ -20,54 +20,54 @@ RSS directory page https://www.b92.net/info/rss/: 17731 bytes; feed-like links f
 - https://www.b92.net/info/rss/drustvo.xml -> ERROR HTTP_404
 - https://www.b92.net/rss/ -> 226741 bytes, 0 items, newest -, oldest -
 - https://www.b92.net/rss -> 226741 bytes, 0 items, newest -, oldest -
-- https://www.b92.net/feed/ -> 17599 bytes, 20 items, newest 2026-11-02T21:44:00.000Z, oldest 2026-11-02T20:28:00.000Z
-    * Brest prekinuo negativan niz i odneo bodove iz Lorijena | 2026-11-02T21:44 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/lige-petice/281693/liga-1-9-kolo-lorijen-brest-02/vest
-    * Parma ponizila Samardžićevu Atalantu u Bergamu – tri gola za ubedljiv trijumf gostiju | 2026-11-02T21:40 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/lige-petice/281691/atalanta-parma-serija-a-10-kolo/vest
-    * Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase | 2026-11-02T21:36 | cats=["Najnovije"] | https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest
-    * Živković u Grčkoj do kraja karijere? | 2026-11-02T21:21 | cats=["Najnovije"] | https://www.b92.net/sport/fudbal/vesti/281609/zivkovic-u-grckoj-do-kraja-karijere/vest
-    * Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO | 2026-11-02T21:15 | cats=["Najnovije"] | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest
-    * Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude" | 2026-11-02T21:13 | cats=["Najnovije"] | https://www.b92.net/info/svet/281687/oglasio-se-zelenski-nakon-ruskog-napada-na-zaporosku-oblast/vest
+- https://www.b92.net/feed/ -> 17182 bytes, 20 items, newest 2026-11-03T07:57:00.000Z, oldest 2026-11-03T07:06:00.000Z
+    * Đoković nema drugog izbora | 2026-11-03T07:57 | cats=["Najnovije"] | https://www.b92.net/sport/tenis/vesti/281589/djokovicu-za-torino-potrebno-polufinale-pariza/vest
+    * Vojska na nogama; Testirana kasetna bojeva glava; Uništava se pred sobom | 2026-11-03T07:55 | cats=["Najnovije"] | https://www.b92.net/info/svet/281730/severna-koreja-testirala-kasetne-bojeve-glave/vest
+    * Vučić razgovarao sa predsednikom Uzbekistana: "Rekao mi je da budem ponosan na rezultate" FOTO | 2026-11-03T07:53 | cats=["Najnovije"] | https://www.b92.net/info/politika/281731/vucic-razgovarao-sa-predsednikom-uzbekistana-rekao-mi-je-da-budem-ponosan-na-rezultate-foto/vest
+    * Simbol švedske industrije tone: Gubitak 500 miliona evra, sledi 2.500 otkaza | 2026-11-03T07:50 | cats=["Najnovije"] | https://www.b92.net/biz/svet/vesti/281721/simbol-svedske-industrije-tone-gubitak-500-miliona-evra-sledi-2500-otkaza/vest
+    * Srbin zasenio Kusturičin debi u NCAA – obojica blistali VIDEO | 2026-11-03T07:48 | cats=["Najnovije"] | https://www.b92.net/sport/kosarka/nba/281724/nikola-kusturica-devet-poena-u-ncaa-debiju-djulovic-19-u-pobedi-batlera/vest
+    * Rusi nemilosrdno bombarduju; Stižu prvi snimci; Ljude traže pod ruševinama FOTO/VIDEO | 2026-11-03T07:28 | cats=["Najnovije"] | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 597664 bytes, 65 headline-like links
-- Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu | https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest | in feeds: vesti.xml,
-- Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana  | https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest | in feeds: vesti.xml,
-- Spremaju se za snažnu oluju: Rizik od uragana, tornada i grada | https://www.b92.net/info/svet/281675/sad-ocekuje-se-da-ce-oluja-pogoditi-delove-teksasa-i-kanzasa-na-dan-izbora/vest | in feeds: vesti.xml
-- Sekulović saslušan u tužilaštvu, predložen pritvor | https://www.b92.net/info/hronika/281659/sekulovic-saslusan-u-tuzilastvu-predlozen-pritvor/vest | in feeds: vesti.xml
-- uživo Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FO | https://www.b92.net/info/svet/281385/rat-u-ukrajini-1712-dan/vest | in feeds: vesti.xml,
-- Grom iz vedra neba: Trinkijeri odvodi Zvezdinog najboljeg – ponuda koja se ne odbija | https://www.b92.net/sport/kosarka/euroleague/281684/sdna-paok-nudi-krisu-dzonsu-tri-miliona-evra-godisnje/vest | in feeds: NONE
+homepage: 597018 bytes, 64 headline-like links
+- uživo Rusi nemilosrdno bombarduju; Stižu prvi snimci; Ljude traže pod ruševinama FOTO/VIDE | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest | in feeds: vesti.xml,
+- Evropa klizi u totalni kolaps; Napašće Ruse? | https://www.b92.net/info/svet/281706/evropske-sile-spremne-da-napadnu-rusiju/vest | in feeds: vesti.xml
+- Vojska na nogama; Testirana kasetna bojeva glava; Uništava se pred sobom | https://www.b92.net/info/svet/281730/severna-koreja-testirala-kasetne-bojeve-glave/vest | in feeds: vesti.xml,
+- Srbin zasenio Kusturičin debi u NCAA – obojica blistali VIDEO | https://www.b92.net/sport/kosarka/nba/281724/nikola-kusturica-devet-poena-u-ncaa-debiju-djulovic-19-u-pobedi-batlera/vest | in feeds: NONE
+- Simbol švedske industrije tone: Gubitak 500 miliona evra, sledi 2.500 otkaza | https://www.b92.net/biz/svet/vesti/281721/simbol-svedske-industrije-tone-gubitak-500-miliona-evra-sledi-2500-otkaza/vest | in feeds: NONE
+- Ova zemlja je u kolapsu: 300.000 ljudi napustilo domove; &quot;Plaćaju surovu cenu...&quot | https://www.b92.net/info/svet/281718/sukobi-u-jemenu-300000-ljudi-napustilo-domove/vest | in feeds: vesti.xml,
+- Jović i Janis gledaju i ne veruju šta Dončić radi VIDEO | https://www.b92.net/sport/kosarka/nba/281712/luka-doncic-vezao-petu-utakmicu-u-nba-sa-37-poena/vest | in feeds: NONE
+- Zapaljen džip Uroša Živkovića: Drama na Čukarici, požar izbio rano jutros | https://www.b92.net/zivot/aktuelno/281714/zapaljen-dzip-urosa-zivkovica-drama-na-cukarici-pozar-izbio-rano-jutros/vest | in feeds: NONE
+- Grčka kupuje najmanje tri aviona KC-390 | https://www.b92.net/biz/svet/vesti/281634/grcka-kupuje-najmanje-tri-aviona-kc-390/vest | in feeds: NONE
+- Vučić razgovarao sa predsednikom Uzbekistana: &quot;Rekao mi je da budem ponosan na rezult | https://www.b92.net/info/politika/281731/vucic-razgovarao-sa-predsednikom-uzbekistana-rekao-mi-je-da-budem-ponosan-na-rezultate-foto/vest | in feeds: vesti.xml,
+- Nema više krađe sadržaja sa interneta | https://www.b92.net/tehnopolis/aktuelno/281210/velika-promena-za-vestacku-inteligenciju-google-i-openai-prihvatili-robotstxt-pravilo/vest | in feeds: NONE
+- Oglasio se Uroš Živković nakon što mu je zapaljen auto: &quot;Molim vas za razumevanje&quo | https://www.b92.net/zivot/aktuelno/281727/oglasio-se-uros-zivkovic-nakon-sto-mu-je-zapaljen-auto-molim-vas-za-razumevanje/vest | in feeds: NONE
+- Ekonomista: Gašenje ALTA banke neće uticati na kamate postojećih kredita u drugim bankama | https://www.b92.net/biz/srbija/vesti/281477/ekonomista-gasenje-alta-banke-nece-uticati-na-kamate-postojecih-kredita-u-drugim-bankama/vest | in feeds: NONE
+- Kričak i Sekulović izneli odbranu u tužilaštvu | https://www.b92.net/info/hronika/281719/kricak-i-sekulovic-izneli-odbranu-u-tuzilastvu/vest | in feeds: vesti.xml,
+- Ovaj čovek sa &quot;Studentske liste&quot; će biti novi ministar policije? Imao kontroverz | https://www.b92.net/info/politika/281707/ovaj-covek-sa-studentske-liste-ce-biti-novi-ministar-policije-imao-kontroverzne-izjave/vest | in feeds: vesti.xml
 - Ovo je evropska sila u proizvodnji oružja: Industrija vredi milijarde evra | https://www.b92.net/biz/svet/vesti/281614/ceska-vojna-industrija-belezi-rekordni-rast-izvoza-i-prihoda/vest | in feeds: NONE
-- Začarani krug odmazde može da bude pokrenut svakog trenutka – a to će značiti apsolutni ra | https://www.b92.net/info/svet/281679/wsj-saveznici-sad-u-zalivu-se-spremaju-za-nove-napade-na-iran/vest | in feeds: vesti.xml,
-- Utišao &quot;Marakanu&quot; evrogolom: &quot;Nisam dobio pravu priliku&quot; VIDEO | https://www.b92.net/sport/fudbal/evrokupovi/281677/jezicka-barijera-ga-skupo-kostala-argentinski-talenat-otkrio-zasto-nije-dobio-sansu-u-ajaksu/vest | in feeds: NONE
-- Posle 28 godina pešačenja stigao kući: Britanac prešao zaleđeno more, džungle, preplivao L | https://www.b92.net/zivot/aktuelno/281681/karl-busbi-pesacio-28-godina-i-stigao-u-rodni-grad/vest | in feeds: NONE
-- NBS izdala obaveštenje u vezi s tekućim računima klijenata Alta banke | https://www.b92.net/biz/srbija/vesti/281615/nbs-izdala-obavestenje-u-vezi-s-tekucim-racunima-klijenata-alta-banke/vest | in feeds: NONE
-- Karlik: &quot;Razumem navijače i ljubav prema Željku, ali nismo ga mi izbacili&quot; | https://www.b92.net/sport/kosarka/euroleague/281686/karlik-dzons-o-zeljku-obradovicu/vest | in feeds: NONE
-- Vučić razgovarao sa izraelskim premijerom: &quot;Netanjahu mi je zahvalio za dugogodišnju  | https://www.b92.net/info/politika/281664/vucic-razgovarao-sa-izraelskim-premijerom-netanjahu-mi-je-zahvalio-za-dugogodisnju-uspesnu-saradnju/vest | in feeds: vesti.xml
-- Neverovatan podvig u Kini: Roboti se popeli na vrh svete planine uz 3.100 stepenika FOTO | https://www.b92.net/tehnopolis/aktuelno/281663/prvo-svetsko-takmicenje-u-planinarenju-robota-odrzano-u-kini-savladali-3100-stepenika-na-planini-tai/vest | in feeds: NONE
-- &quot;Želeo je da umre u naručju svoje supruge&quot;; Potresan oproštaj Gejts Mekfaden od  | https://www.b92.net/zivot/aktuelno/281628/gejts-mekfaden-se-oprostila-od-patrika-stjuarta-zeleo-je-da-umre-u-zeninom-narucju/vest | in feeds: NONE
-- Tramp želi da vrati ruski gas u Evropu | https://www.b92.net/biz/svet/vesti/281479/tramp-zeli-da-vrati-ruski-gas-u-evropu/vest | in feeds: NONE
-- Brnabić: &quot;Komesari SL nikako da shvate – Vučić je lider opozicije, koja ima više od 1 | https://www.b92.net/info/politika/281599/brnabic-komesari-sl-nikako-da-shvate-vucic-je-lider-opozicije-koja-ima-vise-od-17-miliona-glasova/vest | in feeds: NONE
-- Priveden Davor Macura; Oglasili se Javno tužilaštvo za organizovani kriminal i MUP | https://www.b92.net/info/hronika/281470/priveden-davor-macura-oglasili-se-javno-tuzilastvo-za-organizovani-kriminal-i-mup/vest | in feeds: NONE
-- Rusija ovo nikad nije učinila: Evo kako je nastavila da izvozi ključnu robu | https://www.b92.net/biz/svet/vesti/281441/arktik-kao-nova-ruska-izvozna-ruta/vest | in feeds: NONE
-- Priča Petra Sukačeva: Od dečaka koji je autobusom satima putovao na treninge do dresa Srbi | https://www.b92.net/sport/fudbal/srpski-fudbal/280953/expertiva-45-epizoda-petar-sukacev-fudbaler-vojvodine-video/vest | in feeds: NONE
+- Jokić stao u 4/4 nadomak tripl-dabla – Avdija zasenio Ol-star &quot;monstrume&quot; VIDEO | https://www.b92.net/sport/kosarka/nba/281701/jokic-26-poena-9-skokova-i-8-asistencija-u-porazu-denvera-video/vest | in feeds: NONE
+- NBA ludnica: Grin se potukao sa Bruksom! Lebron i Meksi dominirali; Indijana zamalo pobedi | https://www.b92.net/sport/kosarka/nba/281723/nba-rezultati-kari-blistao-lebron-i-maksi-slavili-indijana-igrala-sa-sest-igraca/vest | in feeds: NONE
+- Želela je da izbriše ovaj film iz karijere: Meg Rajan otkrila zbog čega se kaje VIDEO | https://www.b92.net/kultura/filmtv/281525/meg-rajan-zelela-da-zaboravi-jedan-od-svojih-prvih-filmova-moram-da-priznam-svo-to-smece-koje-sam-snimila/vest | in feeds: NONE
+- Višedecenijska teorija o nastanku života na Zemlji je pogrešna? Naučnici došli do novih sa | https://www.b92.net/zivot/nauka/281669/teorija-o-nastanku-zivota-na-zemlji-je-pogresna-naucnici-dosli-do-novih-saznanja/vest | in feeds: NONE
 - Dastin Hofman otkrio: &quot;Snimanje Diplomca je bilo užasno iskustvo, šamarali su me 27 p | https://www.b92.net/kultura/filmtv/281672/dastin-hofman-otkrio-snimanje-diplomca-je-bilo-uzasno-iskustvo-samarali-su-me-27-puta/vest | in feeds: NONE
-- Zabrinjavajuće scene pred start u Parizu: Đoković ima problem?! FOTO/VIDEO | https://www.b92.net/sport/tenis/vesti/281647/novak-djokovic-zabrinuo-navijace-pred-masters-u-parizu-problem-sa-ledjima/vest | in feeds: NONE
-- &quot;Mačak u šeširu&quot; donosi više od nestašluka: Velika porodična avantura u bioskopi | https://www.b92.net/kultura/filmtv/281670/film-macak-u-sesiru-u-ada-molu-i-druzenje-sa-glumcima/vest | in feeds: NONE
-- Preminuo Huan Atkins: Trebalo da nastupi u Beogradu | https://www.b92.net/zivot/aktuelno/281649/preminuo-huan-atkins-dj-tehno-muzike/vest | in feeds: NONE
 - Partizan opet stao kada je bilo najpotrebnije – duplo ništa!; Penjaroja ponosan posle sveg | https://www.b92.net/sport/kosarka/euroleague/280869/uzivo-zagliris-partizan-9-kolo-evrolige/vest | in feeds: NONE
+- Sunovrat Partizana: Od +11 do poraza od Asvela za pet minuta!; Penjaroja: &quot;Nije bilo  | https://www.b92.net/sport/kosarka/euroleague/280255/uzivo-asvel-partizan-8-kolo-evrolige/vest | in feeds: NONE
+- Zvezda &quot;zgazila&quot; Bajern 30 razlike!; Moneke: &quot;Bolji nismo bili&quot;; Navar | https://www.b92.net/sport/kosarka/euroleague/280589/uzivo-prenos-crvena-zvezda-bajern-minhen-evroliga-kosarka-9-kolo/vest | in feeds: NONE
+- Liverpul će o suđenju, Arsenal da slavi pobedu posle 14 godina VIDEO | https://www.b92.net/sport/fudbal/lige-petice/281295/premijer-liga-9-kolo-liverpul-arsenal-01/vest | in feeds: NONE
 
 ### B92 homepage markup samples (to find where story images live)
 ```html
-="icon"> <svg width='10' height="9"> <use xlink:href="/files/b92/fontawesome/solid.svg#chevron-right"></use> </svg> </span> </a> </div> <div class="selected-news-box"> <article class="news-item " data-upscore-object-id="281690" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2024-10-28/76745_11064748_s.webp?timestamp=1793655375" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2024-10-28/76745_11064748_kf.jpg?timestamp=1793655375" alt="Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
+="icon"> <svg width='10' height="9"> <use xlink:href="/files/b92/fontawesome/solid.svg#chevron-right"></use> </svg> </span> </a> </div> <div class="selected-news-box"> <article class="news-item " data-upscore-object-id="281704" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281704/medjuizbori-u-sad/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2026-11-03/285137_tan2026-11-0303221930-5_s.webp?timestamp=1793689876" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2026-11-03/285137_tan2026-11-0303221930-5_kf.jpg?timestamp=1793689876" alt="Dan odluke u SAD" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
 ```
 ```html
-ef="https://www.b92.net/svi-komentari/281690" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281690/rekordna-zaplena-kokaina-u-becu-uhapseni-srbin-i-hrvat-drogu-vozili-u-srebrnom-mercedesu-s-klase/vest"> <span data-upscore-title > Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase </span> </a></h2> <p class="news-item-description">Istražitelji su otkrili ogromnu pošiljku koka
+ef="https://www.b92.net/svi-komentari/281704" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281704/medjuizbori-u-sad/vest"> <span data-upscore-title > Dan odluke u SAD </span> </a></h2> <p class="news-item-description">Birači u SAD danas izlaze na međuizbore na ko
 ```
 ```html
- <p class="news-item-date"> 2.11.2026.</p> <p class="news-item-before-time"> <span class="before-time-number">12</span> <span class="before-time-text">min</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281680" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_s.webp?timestamp=1793654698" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2026-11-02/285127_tan2026-11-0221171821-4_kf.jpg?timestamp=1793654698" alt="Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
+/p> <p class="news-item-before-time"> <span class="before-time-number">1</span> <span class="before-time-text">h</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281715" > <div class="news-item-image-wrapper"> <span class="live-dot"><span></span></span> <a href="https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2026-09-21/272673_14308247_s.webp?timestamp=1793691985" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2026-09-21/272673_14308247_kf.jpg?timestamp=1793691985" alt="Rusi nemilosrdno bombarduju; Stižu prvi snimci; Ljude traže pod ruševinama FOTO/VIDEO" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
 ```
 ```html
-ef="https://www.b92.net/svi-komentari/281680" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281680/poslednje-trampovo-obracanje-pred-izbore-zabrinutost-gradjana-raste-a-tema-neocekivana-video/vest"> <span data-upscore-title > Poslednje Trampovo obraćanje pred izbore; Zabrinutost građana raste, a tema – neočekivana VIDEO </span> </a></h2> <p class="news-item-description">Američki predsednik Donald Tramp završio je k
+281715" class="news-item-comments-number">0</a> <a href="https://www.b92.net/svi-komentari/281715" class="news-item-author"></a> </div> <div class="news-item-data"> <span class="news-item-category" style="color:#106DB9" > Istočni front </span> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest"> <span class="live-text-title"> uživo </span> <span data-upscore-title > Rusi nemilosrdno bombarduju; Stižu prvi snimci; Ljude traže pod ruševinama FOTO/VIDEO </span> </a></h2> <p class="news-item-description">Rat u Ukrajini – 1.713. dan. Ruske trupe izvr
 ```
 img tags on homepage: 188; with data-src: 0; picture/source: 538
 
@@ -76,9 +76,9 @@ img tags on homepage: 188; with data-src: 0; picture/source: 538
 feed https://n1info.rs/feed/: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/@N1infoTV ; https://www.youtube.com/channel/UCpglal7d5mhV4lA1b3-DsCw
   https://www.youtube.com/@N1infoTV -> id UCpglal7d5mhV4lA1b3-DsCw  name N1
-  video feed OK: 15 videos, newest 2026-11-02T21:11: Dnevnik/Sarajevo/2.11.2026. | thumb yes
+  video feed OK: 15 videos, newest 2026-11-02T21:45: Utisak nedelje: Ognjen Radonjić, Vuk Cvijić, Vida Petrović Škero (1.11.2026) | thumb yes
   https://www.youtube.com/channel/UCpglal7d5mhV4lA1b3-DsCw -> id UCpglal7d5mhV4lA1b3-DsCw
-  video feed OK: 15 videos, newest 2026-11-02T21:11: Dnevnik/Sarajevo/2.11.2026. | thumb yes
+  video feed OK: 15 videos, newest 2026-11-02T21:45: Utisak nedelje: Ognjen Radonjić, Vuk Cvijić, Vida Petrović Škero (1.11.2026) | thumb yes
 ### Nova.rs
 feed https://nova.rs/feed/: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/channel/UCloa3CgQMtGSeqjLkpQlEFg
