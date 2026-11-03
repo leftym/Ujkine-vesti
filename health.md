@@ -1,115 +1,102 @@
 # Vesti health report
 
-Run: 2026-11-03T11:07:25.565Z  |  items: 289  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-03T21:37:01.448Z  |  items: 284  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **MED** [Politika] 30% of stories are uncategorized ("Ostalo"). Common words in them: gojili(1), kopaoniku(1), zaposlenima(1), niskom(1), filozofskom(1), fakultetu(1), isplacena(1), treca(1). Add section names / keyword stems in lib/classify.js.
-2. **LOW** [N1] Possible ads NOT flagged: "Partizan o finansijskoj stabilnosti nakon odluke NBS o Alta banci, i o generalnom sponzoru MaxBetu"
-3. **LOW** [B92] Possible ads NOT flagged: "Evo kako da uštedite ako planirate skijanje u Srbiji: Do ovog datuma traje popust"; "Partizan se oglasio zbog Alta banke: Otkriveno šta se dešavalo iza kulisa sa generalnim sponzorom"
-4. **LOW** [Blic] Possible ads NOT flagged: "Računi za struju manji i do 60%: Penzionerima automatski popust, a evo ko još ima pravo na olakšice"; "I u ovom gradu u Srbiji, očevi će moći da prisustvuju porođaju BESPLATNO! Evo koje uslove moraju da ispune"; "Poskupljenje drva u Hrvatskoj: Od januara 2027. nove cene, ali ostaju popusti za građane"
-5. **LOW** [Politika] Possible ads NOT flagged: "Građani Srbije nedovoljno koriste mogućnosti jeftinijih SEPA transfera novca"
+1. **LOW** [Blic] Possible ads NOT flagged: "Muškarci više brinu o automobilu nego o svom zdravlju, upozorava poznati urolog: Jeftina analiza im spasava glavu"
+2. **LOW** [Politika] Possible ads NOT flagged: "Finska pokreće program za samce: besplatno četvorodnevno putovanje i grupni sastanak na slepo"; "Besplatni pregled dojki na Petrovaradinu od 5. novembra"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 49 | 0.0h | 100% | 12% | 3 |
-| Nova.rs | yes | 50 | 0.1h | 100% | 8% | 0 |
-| B92 | yes | 80 | 0.0h | 95% | 1% | 0 |
-| Blic | yes | 70 | 0.0h | 100% | 1% | 1 |
-| Politika | yes | 20 | 0.0h | 100% | 30% | 0 |
-| RTS | yes | 20 | 0.0h | 100% | 0% | 0 |
+| N1 | yes | 44 | 0.2h | 100% | 16% | 2 |
+| Nova.rs | yes | 50 | 0.0h | 100% | 6% | 1 |
+| B92 | yes | 80 | 0.1h | 95% | 3% | 0 |
+| Blic | yes | 70 | 0.1h | 100% | 1% | 0 |
+| Politika | yes | 20 | 0.3h | 100% | 25% | 0 |
+| RTS | yes | 20 | 0.0h | 100% | 5% | 0 |
 
 ## Front page right now
-1. [multi, 5 outlets, score 58.3] Viši sud u Nišu objavio imena 18 pomilovanih u postupcima pred tim sudom
-   - also (b92): Viši sud u Nišu objavio imena 18 pomilovanih u postupcima pred tim sudom
-   - also (nova): Višem sudu u Nišu dostavljene odluke o pomilovanju: Ovo je spisak pomilovanih, među njima optuženi članovi Kriznog štaba koji su oštetili budžet
-   - also (n1): Viši sud u Nišu objavio spisak osoba koje je pomilovao Vučić, među njima Igor Novaković i Milorad Jerkan
-   - also (blic): Ovo je spisak pomilovanih u Višem sudu u Nišu
-   - also (nova): Milo Đukanović na saslušanju u Višem sudu zbog afere „Telekom“
-   - also (n1): Milo Đukanović na saslušanju u Višem sudu u Podgorici zbog afere „Telekom“
-   - also (blic): MILO ĐUKANOVIĆ STIGAO NA SASLUŠANJE Evo šta mu se stavlja na teret
-2. [multi, 5 outlets, score 54] Više tužilaštvo najavilo žalbu: Traže da se Marku Kričku odredi pritvor po više tačaka, ne samo jednoj
-   - also (n1): VJT traži pritvor za Krička i Sekulovića i zbog opasnosti od ponavljanja dela
-   - also (politika): Tužilaštvo nezadovoljno odlukom suda u slučajevima Krička i Sekulovića
-   - also (blic): Više javno tužilaštvo u Beogradu ulaže žalbu u slučaju Krička i Sekulovića jer im je pritvor određen samo po jednoj tački
-   - also (rts): Marku Kričku i Bošku Sekuloviću određen pritvor do 30 dana
-3. [multi, 4 outlets, score 45.9] Uhapšen direktor JKP "Drina" iz Malog Zvornika zbog sumnje na zloupotrebu službenog položaja
-   - also (nova): Krivična prijava protiv aktuelne i bivše v.d. direktorke Gimnazije u Vranju: Zloupotrebile službeni položaj
-   - also (b92): Uhapšen direktor JKP "Drina" Mali Zvornik zbog zloupotrebe položaja
-   - also (n1): Uhapšen direktor JKP Drina Mali Zvornik, određeno mu zadržavanje do 48 časova
-4. [multi, 4 outlets, score 43.9] Požar na četvrtom spratu zgrade u Čačku, evakuisano 15 stanara
-   - also (b92): Požar izbio u stambenoj zgradi, vatrogasci evakuisali 15 stanara
-   - also (nova): Požar u stambenoj zgradi u Čačku, stanari evakuisani
-   - also (blic): DRAMA U ČAČKU! Buknuo požar u višespratnici, evakuisano 15 stanara: "Čuli smo sirene, nastala je panika"
-5. [multi, 3 outlets, score 38] EPS: Nije ugrožena finansijska stabilnost preduzeća zbog oduzimanje licence Alta banci
-   - also (n1): Beograd na vodi o oduzimanju licence Alta banci: Nema rizika po likvidnost
-   - also (n1): EPS: Oduzimanje licence Alta banci nije ugrozilo poslovanje ni finansijsku stabilnost
-   - also (nova): Oglasio se EPS nakon oduzimanja licence za rad Alta banci
-   - also (n1): Partizan o finansijskoj stabilnosti nakon odluke NBS o Alta banci, i o generalnom sponzoru MaxBetu
-6. [multi, 3 outlets, score 37.5] Avion pun putnika primio dojavu o postavljenoj bombi; Hitno je sleteo; Zatvoren ceo aerodrom
-   - also (nova): Drama na letu iz Londona za Varšavu: Avion sa 181 osobom preusmeren zbog dojave o bombi, aerodrom zatvoren
-   - also (blic): DRAMA NA NEBU! Avion iz Londona HITNO SLETEO u Varšavu, proglašena UZBUNA, aerodrom zatvoren
-7. [multi, 3 outlets, score 37] UROŠ ŽIVKOVIĆ PREDAO POLICIJI SNIMAK SA SIGURNOSNIH KAMERA Nakon što je pevaču zapaljen džip, i dalje se traga za napadačima
-   - also (nova): Proslavio se u "Zvezdama Granda", ljubio koleginicu, pa sreću našao kraj lepe Jovane: Ko je Uroš Živković, kom je jutros zapaljen auto?
-   - also (b92): Oglasio se Uroš Živković nakon što mu je zapaljen auto: "Molim vas za razumevanje"
-   - also (blic): (FOTO) PRVE SLIKE ZAPALJENOG DŽIPA UROŠA ŽIVKOVIĆA Uništen i zid u dvorištu
-   - also (blic): GAĐALI GA NA ŠABAČKOM VAŠARU, VOLEO POZNATU PEVAČICU Evo ko je Uroš Živković kome je zapaljen džip - imao incident na nastupu
-   - also (nova): "Istina je": Prvo oglašavanje Uroša Živkovića nakon što mu je zapaljen auto
-   - also (blic): ZAPALJEN AUTO UROŠA ŽIVKOVIĆA VREDI PRAVO BOGATSTVO Pevaču besna mašina izgorela u plamenu, a evo koliko košta i koje je marke
-   - also (b92): Zapaljen džip Uroša Živkovića: Drama na Čukarici, požar izbio rano jutros
-8. [multi, 3 outlets, score 35.3] Hapšenje u Novom Pazaru zbog pokušaja ubistva
-   - also (n1): Uhapšen zbog pokušaja ubistva automobilom
-   - also (nova): Hapšenje u Novom Pazaru: Muškarac automobilom pokušao da ubije sugrađanina
-9. [multi, 3 outlets, score 34.9] Intesa Invest: Nije tačno da ulagači u fondove neće imati dobit jer je deo njihovog novca uložen u Alta banku
-   - also (b92): Inteza Invest: Minimum sredstava u Alta banci, netačno da ulagači neće imati dobit
-   - also (blic): Intesa Invest se oglasio zbog Alta banke: Dva fonda imala deo novca u depozitima, evo šta to znači za ulagače
-10. [multi, 2 outlets, score 28.9] Đukanović o aferi "Telkom": Pokušaj vlasti da preuzme tužilaštvo
-   - also (blic): "NASTAVAK POLITIKANSKOG OBRAČUNA SA MNOM" Milo Đukanović optužio vlast u Crnoj Gori da preuzima ingerencije tužilaštva i suda
+1. [multi, 6 outlets, score 68.4] Ponoš podneo ostavku na mesto predsednika stranke SRCE
+   - also (b92): Ponoš podneo ostavku na mesto predsednika stranke Srbija centar SRCE
+   - also (politika): Zdravko Ponoš podneo ostavku
+   - also (n1): Ponoš podneo ostavku na mesto predsednika stranke SRCE, Predsedništvo je prihvatilo
+   - also (nova): Zdravko Ponoš podneo ostavku na mesto predsednika stranke Srbija centar (SRCE)
+   - also (blic): Zdravko Ponoš podneo ostavku na mesto predsednika stranke SRCE
+2. [multi, 5 outlets, score 59] Avion na letu Beograd-Moskva vraćen u Beograd
+   - also (politika): Avion na letu Beograd-Moskva se vraća u Beograd
+   - also (n1): Nova.rs: Avion koji je večeras trebalo da sleti u Moskvu, vratio se za Beograd - sumnja se da su u njemu Vulin, Bajatović i Popović
+   - also (blic): Avion na letu Beograd-Moskva se vraća u srpsku prestonicu: Oglasila se Er Srbija
+   - also (nova): SAZNAJEMO Avion koji je večeras trebalo da sleti u Moskvu, okrenuo se i vraća se za Beograd: Sumnja se da su u njemu Vulin, Bajatović i Nenad Popović
+3. [multi, 4 outlets, score 48.6] Uhapšen direktor RHMZ-a zbog sumnje na pranje novca; Osumnjičen za promet imovine od 650.000 evra
+   - also (rts): Uhapšen direktor RHMZ-a i još dve osobe zbog sumnje na pranje najmanje 650.000 evra
+   - also (rts): Uhapšene tri osobe na KiM zbog sumnje na investicionu prevaru tešku više od četiri miliona evra
+   - also (blic): SA DIREKTOROM RHMZ UHAPŠENI SUPRUGA I SIN? Osumnjičeni za "pranje" 650.000 EVRA preko nekretnina
+   - also (blic): UHAPŠEN DIREKTOR RHMZ ZBOG PRANJA NOVCA Sumnja se da je zajedno sa još dve osobe "oprao" 650.000 evra preko nekretnina u Srbiji i Crnoj Gori
+   - also (n1): Šta je uhapšeni direktor RHMZ-a prijavio od imovine: Imovinska karta Jugoslava Nikolića - plata od 370.000 dinara
+   - also (blic): (FOTO) KO JE UHAPŠENI DIREKTOR RHMZ (71) Od naučnih priznanja i funkcija u SANU do sumnje na PRANJE NOVCA
+4. [multi, 3 outlets, score 38.5] Ljajić: "Mnogo je kandidata po kafićima, a niko da dođe u Partizan"
+   - also (nova): "Mnogo je kandidata po kafićima, a niko da dođe u Partizan": Ljajić za Nova.rs o crno-belima nakon smene vlasti, izborima, FSS, Zvezdi...
+   - also (n1): Ljajić: Partizan se neće preuzimati ni na ulici ni u medijima, ko želi da vodi klub neka se kandiduje
+5. [multi, 3 outlets, score 34.7] Upravni odbor RTS-a zatražio od Saveta REM-a da se hitno izjasni o njegovom statusu
+   - also (rts): Savet REM-a sutra o izboru upravnih odbora RTS-a i RTV-a i mogućim merama protiv Informera
+   - also (n1): Upravni odbor RTS zatražio od Saveta REM-a da se hitno izjasni o njegovom statusu
+   - also (blic): Upravni odbor RTS zatražio od Saveta REM da se hitno izjasni o njegovom statusu
+6. [multi, 2 outlets, score 29] Jamal ispisao istoriju Lige šampiona, golom nadmašio Kilijana Mbapea
+   - also (b92): Niko kao PSŽ – najbrži "poker" u istoriji Lige šampiona
+7. [multi, 2 outlets, score 27.9] Bivša portparolka Zelenskog osumnjičena za veleizdaju VIDEO
+   - also (politika): Bivša portparolka Zelenskog osumnjičena za veleizdaju
+8. [multi, 2 outlets, score 27.4] Nova.rs: Vulina sproveli u avion bez provere, direktor bezbednosti aerodroma naredio vraćanje aviona
+   - also (nova): OTKRIVAMO Aleksandra Vulina sproveli u avion bez provere, direktor bezbednosti aerodroma naredio vraćanje letelice
+9. [multi, 2 outlets, score 25.9] Aleksić: Pozivam tužilaštva da reaguju na prijave koje je NPS godinama podnosio protiv funkcionera SNS-a
+   - also (n1): Aleksić: Pozivam tužilaštva da reaguju na prijave NPS-a protiv funkcionera SNS-a
+10. [multi, 2 outlets, score 25.9] Grenland ratifikovao sporazum o bezbednosti sa SAD
+   - also (n1): Poslanici Grenlanda odobrili bezbednosni sporazum sa Danskom i SAD
 
 ## Details
 ### N1
-Categories: {"zdravlje":1,"drustvo":6,"svet":5,"politika":9,"ekonomija":8,"ostalo":6,"hronika":4,"zivot":5,"region":3,"kultura":1,"sport":1}
+Categories: {"svet":11,"drustvo":6,"ostalo":7,"politika":10,"region":1,"zivot":3,"ekonomija":2,"sport":1,"kultura":1,"zdravlje":1,"hronika":1}
 Flagged:
-- (self) Gledajte UŽIVO Studio live: Vučićeva pomilovanja <https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/>
 - (self) Global fokus: Međuizbori u SAD <https://n1info.rs/najave-emisija/global-fokus-medjuizbori-u-sad/>
-- (self) Novi dan: Trvenja na Medicinskom fakultetu <https://n1info.rs/najave-emisija/novi-dan-trvenja-na-medicinskom-fakultetu/>
+- (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
 Uncategorized sample:
-- Među pomilovanima i general Simović <https://n1info.rs/vesti/medju-pomilovanima-i-general-simovic/> tags=["Vesti","pomilovanja","milosav simović"]
-- Porodilište u Bačkoj Topoli neće raditi osam dana u novembru zbog nedostatka kadra <https://n1info.rs/vesti/porodiliste-backa-topola-porodjaj-nedostatak-kadra/> tags=["Vesti","trudnice","bačka topola","porođaj","porodilište"]
-- Idemo dalje: Bilja Krstić, Nenad Vasilić i Iva Pažin (1.11.2026) <https://n1info.rs/video/idemo-dalje/idemo-dalje-bilja-krstic-nenad-vasilic-i-iva-pazin-1112026/> tags=["Idemo dalje","bilja krstić","video","emisija","iva pažin","nenad vasilić"]
-- Pivljanin: Tiraž novina "Nova" porastao 20 odsto, ljudi su željni kvaliteta, imamo perspektivu <https://n1info.rs/vesti/pivljanin-novine-nova-imaju-perspektivu/> tags=["Vesti","alpak kapital","novine nova","ranko pivljanin"]
-- Akademske mreže traže smenu Darije Kisić i rukovodstva Fonda za nauku <https://n1info.rs/vesti/akademske-mreze-traze-smenu-darije-kisic-i-rukovodstva-fonda-za-nauku/> tags=["Vesti","darija kisić tepavčević","fond za nauku","mreža akademske solidarnosti i angažovanosti","akademska mreža","ivica đalović"]
-- Novi dan: Trvenja na Medicinskom fakultetu <https://n1info.rs/najave-emisija/novi-dan-trvenja-na-medicinskom-fakultetu/> tags=["Najave emisija","najave emisija","novi dan"]
+- Nova.rs: Avion koji je večeras trebalo da sleti u Moskvu, vratio se za Beograd - sumnja se da su u njemu Vulin, Bajatović i Popović <https://n1info.rs/vesti/novars-avion-koji-je-veceras-trebalo-da-sleti-u-moskvu-vraca-se-za-beograd-sumnja-se-da-su-u-njemu-vulin-bajatovic-i-popovic/> tags=["Vesti","moskva","let","preusmeravanje leta","nenad popović","aleksandar vulin"]
+- Upravni odbor RTS zatražio od Saveta REM-a da se hitno izjasni o njegovom statusu <https://n1info.rs/vesti/upravni-odbor-rts-zatrazio-od-saveta-rem-a-da-se-hitno-izjasni-o-njegovom-statusu/> tags=["Vesti","savet rem","upravni odbor rts","rem"]
+- Dnevnik u 19 (2.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-02112026/> tags=["Dnevnik","vesti","dnevnik u 19","video","dnevnik"]
+- Okupljanje pripadnika "Srpskih suverenista" ispred PS Savski venac u znak podrške TV Informer <https://n1info.rs/vesti/okupljanje-pripadnika-srpskih-suverenista-ispred-ps-savski-venac-u-znak-podrske-tv-informer/> tags=["Vesti","vukša dragović","udruženje srpski suverenisti","tv informer"]
+- Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
+- Sneg mestimično u raskvašenom stanju kod Novog Pazara, moguća pojava magle <https://n1info.rs/vesti/stanje-na-putevima-3-novembar-novi-pazar-sneg/> tags=["Vesti","zimska oprema","sneg","stanje na putevima","novi pazar"]
 
 ### Nova.rs
-Categories: {"hronika":9,"politika":3,"zabava":6,"zivot":5,"svet":8,"ostalo":4,"drustvo":5,"sport":7,"kultura":2,"ekonomija":1}
+Categories: {"sport":14,"zivot":1,"drustvo":9,"zabava":8,"politika":8,"hronika":4,"kultura":1,"ostalo":3,"svet":1,"ekonomija":1}
+Flagged:
+- (self) Gledajte uživo Dnevnik TV Nova <https://nova.rs/vesti/drustvo/gledajte-uzivo-dnevnik-tv-nova-03-11-2026/>
 Uncategorized sample:
-- Piše Željko Ivanović: Pipun u Jajincima <https://nova.rs/kolumne/pise-zeljko-ivanovic-pipun-u-jajincima/> tags=["Kolumne","željko ivanović","milan knežević"]
-- Mentalno razgibavanje: Zarazni optimizam <https://nova.rs/emisije/mentalno-razgibavanje-zarazni-optimizam/> tags=["Emisije","mentalno razgibavanje cela emisija"]
-- Priče jednog običnog Stanimira: Nije potpisuvao, samo je naređuvao zemljače <https://nova.rs/kolumne/price-jednog-obicnog-stanimira-nije-potpisuvao-samo-je-naredjuvao-zemljace/> tags=["Kolumne","kolumna","bratislav marković"]
-- Probudi se - Cela emisija - 2.11.2026. <https://nova.rs/emisije/probudi-se-cela-emisija-2112026/> tags=["Emisije","probudi se cela emisija"]
+- Podcast DLZ i Aleksandar Radić: Prošao voz za režimski kontraudar <https://nova.rs/emisije/podcast-dlz-i-aleksandar-radic-prosao-voz-za-rezimski-kontraudar/> tags=["Emisije","Podcast","aleksandar radić","dlz cela emisija","nenad kulačin","marko vidojković"]
+- Dnevnik - Cela emisija - 2.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-2112026/> tags=["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 2.11.2026. <https://nova.rs/emisije/medju-nama-cela-emisija-2112026/> tags=["Emisije","među nama cela emisija"]
 
 ### B92
-Categories: {"sport":16,"svet":14,"zivot":21,"tehnologija":4,"region":2,"ekonomija":7,"ostalo":1,"drustvo":3,"kultura":2,"hronika":3,"politika":2,"zdravlje":3,"zabava":2}
+Categories: {"sport":13,"svet":12,"zivot":20,"drustvo":2,"ekonomija":7,"zdravlje":4,"hronika":3,"tehnologija":6,"politika":5,"ostalo":2,"kultura":3,"zabava":2,"region":1}
 Uncategorized sample:
-- Trajaće sve do proleća, ali samo ovako: Koliko tačno soli ide na kilogram kupusa? <https://superzena.b92.net/kuhinja/prakticni-saveti/281763/za-najbolji-ribanac-koliko-soli-ide-na-kilogram-kupusa/vest> tags=["Najnovije"]
+- Novine: "Međunarodna očekivanja od nove vlasti u Srbiji"; "Radnici u marketima za sad bez posledica" <https://www.b92.net/info/razno/281963/novine-medjunarodna-ocekivanja-od-nove-vlasti-u-srbiji-radnici-u-marketima-za-sad-bez-posledica/vest> tags=["Info"]
+- "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest> tags=[]
 
 ### Blic
-Categories: {"zabava":13,"zivot":6,"svet":9,"hronika":10,"ekonomija":8,"drustvo":11,"kultura":4,"politika":7,"ostalo":1,"zdravlje":1}
-Flagged:
-- (betting) SKANDAL! Grčka NVO skupila milione za lečenje dece, NOVAC TROŠILA NA KLADIONICE <https://www.blic.rs/vesti/svet/skandal-u-grckoj-nvo-uzela-milione-za-lecenje-dece-novac-trosili-na-kladionice/zl2t9j8>
+Categories: {"drustvo":6,"politika":7,"zabava":19,"zivot":9,"svet":9,"ekonomija":8,"hronika":7,"zdravlje":2,"ostalo":1,"kultura":2}
 Uncategorized sample:
-- Autofagija pod lupom: Može li gladovanje zaista da uspori starenje? <https://www.blic.rs/good-life/globetrotter/autofagija-da-li-16-sati-bez-hrane-zaista-podmladjuje-organizam/h6dpc5v> tags=[]
+- Želite da starite zdravo? Ekspert za dugovečnost otkriva jednu naviku koja je najvažnija <https://www.blic.rs/good-life/globetrotter/kako-trening-snage-doprinosi-zdravom-starenju-i-ocuvanju-misicne-mase/jrnvgxt> tags=[]
 
 ### Politika
-Categories: {"drustvo":1,"ostalo":6,"svet":5,"sport":1,"ekonomija":3,"hronika":2,"politika":2}
+Categories: {"svet":3,"ostalo":5,"hronika":1,"region":1,"drustvo":2,"politika":4,"zivot":1,"zdravlje":1,"sport":1,"ekonomija":1}
 Uncategorized sample:
-- Pada sneg na Gojili i Kopaoniku <https://www.politika.rs/scc/clanak/799300/pada-sneg-na-gojili-i-kopaoniku> tags=[]
-- Zaposlenima na niškom Filozofskom fakultetu isplaćena i treća zaostala plata <https://www.politika.rs/scc/clanak/799320/zaposlenima-na-niskom-filozofskom-fakultetu-isplacena-i-treca-zaostala-plata> tags=[]
-- Naučnici registrovali signale iz „zeptosvemira” <https://www.politika.rs/scc/clanak/799317/naucnici-registrovali-signale-iz-zeptosvemira> tags=[]
-- U Alta banci bilo manje od dva odsto imovine fondova, ulagači i dalje ostvaruju dobit <https://www.politika.rs/scc/clanak/799314/u-alta-banci-bilo-manje-od-dva-odsto-imovine-fondova-ulagaci-i-dalje-ostvaruju-dobit> tags=[]
-- Šta sve zaboravljamo u autobusu i kako izgubljene stvari pronalaze put do vlasnika <https://www.politika.rs/scc/clanak/799315/sta-sve-zaboravljamo-u-autobusu-i-kako-izgubljene-stvari-pronalaze-put-do-vlasnika> tags=[]
-- Novi američki udari mogli bi da udalje Teheran od sporazuma <https://www.politika.rs/scc/clanak/799307/novi-americki-udari-mogli-bi-da-udalje-teheran-od-sporazuma> tags=[]
+- Avion na letu Beograd-Moskva se vraća u Beograd <https://www.politika.rs/scc/clanak/799532/avion-na-letu-beograd-moskva-se-vraca-u-beograd> tags=[]
+- Bivša portparolka Zelenskog osumnjičena za veleizdaju <https://www.politika.rs/scc/clanak/799529/bivsa-portparolka-zelenskog-osumnjicena-za-veleizdaju> tags=[]
+- Zdravko Ponoš podneo ostavku <https://www.politika.rs/scc/clanak/799524/zdravko-ponos-podneo-ostavku> tags=[]
+- Besplatni pregled dojki na Petrovaradinu od 5. novembra <https://www.politika.rs/scc/clanak/799518/besplatni-pregled-dojki-na-petrovaradinu-od-5-novembra> tags=[]
+- Američka kardiološka asocijacija: energetska pića i suplementi povezani sa ozbiljnim srčanim problemima <https://www.politika.rs/scc/clanak/799517/americka-kardioloska-asocijacija-energetska-pica-i-suplementi-povezani-sa-ozbiljnim-srcanim-problemima> tags=[]
 
 ### RTS
-Categories: {"ekonomija":4,"drustvo":3,"hronika":4,"politika":4,"region":1,"svet":3,"zivot":1}
+Categories: {"drustvo":7,"politika":4,"ekonomija":2,"svet":1,"zivot":1,"hronika":4,"ostalo":1}
+Uncategorized sample:
+- Dokle se stiglo sa radovima na mostu u Aleksandrovcu? <https://www.rts.rs/vesti/srbija-danas/6075428/dokle-se-stiglo-sa-radovima-na-mostu-u-aleksandrovcu.html> tags=["Srbija danas"]
