@@ -98,6 +98,9 @@ jobs:
           node-version: 22
       - name: Check the six live feeds
         run: node scripts/feed-check.js feed-check.md
+      - name: Probe outlet icons
+        continue-on-error: true
+        run: node scripts/probe-icons.js icons.md
       - name: Probe (B92 feeds, YouTube links and channels)
         continue-on-error: true
         run: node scripts/probe.js probe.md
@@ -109,6 +112,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           scripts/publish-ci-log.sh feed-check.md feed-check.md
+          [ -f icons.md ] && scripts/publish-ci-log.sh icons.md icons.md
           [ -f probe.md ] && scripts/publish-ci-log.sh probe.md probe.md
           [ -f health.md ] && scripts/publish-ci-log.sh health.md health.md
           [ -f health.md ] && scripts/publish-ci-log.sh health.md "history/health-$(date -u +%Y-%m-%dT%H)Z.md"
