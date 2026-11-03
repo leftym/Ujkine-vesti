@@ -1,16 +1,16 @@
 # Probe
 
-Run: 2026-11-03T08:07:54.782Z
+Run: 2026-11-03T08:10:53.417Z
 
 ## B92 feeds
 RSS directory page https://www.b92.net/info/rss/: 17369 bytes; feed-like links found: 0
-- https://www.b92.net/info/rss/vesti.xml -> 17231 bytes, 20 items, newest 2026-11-03T07:55:00.000Z, oldest 2026-11-02T21:36:00.000Z
+- https://www.b92.net/info/rss/vesti.xml -> 17238 bytes, 20 items, newest 2026-11-03T08:09:00.000Z, oldest 2026-11-02T21:52:00.000Z
+    * Snažan ciklon pogodio kopno: Ljudi evakuisani, škole zatvorene, saobraćaj obustavljen VIDEO | 2026-11-03T08:09 | cats=["Info"] | https://www.b92.net/info/svet/281728/ciklon-murasu-pogodio-indiju/vest
     * Vojska na nogama; Testirana kasetna bojeva glava; Uništava se pred sobom | 2026-11-03T07:55 | cats=["Info"] | https://www.b92.net/info/svet/281730/severna-koreja-testirala-kasetne-bojeve-glave/vest
     * Vučić razgovarao sa predsednikom Uzbekistana: "Rekao mi je da budem ponosan na rezultate" FOTO | 2026-11-03T07:53 | cats=["Info"] | https://www.b92.net/info/politika/281731/vucic-razgovarao-sa-predsednikom-uzbekistana-rekao-mi-je-da-budem-ponosan-na-rezultate-foto/vest
     * Rusi nemilosrdno bombarduju; Stižu prvi snimci; Ljude traže pod ruševinama FOTO/VIDEO | 2026-11-03T07:28 | cats=["Info"] | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest
     * Ova zemlja je u kolapsu: 300.000 ljudi napustilo domove; "Plaćaju surovu cenu..." VIDEO | 2026-11-03T07:43 | cats=["Info"] | https://www.b92.net/info/svet/281718/sukobi-u-jemenu-300000-ljudi-napustilo-domove/vest
     * Kričak i Sekulović izneli odbranu u tužilaštvu | 2026-11-03T07:28 | cats=["Info"] | https://www.b92.net/info/hronika/281719/kricak-i-sekulovic-izneli-odbranu-u-tuzilastvu/vest
-    * Iran pogubio dvojicu muškaraca FOTO | 2026-11-03T07:19 | cats=["Info"] | https://www.b92.net/info/svet/281713/iran-pogubio-dvojicu-muskaraca-zbog-ubistava-policajaca/vest
 - https://www.b92.net/info/rss/svevesti.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/najnovije.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/info.xml -> ERROR HTTP_404
@@ -20,16 +20,16 @@ RSS directory page https://www.b92.net/info/rss/: 17369 bytes; feed-like links f
 - https://www.b92.net/info/rss/drustvo.xml -> ERROR HTTP_404
 - https://www.b92.net/rss/ -> 226741 bytes, 0 items, newest -, oldest -
 - https://www.b92.net/rss -> 226741 bytes, 0 items, newest -, oldest -
-- https://www.b92.net/feed/ -> 17182 bytes, 20 items, newest 2026-11-03T07:57:00.000Z, oldest 2026-11-03T07:06:00.000Z
+- https://www.b92.net/feed/ -> 17251 bytes, 20 items, newest 2026-11-03T08:09:00.000Z, oldest 2026-11-03T07:13:00.000Z
+    * Snažan ciklon pogodio kopno: Ljudi evakuisani, škole zatvorene, saobraćaj obustavljen VIDEO | 2026-11-03T08:09 | cats=["Najnovije"] | https://www.b92.net/info/svet/281728/ciklon-murasu-pogodio-indiju/vest
+    * Hrvat zaustavio Grizlise – više nema neporaženih ekipa VIDEO | 2026-11-03T08:06 | cats=["Najnovije"] | https://www.b92.net/sport/kosarka/nba/281735/karlo-matkovic-vodio-pelikanse-do-pobede-minesota-na-krilima-bola/vest
+    * Advokat Rasela Brenda odbacio optužbe: "Nema dokaza da je on čovek koji siluje" | 2026-11-03T08:06 | cats=["Najnovije"] | https://www.b92.net/zivot/aktuelno/281729/advokat-rasela-brenda-odbacio-optuzbe-za-silovanje-nema-dokaza-da-je-moj-klijent-takav-covek/vest
     * Đoković nema drugog izbora | 2026-11-03T07:57 | cats=["Najnovije"] | https://www.b92.net/sport/tenis/vesti/281589/djokovicu-za-torino-potrebno-polufinale-pariza/vest
     * Vojska na nogama; Testirana kasetna bojeva glava; Uništava se pred sobom | 2026-11-03T07:55 | cats=["Najnovije"] | https://www.b92.net/info/svet/281730/severna-koreja-testirala-kasetne-bojeve-glave/vest
     * Vučić razgovarao sa predsednikom Uzbekistana: "Rekao mi je da budem ponosan na rezultate" FOTO | 2026-11-03T07:53 | cats=["Najnovije"] | https://www.b92.net/info/politika/281731/vucic-razgovarao-sa-predsednikom-uzbekistana-rekao-mi-je-da-budem-ponosan-na-rezultate-foto/vest
-    * Simbol švedske industrije tone: Gubitak 500 miliona evra, sledi 2.500 otkaza | 2026-11-03T07:50 | cats=["Najnovije"] | https://www.b92.net/biz/svet/vesti/281721/simbol-svedske-industrije-tone-gubitak-500-miliona-evra-sledi-2500-otkaza/vest
-    * Srbin zasenio Kusturičin debi u NCAA – obojica blistali VIDEO | 2026-11-03T07:48 | cats=["Najnovije"] | https://www.b92.net/sport/kosarka/nba/281724/nikola-kusturica-devet-poena-u-ncaa-debiju-djulovic-19-u-pobedi-batlera/vest
-    * Rusi nemilosrdno bombarduju; Stižu prvi snimci; Ljude traže pod ruševinama FOTO/VIDEO | 2026-11-03T07:28 | cats=["Najnovije"] | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 597018 bytes, 64 headline-like links
+homepage: 596871 bytes, 66 headline-like links
 - uživo Rusi nemilosrdno bombarduju; Stižu prvi snimci; Ljude traže pod ruševinama FOTO/VIDE | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest | in feeds: vesti.xml,
 - Evropa klizi u totalni kolaps; Napašće Ruse? | https://www.b92.net/info/svet/281706/evropske-sile-spremne-da-napadnu-rusiju/vest | in feeds: vesti.xml
 - Vojska na nogama; Testirana kasetna bojeva glava; Uništava se pred sobom | https://www.b92.net/info/svet/281730/severna-koreja-testirala-kasetne-bojeve-glave/vest | in feeds: vesti.xml,
