@@ -1,5 +1,5 @@
-# APK build run 17: success
-commit: c0932c76344269dab3c6ce194a713262415e2006
+# APK build run 18: success
+commit: 51f5418f306a4062333180bf38e1790fd83d41ff
 
 ```
 > Task :capacitor-browser:generateReleaseLintModel
@@ -14,8 +14,8 @@ commit: c0932c76344269dab3c6ce194a713262415e2006
 > Task :capacitor-share:extractProguardFiles
 > Task :capacitor-share:generateReleaseLintModel
 > Task :capacitor-share:prepareLintJarForPublish
-> Task :capacitor-app:checkReleaseAarMetadata
 > Task :app:generateReleaseLintVitalReportModel
+> Task :capacitor-app:checkReleaseAarMetadata
 > Task :capacitor-app:stripReleaseDebugSymbols NO-SOURCE
 > Task :capacitor-app:copyReleaseJniLibsProjectAndLocalJars
 > Task :capacitor-app:extractDeepLinksForAarRelease
@@ -31,22 +31,23 @@ commit: c0932c76344269dab3c6ce194a713262415e2006
 > Task :capacitor-app-launcher:mergeReleaseConsumerProguardFiles
 > Task :capacitor-app:mergeReleaseJavaResource
 > Task :capacitor-app-launcher:mergeReleaseJavaResource
+> Task :capacitor-browser:checkReleaseAarMetadata
 > Task :capacitor-app:syncReleaseLibJars
+> Task :app:mergeExtDexRelease
 > Task :capacitor-app:bundleReleaseLocalLintAar
 > Task :capacitor-app-launcher:syncReleaseLibJars
 > Task :capacitor-app-launcher:bundleReleaseLocalLintAar
 > Task :capacitor-browser:stripReleaseDebugSymbols NO-SOURCE
-> Task :capacitor-browser:checkReleaseAarMetadata
-> Task :capacitor-browser:extractDeepLinksForAarRelease
 > Task :capacitor-browser:copyReleaseJniLibsProjectAndLocalJars
+> Task :capacitor-browser:extractDeepLinksForAarRelease
 > Task :capacitor-browser:extractReleaseAnnotations
 > Task :capacitor-browser:mergeReleaseGeneratedProguardFiles
 > Task :capacitor-browser:mergeReleaseConsumerProguardFiles
-> Task :capacitor-share:checkReleaseAarMetadata
 > Task :capacitor-browser:mergeReleaseJavaResource
-> Task :capacitor-share:stripReleaseDebugSymbols NO-SOURCE
+> Task :capacitor-share:checkReleaseAarMetadata
 > Task :capacitor-browser:syncReleaseLibJars
 > Task :capacitor-browser:bundleReleaseLocalLintAar
+> Task :capacitor-share:stripReleaseDebugSymbols NO-SOURCE
 > Task :capacitor-share:copyReleaseJniLibsProjectAndLocalJars
 > Task :capacitor-share:extractDeepLinksForAarRelease
 > Task :capacitor-share:extractReleaseAnnotations
@@ -59,7 +60,6 @@ commit: c0932c76344269dab3c6ce194a713262415e2006
 > Task :capacitor-android:stripReleaseDebugSymbols NO-SOURCE
 > Task :capacitor-android:copyReleaseJniLibsProjectAndLocalJars
 > Task :capacitor-android:extractDeepLinksForAarRelease
-> Task :app:mergeExtDexRelease
 > Task :capacitor-android:extractReleaseAnnotations
 > Task :capacitor-android:mergeReleaseGeneratedProguardFiles
 > Task :capacitor-android:mergeReleaseConsumerProguardFiles
@@ -91,9 +91,9 @@ commit: c0932c76344269dab3c6ce194a713262415e2006
 > Task :app:processReleaseJavaRes NO-SOURCE
 > Task :app:mergeDexRelease
 > Task :app:compileReleaseArtProfile
+> Task :app:optimizeReleaseResources
 > Task :app:mergeReleaseJavaResource
 > Task :app:collectReleaseDependencies
-> Task :app:optimizeReleaseResources
 > Task :app:sdkReleaseDependencyData
 > Task :app:validateSigningRelease
 > Task :app:writeReleaseAppMetadata
@@ -123,15 +123,15 @@ commit: c0932c76344269dab3c6ce194a713262415e2006
 > Task :capacitor-browser:assembleRelease
 > Task :capacitor-share:bundleReleaseAar
 > Task :capacitor-share:mapReleaseSourceSetPaths
-> Task :capacitor-app:lintVitalAnalyzeRelease
 > Task :capacitor-share:mergeReleaseResources
+> Task :capacitor-app:lintVitalAnalyzeRelease
 > Task :capacitor-cordova-android-plugins:verifyReleaseResources
 > Task :capacitor-cordova-android-plugins:assembleRelease
 > Task :capacitor-share:verifyReleaseResources
 > Task :capacitor-share:assembleRelease
 > Task :capacitor-app-launcher:lintVitalAnalyzeRelease
-> Task :capacitor-browser:lintVitalAnalyzeRelease
 > Task :capacitor-android:lintVitalAnalyzeRelease
+> Task :capacitor-browser:lintVitalAnalyzeRelease
 > Task :capacitor-cordova-android-plugins:lintVitalAnalyzeRelease
 > Task :capacitor-share:lintVitalAnalyzeRelease
 > Task :app:lintVitalAnalyzeRelease
@@ -140,7 +140,7 @@ commit: c0932c76344269dab3c6ce194a713262415e2006
 > Task :app:packageRelease
 > Task :app:createReleaseApkListingFileRedirect
 > Task :app:assembleRelease
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_3-1793656334107.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_3-1793693274127.json
 
 [Incubating] Problems report is available at: file:///home/runner/work/Ujkine-vesti/Ujkine-vesti/android/build/reports/problems/problems-report.html
 
@@ -150,6 +150,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 42s
+BUILD SUCCESSFUL in 48s
 284 actionable tasks: 284 executed
 ```
