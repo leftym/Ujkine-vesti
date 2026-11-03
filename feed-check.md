@@ -1,82 +1,95 @@
 # Feed check
 
-Run: 2026-11-02T21:51:59.086Z
+Run: 2026-11-03T08:07:36.575Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 45 | https://n1info.rs/feed/ | 45 | 2 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 1 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +75) | 76 | 0 |
+| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 1 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +72) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":6,"politika":11,"drustvo":9,"region":4,"ostalo":3,"zivot":4,"ekonomija":7,"hronika":1}
-- [svet] N1 u Izraelu: Ko bi mogao da formira novu vladu i koliku ulogu u tome imaju izbori u SAD
-- [politika] Udruženje iz Vrbasa podnelo krivičnu prijavu protiv dve osobe, tvrdi da su kupovale glasove za SNS
-- [politika] "Mogu da ti kažem, ali bez mikrofona": Meštani o tome kako je Zukorlićeva lista stigla od nula do 53 glasa u selu kod Aleksinca
-- [drustvo] Studenti u blokadi: Očekujemo obustavu radova na brzoj pruzi kroz Pantelej u Nišu
-- [svet] Netanjahu otvoren za formiranje "široke nacionalne vlade", pod uslovom da on bude na čelu
-- [region] Naloženo blokiranje još 104 veb-stranice za igre na sreću u S. Makedoniji
-  - flagged (self): Studio live, utorak u 12h: Vučićeva pomilovanja https://n1info.rs/najave-emisija/studio-live-utorak-u-12h-macura-zadrzan-u-policiji-a-gde-je-45-milijardi-dinara/
-  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+Categories: {"drustvo":8,"zivot":7,"politika":11,"svet":7,"hronika":3,"ostalo":7,"ekonomija":1,"region":2}
+- [drustvo] Sindikat Fakulteta tehničkih nauka u Novom Sadu traži ostavku dekana Borisa Dumnića
+- [zivot] Može li jedan nerv da pomogne telu da se izbori sa stresom?
+- [politika] Dimitrijević: Zukorlićeva lista zadržava mandat i ako se utvrdi kupovina glasova u Aleksincu
+- [svet] Dva policajca ubijena u Pakistanu dok su obezbeđivali vakcinaciju protiv dečije paralize
+- [hronika] Uhapšen direktor JKP Drina Mali Zvornik, određeno mu zadržavanje do 48 časova
+- [zivot] Grad iz susedstva proglašen najboljom evropskom destinacijom za zimski odmor
+  - flagged (self): Gledajte UŽIVO Novi dan: Trvenja na Medicinskom fakultetu https://n1info.rs/najave-emisija/novi-dan-trvenja-na-medicinskom-fakultetu/
 
 Uncategorized sample (for tuning):
+- Gledajte UŽIVO Novi dan: Trvenja na Medicinskom fakultetu | https://n1info.rs/najave-emisija/novi-dan-trvenja-na-medicinskom-fakultetu/ | tags: ["Najave emisija","novi dan","najave emisija"]
+- BIRODI: Nalazi ODIHR-a osnov za razmatranje postupanja TV Informer | https://n1info.rs/vesti/birodi-nalazi-odihr-a-osnov-za-razmatranje-postupanja-tv-informer/ | tags: ["Vesti","izbori 2026","izveštavanje","mediji","odihr","birodi"]
+- AMSS: Sneg na putevima na visokim planinama, neophodna zimska oprema | https://n1info.rs/vesti/amss-sneg-na-putevima-na-visokim-planinama-neophodna-zimska-oprema/ | tags: ["Vesti","amss","putevi","sneg","zimska oprema"]
+- Na današnji dan, 3. novembar: Umrli Miljenko Dereta, Anri Matis, En Burda... | https://n1info.rs/vesti/na-danasnji-dan-3-novembar-2026-godine/ | tags: ["Vesti","na današnji dan"]
+- Civilni odbor BCBP traži da nadležni ispitaju tvrdnje o praćenju aktiviste Lazara Dinića i da ga zaštite | https://n1info.rs/vesti/civilni-odbor-bcbp-trazi-da-nadlezni-ispitaju-tvrdnje-o-pracenju-aktiviste-lazara-dinica-i-da-ga-zastite/ | tags: ["Vesti","bcbp","beogradski centar za bezbednosnu politiku","lazar dinić","praćenje"]
 - Utisak nedelje: Ognjen Radonjić, Vuk Cvijić, Vida Petrović Škero (1.11.2026) | https://n1info.rs/video/utisak-nedelje-ognjen-radonjic-vuk-cvijic-vida-petrovic-skero-1112026/ | tags: ["Video","utisak video","utisak nedelje","video"]
 - Dnevnik u 19 (01.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-01-novembar-2026/ | tags: ["Dnevnik","dnevnik u 19","najvažnije vesti","vesti dana","dnevnik 19","dnevnik"]
-- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
 
 ## Nova.rs
-Categories: {"hronika":9,"sport":11,"politika":4,"zabava":12,"zivot":1,"svet":1,"ekonomija":5,"drustvo":5,"ostalo":1,"kultura":1}
-- [hronika] Udruženje iz Vrbasa podnelo krivičnu prijavu protiv dve osobe, tvrdi da su kupovale glasove za SNS
-- [sport] VIDEO Užas u Španiji: Fudbaler nakon starta golmana u komi, doktori mu se bore za život
-- [politika] Kako je lista Usamea Zukorlića za 12 glasova "otela" mandat Studentskoj listi: Izveštaj Crte i zapisnik s jednog biračkog mesta sve govore
-- [zabava] Mišo Kovač ženio se tri puta, a jedna tragedija mu je promenila život: "Četiri godine sam bio polumrtav, ležao nakljukan sedativima ili sam bio na groblju"
-- [hronika] Stamenković: Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
-- [sport] "Naš klub ne zaboravlja ko je bio uz naše šampione": Nova dobila podršku u borbi za spas novina
-  - flagged (self): Gledajte uživo Dnevnik TV Nova https://nova.rs/vesti/drustvo/gledajte-uzivo-dnevnik-tv-nova-02-11-2026/
+Categories: {"ostalo":2,"sport":11,"zabava":7,"zivot":6,"svet":3,"hronika":10,"politika":4,"drustvo":4,"ekonomija":3}
+- [ostalo] Probudi se - Cela emisija - 2.11.2026.
+- [sport] Novak sebi priredio mini košmar: U prvom kolu Pariza ga čeka najnoviji ATP šampion, poznato šta mu je potrebno za Torino
+- [zabava] "Istina je": Prvo oglašavanje Uroša Živkovića nakon što mu je zapaljen auto
+- [zivot] Svi pričaju da je ovoidealna težina za žene visoke 170 cm: Evo šta kažu lekar i najveće naučno istraživanje - čeka vas iznenađenje
+- [sport] "Ne znam šta se dešava, na treninzima sve ulazi": Jokić trljao lice, hvatao se za glavu, ne može da objasni ogroman problem koji ima od početka sezone
+- [svet] Rusi napali bolnicu u Harkovu: Najmanje 46 povređenih, evakuiše se 200 pacijenata
 
 Uncategorized sample (for tuning):
+- Probudi se - Cela emisija - 2.11.2026. | https://nova.rs/emisije/probudi-se-cela-emisija-2112026/ | tags: ["Emisije","probudi se cela emisija"]
 - Dnevnik - Cela emisija - 1.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-1112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"sport":13,"svet":11,"zivot":16,"kultura":4,"hronika":3,"zdravlje":3,"zabava":6,"ekonomija":9,"tehnologija":4,"drustvo":3,"politika":6,"region":2}
-- [sport] Brest prekinuo negativan niz i odneo bodove iz Lorijena
-- [sport] Parma ponizila Samardžićevu Atalantu u Bergamu – tri gola za ubedljiv trijumf gostiju
-- [svet] Rekordna zaplena kokaina u Beču; Uhapšeni Srbin i Hrvat, drogu vozili u srebrnom Mercedesu S-klase
-- [sport] Živković u Grčkoj do kraja karijere?
-- [svet] Strašne eksplozije odjekuju; Tamanjenje dronova; Masovno odlaze – ne žele da ginu FOTO/VIDEO
-- [svet] Zelenski: "Predložili smo deeskalaciju, ali Rusija nastavlja da ubija ljude"
-
-## Blic
-Categories: {"hronika":7,"zivot":8,"svet":9,"zabava":25,"zdravlje":2,"drustvo":5,"politika":5,"ekonomija":7,"kultura":2}
-- [hronika] "UĐEŠ, PO METAK U GLAVU I DVA U VIS" Ovako su škaljarci planirali likvidaciju Belivuka i Miljkovića na aerodromu u Tivtu
-- [zivot] "PLAKAO JE PRED ULAZAK U STUDIO" Ovako je Mišo Kovač snimio pesmu koja je posvećena njegovom POKOJNOM SINU: "Izveo je samo jednom"
-- [svet] "AMERIKA JE NA KORAK OD NUKLEARNOG UDARA" Jezivo upozorenje Takera Karlsona uzdrmalo svet, oglasio se Tramp
-- [zabava] POZNATA GLUMICA PREŠLA 42 KILOMETARA BICIKLOM KROZ BOKU KOTORSKU Pokazala da je u top formi i tačnu rutu kojom se kretala: Oduševila sve kondicijom
-- [zabava] PEVAČICA PROSLAVILA 45. ROĐENDAN Zbog ljubavi otišla iz Srbije, pa usledio razvod: "Nismo se razišli prijateljski"
-- [zabava] (VIDEO) "OTKRIVAJU MI POČETAK KANCERA MATERICE, A JA BEBU U STOMAKU" Ivana Šašić u suzama o najtežim borbama: "Imala sam dva carska i jednu operaciju za 10 meseci"
-
-## Politika
-Categories: {"ekonomija":1,"svet":6,"hronika":1,"ostalo":3,"sport":2,"politika":5,"kultura":2}
-- [ekonomija] Nade u kraj sukoba SAD i Irana oborile cene nafte
-- [svet] Tramp demantovao da će SAD napasti Iran
-- [hronika] Komisija Vrhovnog tužilaštva preuzela predmete o postupanju Kričaka prema studentima
-- [svet] AfD najavljuje veliki energetski samit sa Rusima i Amerikancima
-- [ostalo] Stiže novo zahlađenje: u Srbiji sutra kiša, na planinama sneg
-- [svet] Zaliv strahuje od novog američkog udara na Iran
+Categories: {"sport":11,"svet":13,"politika":2,"ekonomija":9,"zivot":20,"drustvo":3,"hronika":4,"kultura":5,"zdravlje":4,"tehnologija":4,"ostalo":1,"zabava":4}
+- [sport] Đoković nema drugog izbora
+- [svet] Vojska na nogama; Testirana kasetna bojeva glava; Uništava se pred sobom
+- [politika] Vučić razgovarao sa predsednikom Uzbekistana: "Rekao mi je da budem ponosan na rezultate" FOTO
+- [ekonomija] Simbol švedske industrije tone: Gubitak 500 miliona evra, sledi 2.500 otkaza
+- [zivot] Zatvoren stakleni vidikovac na Kablaru: Kraj turističke sezone na najvećoj atrakciji u Čačku FOTO
+- [sport] Srbin zasenio Kusturičin debi u NCAA – obojica blistali VIDEO
 
 Uncategorized sample (for tuning):
-- Stiže novo zahlađenje: u Srbiji sutra kiša, na planinama sneg | https://www.politika.rs/scc/clanak/799185/stize-novo-zahladenje-u-srbiji-sutra-kisa-na-planinama-sneg | tags: []
-- Savana Gatri ponovo moli za pomoć u pronalaženju majke: Ne možemo da nastavimo dalje | https://www.politika.rs/scc/clanak/799173/savana-gatri-ponovo-moli-za-pomoc-u-pronalazenju-majke-ne-mozemo-da-nastavimo-dalje | tags: []
-- Otkriveno novo veliko nalazište cirkona u Kini | https://www.politika.rs/scc/clanak/799166/otkriveno-novo-veliko-nalaziste-cirkona-u-kini | tags: []
+- Na današnji dan, 3. novembar | https://www.b92.net/info/razno/281697/na-danasnji-dan-3-novembar/vest | tags: ["Info"]
+
+## Blic
+Categories: {"zivot":9,"drustvo":8,"ekonomija":12,"zabava":18,"hronika":7,"kultura":1,"svet":12,"zdravlje":1,"politika":1,"ostalo":1}
+- [zivot] Stručnjaci savetuju da stavite kuglicu aluminijumske folije u veš-mašinu: Razlog će vas iznenaditi
+- [drustvo] HITNO SAOPŠTENJE AMSS ZBOG SNEGA Povećana opasnost od udesa, evo kada je NEOPHODAN POSEBAN OPREZ
+- [ekonomija] Stambena kriza u Evropi: Milioni daju preko 40 odsto prihoda za krov nad glavom, Grčka u najtežoj poziciji, Hrvatska pri dnu liste
+- [zabava] "NIKOLINA IMA VERENIKA, SVE OVO RADI ZBOG NJEGA" Usred priča o nasilju, Miša Grof šokirao tvrdnjama o Nikolini Pišek: "Vidoje ni mrava ne bi zgazio"
+- [hronika] MLADIĆ NAMERNO PREGAZIO STARIJEG SUGRAĐANINA?! Horor u centru Novog Pazara: Čovek teško povređen
+- [kultura] Zašto je Džek Nikolson ODBIO ULOGU U "KUMU": Glumac otkrio dva specifična razloga
+
+Uncategorized sample (for tuning):
+- Naslovna strana za 3.11. | https://www.blic.rs/print/naslovna-strana-za-311/mbbjg1z | tags: []
+
+## Politika
+Categories: {"svet":5,"ostalo":7,"hronika":4,"region":2,"ekonomija":1,"sport":1}
+- [svet] Ukrajinci pogodili veliku rafineriju kod Moskve, povređena dva radnika
+- [ostalo] Prva žena u istoriji na čelu države
+- [ostalo] Ciklon „Murasu” stigao do kopna u Indiji, evakuisane hiljade ljudi
+- [svet] Sančez: Španijom se ne upravlja iz Vašingtona, Tel Aviva ili Moskve
+- [hronika] Uhapšen osumnjičeni za pokušaj ubistva, namerno udario automobilom muškarca na parkingu
+- [ostalo] Severna Koreja odbacila optužbe FBI za krađu šest milijardi dolara i optužila SAD
+
+Uncategorized sample (for tuning):
+- Prva žena u istoriji na čelu države | https://www.politika.rs/scc/clanak/799196/prva-zena-u-istoriji-na-celu-drzave | tags: []
+- Ciklon „Murasu” stigao do kopna u Indiji, evakuisane hiljade ljudi | https://www.politika.rs/scc/clanak/799242/ciklon-murasu-stigao-do-kopna-u-indiji-evakuisane-hiljade-ljudi | tags: []
+- Severna Koreja odbacila optužbe FBI za krađu šest milijardi dolara i optužila SAD | https://www.politika.rs/scc/clanak/799239/severna-koreja-odbacila-optuzbe-fbi-za-kradu-sest-milijardi-dolara-i-optuzila-sad | tags: []
+- Sindikat traži ostavke rukovodstva ansambla „Kolo” | https://www.politika.rs/scc/clanak/799189/sindikat-trazi-ostavke-rukovodstva-ansambla-kolo | tags: []
+- Kovačević: Promena vlasti u Srbiji pokazala je kome je zapravo smetala Srbija | https://www.politika.rs/scc/clanak/799238/kovacevic-promena-vlasti-u-srbiji-pokazala-je-kome-je-zapravo-smetala-srbija | tags: []
+- Ko danas uređuje stvarnost | https://www.politika.rs/scc/clanak/799187/ko-danas-ureduje-stvarnost | tags: []
+- Ispituju se uzroci smrti bebe u Novom Pazaru | https://www.politika.rs/scc/clanak/799211/ispituju-se-uzroci-smrti-bebe-u-novom-pazaru | tags: []
 
 ## RTS
-Categories: {"hronika":7,"region":2,"drustvo":4,"ekonomija":3,"zivot":1,"politika":3}
-- [hronika] Uhapšen muškarac iz okoline Kruševca zbog nasilja u porodici
-- [hronika] Dijana Hrkalović među petoro pomilovanih Vučićevom odlukom - Viši sud u Beogradu objavio spisak
-- [region] Mladić iz Srbije nestao tokom uspona na Triglav, spasioci pronašli njegove stvari u snegu
-- [region] BiH: Šestorica Srba osuđena za ubistvo i deportaciju meštana iz Novoseoca 1992. godine
-- [hronika] Saslušan načelnik Službe za suzbijanje kriminala Boško Sekulović, tužilaštvo traži pritvor
-- [drustvo] Nikolina Sinđelić za RTS: Više od godinu dana nisam saslušana po prijavi protiv Marka Krička
+Categories: {"hronika":3,"politika":2,"ekonomija":3,"svet":3,"drustvo":5,"zivot":2,"region":2}
+- [hronika] Marku Kričku i Bošku Sekuloviću određen pritvor do 30 dana
+- [politika] Profesor Vladisavljević za RTS: Korupcija je postala način poslovanja, sada nema zaštite od krivičnog gonjenja
+- [ekonomija] Zildžović o slučaju Alta banke: Ne može troje ljudi da iznese toliki novac, potrebna ozbiljna istraga
+- [svet] "Tihi udari" SAD na iranske ciljeve; UN: Civili u Jemenu plaćaju surovu cenu sukoba
+- [drustvo] Godišnjica razornog zemljotresa u Kraljevu
+- [politika] Studentska lista: Pomilovanje ne sme da služi kao sredstvo političke osvete i ličnih obračuna
