@@ -1,12 +1,12 @@
 # Feed check
 
-Run: 2026-11-03T08:07:36.575Z
+Run: 2026-11-03T08:10:40.581Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
 | N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 1 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +72) | 76 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +74) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
@@ -31,38 +31,38 @@ Uncategorized sample (for tuning):
 - Dnevnik u 19 (01.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-01-novembar-2026/ | tags: ["Dnevnik","dnevnik u 19","najvažnije vesti","vesti dana","dnevnik 19","dnevnik"]
 
 ## Nova.rs
-Categories: {"ostalo":2,"sport":11,"zabava":7,"zivot":6,"svet":3,"hronika":10,"politika":4,"drustvo":4,"ekonomija":3}
+Categories: {"sport":12,"svet":4,"ostalo":2,"zabava":6,"zivot":6,"hronika":10,"politika":3,"drustvo":4,"ekonomija":3}
+- [sport] "Bivša mi je tražila da pređem u katolike, onda sam otišao na Hilandar": Vanja Grbić otkrio kako je upoznao veru i šta ga je promenilo
+- [svet] VIDEO Avion se srušio nasred ulice u Meksiku: Dve osobe poginule, letelica pala minut nakon poletanja
 - [ostalo] Probudi se - Cela emisija - 2.11.2026.
 - [sport] Novak sebi priredio mini košmar: U prvom kolu Pariza ga čeka najnoviji ATP šampion, poznato šta mu je potrebno za Torino
 - [zabava] "Istina je": Prvo oglašavanje Uroša Živkovića nakon što mu je zapaljen auto
 - [zivot] Svi pričaju da je ovoidealna težina za žene visoke 170 cm: Evo šta kažu lekar i najveće naučno istraživanje - čeka vas iznenađenje
-- [sport] "Ne znam šta se dešava, na treninzima sve ulazi": Jokić trljao lice, hvatao se za glavu, ne može da objasni ogroman problem koji ima od početka sezone
-- [svet] Rusi napali bolnicu u Harkovu: Najmanje 46 povređenih, evakuiše se 200 pacijenata
 
 Uncategorized sample (for tuning):
 - Probudi se - Cela emisija - 2.11.2026. | https://nova.rs/emisije/probudi-se-cela-emisija-2112026/ | tags: ["Emisije","probudi se cela emisija"]
 - Dnevnik - Cela emisija - 1.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-1112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"sport":11,"svet":13,"politika":2,"ekonomija":9,"zivot":20,"drustvo":3,"hronika":4,"kultura":5,"zdravlje":4,"tehnologija":4,"ostalo":1,"zabava":4}
+Categories: {"svet":13,"zivot":20,"sport":12,"politika":2,"ekonomija":9,"drustvo":3,"hronika":4,"kultura":4,"zdravlje":4,"tehnologija":4,"ostalo":1,"zabava":4}
+- [svet] Snažan ciklon pogodio kopno: Ljudi evakuisani, škole zatvorene, saobraćaj obustavljen VIDEO
+- [zivot] Advokat Rasela Brenda odbacio optužbe: "Nema dokaza da je on čovek koji siluje"
+- [sport] Hrvat zaustavio Grizlise – više nema neporaženih ekipa VIDEO
 - [sport] Đoković nema drugog izbora
 - [svet] Vojska na nogama; Testirana kasetna bojeva glava; Uništava se pred sobom
 - [politika] Vučić razgovarao sa predsednikom Uzbekistana: "Rekao mi je da budem ponosan na rezultate" FOTO
-- [ekonomija] Simbol švedske industrije tone: Gubitak 500 miliona evra, sledi 2.500 otkaza
-- [zivot] Zatvoren stakleni vidikovac na Kablaru: Kraj turističke sezone na najvećoj atrakciji u Čačku FOTO
-- [sport] Srbin zasenio Kusturičin debi u NCAA – obojica blistali VIDEO
 
 Uncategorized sample (for tuning):
 - Na današnji dan, 3. novembar | https://www.b92.net/info/razno/281697/na-danasnji-dan-3-novembar/vest | tags: ["Info"]
 
 ## Blic
-Categories: {"zivot":9,"drustvo":8,"ekonomija":12,"zabava":18,"hronika":7,"kultura":1,"svet":12,"zdravlje":1,"politika":1,"ostalo":1}
+Categories: {"zivot":10,"drustvo":8,"ekonomija":12,"zabava":17,"hronika":7,"kultura":1,"svet":12,"zdravlje":1,"politika":1,"ostalo":1}
+- [zivot] Saobraćajna gužva na ostrvu bez automobila? Najviše ćete sresti dva konja
 - [zivot] Stručnjaci savetuju da stavite kuglicu aluminijumske folije u veš-mašinu: Razlog će vas iznenaditi
 - [drustvo] HITNO SAOPŠTENJE AMSS ZBOG SNEGA Povećana opasnost od udesa, evo kada je NEOPHODAN POSEBAN OPREZ
 - [ekonomija] Stambena kriza u Evropi: Milioni daju preko 40 odsto prihoda za krov nad glavom, Grčka u najtežoj poziciji, Hrvatska pri dnu liste
 - [zabava] "NIKOLINA IMA VERENIKA, SVE OVO RADI ZBOG NJEGA" Usred priča o nasilju, Miša Grof šokirao tvrdnjama o Nikolini Pišek: "Vidoje ni mrava ne bi zgazio"
 - [hronika] MLADIĆ NAMERNO PREGAZIO STARIJEG SUGRAĐANINA?! Horor u centru Novog Pazara: Čovek teško povređen
-- [kultura] Zašto je Džek Nikolson ODBIO ULOGU U "KUMU": Glumac otkrio dva specifična razloga
 
 Uncategorized sample (for tuning):
 - Naslovna strana za 3.11. | https://www.blic.rs/print/naslovna-strana-za-311/mbbjg1z | tags: []
