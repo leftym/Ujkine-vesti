@@ -1,6 +1,6 @@
 # Outlet icons
 
-Run: 2026-11-03T08:07:36.643Z
+Run: 2026-11-03T08:10:40.629Z
 
 ## N1  (https://n1info.rs)
 - OK  200 image/png 485B 16x16 | icon sizes=16x16 | https://n1info.rs/media/images/n1_fav_icon.2e16d0ba.fill-16x16.png
@@ -34,7 +34,7 @@ Run: 2026-11-03T08:07:36.643Z
 - OK  200 image/x-icon 15406B ico[16x16,32x32,48x48] | icon sizes=- | https://www.b92.net/files/b92/favicon.ico
 - bad 404 text/html 253237B  | guess /apple-touch-icon.png | https://www.b92.net/apple-touch-icon.png
 - OK  200 image/x-icon 15406B ico[16x16,32x32,48x48] | guess /favicon.ico | https://www.b92.net/favicon.ico
-- bad 404 text/html 253201B  | guess /favicon.png | https://www.b92.net/favicon.png
+- bad 404 text/html 253199B  | guess /favicon.png | https://www.b92.net/favicon.png
 
 ## Blic  (https://www.blic.rs)
 - OK  200 image/png 12724B 180x180 | apple-touch-icon sizes=180x180 | https://ocdn.eu/ucs/static/blicperun/3655e5f35801ace2228b7928bf7c83e7/v3/img/favicons/apple-touch-icon.png
