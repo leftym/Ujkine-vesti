@@ -1,18 +1,18 @@
 # Feed check
 
-Run: 2026-11-04T02:08:20.893Z
+Run: 2026-11-04T02:23:50.057Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
 | N1 | yes | 43 | https://n1info.rs/feed/ | 43 | 1 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 1 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +83) | 76 | 0 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +81) | 78 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":12,"ekonomija":4,"ostalo":9,"hronika":1,"politika":8,"zivot":4,"drustvo":4,"region":1}
+Categories: {"svet":12,"ekonomija":3,"ostalo":9,"hronika":1,"politika":9,"zivot":4,"drustvo":4,"region":1}
 - [svet] Stižu prvi rezultati međuizbora u SAD: Demokrate odnele pobede
 - [ekonomija] Bajatović za N1: Zašto su Vulin i Popović putovali u Rusiju ne znam, ja sam krenuo zbog gasa i problema s Alta bankom
 - [ostalo] Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga
@@ -39,25 +39,25 @@ Categories: {"politika":9,"hronika":5,"drustvo":11,"zivot":2,"sport":14,"zabava"
 - [politika] Vulin: Spavao sam tokom leta za Moskvu, probudili me u Beogradu
 - [zivot] U Srbiji danas oblačno i hladno, na planinama slab sneg
 - [sport] Zvezda WNBA angažovala telohranitelje, pratiće je 24 sata dnevno
-  - flagged (self): Gledajte uživo Dnevnik TV Nova https://nova.rs/vesti/drustvo/gledajte-uzivo-dnevnik-tv-nova-03-11-2026/
 
 Uncategorized sample (for tuning):
 - Podcast DLZ i Aleksandar Radić: Prošao voz za režimski kontraudar | https://nova.rs/emisije/podcast-dlz-i-aleksandar-radic-prosao-voz-za-rezimski-kontraudar/ | tags: ["Emisije","Podcast","aleksandar radić","dlz cela emisija","nenad kulačin","marko vidojković"]
 - Dnevnik - Cela emisija - 2.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-2112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"svet":14,"zivot":19,"ostalo":3,"sport":16,"hronika":2,"drustvo":3,"zdravlje":4,"tehnologija":3,"ekonomija":6,"politika":5,"kultura":2,"zabava":2,"region":1}
+Categories: {"svet":14,"sport":12,"ostalo":4,"drustvo":3,"zivot":18,"zdravlje":4,"tehnologija":5,"ekonomija":7,"politika":5,"hronika":2,"kultura":2,"zabava":3,"region":1}
+- [svet] Tramp prati izborne rezultate iz Bele kuće
 - [svet] Zatvorena prva glasačka mesta; Demokrate osvajaju teren republikanaca; Tramp pod pritiskom FOTO/VIDEO
 - [svet] Prvi preliminarni rezultati međuizbora u SAD
-- [zivot] Ovaj srpski kamp postao hit među Holanđanima: Turisti iz cele Evrope dolaze na Zlatibor FOTO
-- [zivot] Još ništa od letova do Beograda: Avio-kompanija povukla karte iz prodaje
-- [ostalo] Na današnji dan, 4. novembar
 - [sport] Zvezda WNBA angažovala telohranitelje 24 sata dnevno
+- [ostalo] Na današnji dan, 4. novembar
+- [svet] Rat – dan 1.713: Rusi napali – veliki broj mrtvih; "Moskva ne planira rat sa Evropom" FOTO/VIDEO
 
 Uncategorized sample (for tuning):
-- Na današnji dan, 4. novembar | https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest | tags: ["Najnovije"]
+- Na današnji dan, 4. novembar | https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest | tags: ["Info"]
 - Novine: "Međunarodna očekivanja od nove vlasti u Srbiji"; "Radnici u marketima za sad bez posledica" | https://www.b92.net/info/razno/281963/novine-medjunarodna-ocekivanja-od-nove-vlasti-u-srbiji-radnici-u-marketima-za-sad-bez-posledica/vest | tags: ["Info"]
-- "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest | tags: []
+- "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest | tags: ["Najnovije"]
+- Gosti ih prvo primete: Tri stvari koje odmah morate da sklonite iz kuhinje | https://superzena.b92.net/kuhinja/prakticni-saveti/281446/tri-stvari-koje-treba-da-sklonite-iz-kuhinje-pre-dolaska-gostiju/vest | tags: ["Najnovije"]
 
 ## Blic
 Categories: {"hronika":6,"ekonomija":9,"svet":11,"ostalo":1,"politika":9,"zivot":7,"drustvo":7,"zabava":19,"zdravlje":1}
