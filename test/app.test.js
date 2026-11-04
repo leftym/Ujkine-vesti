@@ -281,3 +281,36 @@ test('feed parser refuses unsafe links and survives junk input', () => {
   assert.equal(items[0].image, null);
   assert.equal(parseFeed(null).length, 0);
 });
+
+test('Cyrillic round 2: units, inflected brands, foreign letters, quotes', () => {
+  const { toCyr } = require('../public/cyr.js');
+  assert.equal(toCyr('90km/h'), '90km/h');
+  assert.equal(toCyr('Samsungov telefon'), 'Samsungov телефон');
+  assert.equal(toCyr('Müller u Zürichu'), 'Müller у Zürichu');
+  assert.equal(toCyr('Xi Đinping'), 'Си Ђинпинг');
+  assert.equal(toCyr('Šta ’Zvezda’ radi'), 'Шта ’Звезда’ ради');
+  assert.equal(toCyr('Inje na granama'), 'Иње на гранама');
+  assert.equal(toCyr('N1 javlja'), 'Н1 јавља');
+});
+
+test('classifier round 2: real news is not hidden, real ads still are', () => {
+  const { classify, detectAd } = require('../lib/classify');
+  assert.equal(detectAd({ title: 'Tiketi za meč Srbija-Engleska u prodaji' }), null);
+  assert.equal(detectAd({ title: 'Policija zatvorila ilegalnu kladionicu u Nišu' }), null);
+  assert.equal(detectAd({ title: 'Ko je favorit prema kvotama' }), 'betting');
+  assert.equal(detectAd({ title: 'Popust 50% na sve' }), 'promo');
+  assert.equal(detectAd({ title: 'Kod nas nema popusta, kaže ministar' }), null);
+  const cat = (t) => classify({ url: 'https://www.politika.rs/scc/clanak/1/x', title: t });
+  assert.equal(cat('Zvezda savladala Real u Evroligi'), 'sport');
+  assert.notEqual(cat('Kurs engleskog jezika'), 'ekonomija');
+});
+
+test('feed parser stays fast on hostile input and clamps dates', () => {
+  const { parseFeed } = require('../lib/rss');
+  const t = Date.now();
+  parseFeed('<rss>' + '<item><title>x</title>'.repeat(40000));
+  parseFeed('<rss><item>' + '<title>x'.repeat(100000) + '</item></rss>');
+  assert.ok(Date.now() - t < 1500);
+  const r = parseFeed('<rss><item><title>A</title><link>https://x.rs/a</link><pubDate>Wed, 01 Jan 2040 10:00:00 GMT</pubDate></item></rss>');
+  assert.ok(r[0].ts <= Date.now() + 3700 * 1000);
+});

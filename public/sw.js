@@ -1,5 +1,5 @@
 'use strict';
-const VERSION = 'vesti-v6';
+const VERSION = 'vesti-v7';
 const SHELL = ['/', '/style.css', '/app.js', '/cyr.js', '/manifest.webmanifest', '/icon.svg'];
 
 self.addEventListener('install', (e) => {
@@ -25,10 +25,9 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(
       fetch(req)
         .then((res) => {
-          if (res.ok) {
-            const copy = res.clone();
-            copy.json().then((j) => { if (j && j.items && j.items.length) caches.open(VERSION).then((c) => c.put('/api/news', res.clone())); }).catch(() => {});
-          }
+          if (!res.ok) throw new Error('bad status'); // 5xx falls back to the saved copy too
+          const check = res.clone(), keep = res.clone(); // clone before the page reads the body
+          check.json().then((j) => { if (j && j.items && j.items.length) caches.open(VERSION).then((c) => c.put('/api/news', keep)); }).catch(() => {});
           return res;
         })
         .catch(async () => {

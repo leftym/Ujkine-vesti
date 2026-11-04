@@ -36,7 +36,7 @@ function decode(bytes, contentType) {
   try { return new TextDecoder(enc).decode(bytes); } catch { return new TextDecoder('utf-8').decode(bytes); }
 }
 
-async function fetchText(url, { timeoutMs = 9000 } = {}) {
+async function fetchText(url, { timeoutMs = 6000 } = {}) {
   const http = nativeHttp();
   if (!http) {
     // Plain browser fallback (only useful for local testing; most feeds block cross-origin reads)
@@ -60,11 +60,19 @@ async function fetchText(url, { timeoutMs = 9000 } = {}) {
   return decode(bytes, headerOf(r.headers, 'content-type'));
 }
 
+const isObj = (x) => !!x && typeof x === 'object' && !Array.isArray(x);
+const WEEK = 7 * 24 * 3600 * 1000;
 function validNews(d) {
-  return !!d && Array.isArray(d.items) && Array.isArray(d.status) && Array.isArray(d.sources) &&
-    typeof d.updatedAt === 'string' && !isNaN(Date.parse(d.updatedAt));
+  if (!isObj(d) || !Array.isArray(d.items) || !Array.isArray(d.status) || !Array.isArray(d.sources) ||
+    typeof d.updatedAt !== 'string' || isNaN(Date.parse(d.updatedAt))) return false;
+  const ids = new Set(d.sources.filter(isObj).map((s) => s.id));
+  return d.items.every((i) => isObj(i) && typeof i.title === 'string' && typeof i.url === 'string' && ids.has(i.source)) &&
+    d.status.every((s) => isObj(s) && ids.has(s.id));
 }
-function validVideos(d) { return !!d && Array.isArray(d.items) && Array.isArray(d.status); }
+function validVideos(d) {
+  return isObj(d) && Array.isArray(d.items) && Array.isArray(d.status) &&
+    d.items.every((v) => isObj(v) && typeof v.url === 'string' && typeof v.title === 'string');
+}
 
 // A damaged saved copy is dropped instead of breaking the screen.
 function readStored(key, ok) {
@@ -75,7 +83,12 @@ function readStored(key, ok) {
   } catch { try { localStorage.removeItem(key); } catch { /* ignore */ } }
   return null;
 }
-const readCache = () => readStored(CACHE_KEY, validNews);
+// Saved stories older than a week are dropped, so a long-dead outlet cannot show ancient news.
+function readCache() {
+  const d = readStored(CACHE_KEY, validNews);
+  if (d) d.items = d.items.filter((i) => Date.now() - Date.parse(i.published) < WEEK || isNaN(Date.parse(i.published)));
+  return d;
+}
 
 function store(key, data, dropOnFull) {
   try { localStorage.setItem(key, JSON.stringify(data)); } catch {

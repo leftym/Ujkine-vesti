@@ -20,15 +20,29 @@ async function defaultFetchText(url, { timeoutMs = 9000, maxBytes = 3 * 1024 * 1
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), timeoutMs);
   try {
-    const res = await fetch(url, {
-      signal: ctl.signal,
-      redirect: 'follow',
-      headers: {
-        'user-agent': UA,
-        accept: 'application/rss+xml, application/xml, text/xml, text/html;q=0.8, */*;q=0.5',
-        'accept-language': 'sr,en;q=0.7',
-      },
-    });
+    // Redirects are followed by hand: every hop must stay on an outlet (or YouTube) host, so an
+    // open redirect on an outlet cannot be used to reach other machines.
+    let res;
+    let hop = url;
+    for (let n = 0; n <= 3; n++) {
+      res = await fetch(hop, {
+        signal: ctl.signal,
+        redirect: 'manual',
+        headers: {
+          'user-agent': UA,
+          accept: 'application/rss+xml, application/xml, text/xml, text/html;q=0.8, */*;q=0.5',
+          'accept-language': 'sr,en;q=0.7',
+        },
+      });
+      if (res.status < 300 || res.status >= 400) break;
+      const loc = res.headers.get('location');
+      if (!loc || n === 3) throw new Error('bad redirect');
+      const next = new URL(loc, hop);
+      const h = next.hostname.replace(/^www\./, '');
+      const ok = next.protocol === 'https:' && (/(^|\.)youtube\.com$/.test(h) || SOURCES.some((x) => h === x.host || h.endsWith('.' + x.host)));
+      if (!ok) throw new Error('redirect not allowed');
+      hop = next.href;
+    }
     if (!res.ok) { const e = new Error('HTTP ' + res.status); e.code = 'HTTP_' + res.status; throw e; }
     const buf = Buffer.from(await res.arrayBuffer());
     if (buf.length > maxBytes) throw new Error('too large');

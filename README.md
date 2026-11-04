@@ -103,3 +103,13 @@ Needs the Node server (`npm start`) on a host with HTTPS. Same UI, same filters,
 | Claude morning review (scheduled task) | 18:15 | 19:15 / 20:15 | 08:15 |
 
 Serbia moves between UTC+1 and UTC+2 on the last Sundays of March and October; Hawaii never changes.
+
+
+## Review agents (`.claude/agents/`)
+
+Eight strict, read-only reviewers, each with its own "strict rule": `a11y-senior-ux`, `android-capacitor`, `ranking-classification`,
+`serbian-linguist`, `feed-reliability`, `play-policy-legal`, `privacy-security`, `remote-support-ux`. They are run in rounds:
+review, fix what is proven, test, push, review again. Their findings are proposals; each is checked against the code before it is applied.
+
+The "Javi problem Dušanu" message uses fixed short fields (`v= build= ekran= pismo= tema= slova= veza= sync: greška=`), with the last
+successful time per outlet, and never contains titles, links or search text.

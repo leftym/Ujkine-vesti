@@ -2,23 +2,27 @@
 (function (root) {
   'use strict';
   var MAP = { a: 'а', b: 'б', c: 'ц', 'č': 'ч', 'ć': 'ћ', d: 'д', 'đ': 'ђ', e: 'е', f: 'ф', g: 'г', h: 'х', i: 'и', j: 'ј', k: 'к', l: 'л', m: 'м', n: 'н', o: 'о', p: 'п', r: 'р', s: 'с', 'š': 'ш', t: 'т', u: 'у', v: 'в', z: 'з', 'ž': 'ж' };
-  var WORD = /[A-Za-zČĆŠŽĐčćšžđ]+/;
+  var WORD = /[A-Za-zÀ-ÖØ-öø-ÿČĆŠŽĐčćšžđ]+/;
 
   // foreign brand names that look wrong in Cyrillic ("Гоогле"); everything else is converted
-  var KEEP = /^(google|facebook|microsoft|apple|amazon|twitter|tiktok|whatsapp|netflix|youtube|instagram|linkedin|spotify|uber|bolt|iphone|ipad|wifi|fi|mozzart|maxbet|mcdonald|samsung|tesla|galaxy|huawei|xiaomi|bmw|viber|line)$/i;
+  var KEEP = /^(google|facebook|microsoft|apple|amazon|twitter|tiktok|whatsapp|netflix|youtube|instagram|linkedin|spotify|uber|bolt|iphone|ipad|wifi|fi|mozzart|maxbet|mcdonald|samsung|tesla|galaxy|huawei|xiaomi|bmw|viber|line|n1info)(?:-?(?:a|u|e|i|om|ov\w*|ima|ovi|ova|ove|u))?$/i;
   // words where "nj" / "dž" are two separate letters, not one: injekcija, nadživeti, podžupanija
+  var NAMES = { xi: 'Си', zhang: 'Џанг' };
   function twoLetter(w, i) {
     var lo = w.toLowerCase();
     if (lo[i] === 'n' && lo[i + 1] === 'j') {
-      var m = lo.match(/^(inj|preinj|konj(?=u[gn]))/);
+      var m = lo.match(/^(inj(?!e\b)|preinj|konj(?=u[gn])|a(?=njon))/);
+      if (m && m[0] === 'a') return i === 1;
       return !!m && i === m[0].length - 2;
     }
-    if (lo[i] === 'd' && lo[i + 1] === 'ž') return /^(nad|pod|od|sad)ž/.test(lo) && i === lo.indexOf('dž');
+    if (lo[i] === 'd' && lo[i + 1] === 'ž') return /^(nad|pod)ž/.test(lo) && i === lo.indexOf('dž');
     return false;
   }
 
   function word(w) {
     if (KEEP.test(w)) return w;
+    if (NAMES[w.toLowerCase()]) return w[0] === w[0].toUpperCase() ? NAMES[w.toLowerCase()] : NAMES[w.toLowerCase()].toLowerCase();
+    if (/[À-ÖØ-öø-ÿ]/.test(w)) return w;                // Müller, Zürich: foreign letters stay
     if (/[qwxyQWXY]/.test(w)) return w;                 // foreign word (Twitter, Maxwell)
     if (/[a-zčćšžđ][A-ZČĆŠŽĐ]/.test(w)) return w;      // brand written in camel case: YouTube, iPhone
     var out = '';
@@ -36,12 +40,26 @@
   }
 
   // Web addresses such as "Nova.rs" or "n1info.rs/feed" stay as they are
-  // Left alone: e-mail, links, domains, @handles and #tags, units right after a digit (12h, 25°C), 's after a name
-  var TOKEN = /([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})|((?:https?|ftp):\/\/\S+|www\.\S+)|([A-Za-z0-9-]+\.(?:rs|com|net|org|info|tv|me|eu|ba|hr|mk|si|co|io|app)\b[^\s]*)|([@#][A-Za-zČĆŠŽĐčćšžđ0-9_]+)|((?<=[0-9°])[A-Za-z]+|(?<=[A-Za-z]['\u2019])[sS]\b|\b(?!N1)[A-Za-z]{1,3}(?=[0-9]))|([A-Za-zČĆŠŽĐčćšžđ]+)/g;
+  // Left alone: e-mail, links, domains, @handles and #tags, units right after a digit (12h, 90km/h, 25°C),
+  // 's after a name, names with an apostrophe (O'Brien), model codes (S24)
+  var TOKEN_SRC = '([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,})|((?:https?|ftp):\\/\\/\\S+|www\\.\\S+)' +
+    '|([A-Za-z0-9-]+\\.(?:rs|com|net|org|info|tv|me|eu|ba|hr|mk|si|co|io|app)\\b[^\\s]*)|([@#][A-Za-zČĆŠŽĐčćšžđ0-9_]+)' +
+    '|((?:youtube|iphone|google|facebook|samsung|instagram|tiktok|whatsapp|viber)-[a-z]{1,3}\\b|[A-Za-zÀ-ÖØ-öø-ÿ]+[\'\u2019][A-Za-zÀ-ÖØ-öø-ÿ]+(?:[\'\u2019][A-Za-zÀ-ÖØ-öø-ÿ]+)*)' +
+    '|((?<=[0-9°])[A-Za-z]+(?:\\/[A-Za-z]+)?|(?<=[A-Za-zćČ][\'\u2019])[sS]\\b|\\b(?!N1(?![A-Za-z]))[A-Za-z]{1,3}(?=[0-9]))' +
+    '|([A-Za-zÀ-ÖØ-öø-ÿČĆŠŽĐčćšžđ]+)';
+  var TOKEN, NOVA;
+  try {
+    TOKEN = new RegExp(TOKEN_SRC, 'gi');
+    NOVA = /(?<![.\/@\w])Nova\.rs\b(?![\/\w.])/g;
+  } catch (e) {
+    // very old WebView without lookbehind: simpler pattern, the app must still work
+    TOKEN = /([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})|((?:https?|ftp):\/\/\S+|www\.\S+)|([A-Za-z0-9-]+\.(?:rs|com|net|org|info|tv|me|eu)\b[^\s]*)|([@#]\w+)|()|()|([A-Za-zČĆŠŽĐčćšžđ]+)/g;
+    NOVA = /\bNova\.rs\b(?![\/\w.])/g;
+  }
   function toCyr(s) {
     return String(s)
-      .replace(/(?<![.\/@\w])Nova\.rs\b(?![\/\w.])/g, 'Нова.рс')
-      .replace(TOKEN, function (m, a, b, c, d, e, w) { return w ? word(w) : m; });
+      .replace(NOVA, 'Нова.рс')
+      .replace(TOKEN, function (m) { var w = arguments[7]; return w ? word(w) : m; });
   }
 
   // For searching: Cyrillic letters -> the same folded Latin the app uses for matching (no diacritics)

@@ -46,6 +46,9 @@
     // damaged or old saved settings must never break the screen
     for (const k of ['sources', 'cats']) if (!Array.isArray(s[k])) s[k] = [];
     for (const k of ['q', 'muted']) s[k] = typeof s[k] === 'string' ? s[k] : '';
+    if (!['news', 'video'].includes(s.view)) s.view = 'news';
+    if (!['lat', 'cyr'].includes(s.script)) s.script = 'lat';
+    if (!['auto', 'light', 'dark'].includes(s.theme)) s.theme = 'auto';
     if (!Number.isInteger(s.fs) || s.fs < 0 || s.fs >= SCALES.length) s.fs = DEFAULTS.fs;
     return s;
   }
@@ -58,6 +61,17 @@
     // auto = no attribute: CSS follows the phone's light/dark setting
     if (S.theme === 'auto') document.documentElement.removeAttribute('data-theme');
     else document.documentElement.setAttribute('data-theme', S.theme);
+    // status/navigation bar icons must match the chosen theme, not only the phone's setting
+    const P = window.Capacitor && window.Capacitor.Plugins;
+    try {
+      if (P && P.SystemBars && P.SystemBars.setStyle) P.SystemBars.setStyle({ style: S.theme === 'dark' ? 'DARK' : S.theme === 'light' ? 'LIGHT' : 'DEFAULT' });
+    } catch { /* not available */ }
+    const bg = S.theme === 'dark' ? '#0b0d11' : S.theme === 'light' ? '#f6f7f9' : null;
+    for (const m of document.querySelectorAll('meta[name="theme-color"]')) {
+      if (!m.dataset.orig) m.dataset.orig = m.content;
+      m.content = bg || m.dataset.orig;
+      if (bg) m.removeAttribute('media'); else if (m.dataset.orig === '#0b0d11') m.setAttribute('media', '(prefers-color-scheme: dark)'); else m.setAttribute('media', '(prefers-color-scheme: light)');
+    }
   }
 
   function applyFs() {
@@ -211,7 +225,7 @@
   function openExternal(url) {
     const P = window.Capacitor && window.Capacitor.Plugins;
     if (NATIVE && P && P.AppLauncher && P.AppLauncher.openUrl) {
-      P.AppLauncher.openUrl({ url }).catch(() => { if (P.Browser && P.Browser.open) P.Browser.open({ url }); });
+      P.AppLauncher.openUrl({ url }).then((r) => { if (!r || !r.completed) throw new Error('no app'); }).catch(() => { if (P.Browser && P.Browser.open) P.Browser.open({ url }); });
     } else if (NATIVE && P && P.Browser && P.Browser.open) {
       P.Browser.open({ url });
     } else {
@@ -251,27 +265,47 @@
     const data = { title, text: title, url };
     const P = window.Capacitor && window.Capacitor.Plugins;
     try {
-      if (NATIVE && P && P.Share && P.Share.share) await P.Share.share({ ...data, dialogTitle: 'Podeli' });
+      if (NATIVE && P && P.Share && P.Share.share) await P.Share.share({ title, text: title + '\n' + url, dialogTitle: 'Podeli' });
       else if (navigator.share) await navigator.share(data);
       else if (navigator.clipboard) await navigator.clipboard.writeText(title + ' ' + url);
     } catch { /* he closed the share sheet */ }
   }
 
+  // Last time each outlet answered, kept between runs so the problem report can say "B92 last worked at 11:20"
+  const LASTOK_KEY = 'vesti.lastok.v1';
+  function lastOk() { try { const o = JSON.parse(localStorage.getItem(LASTOK_KEY) || '{}'); return o && typeof o === 'object' && !Array.isArray(o) ? o : {}; } catch { return {}; } }
+  function noteSync(status) {
+    const o = lastOk();
+    for (const st of status || []) if (st && st.ok && st.fetchedAt) o[st.id] = st.fetchedAt;
+    try { localStorage.setItem(LASTOK_KEY, JSON.stringify(o)); } catch { /* ignore */ }
+  }
+  let LASTERR = '';
+  const hhmm = (iso) => { const d = new Date(iso); return isNaN(d) ? '-' : String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0'); };
+
+  // One tap: opens the share sheet with a ready message. Field names are short and fixed so Dusan can read them fast.
+  // No titles, links, search text or anything the uncle read is included.
   async function reportProblem() {
     const P = window.Capacitor && window.Capacitor.Plugins;
-    let ver = '';
-    try { if (P && P.App && P.App.getInfo) ver = (await P.App.getInfo()).version; } catch { /* ignore */ }
-    const bad = ((DATA && DATA.status) || []).filter((x) => !x.ok).map((x) => x.id);
+    let ver = '?', build = '?';
+    try { if (P && P.App && P.App.getInfo) { const i = await P.App.getInfo(); ver = i.version; build = i.build; } } catch { /* ignore */ }
+    const ok = lastOk();
+    const names = {};
+    for (const x of (DATA && DATA.sources) || []) names[x.id] = x.name;
+    const sync = ((DATA && DATA.status) || []).map((st) => {
+      const nm = names[st.id] || st.id;
+      return st.ok ? nm + '=' + hhmm(st.fetchedAt) : nm + '=greška(' + (ok[st.id] ? hhmm(ok[st.id]) : '-') + ')';
+    }).join(' ');
     const lines = [
       'Ujkine Vesti: imam problem.',
       '(Napiši ovde šta ne radi.)',
       '',
       '---',
-      'Verzija: ' + (ver || '?'),
-      'Ekran: ' + S.view + ', pismo: ' + S.script + ', tema: ' + S.theme + ', slova: ' + S.fs,
-      'Veza: ' + (navigator.onLine ? 'ima' : 'nema'),
-      'Mediji koji ne rade: ' + (bad.length ? bad.join(', ') : 'nijedan'),
-      'Osveženo: ' + ((DATA && DATA.updatedAt) || '?'),
+      'v=' + ver + ' build=' + build,
+      'ekran=' + (S.view === 'video' ? 'video' : 'vesti') + ' pismo=' + S.script + ' tema=' + S.theme,
+      'slova=' + S.fs + ' (' + SCALES[S.fs] + 'x)',
+      'veza=' + (navigator.onLine ? 'ima' : 'nema'),
+      'sync: ' + (sync || '-'),
+      'greška=' + (LASTERR || '-'),
     ];
     const text = lines.join('\n');
     try {
@@ -310,6 +344,7 @@
       VIDEOS = res.data;
       videosFromCache = res.fromCache;
     } catch (e) {
+      LASTERR = ('video: ' + (e.message || e)).slice(0, 80);
       if (!VIDEOS) $('#status').textContent = 'Ne mogu da učitam video. Proveri vezu i pokušaj ponovo.';
     } finally {
       btn.classList.remove('spin');
@@ -432,32 +467,47 @@
   }
 
   // ---- data ----------------------------------------------------------------
+  let loading = false;
   async function load(force) {
+    if (loading) return;
+    loading = true;
     const btn = $('#refresh');
     btn.classList.add('spin');
     try {
       const res = await Promise.race([
         api.news(force),
-        new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 30000)),
+        new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 20000)),
       ]);
       fromCache = res.fromCache;
       DATA = res.data;
-      render();
-      renderDiag();
+      noteSync(DATA.status);
+      LASTERR = '';
+      try {
+        render();
+        renderDiag();
+      } catch (e2) {
+        // a damaged saved copy: drop it and start clean instead of showing a blank screen
+        LASTERR = ('render: ' + e2.message).slice(0, 80);
+        try { localStorage.removeItem('vesti.cache.v1'); } catch { /* ignore */ }
+        DATA = null;
+        showNoNews();
+      }
     } catch (e) {
+      LASTERR = (e.message || String(e)).slice(0, 80) + '@' + hhmm(new Date().toISOString());
       if (!DATA) showNoNews();
       else {
         const st = $('#status');
-        st.replaceChildren(el('span', 'warn', 'Osvežavanje nije uspelo. Prikazane su ranije vesti.'));
+        st.replaceChildren(el('span', 'warn', navigator.onLine ? 'Osvežavanje nije uspelo. Prikazane su ranije vesti.' : 'Nema interneta. Prikazane su ranije vesti.'));
       }
     } finally {
       btn.classList.remove('spin');
+      loading = false;
     }
   }
 
   // ---- reader --------------------------------------------------------------
   async function openItem(it) {
-    if (!S.reader) { window.open(it.url, '_blank', 'noopener,noreferrer'); return; }
+    if (!S.reader) { openExternal(it.url); return; }
     const dlg = $('#reader');
     const body = $('#readerBody');
     currentItem = it;
@@ -571,9 +621,14 @@
   $('#tabNews').addEventListener('click', () => setView('news'));
   $('#tabVideo').addEventListener('click', () => setView('video'));
   $('#more').addEventListener('click', () => { shown += PAGE; render(); });
-  document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible' && DATA && Date.now() - Date.parse(DATA.updatedAt) > 5 * 60 * 1000) load(false);
-  });
+  // Coming back to the app, or the signal returning after a tunnel: refresh by itself if the news is old
+  function refreshIfStale() {
+    if (document.hidden) return;
+    const stale = (iso) => !iso || Date.now() - Date.parse(iso) > 5 * 60 * 1000;
+    if (view === 'video') { if (!VIDEOS || stale(VIDEOS.updatedAt)) loadVideos(false); } else if (!DATA || stale(DATA.updatedAt)) load(false);
+  }
+  document.addEventListener('visibilitychange', refreshIfStale);
+  window.addEventListener('online', () => { if (!document.hidden) { if (view === 'video') loadVideos(false); else load(false); } });
 
   const bumpFs = (d) => { S.fs += d; applyFs(); saveSettings(); };
   for (const id of ['#fsDown', '#rFsDown']) $(id).addEventListener('click', () => bumpFs(-1));
@@ -624,9 +679,11 @@
     // Android back button: close an open sheet first, otherwise send the app to the background
     const App = window.Capacitor.Plugins && window.Capacitor.Plugins.App;
     if (App && App.addListener) {
+      App.addListener('resume', refreshIfStale);
       App.addListener('backButton', () => {
         const open = document.querySelector('dialog[open]');
         if (open) open.close();
+        else if (panelOpen) { panelOpen = false; syncPanel(); }
         else if (view === 'video') setView('news');
         else if (S.sources.length || S.cats.length || S.q) { S.sources = []; S.cats = []; S.q = ''; q.value = ''; changed(); }
         else if (window.scrollY > 50) window.scrollTo({ top: 0, behavior: 'smooth' });
