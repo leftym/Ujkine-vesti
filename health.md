@@ -1,89 +1,90 @@
 # Vesti health report
 
-Run: 2026-11-04T11:17:38.639Z  |  items: 268  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-04T21:45:52.558Z  |  items: 284  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **HIGH** [Politika] No working feed. Tried: . Find the current RSS URL (page source: link rel=alternate) and put it first in lib/sources.js.
-2. **LOW** [Nova.rs] Possible ads NOT flagged: "Novi detalji: FIFA popustila pod pritiskom UEFA - Sporna dokumenta dostupna, ali uz strogu kontrolu i cenzuru"
-3. **LOW** [B92] Possible ads NOT flagged: "Preukusno, a gotovo besplatno: Napravite gibanicu od starog hleba – najsočnija ikada"
-4. **LOW** [Blic] Possible ads NOT flagged: "Besplatno putovanje u Finsku i upoznavanje novih ljudi! Evo ko može da se prijavi: Jedan uslov je obavezan"
+1. **LOW** [B92] Possible ads NOT flagged: "Ovo je neverovatni patent Miroljuba iz Ivanjice: Srpski lonac greje brže i jeftinije FOTO"
+2. **LOW** [Blic] Possible ads NOT flagged: ""DOKTOR MI JE REKAO DA JE HALIDOV ŽIVOT JEFTINO PRODAT" Pevač emotivno o smrti Bešlića: "Moglo je da se otkloni na vreme""; "Besplatna obuka za građane u Vranju: Uz aplikaciju "eZdralje" možete da zakažite pregled bez čekanja u redu"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 48 | 0.0h | 100% | 17% | 3 |
-| Nova.rs | yes | 50 | 0.1h | 100% | 4% | 1 |
-| B92 | yes | 80 | 0.0h | 95% | 1% | 0 |
-| Blic | yes | 70 | 0.0h | 100% | 1% | 0 |
-| Politika | **NO** | 0 | - | 0% | 0% | 0 |
-| RTS | yes | 20 | 0.0h | 100% | 0% | 0 |
+| N1 | yes | 44 | 0.1h | 100% | 23% | 1 |
+| Nova.rs | yes | 50 | 0.1h | 100% | 4% | 0 |
+| B92 | yes | 80 | 0.1h | 95% | 4% | 0 |
+| Blic | yes | 70 | 0.1h | 100% | 0% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 15% | 0 |
+| RTS | yes | 20 | 1.3h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 4 outlets, score 46.4] Ubedljiva pobeda demokrata – preuzimaju kontrolu nad oba doma Kongresa; Napad na Trampa FOTO/VIDEO
-   - also (rts): Demokrate preuzele kontrolu nad Kongresom SAD, najavili istrage protiv Trampa
-   - also (nova): Tramp doživeo najteži poraz: Demokrate osvojile oba doma Kongresa
-   - also (n1): Izlazne ankete: Demokrate na putu da preuzmu kontrolu nad američkim Kongresom
-2. [multi, 4 outlets, score 43.8] Određen pritvor Davoru Macuri i za još dvoje zaposlenih u Alta banci
-   - also (b92): Određen pritvor Davoru Macuri; Vlasnik Alta banke imao i dva pomagača
-   - also (nova): SDSM: Vlasnik Alta banke Davor Macura u Severnoj Makeodniji poseduje i osiguravajuću kuću
-   - also (n1): Davoru Macuri, vlasniku Alta banke, određen pritvor do 30 dana
-3. [multi, 3 outlets, score 35.8] Pokret "Kreni-promeni" podneo krivičnu prijavu protiv tužioca VJT u Beogradu Miodraga Markovića
-   - also (n1): Kreni-Promeni podneo krivične prijave protiv tužioca Markovića zbog slučaja zvučni top
-   - also (nova): Kreni-Promeni podneo krivičnu prijavu protiv tužioca Miodraga Markovića zbog zataškavanja slučaja zvučnog topa
-4. [multi, 3 outlets, score 33.7] Avion koji je vraćen sa leta za Moskvu, jutros sleteo u rusku prestonicu
-   - also (n1): Sleteo avion s Vulinom, Bajatovićem i Popovićem koji je bio vraćen sa leta za Moskvu
-   - also (blic): "ŽIVI, ZDRAVI I IZ DVA PUTA SLETELI" Oglasio se Bajatović za "Blic": "U avionu smo bili Vulin, Popović i ja"
-   - also (blic): Sleteo najpraćeniji avion Er Srbije u Beograd: Ovako je izgledala satnica leta za Moskvu i nazad (MAPA)
-5. [multi, 3 outlets, score 33.6] "Svemirski laseri za mešanje u izbore nisu delovali"
-   - also (n1): "Moji svemirski laseri za mešanje u izbore nisu delovali": Mask nakon poraza republikanaca
-   - also (nova): Ilon Mask potrošio stotine miliona dolara na republikance, pa se oglasio nakon poraza: „Moji svemirski laseri nisu delovali“
-6. [multi, 3 outlets, score 33.5] Saičić: "Studentska lista" će biti spremna za formiranje nove vlade
-   - also (n1): Saičić: Spremni smo za posao, kad god bude sazvana sednica Skupštine
-   - also (nova): Saičić (Studentska lista): Spremni smo za posao, kad god bude sazvana sednica Skupštine
-7. [multi, 2 outlets, score 29] Milan Todorović imenovan za novog v. d. direktora REM-a
-   - also (rts): Milan Todorović imenovan za novog v. d. direktora REM-a
-8. [multi, 2 outlets, score 29] EU: Pobeda Studentske liste otvara mogućnost za deblokadu dela sredstava za Srbiju iz Plana rasta EU
-   - also (rts): EU: Pobeda Studentske liste otvara mogućnost za deblokadu dela sredstava za Srbiju iz Plana rasta EU
-9. [multi, 2 outlets, score 27.9] Novosađanin uhapšen zbog 900 grama amfetamina
-   - also (blic): SKRIVAO DROGU U KOLIMA I STANU! Uhapšen Novosađanin (43), zaplenjeno skoro KILOGRAM DROGE
-10. [multi, 2 outlets, score 27.8] EU objavila uputstva za građane: "Spremite zalihe za tri dana za slučaj katastrofe"
-   - also (nova): EU objavila uputstva građanima: Spremite torbu za tri dana, u najavi Evropski dan pripravnosti
+1. [multi, 4 outlets, score 48] Šoškić: Vlada za mesec dana, o premijerskoj funkciji bih razmislio
+   - also (nova): Dejan Šoškić o premijerskoj funkciji: Ako to bude predlog studenata, razmišljao bih o tome
+   - also (n1): Šoškić: Razmišljao bih o mestu premijera ako to bude bio predlog studenata i rezultat demokratskog procesa
+   - also (blic): "U SLEDEĆIH MESEC DANA IMAĆEMO SKUPŠTINU I VLADU" Šoškić o mogućnosti da postane premijer: "Razmislio bih o funkciji mandatara ako me predlože studenti"
+2. [multi, 4 outlets, score 45.8] Uhapšeni komandant SAJ-a i više pripadnika JZO, osumnjičeni za zlostavljanje studenata u garaži Vlade
+   - also (n1): MUP potvrdio hapšenje Žmirića i više pripadnika JZO, osumnjičeni za zlostavljanje studenata u garaži Vlade
+   - also (nova): Uhapšen komandant SAJ-a Igor Žmirić
+   - also (n1): N1 saznaje: Priveden komandant SAJ-a Igor Žmirić i još petoro pripadnika MUP-a
+   - also (blic): Priveden komandant SAJ Igor Žmirić u okviru istrage slučaja "Garaža"
+3. [multi, 4 outlets, score 44.7] BIA: Tvrdnje o navodno protivpravnom postupanju lažne, tendenciozne i zlonamerne
+   - also (b92): BIA odbacila tvrdnje o protivpravnom postupanju: "Cilj je destabilizacija Srbije"
+   - also (n1): BIA o prisluškivanju: Tvrdnje o navodno protivpravnom postupanju lažne, tendenciozne i zlonamerne
+   - also (blic): Oglasila se BIA: "Sve lažne i zlonamerne tvrdnje odbacujemo kao maliciozno smišljene sa ciljem destabilizacije bezbednosnih prilika u Srbiji"
+4. [multi, 4 outlets, score 43.4] Tužilaštvo traži pritvor za direktora RHMZ i još dvoje osumnjičenih
+   - also (b92): Tužilaštvo traži pritvor za direktora RHMZ-a i još dvoje osumnjičenih
+   - also (n1): Tužilaštvo traži pritvor za direktora RHMZ i još dve osobe
+   - also (blic): DIREKTOR RHMZ I ČLANOVI NJEGOVE PORODICE SASLUŠANI U TUŽILAŠTVU Evo kako su se branili povodom sumnje da su "oprali" 650.000 evra: Tužilac predložio pritvor
+5. [multi, 3 outlets, score 38.8] Stravična nesreća kod Majamija: Helikopter se prevrnuo i potonuo; Jedna osoba poginula VIDEO
+   - also (politika): Pao helikopter sa troje putnika u blizini Majamija, jedna osoba poginula, dve povređene
+   - also (n1): Helikopter sa troje ljudi pao u blizini Majamija
+6. [multi, 3 outlets, score 37.4] Pronađen mrtav u hotelu u Berlinu: Preminuo jedan od vodećih političara Bavarske
+   - also (politika): Vicepremijer Bavarske pronađen mrtav u hotelu: važio je za oštrog kritičara odluka EU
+   - also (blic): POZNATI NEMAČKI POLITIČAR NAĐEN MRTAV U HOTELU! Bio je zamenik premijera savezne države i ministar: Požalio se da mu nije dobro i UMRO
+7. [multi, 3 outlets, score 33.3] Sahranjen Mišo Kovač: Počiva pored sina, poruka na njegovom grobu slama srca
+   - also (nova): Mišo Kovač sahranjen pored sina Edija
+   - also (blic): SAHRANJEN MIŠO KOVAČ! Ispunjena poslednja želja porodice: Legendarni pevač počiva pored sina
+8. [multi, 2 outlets, score 29] "PRIPREMAMO SE" Zelenski razgovarao sa Vitkofom i Kušnerom uoči trilateralnog sastanka u Abu Dabiju
+   - also (politika): Zelenski razgovarao sa Vitkofom i Kušnerom: Tempo pregovora mora biti maksimalno intenzivan
+9. [multi, 2 outlets, score 28.5] Zvezda pregazila rivala u Evroligi!
+   - also (nova): Partizan i Zvezda sve dalje od licence Evrolige, večiti moraju da čekaju
+10. [multi, 2 outlets, score 27.9] Predsednik Izraela zadao udarac Netanjahu: Priznao izborne rezultate i krenuo u konsultacije o formiranju nove vlade
+   - also (n1): Predsednik Izraela priznao izborne rezultate i krenuo u konsultacije o formiranju nove vlade
 
 ## Details
 ### N1
-Categories: {"drustvo":4,"ostalo":8,"hronika":3,"ekonomija":8,"svet":8,"zivot":7,"politika":9,"region":1}
+Categories: {"svet":9,"zivot":3,"ekonomija":3,"drustvo":6,"politika":8,"ostalo":10,"hronika":5}
 Flagged:
-- (self) Gledajte UŽIVO Studio live: REM odlučuje <https://n1info.rs/najave-emisija/studio-live-sreda-u-12h-rem-odlucuje/>
-- (self) Dan uživo: Pomilovanja (ne)poznatih <https://n1info.rs/najave-emisija/dan-uzivo-pomilovanja-nepoznatih/>
-- (self) Novi dan: Dani pravde, obračuna ili osvete? <https://n1info.rs/najave-emisija/novi-dan-dani-pravde-obracuna-ili-osvete/>
+- (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
 Uncategorized sample:
-- Gledajte UŽIVO Studio live: REM odlučuje <https://n1info.rs/najave-emisija/studio-live-sreda-u-12h-rem-odlucuje/> tags=["Najave emisija","studio live"]
-- (VIDEO) Pristalice Informera ometale ekipu TV N1 ispred REM-a i dobacivale da smo "ustaše" <https://n1info.rs/vesti/pristalice-informera-ometale-n1-rem/> tags=["Vesti","informer","napadi na n1","savet rem"]
-- Petrović Škero: Ustavni sud da odloži izvršenje odluka o pomilovanju <https://n1info.rs/vesti/petrovic-skero-ustavni-sud-pomilovanje/> tags=["Vesti","aleksandar vučić","pomilovanja","vida petrović škero","ustavni sud"]
-- Greška u sistemu: Zašto socijalno ugrožena porodica u Lazarevcu plaća račune za struju kao da poseduje firmu? <https://n1info.rs/vesti/socijalno-ugrozena-porodica-racun-za-struju-dugovanje/> tags=["Vesti","eps","brojilo","struja","vladan stefanović","lazarevac"]
-- ANN: N1 i Nova S biće dostupni preko Telekoma i Yettela, a u Novu S biće uloženo više od 11,3 miliona evra u 2027. godini <https://n1info.rs/vesti/ann-n1-i-nova-s-bice-dostupni-preko-telekoma-i-yettela-a-u-novu-s-bice-ulozeno-vise-od-113-miliona-evra-u-2027-godini/> tags=["Vesti","radar","telekom srbija","yettel","nova s","forbes srbija"]
-- Novi dan: Dani pravde, obračuna ili osvete? <https://n1info.rs/najave-emisija/novi-dan-dani-pravde-obracuna-ili-osvete/> tags=["Najave emisija","najave emisija"]
+- Global fokus: Međuizbori u SAD (3.11.2026) <https://n1info.rs/video/global-fokus/global-fokus-medjuizbori-u-sad-3112026/> tags=["Global fokus","emisija","global fokus","video"]
+- Međunarodni sajam turizma i seoskog turizma na kragujevačkom "Šumadija sajmu" <https://n1info.rs/vesti/medjunarodni-sajam-turizma-i-seoskog-turizma-na-kragujevackom-sumadija-sajmu/> tags=["Vesti","kragujevac","sajam turizma"]
+- Ivanović: Sistem je ćutao o mučenju studenata, sada moraju da odgovaraju i počinioci i njihovi zaštitnici <https://n1info.rs/vesti/ivanovic-sistem-je-cutao-o-mucenju-studenata-sada-moraju-da-odgovaraju-i-pocinioci-i-njihovi-zastitnici/> tags=["Vesti","narodni pokret srbije","igor žmirić","dušan cvetković","jzo","vlada srbije"]
+- Dnevnik u 19 (3.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-03112026/> tags=["Dnevnik","dnevnik u 19","dnevnik","vesti","video"]
+- Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
+- NUNS: Zahtevamo hitnu smenu Vladimira Orlića i utvrđivanje odgovornosti za prisluškivanje i praćenje novinara Radara <https://n1info.rs/vesti/nuns-zahtevamo-hitnu-smenu-vladimira-orlica-i-utvrdjivanje-odgovornosti-za-prisluskivanje-i-pracenje-novinara-radara/> tags=["Vesti","radar","prisluškivanje novinara","nuns","nezavisno udruženje novinara srbije","afera prisluškivanje"]
 
 ### Nova.rs
-Categories: {"zabava":6,"zivot":6,"hronika":5,"svet":11,"drustvo":4,"ekonomija":3,"sport":7,"politika":6,"ostalo":2}
-Flagged:
-- (sponsored) Nikola Orozović o brzom odustajanju od treninga <https://nova.rs/magazin/zdravlje/nikola-orozovic-o-brzom-odustajanju-od-treninga/>
+Categories: {"sport":12,"svet":3,"drustvo":4,"zivot":1,"politika":4,"zabava":9,"ekonomija":2,"hronika":13,"ostalo":2}
 Uncategorized sample:
-- Mentalno razgibavanje: Mafijaški raspad <https://nova.rs/emisije/mentalno-razgibavanje-mafijaski-raspad/> tags=["Emisije","mentalno razgibavanje cela emisija"]
-- Probudi se - Cela emisija - 3.11.2026. <https://nova.rs/emisije/probudi-se-cela-emisija-3112026/> tags=["Emisije","probudi se cela emisija"]
+- Dnevnik - Cela emisija - 3.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-31120262/> tags=["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 3.11.2026. <https://nova.rs/emisije/medju-nama-cela-emisija-3112026/> tags=["Emisije","među nama cela emisija"]
 
 ### B92
-Categories: {"svet":14,"ekonomija":9,"zivot":19,"politika":6,"sport":14,"tehnologija":2,"drustvo":3,"kultura":4,"hronika":3,"zabava":2,"zdravlje":2,"ostalo":1,"region":1}
+Categories: {"sport":12,"svet":15,"ekonomija":10,"zivot":18,"zabava":6,"zdravlje":2,"kultura":3,"ostalo":3,"politika":3,"tehnologija":3,"region":1,"hronika":3,"drustvo":1}
 Uncategorized sample:
-- 9 znakova koji otkrivaju da su vas kao dete razmazili, a sada to utiče na vas <https://superzena.b92.net/dom-i-porodica/roditeljstvo/282018/9-znakova-da-su-vas-kao-dete-razmazili-evo-koje-su-posledice/vest> tags=[]
+- Džejmi Foks dobio treće dete u 59. godini FOTO <https://superzena.b92.net/dom-i-porodica/roditeljstvo/282270/dzejmi-foks-dobio-trece-dete-u-59-godini/vest> tags=["Najnovije"]
+- Novine: "Demokratski 'cunami' preplavio Kongres"; "Kontrolori znali kako posluju, ali nisu pisali?" FOTO <https://www.b92.net/info/razno/282259/novine-demokratski-cunami-preplavio-kongres-kontrolori-znali-kako-posluju-ali-nisu-pisali-foto/vest> tags=["Info"]
+- Za svadbu, ali i za svaki dan – ovo je najmodernija frizura koja je osvojila žene FOTO/VIDEO <https://superzena.b92.net/lepa-i-zdrava/lepota-zene/282241/najmodernija-frizura-koja-je-osvojila-zene-nosi-je-tamara-kalinic/vest> tags=[]
 
 ### Blic
-Categories: {"drustvo":6,"ekonomija":17,"zdravlje":1,"zabava":12,"hronika":9,"kultura":5,"politika":8,"svet":6,"zivot":5,"ostalo":1}
-Uncategorized sample:
-- Postoje stvari koje se ne mere krvnom slikom ili godinama u ličnoj karti, a imaju važnu ulogu u kvalitetu života: Smisao je jedna od njih <https://www.blic.rs/good-life/globetrotter/zivotna-svrha-i-dugovecnost-zasto-je-vazno-imati-razlog-za-ustajanje/zmsqkf3> tags=[]
+Categories: {"svet":12,"zabava":22,"ekonomija":5,"hronika":7,"drustvo":5,"politika":6,"zivot":7,"zdravlje":2,"kultura":3,"tehnologija":1}
 
 ### Politika
-Categories: {}
+Categories: {"hronika":4,"svet":8,"politika":1,"region":1,"ostalo":3,"kultura":1,"sport":2}
+Uncategorized sample:
+- Vicepremijer Bavarske pronađen mrtav u hotelu: važio je za oštrog kritičara odluka EU <https://www.politika.rs/scc/clanak/799841/vicepremijer-bavarske-pronaden-mrtav-u-hotelu-vazio-je-za-ostrog-kriticara-odluka-eu> tags=[]
+- Na dnu Sredozemnog mora pronađen najstariji brodolom na svetu <https://www.politika.rs/scc/clanak/799835/na-dnu-sredozemnog-mora-pronaden-najstariji-brodolom-na-svetu> tags=[]
+- Pistorijus: Svi hoće evropsku odbranu, ali oružje kupuju kod kuće <https://www.politika.rs/scc/clanak/799830/pistorijus-svi-hoce-evropsku-odbranu-ali-oruzje-kupuju-kod-kuce> tags=[]
 
 ### RTS
-Categories: {"drustvo":7,"ekonomija":2,"politika":2,"hronika":5,"svet":3,"zivot":1}
+Categories: {"svet":1,"hronika":6,"politika":5,"drustvo":4,"ekonomija":3,"zivot":1}
