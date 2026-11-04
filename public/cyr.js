@@ -5,11 +5,14 @@
   var WORD = /[A-Za-zČĆŠŽĐčćšžđ]+/;
 
   // foreign brand names that look wrong in Cyrillic ("Гоогле"); everything else is converted
-  var KEEP = /^(google|facebook|microsoft|apple|amazon|twitter|tiktok|whatsapp|netflix|youtube|instagram|linkedin|spotify|uber)$/i;
+  var KEEP = /^(google|facebook|microsoft|apple|amazon|twitter|tiktok|whatsapp|netflix|youtube|instagram|linkedin|spotify|uber|bolt|iphone|ipad|wifi|fi|mozzart|maxbet|mcdonald|samsung|tesla|galaxy|huawei|xiaomi|bmw|viber|line)$/i;
   // words where "nj" / "dž" are two separate letters, not one: injekcija, nadživeti, podžupanija
   function twoLetter(w, i) {
     var lo = w.toLowerCase();
-    if (lo[i] === 'n' && lo[i + 1] === 'j') return /^inj/.test(lo) && i === 1;
+    if (lo[i] === 'n' && lo[i + 1] === 'j') {
+      var m = lo.match(/^(inj|preinj|konj(?=u[gn]))/);
+      return !!m && i === m[0].length - 2;
+    }
     if (lo[i] === 'd' && lo[i + 1] === 'ž') return /^(nad|pod|od|sad)ž/.test(lo) && i === lo.indexOf('dž');
     return false;
   }
@@ -33,9 +36,12 @@
   }
 
   // Web addresses such as "Nova.rs" or "n1info.rs/feed" stay as they are
-  var TOKEN = /([A-Za-z0-9-]+\.(?:rs|com|net|org|info|tv|me|eu)\b[^\s]*)|([A-Za-zČĆŠŽĐčćšžđ]+)/g;
+  // Left alone: e-mail, links, domains, @handles and #tags, units right after a digit (12h, 25°C), 's after a name
+  var TOKEN = /([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})|((?:https?|ftp):\/\/\S+|www\.\S+)|([A-Za-z0-9-]+\.(?:rs|com|net|org|info|tv|me|eu|ba|hr|mk|si|co|io|app)\b[^\s]*)|([@#][A-Za-zČĆŠŽĐčćšžđ0-9_]+)|((?<=[0-9°])[A-Za-z]+|(?<=[A-Za-z]['\u2019])[sS]\b|\b(?!N1)[A-Za-z]{1,3}(?=[0-9]))|([A-Za-zČĆŠŽĐčćšžđ]+)/g;
   function toCyr(s) {
-    return String(s).replace(/Nova\.rs\b/g, 'Нова.рс').replace(TOKEN, function (m, dom, w) { return dom ? dom : word(w); });
+    return String(s)
+      .replace(/(?<![.\/@\w])Nova\.rs\b(?![\/\w.])/g, 'Нова.рс')
+      .replace(TOKEN, function (m, a, b, c, d, e, w) { return w ? word(w) : m; });
   }
 
   // For searching: Cyrillic letters -> the same folded Latin the app uses for matching (no diacritics)

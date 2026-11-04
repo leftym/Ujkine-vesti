@@ -1,5 +1,5 @@
 'use strict';
-const VERSION = 'vesti-v5';
+const VERSION = 'vesti-v6';
 const SHELL = ['/', '/style.css', '/app.js', '/cyr.js', '/manifest.webmanifest', '/icon.svg'];
 
 self.addEventListener('install', (e) => {
@@ -25,7 +25,10 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(
       fetch(req)
         .then((res) => {
-          if (res.ok) caches.open(VERSION).then((c) => c.put('/api/news', res.clone()));
+          if (res.ok) {
+            const copy = res.clone();
+            copy.json().then((j) => { if (j && j.items && j.items.length) caches.open(VERSION).then((c) => c.put('/api/news', res.clone())); }).catch(() => {});
+          }
           return res;
         })
         .catch(async () => {

@@ -250,3 +250,34 @@ test('every outlet has an https icon address and the API passes it on', async ()
   const data = JSON.parse((await get(server, '/api/news')).body);
   assert.ok(data.sources.every((s) => /^https:/.test(s.icon)), 'icons reach the app');
 });
+
+test('Cyrillic leaves addresses, handles, units and brand models alone', () => {
+  const { toCyr } = require('../public/cyr.js');
+  assert.equal(toCyr('vesti@nova.rs'), 'vesti@nova.rs');
+  assert.equal(toCyr('https://www.blic.rs/vesti/x'), 'https://www.blic.rs/vesti/x');
+  assert.equal(toCyr('25°C i 12h'), '25°C и 12h');
+  assert.equal(toCyr('@vucicsrb'), '@vucicsrb');
+  assert.equal(toCyr('konjugacija'), 'конјугација');
+  assert.equal(toCyr('Samsung Galaxy S24'), 'Samsung Galaxy S24');
+});
+
+test('classifier: Politika-style headlines without a section, and no false ad hits', () => {
+  const { classify, detectAd } = require('../lib/classify');
+  const cat = (title) => classify({ url: 'https://www.politika.rs/scc/clanak/1/x', title });
+  assert.equal(cat('Zemljotres pogodio Tursku'), 'hronika');
+  assert.equal(cat('Šojgu stigao u Peking'), 'svet');
+  assert.notEqual(cat('Evropski parlament usvojio rezoluciju'), 'ekonomija');
+  assert.equal(detectAd({ title: 'Vlada daje popust na račune za struju 30%' }), null);
+  assert.equal(detectAd({ title: 'Gledajte: sednica Vlade' }), null);
+  assert.equal(detectAd({ title: 'Samo danas popust 50% na sve' }), 'promo');
+});
+
+test('feed parser refuses unsafe links and survives junk input', () => {
+  const { parseFeed } = require('../lib/rss');
+  const xml = '<rss><channel><item><title>A</title><link>javascript:alert(1)</link></item>' +
+    '<item><title>B</title><link>https://x.rs/b</link><enclosure url="file:///etc/passwd" type="image/jpeg"/></item></channel></rss>';
+  const items = parseFeed(xml);
+  assert.equal(items.length, 1);
+  assert.equal(items[0].image, null);
+  assert.equal(parseFeed(null).length, 0);
+});

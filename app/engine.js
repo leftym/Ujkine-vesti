@@ -10,6 +10,7 @@ const { SOURCES } = require('../lib/sources');
 const { getVideos } = require('../lib/videos');
 
 const CACHE_KEY = 'vesti.cache.v1';
+const VIDEO_KEY = 'vesti.videos.v1';
 const UA = 'Mozilla/5.0 (Linux; Android 14; SM-S921B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Mobile Safari/537.36';
 
 const nativeHttp = () => window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.CapacitorHttp;
@@ -59,17 +60,51 @@ async function fetchText(url, { timeoutMs = 9000 } = {}) {
   return decode(bytes, headerOf(r.headers, 'content-type'));
 }
 
-function readCache() {
-  try { return JSON.parse(localStorage.getItem(CACHE_KEY) || 'null'); } catch { return null; }
+function validNews(d) {
+  return !!d && Array.isArray(d.items) && Array.isArray(d.status) && Array.isArray(d.sources) &&
+    typeof d.updatedAt === 'string' && !isNaN(Date.parse(d.updatedAt));
+}
+function validVideos(d) { return !!d && Array.isArray(d.items) && Array.isArray(d.status); }
+
+// A damaged saved copy is dropped instead of breaking the screen.
+function readStored(key, ok) {
+  try {
+    const d = JSON.parse(localStorage.getItem(key) || 'null');
+    if (ok(d)) return d;
+    localStorage.removeItem(key);
+  } catch { try { localStorage.removeItem(key); } catch { /* ignore */ } }
+  return null;
+}
+const readCache = () => readStored(CACHE_KEY, validNews);
+
+function store(key, data, dropOnFull) {
+  try { localStorage.setItem(key, JSON.stringify(data)); } catch {
+    try { localStorage.removeItem(dropOnFull); localStorage.setItem(key, JSON.stringify(data)); } catch { /* storage full */ }
+  }
 }
 
 async function news(force) {
-  const data = { ...(await getNews(fetchText, { force })), categories: CATEGORIES };
-  if (data.items.length) {
-    try { localStorage.setItem(CACHE_KEY, JSON.stringify(data)); } catch { /* storage full */ }
-    return { data, fromCache: false };
+  let data;
+  try {
+    data = { ...(await getNews(fetchText, { force })), categories: CATEGORIES };
+  } catch (e) {
+    const cached = readCache();
+    if (cached) return { data: cached, fromCache: true };
+    throw e;
   }
   const cached = readCache();
+  if (data.items.length) {
+    // After a restart the in-memory cache is empty. If one outlet is down now, keep its older
+    // stories from the saved copy instead of silently dropping the outlet.
+    const failed = data.status.filter((s) => !s.ok).map((s) => s.id);
+    if (cached && failed.length) {
+      const have = new Set(data.items.map((i) => i.source));
+      const older = cached.items.filter((i) => failed.includes(i.source) && !have.has(i.source));
+      if (older.length) data.items = data.items.concat(older);
+    }
+    store(CACHE_KEY, data, VIDEO_KEY);
+    return { data, fromCache: false };
+  }
   if (cached) return { data: { ...cached, status: data.status }, fromCache: true };
   return { data, fromCache: false };
 }
@@ -86,17 +121,19 @@ async function article(url) {
   return art;
 }
 
-const VIDEO_KEY = 'vesti.videos.v1';
 async function videos(force) {
-  const data = await getVideos(fetchText, { force });
+  let data;
+  try { data = await getVideos(fetchText, { force }); } catch (e) {
+    const c = readStored(VIDEO_KEY, validVideos);
+    if (c) return { data: c, fromCache: true };
+    throw e;
+  }
   if (data.items.length) {
-    try { localStorage.setItem(VIDEO_KEY, JSON.stringify(data)); } catch { /* storage full */ }
+    store(VIDEO_KEY, data, 'vesti.none');
     return { data, fromCache: false };
   }
-  try {
-    const cached = JSON.parse(localStorage.getItem(VIDEO_KEY) || 'null');
-    if (cached) return { data: cached, fromCache: true };
-  } catch { /* ignore */ }
+  const cached = readStored(VIDEO_KEY, validVideos);
+  if (cached) return { data: cached, fromCache: true };
   return { data, fromCache: false };
 }
 

@@ -41,7 +41,13 @@
   };
 
   function loadSettings() {
-    try { return { ...DEFAULTS, ...JSON.parse(localStorage.getItem(KEY) || '{}') }; } catch { return { ...DEFAULTS }; }
+    let s;
+    try { s = { ...DEFAULTS, ...JSON.parse(localStorage.getItem(KEY) || '{}') }; } catch { s = { ...DEFAULTS }; }
+    // damaged or old saved settings must never break the screen
+    for (const k of ['sources', 'cats']) if (!Array.isArray(s[k])) s[k] = [];
+    for (const k of ['q', 'muted']) s[k] = typeof s[k] === 'string' ? s[k] : '';
+    if (!Number.isInteger(s.fs) || s.fs < 0 || s.fs >= SCALES.length) s.fs = DEFAULTS.fs;
+    return s;
   }
   function saveSettings() {
     try { localStorage.setItem(KEY, JSON.stringify(S)); } catch { /* private mode */ }
