@@ -1,27 +1,25 @@
 # Vesti health report
 
-Run: 2026-11-04T02:55:40.857Z  |  items: 283  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-04T03:05:46.173Z  |  items: 283  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
 1. **LOW** [Blic] Possible ads NOT flagged: "Besplatni pregled dojki na ABUS ultrazvučnom uređaju od 5. novembra na Petrovaradinu"
-2. **LOW** [Front page] Cluster "Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga" has 16 items: chained matches may have merged related but different stories.
+2. **LOW** [Front page] Cluster "Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga" has 14 items: chained matches may have merged related but different stories.
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 43 | 1.7h | 100% | 12% | 1 |
-| Nova.rs | yes | 50 | 2.5h | 100% | 4% | 0 |
-| B92 | yes | 80 | 0.6h | 95% | 4% | 0 |
-| Blic | yes | 70 | 2.9h | 100% | 1% | 0 |
-| Politika | yes | 20 | 1.3h | 100% | 25% | 0 |
-| RTS | yes | 20 | 3.7h | 100% | 0% | 0 |
+| N1 | yes | 43 | 1.8h | 100% | 12% | 1 |
+| Nova.rs | yes | 50 | 2.6h | 100% | 4% | 0 |
+| B92 | yes | 80 | 0.7h | 95% | 4% | 0 |
+| Blic | yes | 70 | 3.0h | 100% | 1% | 0 |
+| Politika | yes | 20 | 1.4h | 100% | 25% | 0 |
+| RTS | yes | 20 | 3.9h | 100% | 0% | 0 |
 
 ## Front page right now
 1. [multi, 6 outlets, score 67.5] Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga
    - also (rts): Avion na letu Beograd-Moskva vraćen na aerodrom "Nikola Tesla"
-   - also (nova): Vulin: Spavao sam tokom leta za Moskvu, probudili me u Beogradu
    - also (n1): Avion s Vulinom, Bajatovićem i Popovićem bio vraćen sa leta za Moskvu - bezbednosne provere i ko je zbog čega išao
-   - also (n1): Vulin: Putovao sam u Moskvu poslovno, spavao sam tokom leta, probudili me u Beogradu
    - also (blic): VULIN POTVRDIO DA JE BIO U AVIONU KOJI JE VRAĆEN IZ MOSKVE ZA BEOGRAD: "Kod mene nije pronađeno ništa nelegalno"
    - also (nova): Tužilac na beogradskom aerodromu čeka Aleksandra Vulina čiji je let vraćen dok je bio na putu za Moskvu
    - also (b92): Er Srbija: Avion na letu Beograd-Moskva se vraća u Beograd
@@ -43,11 +41,10 @@ Run: 2026-11-04T02:55:40.857Z  |  items: 283  |  front-page clusters: 10 (10 mul
    - also (nova): Zdravko Ponoš podneo ostavku na mesto predsednika stranke Srbija centar (SRCE)
    - also (n1): Ponoš podneo ostavku na mesto predsednika stranke SRCE, Predsedništvo je prihvatilo
    - also (blic): Zdravko Ponoš podneo ostavku na mesto predsednika stranke SRCE
-4. [multi, 4 outlets, score 48.3] Tramp prati izborne rezultate iz Bele kuće
+4. [multi, 3 outlets, score 38.3] Tramp prati izborne rezultate iz Bele kuće
    - also (blic): "GLUPA JE KAO KAMEN" Tramp pratio rezultate tokom međuizbora, pa promenio kanal zbog komentatorke Foks njuza: "Ne mogu da podnesem njen glas, izluđuje me"
    - also (politika): Tramp izvređao komentatorku Foks njuza
-   - also (n1): Rob Ković: Ovaj Trampov mandat veoma se razlikuje od prvog, rezultati izbora će svakako odražavati stav prema njemu
-5. [multi, 3 outlets, score 38.1] Macura saslušan pred JTOK, negirao krivicu: Tužilaštvo traži pritvor do 30 dana
+5. [multi, 3 outlets, score 38] Macura saslušan pred JTOK, negirao krivicu: Tužilaštvo traži pritvor do 30 dana
    - also (politika): Davor Macura saslušan u JTOK-u, negirao krivicu, tužilaštvo traži pritvor do 30 dana
    - also (n1): Macura saslušan pred JTOK, negirao krivicu: Tužilaštvo traži pritvor
 6. [multi, 3 outlets, score 33.3] Američki milijarder predvodi plan za preuzimanje inostrane imovine kompanije Lukoil
@@ -86,7 +83,7 @@ Uncategorized sample:
 - Dnevnik - Cela emisija - 2.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-2112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"svet":14,"zivot":19,"ostalo":3,"sport":16,"drustvo":3,"hronika":2,"zdravlje":4,"tehnologija":4,"ekonomija":6,"politika":5,"kultura":2,"zabava":1,"region":1}
+Categories: {"svet":14,"zivot":19,"ostalo":3,"sport":16,"hronika":2,"drustvo":3,"zdravlje":4,"tehnologija":3,"ekonomija":6,"politika":5,"kultura":2,"zabava":2,"region":1}
 Uncategorized sample:
 - Na današnji dan, 4. novembar <https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest> tags=["Najnovije"]
 - Novine: "Međunarodna očekivanja od nove vlasti u Srbiji"; "Radnici u marketima za sad bez posledica" <https://www.b92.net/info/razno/281963/novine-medjunarodna-ocekivanja-od-nove-vlasti-u-srbiji-radnici-u-marketima-za-sad-bez-posledica/vest> tags=["Info"]
