@@ -1,6 +1,6 @@
 # Outlet icons
 
-Run: 2026-11-03T21:36:20.157Z
+Run: 2026-11-04T02:08:20.939Z
 
 ## N1  (https://n1info.rs)
 - OK  200 image/png 485B 16x16 | icon sizes=16x16 | https://n1info.rs/media/images/n1_fav_icon.2e16d0ba.fill-16x16.png
@@ -12,7 +12,7 @@ Run: 2026-11-03T21:36:20.157Z
 - OK  200 image/png 395B 32x32 | apple-touch-icon sizes=120x120 | https://n1info.rs/media/images/n1_fav_icon.2e16d0ba.fill-120x120.png
 - OK  200 image/png 395B 32x32 | icon sizes=192x192 | https://n1info.rs/media/images/n1_fav_icon.2e16d0ba.fill-192x192.png
 - bad 404 text/html 75189B  | guess /apple-touch-icon.png | https://n1info.rs/apple-touch-icon.png
-- bad 404 text/html 555B  | guess /favicon.ico | https://n1info.rs/favicon.ico
+- bad 404 text/html 153B  | guess /favicon.ico | https://n1info.rs/favicon.ico
 - bad 404 text/html 75189B  | guess /favicon.png | https://n1info.rs/favicon.png
 
 ## Nova.rs  (https://nova.rs)
@@ -32,9 +32,9 @@ Run: 2026-11-03T21:36:20.157Z
 - OK  200 image/png 10755B 144x144 | apple-touch-icon sizes=- | https://www.b92.net/files/b92/img/icons/apple-icon-144x144.png
 - OK  200 image/png 13159B 192x192 | icon sizes=- | https://www.b92.net/files/b92/img/icons/android-icon-192x192.png
 - OK  200 image/x-icon 15406B ico[16x16,32x32,48x48] | icon sizes=- | https://www.b92.net/files/b92/favicon.ico
-- bad 404 text/html 253004B  | guess /apple-touch-icon.png | https://www.b92.net/apple-touch-icon.png
+- bad 404 text/html 252770B  | guess /apple-touch-icon.png | https://www.b92.net/apple-touch-icon.png
 - OK  200 image/x-icon 15406B ico[16x16,32x32,48x48] | guess /favicon.ico | https://www.b92.net/favicon.ico
-- bad 404 text/html 252968B  | guess /favicon.png | https://www.b92.net/favicon.png
+- bad 404 text/html 252734B  | guess /favicon.png | https://www.b92.net/favicon.png
 
 ## Blic  (https://www.blic.rs)
 - OK  200 image/png 12724B 180x180 | apple-touch-icon sizes=180x180 | https://ocdn.eu/ucs/static/blicperun/3655e5f35801ace2228b7928bf7c83e7/v3/img/favicons/apple-touch-icon.png
@@ -42,7 +42,7 @@ Run: 2026-11-03T21:36:20.157Z
 - OK  200 image/png 642B 16x16 | icon sizes=16x16 | https://ocdn.eu/ucs/static/blicperun/3655e5f35801ace2228b7928bf7c83e7/v3/img/favicons/favicon-16x16.png
 - OK  200 image/png 1749B 60x60 | guess /apple-touch-icon.png | https://www.blic.rs/apple-touch-icon.png
 - OK  200 image/vnd.microsoft.icon 15406B ico[16x16,32x32,48x48] | guess /favicon.ico | https://www.blic.rs/favicon.ico
-- bad 404 text/html 75123B  | guess /favicon.png | https://www.blic.rs/favicon.png
+- bad 404 text/html 75119B  | guess /favicon.png | https://www.blic.rs/favicon.png
 
 ## Politika  (https://www.politika.rs)
 - OK  200 image/png 1201B 57x57 | apple-touch-icon sizes=57x57 | https://www.politika.rs/themed/politika/img/favicon/apple-icon-57x57.png
@@ -58,14 +58,14 @@ Run: 2026-11-03T21:36:20.157Z
 - OK  200 image/png 942B 32x32 | icon sizes=32x32 | https://www.politika.rs/themed/politika/img/favicon/favicon-32x32.png
 - OK  200 image/png 1441B 96x96 | icon sizes=96x96 | https://www.politika.rs/themed/politika/img/favicon/favicon-96x96.png
 - OK  200 image/png 888B 16x16 | icon sizes=16x16 | https://www.politika.rs/themed/politika/img/favicon/favicon-16x16.png
-- bad 404 text/html 59195B  | guess /apple-touch-icon.png | https://www.politika.rs/apple-touch-icon.png
+- bad 404 text/html 58007B  | guess /apple-touch-icon.png | https://www.politika.rs/apple-touch-icon.png
 - OK  200 image/vnd.microsoft.icon 1150B ico[16x16] | guess /favicon.ico | https://www.politika.rs/favicon.ico
-- bad 404 text/html 59186B  | guess /favicon.png | https://www.politika.rs/favicon.png
+- bad 404 text/html 59184B  | guess /favicon.png | https://www.politika.rs/favicon.png
 
 ## RTS  (https://www.rts.rs)
 - OK  200 image/vnd.microsoft.icon 894B ico[16x16] | shortcut icon sizes=- | https://www.rts.rs/assets/front/img/favicon/favicon.ico
 - bad 404 text/html 4079B  | apple-touch-icon sizes=57x57 | https://www.rts.rs/apple-icon-57x57.png
-- bad ERR fetch failed | apple-touch-icon sizes=60x60 | https://www.rts.rs/apple-icon-60x60.png
+- bad 404 text/html 4079B  | apple-touch-icon sizes=60x60 | https://www.rts.rs/apple-icon-60x60.png
 - bad 404 text/html 4079B  | apple-touch-icon sizes=72x72 | https://www.rts.rs/apple-icon-72x72.png
 - bad 404 text/html 4079B  | apple-touch-icon sizes=76x76 | https://www.rts.rs/apple-icon-76x76.png
 - bad 404 text/html 4079B  | apple-touch-icon sizes=114x114 | https://www.rts.rs/apple-icon-114x114.png
