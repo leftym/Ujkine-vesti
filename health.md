@@ -1,19 +1,18 @@
 # Vesti health report
 
-Run: 2026-11-04T02:54:06.184Z  |  items: 283  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-04T02:55:40.857Z  |  items: 283  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **MED** [B92] Homepage scrape returned 0 headlines: the page layout probably changed (selectors in lib/b92.js).
-2. **LOW** [Blic] Possible ads NOT flagged: "Besplatni pregled dojki na ABUS ultrazvučnom uređaju od 5. novembra na Petrovaradinu"
-3. **LOW** [Front page] Cluster "Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga" has 16 items: chained matches may have merged related but different stories.
+1. **LOW** [Blic] Possible ads NOT flagged: "Besplatni pregled dojki na ABUS ultrazvučnom uređaju od 5. novembra na Petrovaradinu"
+2. **LOW** [Front page] Cluster "Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga" has 16 items: chained matches may have merged related but different stories.
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 43 | 1.6h | 100% | 12% | 1 |
-| Nova.rs | yes | 50 | 2.4h | 100% | 4% | 0 |
-| B92 | yes | 80 | 0.5h | 95% | 4% | 0 |
-| Blic | yes | 70 | 2.8h | 100% | 1% | 0 |
+| N1 | yes | 43 | 1.7h | 100% | 12% | 1 |
+| Nova.rs | yes | 50 | 2.5h | 100% | 4% | 0 |
+| B92 | yes | 80 | 0.6h | 95% | 4% | 0 |
+| Blic | yes | 70 | 2.9h | 100% | 1% | 0 |
 | Politika | yes | 20 | 1.3h | 100% | 25% | 0 |
 | RTS | yes | 20 | 3.7h | 100% | 0% | 0 |
 
@@ -39,12 +38,12 @@ Run: 2026-11-04T02:54:06.184Z  |  items: 283  |  front-page clusters: 10 (10 mul
    - also (b92): Španski ministar saobraćaja podneo ostavku
    - also (politika): Ministar saobraćaja podneo ostavku posle dve železničke tragedije
    - also (n1): Španski ministar saobraćaja podneo ostavku nakon sudara vozova
-3. [multi, 5 outlets, score 56.5] Ponoš podneo ostavku na mesto predsednika stranke SRCE
+3. [multi, 5 outlets, score 56.4] Ponoš podneo ostavku na mesto predsednika stranke SRCE
    - also (b92): Ponoš podneo ostavku na mesto predsednika stranke Srbija centar SRCE
    - also (nova): Zdravko Ponoš podneo ostavku na mesto predsednika stranke Srbija centar (SRCE)
    - also (n1): Ponoš podneo ostavku na mesto predsednika stranke SRCE, Predsedništvo je prihvatilo
    - also (blic): Zdravko Ponoš podneo ostavku na mesto predsednika stranke SRCE
-4. [multi, 4 outlets, score 48.4] Tramp prati izborne rezultate iz Bele kuće
+4. [multi, 4 outlets, score 48.3] Tramp prati izborne rezultate iz Bele kuće
    - also (blic): "GLUPA JE KAO KAMEN" Tramp pratio rezultate tokom međuizbora, pa promenio kanal zbog komentatorke Foks njuza: "Ne mogu da podnesem njen glas, izluđuje me"
    - also (politika): Tramp izvređao komentatorku Foks njuza
    - also (n1): Rob Ković: Ovaj Trampov mandat veoma se razlikuje od prvog, rezultati izbora će svakako odražavati stav prema njemu
