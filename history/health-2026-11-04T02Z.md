@@ -1,6 +1,6 @@
 # Vesti health report
 
-Run: 2026-11-04T02:08:58.350Z  |  items: 283  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-04T02:24:20.857Z  |  items: 283  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
 1. **MED** [Politika] 40% of stories are uncategorized ("Ostalo"). Common words in them: zatvoru(2), oblacno(1), hladno(1), ponegde(1), kisom(1), napadac(1), pariza(1), pokusao(1). Add section names / keyword stems in lib/classify.js.
@@ -10,12 +10,12 @@ Run: 2026-11-04T02:08:58.350Z  |  items: 283  |  front-page clusters: 10 (10 mul
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 43 | 0.9h | 100% | 21% | 1 |
-| Nova.rs | yes | 50 | 1.7h | 100% | 4% | 1 |
-| B92 | yes | 80 | 0.1h | 95% | 4% | 0 |
-| Blic | yes | 70 | 2.1h | 100% | 1% | 0 |
-| Politika | yes | 20 | 0.5h | 100% | 40% | 0 |
-| RTS | yes | 20 | 2.9h | 100% | 0% | 0 |
+| N1 | yes | 43 | 1.1h | 100% | 21% | 1 |
+| Nova.rs | yes | 50 | 1.9h | 100% | 4% | 0 |
+| B92 | yes | 80 | 0.4h | 98% | 5% | 0 |
+| Blic | yes | 70 | 2.3h | 100% | 1% | 0 |
+| Politika | yes | 20 | 0.8h | 100% | 40% | 0 |
+| RTS | yes | 20 | 3.2h | 100% | 0% | 0 |
 
 ## Front page right now
 1. [multi, 6 outlets, score 67.6] Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga
@@ -35,12 +35,12 @@ Run: 2026-11-04T02:08:58.350Z  |  items: 283  |  front-page clusters: 10 (10 mul
    - also (nova): OTKRIVAMO Aleksandra Vulina sproveli u avion bez provere, direktor bezbednosti aerodroma naredio vraćanje letelice
    - also (n1): Nova.rs: Avion koji je večeras trebalo da sleti u Moskvu, vratio se za Beograd - sumnja se da su u njemu Vulin, Bajatović i Popović
    - also (nova): SAZNAJEMO Avion koji je večeras trebalo da sleti u Moskvu, okrenuo se i vraća se za Beograd: Sumnja se da su u njemu Vulin, Bajatović i Nenad Popović
-2. [multi, 5 outlets, score 58.1] Španski ministar saobraćaja podneo ostavku nakon dve teške železničke nesreće
+2. [multi, 5 outlets, score 58] Španski ministar saobraćaja podneo ostavku nakon dve teške železničke nesreće
    - also (blic): Španski ministar saobraćaja PODNEO OSTAVKU nakon dve teške železničke nesreće
    - also (b92): Španski ministar saobraćaja podneo ostavku
    - also (politika): Ministar saobraćaja podneo ostavku posle dve železničke tragedije
    - also (n1): Španski ministar saobraćaja podneo ostavku nakon sudara vozova
-3. [multi, 5 outlets, score 56.6] Ponoš podneo ostavku na mesto predsednika stranke SRCE
+3. [multi, 5 outlets, score 56.5] Ponoš podneo ostavku na mesto predsednika stranke SRCE
    - also (b92): Ponoš podneo ostavku na mesto predsednika stranke Srbija centar SRCE
    - also (nova): Zdravko Ponoš podneo ostavku na mesto predsednika stranke Srbija centar (SRCE)
    - also (n1): Ponoš podneo ostavku na mesto predsednika stranke SRCE, Predsedništvo je prihvatilo
@@ -54,13 +54,13 @@ Run: 2026-11-04T02:08:58.350Z  |  items: 283  |  front-page clusters: 10 (10 mul
    - also (b92): Prvi preliminarni rezultati međuizbora u SAD
    - also (b92): Sprema se ubedljiva izborna pobeda demokrata?
    - also (blic): DEMOKRATE JURIŠAJU, TRAMP DRHTI! Amerika ulazi u neizvesnu izbornu noć, sprema se POLITIČKI ZEMLJOTRES: Ratovi, inflacija i cene benzina mogli bi skupo da ga koštaju
-6. [multi, 3 outlets, score 36.5] Tramp prati izborne rezultate iz Bele kuće
+6. [multi, 3 outlets, score 38.4] Tramp prati izborne rezultate iz Bele kuće
    - also (blic): "GLUPA JE KAO KAMEN" Tramp pratio rezultate tokom međuizbora, pa promenio kanal zbog komentatorke Foks njuza: "Ne mogu da podnesem njen glas, izluđuje me"
    - also (politika): Tramp izvređao komentatorku Foks njuza
 7. [multi, 3 outlets, score 33.4] Američki milijarder predvodi plan za preuzimanje inostrane imovine kompanije Lukoil
    - also (n1): Rojters: Američki milijarder predvodi plan razmene za kupovinu strane imovine Lukoila
    - also (politika): Boelijev konzorcijum želi inostranu imovinu „Lukoila”
-8. [multi, 3 outlets, score 33] Upravni odbor RTS-a zatražio od Saveta REM-a da se hitno izjasni o njegovom statusu
+8. [multi, 3 outlets, score 32.9] Upravni odbor RTS-a zatražio od Saveta REM-a da se hitno izjasni o njegovom statusu
    - also (rts): Savet REM-a sutra o izboru upravnih odbora RTS-a i RTV-a i mogućim merama protiv Informera
    - also (n1): Upravni odbor RTS zatražio od Saveta REM-a da se hitno izjasni o njegovom statusu
    - also (blic): Upravni odbor RTS zatražio od Saveta REM da se hitno izjasni o njegovom statusu
@@ -74,7 +74,7 @@ Run: 2026-11-04T02:08:58.350Z  |  items: 283  |  front-page clusters: 10 (10 mul
 
 ## Details
 ### N1
-Categories: {"svet":12,"ekonomija":4,"ostalo":9,"hronika":1,"politika":8,"zivot":4,"drustvo":4,"region":1}
+Categories: {"svet":12,"ekonomija":3,"ostalo":9,"hronika":1,"politika":9,"zivot":4,"drustvo":4,"region":1}
 Flagged:
 - (self) Global fokus: Međuizbori u SAD <https://n1info.rs/najave-emisija/global-fokus-medjuizbori-u-sad/>
 Uncategorized sample:
@@ -87,18 +87,17 @@ Uncategorized sample:
 
 ### Nova.rs
 Categories: {"politika":9,"hronika":5,"drustvo":11,"zivot":2,"sport":14,"zabava":5,"kultura":1,"ostalo":2,"svet":1}
-Flagged:
-- (self) Gledajte uživo Dnevnik TV Nova <https://nova.rs/vesti/drustvo/gledajte-uzivo-dnevnik-tv-nova-03-11-2026/>
 Uncategorized sample:
 - Podcast DLZ i Aleksandar Radić: Prošao voz za režimski kontraudar <https://nova.rs/emisije/podcast-dlz-i-aleksandar-radic-prosao-voz-za-rezimski-kontraudar/> tags=["Emisije","Podcast","aleksandar radić","dlz cela emisija","nenad kulačin","marko vidojković"]
 - Dnevnik - Cela emisija - 2.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-2112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"svet":15,"zivot":19,"ostalo":3,"sport":16,"hronika":2,"drustvo":3,"zdravlje":4,"tehnologija":3,"ekonomija":6,"politika":5,"kultura":2,"zabava":1,"region":1}
+Categories: {"svet":14,"sport":12,"ostalo":4,"drustvo":3,"zivot":18,"zdravlje":4,"tehnologija":5,"ekonomija":7,"politika":5,"hronika":2,"kultura":2,"zabava":3,"region":1}
 Uncategorized sample:
-- Na današnji dan, 4. novembar <https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest> tags=["Najnovije"]
+- Na današnji dan, 4. novembar <https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest> tags=["Info"]
 - Novine: "Međunarodna očekivanja od nove vlasti u Srbiji"; "Radnici u marketima za sad bez posledica" <https://www.b92.net/info/razno/281963/novine-medjunarodna-ocekivanja-od-nove-vlasti-u-srbiji-radnici-u-marketima-za-sad-bez-posledica/vest> tags=["Info"]
-- "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest> tags=[]
+- "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest> tags=["Najnovije"]
+- Gosti ih prvo primete: Tri stvari koje odmah morate da sklonite iz kuhinje <https://superzena.b92.net/kuhinja/prakticni-saveti/281446/tri-stvari-koje-treba-da-sklonite-iz-kuhinje-pre-dolaska-gostiju/vest> tags=["Najnovije"]
 
 ### Blic
 Categories: {"hronika":6,"ekonomija":9,"svet":11,"ostalo":1,"politika":9,"zivot":7,"drustvo":7,"zabava":19,"zdravlje":1}
