@@ -1,6 +1,6 @@
 # Probe
 
-Run: 2026-11-04T02:32:25.299Z
+Run: 2026-11-04T02:53:45.110Z
 
 ## B92 feeds
 RSS directory page https://www.b92.net/info/rss/: 17092 bytes; feed-like links found: 0
@@ -29,7 +29,7 @@ RSS directory page https://www.b92.net/info/rss/: 17092 bytes; feed-like links f
     * Rat – dan 1.713: Rusi napali – veliki broj mrtvih; "Moskva ne planira rat sa Evropom" FOTO/VIDEO | 2026-11-03T22:50 | cats=["Najnovije"] | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 600630 bytes, 65 headline-like links
+homepage: 600636 bytes, 65 headline-like links
 - &quot;Ne težimo ratu – vojna moć je sredstvo, a ne cilj&quot; | https://www.b92.net/info/svet/281986/abdolahi-iran-se-nametnuo-kao-centar-globalne-moci/vest | in feeds: vesti.xml,
 - Haos tokom izbora u SAD; Muškarac slao preteće poruke izbornim zvaničnicima | https://www.b92.net/info/svet/281981/muskarac-optuzen-za-slanje-pretecih-pisama-izbornim-zvanicnicima-u-sad/vest | in feeds: vesti.xml,
 - Bivša portparolka Zelenskog osumnjičena za veleizdaju VIDEO | https://www.b92.net/info/svet/281972/bivsa-portparolka-zelenskog-osumnjicena-za-veleizdaju/vest | in feeds: vesti.xml
@@ -64,7 +64,7 @@ homepage: 600630 bytes, 65 headline-like links
 ef="https://www.b92.net/svi-komentari/281986" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281986/abdolahi-iran-se-nametnuo-kao-centar-globalne-moci/vest"> <span data-upscore-title > &quot;Ne težimo ratu – vojna moć je sredstvo, a ne cilj&quot; </span> </a></h2> <p class="news-item-description">Iran se nametnuo kao novi centar globalne moć
 ```
 ```html
- <p class="news-item-date"> 3.11.2026.</p> <p class="news-item-before-time"> <span class="before-time-number">3</span> <span class="before-time-text">h</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281981" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281981/muskarac-optuzen-za-slanje-pretecih-pisama-izbornim-zvanicnicima-u-sad/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2026-11-03/285364_profimedia-1148865044_s.webp?timestamp=1793742810" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2026-11-03/285364_profimedia-1148865044_kf.jpg?timestamp=1793742810" alt="Haos tokom izbora u SAD; Muškarac slao preteće poruke izbornim zvaničnicima" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
+ <p class="news-item-date"> 3.11.2026.</p> <p class="news-item-before-time"> <span class="before-time-number">4</span> <span class="before-time-text">h</span> </p> </div> </div> </article> <article class="news-item " data-upscore-object-id="281981" > <div class="news-item-image-wrapper"> <a href="https://www.b92.net/info/svet/281981/muskarac-optuzen-za-slanje-pretecih-pisama-izbornim-zvanicnicima-u-sad/vest" class="news-item-image" data-upscore-url > <picture> <source srcset="/data/images/2026-11-03/285364_profimedia-1148865044_s.webp?timestamp=1793742810" media="(min-width: 100px)" type="image/webp"> <img src="/data/images/2026-11-03/285364_profimedia-1148865044_kf.jpg?timestamp=1793742810" alt="Haos tokom izbora u SAD; Muškarac slao preteće poruke izbornim zvaničnicima" class="lazyload" loading="lazy" > </picture> </a> <a href="https://www.b
 ```
 ```html
 ef="https://www.b92.net/svi-komentari/281981" class="news-item-author"></a> </div> <div class="news-item-data"> <a href="https://www.b92.net/info/svet" class="news-item-category" style="color:#106DB9" >Svet</a> <h2 class="news-item-title"> <a href="https://www.b92.net/info/svet/281981/muskarac-optuzen-za-slanje-pretecih-pisama-izbornim-zvanicnicima-u-sad/vest"> <span data-upscore-title > Haos tokom izbora u SAD; Muškarac slao preteće poruke izbornim zvaničnicima </span> </a></h2> <p class="news-item-description">Muškarac iz Oklahoma Sitija Robin Martin optu
@@ -88,14 +88,14 @@ homepage YouTube channel links: https://www.youtube.com/channel/UCloa3CgQMtGSeqj
 feed https://www.b92.net/feed/: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/@B92TV
   https://www.youtube.com/@B92TV -> id UCOJ46tnlQ39S11UreLtkq5Q  name B92 TV
-  video feed FAILED HTTP_404
+  video feed FAILED HTTP_500
 ### Blic
 feed https://www.blic.rs/rss/danasnje-vesti: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/@Bliconline1 ; https://www.youtube.com/channel/UCvUZc0dr8pQkjYwKhw632Zw
   https://www.youtube.com/@Bliconline1 -> id UCh8iuMWj3-8WvABLcAjWDPQ  name Blic
-  video feed FAILED HTTP_404
-  https://www.youtube.com/channel/UCvUZc0dr8pQkjYwKhw632Zw -> id UCvUZc0dr8pQkjYwKhw632Zw
   video feed FAILED HTTP_500
+  https://www.youtube.com/channel/UCvUZc0dr8pQkjYwKhw632Zw -> id UCvUZc0dr8pQkjYwKhw632Zw
+  video feed FAILED HTTP_404
 ### Politika
 feed https://www.politika.rs/rss: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/@politika1904
