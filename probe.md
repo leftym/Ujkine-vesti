@@ -1,6 +1,6 @@
 # Probe
 
-Run: 2026-11-04T02:53:45.110Z
+Run: 2026-11-04T02:55:24.087Z
 
 ## B92 feeds
 RSS directory page https://www.b92.net/info/rss/: 17092 bytes; feed-like links found: 0
@@ -29,7 +29,7 @@ RSS directory page https://www.b92.net/info/rss/: 17092 bytes; feed-like links f
     * Rat – dan 1.713: Rusi napali – veliki broj mrtvih; "Moskva ne planira rat sa Evropom" FOTO/VIDEO | 2026-11-03T22:50 | cats=["Najnovije"] | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 600636 bytes, 65 headline-like links
+homepage: 600624 bytes, 65 headline-like links
 - &quot;Ne težimo ratu – vojna moć je sredstvo, a ne cilj&quot; | https://www.b92.net/info/svet/281986/abdolahi-iran-se-nametnuo-kao-centar-globalne-moci/vest | in feeds: vesti.xml,
 - Haos tokom izbora u SAD; Muškarac slao preteće poruke izbornim zvaničnicima | https://www.b92.net/info/svet/281981/muskarac-optuzen-za-slanje-pretecih-pisama-izbornim-zvanicnicima-u-sad/vest | in feeds: vesti.xml,
 - Bivša portparolka Zelenskog osumnjičena za veleizdaju VIDEO | https://www.b92.net/info/svet/281972/bivsa-portparolka-zelenskog-osumnjicena-za-veleizdaju/vest | in feeds: vesti.xml
@@ -93,7 +93,7 @@ homepage YouTube channel links: https://www.youtube.com/@B92TV
 feed https://www.blic.rs/rss/danasnje-vesti: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/@Bliconline1 ; https://www.youtube.com/channel/UCvUZc0dr8pQkjYwKhw632Zw
   https://www.youtube.com/@Bliconline1 -> id UCh8iuMWj3-8WvABLcAjWDPQ  name Blic
-  video feed FAILED HTTP_500
+  video feed FAILED HTTP_404
   https://www.youtube.com/channel/UCvUZc0dr8pQkjYwKhw632Zw -> id UCvUZc0dr8pQkjYwKhw632Zw
   video feed FAILED HTTP_404
 ### Politika
