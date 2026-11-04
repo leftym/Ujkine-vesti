@@ -1,6 +1,6 @@
 # Feed check
 
-Run: 2026-11-04T02:32:13.422Z
+Run: 2026-11-04T02:53:25.310Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
@@ -12,7 +12,7 @@ Run: 2026-11-04T02:32:13.422Z
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":17,"ekonomija":3,"ostalo":5,"hronika":1,"politika":9,"zivot":4,"drustvo":3,"region":1}
+Categories: {"svet":18,"ekonomija":3,"ostalo":5,"hronika":1,"politika":8,"zivot":4,"drustvo":3,"region":1}
 - [svet] Stižu prvi rezultati međuizbora u SAD: Demokrate odnele pobede
 - [ekonomija] Bajatović za N1: Zašto su Vulin i Popović putovali u Rusiju ne znam, ja sam krenuo zbog gasa i problema s Alta bankom
 - [ostalo] Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga
@@ -42,7 +42,7 @@ Uncategorized sample (for tuning):
 - Dnevnik - Cela emisija - 2.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-2112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"svet":14,"zivot":19,"ostalo":3,"sport":16,"drustvo":3,"zdravlje":4,"tehnologija":4,"ekonomija":6,"hronika":2,"politika":5,"kultura":2,"zabava":1,"region":1}
+Categories: {"svet":14,"zivot":19,"ostalo":3,"sport":16,"drustvo":3,"hronika":2,"zdravlje":4,"tehnologija":4,"ekonomija":6,"politika":5,"kultura":2,"zabava":1,"region":1}
 - [svet] Zatvorena prva glasačka mesta; Demokrate osvajaju teren republikanaca; Tramp pod pritiskom FOTO/VIDEO
 - [svet] Tramp prati izborne rezultate iz Bele kuće
 - [svet] Prvi preliminarni rezultati međuizbora u SAD
@@ -68,20 +68,18 @@ Uncategorized sample (for tuning):
 - Naslovna strana za 4.11. | https://www.blic.rs/print/naslovna-strana-za-411/sdcsrte | tags: []
 
 ## Politika
-Categories: {"politika":4,"ostalo":7,"hronika":2,"svet":6,"drustvo":1}
+Categories: {"politika":3,"ostalo":5,"svet":8,"hronika":2,"region":1,"drustvo":1}
 - [politika] Demokrate osvojile mandate u više saveznih država na izborima u SAD
 - [ostalo] Oblačno i hladno, ponegde sa kišom
-- [ostalo] Napadač iz Pariza pokušao da se ubije u zatvoru
+- [svet] Napadač iz Pariza pokušao da se ubije u zatvoru
 - [hronika] Davor Macura saslušan u JTOK-u, negirao krivicu, tužilaštvo traži pritvor do 30 dana
 - [hronika] Pomilovani za napada na Kapitol pretio ubistvom sudijama
 - [svet] Oružje stiže u Kijev uprkos svađama Trampa i Zelenskog
 
 Uncategorized sample (for tuning):
 - Oblačno i hladno, ponegde sa kišom | https://www.politika.rs/scc/clanak/799570/oblacno-i-hladno-ponegde-sa-kisom | tags: []
-- Napadač iz Pariza pokušao da se ubije u zatvoru | https://www.politika.rs/scc/clanak/799569/napadac-iz-pariza-pokusao-da-se-ubije-u-zatvoru | tags: []
 - Tusk: Navrocki i ja probaćemo da smirimo tenzije | https://www.politika.rs/scc/clanak/799559/tusk-navrocki-i-ja-probacemo-da-smirimo-tenzije | tags: []
 - Preživela smrtonosnu injekciju, pa se požalila na bubašvabe u zatvoru | https://www.politika.rs/scc/clanak/799550/prezivela-smrtonosnu-injekciju-pa-se-pozalila-na-bubasvabe-u-zatvoru | tags: []
-- Dodik stigao u SAD | https://www.politika.rs/scc/clanak/799557/dodik-stigao-u-sad | tags: []
 - Boelijev konzorcijum želi inostranu imovinu „Lukoila” | https://www.politika.rs/scc/clanak/799539/boelijev-konzorcijum-zeli-inostranu-imovinu-lukoila | tags: []
 - Dojava o bombi na brodu koji je plovio ka Haifi | https://www.politika.rs/scc/clanak/799535/dojava-o-bombi-na-brodu-koji-je-plovio-ka-haifi | tags: []
 
