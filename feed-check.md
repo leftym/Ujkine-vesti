@@ -1,93 +1,95 @@
 # Feed check
 
-Run: 2026-11-04T03:05:10.614Z
+Run: 2026-11-04T11:16:52.630Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 43 | https://n1info.rs/feed/ | 43 | 1 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +83) | 76 | 0 |
+| N1 | yes | 48 | https://n1info.rs/feed/ | 48 | 3 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 1 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +79) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":18,"ekonomija":3,"ostalo":5,"hronika":1,"politika":8,"zivot":4,"drustvo":3,"region":1}
-- [svet] Stižu prvi rezultati međuizbora u SAD: Demokrate odnele pobede
-- [ekonomija] Bajatović za N1: Zašto su Vulin i Popović putovali u Rusiju ne znam, ja sam krenuo zbog gasa i problema s Alta bankom
-- [ostalo] Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga
-- [hronika] Macura saslušan pred JTOK, negirao krivicu: Tužilaštvo traži pritvor
-- [svet] Avion s Vulinom, Bajatovićem i Popovićem bio vraćen sa leta za Moskvu - bezbednosne provere i ko je zbog čega išao
-- [svet] Vulin: Putovao sam u Moskvu poslovno, spavao sam tokom leta, probudili me u Beogradu
-  - flagged (self): Global fokus: Međuizbori u SAD https://n1info.rs/najave-emisija/global-fokus-medjuizbori-u-sad/
+Categories: {"ostalo":9,"hronika":3,"ekonomija":8,"svet":8,"zivot":7,"politika":9,"region":1,"drustvo":3}
+- [ostalo / AD:self] Gledajte UŽIVO Studio live: REM odlučuje
+- [hronika] Novosađanin uhapšen zbog 900 grama amfetamina
+- [ekonomija] Transparentnost Srbija: Pola milijarde evra EXPO nabavki bez konkurencije
+- [svet] Rojters: Hakim Džefriz favorit za mesto predsedavajućeg Predstavničkog doma Kongresa SAD
+- [zivot] Nauka iza najpoznatijih legendi o čudovištima: Šta se krije iza drevnih priča (FOTO)
+- [politika] O pisanju Gardijana: TOK za N1 kaže da zna da su skidanju zaštite s Generalštaba "prethodili sastanci" - saslušani neki učesnici
+  - flagged (self): Gledajte UŽIVO Studio live: REM odlučuje https://n1info.rs/najave-emisija/studio-live-sreda-u-12h-rem-odlucuje/
+  - flagged (self): Dan uživo: Pomilovanja (ne)poznatih https://n1info.rs/najave-emisija/dan-uzivo-pomilovanja-nepoznatih/
+  - flagged (self): Novi dan: Dani pravde, obračuna ili osvete? https://n1info.rs/najave-emisija/novi-dan-dani-pravde-obracuna-ili-osvete/
 
 Uncategorized sample (for tuning):
-- Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga | https://n1info.rs/vesti/audio-snimak-avion-let-ju134/ | tags: ["Vesti","snimak","aerodrom nikola tesla","preusmeravanje leta","avion","er srbija"]
-- Vojinović: Očigledno reč o drastičnom kršenju pravila bezbednosti - ali ne mogu ni putnik, ni prtljag da ne prođu kontrolu, sve i da je VIP | https://n1info.rs/vesti/petar-vojinovic-preusmeren-let-avion-aleksadar-vulin/ | tags: ["Vesti","er srbija","granična policija","avion","tango six","nenad popović"]
-- Upravni odbor RTS zatražio od Saveta REM-a da se hitno izjasni o njegovom statusu | https://n1info.rs/vesti/upravni-odbor-rts-zatrazio-od-saveta-rem-a-da-se-hitno-izjasni-o-njegovom-statusu/ | tags: ["Vesti","savet rem","upravni odbor rts","rem"]
-- Dnevnik u 19 (2.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-02112026/ | tags: ["Dnevnik","vesti","dnevnik u 19","video","dnevnik"]
-- Okupljanje pripadnika "Srpskih suverenista" ispred PS Savski venac u znak podrške TV Informer | https://n1info.rs/vesti/okupljanje-pripadnika-srpskih-suverenista-ispred-ps-savski-venac-u-znak-podrske-tv-informer/ | tags: ["Vesti","vukša dragović","udruženje srpski suverenisti","tv informer"]
+- Gledajte UŽIVO Studio live: REM odlučuje | https://n1info.rs/najave-emisija/studio-live-sreda-u-12h-rem-odlucuje/ | tags: ["Najave emisija","studio live"]
+- (VIDEO) Pristalice Informera ometale ekipu TV N1 ispred REM-a i dobacivale da smo "ustaše" | https://n1info.rs/vesti/pristalice-informera-ometale-n1-rem/ | tags: ["Vesti","informer","napadi na n1","savet rem"]
+- Petrović Škero: Ustavni sud da odloži izvršenje odluka o pomilovanju | https://n1info.rs/vesti/petrovic-skero-ustavni-sud-pomilovanje/ | tags: ["Vesti","aleksandar vučić","pomilovanja","vida petrović škero","ustavni sud"]
+- Greška u sistemu: Zašto socijalno ugrožena porodica u Lazarevcu plaća račune za struju kao da poseduje firmu? | https://n1info.rs/vesti/socijalno-ugrozena-porodica-racun-za-struju-dugovanje/ | tags: ["Vesti","eps","brojilo","struja","vladan stefanović","lazarevac"]
+- ANN: N1 i Nova S biće dostupni preko Telekoma i Yettela, a u Novu S biće uloženo više od 11,3 miliona evra u 2027. godini | https://n1info.rs/vesti/ann-n1-i-nova-s-bice-dostupni-preko-telekoma-i-yettela-a-u-novu-s-bice-ulozeno-vise-od-113-miliona-evra-u-2027-godini/ | tags: ["Vesti","radar","telekom srbija","yettel","nova s","forbes srbija"]
+- Novi dan: Dani pravde, obračuna ili osvete? | https://n1info.rs/najave-emisija/novi-dan-dani-pravde-obracuna-ili-osvete/ | tags: ["Najave emisija","najave emisija"]
+- AMSS: Promenljivi uslovi za vožnju, oprez kroz kotline i klisure gde magla smanjuje vidljivost | https://n1info.rs/vesti/amss-promenljivi-uslovi-za-voznju-oprez-kroz-kotline-i-klisure-gde-magla-smanjuje-vidljivost/ | tags: ["Vesti","amss","kolovozi","čekanje","granični prelazi"]
+- Na današnji dan, 4. novembar: Umro Feliks Mendelson, osnovan UNESCO... | https://n1info.rs/vesti/na-danasnji-dan-4-novembar-2026-godine/ | tags: ["Vesti","na današnji dan"]
 
 ## Nova.rs
-Categories: {"politika":9,"hronika":5,"drustvo":11,"zivot":2,"sport":14,"zabava":5,"kultura":1,"ostalo":2,"svet":1}
-- [politika] Bajatović: Zašto su Vulin i Popović putovali u Rusiju ne znam, ja sam krenuo zbog gasa i problema s Alta bankom
-- [hronika] Macura saslušan pred JTOK, negirao krivicu: Tužilaštvo traži pritvor do 30 dana
-- [drustvo] Vojinović: Očigledno reč o drastičnom kršenju pravila bezbednosti - ali ne mogu ni putnik, ni prtljag da ne prođu kontrolu, sve i da je VIP
-- [politika] Vulin: Spavao sam tokom leta za Moskvu, probudili me u Beogradu
-- [zivot] U Srbiji danas oblačno i hladno, na planinama slab sneg
-- [sport] Zvezda WNBA angažovala telohranitelje, pratiće je 24 sata dnevno
+Categories: {"zabava":6,"zivot":6,"hronika":5,"svet":11,"drustvo":4,"ekonomija":3,"sport":7,"politika":6,"ostalo":2}
+- [zabava] Koncert Ace Lukasa u znaku broja tri - da li imamo preletača godine?
+- [zivot] Posle 30 godina očišćena stakla na železničkoj stanici: Pogledajte kako sada izgleda impresivna zgrada u komšiluku
+- [hronika] Policajac iz Kričkove bivše jedinice bez najave i obrazloženja u blizini Zagorke Dolovac: I tužiteljku iznenadilo prisustvo JZO, od direktora policije zatraženo da se hitno izjasni
+- [svet] Ilon Mask potrošio bogatstvo da ga zaustavi, a on ispisao istoriju u Teksasu: Ovo je čovek koji je srušio 30 godina republikanske dominacije
+- [zivot] Srpski turista platio 2.650 evra da vidi "raj na Zemlji", dočekala ga surova realnost: "Bili smo na đubrištu i jeli kosti"
+- [svet] Hakim Džefris favorit za mesto predsedavajućeg Predstavničkog doma Kongresa SAD
+  - flagged (sponsored): Nikola Orozović o brzom odustajanju od treninga https://nova.rs/magazin/zdravlje/nikola-orozovic-o-brzom-odustajanju-od-treninga/
 
 Uncategorized sample (for tuning):
-- Podcast DLZ i Aleksandar Radić: Prošao voz za režimski kontraudar | https://nova.rs/emisije/podcast-dlz-i-aleksandar-radic-prosao-voz-za-rezimski-kontraudar/ | tags: ["Emisije","Podcast","aleksandar radić","dlz cela emisija","nenad kulačin","marko vidojković"]
-- Dnevnik - Cela emisija - 2.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-2112026/ | tags: ["Emisije","dnevnik cela emisija"]
+- Mentalno razgibavanje: Mafijaški raspad | https://nova.rs/emisije/mentalno-razgibavanje-mafijaski-raspad/ | tags: ["Emisije","mentalno razgibavanje cela emisija"]
+- Probudi se - Cela emisija - 3.11.2026. | https://nova.rs/emisije/probudi-se-cela-emisija-3112026/ | tags: ["Emisije","probudi se cela emisija"]
 
 ## B92
-Categories: {"svet":14,"zivot":19,"ostalo":3,"sport":16,"hronika":2,"drustvo":3,"zdravlje":4,"tehnologija":3,"ekonomija":6,"politika":5,"kultura":2,"zabava":2,"region":1}
-- [svet] Zatvorena prva glasačka mesta; Demokrate osvajaju teren republikanaca; Tramp pod pritiskom FOTO/VIDEO
-- [svet] Tramp prati izborne rezultate iz Bele kuće
-- [svet] Prvi preliminarni rezultati međuizbora u SAD
-- [zivot] Ovaj srpski kamp postao hit među Holanđanima: Turisti iz cele Evrope dolaze na Zlatibor FOTO
-- [zivot] Još ništa od letova do Beograda: Avio-kompanija povukla karte iz prodaje
-- [ostalo] Na današnji dan, 4. novembar
+Categories: {"svet":14,"ekonomija":9,"zivot":19,"politika":6,"sport":14,"tehnologija":2,"drustvo":3,"kultura":4,"hronika":3,"zabava":2,"zdravlje":2,"ostalo":1,"region":1}
+- [svet] Amerikanci mnapravili novu istoriju; Ovo se do sada nikada nije dogodilo
+- [ekonomija] Srbija i Azerbejdžan grade gasnu elektranu kod Niša: Prostiraće se na gotovo 69 hektara
+- [zivot] Evropljani najviše putuju u ove gradove: Na nekim destinacijama broj rezervacija eksplodirao FOTO
+- [zivot] Poznat prvi učesnik Evrovizije u Bugarskoj
+- [politika] Vučić: "RTS – sramota Srbije, za naše pare" VIDEO
+- [sport] Partizan od trećeligaša kreće Kup Srbije – poznati sastavi
 
 Uncategorized sample (for tuning):
-- Na današnji dan, 4. novembar | https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest | tags: ["Najnovije"]
-- Novine: "Međunarodna očekivanja od nove vlasti u Srbiji"; "Radnici u marketima za sad bez posledica" | https://www.b92.net/info/razno/281963/novine-medjunarodna-ocekivanja-od-nove-vlasti-u-srbiji-radnici-u-marketima-za-sad-bez-posledica/vest | tags: ["Info"]
-- "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest | tags: []
+- 9 znakova koji otkrivaju da su vas kao dete razmazili, a sada to utiče na vas | https://superzena.b92.net/dom-i-porodica/roditeljstvo/282018/9-znakova-da-su-vas-kao-dete-razmazili-evo-koje-su-posledice/vest | tags: []
 
 ## Blic
-Categories: {"hronika":6,"ekonomija":9,"svet":11,"ostalo":1,"politika":9,"zivot":7,"drustvo":7,"zabava":19,"zdravlje":1}
-- [hronika] SASLUŠAN DAVOR MACURA Oglasio se advokat vlasnika Alta banke: "Navedeno da je ulazio u sef, koristio kartice iznosio novac, ali nema dokaza" (VIDEO)
-- [ekonomija] Od 15.000 evra do preko milion! Pogledajte šta se sve prodaje u komšiluku: Od imanja sa potokom i stanova sa poslom do vila na moru
-- [ekonomija] Pozvali majstora zbog kvara, a onda doživeli šok! Za običnu popravku naplatili im skoro 2.000 evra
-- [svet] "SUTRA JE KRAJNJI ROK!" Oglasila se Centralna izborna komisija Izraela: Zahtev vladajuće koalicije ODBIJEN
-- [ekonomija] Srbija uvozi beli luk iz Kine i Španije, a domaći je znatno kvalitetniji: Šta je potrebno za proboj na tržište
-- [svet] "GLUPA JE KAO KAMEN" Tramp pratio rezultate tokom međuizbora, pa promenio kanal zbog komentatorke Foks njuza: "Ne mogu da podnesem njen glas, izluđuje me"
+Categories: {"ekonomija":17,"zdravlje":1,"zabava":13,"hronika":9,"kultura":5,"politika":8,"svet":6,"zivot":5,"drustvo":5,"ostalo":1}
+- [ekonomija] Deset godina se kuvala u stanu i gasila sve iz struje: Saznala da je celu deceniju plaćala komšijin račun
+- [zdravlje] Jednostavne vežbe za jezik za obolele od ALS: Čuvaju govor, gutanje i preživele neurone
+- [zabava] MAŠAN LEKIĆ ŽRTVA PREVARE Voditelj se hitno oglasio sa saopštenjem
+- [hronika] AUTO U PLAMENU, ČUJU SE EKSPLOZIJE! Buktinja u Deligradskoj ulici, širi se gust crni dim
+- [kultura] Istinita priča o čoveku koji je spasavao živote na bojnom polju, a da nikada nije uzeo oružje u ruke: Film o Drugom svetskom ratu drugačiji od ostalih (VIDEO)
+- [politika] "Osim Hrkalović i možda jedne ili dve osobe, NIKOGA NISAM VIDEO U ŽIVOTU" Vučić se oglasio o pomilovanjima: "To je isključiva nadležnost predsednika"
 
 Uncategorized sample (for tuning):
-- Naslovna strana za 4.11. | https://www.blic.rs/print/naslovna-strana-za-411/sdcsrte | tags: []
+- Postoje stvari koje se ne mere krvnom slikom ili godinama u ličnoj karti, a imaju važnu ulogu u kvalitetu života: Smisao je jedna od njih | https://www.blic.rs/good-life/globetrotter/zivotna-svrha-i-dugovecnost-zasto-je-vazno-imati-razlog-za-ustajanje/zmsqkf3 | tags: []
 
 ## Politika
-Categories: {"politika":3,"ostalo":5,"svet":8,"hronika":2,"region":1,"drustvo":1}
-- [politika] Demokrate osvojile mandate u više saveznih država na izborima u SAD
-- [ostalo] Oblačno i hladno, ponegde sa kišom
-- [svet] Napadač iz Pariza pokušao da se ubije u zatvoru
-- [hronika] Davor Macura saslušan u JTOK-u, negirao krivicu, tužilaštvo traži pritvor do 30 dana
-- [hronika] Pomilovani za napada na Kapitol pretio ubistvom sudijama
-- [svet] Oružje stiže u Kijev uprkos svađama Trampa i Zelenskog
+Categories: {"drustvo":1,"sport":3,"politika":1,"hronika":3,"svet":7,"ostalo":3,"region":1,"tehnologija":1}
+- [drustvo] Protest protiv gašenja „Informera” traje i tokom zasedanja Saveta REM-a
+- [sport] Američke sankcije izbacile vojni klub Ruande iz Afričke lige
+- [politika] Ficovoj vladi nedostaje jedan glas za većinu u parlamentu
+- [hronika] Uhapšen Novosađanin, pronađeno skoro kilogram amfetamina
+- [svet] Orban: Srbija, Rusija i Mađarska žele da završe dogovor o NIS-u do 11. decembra
+- [ostalo] Susreti različitih umetničkih izraza
 
 Uncategorized sample (for tuning):
-- Oblačno i hladno, ponegde sa kišom | https://www.politika.rs/scc/clanak/799570/oblacno-i-hladno-ponegde-sa-kisom | tags: []
-- Tusk: Navrocki i ja probaćemo da smirimo tenzije | https://www.politika.rs/scc/clanak/799559/tusk-navrocki-i-ja-probacemo-da-smirimo-tenzije | tags: []
-- Preživela smrtonosnu injekciju, pa se požalila na bubašvabe u zatvoru | https://www.politika.rs/scc/clanak/799550/prezivela-smrtonosnu-injekciju-pa-se-pozalila-na-bubasvabe-u-zatvoru | tags: []
-- Boelijev konzorcijum želi inostranu imovinu „Lukoila” | https://www.politika.rs/scc/clanak/799539/boelijev-konzorcijum-zeli-inostranu-imovinu-lukoila | tags: []
-- Dojava o bombi na brodu koji je plovio ka Haifi | https://www.politika.rs/scc/clanak/799535/dojava-o-bombi-na-brodu-koji-je-plovio-ka-haifi | tags: []
+- Susreti različitih umetničkih izraza | https://www.politika.rs/scc/clanak/799642/susreti-razlicitih-umetnickih-izraza | tags: []
+- REM usvojio nacrt pravilnika o upravnim odborima RTS-a i RTV-a | https://www.politika.rs/scc/clanak/799640/rem-usvojio-nacrt-pravilnika-o-upravnim-odborima-rts-a-i-rtv-a | tags: []
+- Nove stranice političke istorije: SAD dobijaju prve guvernerke u nekoliko saveznih država | https://www.politika.rs/scc/clanak/799584/nove-stranice-politicke-istorije-sad-dobijaju-prve-guvernerke-u-nekoliko-saveznih-drzava | tags: []
 
 ## RTS
-Categories: {"drustvo":7,"politika":5,"svet":2,"ekonomija":2,"zivot":1,"hronika":3}
-- [drustvo] Avion na letu Beograd-Moskva vraćen na aerodrom "Nikola Tesla"
-- [politika] Institucionalni vakuum posle izbora – kada će biti formirana nova vlast i šta otkrivaju postizborne afere
-- [svet] Španski ministar saobraćaja podneo ostavku nakon dve teške železničke nesreće
-- [drustvo] Pomilovani optuženi za gaženje ljudi na blokadama – žrtve uskraćene za pravdu, ali ne odustaju
-- [politika] Ponoš podneo ostavku na mesto predsednika stranke SRCE
-- [ekonomija] Iz plusa u minus preko noći – niskorizični investicioni fondovi držali novac u Alta banci
+Categories: {"ekonomija":2,"politika":2,"drustvo":6,"svet":4,"hronika":5,"zivot":1}
+- [ekonomija] Anita Orban: Sve strane žele da završe pregovore o NIS-u do 11. decembra
+- [politika] EU: Pobeda Studentske liste otvara mogućnost za deblokadu dela sredstava za Srbiju iz Plana rasta EU
+- [drustvo] Milan Todorović imenovan za novog v. d. direktora REM-a
+- [svet] Masovni napad dronovima na Kijev – delovi grada bez struje; Zelenski odlikovao Melaniju Tramp
+- [politika] Izveštaj EK o prethodnih godinu dana: Srbija bez napretka u vladavini prava, dalje nazadovanje slobode medija
+- [hronika] Šleper sleteo sa puta Batočina–Kragujevac, vatrogasci izvlačili povređenog vozača iz kabine
