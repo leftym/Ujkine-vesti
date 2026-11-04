@@ -70,12 +70,15 @@ function validNews(d) {
   if (d.top !== undefined && !(Array.isArray(d.top) && d.top.every((t) => isObj(t) && Array.isArray(t.ids)))) return false;
   const ids = new Set(d.sources.filter(isObj).map((s) => s.id));
   return d.items.every((i) => isObj(i) && typeof i.title === 'string' && typeof i.url === 'string' && ids.has(i.source) &&
-    typeof i.published === 'string' && !isNaN(Date.parse(i.published))) &&
+    typeof i.published === 'string' && !isNaN(Date.parse(i.published)) && /^https?:\/\//.test(i.url) &&
+    (i.summary === undefined || typeof i.summary === 'string') && (i.tags === undefined || Array.isArray(i.tags))) &&
     d.status.every((s) => isObj(s) && ids.has(s.id));
 }
 function validVideos(d) {
   return isObj(d) && Array.isArray(d.items) && Array.isArray(d.status) && typeof d.updatedAt === 'string' && !isNaN(Date.parse(d.updatedAt)) &&
-    d.items.every((v) => isObj(v) && typeof v.url === 'string' && typeof v.title === 'string');
+    d.items.every((v) => isObj(v) && typeof v.url === 'string' && /^https?:\/\//.test(v.url) && typeof v.title === 'string' &&
+      typeof v.source === 'string' && typeof v.published === 'string' && !isNaN(Date.parse(v.published))) &&
+    d.status.every((s) => isObj(s) && typeof s.id === 'string');
 }
 
 // A damaged saved copy is dropped instead of breaking the screen.
