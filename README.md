@@ -51,6 +51,8 @@ Latest videos from each outlet's official YouTube channel (public channel feeds,
 
 Photos and one-line summaries are off by default (Settings switches), "Teme i pretraga" is folded behind one button, text has 7 sizes (default 1.3x) with A-/A+ also inside the article, and the screen shows nothing but the news while everything is healthy. Settings > "Pismo" converts the whole app, including article text, between Latin and Cyrillic (`public/cyr.js`; search works in both scripts). "Podeli" in an article, and under each video, opens the phone's share sheet (Viber, Line, ...). The Video tab includes YouTube Shorts.
 
+Settings > "Javi problem Dušanu" opens the share sheet with a pre-filled message (app version, screen, which outlets are failing, last refresh), so the uncle only picks Viber and the contact.
+
 ## Outlet icons (family version)
 
 Each outlet's own small icon is shown next to its name (`icon` in `lib/sources.js`). They are loaded from the outlets' websites when the app runs, never bundled, and fall back to a colored dot if they fail. Settings has a switch. These are the outlets' trademarks: fine for a private family app, but **remove them (set `logos` default to false or delete the `icon` fields) before any public Play listing**, and do not use them in store screenshots. The daily health report checks that every icon address still works.

@@ -251,6 +251,30 @@
     } catch { /* he closed the share sheet */ }
   }
 
+  async function reportProblem() {
+    const P = window.Capacitor && window.Capacitor.Plugins;
+    let ver = '';
+    try { if (P && P.App && P.App.getInfo) ver = (await P.App.getInfo()).version; } catch { /* ignore */ }
+    const bad = ((DATA && DATA.status) || []).filter((x) => !x.ok).map((x) => x.id);
+    const lines = [
+      'Ujkine Vesti: imam problem.',
+      '(Napiši ovde šta ne radi.)',
+      '',
+      '---',
+      'Verzija: ' + (ver || '?'),
+      'Ekran: ' + S.view + ', pismo: ' + S.script + ', tema: ' + S.theme + ', slova: ' + S.fs,
+      'Veza: ' + (navigator.onLine ? 'ima' : 'nema'),
+      'Mediji koji ne rade: ' + (bad.length ? bad.join(', ') : 'nijedan'),
+      'Osveženo: ' + ((DATA && DATA.updatedAt) || '?'),
+    ];
+    const text = lines.join('\n');
+    try {
+      if (NATIVE && P && P.Share && P.Share.share) await P.Share.share({ title: 'Problem', text, dialogTitle: 'Javi problem' });
+      else if (navigator.share) await navigator.share({ title: 'Problem', text });
+      else if (navigator.clipboard) await navigator.clipboard.writeText(text);
+    } catch { /* closed */ }
+  }
+
   function renderVideos() {
     renderChips();
     const box = $('#list');
@@ -535,6 +559,7 @@
   });
   $('#refresh').addEventListener('click', () => (view === 'video' ? loadVideos(true) : load(true)));
   $('#moreBtn').addEventListener('click', () => { panelOpen = !panelOpen; syncPanel(); applyScript(); });
+  $('#reportBtn').addEventListener('click', reportProblem);
   $('#shareBtn').addEventListener('click', () => { if (currentItem) shareLink(currentItem.title, currentItem.url); });
   $('#ytOpen').addEventListener('click', () => openExternal('https://www.youtube.com/'));
   $('#tabNews').addEventListener('click', () => setView('news'));

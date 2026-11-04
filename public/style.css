@@ -196,3 +196,5 @@ html[lang="sr-Cyrl"] .top h1 { font-size: clamp(15px, 4.8vw, 19px); }
 .mark .logo { width: 24px; height: 24px; border-radius: 6px; object-fit: contain; background: #fff; border: 1px solid var(--line); padding: 1px; }
 .chip .mark .logo { width: 22px; height: 22px; }
 .card .src, .vcard .src { gap: 6px; }
+.hint { margin: 6px 0 14px; font-size: .85rem; opacity: .75; }
+#reportBtn { width: 100%; margin-top: 10px; min-height: 48px; font-weight: 700; }
