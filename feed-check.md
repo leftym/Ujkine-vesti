@@ -1,6 +1,6 @@
 # Feed check
 
-Run: 2026-11-04T02:55:14.549Z
+Run: 2026-11-04T03:05:10.614Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
@@ -42,7 +42,7 @@ Uncategorized sample (for tuning):
 - Dnevnik - Cela emisija - 2.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-2112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"svet":14,"zivot":19,"ostalo":3,"sport":16,"drustvo":3,"hronika":2,"zdravlje":4,"tehnologija":4,"ekonomija":6,"politika":5,"kultura":2,"zabava":1,"region":1}
+Categories: {"svet":14,"zivot":19,"ostalo":3,"sport":16,"hronika":2,"drustvo":3,"zdravlje":4,"tehnologija":3,"ekonomija":6,"politika":5,"kultura":2,"zabava":2,"region":1}
 - [svet] Zatvorena prva glasačka mesta; Demokrate osvajaju teren republikanaca; Tramp pod pritiskom FOTO/VIDEO
 - [svet] Tramp prati izborne rezultate iz Bele kuće
 - [svet] Prvi preliminarni rezultati međuizbora u SAD
