@@ -5,9 +5,9 @@
   var WORD = /[A-Za-zÀ-ÖØ-öø-ÿČĆŠŽĐčćšžđ]+/;
 
   // foreign brand names that look wrong in Cyrillic ("Гоогле"); everything else is converted
-  var KEEP = /^(google|facebook|microsoft|apple|amazon|twitter|tiktok|whatsapp|netflix|youtube|instagram|linkedin|spotify|uber|bolt|iphone|ipad|wifi|fi|mozzart|maxbet|mcdonald|samsung|tesla|galaxy|huawei|xiaomi|bmw|viber|line|n1info)(?:-?(?:a|u|e|i|om|ov\w*|ima|ovi|ova|ove|u))?$/i;
+  var KEEP = /^(google|facebook|microsoft|apple|amazon|twitter|tiktok|whatsapp|netflix|youtube|instagram|linkedin|spotify|uber|bolt|iphone|ipad|wifi|fi|mozzart|maxbet|mcdonald|samsung|galaxy|huawei|xiaomi|bmw|viber|line|n1info|zoom|teams|skype|octavia|peugeot|renault|gmail|coca|cola|street|brussels|pixel|ikea|lexus|ghz|mhz|khz|kwh|mbps|gbps|kbps)(?:-?(?:a|u|e|i|om|ov\w*|ima|ovi|ova|ove|u))?$/i;
   // words where "nj" / "dž" are two separate letters, not one: injekcija, nadživeti, podžupanija
-  var NAMES = { xi: 'Си', zhang: 'Џанг' };
+  var NAMES = { xi: 'Си', zhang: 'Џанг', bih: 'БиХ', fbih: 'ФБиХ' };
   function twoLetter(w, i) {
     var lo = w.toLowerCase();
     if (lo[i] === 'n' && lo[i + 1] === 'j') {
@@ -44,8 +44,8 @@
   // 's after a name, names with an apostrophe (O'Brien), model codes (S24)
   var TOKEN_SRC = '([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,})|((?:https?|ftp):\\/\\/\\S+|www\\.\\S+)' +
     '|([A-Za-z0-9-]+\\.(?:rs|com|net|org|info|tv|me|eu|ba|hr|mk|si|co|io|app)\\b[^\\s]*)|([@#][A-Za-zČĆŠŽĐčćšžđ0-9_]+)' +
-    '|((?:youtube|iphone|google|facebook|samsung|instagram|tiktok|whatsapp|viber)-[a-z]{1,3}\\b|[A-Za-zÀ-ÖØ-öø-ÿ]+[\'\u2019][A-Za-zÀ-ÖØ-öø-ÿ]+(?:[\'\u2019][A-Za-zÀ-ÖØ-öø-ÿ]+)*)' +
-    '|((?<=[0-9°])[A-Za-z]+(?:\\/[A-Za-z]+)?|(?<=[A-Za-zćČ][\'\u2019])[sS]\\b|\\b(?!N1(?![A-Za-z]))[A-Za-z]{1,3}(?=[0-9]))' +
+    '|((?:youtube|iphone|ipad|google|facebook|samsung|instagram|tiktok|whatsapp|viber|bolt|uber|pixel)-[a-zčćšžđ]{1,5}\\b|[A-Za-zÀ-ÖØ-öø-ÿ]+[\'\u2019][A-Za-zÀ-ÖØ-öø-ÿ]+(?:[\'\u2019][A-Za-zÀ-ÖØ-öø-ÿ]+)*)' +
+    '|((?<=[0-9°º])[A-Za-z]+(?:\\/[A-Za-z]+)?|(?<=[A-Za-zćČ][\'\u2019])[sS]\\b|\\b(?!N1(?![A-Za-z]))[A-Za-z]{1,3}(?=[0-9]))' +
     '|([A-Za-zÀ-ÖØ-öø-ÿČĆŠŽĐčćšžđ]+)';
   var TOKEN, NOVA;
   try {

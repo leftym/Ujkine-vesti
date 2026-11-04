@@ -64,13 +64,17 @@ const isObj = (x) => !!x && typeof x === 'object' && !Array.isArray(x);
 const WEEK = 7 * 24 * 3600 * 1000;
 function validNews(d) {
   if (!isObj(d) || !Array.isArray(d.items) || !Array.isArray(d.status) || !Array.isArray(d.sources) ||
-    typeof d.updatedAt !== 'string' || isNaN(Date.parse(d.updatedAt))) return false;
+    typeof d.updatedAt !== 'string' || isNaN(Date.parse(d.updatedAt)) || Date.parse(d.updatedAt) > Date.now() + 3.6e6) return false;
+  if (!d.sources.every((s) => isObj(s) && typeof s.id === 'string' && typeof s.name === 'string')) return false;
+  if (d.categories !== undefined && !(Array.isArray(d.categories) && d.categories.every((c) => isObj(c) && typeof c.id === 'string'))) return false;
+  if (d.top !== undefined && !(Array.isArray(d.top) && d.top.every((t) => isObj(t) && Array.isArray(t.ids)))) return false;
   const ids = new Set(d.sources.filter(isObj).map((s) => s.id));
-  return d.items.every((i) => isObj(i) && typeof i.title === 'string' && typeof i.url === 'string' && ids.has(i.source)) &&
+  return d.items.every((i) => isObj(i) && typeof i.title === 'string' && typeof i.url === 'string' && ids.has(i.source) &&
+    typeof i.published === 'string' && !isNaN(Date.parse(i.published))) &&
     d.status.every((s) => isObj(s) && ids.has(s.id));
 }
 function validVideos(d) {
-  return isObj(d) && Array.isArray(d.items) && Array.isArray(d.status) &&
+  return isObj(d) && Array.isArray(d.items) && Array.isArray(d.status) && typeof d.updatedAt === 'string' && !isNaN(Date.parse(d.updatedAt)) &&
     d.items.every((v) => isObj(v) && typeof v.url === 'string' && typeof v.title === 'string');
 }
 

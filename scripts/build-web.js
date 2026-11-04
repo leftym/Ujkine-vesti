@@ -24,6 +24,8 @@ esbuild.buildSync({
 const htmlPath = path.join(out, 'index.html');
 let html = fs.readFileSync(htmlPath, 'utf8');
 if (!html.includes('<script src="/app.js"></script>')) throw new Error('index.html script tag not found');
-html = html.replace('<script src="/app.js"></script>', '<script src="/engine.js"></script>\n<script src="/app.js"></script>');
+// STORE_BUILD=1 builds the Play Store variant: no outlet logos (trademarks). The family APK keeps them.
+fs.writeFileSync(path.join(out, 'build.js'), 'window.VESTI_STORE=' + (process.env.STORE_BUILD === '1') + ';');
+html = html.replace('<script src="/app.js"></script>', '<script src="/build.js"></script>\n<script src="/engine.js"></script>\n<script src="/app.js"></script>');
 fs.writeFileSync(htmlPath, html);
 console.log('www/ ready');

@@ -264,7 +264,7 @@ test('Cyrillic leaves addresses, handles, units and brand models alone', () => {
 test('classifier: Politika-style headlines without a section, and no false ad hits', () => {
   const { classify, detectAd } = require('../lib/classify');
   const cat = (title) => classify({ url: 'https://www.politika.rs/scc/clanak/1/x', title });
-  assert.equal(cat('Zemljotres pogodio Tursku'), 'hronika');
+  assert.equal(cat('Zemljotres pogodio Tursku'), 'svet'); // a foreign place beats a generic disaster word
   assert.equal(cat('Šojgu stigao u Peking'), 'svet');
   assert.notEqual(cat('Evropski parlament usvojio rezoluciju'), 'ekonomija');
   assert.equal(detectAd({ title: 'Vlada daje popust na račune za struju 30%' }), null);
@@ -313,4 +313,29 @@ test('feed parser stays fast on hostile input and clamps dates', () => {
   assert.ok(Date.now() - t < 1500);
   const r = parseFeed('<rss><item><title>A</title><link>https://x.rs/a</link><pubDate>Wed, 01 Jan 2040 10:00:00 GMT</pubDate></item></rss>');
   assert.ok(r[0].ts <= Date.now() + 3700 * 1000);
+});
+
+test('round 3: real news stays visible, hostile pages are fast, links stay on the outlet', () => {
+  const { detectAd, classify } = require('../lib/classify');
+  assert.equal(detectAd({ title: 'Kladionica opljačkana u Zemunu' }), null);
+  assert.equal(detectAd({ title: 'Oglas za posao: Gradska uprava' }), null);
+  assert.equal(detectAd({ title: 'Akcijski popust na gorivo: država smanjila akcize' }), null);
+  assert.equal(detectAd({ title: 'Mozzart Bet nudi bonus dobrodošlice' }), 'betting');
+  assert.equal(classify({ url: 'https://www.politika.rs/scc/clanak/1/x', title: 'Rusija napala Harkov, poginulo troje' }), 'svet');
+  const { parseFeed } = require('../lib/rss');
+  const { extractArticle } = require('../lib/article');
+  const B = require('../lib/b92');
+  const t = Date.now();
+  parseFeed('<rss><item><title>x</title><link>https://x.rs/a</link><description><![CDATA[' + '<'.repeat(700000) + ']]></description></item></rss>');
+  extractArticle('<body>'.repeat(60000));
+  extractArticle('<article>' + '<iframe/>'.repeat(40000));
+  B.scrapeHome('<article class="news-item" '.repeat(50000), []);
+  assert.ok(Date.now() - t < 1500, 'hostile input must not freeze');
+});
+
+test('Cyrillic round 3: Nikola Tesla, BiH, units', () => {
+  const { toCyr } = require('../public/cyr.js');
+  assert.equal(toCyr('Nikola Tesla'), 'Никола Тесла');
+  assert.equal(toCyr('BiH'), 'БиХ');
+  assert.equal(toCyr('4 GHz'), '4 GHz');
 });

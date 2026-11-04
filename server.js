@@ -39,7 +39,7 @@ async function defaultFetchText(url, { timeoutMs = 9000, maxBytes = 3 * 1024 * 1
       if (!loc || n === 3) throw new Error('bad redirect');
       const next = new URL(loc, hop);
       const h = next.hostname.replace(/^www\./, '');
-      const ok = next.protocol === 'https:' && (/(^|\.)youtube\.com$/.test(h) || SOURCES.some((x) => h === x.host || h.endsWith('.' + x.host)));
+      const ok = next.protocol === 'https:' && next.port === '' && (/(^|\.)youtube\.com$/.test(h) || SOURCES.some((x) => h === x.host || h.endsWith('.' + x.host)));
       if (!ok) throw new Error('redirect not allowed');
       hop = next.href;
     }

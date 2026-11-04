@@ -36,6 +36,8 @@ const STOPWORDS = new Set('koji koja koje kako nakon posle zbog gde kada sada je
 
     if (!st.ok) add('HIGH', s.name, `No working feed. Tried: ${(st.tried || []).join(' | ')}. Find the current RSS URL (page source: link rel=alternate) and put it first in lib/sources.js.`);
     else {
+      if (s.homeScrape === 'b92' && !/homepage: [1-9]/.test((st.tried || []).join(' '))) add('MED', s.name, 'Homepage scrape returned 0 headlines: the page layout probably changed (selectors in lib/b92.js).');
+      if ((st.tried || []).some((t) => /links to other websites dropped/.test(t))) add('MED', s.name, `Feed links point to another website: ${(st.tried || []).filter((t) => /dropped/.test(t)).join(' | ')}. The outlet may have moved domains (lib/sources.js).`);
       if (!s.merge && st.feed !== s.feeds[0]) add('LOW', s.name, `Primary feed URL is dead; fallback ${st.feed} is working. Make it the first entry in lib/sources.js so startup is faster.`);
       if (n < 10) add('MED', s.name, `Only ${n} items in the feed; the outlet may have changed or truncated its feed.`);
       if (ageH > 8) add('MED', s.name, `Newest story is ${ageH.toFixed(1)}h old: feed may be stale or cached by the outlet.`);

@@ -12,9 +12,10 @@ on:
 permissions:
   contents: write   # needed to publish the APK as a GitHub Release
 
+# A scheduled health check must not cancel an APK build (or the other way round)
 concurrency:
-  group: android-build
-  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.event_name == 'schedule' && 'health' || 'build' }}
+  cancel-in-progress: ${{ github.event_name != 'schedule' }}
 
 jobs:
   apk:
@@ -57,6 +58,24 @@ jobs:
 
       - name: Name the APK
         run: cp android/app/build/outputs/apk/release/app-release.apk UjkineVesti.apk
+
+      # Play Store variant: same keystore and applicationId, no outlet logos. Kept as an artifact only,
+      # it is not attached to the public release.
+      - name: Build Play bundle (store variant)
+        continue-on-error: true   # a problem here must never stop the family APK release
+        run: |
+          STORE_BUILD=1 npm run build:web
+          npx cap sync android
+          cd android
+          ./gradlew bundleRelease --no-daemon --console=plain \
+            -PvCode=${{ github.run_number }} -PvName=1.0.${{ github.run_number }}
+          cd ..
+          cp android/app/build/outputs/bundle/release/app-release.aab UjkineVesti.aab
+      - uses: actions/upload-artifact@v4
+        continue-on-error: true
+        with:
+          name: UjkineVesti-aab
+          path: UjkineVesti.aab
 
       - uses: actions/upload-artifact@v4
         with:

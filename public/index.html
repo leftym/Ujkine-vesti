@@ -27,7 +27,7 @@
   </div>
 </header>
 
-<nav class="tabs" aria-label="Prikaz">
+<nav class="tabs" aria-label="Vesti ili video">
   <button id="tabNews" class="tab" type="button" aria-pressed="true">Vesti</button>
   <button id="tabVideo" class="tab" type="button" aria-pressed="false">Video</button>
 </nav>
@@ -37,7 +37,7 @@
 </div>
 
 <div class="filters">
-  <div class="chips" id="srcChips" role="group" aria-label="Izvori"></div>
+  <div class="chips" id="srcChips" role="group" aria-label="Mediji"></div>
   <button id="moreBtn" class="morebtn" type="button" aria-expanded="false">Teme i pretraga ▾</button>
   <div id="morePanel" hidden>
     <div class="chips" id="catChips" role="group" aria-label="Teme"></div>
@@ -50,7 +50,7 @@
 <main id="list"></main>
 <div class="more"><button id="more" hidden>Prikaži još</button></div>
 
-<dialog id="reader" aria-label="Čitač">
+<dialog id="reader" aria-label="Vest">
   <div class="sheet-bar">
     <button id="closeReader" class="icon" aria-label="Zatvori">
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
@@ -63,7 +63,7 @@
   </div>
   <article id="readerBody"></article>
   <div class="reader-foot">
-    <a id="openOriginal" class="btn" target="_blank" rel="noopener noreferrer">Otvori original na sajtu ↗</a>
+    <a id="openOriginal" class="btn" target="_blank" rel="noopener noreferrer">Otvori na sajtu medija ↗</a>
   </div>
 </dialog>
 
@@ -82,14 +82,14 @@
     </fieldset>
     <fieldset class="theme">
       <legend>Izgled ekrana</legend>
-      <label class="row"><input type="radio" name="theme" value="auto"> <span>Kao telefon (automatski)</span></label>
+      <label class="row"><input type="radio" name="theme" value="auto"> <span>Isto kao u telefonu</span></label>
       <label class="row"><input type="radio" name="theme" value="light"> <span>Svetao</span></label>
       <label class="row"><input type="radio" name="theme" value="dark"> <span>Taman</span></label>
     </fieldset>
     <label class="row"><input type="checkbox" id="optImages"> <span>Prikaži slike uz vesti</span></label>
-    <label class="row"><input type="checkbox" id="optLogos"> <span>Prikaži znak (logo) medija pored imena</span></label>
+    <label class="row"><input type="checkbox" id="optLogos"> <span>Prikaži znak medija pored imena</span></label>
     <label class="row"><input type="checkbox" id="optSummary"> <span>Prikaži kratak opis ispod naslova</span></label>
-    <label class="row"><input type="checkbox" id="optAds"> <span>Sakrij oglase i sponzorisane tekstove</span></label>
+    <label class="row"><input type="checkbox" id="optAds"> <span>Sakrij reklame i sponzorisane tekstove</span></label>
     <label class="row"><input type="checkbox" id="optBetting"> <span>Sakrij kladionice i kvote</span></label>
     <label class="row"><input type="checkbox" id="optReader"> <span>Čitaj u aplikaciji (bez reklama)</span></label>
     <label class="col"><span>Sakrij vesti koje sadrže (reči odvojene zarezom)</span>
@@ -97,7 +97,9 @@
     </label>
     <button type="button" id="reportBtn" class="btn">Javi problem Dušanu</button>
     <p class="hint">Otvara se lista aplikacija. Izaberi Viber i Dušana, pa pošalji.</p>
-    <h2>Da li izvori rade</h2>
+    <h2>O aplikaciji</h2>
+    <p class="hint">Ujkine Vesti prikazuje naslove i tekstove iz javno dostupnih izvora: N1, Nova.rs, B92, Blic, Politika i RTS. Sav sadržaj pripada izdavačima. Aplikacija nije povezana sa medijima i oni je ne podržavaju. Uz svaki članak stoji medij, datum i link ka originalu.</p>
+    <h2>Koji mediji rade</h2>
     <ul id="diag" class="diag"></ul>
   </div>
 </dialog>

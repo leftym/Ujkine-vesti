@@ -6,7 +6,7 @@
   const PAGE = 40;
 
   const SCALES = [1, 1.15, 1.3, 1.5, 1.75, 2, 2.3];
-  const DEFAULTS = { view: 'news', script: 'lat', logos: true, images: false, summary: false, theme: 'auto', fs: 2, sources: [], cats: [], q: '', hideAds: true, hideBetting: true, reader: true, muted: '' };
+  const DEFAULTS = { view: 'news', script: 'lat', logos: !window.VESTI_STORE, images: false, summary: false, theme: 'auto', fs: 2, sources: [], cats: [], q: '', hideAds: true, hideBetting: true, reader: true, muted: '' };
   let S = loadSettings();
   let DATA = null;
   let fromCache = false;
@@ -64,7 +64,7 @@
     // status/navigation bar icons must match the chosen theme, not only the phone's setting
     const P = window.Capacitor && window.Capacitor.Plugins;
     try {
-      if (P && P.SystemBars && P.SystemBars.setStyle) P.SystemBars.setStyle({ style: S.theme === 'dark' ? 'DARK' : S.theme === 'light' ? 'LIGHT' : 'DEFAULT' });
+      if (P && P.SystemBars && P.SystemBars.setStyle) Promise.resolve(P.SystemBars.setStyle({ style: S.theme === 'dark' ? 'DARK' : S.theme === 'light' ? 'LIGHT' : 'DEFAULT' })).catch(() => {});
     } catch { /* not available */ }
     const bg = S.theme === 'dark' ? '#0b0d11' : S.theme === 'light' ? '#f6f7f9' : null;
     for (const m of document.querySelectorAll('meta[name="theme-color"]')) {
@@ -135,7 +135,7 @@
     const dot = el('span', 'dot');
     dot.style.setProperty('--c', src ? src.color : '#888');
     wrap.append(dot);
-    if (S.logos && src && src.icon) {
+    if (S.logos && !window.VESTI_STORE && src && src.icon) {
       const img = el('img', 'logo');
       img.alt = ''; img.referrerPolicy = 'no-referrer'; img.loading = 'lazy'; img.src = src.icon;
       img.addEventListener('load', () => dot.remove());
@@ -185,7 +185,8 @@
     const t = new Date(DATA.updatedAt).toLocaleTimeString('sr-RS', { hour: '2-digit', minute: '2-digit' });
     const parts = [];
     if (fromCache) parts.push('Bez interneta. Prikazane su vesti sačuvane u ' + t + '.');
-    else if (DATA.status.some((x) => !x.ok)) parts.push('Neki mediji trenutno nisu dostupni.');
+    else if (DATA.status.length && DATA.status.every((x) => !x.ok)) parts.push(navigator.onLine ? 'Vesti trenutno ne stižu. Prikazane su ranije.' : 'Nema interneta. Prikazane su ranije vesti.');
+    else if (DATA.status.some((x) => !x.ok)) parts.push('Neki mediji trenutno ne rade.');
     st.hidden = parts.length === 0;
     if (parts.length) st.append(parts.join(' '));
   }
@@ -201,7 +202,7 @@
     const s = el('span', 'src');
     s.append(mark(src), src.name);
     meta.append(s, el('span', null, ago(it.published)));
-    if (it.ad) meta.append(el('span', 'adbadge', it.ad === 'betting' ? 'KLADIONICA' : it.ad === 'self' ? 'NAJAVA' : 'OGLAS'));
+    if (it.ad) meta.append(el('span', 'adbadge', it.ad === 'betting' ? 'KLADIONICA' : it.ad === 'self' ? 'NAJAVA' : 'REKLAMA'));
     body.append(meta, el('h2', null, it.title));
     if (S.summary && it.summary) body.append(el('p', null, it.summary));
     a.append(body);
@@ -265,7 +266,7 @@
     const data = { title, text: title, url };
     const P = window.Capacitor && window.Capacitor.Plugins;
     try {
-      if (NATIVE && P && P.Share && P.Share.share) await P.Share.share({ title, text: title + '\n' + url, dialogTitle: 'Podeli' });
+      if (NATIVE && P && P.Share && P.Share.share) await P.Share.share({ title, text: title + '\n' + url, dialogTitle: S.script === 'cyr' ? window.VestiCyr.toCyr('Podeli') : 'Podeli' });
       else if (navigator.share) await navigator.share(data);
       else if (navigator.clipboard) await navigator.clipboard.writeText(title + ' ' + url);
     } catch { /* he closed the share sheet */ }
@@ -309,7 +310,7 @@
     ];
     const text = lines.join('\n');
     try {
-      if (NATIVE && P && P.Share && P.Share.share) await P.Share.share({ title: 'Problem', text, dialogTitle: 'Javi problem' });
+      if (NATIVE && P && P.Share && P.Share.share) await P.Share.share({ title: 'Problem', text, dialogTitle: S.script === 'cyr' ? window.VestiCyr.toCyr('Javi problem') : 'Javi problem' });
       else if (navigator.share) await navigator.share({ title: 'Problem', text });
       else if (navigator.clipboard) await navigator.clipboard.writeText(text);
     } catch { /* closed */ }
@@ -321,21 +322,22 @@
     box.replaceChildren();
     const st = $('#status');
     st.replaceChildren();
-    if (!VIDEOS) { st.hidden = false; st.append('Učitavanje videa…'); $('#more').hidden = true; return; }
+    if (!VIDEOS) { st.hidden = false; st.append(videosErr ? 'Snimci trenutno ne stižu. Proveri internet i pokušaj ponovo.' : 'Učitavanje videa…'); $('#more').hidden = true; return; }
     const q = fold(S.q.trim());
     const list = VIDEOS.items.filter((v) =>
       (!S.sources.length || S.sources.includes(v.source)) && (!onlyShorts || v.short) && (!q || fold(v.title).includes(q)));
     const t = new Date(VIDEOS.updatedAt).toLocaleTimeString('sr-RS', { hour: '2-digit', minute: '2-digit' });
     const note = videosFromCache ? 'Bez interneta. Prikazani su snimci sačuvani u ' + t + '.'
-      : VIDEOS.status.some((x) => !x.ok) ? 'Neki kanali trenutno nisu dostupni.' : '';
+      : VIDEOS.status.some((x) => !x.ok) ? 'Neki kanali trenutno ne rade.' : '';
     st.hidden = !note;
     if (note) st.append(note);
 
-    if (!list.length) box.append(el('div', 'empty', 'Nema snimaka za izabrane filtere.'));
+    if (!list.length) box.append(el('div', 'empty', 'Nema snimaka za ovaj izbor.'));
     for (const v of list.slice(0, shown)) box.append(videoCard(v));
     $('#more').hidden = list.length <= shown;
   }
 
+  let videosErr = false;
   async function loadVideos(force) {
     const btn = $('#refresh');
     btn.classList.add('spin');
@@ -343,9 +345,12 @@
       const res = await api.videos(force);
       VIDEOS = res.data;
       videosFromCache = res.fromCache;
+      videosErr = false;
+      if (LASTERR.startsWith('video:')) LASTERR = '';
     } catch (e) {
+      videosErr = true;
       LASTERR = ('video: ' + (e.message || e)).slice(0, 80);
-      if (!VIDEOS) $('#status').textContent = 'Ne mogu da učitam video. Proveri vezu i pokušaj ponovo.';
+      if (!VIDEOS) $('#status').textContent = 'Snimci trenutno ne stižu. Proveri internet i pokušaj ponovo.';
     } finally {
       btn.classList.remove('spin');
       if (view === 'video') render();
@@ -397,7 +402,7 @@
     box.replaceChildren();
     $('#status').textContent = '';
     const wrap = el('div', 'empty');
-    wrap.append(el('p', null, 'Nema internet veze, ili vesti trenutno nisu dostupne. Vesti će se pojaviti čim se veza vrati.'));
+    wrap.append(el('p', null, 'Nema interneta. Vesti će se pojaviti čim se veza vrati.'));
     const retry = el('button', 'btn big', 'Pokušaj ponovo');
     retry.type = 'button';
     retry.addEventListener('click', () => load(true));
@@ -420,7 +425,7 @@
     if (view === 'video') {
       vc.replaceChildren(
         chip('Svi snimci', !onlyShorts, () => { onlyShorts = false; render(); }),
-        chip('Kratki video', onlyShorts, () => { onlyShorts = true; render(); }),
+        chip('Kratki snimci', onlyShorts, () => { onlyShorts = true; render(); }),
       );
     }
   }
@@ -452,7 +457,7 @@
     }
     renderStatus(adsRemoved, all.length);
     if (!list.length && !box.children.length) {
-      box.append(el('div', 'empty', 'Nema vesti za izabrane filtere.'));
+      box.append(el('div', 'empty', 'Nema vesti za ovaj izbor. Dodirni "Sve".'));
     } else {
       for (const it of list.slice(0, shown)) box.append(card(it));
     }
@@ -467,9 +472,9 @@
   }
 
   // ---- data ----------------------------------------------------------------
-  let loading = false;
+  let loading = false, again = false;
   async function load(force) {
-    if (loading) return;
+    if (loading) { again = true; return; }
     loading = true;
     const btn = $('#refresh');
     btn.classList.add('spin');
@@ -497,15 +502,31 @@
       if (!DATA) showNoNews();
       else {
         const st = $('#status');
-        st.replaceChildren(el('span', 'warn', navigator.onLine ? 'Osvežavanje nije uspelo. Prikazane su ranije vesti.' : 'Nema interneta. Prikazane su ranije vesti.'));
+        st.hidden = false;
+        st.replaceChildren(el('span', 'warn', navigator.onLine ? 'Nove vesti nisu stigle. Prikazane su ranije.' : 'Nema interneta. Prikazane su ranije vesti.'));
       }
     } finally {
       btn.classList.remove('spin');
       loading = false;
+      if (again) { again = false; setTimeout(() => load(false), 1500); }
     }
   }
 
   // ---- reader --------------------------------------------------------------
+  // Every article in the reader says which outlet it comes from, when it was published, and links to the original.
+  function attrib(it) {
+    const src = DATA && DATA.sources.find((s) => s.id === it.source);
+    const d = new Date(it.published);
+    const when = isNaN(d) ? '' : d.toLocaleDateString('sr-Latn-RS', { day: 'numeric', month: 'long', year: 'numeric' });
+    const box = el('p', 'attrib');
+    const a = el('a', null, 'Izvorni članak ↗');
+    a.href = it.url;
+    a.rel = 'noopener noreferrer';
+    a.addEventListener('click', (e) => { e.preventDefault(); openExternal(it.url); });
+    box.append([src ? src.name : '', when].filter(Boolean).join(' · ') + ' · ', a);
+    return box;
+  }
+
   async function openItem(it) {
     if (!S.reader) { openExternal(it.url); return; }
     const dlg = $('#reader');
@@ -513,12 +534,12 @@
     currentItem = it;
     $('#openOriginal').href = it.url;
     $('#openOriginal').dataset.url = it.url;
-    body.replaceChildren(el('h1', null, it.title), el('p', 'note', 'Učitavanje…'));
+    body.replaceChildren(el('h1', null, it.title), attrib(it), el('p', 'note', 'Učitavanje…'));
     dlg.showModal();
     dlg.scrollTop = 0;
     try {
       const art = await api.article(it.url);
-      body.replaceChildren(el('h1', null, art.title || it.title));
+      body.replaceChildren(el('h1', null, art.title || it.title), attrib(it));
       if (S.images && art.image && /^https:/.test(art.image)) {
         const img = el('img');
         img.src = art.image; img.alt = ''; img.referrerPolicy = 'no-referrer';
@@ -548,6 +569,7 @@
     } catch {
       body.replaceChildren(
         el('h1', null, it.title),
+        attrib(it),
         el('p', 'note', 'Tekst nije moguće prikazati (sajt možda traži pretplatu). Dodirni „Otvori original na sajtu“ ispod.'),
       );
     }
@@ -561,7 +583,7 @@
       const name = DATA.sources.find((s) => s.id === st.id).name;
       const li = el('li');
       li.append(el('strong', null, name + ' '));
-      li.append(el('span', st.ok ? 'ok' : 'bad', st.ok ? 'radi (' + st.count + ' vesti)' : st.stale ? 'greška (stari podaci)' : 'ne radi'));
+      li.append(el('span', st.ok ? 'ok' : 'bad', st.ok ? 'radi (' + st.count + ' vesti)' : st.stale ? 'ne radi (stare vesti)' : 'ne radi'));
       for (const txt of [st.ok && st.feed, !st.ok && st.tried && st.tried.length && st.tried.join('  •  ')]) {
         if (!txt) continue;
         const sm = el('small', null, txt);
@@ -581,6 +603,7 @@
     const im = $('#optImages'), sm = $('#optSummary'), lg = $('#optLogos');
     im.checked = S.images; sm.checked = S.summary; lg.checked = S.logos;
     lg.addEventListener('change', () => { S.logos = lg.checked; changed(); });
+    if (window.VESTI_STORE) lg.closest('label').hidden = true; // the store build never shows outlet logos
     im.addEventListener('change', () => { S.images = im.checked; changed(); });
     sm.addEventListener('change', () => { S.summary = sm.checked; changed(); });
     for (const r of document.querySelectorAll('input[name="theme"]')) {
@@ -645,6 +668,8 @@
     if (scriptTimer) return;
     scriptTimer = requestAnimationFrame(() => { scriptTimer = null; applyScript(); });
   });
+  const attrOf = new WeakMap();
+  let docTitleLat = null;
   function applyScript() {
     scriptObserver.disconnect();
     const cyr = S.script === 'cyr';
@@ -663,10 +688,17 @@
         latinOf.delete(n);
       }
     }
-    for (const e of document.querySelectorAll('[placeholder]')) {
-      if (cyr) { if (!phOf.has(e)) phOf.set(e, e.placeholder); e.placeholder = window.VestiCyr.toCyr(phOf.get(e)); }
-      else if (phOf.has(e)) { e.placeholder = phOf.get(e); phOf.delete(e); }
+    for (const e of document.querySelectorAll('[placeholder],[aria-label],[title]')) {
+      for (const a of ['placeholder', 'aria-label', 'title']) {
+        if (!e.hasAttribute(a)) continue;
+        let m = attrOf.get(e);
+        if (!m) attrOf.set(e, (m = {}));
+        if (cyr) { if (!(a in m)) m[a] = e.getAttribute(a); e.setAttribute(a, window.VestiCyr.toCyr(m[a])); }
+        else if (a in m) { e.setAttribute(a, m[a]); delete m[a]; }
+      }
     }
+    if (docTitleLat === null) docTitleLat = document.title;
+    document.title = cyr ? window.VestiCyr.toCyr(docTitleLat) : docTitleLat;
     document.documentElement.lang = cyr ? 'sr-Cyrl' : 'sr-Latn';
     if (cyr) scriptObserver.observe(document.body, { childList: true, subtree: true, characterData: true });
   }

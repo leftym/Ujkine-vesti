@@ -146,8 +146,8 @@ textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--line); borde
 
 [hidden] { display: none !important; }
 @media (max-width: 350px) {
-  .icon { width: 44px; }
-  .icon.txt { min-width: 44px; margin-right: 3px; font-size: 19px !important; }
+  .icon { width: 48px; }
+  .icon.txt { min-width: 48px; margin-right: 3px; font-size: 19px !important; }
   .top { padding-left: 10px; padding-right: 6px; }
 }
 @media (max-width: 380px) { .top h1::after { display: none; } }
@@ -203,3 +203,13 @@ html[lang="sr-Cyrl"] .top h1 { font-size: clamp(15px, 4.8vw, 19px); }
 .top h1 { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 #readerBody { max-width: 34em; margin-inline: auto; }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* very large text: keep lines readable and never scroll sideways */
+#readerBody { min-width: 0; }
+#readerBody h1, #readerBody h3, #readerBody p { overflow-wrap: anywhere; hyphens: auto; }
+#readerBody h1 { font-size: min(1.5rem, 30px); }
+#readerBody p { font-size: min(1.1rem, 30px); }
+.card h2 { font-size: min(1.2rem, 34px); }
+.tgroup.hero .card h2 { font-size: min(1.4rem, 38px); }
+.attrib { font-size: .9rem; color: var(--muted); margin: .2em 0 1em; }
+.attrib a { min-height: 48px; display: inline-flex; align-items: center; }
