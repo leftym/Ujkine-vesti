@@ -1,21 +1,21 @@
 # Vesti health report
 
-Run: 2026-11-04T02:24:20.857Z  |  items: 283  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-04T02:32:42.048Z  |  items: 283  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **MED** [Politika] 40% of stories are uncategorized ("Ostalo"). Common words in them: zatvoru(2), oblacno(1), hladno(1), ponegde(1), kisom(1), napadac(1), pariza(1), pokusao(1). Add section names / keyword stems in lib/classify.js.
+1. **MED** [Politika] 35% of stories are uncategorized ("Ostalo"). Common words in them: zatvoru(2), oblacno(1), hladno(1), ponegde(1), kisom(1), napadac(1), pariza(1), pokusao(1). Add section names / keyword stems in lib/classify.js.
 2. **LOW** [Blic] Possible ads NOT flagged: "Besplatni pregled dojki na ABUS ultrazvučnom uređaju od 5. novembra na Petrovaradinu"
 3. **LOW** [Front page] Cluster "Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga" has 17 items: chained matches may have merged related but different stories.
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 43 | 1.1h | 100% | 21% | 1 |
-| Nova.rs | yes | 50 | 1.9h | 100% | 4% | 0 |
-| B92 | yes | 80 | 0.4h | 98% | 5% | 0 |
-| Blic | yes | 70 | 2.3h | 100% | 1% | 0 |
-| Politika | yes | 20 | 0.8h | 100% | 40% | 0 |
-| RTS | yes | 20 | 3.2h | 100% | 0% | 0 |
+| N1 | yes | 43 | 1.3h | 100% | 12% | 1 |
+| Nova.rs | yes | 50 | 2.1h | 100% | 4% | 0 |
+| B92 | yes | 80 | 0.2h | 95% | 4% | 0 |
+| Blic | yes | 70 | 2.5h | 100% | 1% | 0 |
+| Politika | yes | 20 | 0.9h | 100% | 35% | 0 |
+| RTS | yes | 20 | 3.3h | 100% | 0% | 0 |
 
 ## Front page right now
 1. [multi, 6 outlets, score 67.6] Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga
@@ -45,7 +45,7 @@ Run: 2026-11-04T02:24:20.857Z  |  items: 283  |  front-page clusters: 10 (10 mul
    - also (nova): Zdravko Ponoš podneo ostavku na mesto predsednika stranke Srbija centar (SRCE)
    - also (n1): Ponoš podneo ostavku na mesto predsednika stranke SRCE, Predsedništvo je prihvatilo
    - also (blic): Zdravko Ponoš podneo ostavku na mesto predsednika stranke SRCE
-4. [multi, 4 outlets, score 48.7] SASLUŠAN DAVOR MACURA Oglasio se advokat vlasnika Alta banke: "Navedeno da je ulazio u sef, koristio kartice iznosio novac, ali nema dokaza" (VIDEO)
+4. [multi, 4 outlets, score 48.6] SASLUŠAN DAVOR MACURA Oglasio se advokat vlasnika Alta banke: "Navedeno da je ulazio u sef, koristio kartice iznosio novac, ali nema dokaza" (VIDEO)
    - also (nova): Macura saslušan pred JTOK, negirao krivicu: Tužilaštvo traži pritvor do 30 dana
    - also (politika): Davor Macura saslušan u JTOK-u, negirao krivicu, tužilaštvo traži pritvor do 30 dana
    - also (n1): Macura saslušan pred JTOK, negirao krivicu: Tužilaštvo traži pritvor
@@ -74,16 +74,15 @@ Run: 2026-11-04T02:24:20.857Z  |  items: 283  |  front-page clusters: 10 (10 mul
 
 ## Details
 ### N1
-Categories: {"svet":12,"ekonomija":3,"ostalo":9,"hronika":1,"politika":9,"zivot":4,"drustvo":4,"region":1}
+Categories: {"svet":17,"ekonomija":3,"ostalo":5,"hronika":1,"politika":9,"zivot":4,"drustvo":3,"region":1}
 Flagged:
 - (self) Global fokus: Međuizbori u SAD <https://n1info.rs/najave-emisija/global-fokus-medjuizbori-u-sad/>
 Uncategorized sample:
 - Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga <https://n1info.rs/vesti/audio-snimak-avion-let-ju134/> tags=["Vesti","snimak","aerodrom nikola tesla","preusmeravanje leta","avion","er srbija"]
-- Avion s Vulinom, Bajatovićem i Popovićem bio vraćen sa leta za Moskvu - bezbednosne provere i ko je zbog čega išao <https://n1info.rs/vesti/n1-uzivo-na-aerodromu-nikola-tesla/> tags=["Vesti","preusmeravanje leta","er srbija","aleksandar vulin","dušan bajatović","moskva"]
-- Vulin: Putovao sam u Moskvu poslovno, spavao sam tokom leta, probudili me u Beogradu <https://n1info.rs/vesti/vulin-putovao-sam-u-moskvu-poslovno-spavao-sam-tokom-leta-probudili-me-u-beogradu/> tags=["Vesti","aleksandar vulin","er srbija","informer","aerodrom nikola tesla"]
 - Vojinović: Očigledno reč o drastičnom kršenju pravila bezbednosti - ali ne mogu ni putnik, ni prtljag da ne prođu kontrolu, sve i da je VIP <https://n1info.rs/vesti/petar-vojinovic-preusmeren-let-avion-aleksadar-vulin/> tags=["Vesti","er srbija","granična policija","avion","tango six","nenad popović"]
-- Er Srbija o vraćanju aviona za Moskvu: Neophodne dodatne bezbednosne provere jednog putnika <https://n1info.rs/vesti/er-srbija-o-vracanju-aviona-za-moskvu-neophodne-dodatne-bezbednosne-provere-jednog-putnika/> tags=["Vesti","aleksandar vulin","preusmeravanje leta","er srbija","avion"]
-- Nova.rs: Avion koji je večeras trebalo da sleti u Moskvu, vratio se za Beograd - sumnja se da su u njemu Vulin, Bajatović i Popović <https://n1info.rs/vesti/novars-avion-koji-je-veceras-trebalo-da-sleti-u-moskvu-vraca-se-za-beograd-sumnja-se-da-su-u-njemu-vulin-bajatovic-i-popovic/> tags=["Vesti","moskva","let","preusmeravanje leta","nenad popović","aleksandar vulin"]
+- Upravni odbor RTS zatražio od Saveta REM-a da se hitno izjasni o njegovom statusu <https://n1info.rs/vesti/upravni-odbor-rts-zatrazio-od-saveta-rem-a-da-se-hitno-izjasni-o-njegovom-statusu/> tags=["Vesti","savet rem","upravni odbor rts","rem"]
+- Dnevnik u 19 (2.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-02112026/> tags=["Dnevnik","vesti","dnevnik u 19","video","dnevnik"]
+- Okupljanje pripadnika "Srpskih suverenista" ispred PS Savski venac u znak podrške TV Informer <https://n1info.rs/vesti/okupljanje-pripadnika-srpskih-suverenista-ispred-ps-savski-venac-u-znak-podrske-tv-informer/> tags=["Vesti","vukša dragović","udruženje srpski suverenisti","tv informer"]
 
 ### Nova.rs
 Categories: {"politika":9,"hronika":5,"drustvo":11,"zivot":2,"sport":14,"zabava":5,"kultura":1,"ostalo":2,"svet":1}
@@ -92,12 +91,11 @@ Uncategorized sample:
 - Dnevnik - Cela emisija - 2.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-2112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"svet":14,"sport":12,"ostalo":4,"drustvo":3,"zivot":18,"zdravlje":4,"tehnologija":5,"ekonomija":7,"politika":5,"hronika":2,"kultura":2,"zabava":3,"region":1}
+Categories: {"svet":14,"zivot":19,"ostalo":3,"sport":16,"drustvo":3,"zdravlje":4,"tehnologija":4,"ekonomija":6,"hronika":2,"politika":5,"kultura":2,"zabava":1,"region":1}
 Uncategorized sample:
-- Na današnji dan, 4. novembar <https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest> tags=["Info"]
+- Na današnji dan, 4. novembar <https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest> tags=["Najnovije"]
 - Novine: "Međunarodna očekivanja od nove vlasti u Srbiji"; "Radnici u marketima za sad bez posledica" <https://www.b92.net/info/razno/281963/novine-medjunarodna-ocekivanja-od-nove-vlasti-u-srbiji-radnici-u-marketima-za-sad-bez-posledica/vest> tags=["Info"]
-- "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest> tags=["Najnovije"]
-- Gosti ih prvo primete: Tri stvari koje odmah morate da sklonite iz kuhinje <https://superzena.b92.net/kuhinja/prakticni-saveti/281446/tri-stvari-koje-treba-da-sklonite-iz-kuhinje-pre-dolaska-gostiju/vest> tags=["Najnovije"]
+- "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest> tags=[]
 
 ### Blic
 Categories: {"hronika":6,"ekonomija":9,"svet":11,"ostalo":1,"politika":9,"zivot":7,"drustvo":7,"zabava":19,"zdravlje":1}
@@ -105,7 +103,7 @@ Uncategorized sample:
 - Naslovna strana za 4.11. <https://www.blic.rs/print/naslovna-strana-za-411/sdcsrte> tags=[]
 
 ### Politika
-Categories: {"politika":4,"ostalo":8,"hronika":2,"svet":5,"drustvo":1}
+Categories: {"politika":4,"ostalo":7,"hronika":2,"svet":6,"drustvo":1}
 Uncategorized sample:
 - Oblačno i hladno, ponegde sa kišom <https://www.politika.rs/scc/clanak/799570/oblacno-i-hladno-ponegde-sa-kisom> tags=[]
 - Napadač iz Pariza pokušao da se ubije u zatvoru <https://www.politika.rs/scc/clanak/799569/napadac-iz-pariza-pokusao-da-se-ubije-u-zatvoru> tags=[]
