@@ -1,16 +1,16 @@
 # Probe
 
-Run: 2026-11-04T02:08:37.982Z
+Run: 2026-11-04T02:24:03.625Z
 
 ## B92 feeds
-RSS directory page https://www.b92.net/info/rss/: 17085 bytes; feed-like links found: 0
-- https://www.b92.net/info/rss/vesti.xml -> 17357 bytes, 20 items, newest 2026-11-04T01:52:00.000Z, oldest 2026-11-03T18:12:00.000Z
+RSS directory page https://www.b92.net/info/rss/: 17133 bytes; feed-like links found: 0
+- https://www.b92.net/info/rss/vesti.xml -> 17281 bytes, 20 items, newest 2026-11-04T02:01:00.000Z, oldest 2026-11-03T18:27:00.000Z
     * Zatvorena prva glasačka mesta; Demokrate osvajaju teren republikanaca; Tramp pod pritiskom FOTO/VIDEO | 2026-11-04T01:52 | cats=["Info"] | https://www.b92.net/info/svet/281795/americki-medjuizbori-2026/vest
+    * Tramp prati izborne rezultate iz Bele kuće | 2026-11-04T02:01 | cats=["Info"] | https://www.b92.net/info/svet/281988/tramp-prati-izborne-rezultate-iz-bele-kuce/vest
     * Prvi preliminarni rezultati međuizbora u SAD | 2026-11-04T01:42 | cats=["Info"] | https://www.b92.net/info/svet/281987/prvi-preliminarni-rezultati-medjuizbora-u-sad/vest
     * Na današnji dan, 4. novembar | 2026-11-03T23:00 | cats=["Info"] | https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest
     * Rat – dan 1.713: Rusi napali – veliki broj mrtvih; "Moskva ne planira rat sa Evropom" FOTO/VIDEO | 2026-11-03T22:50 | cats=["Info"] | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest
     * "Ne težimo ratu – vojna moć je sredstvo, a ne cilj" | 2026-11-03T22:40 | cats=["Info"] | https://www.b92.net/info/svet/281986/abdolahi-iran-se-nametnuo-kao-centar-globalne-moci/vest
-    * Oglasio se predsednik izraelskog CIK-a; Rezultati moraju biti objavljeni sutra | 2026-11-03T22:22 | cats=["Info"] | https://www.b92.net/info/svet/281984/zvanicni-rezultati-izbora-u-izraelu-moraju-biti-objavljeni-sutra/vest
 - https://www.b92.net/info/rss/svevesti.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/najnovije.xml -> ERROR HTTP_404
 - https://www.b92.net/info/rss/info.xml -> ERROR HTTP_404
@@ -20,25 +20,25 @@ RSS directory page https://www.b92.net/info/rss/: 17085 bytes; feed-like links f
 - https://www.b92.net/info/rss/drustvo.xml -> ERROR HTTP_404
 - https://www.b92.net/rss/ -> 226741 bytes, 0 items, newest -, oldest -
 - https://www.b92.net/rss -> 226741 bytes, 0 items, newest -, oldest -
-- https://www.b92.net/feed/ -> 16953 bytes, 20 items, newest 2026-11-04T01:52:00.000Z, oldest 2026-11-03T21:02:00.000Z
-    * Zatvorena prva glasačka mesta; Demokrate osvajaju teren republikanaca; Tramp pod pritiskom FOTO/VIDEO | 2026-11-04T01:52 | cats=["Najnovije"] | https://www.b92.net/info/svet/281795/americki-medjuizbori-2026/vest
-    * Prvi preliminarni rezultati međuizbora u SAD | 2026-11-04T01:42 | cats=["Najnovije"] | https://www.b92.net/info/svet/281987/prvi-preliminarni-rezultati-medjuizbora-u-sad/vest
-    * Na današnji dan, 4. novembar | 2026-11-03T23:00 | cats=["Najnovije"] | https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest
-    * Zvezda WNBA angažovala telohranitelje 24 sata dnevno | 2026-11-03T22:52 | cats=["Najnovije"] | https://www.b92.net/sport/kosarka/nba/281945/sofi-kaningem-angazovala-obezbedjenje-24-sata-dnevno/vest
-    * Rat – dan 1.713: Rusi napali – veliki broj mrtvih; "Moskva ne planira rat sa Evropom" FOTO/VIDEO | 2026-11-03T22:50 | cats=["Najnovije"] | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest
-    * "Ne težimo ratu – vojna moć je sredstvo, a ne cilj" | 2026-11-03T22:40 | cats=["Najnovije"] | https://www.b92.net/info/svet/281986/abdolahi-iran-se-nametnuo-kao-centar-globalne-moci/vest
+- https://www.b92.net/feed/ -> 17195 bytes, 20 items, newest 2026-11-03T20:59:00.000Z, oldest 2026-11-03T07:06:00.000Z
+    * Muškarci otkrivaju razloge zašto su se razveli: Ovo je bila kap koja je prelila čašu... | 2026-11-03T20:59 | cats=["Najnovije"] | https://superzena.b92.net/ljubav-i-strast/iz-muskog-ugla/281566/razvedeni-muskarci-otkrivaju-razloge-razvoda-svog-braka/vest
+    * Deset godina je patila: Glumica progovorila o vezi sa Bredlijem Kuperom FOTO | 2026-11-03T20:27 | cats=["Najnovije"] | https://superzena.b92.net/ljubav-i-strast/veze-i-odnosi/281939/suki-voterhaus-o-bolnim-raskidima-i-vezi-sa-bredlijem-kuperom/vest
+    * Modna istorija na Kris Džener: Pojavila se u ogrtaču koji je nosila Elizabet Tejlor FOTO | 2026-11-03T19:46 | cats=["Najnovije"] | https://superzena.b92.net/moda/aktuelno/281954/kris-dzener-u-ogrtacu-koji-je-nosila-elizabet-tejlor/vest
+    * "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti | 2026-11-03T18:54 | cats=["Najnovije"] | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest
+    * Starinski i najbolji recept za ribanac: Ovako su ga pravile naše bake pre pola veka | 2026-11-03T18:32 | cats=["Najnovije"] | https://superzena.b92.net/kuhinja/recepti/281932/starinski-i-najbolji-recept-za-ribanac-ovako-su-ga-pravile-bake/vest
+    * Smršao 90 kilograma, pa progovorio o neverovatnoj transformaciji: "Još uvek se navikavam" VIDEO | 2026-11-03T17:46 | cats=["Najnovije"] | https://superzena.b92.net/zivoti-poznatih/aktuelno/281862/dzon-gudman-progovorio-o-gubitku-90-kilograma/vest
 
 ### B92 homepage headlines vs feeds
-homepage: 600688 bytes, 65 headline-like links
-- &quot;Ne težimo ratu – vojna moć je sredstvo, a ne cilj&quot; | https://www.b92.net/info/svet/281986/abdolahi-iran-se-nametnuo-kao-centar-globalne-moci/vest | in feeds: vesti.xml,
-- Haos tokom izbora u SAD; Muškarac slao preteće poruke izbornim zvaničnicima | https://www.b92.net/info/svet/281981/muskarac-optuzen-za-slanje-pretecih-pisama-izbornim-zvanicnicima-u-sad/vest | in feeds: vesti.xml,
+homepage: 600714 bytes, 65 headline-like links
+- &quot;Ne težimo ratu – vojna moć je sredstvo, a ne cilj&quot; | https://www.b92.net/info/svet/281986/abdolahi-iran-se-nametnuo-kao-centar-globalne-moci/vest | in feeds: vesti.xml
+- Haos tokom izbora u SAD; Muškarac slao preteće poruke izbornim zvaničnicima | https://www.b92.net/info/svet/281981/muskarac-optuzen-za-slanje-pretecih-pisama-izbornim-zvanicnicima-u-sad/vest | in feeds: vesti.xml
 - Bivša portparolka Zelenskog osumnjičena za veleizdaju VIDEO | https://www.b92.net/info/svet/281972/bivsa-portparolka-zelenskog-osumnjicena-za-veleizdaju/vest | in feeds: vesti.xml
-- Rat – dan 1.713: Rusi napali – veliki broj mrtvih; &quot;Moskva ne planira rat sa Evropom& | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest | in feeds: vesti.xml,
-- uživo Zatvorena prva glasačka mesta; Demokrate osvajaju teren republikanaca; Tramp pod pri | https://www.b92.net/info/svet/281795/americki-medjuizbori-2026/vest | in feeds: vesti.xml,
-- Prvi preliminarni rezultati međuizbora u SAD | https://www.b92.net/info/svet/281987/prvi-preliminarni-rezultati-medjuizbora-u-sad/vest | in feeds: vesti.xml,
+- Rat – dan 1.713: Rusi napali – veliki broj mrtvih; &quot;Moskva ne planira rat sa Evropom& | https://www.b92.net/info/svet/281715/rat-u-ukrajini-1713-dan/vest | in feeds: vesti.xml
+- uživo Zatvorena prva glasačka mesta; Demokrate osvajaju teren republikanaca; Tramp pod pri | https://www.b92.net/info/svet/281795/americki-medjuizbori-2026/vest | in feeds: vesti.xml
+- Tramp prati izborne rezultate iz Bele kuće | https://www.b92.net/info/svet/281988/tramp-prati-izborne-rezultate-iz-bele-kuce/vest | in feeds: vesti.xml
 - Bajern pokorio &quot;Metropolitano&quot;! | https://www.b92.net/sport/fudbal/evrokupovi/281895/liga-sampiona-4-kolo-atletiko-bajern-02-izvestaj/vest | in feeds: NONE
 - Komšije menjaju novčanice: Štampaće ih Nemci | https://www.b92.net/biz/region/vesti/281971/komsije-menjaju-novcanice-stampace-ih-nemci/vest | in feeds: NONE
-- Pojačava se vojska na granici sa Rusijom | https://www.b92.net/info/svet/281976/norveska-postavlja-nasams-senzore-duz-granice-s-rusijom/vest | in feeds: vesti.xml,
+- Prvi preliminarni rezultati međuizbora u SAD | https://www.b92.net/info/svet/281987/prvi-preliminarni-rezultati-medjuizbora-u-sad/vest | in feeds: vesti.xml
 - Kakav preokret na Old Trafordu: Junajted od 0:2 do pobede, Kunja srušio Romu za tri minuta | https://www.b92.net/sport/fudbal/evrokupovi/281979/junajted-posle-preokreta-pobedio-romu-u-ls/vest | in feeds: NONE
 - Rusiji nedostaje novca? Prodaju deo brodarskog giganta | https://www.b92.net/biz/svet/vesti/281909/rusiji-nedostaje-novca-prodaju-deo-brodarskog-giganta/vest | in feeds: NONE
 - Spektakl u Solunu od 224 poena: PAOK dobio ludu utakmicu! VIDEO | https://www.b92.net/sport/kosarka/euroleague/281967/paok-dobio-romu-u-neizvesnoj-zavrsnici-utakmice-6-kola-ek/vest | in feeds: NONE
@@ -83,12 +83,12 @@ homepage YouTube channel links: https://www.youtube.com/@N1infoTV ; https://www.
 feed https://nova.rs/feed/: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/channel/UCloa3CgQMtGSeqjLkpQlEFg
   https://www.youtube.com/channel/UCloa3CgQMtGSeqjLkpQlEFg -> id UCloa3CgQMtGSeqjLkpQlEFg
-  video feed FAILED HTTP_404
+  video feed FAILED HTTP_500
 ### B92
 feed https://www.b92.net/feed/: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/@B92TV
   https://www.youtube.com/@B92TV -> id UCOJ46tnlQ39S11UreLtkq5Q  name B92 TV
-  video feed FAILED HTTP_500
+  video feed FAILED HTTP_404
 ### Blic
 feed https://www.blic.rs/rss/danasnje-vesti: 0 distinct YouTube video links in the raw feed
 homepage YouTube channel links: https://www.youtube.com/@Bliconline1 ; https://www.youtube.com/channel/UCvUZc0dr8pQkjYwKhw632Zw
