@@ -1,35 +1,32 @@
 # Feed check
 
-Run: 2026-11-04T02:23:50.057Z
+Run: 2026-11-04T02:32:13.422Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
 | N1 | yes | 43 | https://n1info.rs/feed/ | 43 | 1 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +81) | 78 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +83) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":12,"ekonomija":3,"ostalo":9,"hronika":1,"politika":9,"zivot":4,"drustvo":4,"region":1}
+Categories: {"svet":17,"ekonomija":3,"ostalo":5,"hronika":1,"politika":9,"zivot":4,"drustvo":3,"region":1}
 - [svet] Stižu prvi rezultati međuizbora u SAD: Demokrate odnele pobede
 - [ekonomija] Bajatović za N1: Zašto su Vulin i Popović putovali u Rusiju ne znam, ja sam krenuo zbog gasa i problema s Alta bankom
 - [ostalo] Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga
 - [hronika] Macura saslušan pred JTOK, negirao krivicu: Tužilaštvo traži pritvor
-- [ostalo] Avion s Vulinom, Bajatovićem i Popovićem bio vraćen sa leta za Moskvu - bezbednosne provere i ko je zbog čega išao
-- [ostalo] Vulin: Putovao sam u Moskvu poslovno, spavao sam tokom leta, probudili me u Beogradu
+- [svet] Avion s Vulinom, Bajatovićem i Popovićem bio vraćen sa leta za Moskvu - bezbednosne provere i ko je zbog čega išao
+- [svet] Vulin: Putovao sam u Moskvu poslovno, spavao sam tokom leta, probudili me u Beogradu
   - flagged (self): Global fokus: Međuizbori u SAD https://n1info.rs/najave-emisija/global-fokus-medjuizbori-u-sad/
 
 Uncategorized sample (for tuning):
 - Audio snimak iz aviona na letu JU134: Putnicima rečeno da se vraćaju iz bezbednosnih razloga | https://n1info.rs/vesti/audio-snimak-avion-let-ju134/ | tags: ["Vesti","snimak","aerodrom nikola tesla","preusmeravanje leta","avion","er srbija"]
-- Avion s Vulinom, Bajatovićem i Popovićem bio vraćen sa leta za Moskvu - bezbednosne provere i ko je zbog čega išao | https://n1info.rs/vesti/n1-uzivo-na-aerodromu-nikola-tesla/ | tags: ["Vesti","preusmeravanje leta","er srbija","aleksandar vulin","dušan bajatović","moskva"]
-- Vulin: Putovao sam u Moskvu poslovno, spavao sam tokom leta, probudili me u Beogradu | https://n1info.rs/vesti/vulin-putovao-sam-u-moskvu-poslovno-spavao-sam-tokom-leta-probudili-me-u-beogradu/ | tags: ["Vesti","aleksandar vulin","er srbija","informer","aerodrom nikola tesla"]
 - Vojinović: Očigledno reč o drastičnom kršenju pravila bezbednosti - ali ne mogu ni putnik, ni prtljag da ne prođu kontrolu, sve i da je VIP | https://n1info.rs/vesti/petar-vojinovic-preusmeren-let-avion-aleksadar-vulin/ | tags: ["Vesti","er srbija","granična policija","avion","tango six","nenad popović"]
-- Er Srbija o vraćanju aviona za Moskvu: Neophodne dodatne bezbednosne provere jednog putnika | https://n1info.rs/vesti/er-srbija-o-vracanju-aviona-za-moskvu-neophodne-dodatne-bezbednosne-provere-jednog-putnika/ | tags: ["Vesti","aleksandar vulin","preusmeravanje leta","er srbija","avion"]
-- Nova.rs: Avion koji je večeras trebalo da sleti u Moskvu, vratio se za Beograd - sumnja se da su u njemu Vulin, Bajatović i Popović | https://n1info.rs/vesti/novars-avion-koji-je-veceras-trebalo-da-sleti-u-moskvu-vraca-se-za-beograd-sumnja-se-da-su-u-njemu-vulin-bajatovic-i-popovic/ | tags: ["Vesti","moskva","let","preusmeravanje leta","nenad popović","aleksandar vulin"]
 - Upravni odbor RTS zatražio od Saveta REM-a da se hitno izjasni o njegovom statusu | https://n1info.rs/vesti/upravni-odbor-rts-zatrazio-od-saveta-rem-a-da-se-hitno-izjasni-o-njegovom-statusu/ | tags: ["Vesti","savet rem","upravni odbor rts","rem"]
 - Dnevnik u 19 (2.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-02112026/ | tags: ["Dnevnik","vesti","dnevnik u 19","video","dnevnik"]
+- Okupljanje pripadnika "Srpskih suverenista" ispred PS Savski venac u znak podrške TV Informer | https://n1info.rs/vesti/okupljanje-pripadnika-srpskih-suverenista-ispred-ps-savski-venac-u-znak-podrske-tv-informer/ | tags: ["Vesti","vukša dragović","udruženje srpski suverenisti","tv informer"]
 
 ## Nova.rs
 Categories: {"politika":9,"hronika":5,"drustvo":11,"zivot":2,"sport":14,"zabava":5,"kultura":1,"ostalo":2,"svet":1}
@@ -45,19 +42,18 @@ Uncategorized sample (for tuning):
 - Dnevnik - Cela emisija - 2.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-2112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"svet":14,"sport":12,"ostalo":4,"drustvo":3,"zivot":18,"zdravlje":4,"tehnologija":5,"ekonomija":7,"politika":5,"hronika":2,"kultura":2,"zabava":3,"region":1}
-- [svet] Tramp prati izborne rezultate iz Bele kuće
+Categories: {"svet":14,"zivot":19,"ostalo":3,"sport":16,"drustvo":3,"zdravlje":4,"tehnologija":4,"ekonomija":6,"hronika":2,"politika":5,"kultura":2,"zabava":1,"region":1}
 - [svet] Zatvorena prva glasačka mesta; Demokrate osvajaju teren republikanaca; Tramp pod pritiskom FOTO/VIDEO
+- [svet] Tramp prati izborne rezultate iz Bele kuće
 - [svet] Prvi preliminarni rezultati međuizbora u SAD
-- [sport] Zvezda WNBA angažovala telohranitelje 24 sata dnevno
+- [zivot] Ovaj srpski kamp postao hit među Holanđanima: Turisti iz cele Evrope dolaze na Zlatibor FOTO
+- [zivot] Još ništa od letova do Beograda: Avio-kompanija povukla karte iz prodaje
 - [ostalo] Na današnji dan, 4. novembar
-- [svet] Rat – dan 1.713: Rusi napali – veliki broj mrtvih; "Moskva ne planira rat sa Evropom" FOTO/VIDEO
 
 Uncategorized sample (for tuning):
-- Na današnji dan, 4. novembar | https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest | tags: ["Info"]
+- Na današnji dan, 4. novembar | https://www.b92.net/info/razno/281985/na-danasnji-dan-4-novembar/vest | tags: ["Najnovije"]
 - Novine: "Međunarodna očekivanja od nove vlasti u Srbiji"; "Radnici u marketima za sad bez posledica" | https://www.b92.net/info/razno/281963/novine-medjunarodna-ocekivanja-od-nove-vlasti-u-srbiji-radnici-u-marketima-za-sad-bez-posledica/vest | tags: ["Info"]
-- "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest | tags: ["Najnovije"]
-- Gosti ih prvo primete: Tri stvari koje odmah morate da sklonite iz kuhinje | https://superzena.b92.net/kuhinja/prakticni-saveti/281446/tri-stvari-koje-treba-da-sklonite-iz-kuhinje-pre-dolaska-gostiju/vest | tags: ["Najnovije"]
+- "Tajno dugme" na veš-mašini: Uštedeće vam puno vremena zimi, a razlika će vas oduševiti | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/281925/tajno-dugme-na-ves-masini-stedi-vam-vreme-zimi-i-odusevice-vas/vest | tags: []
 
 ## Blic
 Categories: {"hronika":6,"ekonomija":9,"svet":11,"ostalo":1,"politika":9,"zivot":7,"drustvo":7,"zabava":19,"zdravlje":1}
@@ -72,7 +68,7 @@ Uncategorized sample (for tuning):
 - Naslovna strana za 4.11. | https://www.blic.rs/print/naslovna-strana-za-411/sdcsrte | tags: []
 
 ## Politika
-Categories: {"politika":4,"ostalo":8,"hronika":2,"svet":5,"drustvo":1}
+Categories: {"politika":4,"ostalo":7,"hronika":2,"svet":6,"drustvo":1}
 - [politika] Demokrate osvojile mandate u više saveznih država na izborima u SAD
 - [ostalo] Oblačno i hladno, ponegde sa kišom
 - [ostalo] Napadač iz Pariza pokušao da se ubije u zatvoru
@@ -88,7 +84,6 @@ Uncategorized sample (for tuning):
 - Dodik stigao u SAD | https://www.politika.rs/scc/clanak/799557/dodik-stigao-u-sad | tags: []
 - Boelijev konzorcijum želi inostranu imovinu „Lukoila” | https://www.politika.rs/scc/clanak/799539/boelijev-konzorcijum-zeli-inostranu-imovinu-lukoila | tags: []
 - Dojava o bombi na brodu koji je plovio ka Haifi | https://www.politika.rs/scc/clanak/799535/dojava-o-bombi-na-brodu-koji-je-plovio-ka-haifi | tags: []
-- Avion na letu Beograd-Moskva vraćen u Beograd | https://www.politika.rs/scc/clanak/799532/avion-na-letu-beograd-moskva-vracen-u-beograd | tags: []
 
 ## RTS
 Categories: {"drustvo":7,"politika":5,"svet":2,"ekonomija":2,"zivot":1,"hronika":3}
