@@ -1,91 +1,90 @@
 # Feed check
 
-Run: 2026-11-04T21:45:15.949Z
+Run: 2026-11-05T11:15:27.443Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 44 | https://n1info.rs/feed/ | 44 | 1 |
+| N1 | yes | 49 | https://n1info.rs/feed/ | 49 | 3 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +74) | 76 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +72) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":9,"zivot":3,"ekonomija":3,"drustvo":6,"politika":8,"ostalo":10,"hronika":5}
-- [svet] Kakve su reakcije u Izraelu na izbore u Americi?
-- [svet] (VIDEO) Sukob građana sa Azovom i policijom: Nemiri pored Kijeva otkrili dublje društvene tenzije
-- [zivot] Novo istraživanje pokazalo da psi obrađuju ljudski govor na iznenađujući način
-- [ekonomija] Građani Bitolja gledaju u zatvorena vrata Alta banke: Guverner tvrdi da velikog priliva novca u Severnu Makedoniju nije bilo
-- [drustvo] Grujić: Direktor Jovine gimnazije ponovo suspendovao profesore
-- [svet] Predsednik Izraela priznao izborne rezultate i krenuo u konsultacije o formiranju nove vlade
-  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+Categories: {"zivot":8,"ekonomija":8,"hronika":8,"ostalo":4,"svet":3,"politika":10,"drustvo":4,"region":3,"sport":1}
+- [zivot] Nekim ljudima je dovoljno samo pet sati sna: Naučnici otkrili šta ih razlikuje od drugih
+- [ekonomija] Ministarstvo dalo zeleno svetlo za početak radova na deonici puta "Vožd Karađorđe"
+- [hronika] Advokat Lakić: Tužilaštvo da procesuira Orlića i Miloševića zbog prisluškivanja novinara
+- [ostalo / AD:self] Gledajte UŽIVO N1 Studio Live: Radar na meti BIA
+- [svet] Francuski sindikati u štrajkovima širom zemlje
+- [politika] Nemački mediji o Srbiji posle izbora: Buđenje pravosuđa, kazne za propagandne televizije i razgradnja sistema
+  - flagged (self): Gledajte UŽIVO N1 Studio Live: Radar na meti BIA https://n1info.rs/najave-emisija/n1-studio-live-radar-na-meti-bia/
+  - flagged (self): Slike života, nedelja od 15.15h: Ranjene kotline, izvori i visine https://n1info.rs/najave-emisija/slike-zivota-nedelje-od-1515h-ranjene-kotline-izvori-i-visine/
+  - flagged (self): Novi dan: Zašto je Vučiću (toliko) važan Informer? https://n1info.rs/najave-emisija/novi-dan-zasto-je-vucicu-toliko-vazan-informer/
 
 Uncategorized sample (for tuning):
-- Global fokus: Međuizbori u SAD (3.11.2026) | https://n1info.rs/video/global-fokus/global-fokus-medjuizbori-u-sad-3112026/ | tags: ["Global fokus","emisija","global fokus","video"]
-- Međunarodni sajam turizma i seoskog turizma na kragujevačkom "Šumadija sajmu" | https://n1info.rs/vesti/medjunarodni-sajam-turizma-i-seoskog-turizma-na-kragujevackom-sumadija-sajmu/ | tags: ["Vesti","kragujevac","sajam turizma"]
-- Ivanović: Sistem je ćutao o mučenju studenata, sada moraju da odgovaraju i počinioci i njihovi zaštitnici | https://n1info.rs/vesti/ivanovic-sistem-je-cutao-o-mucenju-studenata-sada-moraju-da-odgovaraju-i-pocinioci-i-njihovi-zastitnici/ | tags: ["Vesti","narodni pokret srbije","igor žmirić","dušan cvetković","jzo","vlada srbije"]
-- Dnevnik u 19 (3.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-03112026/ | tags: ["Dnevnik","dnevnik u 19","dnevnik","vesti","video"]
-- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
-- NUNS: Zahtevamo hitnu smenu Vladimira Orlića i utvrđivanje odgovornosti za prisluškivanje i praćenje novinara Radara | https://n1info.rs/vesti/nuns-zahtevamo-hitnu-smenu-vladimira-orlica-i-utvrdjivanje-odgovornosti-za-prisluskivanje-i-pracenje-novinara-radara/ | tags: ["Vesti","radar","prisluškivanje novinara","nuns","nezavisno udruženje novinara srbije","afera prisluškivanje"]
-- Đurić: Informer propagandno glasilo koje je nanosilo zlo i unosilo nemir, dolazi vreme odgovornosti | https://n1info.rs/vesti/djuric-informer-propagandno-glasilo-koje-je-nanosilo-zlo-i-unosilo-nemir-dolazi-vreme-odgovornosti/ | tags: ["Vesti","bia","radar","novinari","mediji","rade đurić"]
-- BIA o prisluškivanju: Tvrdnje o navodno protivpravnom postupanju lažne, tendenciozne i zlonamerne | https://n1info.rs/vesti/bia-tvrdnje-o-navodno-protivpravnom-postupanju-lazne-tendenciozne-i-zlonamerne/ | tags: ["Vesti","prisluškivanje","bia","afera prisluškivanje","bezbednosno-informativna agencija","prisluškivanje novinara"]
+- Gledajte UŽIVO N1 Studio Live: Radar na meti BIA | https://n1info.rs/najave-emisija/n1-studio-live-radar-na-meti-bia/ | tags: ["Najave emisija","n1 studio live"]
+- Izmenjeno radno vreme trgovinskih i zanatskih radnji u Beogradu na Dan primirja | https://n1info.rs/vesti/izmenjeno-radno-vreme-trgovinskih-i-zanatskih-radnji-u-beogradu-na-dan-primirja/ | tags: ["Vesti","dan primirja u prvom svetskom ratu","praznično radno vreme","dan primirja"]
+- "Prolazite na sopstvenu bezbednost": Otvorena Ulica vojvode Vlahovića, uprkos zabrani prolaze i teška vozila | https://n1info.rs/vesti/stanovnici-naselja-vojvode-vlahovica-strahuju-za-bezbednost-ulica-otvorena-nakon-urusavanja-zida-teska-vozila-prolaze-uprkos-zabrani/ | tags: ["Vesti","sanacija","gradilište","sanja pešić","kreni-promeni","bezbednost"]
+- N1 Direktno (4.11.2026) | https://n1info.rs/video/n1-direktno-4112026/ | tags: ["Video","emisija","n1 direktno","video"]
 
 ## Nova.rs
-Categories: {"sport":12,"svet":3,"drustvo":4,"zivot":1,"politika":4,"zabava":9,"ekonomija":2,"hronika":13,"ostalo":2}
-- [sport] Totalna ludnica u Ligi šampiona, "pljušte" golovi na sve strane: Lajpcig opet šokirao Siti, Komo ponižava Lans, Arsenal dominira
-- [sport] Partizan i Zvezda sve dalje od licence Evrolige, večiti moraju da čekaju
-- [svet] Predsednik Izraela zadao udarac Netanjahu: Priznao izborne rezultate i krenuo u konsultacije o formiranju nove vlade
-- [drustvo] Grujić: Direktor Jovine gimnazije ponovo suspendovao profesore
-- [svet] Da li je ovo sledeći predsednik Amerike? Ima 39 godina, Obama ga poredi sa Kenedijem, a upravo je pobedio Trampovog kandidata
-- [zivot] Četiri radna dana, a plata ista: Studentska lista predstavila predloge koji bi mogli da promene život radnika u Srbiji
+Categories: {"zabava":6,"ekonomija":6,"drustvo":5,"svet":7,"zivot":5,"hronika":9,"kultura":2,"sport":5,"politika":4,"ostalo":1}
+- [zabava] Zvezda serije "Breaking Bad" razvodi se nakon 25 godina braka
+- [ekonomija] Broj ponuda u javnim nabavkama za Expo manji od onoga što tvrde u preduzeću Ekspo 2027
+- [drustvo] Predsednik Saveta Medicinskog fakulteta u Novom Sadu podneo ostavku
+- [svet] Ex ambasador u EU: Blokada Crne Gore mogla bi da ugasi proces proširenja EU na Zapadni Balkan
+- [ekonomija] Direktor Srbijavoda Goran Puzović 14 godina na funkciji, a spisak nekretnina nepregledan: Stanovi, zemljište, vikendica na Kopaoniku, čamac…
+- [drustvo] Grupa roditelja dece iz Jovine gimnazije sastala se s Dejanom Vukom Stankoviće, traže hitnu smenu Radivoja P. Stojkovića
 
 Uncategorized sample (for tuning):
-- Dnevnik - Cela emisija - 3.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-31120262/ | tags: ["Emisije","dnevnik cela emisija"]
-- Među nama - Cela emisija - 3.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-3112026/ | tags: ["Emisije","među nama cela emisija"]
+- Mentalno razgibavanje: Nema bežanja | https://nova.rs/emisije/mentalno-razgibavanje-nema-bezanja/ | tags: ["Emisije","mentalno razgibavanje cela emisija"]
 
 ## B92
-Categories: {"sport":12,"svet":15,"ekonomija":10,"zivot":18,"zabava":6,"zdravlje":2,"kultura":3,"ostalo":3,"politika":3,"tehnologija":3,"region":1,"hronika":3,"drustvo":1}
-- [sport] LŠ: Komo vodi 8:1?! Haland spasilac Sitija!
-- [sport] Zvezda pregazila rivala u Evroligi!
-- [svet] Posle poraza republikanaca stiže poruka iz Izraela: Ajzenkot najavio velike promene
-- [sport] Obradović nadigrao Spanulisa – Balkan bolji od Bosne
-- [svet] Haos na istoku Evrope: 40 mrtvih u Ukrajini; Poljska strahuje od diverzije; Novi udari na Odesu FOTO/VIDEO
-- [svet] Veliki preokret u Vašingtonu: Demokrate najavile dramatičnu promenu kursa
+Categories: {"svet":13,"politika":6,"sport":12,"ekonomija":11,"zivot":17,"drustvo":2,"tehnologija":3,"ostalo":1,"hronika":5,"zdravlje":4,"kultura":3,"zabava":3}
+- [svet] Upozorenje političarima u Evropi, Izraelu i SAD: "Ulice su pune naših pešadijca – spremni su da vas kazne"
+- [politika] Danas sednica Skupštine AP Vojvodine, glavna tačka rebalans pokrajinskog budžeta
+- [sport] Luka Dončić prestigao Majkla Džordana!
+- [svet] Najviši stepen uzbune; Biće meta baraža raketa za 48 do 72 sata FOTO/VIDEO
+- [ekonomija] MOL dobio dodatnu licencu OFAC-a za preuzimanje udela u NIS-u: Ovo su detalji
+- [politika] Vučić objavio video sa psima koje je udomio: "Ljubav. Kako smo se zavoleli za kratko vreme" VIDEO
 
 Uncategorized sample (for tuning):
-- Džejmi Foks dobio treće dete u 59. godini FOTO | https://superzena.b92.net/dom-i-porodica/roditeljstvo/282270/dzejmi-foks-dobio-trece-dete-u-59-godini/vest | tags: ["Najnovije"]
-- Novine: "Demokratski 'cunami' preplavio Kongres"; "Kontrolori znali kako posluju, ali nisu pisali?" FOTO | https://www.b92.net/info/razno/282259/novine-demokratski-cunami-preplavio-kongres-kontrolori-znali-kako-posluju-ali-nisu-pisali-foto/vest | tags: ["Info"]
-- Za svadbu, ali i za svaki dan – ovo je najmodernija frizura koja je osvojila žene FOTO/VIDEO | https://superzena.b92.net/lepa-i-zdrava/lepota-zene/282241/najmodernija-frizura-koja-je-osvojila-zene-nosi-je-tamara-kalinic/vest | tags: []
+- Verdict in case against Padinska Skela Penitentiary employees to be delivered tomorrow | https://www.b92.net/english/society/282386/verdict-in-case-against-padinska-skela-penitentiary-employees-to-be-delivered-tomorrow/vest | tags: ["Najnovije"]
 
 ## Blic
-Categories: {"svet":12,"zabava":22,"ekonomija":5,"hronika":7,"drustvo":5,"politika":6,"zivot":7,"zdravlje":2,"kultura":3,"tehnologija":1}
-- [svet] "PRIPREMAMO SE" Zelenski razgovarao sa Vitkofom i Kušnerom uoči trilateralnog sastanka u Abu Dabiju
-- [zabava] "DOKTOR MI JE REKAO DA JE HALIDOV ŽIVOT JEFTINO PRODAT" Pevač emotivno o smrti Bešlića: "Moglo je da se otkloni na vreme"
-- [ekonomija] Penzionere u Nemačkoj čeka novo povećanje: Ovo je procenat rasta penzija za 2027. godinu
-- [zabava] "NAPADAJU ME PORODIČNE ŽENE" Seka Aleksić priznala: "Kad vidim Danijelu Dimitrovsku pomislim - SAMO DA NE STANE PORED MENE!"
-- [zabava] "IMAM TRI VAŽNA SASTANKA" Željko Mitrović se oglasio nakon što je podelio otkaze: Otišao iz Srbije i otkrio gde se nalazi
-- [hronika] POTUKLI SE U CENTRU PROKUPLJA, PA POTEGLI ORUŽJE Podignuta optužnica protiv dvojice muškaraca: Evo kolika im robija preti
+Categories: {"zabava":12,"svet":7,"hronika":9,"ekonomija":19,"kultura":4,"zivot":5,"politika":6,"drustvo":7,"tehnologija":1}
+- [zabava] "DA SE JA POJAVIM ZABORAVIO BI SVE U 3 SEKUNDE" Sofija Janićijević o poruci koju je Milica poslala Terzi: "Jako dirljivo"
+- [zabava] (VIDEO) "Na ulici me zovu Ljubinka" Tijana Marković o POSLEDNJEM SNIMANJU "RADIO MILEVE", životu u Švajcarskoj i sinu: "Ne razlikuje mamu u kući i na TV-u"
+- [svet] PANIKA NA NEBU ŠIROM EVROPE! Nekoliko aviona HITNO PRIZEMLJENO, tri u naš komšiluk: "Postavljene su BOMBA"
+- [hronika] ZAPOSLENIMA U ZATVORU PRETI ROBIJA Sutra presuda zbog smrti Stanimira u "Padinskoj Skeli": Radnici optuženi da su ignorisali JEZIVE POVREDE zlostavljanog čoveka
+- [ekonomija] MOL dobio dodatnu licencu OFAC-a za preuzimanje udela u NIS-u! Ovo su detalji
+- [kultura] Mreže se usijale: Legendarni kantautor u neobičnom izdanju posetio papu (FOTO)
 
 ## Politika
-Categories: {"hronika":4,"svet":8,"politika":1,"region":1,"ostalo":3,"kultura":1,"sport":2}
-- [hronika] Pucnjava u Berlinu: jedna osoba teško ranjena, napadači u bekstvu
-- [svet] Rusija uslovljava ponudu sistema S-500 kupovinom još pet sistema S-400
-- [politika] Šoškić: Vlada za mesec dana, o premijerskoj funkciji bih razmislio
-- [region] Siljanovska Davkova: Severna Makedonija kontinuirano ulaže u modernizaciju vojske
-- [svet] Vučić: Zabrinut sam za nacionalne interese Srbije, obećanja Briselu nisu data uzalud
-- [ostalo] Vicepremijer Bavarske pronađen mrtav u hotelu: važio je za oštrog kritičara odluka EU
+Categories: {"politika":2,"ostalo":7,"sport":3,"svet":4,"zivot":1,"hronika":2,"zdravlje":1}
+- [politika] Predsednik Saveta Medicinskog fakulteta u Novom Sadu podneo ostavku
+- [ostalo] Kopman: Još se razmatra isplata tranši Srbiji
+- [sport] Kristijano Ronaldo završio reprezentativnu karijeru posle 23 godine
+- [ostalo] Globalni internet dočekuje milijarde novih korisnika, prevaranti razvijaju nove strategije
+- [sport] Borovčanin je na meni prvi pokazao „junaštvo”
+- [politika] Vučić: Stranci pripremaju podelu BIA na tri dela, Srbiju guraju ka NATO-u
 
 Uncategorized sample (for tuning):
-- Vicepremijer Bavarske pronađen mrtav u hotelu: važio je za oštrog kritičara odluka EU | https://www.politika.rs/scc/clanak/799841/vicepremijer-bavarske-pronaden-mrtav-u-hotelu-vazio-je-za-ostrog-kriticara-odluka-eu | tags: []
-- Na dnu Sredozemnog mora pronađen najstariji brodolom na svetu | https://www.politika.rs/scc/clanak/799835/na-dnu-sredozemnog-mora-pronaden-najstariji-brodolom-na-svetu | tags: []
-- Pistorijus: Svi hoće evropsku odbranu, ali oružje kupuju kod kuće | https://www.politika.rs/scc/clanak/799830/pistorijus-svi-hoce-evropsku-odbranu-ali-oruzje-kupuju-kod-kuce | tags: []
+- Kopman: Još se razmatra isplata tranši Srbiji | https://www.politika.rs/scc/clanak/799965/kopman-jos-se-razmatra-isplata-transi-srbiji | tags: []
+- Globalni internet dočekuje milijarde novih korisnika, prevaranti razvijaju nove strategije | https://www.politika.rs/scc/clanak/799963/globalni-internet-docekuje-milijarde-novih-korisnika-prevaranti-razvijaju-nove-strategije | tags: []
+- MOL dobio zeleno svetlo SAD za transakcije u vezi sa preuzimanjem udela u NIS-u | https://www.politika.rs/scc/clanak/799959/mol-dobio-zeleno-svetlo-sad-za-transakcije-u-vezi-sa-preuzimanjem-udela-u-nis-u | tags: []
+- Odobreni radovi na rekonstrukciji pruge Niš – Dimitrovgrad | https://www.politika.rs/scc/clanak/799958/odobreni-radovi-na-rekonstrukciji-pruge-nis-dimitrovgrad | tags: []
+- Ko gradi data centre, moraće da gradi i elektrane | https://www.politika.rs/scc/clanak/799955/ko-gradi-data-centre-morace-da-gradi-i-elektrane | tags: []
+- „Nintendo”: manje prodatih konzola, ali operativni profit raste | https://www.politika.rs/scc/clanak/799954/nintendo-manje-prodatih-konzola-ali-operativni-profit-raste | tags: []
+- Restoran iz malog španskog sela proglašen za najbolji na svetu | https://www.politika.rs/scc/clanak/799950/restoran-iz-malog-spanskog-sela-proglasen-za-najbolji-na-svetu | tags: []
 
 ## RTS
-Categories: {"svet":1,"hronika":6,"politika":5,"drustvo":4,"ekonomija":3,"zivot":1}
-- [svet] Vašington posle izbora: plavi talas demokrata i preispitivanje trampizma
-- [hronika] Uhapšeni komandant SAJ-a i više pripadnika JZO, osumnjičeni za zlostavljanje studenata u garaži Vlade
-- [politika] Oko: Brisel očekuje zaokret, ali Beograd i dalje deli pitanje Kosova i Metohije od reformi
-- [drustvo] Protest zbog smrti bebe u bolnici u Novom Pazaru, traže se ostavke i nezavisna istraga
-- [ekonomija] NBS upozorava na lažne poruke klijentima Alta banke, penzije privremeno isplaćuje Poštanska štedionica
-- [hronika] BIA: Tvrdnje o navodno protivpravnom postupanju lažne, tendenciozne i zlonamerne
+Categories: {"svet":2,"ekonomija":4,"hronika":6,"drustvo":6,"politika":1,"zivot":1}
+- [svet] Ukrajinski dronovi napali rafineriju "Rosnjefta" u Rjazanju; Medvedev: Nove sankcije Rusiji skupo će koštati Amerikance
+- [ekonomija] MOL dobio dodatnu licencu OFAK-a za pripremne transakcije u vezi sa preuzimanjem NIS-a
+- [hronika] Uhapšeni pokrajinski sekretar i predsednica komisije zbog sumnje da su oštetili budžet Vojvodine za 130,9 miliona dinara
+- [drustvo] Nove suspenzije u Jovinoj gimnaziji, roditelji kod ministra prosvete
+- [drustvo] Narodna banka Srbije poziva studente na praksu
+- [politika] Zečević za RTS: EK označila Srbiju kao "zarobljenu državu“, pobeda Studentske liste uneta u izveštaj u poslednjem trenutku
