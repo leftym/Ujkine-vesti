@@ -1,6 +1,6 @@
 # Outlet icons
 
-Run: 2026-11-05T11:15:27.493Z
+Run: 2026-11-05T21:49:21.359Z
 
 ## N1  (https://n1info.rs)
 - OK  200 image/png 485B 16x16 | icon sizes=16x16 | https://n1info.rs/media/images/n1_fav_icon.2e16d0ba.fill-16x16.png
@@ -25,16 +25,16 @@ Run: 2026-11-05T11:15:27.493Z
 - OK  200 image/svg+xml 2790B svg | apple-touch-icon sizes=120x120 | https://nova.rs/media/images/2025/11/1763720629_16.2e16d0ba.fill-120x120.svg
 - OK  200 image/svg+xml 2790B svg | icon sizes=192x192 | https://nova.rs/media/images/2025/11/1763720629_16.2e16d0ba.fill-192x192.svg
 - bad 404 text/html 165253B  | guess /apple-touch-icon.png | https://nova.rs/apple-touch-icon.png
-- bad 404 text/html 555B  | guess /favicon.ico | https://nova.rs/favicon.ico
+- bad 404 text/html 153B  | guess /favicon.ico | https://nova.rs/favicon.ico
 - bad 404 text/html 165253B  | guess /favicon.png | https://nova.rs/favicon.png
 
 ## B92  (https://www.b92.net)
 - OK  200 image/png 10755B 144x144 | apple-touch-icon sizes=- | https://www.b92.net/files/b92/img/icons/apple-icon-144x144.png
 - OK  200 image/png 13159B 192x192 | icon sizes=- | https://www.b92.net/files/b92/img/icons/android-icon-192x192.png
 - OK  200 image/x-icon 15406B ico[16x16,32x32,48x48] | icon sizes=- | https://www.b92.net/files/b92/favicon.ico
-- bad 404 text/html 251780B  | guess /apple-touch-icon.png | https://www.b92.net/apple-touch-icon.png
+- bad 404 text/html 251761B  | guess /apple-touch-icon.png | https://www.b92.net/apple-touch-icon.png
 - OK  200 image/x-icon 15406B ico[16x16,32x32,48x48] | guess /favicon.ico | https://www.b92.net/favicon.ico
-- bad 404 text/html 251744B  | guess /favicon.png | https://www.b92.net/favicon.png
+- bad 404 text/html 251725B  | guess /favicon.png | https://www.b92.net/favicon.png
 
 ## Blic  (https://www.blic.rs)
 - OK  200 image/png 12724B 180x180 | apple-touch-icon sizes=180x180 | https://ocdn.eu/ucs/static/blicperun/3655e5f35801ace2228b7928bf7c83e7/v3/img/favicons/apple-touch-icon.png
@@ -66,5 +66,5 @@ Run: 2026-11-05T11:15:27.493Z
 homepage failed: redirect not allowed
 
 - bad 404 text/html 4079B  | guess /apple-touch-icon.png | https://www.rts.rs/apple-touch-icon.png
-- bad 404 text/html 4079B  | guess /favicon.ico | https://www.rts.rs/favicon.ico
+- bad ERR fetch failed | guess /favicon.ico | https://www.rts.rs/favicon.ico
 - bad 404 text/html 4079B  | guess /favicon.png | https://www.rts.rs/favicon.png
