@@ -1,83 +1,92 @@
 # Feed check
 
-Run: 2026-11-06T11:13:03.390Z
+Run: 2026-11-06T21:22:24.548Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 48 | https://n1info.rs/feed/ | 48 | 4 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 1 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +77) | 76 | 0 |
+| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 1 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +76) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
-| Politika | **NO** | 0 | - | 0 | 0 |
+| Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"hronika":9,"ekonomija":11,"ostalo":6,"region":2,"kultura":1,"zivot":8,"svet":5,"politika":4,"drustvo":2}
-- [hronika] VJT u Kraljevu formiralo predmet u slučaju vođenja paralelnih biračkih spiskova u Kostolcu
-- [ekonomija] MAT: Privredni rast Srbije u prvih devet meseci ove godine oko 3,6 odsto
-- [ostalo / AD:self] Gledajte UŽIVO N1 Studio live: Hajde grade
-- [region] Izrečena maksimalna kazna od 45 godina zatvora za ubicu Aldine Jahić u Mostaru
-- [hronika / AD:self] Dan uživo: Ka policiji u službi građana
-- [kultura] Fondacija "Mira Banjac" uspostavlja dve godišnje nagrade
-  - flagged (self): Gledajte UŽIVO N1 Studio live: Hajde grade https://n1info.rs/najave-emisija/n1-studio-live-hajde-grade/
-  - flagged (self): Dan uživo: Ka policiji u službi građana https://n1info.rs/najave-emisija/dan-uzivo-ka-policiji-u-sluzbi-gradjana/
-  - flagged (self): Gosti "Utiska nedelje": Ivan Ninić, Vesna Mališić, Dejan Šoškić https://n1info.rs/najave-emisija/utisak-nedelje-ivan-ninic-vesna-malisic-dejan-soskic/
-  - flagged (self): Novi dan: Šta je vlast ostavila iza sebe? https://n1info.rs/najave-emisija/novi-dan/
+Categories: {"zivot":3,"ekonomija":6,"hronika":8,"ostalo":9,"svet":12,"region":1,"politika":3,"drustvo":4}
+- [zivot] „Niste ružni, samo vam je nizak feritin": Da li je „feritinsko lice“ stvarna pojava?
+- [ekonomija] Stanovnici Batajnice više od 12 sati bili bez struje
+- [hronika] Prevrnuo se kamion sa jabukama na auto-putu Miloš Veliki: Saobraćaj se odvija voznom saobraćajnom trakom
+- [ostalo] RHMZ dobio novog v.d. direktora, nakon što je Jugoslav Nikolić razrešen sa te funkcije
+- [svet] Tramp menja šeficu osoblja Bele kuće - umesto čelične Suzi Vils postavio Stivena Milera
+- [zivot] Policija sumnja da je Rasel Brend seksualno napao bar deset drugih žena
+  - flagged (self): Gledajte UŽIVO Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
 
 Uncategorized sample (for tuning):
-- Gledajte UŽIVO N1 Studio live: Hajde grade | https://n1info.rs/najave-emisija/n1-studio-live-hajde-grade/ | tags: ["Najave emisija","najave emisija"]
-- Gosti "Utiska nedelje": Ivan Ninić, Vesna Mališić, Dejan Šoškić | https://n1info.rs/najave-emisija/utisak-nedelje-ivan-ninic-vesna-malisic-dejan-soskic/ | tags: ["Najave emisija","najava emisije","utisak nedelje"]
-- CLS: Odustalo se od uvođenja gradskih linija do Expo, Beograđani neće plaćati prazne autobuse | https://n1info.rs/vesti/cls-odustalo-se-od-linija-gradskog-prevoza-do-kompleksa-ekspo/ | tags: ["Vesti","gradski prevoz","gsp","ekspo","2027 expo","strela"]
-- Objavljen konkurs za direktora PIO fonda, Relji Ognjenoviću ističe mandat | https://n1info.rs/vesti/objavljen-konkurs-za-direktora-pio-fonda-umesto-ognjenovica/ | tags: ["Vesti","konkurs","pio fond","direktor","relja ognjenović"]
-- Vasiliju je potrebna pomoć za transplantaciju koštane srži i lečenje | https://n1info.rs/vesti/vasiliju-je-potrebna-pomoc-za-transplantaciju-kostane-srzi-i-lecenje/ | tags: ["Vesti","humanitarna akcija"]
-- Novi dan: Šta je vlast ostavila iza sebe? | https://n1info.rs/najave-emisija/novi-dan/ | tags: ["Najave emisija","najave emisija","novi dan"]
+- RHMZ dobio novog v.d. direktora, nakon što je Jugoslav Nikolić razrešen sa te funkcije | https://n1info.rs/vesti/rhmz-dobio-novog-vd-direktora-nakon-sto-je-jugoslav-nikolic-razresen-sa-te-funkcije/ | tags: ["Vesti","jugoslav nikolić","rhmz","republički hidrometeorološki zavod"]
+- Osnovan Republički centar za pedijatrijsku srčanu slabost na Institutu za majku i dete | https://n1info.rs/vesti/osnovan-republicki-centar-za-pedijatrijsku-srcanu-slabost-na-institutu-za-majku-i-dete/ | tags: ["Vesti","republički centar za pedijatrijsku srčanu slabost kod dece","institut za majku i dete"]
+- N1 Direktno (5.11.2026) | https://n1info.rs/video/n1-direktno-5112026/ | tags: ["Video","miodrag majić","milenko zarić","emisija","n1 direktno","video"]
+- Dnevnik u 19 (5.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-5112026/ | tags: ["Dnevnik","dnevnik u 19","video","vesti","dnevnik"]
+- Pokrajinski organi o navodima o uništavanju dokumenata: Neovlašćeno snimanje spremačica dok bacaju smeće | https://n1info.rs/vesti/pokrajinski-organi-unistavanje-dokumenata-snimanje-cistacica/ | tags: ["Vesti","snimanje","uništavanje dokumenata","ap vojvodina"]
+- Zorja o pesmi "Hajde grade" (VIDEO) | https://n1info.rs/video/zorja-o-pesmi-hajde-grade-video/ | tags: ["Video","hajde grade","video","n1 studio live","zorja","zorja pajić"]
+- Gledajte UŽIVO Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
+- Putevi Srbije: Najopterećeniji putni pravci prohodni i bez snega, moguća magla | https://n1info.rs/vesti/putevi-srbije-najoptereceniji-putni-pravci-prohodni-i-bez-snega-moguca-magla/ | tags: ["Vesti","putevi srbije"]
 
 ## Nova.rs
-Categories: {"drustvo":7,"politika":4,"sport":8,"zivot":2,"zabava":8,"hronika":7,"kultura":2,"ekonomija":6,"svet":5,"ostalo":1}
-- [drustvo] Zvučni zid uznemirio Kragujevčane
-- [politika] Bravo: SNS planira da u Novom Sadu zaposli 1.290 ljudi
-- [sport] Jovanović objavio spisak, evo ko će igrati protiv Srbije
-- [zivot] "Stručnjak sam za automobile – ovo je pravi razlog zašto električni automobili imaju veće gume"
-- [zabava] Predrag Sarapa se javno izvinio RTS-u nakon skandalozne uvrede: Evo šta im je poručio
-- [hronika] Doktorka KPZ Padinska Skela i vođa smene osuđeni na zatvorske kazne zbog smrti zatvorenika, komandiri oslobođeni
-  - flagged (sponsored): Gorki List na velikoj svečanosti dodelio Nagradu za ljudskost „Sve je u nama“: petoro izuzetnih ljudi dobilo priznanja za vrednosti koje inspirišu https://nova.rs/vesti/biznis/gorki-list-na-velikoj-svecanosti-dodelio-nagradu-za-ljudskost-sve-je-u-nama-petoro-izuzetnih-ljudi-dobilo-priznanja-za-vrednosti-koje-inspirisu/
+Categories: {"hronika":9,"sport":16,"drustvo":3,"svet":5,"zabava":9,"ekonomija":4,"ostalo":2,"politika":2}
+- [hronika] "Kad je ušla policija, sami su pokazali cigarete davidov u magacinu i podrumu": Šta se dešavalo iza zidina Zabele u kojoj se nalazio SNS kol centar zbog čega je uhapšen upravnik
+- [sport] Partizan odbio novi nalet Makabija i opet se odlepio, i Marinković počeo da pogađa
+- [drustvo] RHMZ dobio novog v.d. direktora, nakon što je Jugoslav Nikolić razrešen sa te funkcije
+- [hronika] Prevrnuo se kamion sa jabukama na auto-putu Miloš Veliki: Saobraćaj se odvija voznom saobraćajnom trakom
+- [sport] Moćna Zvezda srušila prvaka Evrope - Nestvaran meč i velika pobeda u Atini, blistao Nvora ali junaci su Koloko i Džons
+- [svet] Tramp menja šeficu osoblja Bele kuće - umesto čelične Suzi Vils postavio Stivena Milera
 
 Uncategorized sample (for tuning):
-- Mentalno razgibavanje: Ne brukaj se više! | https://nova.rs/emisije/mentalno-razgibavanje-ne-brukaj-se-vise/ | tags: ["Emisije","mentalno razgibavanje cela emisija"]
+- Dnevnik - Cela emisija - 5.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-5112026/ | tags: ["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 5.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-5112026/ | tags: ["Emisije","među nama cela emisija"]
 
 ## B92
-Categories: {"svet":17,"zivot":18,"sport":13,"zabava":2,"ekonomija":9,"ostalo":3,"hronika":3,"kultura":2,"tehnologija":4,"zdravlje":3,"drustvo":2,"region":1,"politika":3}
-- [svet] Opšta pometnja – nakon aviona, dojave o bombama počele da stižu i u medijske kuće
-- [zivot] Ronioci se potukli 18 metara pod morem: Snimak bizarnog incidenta šokirao svet VIDEO
-- [sport] Partizan i Crvena zvezda i dalje imaju šanse za status franšize u Evroligi
-- [svet] Novo razaranje uskoro počinje? Otkriven mogući datum
-- [svet] Jasno i glasno: "Ne povlačim se"
-- [zabava] Ups, gole grudi za nju nisu nikakav skandal: Dua Lipa u bombastičnom izdanju FOTO
+Categories: {"svet":17,"sport":12,"zdravlje":5,"zivot":14,"zabava":5,"ekonomija":11,"kultura":4,"politika":4,"tehnologija":2,"ostalo":2,"drustvo":2,"hronika":2}
+- [svet] Kijev tone u mrak, a Zelenski i Kličko međusobno ratuju; "Ovo postaje ozbiljno"
+- [sport] Odlučujuća četvrtina: Partizan ubedljivo vodi
+- [sport] Zvezda srušila prvaka Evrope!
+- [sport] Džons "ohladio" Atinu – Zvezda se kockala, ali dobila Olimpijakos!
+- [zdravlje] Novi soj korone se širi? Brže prodire u ćelije i izbegava imuni odgovor
+- [zivot] Ocena pre ocene: Lica sudija su rekla sve!
 
 Uncategorized sample (for tuning):
-- Detention ordered for nine Interior Ministry Officers suspected of abuse | https://www.b92.net/english/crime/282707/detention-ordered-for-nine-interior-ministry-officers-suspected-of-abuse/vest | tags: ["Najnovije"]
-- Oprez na Milošu Velikom: Zbog ulegnuća na mostu između Pakovraća i Lučana radovi | https://www.b92.net/lokal/cacak/servisne-informacije/282672/oprez-na-milosu-velikom-zbog-ulegnuca-na-mostu-izmedju-pakovraca-i-lucana-radovi/vest | tags: []
-- Sedam rečenica koje deci pomažu da izrastu u srećne i samopouzdane ljude | https://superzena.b92.net/dom-i-porodica/roditeljstvo/282648/7-recenica-roditelja-da-deca-izrastu-u-srecne-i-samopouzdane-ljude/vest | tags: []
+- Jedna mala promena frizure podmladiće vaš izgled – a ne morate da idete kod frizera VIDEO | https://superzena.b92.net/lepa-i-zdrava/lepota-zene/282827/trik-kako-da-pomocu-razdeljka-sa-strane-podmladite-izgled/vest | tags: []
+- Da li treba orezivati hibiskus zimi? Evo šta kažu stručnjaci | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/282839/da-li-treba-orezivati-hibiskus-zimi/vest | tags: []
 
 ## Blic
-Categories: {"zivot":7,"drustvo":9,"ekonomija":19,"svet":8,"zabava":14,"hronika":5,"politika":4,"kultura":3,"zdravlje":1}
-- [zivot] Kineski naučnici napravili četkicu za zube sprečava nastanak kamenca: Evo kako zapravo funkcioniše
-- [drustvo] MISTERIJA! Građani Šumadije masovno prijavljuju da su čuli JAK ZVUK EKSPLOZIJE: Oglasili se iz Uprave za vanredne situacije
-- [ekonomija] Učionica budućnosti u Valjevskoj gimnaziji: Otvoren 53. Mejkers lab u Srbiji, đaci dobili prostor za eksperimente, robotiku i programiranje
-- [svet] AVION "VIZ ERA" HITNO PREUSMEREN U VENECIJU! Dojava o bombi upućena telefonom: Pretnje stigle i za više aviona u Češkoj
-- [zivot] "VREME ĆE SE POTPUNO PROMENITI!" Poznati meteorolog objavio prognozu za novembar: Jak minus, pa iznenadna promena, a evo kada će SNEG
-- [zabava] (FOTO) IMANJE PLATILI 30.000 EVRA, A OVAKO IDU U OBILAZAK Veljko i Bogdana seli u stari auto, ona na licu ni trunku šminke
+Categories: {"zabava":25,"svet":7,"drustvo":2,"politika":5,"hronika":10,"zivot":7,"ekonomija":8,"zdravlje":2,"kultura":4}
+- [zabava] "ZALJUBLJENO SAM GLEDALA U TEBE" Marija Martić oduševila žiri! Ne prestaju da je hvale, Relja poručio: "Na bini mi je prva ljubav"
+- [svet] TALAS TERORA NA EVROPSKOM NEBU! Nižu se misteriozni preteći mejlovi, i srpska vojska digla lovce: Iza haosa stoji ozloglašena "MUŠKA DRŽAVA"?!
+- [drustvo] USKORO NOV SISTEM NAPLATE PUTARINE Nema više rampi, sve ide preko kamera: Saobraćajne novine u komšiluku, evo kako će to funkcionisati za vozače iz Srbije
+- [svet] "NATO I EVROPSKA UNIJA IMAJU SVOJE ULOGE" Kalas: Ukrajina mora da bude deo evropske bezbednosne arhitekture
+- [zabava] "TI SI JAKA!" U jeku skandala Mine Kostić sa krađom iz butika, Aca Kos podelio SNIMAK SA NJOM iz stana u kom on živi sa Čedom Jovanovićem
+- [politika] (VIDEO) "EVO NAS U ĆACI BARU, VUČKO SLAVI ŠTO MU GASE TELEVIZIJU" Vučić objavio snimak s Vučićevićem: "Svi znamo kako će ovo da se završi"
 
 ## Politika
-FAILED: no working feed
-Tried: https://www.politika.rs/rss (HTTP_403) | https://www.politika.rs/rss/ (HTTP_403) | https://www.politika.rs (HTTP_403)
-Categories: {}
+Categories: {"ostalo":5,"svet":8,"politika":2,"tehnologija":1,"ekonomija":2,"hronika":1,"drustvo":1}
+- [ostalo] SZO pažljivo prati širenje novog soja kovida-19
+- [svet] Dmitrijev pozvao Evropu da ne brine zbog Kušnerovih izjava o pregovorima sa Rusijom
+- [politika] Ana Brnabić odgovorila: Vratićemo slobodu u Srbiju
+- [svet] Zelenski: Operacija protiv ruske industrije prerade nafte se nastavlja
+- [svet] Rusija za nekoliko nedelja izgradila novu bazu za lansiranje dronova „geranj-5”
+- [svet] Netanjahu sa šefom Mosada planirao operaciju u Iranu uoči izbora u Izraelu
+
+Uncategorized sample (for tuning):
+- SZO pažljivo prati širenje novog soja kovida-19 | https://www.politika.rs/scc/clanak/800524/szo-pazljivo-prati-sirenje-novog-soja-kovida-19 | tags: []
+- U Danskoj uskoro odluka da li je termin „neevropsko poreklo” rasna diskriminacija | https://www.politika.rs/scc/clanak/800514/u-danskoj-uskoro-odluka-da-li-je-termin-neevropsko-poreklo-rasna-diskriminacija | tags: []
+- Cena nafte Brent pala ispod 98 dolara za barel | https://www.politika.rs/scc/clanak/800509/cena-nafte-brent-pala-ispod-98-dolara-za-barel | tags: []
+- Napadali dostavljače i otimali novac i hranu | https://www.politika.rs/scc/clanak/800506/napadali-dostavljace-i-otimali-novac-i-hranu | tags: []
+- Sunčano, ali hladno, od utorka porast temperature | https://www.politika.rs/scc/clanak/800505/suncano-ali-hladno-od-utorka-porast-temperature | tags: []
 
 ## RTS
-Categories: {"drustvo":4,"hronika":4,"svet":3,"ekonomija":7,"zivot":2}
-- [drustvo] REM pokrenuo novi postupak protiv "Informera"
-- [hronika] Presuda za smrt zatvorenika u Padinskoj Skeli, doktorka i vođa smene osuđeni za nesavestan rad
-- [hronika] Osam policajaca uhapšeno zbog smrti Dalibora Dragijevića u policijskoj stanici u Boru
-- [svet] Tramp o mirovnom planu za Ukrajinu: Mogao bi da obuhvati celu Evropu, svi će biti oduševljeni
-- [ekonomija] NBS: Svakodnevno nadziremo rad Poštanske štedionice, finansijski sistem stabilan
-- [ekonomija] Vasić: Slučaj Alta banke poljuljao poverenje građana, ali nema razloga za paniku
+Categories: {"drustvo":3,"region":1,"politika":5,"ekonomija":2,"svet":2,"zivot":1,"hronika":6}
+- [drustvo] Poslednji osuđeni rukovodilac „Namenske“ pomilovan – roditelji stradalog radnika govore o devet godina borbe za pravdu
+- [region] Severna Makedonija prodaje Alta banku, šest zainteresovanih
+- [politika] RIK: Na izborima za nacionalne savete nacionalnih manjina 481.785 birača
+- [ekonomija] Janković za RTS: Nema razloga za poređenje Alta banke i Poštanske štedionice, novca za osigurane depozite ima dovoljno
+- [svet] Hutski blickrig protiv "Jemenske zore": Huti ispostavili račun Rijadu - desetine milijardi dolara za kraj rata
+- [politika] Studentska lista pozvala Dolovac i Nenadića da ispitaju navode o vezama Vučića sa kriminalnim grupama
