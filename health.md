@@ -1,103 +1,97 @@
 # Vesti health report
 
-Run: 2026-11-06T11:13:34.916Z  |  items: 288  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-06T21:23:00.239Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **MED** [B92] Feed links point to another website: 3 links to other websites dropped. The outlet may have moved domains (lib/sources.js).
-2. **MED** [Politika] 60% of stories are uncategorized ("Ostalo"). Common words in them: talas(1), dojava(1), bombama(1), potresa(1), evropske(1), aerodrome(1), najmanje(1), aviona(1). Add section names / keyword stems in lib/classify.js.
-3. **LOW** [N1] Possible ads NOT flagged: "AP: Žestoka rasprodaja akcija kompanija povezanih s veštačkom inteligencijom uzdrmala Volstrit"
-4. **LOW** [B92] Possible ads NOT flagged: "Ova čudesna banja oduševljava turiste: Izgleda kao raj na zemlji, a kupanje je potpuno besplatno FOTO"
+1. **MED** [B92] Feed links point to another website: 6 links to other websites dropped. The outlet may have moved domains (lib/sources.js).
+2. **LOW** [Politika] Possible ads NOT flagged: "Tramp: Pregovaramo sa Iranom, situacija se razvija povoljno za SAD"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 48 | 0.0h | 100% | 13% | 4 |
-| Nova.rs | yes | 50 | 0.0h | 100% | 2% | 1 |
-| B92 | yes | 80 | 0.0h | 95% | 4% | 0 |
+| N1 | yes | 46 | 0.0h | 100% | 20% | 1 |
+| Nova.rs | yes | 50 | 0.1h | 100% | 4% | 0 |
+| B92 | yes | 80 | 0.0h | 95% | 3% | 0 |
 | Blic | yes | 70 | 0.0h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.0h | 100% | 60% | 0 |
-| RTS | yes | 20 | 0.1h | 100% | 0% | 0 |
+| Politika | yes | 20 | 0.2h | 100% | 25% | 0 |
+| RTS | yes | 20 | 1.0h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 6 outlets, score 69] Osam policajaca uhapšeno zbog smrti Dalibora Dragijevića u policijskoj stanici u Boru
-   - also (b92): Uhapšeno osam policajaca; Sumnja se da su tukli, zlostavljali i mučili brata optuženog za ubistvo Danke Ilić
-   - also (blic): OSAM POLICAJACA UHAPŠENO ZBOG SMRTI DALIBORA DRAGIJEVIĆA Brat optuženog za ubistvo Danke Ilić preminuo tokom policijskog zadržavanja: Ova krivična dela se stavljaju osumnjičenima na teret
-   - also (politika): Uhapšeno osam policajaca zbog smrti Dalibora Dragijevića u stanici u Boru
-   - also (n1): Osmorica pripadnika UKP uhapšena zbog slučaja smrti Dalibora Dragijevića u policijskoj stanici
-   - also (nova): SAZNAJEMO Osmorica policajaca uhapšena zbog smrti Dalibora Dragijevića u Policijskoj stanici u Boru
-2. [multi, 5 outlets, score 58.5] Presuda za smrt zatvorenika u Padinskoj Skeli, doktorka i vođa smene osuđeni za nesavestan rad
-   - also (politika): Lekarka i vođa smene osuđeni na zatvor zbog smrti zatvorenika
-   - also (nova): Doktorka KPZ Padinska Skela i vođa smene osuđeni na zatvorske kazne zbog smrti zatvorenika, komandiri oslobođeni
-   - also (b92): Doneta presuda u slučaju ubistva u zatvoru u Padinskoj skeli: Osuđeni doktorka i vođa smene
-   - also (blic): DONETA ODLUKA U SLUČAJU UBISTVA U ZATVORU Doktorka i vođa smene idu na ROBIJU, trojica zaposlenih OSLOBOĐENI!
-3. [multi, 5 outlets, score 57.3] NBS: Svakodnevno nadziremo rad Poštanske štedionice, finansijski sistem stabilan
-   - also (b92): Veliki redovi ispred banaka; Hitno se oglasila NBS: "Kurs dinara stabilan, Poštanska posluje uredno"
-   - also (n1): NBS: Kurs dinara stabilan, finansijski sistem države nije ugrožen
-   - also (nova): NBS tvrdi: Kurs dinara stabilan, finansijski sistem nije ugrožen
-   - also (blic): Bespotrebni redovi ispred banaka: Oglasila se NBS! Kurs dinara je stabilan, Poštanska je uredna
-4. [multi, 4 outlets, score 45.4] Važno obaveštenje za sve koji imaju kredit u Alta banci: Na ovaj račun se uplaćuju preostale rate
-   - also (n1): Objavljen broj računa za izmirenje kredita uzetih kod Alta banke
-   - also (nova): Objavljen broj računa za izmirenje kredita uzetih kod Alta banke
-   - also (blic): Imali ste kredit u ALTA banci? Evo kome od danas uplaćujete rate: Objavljen novi broj računa
-5. [multi, 3 outlets, score 38.5] MAT: Privredni rast Srbije u prvih devet meseci ove godine oko 3,6 odsto
-   - also (nova): Rast BDP-a Srbije u trećem tromesečju četiri odsto, ali je porasla inflacija
-   - also (blic): Rast privrede Srbije: BDP porastao za četiri odsto, trgovina na malo ruši rekorde, a evo šta se dešava sa platama i inflacijom
-6. [multi, 3 outlets, score 38.4] Užas u Francuskoj; Školski autobus se zakucao u drvo; Ima mrtvih i povređenih; U akciji i helikopteri VIDEO
-   - also (blic): ŠKOLSKI AUTOBUS SLETEO SA PUTA I UDARIO U DRVO! Dvoje mladih POGINULO, 16 povređeno, od kojih troje teško: Jeziva nesreća u Francuskoj
-   - also (politika): Dve osobe poginule u nesreći školskog autobusa u Francuskoj, troje teško povređeno
-7. [multi, 3 outlets, score 33.8] Dečak (16) prebijen u Pančevu, napadači i dalje u bekstvu: Oglasilo se tužilaštvo o napadu
-   - also (blic): MALOLETNIK (16) TEŠKO POVREĐEN U MASOVNOJ TUČI Oglasilo se tužilaštvo u Pančevu: Sve raspoložive policijske ekipe rade na ovom slučaju
-   - also (b92): Oglasilo se tužilaštvo povodom prebijanja maloletnika u Pančevu: Povređen dečak, a za napadačima se traga
-8. [multi, 3 outlets, score 33.7] Objavljen konkurs za direktora PIO fonda, Relji Ognjenoviću ističe mandat
-   - also (blic): PIO fond bira novog direktora: Raspisan javni konkurs, Relji Ognjenoviću ističe mandat, a ovo su uslovi i potrebna dokumentacija
-   - also (nova): Objavljen konkurs za direktora PIO fonda, umesto Relje Ognjanovića
-9. [multi, 2 outlets, score 28] Jovanović objavio spisak, evo ko će igrati protiv Srbije
-   - also (b92): Jovanović objavio spisak za Srbiju i Holandiju
-10. [multi, 2 outlets, score 27.5] AVION "VIZ ERA" HITNO PREUSMEREN U VENECIJU! Dojava o bombi upućena telefonom: Pretnje stigle i za više aviona u Češkoj
-   - also (b92): Avion KLM prizemljen zbog dojave o bombi; Let otkazan zbog kvara
+1. [multi, 6 outlets, score 68.4] Severna Makedonija prodaje Alta banku, šest zainteresovanih
+   - also (nova): Guverner Narodne banke Severne Makedonije: Za Alta banku Bitolj ima šest zainteresovanih kupaca
+   - also (politika): Slaveski: Za Alta banku Bitolj ima šest zainteresovanih kupaca
+   - also (n1): Makedonska Narodna banka: Šest zainteresovanih za kupovinu Alta banke Bitolj
+   - also (b92): NBS oduzela ovlašćenje za rad Alta Group ovlašćenom menjaču: Kazna 250.000.000 dinara
+   - also (blic): Severna Makedonija prodaje Alta banku: Šest zainteresovanih kupaca
+   - also (blic): Narodna banka Srbije izdala saopštenje o korisnicima kredita Alta banke u stečaju i Alta Group: Evo kako se vrše uplate
+   - also (nova): Narodna banka Srbije oduzela dozvolu za rad menjačnici Alta Group i izrekla kaznu od 250 miliona dinara
+   - also (blic): PALA PRVA VELIKA KAZNA! NBS oduzela ovlašćenje ovoj menjačnici zbog ALTA banke
+2. [multi, 4 outlets, score 43.6] Avion pao na auto-put u Nemačkoj: Blokirana saobraćajnica prema Hanoveru
+   - also (b92): Vatra progutala avion na auto-putu: Dve osobe poginule
+   - also (n1): Avion se srušio na auto-put u Nemačkoj: Dvoje ljudi poginulo
+   - also (blic): AVION SE SRUŠIO I ZAPALIO Teška nesreća u Nemačkoj: Ima mrtvih
+3. [multi, 4 outlets, score 43.5] NBS: Poštanska štedionica izvršava svoje obaveze, penzije i davanja iz budžeta biće na vreme
+   - also (n1): NBS kontinuirano prati poslovanje Poštanske štedionice: Banka je solventna i u potpunosti izvršava sve obaveze prema klijentima
+   - also (blic): NBS: Kontinuirano pratimo poslovanje Banke Poštanska štedionica - banka je solventna i u potpunosti izvršava sve obaveze prema klijentima
+   - also (b92): NBS prati poslovanje Banke Poštanska štedionica: "Solventna i izvršava sve obaveze"
+4. [multi, 3 outlets, score 37.8] Janković za RTS: Nema razloga za poređenje Alta banke i Poštanske štedionice, novca za osigurane depozite ima dovoljno
+   - also (politika): Janković: Nema analogije u stanju Alta banke pre stečaja i Banke Poštanska štedionica
+   - also (rts): Isplata depozita Alta banke počinje 13. novembra – štedišama do 50.000, malim investitorima do 20.000 evra
+   - also (b92): Evo kad počinje isplata osiguranih depozita Alta banke
+5. [multi, 3 outlets, score 36.2] Studentska lista pozvala Dolovac i Nenadića da ispitaju navode o vezama Vučića sa kriminalnim grupama
+   - also (n1): "Gde su Skaj prepiske?": Studenti traže istragu o navodnim vezama Vučića sa kriminalnim grupama
+   - also (nova): Studenti pozvali Zagorku Dolovac i Mladena Nenadića da pokrenu postupak zbog objavljenih Skaj poruka: Istražiti veze Vučića sa kriminalnom grupom Darka Šarića i Veljka Belivuka
+6. [multi, 3 outlets, score 35.5] Vlada u tehničkom mandatu: Očekujemo da Narodna skupština bude konstituisana u najkraćem roku
+   - also (b92): Vlada u tehničkom mandatu: "Očekujemo da u najkraćem roku bude konstituisana Skupština"
+   - also (blic): Vlada u tehničkom mandatu: Očekujemo da u najkraćem roku bude konstituisana Skupština
+7. [multi, 3 outlets, score 33.7] Napadali dostavljače i otimali novac i hranu
+   - also (blic): DOSTAVLJAČIMA PRETILI NOŽEM I OTIMALI IM NOVAC I HRANU Trojica uhapšena na Novom Beogradu
+   - also (n1): Policija uhapsila tri osobe zbog pljački dostavljača u Beogradu
+8. [multi, 3 outlets, score 33.3] Određen pritvor komandantu SAJ-a Igoru Žmiriću, privremeno udaljen sa dužnosti
+   - also (nova): Komandant SAJ Igor Žmirić udaljen sa dužnosti nakon određivanja pritvora
+   - also (blic): Komandant SAJ Igor Žmirić udaljen sa dužnosti nakon određivanja pritvora
+9. [multi, 2 outlets, score 29] Zvezda srušila prvaka Evrope!
+   - also (nova): Moćna Zvezda srušila prvaka Evrope - Nestvaran meč i velika pobeda u Atini, blistao Nvora ali junaci su Koloko i Džons
+   - also (b92): Đoković bodri Zvezdu u Atini VIDEO
+10. [multi, 2 outlets, score 28.9] Da li se sprema kraj rata?
+   - also (rts): Hutski blickrig protiv "Jemenske zore": Huti ispostavili račun Rijadu - desetine milijardi dolara za kraj rata
 
 ## Details
 ### N1
-Categories: {"hronika":9,"ekonomija":11,"ostalo":6,"region":2,"kultura":1,"zivot":8,"svet":5,"politika":4,"drustvo":2}
+Categories: {"zivot":3,"ekonomija":6,"hronika":8,"ostalo":9,"svet":12,"region":1,"politika":3,"drustvo":4}
 Flagged:
-- (self) Gledajte UŽIVO N1 Studio live: Hajde grade <https://n1info.rs/najave-emisija/n1-studio-live-hajde-grade/>
-- (self) Dan uživo: Ka policiji u službi građana <https://n1info.rs/najave-emisija/dan-uzivo-ka-policiji-u-sluzbi-gradjana/>
-- (self) Gosti "Utiska nedelje": Ivan Ninić, Vesna Mališić, Dejan Šoškić <https://n1info.rs/najave-emisija/utisak-nedelje-ivan-ninic-vesna-malisic-dejan-soskic/>
-- (self) Novi dan: Šta je vlast ostavila iza sebe? <https://n1info.rs/najave-emisija/novi-dan/>
+- (self) Gledajte UŽIVO Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
 Uncategorized sample:
-- Gledajte UŽIVO N1 Studio live: Hajde grade <https://n1info.rs/najave-emisija/n1-studio-live-hajde-grade/> tags=["Najave emisija","najave emisija"]
-- Gosti "Utiska nedelje": Ivan Ninić, Vesna Mališić, Dejan Šoškić <https://n1info.rs/najave-emisija/utisak-nedelje-ivan-ninic-vesna-malisic-dejan-soskic/> tags=["Najave emisija","najava emisije","utisak nedelje"]
-- CLS: Odustalo se od uvođenja gradskih linija do Expo, Beograđani neće plaćati prazne autobuse <https://n1info.rs/vesti/cls-odustalo-se-od-linija-gradskog-prevoza-do-kompleksa-ekspo/> tags=["Vesti","gradski prevoz","gsp","ekspo","2027 expo","strela"]
-- Objavljen konkurs za direktora PIO fonda, Relji Ognjenoviću ističe mandat <https://n1info.rs/vesti/objavljen-konkurs-za-direktora-pio-fonda-umesto-ognjenovica/> tags=["Vesti","konkurs","pio fond","direktor","relja ognjenović"]
-- Vasiliju je potrebna pomoć za transplantaciju koštane srži i lečenje <https://n1info.rs/vesti/vasiliju-je-potrebna-pomoc-za-transplantaciju-kostane-srzi-i-lecenje/> tags=["Vesti","humanitarna akcija"]
-- Novi dan: Šta je vlast ostavila iza sebe? <https://n1info.rs/najave-emisija/novi-dan/> tags=["Najave emisija","najave emisija","novi dan"]
+- RHMZ dobio novog v.d. direktora, nakon što je Jugoslav Nikolić razrešen sa te funkcije <https://n1info.rs/vesti/rhmz-dobio-novog-vd-direktora-nakon-sto-je-jugoslav-nikolic-razresen-sa-te-funkcije/> tags=["Vesti","jugoslav nikolić","rhmz","republički hidrometeorološki zavod"]
+- Osnovan Republički centar za pedijatrijsku srčanu slabost na Institutu za majku i dete <https://n1info.rs/vesti/osnovan-republicki-centar-za-pedijatrijsku-srcanu-slabost-na-institutu-za-majku-i-dete/> tags=["Vesti","republički centar za pedijatrijsku srčanu slabost kod dece","institut za majku i dete"]
+- N1 Direktno (5.11.2026) <https://n1info.rs/video/n1-direktno-5112026/> tags=["Video","miodrag majić","milenko zarić","emisija","n1 direktno","video"]
+- Dnevnik u 19 (5.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-5112026/> tags=["Dnevnik","dnevnik u 19","video","vesti","dnevnik"]
+- Pokrajinski organi o navodima o uništavanju dokumenata: Neovlašćeno snimanje spremačica dok bacaju smeće <https://n1info.rs/vesti/pokrajinski-organi-unistavanje-dokumenata-snimanje-cistacica/> tags=["Vesti","snimanje","uništavanje dokumenata","ap vojvodina"]
+- Zorja o pesmi "Hajde grade" (VIDEO) <https://n1info.rs/video/zorja-o-pesmi-hajde-grade-video/> tags=["Video","hajde grade","video","n1 studio live","zorja","zorja pajić"]
 
 ### Nova.rs
-Categories: {"drustvo":7,"politika":4,"sport":8,"zivot":2,"zabava":8,"hronika":7,"kultura":2,"ekonomija":6,"svet":5,"ostalo":1}
-Flagged:
-- (sponsored) Gorki List na velikoj svečanosti dodelio Nagradu za ljudskost „Sve je u nama“: petoro izuzetnih ljudi dobilo priznanja za vrednosti koje inspirišu <https://nova.rs/vesti/biznis/gorki-list-na-velikoj-svecanosti-dodelio-nagradu-za-ljudskost-sve-je-u-nama-petoro-izuzetnih-ljudi-dobilo-priznanja-za-vrednosti-koje-inspirisu/>
+Categories: {"hronika":9,"sport":16,"drustvo":3,"svet":5,"zabava":9,"ekonomija":4,"ostalo":2,"politika":2}
 Uncategorized sample:
-- Mentalno razgibavanje: Ne brukaj se više! <https://nova.rs/emisije/mentalno-razgibavanje-ne-brukaj-se-vise/> tags=["Emisije","mentalno razgibavanje cela emisija"]
+- Dnevnik - Cela emisija - 5.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-5112026/> tags=["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 5.11.2026. <https://nova.rs/emisije/medju-nama-cela-emisija-5112026/> tags=["Emisije","među nama cela emisija"]
 
 ### B92
-Categories: {"svet":17,"zivot":18,"sport":13,"zabava":2,"ekonomija":9,"ostalo":3,"hronika":3,"kultura":2,"tehnologija":4,"zdravlje":3,"drustvo":2,"region":1,"politika":3}
+Categories: {"svet":17,"sport":12,"zdravlje":5,"zivot":14,"zabava":5,"ekonomija":11,"kultura":4,"politika":4,"tehnologija":2,"ostalo":2,"drustvo":2,"hronika":2}
 Uncategorized sample:
-- Detention ordered for nine Interior Ministry Officers suspected of abuse <https://www.b92.net/english/crime/282707/detention-ordered-for-nine-interior-ministry-officers-suspected-of-abuse/vest> tags=["Najnovije"]
-- Oprez na Milošu Velikom: Zbog ulegnuća na mostu između Pakovraća i Lučana radovi <https://www.b92.net/lokal/cacak/servisne-informacije/282672/oprez-na-milosu-velikom-zbog-ulegnuca-na-mostu-izmedju-pakovraca-i-lucana-radovi/vest> tags=[]
-- Sedam rečenica koje deci pomažu da izrastu u srećne i samopouzdane ljude <https://superzena.b92.net/dom-i-porodica/roditeljstvo/282648/7-recenica-roditelja-da-deca-izrastu-u-srecne-i-samopouzdane-ljude/vest> tags=[]
+- Jedna mala promena frizure podmladiće vaš izgled – a ne morate da idete kod frizera VIDEO <https://superzena.b92.net/lepa-i-zdrava/lepota-zene/282827/trik-kako-da-pomocu-razdeljka-sa-strane-podmladite-izgled/vest> tags=[]
+- Da li treba orezivati hibiskus zimi? Evo šta kažu stručnjaci <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/282839/da-li-treba-orezivati-hibiskus-zimi/vest> tags=[]
 
 ### Blic
-Categories: {"zivot":7,"drustvo":9,"ekonomija":19,"svet":8,"zabava":14,"hronika":5,"politika":4,"kultura":3,"zdravlje":1}
+Categories: {"svet":7,"zabava":25,"ekonomija":9,"drustvo":2,"politika":5,"hronika":10,"zivot":7,"zdravlje":2,"kultura":3}
 
 ### Politika
-Categories: {"svet":2,"ostalo":12,"ekonomija":2,"hronika":3,"drustvo":1}
+Categories: {"ostalo":5,"svet":8,"politika":2,"tehnologija":1,"ekonomija":2,"hronika":1,"drustvo":1}
 Uncategorized sample:
-- Talas dojava o bombama potresa evropske aerodrome: na meti najmanje 27 aviona <https://www.politika.rs/scc/clanak/800313/talas-dojava-o-bombama-potresa-evropske-aerodrome-na-meti-najmanje-27-aviona> tags=[]
-- Priveden upravnik KPZ „Zabela” Rodoljub Rončević <https://www.politika.rs/scc/clanak/800322/priveden-upravnik-kpz-zabela-rodoljub-roncevic> tags=[]
-- Broj žrtava ruskog napada u Zaporoškoj oblasti porastao na 53, strahuje se da ima zatrpanih <https://www.politika.rs/scc/clanak/800305/broj-zrtava-ruskog-napada-u-zaporoskoj-oblasti-porastao-na-53-strahuje-se-da-ima-zatrpanih> tags=[]
-- Guverner Kalifornije preinačio smrtne kazne za 548 zatvorenika <https://www.politika.rs/scc/clanak/800321/guverner-kalifornije-preinacio-smrtne-kazne-za-548-zatvorenika> tags=[]
-- Beslać: Nafta se nikada više neće vratiti na 60 dolara po barelu <https://www.politika.rs/scc/clanak/800290/beslac-nafta-se-nikada-vise-nece-vratiti-na-60-dolara-po-barelu> tags=[]
-- Olgi Jevrić u čast <https://www.politika.rs/scc/clanak/800318/olgi-jevric-u-cast> tags=[]
+- SZO pažljivo prati širenje novog soja kovida-19 <https://www.politika.rs/scc/clanak/800524/szo-pazljivo-prati-sirenje-novog-soja-kovida-19> tags=[]
+- U Danskoj uskoro odluka da li je termin „neevropsko poreklo” rasna diskriminacija <https://www.politika.rs/scc/clanak/800514/u-danskoj-uskoro-odluka-da-li-je-termin-neevropsko-poreklo-rasna-diskriminacija> tags=[]
+- Cena nafte Brent pala ispod 98 dolara za barel <https://www.politika.rs/scc/clanak/800509/cena-nafte-brent-pala-ispod-98-dolara-za-barel> tags=[]
+- Napadali dostavljače i otimali novac i hranu <https://www.politika.rs/scc/clanak/800506/napadali-dostavljace-i-otimali-novac-i-hranu> tags=[]
+- Sunčano, ali hladno, od utorka porast temperature <https://www.politika.rs/scc/clanak/800505/suncano-ali-hladno-od-utorka-porast-temperature> tags=[]
 
 ### RTS
-Categories: {"drustvo":4,"hronika":4,"svet":3,"ekonomija":7,"zivot":2}
+Categories: {"drustvo":3,"region":1,"politika":5,"ekonomija":2,"svet":2,"zivot":1,"hronika":6}
