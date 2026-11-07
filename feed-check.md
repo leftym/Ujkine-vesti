@@ -1,86 +1,91 @@
 # Feed check
 
-Run: 2026-11-07T10:29:35.214Z
+Run: 2026-11-07T19:59:16.961Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 48 | https://n1info.rs/feed/ | 48 | 2 |
+| N1 | yes | 50 | https://n1info.rs/feed/ | 50 | 2 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +70) | 76 | 0 |
-| Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 1 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +80) | 76 | 0 |
+| Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"zivot":10,"hronika":5,"ostalo":5,"drustvo":2,"region":5,"zdravlje":2,"svet":9,"ekonomija":5,"politika":4,"kultura":1}
-- [zivot] Veštačka inteligencija novo oružje nasilnika: Decu ucenjuju lažnim eksplicitnim fotografijama
-- [hronika] Navijači ponovo skandirali na račun Brankice Stanković, ANEM traži da policija pronađe počinioce
-- [ostalo] NUNS: Zabrinjavajuća kampanja diskreditacije novinarke RTS Tamare Tankosić
-- [drustvo] Aleksandar Čupić: Mi kao društvo moramo da se redefinišemo, kad seme padne na dobro pripremljenu zemlju, onda ide strpljenje
-- [region] Veritas: Ekshumacija srpskih žrtava u Hrvatskoj obavlja se u tajnosti
-- [zdravlje] Zaposleni u Zdravstvenom centru Valjevo traže ostavku v.d. direktora i članova upravnih odbora
-  - flagged (self): Novi dan: Od značke do optuženičke klupe: U službi zakona ili iznad njega? https://n1info.rs/najave-emisija/novi-dan-od-znacke-do-optuzenicke-klupe-u-sluzbi-zakona-ili-iznad-njega/
-  - flagged (sponsored): „Izgubljeno jagnje“ 10. decembra na sceni Teatra humanosti https://n1info.rs/kultura/izgubljeno-jagnje-10-decembra-na-sceni-teatra-humanosti/
+Categories: {"hronika":6,"ostalo":11,"svet":14,"drustvo":5,"region":2,"politika":6,"kultura":2,"ekonomija":1,"zivot":3}
+- [hronika] Od prisluškivanja do sumnji u prikrivanje tragova: Hoće li tužilaštvo ispitati direktora BIA?
+- [ostalo] Javna rasprava o nacrtu kragujevačkog budžeta poštom i imejlom
+- [svet] U Krakovu posle pucnjave dani žalosti do 11. novembra za šestoro ubijenih
+- [svet] U Pojasu Gaze zbog jake kiše poplavljeno nekoliko hiljada šatora raseljenih lica
+- [drustvo] Studenti o smeni načelnika PU Valjevo: Pravda nije zadovoljena dok ne odgovaraju policajci koji su nas tukli
+- [ostalo] Dnevnik u 19 (6.11.2026)
+  - flagged (self): Gledajte UŽIVO Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+  - flagged (self): Novi dan: Šta posle "dinstanja"? Gost Jovo Bakić https://n1info.rs/najave-emisija/novi-dan-sta-posle-dinstanja-gost-jovo-bakic/
 
 Uncategorized sample (for tuning):
-- NUNS: Zabrinjavajuća kampanja diskreditacije novinarke RTS Tamare Tankosić | https://n1info.rs/vesti/nuns-zabrinjavajuca-kampanja-diskreditacije-novinarke-rts-tamare-tankosic/ | tags: ["Vesti","rts","bezbednost novinara","diskreditacija novinara","javni funkcioneri","pritisak na medije"]
-- Nikola Jovanović: Odustajanjem od linija za Expo Beograđanima ušteđeno 80.000 evra | https://n1info.rs/vesti/nikola-jovanovic-odustajanjem-od-linija-za-expo-beogradjanima-ustedjeno-80000-evra/ | tags: ["Vesti","expo","javni prevoz","gsp","nikola jovanović","grad beograd"]
-- Na današnji dan, 7. novembar: Usvojen leks specijalis za Generalštab, preminuo Aleksander Dubček | https://n1info.rs/vesti/na-danasnji-dan-7-novembar-usvojen-leks-specijalis-za-generalstab-preminuo-aleksander-dubcek/ | tags: ["Vesti","beta kalendar","na današnji dan"]
-- RHMZ dobio novog v.d. direktora, nakon što je Jugoslav Nikolić razrešen sa te funkcije | https://n1info.rs/vesti/rhmz-dobio-novog-vd-direktora-nakon-sto-je-jugoslav-nikolic-razresen-sa-te-funkcije/ | tags: ["Vesti","jugoslav nikolić","rhmz","republički hidrometeorološki zavod"]
-- Osnovan Republički centar za pedijatrijsku srčanu slabost na Institutu za majku i dete | https://n1info.rs/vesti/osnovan-republicki-centar-za-pedijatrijsku-srcanu-slabost-na-institutu-za-majku-i-dete/ | tags: ["Vesti","republički centar za pedijatrijsku srčanu slabost kod dece","institut za majku i dete"]
+- Javna rasprava o nacrtu kragujevačkog budžeta poštom i imejlom | https://n1info.rs/vesti/javna-rasprava-o-nacrtu-kragujevackog-budzeta-postom-i-imejlom/ | tags: ["Vesti","kragujevac","imejl","javna rasprava"]
+- Dnevnik u 19 (6.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-6112026/ | tags: ["Dnevnik","video","vesti","dnevnik u 19","dnevnik"]
+- Dan uživo (6.11.2026) | https://n1info.rs/video/dan-uzivo/dan-uzivo-6112026/ | tags: ["Dan uživo","video","emisija","dan uživo"]
+- Gledajte UŽIVO Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
+- Andrej Tanko: Mala, ali ne i konačna pobeda - Viši sud predmet protiv mene vratio Osnovnom sudu | https://n1info.rs/vesti/andrej-tanko-mala-ali-ne-i-konacna-pobeda-visi-sud-predmet-protiv-mene-vratio-osnovnom-sudu/ | tags: ["Vesti","andrej tanko","suđenje","student"]
+- UNS: Osuđujemo skandiranje urednici Insajdera Brankici Stanković, nadležni da utvrde odgovornost navijača | https://n1info.rs/vesti/uns-osudjujemo-skandiranje-urednici-insajdera-brankici-stankovic-nadlezni-da-utvrde-odgovornost-navijaca/ | tags: ["Vesti","navijačko skandiranje","uns","navijači","skandiranje","brankica stanković"]
+- Andreas fon Bekerat odlazi iz Srbije, njegovu dužnost preuzima Džulijan Vasalo | https://n1info.rs/vesti/andreas-fon-bekerat-odlazi-iz-srbije-novoj-vlasti-pozeleo-uspeh-u-reformi-institucija/ | tags: ["Vesti","evropska unija","andreas fon bekerat"]
+- Press: Duško Lopandić (07.11.2026) | https://n1info.rs/video/novi-dan/press-dusko-lopandic-07112026/ | tags: ["Novi dan","press","novi dan","duško lopandić","video"]
 
 ## Nova.rs
-Categories: {"drustvo":7,"zivot":9,"zabava":5,"hronika":6,"sport":19,"ekonomija":1,"ostalo":2,"politika":1}
-- [drustvo] Brnabić, Jovanov i režimski botovi targetirali novinarku RTS Tamare Tankosić: Oglasio se NUNS
-- [zivot] Nikson je otkrio koji je bio najveći Titov strah: "O, Bože! Pa on je nasmrt preplašen"
-- [zabava] „Čuvaj tradiciju, poštuj svoje korene“: Milan Vasić otišao na Kosovo sa sinom, pa se oglasio na mrežama (FOTO)
-- [zivot] Ljudi koji rade za ekstremno bogate otkrili šta je najluđa stvar koju su morali da urade
-- [hronika] Pijan seo za volan "smarta" pa se zakucao u "megan": Povređeni prebačeni u bolnicu
-- [sport] Beograd u društvu vodećih evropskih trkačkih gradova, Beogradski polumaraton ušao u prestižnu seriju
+Categories: {"sport":15,"drustvo":5,"ostalo":2,"svet":6,"hronika":8,"zabava":5,"politika":6,"ekonomija":2,"zivot":1}
+- [sport] "Najbrži cirkus na svetu" ostaje u Brazilu, nastavlja se tradicija duga više od 50 godina
+- [drustvo] Optužnica protiv "niškog informera" zbog rada bez dozvole: Traži se zabrana emitovanja "Niš TV“ na tri godine i novčana kazna
+- [ostalo] Dnevnik - Cela emisija - 6.11.2026.
+- [sport] VIDEO Ma, ovaj čovek je neverovatan: Pogledajte šta je uspeo Alkaraz, protivnik mu aplaudirao
+- [svet] Tramp potpisao proglas: Niko ne sme da menja Ovalnu sobu koju je on preuredio
+- [hronika] MUP upozorio na opasne izazove na društvenim mrežama
 
 Uncategorized sample (for tuning):
-- Mentalno razgibavanje: Šta to beše dostojanstvo? | https://nova.rs/emisije/mentalno-razgibavanje-sta-to-bese-dostojanstvo/ | tags: ["Emisije","mentalno razgibavanje cela emisija"]
-- Probudi se - Cela emisija - 6.11.2026. | https://nova.rs/emisije/probudi-se-cela-emisija-6112026/ | tags: ["Emisije","probudi se cela emisija"]
+- Dnevnik - Cela emisija - 6.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-6112026/ | tags: ["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 6.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-6112026/ | tags: ["Emisije","među nama cela emisija"]
 
 ## B92
-Categories: {"politika":8,"zdravlje":6,"svet":12,"sport":10,"zabava":4,"drustvo":3,"zivot":16,"ekonomija":11,"tehnologija":2,"hronika":2,"kultura":6}
-- [politika] Vučić sa opštinskim i gradskim odborima SNS VIDEO
-- [politika] Vučić sa odborima SNS: "Borićemo se u Skupštini" VIDEO
-- [zdravlje] Ovo su važni signali koje vam telo šalje: Mogu biti znak raka, a mnogi ih zanemaruju
-- [svet] Rusi su uništeni – do sada nezapamćen napad VIDEO
-- [sport] Stanojević govorio o suđenju i direktno pitao: "Da li je to namerno?" VIDEO
-- [politika] Vučić se sastao sa opštinskim i gradskim odborima SNS VIDEO
-
-## Blic
-Categories: {"zabava":16,"ekonomija":13,"svet":9,"politika":7,"kultura":5,"zdravlje":3,"zivot":6,"hronika":8,"drustvo":3}
-- [zabava] HITNO OGLAŠAVANJE AVE KARABATIĆ NAKON TVRDNJI PRIJATELJA DA JE POGINULA: "Ljudi, u šoku sam! Ja sam dobro, sad sam se probudila"
-- [ekonomija] Veliki modni lanac u Nemačkoj proglasio stečaj! Ima 115 prodavnica u dve evropske zemlje: Ugroženo 600 radnih mesta
-- [svet] (VIDEO) "Svaku reč sriče sa papira, 30 godina živi u Americi, NEPRIJATNO ZA GLEDATI": Govor i naglasak Melanije Tramp izazvao lavinu reakcija
-- [zabava] "VELJKO JE DIGAO RUKE OD MENE" Seka Aleksić otkrila kako je smršala 22 KG: "Ja sam svaki dan na nekom laseru"
-- [politika] (VIDEO) "OVO JE GLAVNA RAZLIKA IZMEĐU NAS I NJIH" Vučić se oglasio nakon sinoćnjeg provoda s prijateljima i članovima stranke: "Ponašaćemo se kao opozicija koja zna šta je država"
-- [politika] "IDE GRABEŽ I JURNJAVA ZA PLENOM" Vučić na sastanku odbora SNS u Beogradu: "Gladne su im oči, to su uglavnom najgori iz DOS perioda" (VIDEO)
-  - flagged (betting): Ljubomir Bandović potpisuje novu predstavu Fondacije Mozzart: "Izgubljeno jagnje" 10. decembra na sceni Teatra humanosti https://www.blic.rs/kultura/ljubomir-bandovic-potpisuje-novu-predstavu-fondacije-mozzart-izgubljeno-jagnje/3g873ps
-
-## Politika
-Categories: {"hronika":1,"ostalo":4,"zivot":1,"region":1,"sport":2,"drustvo":3,"politika":1,"svet":6,"zdravlje":1}
-- [hronika] Devojčica iz BiH poginula u prevrtanju školskog autobusa u Francuskoj
-- [ostalo] Nove zvezde zoo-vrta u Atlanti: Pande Ping Ping i Fu Šuang prvi put pred posetiocima
-- [zivot] U Napulju pronađeno 84 kilograma kokaina u ukradenom automobilu
-- [region] Veritas: Hrvatska tajno ekshumirala posmrtne ostatke srpskih žrtava u Kninu i Daruvaru
-- [sport] Penjaroja pred Studentski centar: Moramo ozbiljno da pristupimo utakmici
-- [drustvo] Alarmantno zagađenje u Delhiju: škole prelaze na onlajn nastavu, građanima savetovan rad od kuće
+Categories: {"svet":17,"sport":14,"zivot":19,"ekonomija":9,"zdravlje":2,"zabava":4,"hronika":3,"ostalo":2,"kultura":3,"politika":4,"tehnologija":2,"drustvo":1}
+- [svet] "Izrael neće preživeti"
+- [sport] Budućnost izvukla pobedu u Železniku: Dabl-dabl Rebrače nedovoljan
+- [zivot] Britanska policija sumnja da je Rasel Brend napao bar još 10 drugih žena
+- [sport] Minimalac Štutgarta – Verder "pao" posle dva meseca
+- [svet] Opasan scenario za Ukrajinu: Nuklearni udar?
+- [sport] Sitijev raspad sistema! VIDEO
 
 Uncategorized sample (for tuning):
-- Nove zvezde zoo-vrta u Atlanti: Pande Ping Ping i Fu Šuang prvi put pred posetiocima | https://www.politika.rs/scc/clanak/800631/nove-zvezde-zoo-vrta-u-atlanti-pande-ping-ping-i-fu-suang-prvi-put-pred-posetiocima | tags: []
-- Vladavina prava kao mera zrelosti države | https://www.politika.rs/scc/clanak/800556/vladavina-prava-kao-mera-zrelosti-drzave | tags: []
-- Desantis demantovao da se priprema za kandidaturu 2028. godine | https://www.politika.rs/scc/clanak/800624/desantis-demantovao-da-se-priprema-za-kandidaturu-2028-godine | tags: []
-- Male boginje se šire u SAD: više od 5.000 obolelih od početka godine | https://www.politika.rs/scc/clanak/800619/male-boginje-se-sire-u-sad-vise-od-5-000-obolelih-od-pocetka-godine | tags: []
+- Radiš plank, a stomak se ne zateže? Četiri greške zbog kojih vežba ne daje rezultate | https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/283042/4-greske-zbog-kojih-se-stomak-ne-zateze-iako-radis-plank/vest | tags: []
+- Radnici tokom iskopavanja naišli na dve artiljerijske granate u Kragujevcu: Nadležne službe odmah reagovale | https://www.b92.net/lokal/kragujevac/servisne-informacije/283023/radnici-tokom-iskopavanja-naisli-na-dve-artiljerijske-granate-u-kragujevcu-nadlezne-sluzbe-odmah-reagovale/vest | tags: []
+
+## Blic
+Categories: {"drustvo":7,"zabava":20,"svet":10,"zivot":6,"hronika":10,"ekonomija":4,"politika":4,"zdravlje":3,"kultura":6}
+- [drustvo] "MOLILA SAM ZA CARSKI REZ" Potresna ispovest porodilje kojoj je beba preminula tokom porođaja u Novom Pazaru: "I sad bih mogla da vrištim, kako je to sve bilo"
+- [drustvo] UKIDAJU SE ČETIRI TROLEJBUSKE LINIJE Važno obaveštenje za Beograđane: Ovo je spisak zamena
+- [zabava] PEVAČICA PRAVILA SKANDALE, PA SE POVUKLA IZ JAVNOSTI Rodila sina i iznela žestoke optužbe o bivšem: "Pokrao me je, sama brinem o našem detetu"
+- [svet] "IDU OKOLO I PRETE MI ZATVOROM, IZNUĐIVAČI ĆE KRENUTI NA SVE LJUDE" Dramatična Trampova objava nakon KATAKLIZME na izborima: "Sve to rade jer smo republikanci"
+- [zivot] Ovo nikada ne radite kada se probudite usred noći: Zbog jedne kobne greške san se pretvara u pakao, evo kako ponovo da zaspite
+- [hronika] Masovna pucnjava u Krakovu: Šta do sada znamo
+
+## Politika
+Categories: {"sport":4,"svet":6,"ostalo":3,"politika":2,"hronika":3,"drustvo":2}
+- [sport] Rukometašice Bora ubedljive protiv Belgijanki na startu trećeg kola
+- [svet] Netanjahu tvrdi da Izrael neće preživeti vladu koja zavisi od arapskih partija
+- [ostalo] Žena (65) preminula nakon što je na nju pao nadgrobni spomenik dok je palila sveće za Zadušnice
+- [politika] Brnabićeva: Zašto REM reaguje na Informer, a ne i na N1 i Novu S
+- [svet] Makronov tajni plan za bekstvo u slučaju da demonstranti upadnu u Jelisejsku palatu
+- [hronika] Suđenje u Alkmaru: ubio oca, pa telo tri godine držao u zamrzivaču
+
+Uncategorized sample (for tuning):
+- Žena (65) preminula nakon što je na nju pao nadgrobni spomenik dok je palila sveće za Zadušnice | https://www.politika.rs/scc/clanak/800783/zena-65-preminula-nakon-sto-je-na-nju-pao-nadgrobni-spomenik-dok-je-palila-svece-za-zadusnice | tags: []
+- Tusk posle krvavog napada u Krakovu: Ne igrajte političke igre sa tragedijom | https://www.politika.rs/scc/clanak/800724/tusk-posle-krvavog-napada-u-krakovu-ne-igrajte-politicke-igre-sa-tragedijom | tags: []
+- Zaustavljeno isticanje nafte iz JANAF-ovog naftovoda, sanacija u toku | https://www.politika.rs/scc/clanak/800778/zaustavljeno-isticanje-nafte-iz-janaf-ovog-naftovoda-sanacija-u-toku | tags: []
 
 ## RTS
-Categories: {"drustvo":6,"svet":6,"region":3,"ekonomija":2,"politika":1,"hronika":1,"zivot":1}
-- [drustvo] NUNS osudio targetiranje novinarke RTS-a Tamare Tankosić
-- [svet] Tramp: Izveli smo "minorne" napade na Iran; Huti elektronski naplaćuju prolazak kroz Bab el Mandeb
-- [region] Veritas: U Hrvatskoj bez obaveštenja javnosti ekshumirani posmrtni ostaci srpskih žrtava u Kninu i Daruvaru
-- [ekonomija] Evro i do 120 dinara – Uzelac: Pojedine menjačnice koriste situaciju, ne žurite sa kupovinom deviza
-- [ekonomija] Cene struje skaču na evropskim berzama, šta Srbiju očekuje tokom grejne sezone
-- [region] JANAF: Naftovod oštećen tokom radova, sanacija u toku, nema rizika po stanovništvo
+Categories: {"drustvo":7,"svet":3,"politika":5,"hronika":2,"zivot":1,"region":2}
+- [drustvo] UNS traži hitnu reakciju nadležnih zbog pretećeg skandiranja Brankici Stanković
+- [svet] Predsednik Paragvaja smenjen, pa stavljen u kućni pritvor – politička cena za kolaps banke
+- [politika] Peticija za smenu gradonačelnika i tri opcije za vlast u Nišu
+- [drustvo] Vojvodinašume: Sanacioni plan za Deliblatsku peščaru u narednih mesec dana
+- [politika] Plan Studentske liste za Vojsku Srbije – cilj je da budžet bude pet odsto BDP-a, postoje i prioriteti
+- [politika] Srbi na Kosovu i Metohiji u iščekivanju nove vlasti u Beogradu – apel da se zaustavi iseljavanje
