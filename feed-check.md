@@ -1,91 +1,92 @@
 # Feed check
 
-Run: 2026-11-07T19:59:16.961Z
+Run: 2026-11-08T10:36:57.995Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 50 | https://n1info.rs/feed/ | 50 | 2 |
+| N1 | yes | 50 | https://n1info.rs/feed/ | 50 | 1 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +80) | 76 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +72) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"hronika":6,"ostalo":11,"svet":14,"drustvo":5,"region":2,"politika":6,"kultura":2,"ekonomija":1,"zivot":3}
-- [hronika] Od prisluškivanja do sumnji u prikrivanje tragova: Hoće li tužilaštvo ispitati direktora BIA?
-- [ostalo] Javna rasprava o nacrtu kragujevačkog budžeta poštom i imejlom
-- [svet] U Krakovu posle pucnjave dani žalosti do 11. novembra za šestoro ubijenih
-- [svet] U Pojasu Gaze zbog jake kiše poplavljeno nekoliko hiljada šatora raseljenih lica
-- [drustvo] Studenti o smeni načelnika PU Valjevo: Pravda nije zadovoljena dok ne odgovaraju policajci koji su nas tukli
-- [ostalo] Dnevnik u 19 (6.11.2026)
-  - flagged (self): Gledajte UŽIVO Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+Categories: {"ekonomija":3,"region":2,"politika":5,"kultura":1,"sport":1,"hronika":7,"drustvo":5,"ostalo":8,"svet":9,"zivot":9}
+- [ekonomija] Vikend-odmor u selima oko Kragujevca za svačiji džep, od skromnih 12 do 350 evra dnevno za luksuz
+- [region] Srpski autobus se prevrnuo u Hrvatskoj, dve osobe poginule, više od 30 povređenih: Hitne službe sprečile mogući požar
+- [politika] Ana Brnabić: Sednica Skupštine 17. novembra
+- [kultura] Kada knjige postanu mnogo više od priča: Šta je "Humanitarna knjižara" i kako se građani uključuju
+- [ekonomija] Minić: Investitori odlaze jer Srbija više nije destinacija obilne jeftine radne snage
+- [sport] VJT traži procesuiranje osumnjičenih zbog pretnji Brankici Stanković na utakmici
   - flagged (self): Novi dan: Šta posle "dinstanja"? Gost Jovo Bakić https://n1info.rs/najave-emisija/novi-dan-sta-posle-dinstanja-gost-jovo-bakic/
 
 Uncategorized sample (for tuning):
+- Petrović Škero: Ustavni sud može da odloži pomilovanja dok ne utvrdi da li je ispoštovana procedura | https://n1info.rs/vesti/petrovic-skero-ustavni-sud-moze-da-odlozi-pomilovanja-dok-ne-utvrdi-da-li-je-ispostovana-procedura/ | tags: ["Vesti","ustavni sud","vida petrović škero","pomilovanja","aleksandar vučić"]
+- Čučković: Prva mašina za kopanje na trasi metroa već na Makišu, druga stiže do kraja godine | https://n1info.rs/vesti/cuckovic-prva-masina-za-kopanje-na-trasi-metroa-vec-na-makisu-druga-stize-do-kraja-godine/ | tags: ["Vesti","miroslav čučković","tbm","krtica","mašine","metro"]
+- Na današnji dan, 8. novembar: Umrli Milutin Bojić, Leon Štukelj... | https://n1info.rs/vesti/na-danasnji-dan-8-novembar-2026-godine/ | tags: ["Vesti","na današnji dan"]
+- SANU: Preminuo akademik Ljubomir Maksimović | https://n1info.rs/vesti/sanu-preminuo-akademik-ljubomir-maksimovic/ | tags: ["Vesti","ljubomir maksimović","sanu","akademik"]
+- Bivši zaposleni Euronews Srbija: Minja Miletić i Dragana Pejović odgovorne za sistematske pritiske na novinare, urušavanje profesionalnih standarda i diskreditaciju brenda EN | https://n1info.rs/vesti/bivsi-zaposleni-euronews-srbija-minja-miletic-i-dragana-pejovic-odgovorne-za-sistematske-pritiske-na-novinare-urusavanje-profesionalnih-standarda-i-diskreditaciju-brenda-en/ | tags: ["Vesti","udruženje novinara srbije","bivši zaposleni","uns","dragana pejović","minja miletić"]
+- Crvena linija: O funkcionisanju institucija u postizbornom periodu u zemljama regije | https://n1info.rs/video/crvena-linija/crvena-linija-o-funkcionisanju-institucija-u-postizbornom-periodu-u-zemljama-regije/ | tags: ["Crvena linija","crvena linija","bojan spaić","emisija","damjan ožegović","video"]
 - Javna rasprava o nacrtu kragujevačkog budžeta poštom i imejlom | https://n1info.rs/vesti/javna-rasprava-o-nacrtu-kragujevackog-budzeta-postom-i-imejlom/ | tags: ["Vesti","kragujevac","imejl","javna rasprava"]
 - Dnevnik u 19 (6.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-6112026/ | tags: ["Dnevnik","video","vesti","dnevnik u 19","dnevnik"]
-- Dan uživo (6.11.2026) | https://n1info.rs/video/dan-uzivo/dan-uzivo-6112026/ | tags: ["Dan uživo","video","emisija","dan uživo"]
-- Gledajte UŽIVO Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
-- Andrej Tanko: Mala, ali ne i konačna pobeda - Viši sud predmet protiv mene vratio Osnovnom sudu | https://n1info.rs/vesti/andrej-tanko-mala-ali-ne-i-konacna-pobeda-visi-sud-predmet-protiv-mene-vratio-osnovnom-sudu/ | tags: ["Vesti","andrej tanko","suđenje","student"]
-- UNS: Osuđujemo skandiranje urednici Insajdera Brankici Stanković, nadležni da utvrde odgovornost navijača | https://n1info.rs/vesti/uns-osudjujemo-skandiranje-urednici-insajdera-brankici-stankovic-nadlezni-da-utvrde-odgovornost-navijaca/ | tags: ["Vesti","navijačko skandiranje","uns","navijači","skandiranje","brankica stanković"]
-- Andreas fon Bekerat odlazi iz Srbije, njegovu dužnost preuzima Džulijan Vasalo | https://n1info.rs/vesti/andreas-fon-bekerat-odlazi-iz-srbije-novoj-vlasti-pozeleo-uspeh-u-reformi-institucija/ | tags: ["Vesti","evropska unija","andreas fon bekerat"]
-- Press: Duško Lopandić (07.11.2026) | https://n1info.rs/video/novi-dan/press-dusko-lopandic-07112026/ | tags: ["Novi dan","press","novi dan","duško lopandić","video"]
 
 ## Nova.rs
-Categories: {"sport":15,"drustvo":5,"ostalo":2,"svet":6,"hronika":8,"zabava":5,"politika":6,"ekonomija":2,"zivot":1}
-- [sport] "Najbrži cirkus na svetu" ostaje u Brazilu, nastavlja se tradicija duga više od 50 godina
-- [drustvo] Optužnica protiv "niškog informera" zbog rada bez dozvole: Traži se zabrana emitovanja "Niš TV“ na tri godine i novčana kazna
-- [ostalo] Dnevnik - Cela emisija - 6.11.2026.
-- [sport] VIDEO Ma, ovaj čovek je neverovatan: Pogledajte šta je uspeo Alkaraz, protivnik mu aplaudirao
-- [svet] Tramp potpisao proglas: Niko ne sme da menja Ovalnu sobu koju je on preuredio
-- [hronika] MUP upozorio na opasne izazove na društvenim mrežama
+Categories: {"svet":10,"zabava":6,"politika":4,"ostalo":1,"sport":15,"zivot":7,"hronika":4,"drustvo":3}
+- [svet] Dramatični snimci nakon snažnog zemljotresa u Japanu: Popucali izlozi, ljudi bežali iz zgrada, vlasti izdale upozorenje
+- [zabava] Glamurozno crno odelo i kosa do struka: Ceca na koncertu u Bugarskoj pokazala moćan stil (FOTO)
+- [politika] Brnabić zakazala sednicu Skupštine
+- [ostalo] Pokreni se - Cela emisija - 7.11.2026.
+- [sport] "Zvezda i Partizan u ovakvim uslovima neće postizati rezultate u Evroligi": Pešić oštro o večitima
+- [zivot] Ovo idilično mesto u Švajcarskoj nudi 76.000 evra porodicama da se presele: Ali postoji caka koju mnogi kasno shvate
 
 Uncategorized sample (for tuning):
-- Dnevnik - Cela emisija - 6.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-6112026/ | tags: ["Emisije","dnevnik cela emisija"]
-- Među nama - Cela emisija - 6.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-6112026/ | tags: ["Emisije","među nama cela emisija"]
+- Pokreni se - Cela emisija - 7.11.2026. | https://nova.rs/emisije/pokreni-se-cela-emisija-7112026/ | tags: ["Emisije","pokreni se cela emisija"]
 
 ## B92
-Categories: {"svet":17,"sport":14,"zivot":19,"ekonomija":9,"zdravlje":2,"zabava":4,"hronika":3,"ostalo":2,"kultura":3,"politika":4,"tehnologija":2,"drustvo":1}
-- [svet] "Izrael neće preživeti"
-- [sport] Budućnost izvukla pobedu u Železniku: Dabl-dabl Rebrače nedovoljan
-- [zivot] Britanska policija sumnja da je Rasel Brend napao bar još 10 drugih žena
-- [sport] Minimalac Štutgarta – Verder "pao" posle dva meseca
-- [svet] Opasan scenario za Ukrajinu: Nuklearni udar?
-- [sport] Sitijev raspad sistema! VIDEO
+Categories: {"svet":11,"zivot":21,"sport":13,"zabava":3,"politika":5,"kultura":5,"region":2,"ostalo":3,"zdravlje":4,"drustvo":1,"ekonomija":9,"tehnologija":2,"hronika":1}
+- [svet] Masakr na frontu; Masovni gubici Rusa; Zelenski objavio snimak: "Teror" FOTO/VIDEO
+- [zivot] Čačani zatekli jeziv prizor kod škole: "Groke" uradile nešto neočekivano, policija apeluje na građane FOTO
+- [zivot] Čačani zatekli jeziv prizor kod škole: Groke uradile nešto neočekivano, policija apeluje na građane FOTO
+- [sport] Mesi ispisao istoriju MLS
+- [zabava] Samo je obukla jednostavnu crnu haljinu i dokazala da je najlepša FOTO
+- [politika] Brnabić sazvala prvu sednicu Skupštine posle izbora; Evo kada počinje zasedanje VIDEO
 
 Uncategorized sample (for tuning):
-- Radiš plank, a stomak se ne zateže? Četiri greške zbog kojih vežba ne daje rezultate | https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/283042/4-greske-zbog-kojih-se-stomak-ne-zateze-iako-radis-plank/vest | tags: []
-- Radnici tokom iskopavanja naišli na dve artiljerijske granate u Kragujevcu: Nadležne službe odmah reagovale | https://www.b92.net/lokal/kragujevac/servisne-informacije/283023/radnici-tokom-iskopavanja-naisli-na-dve-artiljerijske-granate-u-kragujevcu-nadlezne-sluzbe-odmah-reagovale/vest | tags: []
+- Ružama zimi nema spasa ako ovo zaboravite: Pet stvari morate uraditi pre prvog mraza | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/283177/ruzama-zimi-nema-spasa-ako-ovo-zaboravite-uradite-5-stvari-pre-mraza/vest | tags: ["Najnovije"]
+- Danas slavimo Mitrovdan, a stari srpski običaj nalaže da ovo ne smete da radite | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/283148/danas-je-mitrovdan-ove-obicaje-morate-ispostovati/vest | tags: []
+- Na današnji dan, 8. novembar | https://www.b92.net/info/razno/283127/na-danasnji-dan-8-novembar/vest | tags: ["Info"]
 
 ## Blic
-Categories: {"drustvo":7,"zabava":20,"svet":10,"zivot":6,"hronika":10,"ekonomija":4,"politika":4,"zdravlje":3,"kultura":6}
-- [drustvo] "MOLILA SAM ZA CARSKI REZ" Potresna ispovest porodilje kojoj je beba preminula tokom porođaja u Novom Pazaru: "I sad bih mogla da vrištim, kako je to sve bilo"
-- [drustvo] UKIDAJU SE ČETIRI TROLEJBUSKE LINIJE Važno obaveštenje za Beograđane: Ovo je spisak zamena
-- [zabava] PEVAČICA PRAVILA SKANDALE, PA SE POVUKLA IZ JAVNOSTI Rodila sina i iznela žestoke optužbe o bivšem: "Pokrao me je, sama brinem o našem detetu"
-- [svet] "IDU OKOLO I PRETE MI ZATVOROM, IZNUĐIVAČI ĆE KRENUTI NA SVE LJUDE" Dramatična Trampova objava nakon KATAKLIZME na izborima: "Sve to rade jer smo republikanci"
-- [zivot] Ovo nikada ne radite kada se probudite usred noći: Zbog jedne kobne greške san se pretvara u pakao, evo kako ponovo da zaspite
-- [hronika] Masovna pucnjava u Krakovu: Šta do sada znamo
-
-## Politika
-Categories: {"sport":4,"svet":6,"ostalo":3,"politika":2,"hronika":3,"drustvo":2}
-- [sport] Rukometašice Bora ubedljive protiv Belgijanki na startu trećeg kola
-- [svet] Netanjahu tvrdi da Izrael neće preživeti vladu koja zavisi od arapskih partija
-- [ostalo] Žena (65) preminula nakon što je na nju pao nadgrobni spomenik dok je palila sveće za Zadušnice
-- [politika] Brnabićeva: Zašto REM reaguje na Informer, a ne i na N1 i Novu S
-- [svet] Makronov tajni plan za bekstvo u slučaju da demonstranti upadnu u Jelisejsku palatu
-- [hronika] Suđenje u Alkmaru: ubio oca, pa telo tri godine držao u zamrzivaču
+Categories: {"politika":6,"svet":7,"drustvo":8,"zabava":12,"zivot":6,"ekonomija":15,"kultura":3,"hronika":11,"zdravlje":1,"ostalo":1}
+- [politika] Ovaj čovek sa liste SNS dolazi na čelo Skupštine Srbije umesto Ane Brnabić
+- [svet] (VIDEO) "MAKRON JE KRETEN!" Dečak (8) izvređao predsednika Francuske u programu uživo: Cenzurisali mu 90 odsto izjave zbog psovki
+- [drustvo] SKRIVENO ČUDO SRPSKOG INŽENJERSTVA Zaboravljeni grad na Željinu pre 700 godina imao VODOVOD OD 12 KM i 30.000 CEVI
+- [zabava] "KAŽU MI: IDI DO KASE I UZMI KOLIKO TREBA!" Ivan Gavrilović o estradnoj mafiji: "Ako naprave od tebe zvezdu, onda si im dužan"
+- [zivot] (FOTO) Kupili svečani komplet za 16.000 dinara, a kada ga je trebalo probati u postavi pronašli uginulog miša! Odgovor butika ih ostavio bez teksta
+- [drustvo] PROLAZITE PORED NJE, A NEMATE POJMA ŠTA KRIJE! Malo ko zna koja se najveća tajna Beograda nalazi tik pored crkve Svete Petke
 
 Uncategorized sample (for tuning):
-- Žena (65) preminula nakon što je na nju pao nadgrobni spomenik dok je palila sveće za Zadušnice | https://www.politika.rs/scc/clanak/800783/zena-65-preminula-nakon-sto-je-na-nju-pao-nadgrobni-spomenik-dok-je-palila-svece-za-zadusnice | tags: []
-- Tusk posle krvavog napada u Krakovu: Ne igrajte političke igre sa tragedijom | https://www.politika.rs/scc/clanak/800724/tusk-posle-krvavog-napada-u-krakovu-ne-igrajte-politicke-igre-sa-tragedijom | tags: []
-- Zaustavljeno isticanje nafte iz JANAF-ovog naftovoda, sanacija u toku | https://www.politika.rs/scc/clanak/800778/zaustavljeno-isticanje-nafte-iz-janaf-ovog-naftovoda-sanacija-u-toku | tags: []
+- Maybach pokreće najluksuzniji klub na svetu: Članstvo košta 4 miliona dolara, a umesto adrese – imate superjahtu od 155 metara! | https://www.blic.rs/good-life/automobili-i-jahte/ekskluzivni-maybach-ocean-club-spaja-luksuz-zajednicu-i-iskustva/9f9gfzm | tags: []
+
+## Politika
+Categories: {"politika":3,"sport":3,"ostalo":2,"svet":6,"hronika":4,"drustvo":2}
+- [politika] Brnabićeva zakazala konstitutivnu sednicu Skupštine za 17. novembar: Upozorila na ugrožavanje demokratije i targetiranje novinara
+- [sport] Ribakina se povukla sa Završnog turnira, umesto nje nastupa Kostjuk
+- [politika] Dodik: Uvažavamo izbor naroda Srbije, ali ne zaboravljamo Vučićevu pomoć
+- [ostalo] Zaporoška nuklearka isključena sa elektromreže, aktivirani dizel-generatori
+- [politika] Izbori za nacionalne savete: sva birališta otvorena na vreme, pravo glasa ima više od 480.000 građana
+- [svet] Peskov: Rusija nije razgovarala sa Evropljanima o bezbednosnom sporazumu
+
+Uncategorized sample (for tuning):
+- Zaporoška nuklearka isključena sa elektromreže, aktivirani dizel-generatori | https://www.politika.rs/scc/clanak/800890/zaporoska-nuklearka-iskljucena-sa-elektromreze-aktivirani-dizel-generatori | tags: []
+- Zlo seme islamizma iz Beča i Maoče Gornje | https://www.politika.rs/scc/clanak/800799/zlo-seme-islamizma-iz-beca-i-maoce-gornje | tags: []
 
 ## RTS
-Categories: {"drustvo":7,"svet":3,"politika":5,"hronika":2,"zivot":1,"region":2}
-- [drustvo] UNS traži hitnu reakciju nadležnih zbog pretećeg skandiranja Brankici Stanković
-- [svet] Predsednik Paragvaja smenjen, pa stavljen u kućni pritvor – politička cena za kolaps banke
-- [politika] Peticija za smenu gradonačelnika i tri opcije za vlast u Nišu
-- [drustvo] Vojvodinašume: Sanacioni plan za Deliblatsku peščaru u narednih mesec dana
-- [politika] Plan Studentske liste za Vojsku Srbije – cilj je da budžet bude pet odsto BDP-a, postoje i prioriteti
-- [politika] Srbi na Kosovu i Metohiji u iščekivanju nove vlasti u Beogradu – apel da se zaustavi iseljavanje
+Categories: {"politika":2,"ekonomija":2,"hronika":8,"region":1,"svet":4,"zivot":1,"drustvo":2}
+- [politika] Brnabić: Konstitutivna sednica 17. novembra u 10 časova
+- [ekonomija] Minić: Strani investitori odlaze iz ekonomskih razloga, potrebno jačanje domaćeg privatnog sektora
+- [hronika] Automobil upao u Bovansko jezero, ronioci Žandarmerije uključeni u potragu
+- [hronika] Uhapšen osumnjičeni da je izazvao saobraćajku kod Zrenjanina u kojoj je poginuo muškarac
+- [hronika] Saslušani uhapšeni policajci zbog smrti Dalibora Dragijevića
+- [region] Prevrnuo se autobus "Niš-ekspresa" kod Zagreba – dvoje poginulo, trideset troje povređeno
