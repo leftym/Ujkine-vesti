@@ -1,109 +1,108 @@
 # Vesti health report
 
-Run: 2026-11-08T10:37:30.645Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-08T20:17:23.308Z  |  items: 268  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [N1] Possible ads NOT flagged: "Minić: Investitori odlaze jer Srbija više nije destinacija obilne jeftine radne snage"
-2. **LOW** [Blic] Possible ads NOT flagged: "Do besplatnog rominga ostalo još malo: Građani Srbije moći će da koriste telefone u EU kao kod kuće, evo kada"; "ITALIJA DELI BESPLATNE KUĆE NA 10 GODINA! Sve troškove renoviranja do 280.000 evra plaća država: Evo ko ima pravo na krov nad glavom i koji su uslovi"; ""Pijačni barometar" za početak novembra: Pasulj jeftiniji 50 dinara, skuplji krompir, banane i kajmak"
-3. **LOW** [Front page] Cluster "Srpski autobus se prevrnuo u Hrvatskoj, dve osobe poginule, više od 30 povređenih: Hitne službe sprečile mogući požar" has 11 items: chained matches may have merged related but different stories.
+1. **HIGH** [Politika] No working feed. Tried: https://www.politika.rs/rss (HTTP_403) | https://www.politika.rs/rss/ (HTTP_403) | https://www.politika.rs (HTTP_403). Find the current RSS URL (page source: link rel=alternate) and put it first in lib/sources.js.
+2. **LOW** [B92] Possible ads NOT flagged: "Najpovoljnije destinacije za putovanja u 2027. godini: Avionske karte jeftinije i do 66 odsto FOTO"
+3. **LOW** [Blic] Possible ads NOT flagged: "4 vrste povrća koja najbolje čuvaju srce: Jeftina su i svima dostupna, a kardiolog otkriva zašto čine čuda za krvne sudove"
+4. **LOW** [Politika] Icon address returns HTTP 403 (text/html); the app shows a colored dot instead. Find the current icon (page source: link rel=icon / apple-touch-icon) and update icon in lib/sources.js.
+5. **LOW** [Front page] Cluster "Požar u stanu u Ulici kneza Miloša, jedna osoba stradala" has 11 items: chained matches may have merged related but different stories.
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 50 | 0.0h | 100% | 16% | 1 |
-| Nova.rs | yes | 50 | 0.2h | 100% | 2% | 0 |
-| B92 | yes | 80 | 0.1h | 95% | 4% | 0 |
-| Blic | yes | 70 | 0.0h | 100% | 1% | 0 |
-| Politika | yes | 20 | 0.2h | 100% | 10% | 0 |
-| RTS | yes | 20 | 0.1h | 100% | 0% | 0 |
+| N1 | yes | 48 | 0.1h | 100% | 10% | 5 |
+| Nova.rs | yes | 50 | 0.1h | 100% | 2% | 0 |
+| B92 | yes | 80 | 0.1h | 95% | 1% | 1 |
+| Blic | yes | 70 | 0.2h | 100% | 0% | 0 |
+| Politika | **NO** | 0 | - | 0% | 0% | 0 |
+| RTS | yes | 20 | 0.2h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 6 outlets, score 69] Brnabić: Konstitutivna sednica 17. novembra u 10 časova
-   - also (politika): Brnabićeva zakazala konstitutivnu sednicu Skupštine za 17. novembar: Upozorila na ugrožavanje demokratije i targetiranje novinara
-   - also (b92): Brnabić sazvala prvu sednicu Skupštine posle izbora; Evo kada počinje zasedanje VIDEO
-   - also (nova): Brnabić zakazala sednicu Skupštine
-   - also (n1): Ana Brnabić: Sednica Skupštine 17. novembra
-   - also (blic): BRNABIĆ SAZVALA PRVU SEDNICU NOVOG SAZIVA SKUPŠTINE Evo za koji datum i koje su tačke dnevnog reda
-   - also (b92): Brnabić o konstituisanju Skupštine; "Biće mnogo pre ustavnog roka"
-2. [multi, 6 outlets, score 66.9] Izbori za nacionalne savete: sva birališta otvorena na vreme, pravo glasa ima više od 480.000 građana
-   - also (b92): Počeli izbori za članove nacionalnih saveta nacionalnih manjina
-   - also (rts): Izbori za članove nacionalnih saveta nacionalnih manjina
-   - also (n1): Održavaju se izbori za savete nacionalnih manjina, pravo glasa ima skoro pola miliona građana
-   - also (nova): Danas se održavaju izbori za nacionalne savete nacionalnih manjina
-   - also (blic): U TRCI ZA GLASOVE 52 LISTE Počeli izbori za članove nacionalnih saveta nacionalnih manjina, pravo glasa ima skoro pola miliona državljana Srbije
-3. [multi, 5 outlets, score 58.5] Srpski autobus se prevrnuo u Hrvatskoj, dve osobe poginule, više od 30 povređenih: Hitne službe sprečile mogući požar
-   - also (b92): Oglasio se KBC Zagreb nakon prevrtanja srpskog autobusa; Poznato stanje povređenih
-   - also (rts): Prevrnuo se autobus "Niš-ekspresa" kod Zagreba – dvoje poginulo, trideset troje povređeno
-   - also (b92): Teška saobraćajna nesreća u Hrvatskoj; Prevrnuo se srpski autobus – dve osobe poginule VIDEO
-   - also (nova): Novi detalji stravične nesreće srpskog autobusa kod Zagreba: Ministarstvo otkrilo u kakvom su stanju 33 povređene osobe
-   - also (nova): VIDEO Prvi snimak stravične nesreće kod Zagreba: Prevrnuo se autobus srpskih tablica, na mesto tragedije stigao helikopter
-   - also (nova): Prevrnuo se autobus srpskih registracija na auto-putu u Hrvatskoj, ima poginulih
-   - also (blic): IMA MRTVIH I POVREĐENIH! Prevrnuo se autobus srpskih registarskih oznaka kod Zagreba: Na lice mesta upućen i helikopter
-   - also (blic): NAJNOVIJE INFORMACIJE O ŽRTVAMA STRAVIČNE NESREĆE SRPSKOG AUTOBUSA! Dvoje mrtvih, više od 30 povređenih: Oglasilo se Ministarstvo zdravlja Hrvatske o karambolu kod Zagreba
-   - also (blic): "POVREĐENI LEŽE NA TRAVI, AUTOBUS JE POTPUNO SLUPAN" Jezive ispovesti očevidaca stravične nesreće kod Zagreba: Vozilo SRPSKIH TABLICA se prevrnulo, IMA MRTVIH I POVREĐENIH! (FOTO, VIDEO)
-   - also (blic): STIGAO HELIKOPTER, U VOZILU BILO 33 PUTNIKA! Prvi snimak nesreće kod Zagreba: Prevrnuo se autobus SRPSKIH registarskih oznaka, očevici opisali trenutke UŽASA (VIDEO)
-4. [multi, 5 outlets, score 54.7] Dvodnevna žalost u Poljskoj zbog terorističkog napada u Krakovu
-   - also (b92): Otkriveni detalji o napadaču iz Poljske; "Teroristički akt"; Izdat apel stanovnicima i turistima FOTO/VIDEO
-   - also (n1): U kući napadača iz Krakova nađena tela muškarca i dve žene
-   - also (n1): Poljski ministar: Napadač iz Krakova imao vrlo radikalne poglede, nema osnova da mislimo da ih je bilo više
-   - also (nova): Još tri tela pronađena u stanu napadača iz Krakova: Premijer Tusk potvrdio jezivo otkriće
-   - also (nova): Predsednik Poljske proglasio dva dana žalosti zbog masakra u Krakovu
-   - also (blic): "OBEŠENI LJUDI I TELA PO CELOJ ŠKOLI" Drugovi otkrili jezive detalje o napadaču iz Poljske, šta je crtao i govorio na časovima: "Taj čovek s pištoljem... TO SAM JA!" (FOTO, VIDEO)
-5. [multi, 4 outlets, score 48.4] Uhapšen osumnjičeni da je izazvao saobraćajku kod Zrenjanina u kojoj je poginuo muškarac
-   - also (politika): Uhapšen mladić (19) zbog saobraćajne nesreće u kojoj je poginuo muškarac
-   - also (blic): TINEJDŽER (19) IZAZVAO DIREKTAN SUDAR?! Novi detalji stravične nesreće kod Zrenjanina, oglasio se MUP: Poginuo muškarac (64), ima i povređenih!
-   - also (n1): U sudaru kod Zrenjanina jedna osoba poginula, jedna povređena
-6. [multi, 4 outlets, score 43.7] Snažan zemljotres pogodio Japan: Ljudi u panici bežali iz zgrada, najmanje 22 povređenih, vlasti izdale upozorenje
-   - also (rts): Snažan zemljotres pogodio Japan – najmanje 20 povređenih
-   - also (b92): Jak zemljotres u Japanu; Povređeno najmanje 20 ljudi VIDEO
-   - also (blic): (FOTO, VIDEO) TRESLE SE ZGRADE, PUCALI PROZORI, U RADNJAMA KAO TOKOM RATNOG STANJA! Stravičan zemljotres pogodio Japan: Ovo se desilo prvi put u poslednje TRI DECENIJE
-7. [multi, 3 outlets, score 38.5] (VIDEO) "MAKRON JE KRETEN!" Dečak (8) izvređao predsednika Francuske u programu uživo: Cenzurisali mu 90 odsto izjave zbog psovki
-   - also (b92): Osmogodišnji dečak vređao Makrona u programu uživo; Televizija se izvinila VIDEO
-   - also (politika): Izvinjenje medija nakon što je dečak uživo vređao Makrona
-8. [multi, 3 outlets, score 37.3] VJT traži od policije da identifikuje osobe koje su pretile Brankici Stanković na utakmici
-   - also (nova): Tužilaštvo traži od policije da identifikuje osobe koje su pretile Brankici Stanković na Partizanovoj utakmici u Areni
-   - also (blic): Tužilaštvo traži identifikuju osumnjičenih za ugrožavanje sigurnosti novinarke Brankice Stanković
-9. [multi, 3 outlets, score 31.7] Viši sud proširio osnov za određivanje pritvora Kričku i Sekuloviću
-   - also (n1): Viši sud u Beogradu usvojio žalbu VJT-a u slučaju Krička i Sekulovića, usvojeno još razloga za pritvor
-   - also (nova): Uvažena žalba Višeg javnog tužilaštva u Beogradu: Kričku određen pritvor i zbog opasnosti da bi mogao da ponovi krivično delo
-10. [multi, 2 outlets, score 28.9] Panika u Beču; Rusi srušili Sebastijana Kurca?; "Ako je istina..."
-   - also (blic): "SRUŠILI SMO SEBASTIJANA KURCA!" Ruski špijun priznao da je umešan u politički kraj najmlađeg lidera EU, isplivalo hiljade poruka: Više od DECENIJE radio za PUTINA
+1. [multi, 5 outlets, score 59] Elektorske skupštine izabrale članove saveta ruske i goranske manjine, broje se glasovi na neposrednim izborima
+   - also (nova): Završeni izbori za nacionalne savete 23 nacionalne manjine, RIK rezultate saopštava u roku od 96 sati
+   - also (b92): Završeni izbori za članove nacionalnih saveta nacionalnih manjina
+   - also (blic): Završeni izbori za članove nacionalnih saveta nacionalnih manjina
+   - also (n1): Preliminarni rezultati izbora za nacionalne savete nacionalnih manjina sutra u 20 časova
+2. [multi, 5 outlets, score 57.9] Stravična nesreća u Rio de Žaneiru; Poginulo 10 osoba, među njima 5 dece
+   - also (b92): Najnovija saznanja o autobuskoj nesreći kod Zagreba: Poginule dve ženske osobe, jedna maloletna
+   - also (n1): (BLOG) Među poginulima nisu državljani Srbije: Srpski autobus se prevrnuo u Hrvatskoj, dve osobe stradale, više od 30 povređenih
+   - also (rts): Prevrnuo se autobus "Niš-ekspresa" kod Zagreba – dvoje poginulo, šestoro teže, a 27 lakše povređeno
+   - also (blic): MALOLETNICA MEĐU ŽRTVAMA STRAVIČNE NESREĆE KOD ZAGREBA! Dve ženske osobe poginule u prevrtanju autobusa sa srpskim registracijama: Poznato i odakle su
+   - also (nova): Otkriveno ko su poginuli u stravičnoj nesreći srpskog autobusa kod Zagreba: Oglasilo se hrvatsko ministarstvo
+   - also (blic): OVO JE UZROK PREVRTANJA SRPSKOG AUTOBUSA KOD ZAGREBA?! Putnici otkrili kako su izgledali minuti strave nakon nesreće: "Ljudi su bili PRIKLJEŠTENI SEDIŠTIMA" (FOTO, VIDEO)
+   - also (n1): Službenica Ambasade: Među poginulima u nesreći autobusa nisu državljani Srbije
+   - also (b92): Poznato ko je nastradao u prevrtanju srpskog autobusa u Hrvatskoj
+   - also (blic): POZNATO ODAKLE SU POGINULI U STRAVIČNOJ NESREĆI U ZAGREBU Oglasilo se hrvatsko ministarstvo, otkrivene i nove informacije o povređenima
+3. [multi, 5 outlets, score 57.3] Požar u stanu u Ulici kneza Miloša, jedna osoba stradala
+   - also (n1): Jedna osoba stradala u požaru u stanu u zgradi u Kneza Miloša
+   - also (b92): Požar u ulici Kneza Miloša u Beogradu: Vatrogasci našli telo u stanu, saobraćaj bio obustavljen
+   - also (blic): U STRAVIČNOM POŽARU U CENTRU BEOGRADA POVREĐENO I DETE! Detalji užasa u Kneza Miloša: Žena poginula, povrede zadobili vatrogasci i policajac
+   - also (nova): Vatrogasci pronašli telo u stanu koji je goreo u Ulici kneza Miloša
+   - also (b92): Veliki požar u Sarajevu; Gore vagoni VIDEO
+   - also (nova): Požar izbio u zgradi u Kneza Miloša: Vatrogasci na terenu
+   - also (blic): IMA MRTVIH U POŽARU U CENTRU BEOGRADA! Vatrogasci našli telo u stanu, dim prekrio Ulicu kneza Miloša, obustavljen saobraćaj u jednoj traci
+   - also (blic): (VIDEO) VELIKI POŽAR U SARAJEVU, VATROGASCI NA TERENU! Vatra zahvatila nekoliko vagona u Rajlovcu, hitno upućene ekipe
+   - also (blic): (VIDEO) DIM PREKRIO CENTAR BEOGRADA, KULJA VATRA! Požar buknuo u zgradi, na terenu hitne službe, zatvoren deo Ulice kneza Miloša
+   - also (blic): (FOTO, VIDEO) VATROGASCI PODIGLI DIZALICU, BLOKIRAN SAOBRAĆAJ! Prve slike požara u Kneza Miloša: Gust dim se širi
+4. [multi, 4 outlets, score 48.5] OVO SU KLJUČNI LJUDI PRVE SEDNICE SKUPŠTINE: "Spremni smo"
+   - also (b92): Srbija dobija novi parlament; Ovo je proces konstituisanja Skupštine – nakon toga teče rok za formiranje Vlade
+   - also (rts): Baucal: Studentska lista spremna za konstitutivnu sednicu, razgovori o predsedniku Skupštine pri kraju
+   - also (rts): Kako će teći konstitutivna sednica Skupštine Srbije
+   - also (rts): Konstitutivna sednica 17. novembra u 10 časova
+   - also (nova): Baucal: Studentska lista spremna za konstitutivnu sednicu, razgovori o predsedniku Skupštine pri kraju
+5. [multi, 4 outlets, score 47.9] RTS: Ronilačka jedinica pronašla u Bovanskom jezeru telo i automobil
+   - also (rts): Bovansko jezero: Pronađeni telo i automobil koji je potonuo
+   - also (nova): U Bovanskom jezeru pronađeni telo i automobil koji je potonuo
+   - also (blic): ŽANDARMERIJA PRONAŠLA TELO U BOVANSKOM JEZERU! Ronioci uočili automobil u vodi, pa usledila DRAMA koja se tragično završila
+6. [multi, 4 outlets, score 45.3] Predsednik opštine Inđija Marko Gašić i direktor "Inđija puta" među uhapšenima za zloupotrebu položaja
+   - also (b92): Uhapšen predsednik opštine Inđija Marko Gašić; Privedeno još 5 osoba – evo šta im se stavlja na teret VIDEO
+   - also (nova): Ko je uhapšeni predsednik Opštine Inđija Marko Gašić i zbog čega će ga pamtiti studenti i građani
+   - also (n1): Marko Gašić: Funkcioner SNS-a, bivši direktor "Inđija puta" i predsednik opštine
+7. [multi, 3 outlets, score 33.4] Saslušani uhapšeni policajci zbog smrti Dalibora Dragijevića
+   - also (n1): Saslušani pripadnici UKP-a zbog smrti Dalibora Dragijevića: Tužilaštvo traži pritvor za osumnjičene
+   - also (nova): Osam pripadnika UKP-a saslušano zbog smrti Dalibora Dragijevića, tužilaštvo traži pritvor za sve osumnjičene
+8. [multi, 2 outlets, score 28.5] Tuga u Partizanu, preminula jedna od najvećih legendi - otišao čuveni Dževad Prekazi
+   - also (b92): Umro Dževad Prekazi
+9. [multi, 2 outlets, score 25.8] Predlog Vrhovnom javnom tužilaštvu - traži se poništaj odluka o pomilovanju 37 osoba koje je doneo Aleksandar Vučić
+   - also (n1): Advokat Papić podneo tužilaštvu predlog da od Upravnog suda zatraži poništenje odluka o pomilovanju
+10. [multi, 2 outlets, score 24.9] Dnevnik - Cela emisija - 7.11.2026.
+   - also (n1): Dnevnik u 19 (7.11.2026)
 
 ## Details
 ### N1
-Categories: {"ekonomija":3,"region":2,"politika":5,"kultura":1,"sport":1,"hronika":7,"drustvo":5,"ostalo":8,"svet":9,"zivot":9}
+Categories: {"zivot":8,"svet":6,"ekonomija":2,"ostalo":5,"drustvo":4,"politika":11,"hronika":7,"region":4,"kultura":1}
 Flagged:
-- (self) Novi dan: Šta posle "dinstanja"? Gost Jovo Bakić <https://n1info.rs/najave-emisija/novi-dan-sta-posle-dinstanja-gost-jovo-bakic/>
+- (self) Gledajte UŽIVO "Utisak nedelje": Ivan Ninić, Vesna Mališić, Dejan Šoškić <https://n1info.rs/najave-emisija/utisak-nedelje-ivan-ninic-vesna-malisic-dejan-soskic/>
+- (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
+- (self) Global fokus, ponedeljak u 20h: Tramp i Netanjahu u problemu? <https://n1info.rs/najave-emisija/global-fokus-ponedeljak-u-20h-tramp-i-netanjahu-u-problemu/>
+- (self) N1 Studio Live: Tužilaštvo se probudilo <https://n1info.rs/najave-emisija/n1-studio-live-tuzilastvo-se-probudilo/>
+- (self) Novi dan: Transparentno o tehničkoj vladi <https://n1info.rs/najave-emisija/novi-dan-transparentno-o-tehnickoj-vladi/>
 Uncategorized sample:
-- Petrović Škero: Ustavni sud može da odloži pomilovanja dok ne utvrdi da li je ispoštovana procedura <https://n1info.rs/vesti/petrovic-skero-ustavni-sud-moze-da-odlozi-pomilovanja-dok-ne-utvrdi-da-li-je-ispostovana-procedura/> tags=["Vesti","ustavni sud","vida petrović škero","pomilovanja","aleksandar vučić"]
-- Čučković: Prva mašina za kopanje na trasi metroa već na Makišu, druga stiže do kraja godine <https://n1info.rs/vesti/cuckovic-prva-masina-za-kopanje-na-trasi-metroa-vec-na-makisu-druga-stize-do-kraja-godine/> tags=["Vesti","miroslav čučković","tbm","krtica","mašine","metro"]
-- Na današnji dan, 8. novembar: Umrli Milutin Bojić, Leon Štukelj... <https://n1info.rs/vesti/na-danasnji-dan-8-novembar-2026-godine/> tags=["Vesti","na današnji dan"]
-- SANU: Preminuo akademik Ljubomir Maksimović <https://n1info.rs/vesti/sanu-preminuo-akademik-ljubomir-maksimovic/> tags=["Vesti","ljubomir maksimović","sanu","akademik"]
-- Bivši zaposleni Euronews Srbija: Minja Miletić i Dragana Pejović odgovorne za sistematske pritiske na novinare, urušavanje profesionalnih standarda i diskreditaciju brenda EN <https://n1info.rs/vesti/bivsi-zaposleni-euronews-srbija-minja-miletic-i-dragana-pejovic-odgovorne-za-sistematske-pritiske-na-novinare-urusavanje-profesionalnih-standarda-i-diskreditaciju-brenda-en/> tags=["Vesti","udruženje novinara srbije","bivši zaposleni","uns","dragana pejović","minja miletić"]
-- Crvena linija: O funkcionisanju institucija u postizbornom periodu u zemljama regije <https://n1info.rs/video/crvena-linija/crvena-linija-o-funkcionisanju-institucija-u-postizbornom-periodu-u-zemljama-regije/> tags=["Crvena linija","crvena linija","bojan spaić","emisija","damjan ožegović","video"]
+- Gledajte UŽIVO "Utisak nedelje": Ivan Ninić, Vesna Mališić, Dejan Šoškić <https://n1info.rs/najave-emisija/utisak-nedelje-ivan-ninic-vesna-malisic-dejan-soskic/> tags=["Najave emisija","najava emisije","utisak nedelje"]
+- Dnevnik u 19 (7.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-7112026/> tags=["Dnevnik","video","dnevnik"]
+- Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
+- Putevi Srbije: Bez snega na prioritetnim putnim pravcima, moguća magla <https://n1info.rs/vesti/putevi-srbije-bez-snega-na-prioritetnim-putnim-pravcima-moguca-magla/> tags=["Vesti","magla","putevi srbije","jp putevi srbije","stanje na putevima","sneg"]
+- Press: Aleksandar Ivanović (08.11.2026) <https://n1info.rs/video/novi-dan/press-aleksandar-ivanovic-08112026/> tags=["Novi dan","press","aleksandar ivanović","video"]
 
 ### Nova.rs
-Categories: {"svet":10,"zabava":6,"politika":4,"ostalo":1,"sport":15,"zivot":7,"hronika":4,"drustvo":3}
+Categories: {"politika":7,"sport":13,"zabava":6,"drustvo":5,"hronika":9,"ostalo":1,"ekonomija":2,"svet":6,"zivot":1}
 Uncategorized sample:
-- Pokreni se - Cela emisija - 7.11.2026. <https://nova.rs/emisije/pokreni-se-cela-emisija-7112026/> tags=["Emisije","pokreni se cela emisija"]
+- Dnevnik - Cela emisija - 7.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-7112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"svet":11,"zivot":21,"sport":13,"zabava":3,"politika":5,"kultura":5,"region":2,"ostalo":3,"zdravlje":4,"drustvo":1,"ekonomija":9,"tehnologija":2,"hronika":1}
+Categories: {"sport":11,"zabava":3,"kultura":3,"ekonomija":8,"svet":12,"region":6,"zivot":20,"hronika":4,"zdravlje":6,"politika":3,"ostalo":1,"tehnologija":3}
+Flagged:
+- (sponsored) Urasle dlake: Zašto nastaju i kako ih se rešiti trajno <https://www.b92.net/zdravlje/promo/282766/urasle-dlake-zasto-nastaju-i-kako-ih-se-resiti-trajno/vest>
 Uncategorized sample:
-- Ružama zimi nema spasa ako ovo zaboravite: Pet stvari morate uraditi pre prvog mraza <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/283177/ruzama-zimi-nema-spasa-ako-ovo-zaboravite-uradite-5-stvari-pre-mraza/vest> tags=["Najnovije"]
-- Danas slavimo Mitrovdan, a stari srpski običaj nalaže da ovo ne smete da radite <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/283148/danas-je-mitrovdan-ove-obicaje-morate-ispostovati/vest> tags=[]
-- Na današnji dan, 8. novembar <https://www.b92.net/info/razno/283127/na-danasnji-dan-8-novembar/vest> tags=["Info"]
+- Emocionalno inteligentan muškarac je tako seksi <https://superzena.b92.net/superstav/jana/282895/emocionalno-inteligentan-muskarac-je-tako-seksi/vest> tags=[]
 
 ### Blic
-Categories: {"politika":6,"svet":7,"drustvo":8,"zabava":12,"zivot":6,"ekonomija":15,"kultura":3,"hronika":11,"zdravlje":1,"ostalo":1}
-Uncategorized sample:
-- Maybach pokreće najluksuzniji klub na svetu: Članstvo košta 4 miliona dolara, a umesto adrese – imate superjahtu od 155 metara! <https://www.blic.rs/good-life/automobili-i-jahte/ekskluzivni-maybach-ocean-club-spaja-luksuz-zajednicu-i-iskustva/9f9gfzm> tags=[]
+Categories: {"zivot":7,"politika":6,"zabava":18,"zdravlje":3,"drustvo":2,"svet":15,"hronika":12,"ekonomija":5,"kultura":2}
 
 ### Politika
-Categories: {"politika":3,"sport":3,"ostalo":2,"svet":6,"hronika":4,"drustvo":2}
-Uncategorized sample:
-- Zaporoška nuklearka isključena sa elektromreže, aktivirani dizel-generatori <https://www.politika.rs/scc/clanak/800890/zaporoska-nuklearka-iskljucena-sa-elektromreze-aktivirani-dizel-generatori> tags=[]
-- Zlo seme islamizma iz Beča i Maoče Gornje <https://www.politika.rs/scc/clanak/800799/zlo-seme-islamizma-iz-beca-i-maoce-gornje> tags=[]
+Categories: {}
 
 ### RTS
-Categories: {"politika":2,"ekonomija":2,"hronika":8,"region":1,"svet":4,"zivot":1,"drustvo":2}
+Categories: {"politika":5,"hronika":9,"zivot":1,"drustvo":2,"region":1,"svet":1,"ekonomija":1}
