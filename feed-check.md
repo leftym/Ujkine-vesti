@@ -1,98 +1,96 @@
 # Feed check
 
-Run: 2026-11-09T11:52:45.064Z
+Run: 2026-11-10T00:00:17.329Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 3 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 2 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +75) | 76 | 0 |
+| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 2 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +80) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"region":4,"ekonomija":4,"zdravlje":1,"hronika":4,"svet":7,"ostalo":8,"zivot":5,"politika":10,"sport":1,"drustvo":2}
-- [region] Politički antropolozi: Demokratska obnova Evrope možda ne dolazi iz centra, već sa oboda
-- [ekonomija] Australijanci preuzeli istražni projekat u Majdanpeku koji je nekada finansirao Rio Tinto
-- [zdravlje] Za Kragujevčane stiglo još 1400 doza vakcina protiv sezonskog gripa
-- [hronika] Milić odbacio optužbe, advokat tvrdi da je postupak posledica nezakonitog postupanja pripadnika MUP-a
-- [svet] Kremlj negira prisustvo evropskih zvaničnika na pregovorima sa Ukrajinom u Abu Dabiju
-- [region] Uhapšen vozač autobusa Niš ekspresa koji se prevrnuo u Hrvatskoj
-  - flagged (self): Dan uživo: Izazovi tranzicije vlasti https://n1info.rs/najave-emisija/dan-uzivo-izazovi-tranzicije-vlasti/
-  - flagged (self): Gledajte UŽIVO N1 Studio Live: Tužilaštvo se probudilo https://n1info.rs/najave-emisija/n1-studio-live-tuzilastvo-se-probudilo/
-  - flagged (self): Bez granica sa Andrejem, utorak od 23.30h: Pravi život na ulicama Etiopije https://n1info.rs/najave-emisija/bez-granica-sa-andrejem-utorak-od-2330h-pravi-zivot-na-ulicama-etiopije/
+Categories: {"svet":15,"ostalo":7,"zivot":5,"politika":4,"region":1,"drustvo":3,"ekonomija":3,"hronika":6,"sport":1,"kultura":1}
+- [svet] Kurc: Za deset godina ćemo živeti u potpuno drugačijem svetu
+- [ostalo] U Severnoj Mitrovici inspekcijski nadzor više ugostiteljskih objekata
+- [zivot] Britanski pank bend Anti-Nowhere League nastupiće na Arsenal festu 2027. u Kragujevcu
+- [svet] Južnoafrička policija uhapsila strance zbog pokušaja pridruživanja rusko-ukrajinskom ratu
+- [svet] Orbanov brat pod istragom zbog krijumčarenja ljudi, Peter Mađar poručuje: Kako seješ, tako žanješ
+- [svet] Francuska krivi Iran za prošlomesečne sajber napade na frižidere u supermarketima
+  - flagged (self): Global fokus: Tramp i Netanjahu u problemu? https://n1info.rs/najave-emisija/global-fokus-ponedeljak-u-20h-tramp-i-netanjahu-u-problemu/
+  - flagged (self): Gledajte UŽIVO Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
 
 Uncategorized sample (for tuning):
-- Dan uživo: Izazovi tranzicije vlasti | https://n1info.rs/najave-emisija/dan-uzivo-izazovi-tranzicije-vlasti/ | tags: ["Najave emisija","najave emisija"]
-- NUNS: Zahtevamo da odgovorni za ponovljene pretnje Brankici Stanković budu procesuirani | https://n1info.rs/vesti/nuns-zahtevamo-da-odgovorni-za-ponovljene-pretnje-brankici-stankovic-budu-procesuirani/ | tags: ["Vesti","brankica stanković","nuns","pretnje","kk partizan","navijači"]
-- Udruženja traže da Ustavni sud hitno odgovori na žalbu Danijele Štajnfeld: Pet godina čekanja na odluku da li će istraga silovanja biti nastavljena | https://n1info.rs/vesti/udruzenja-traze-da-ustavni-sud-hitno-odgovori-na-zalbu-danijele-stajnfeld-pet-godina-cekanja-na-odluku-da-li-ce-istraga-silovanja-biti-nastavljena/ | tags: ["Vesti","branislav lečić","danijela štajnfeld","ustavni sud srbije","ustavni sud","silovanje"]
-- ZLF: Radomir Lazović bio pod tajnim nadzorom BIA, uhapsiti Orlića i rasformirati Agenciju | https://n1info.rs/vesti/zlf-radomir-lazovic-bia-prisluskivanje/ | tags: ["Vesti","pegazus","zeleno-levi front","bia","zlf","prisluškivanje"]
-- VJT obustavilo postupak protiv devetoro studenata optuženih za navodnu pripremu nasilne promene ustavnog uređenja | https://n1info.rs/vesti/vjt-obustavilo-postupak-protiv-devetoro-studenata-optuzenih-za-pripremu-nasilne-promene-ustavnog-uredjenja/ | tags: ["Vesti","rušenje ustavnog poretka","više javno tužilaštvo u beogradu","pionirski park","građevinski fakultet u beogradu"]
-- Bez granica sa Andrejem: U afro-selu šampiona | https://n1info.rs/video/bez-granica-sa-andrejem-u-afro-selu-sampiona/ | tags: ["Video","bez granica sa andrejem","video"]
-- Bez granica sa Andrejem, utorak od 23.30h: Pravi život na ulicama Etiopije | https://n1info.rs/najave-emisija/bez-granica-sa-andrejem-utorak-od-2330h-pravi-zivot-na-ulicama-etiopije/ | tags: ["Najave emisija","bez granica sa andrejem"]
-- Skijališta Srbije objavila kad počinje sezona | https://n1info.rs/vesti/skijalista-srbije-objavila-kad-pocinje-sezona/ | tags: ["Vesti","skijaška sezona","kopaonik"]
+- U Severnoj Mitrovici inspekcijski nadzor više ugostiteljskih objekata | https://n1info.rs/vesti/u-severnoj-mitrovici-inspekcijski-nadzor-vise-ugostiteljskih-objekata/ | tags: ["Vesti","ugostiteljski objekti","severna mitrovica","inspekcijski nadzor"]
+- Utisak nedelje: Ivan Ninić, Vesna Mališić i Dejan Šoškić (9.11.2026) | https://n1info.rs/video/utisak-nedelje-ivan-ninic-vesna-malisic-i-dejan-soskic-9112026/ | tags: ["Video","video","utisak nedelje","utisak video"]
+- Dnevnik u 19 (8.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-8112026/ | tags: ["Dnevnik","n1","dnevnik","video"]
+- Beogradski vodovod: Sutra deo Ripnja bez vode, kao i deo Zemuna oko Batajničkog druma | https://n1info.rs/vesti/beogradski-vodovod-sutra-deo-ripnja-bez-vode-kao-i-deo-zemuna-oko-batajnickog-druma/ | tags: ["Vesti","zemun","beogradski vodovod","ripanj","nestanak vode"]
+- Gledajte UŽIVO Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
+- Idemo dalje: Milica Branković i Aleksandra Stanković (8.11.2026) | https://n1info.rs/video/idemo-dalje/idemo-dalje-milica-brankovic-i-aleksandra-stankovic-8112026/ | tags: ["Idemo dalje","milica branković","aleksandra stanković"]
+- Putevi Srbije upozoravaju: Magla na putu Kopaonik - Jaram, odroni kod Zaječara | https://n1info.rs/vesti/putevi-srbije-upozoravaju-magla-na-putu-kopaonik-jaram-odroni-kod-zajecara/ | tags: ["Vesti","kopaonik","prohodnost puteva","zaječar","putevi srbije","magla"]
 
 ## Nova.rs
-Categories: {"ostalo":3,"ekonomija":4,"zabava":4,"zivot":3,"sport":9,"svet":10,"kultura":3,"hronika":5,"politika":7,"drustvo":2}
-- [ostalo] Kuća sa 1000 vrata - gost Goran Kovačević, snimatelj i direktor fotografije
-- [ekonomija / AD:sponsored] Sakupljaj zvezdice i biraj proizvode uz "Moj Maxi" aplikaciju
-- [zabava] "Nemaju partnere godinama, jako je čudno vreme": Ognjen Amidžić priznao da se kaje zbog jedne stvari
-- [zivot] Šta se desilo sa potomcima Vuka Brankovića, koji su čitavog života nosili žig izdaje
-- [ekonomija] Australijski MDI preuzeo projekat 'Majdanpek West' koji je nekada finansirao Rio Tinto
-- [sport] Košarkaški savez traži smenu u Olimpijskom komitetu Srbije
-  - flagged (sponsored): Sakupljaj zvezdice i biraj proizvode uz "Moj Maxi" aplikaciju https://nova.rs/vesti/biznis/sakupljaj-zvezdice-i-biraj-proizvode-uz-moj-maxi-aplikaciju/
-  - flagged (betting): Srbija ima šampionku sveta i prvu kvotu za Olimpijske igre 2028. https://nova.rs/sport/sport-ostalo/srbija-olimpijske-igre-los-andjeles-2028-aleksandra-stojadinovic-zlato-svetsko-prvenstvo/
+Categories: {"zivot":2,"politika":5,"sport":17,"hronika":7,"svet":3,"drustvo":8,"kultura":1,"zabava":4,"ekonomija":2,"ostalo":1}
+- [zivot] I Srbiji danas oblačno, mestimično sa kišom
+- [politika] Inspekcijska kontrola u Severnoj Mitrovici: Zatvoren kafić "Trezor", provere u toku u lokalu "Sindikat"
+- [sport] "Jedva sam čekao da pravim skauting za Zvezdu - Slovan cilja i evropsko takmičenje"
+- [sport] Problemi za Alimpijevića i Bešiktaš i još jedan neočekivan poraz
+- [sport] Sabalenka slavila u drami i krenula po poslednju titulu u sezoni
+- [hronika] Tanasije Marinković predao inicijativu za poništavanje odluka bivšeg predsednika Srbije o pomilovanju
 
 Uncategorized sample (for tuning):
-- Kuća sa 1000 vrata - gost Goran Kovačević, snimatelj i direktor fotografije | https://nova.rs/emisije/kuca-sa-1000-vrata-gost-goran-kovacevic-snimatelj-i-direktor-fotografije/ | tags: ["Emisije","kuća sa 1000 vrata cela emisija","goran kovačević"]
-- Muka podanika: vođa je pao, šta ćemo sad mi? Piše Ranko Pivljanin | https://nova.rs/kolumne/muka-podanika-vodja-je-pao-sta-cemo-sad-mi-pise-ranko-pivljanin/ | tags: ["Kolumne","kolumne","kolumna","ranko pivljanin"]
-- Pokreni se - Cela emisija - 8.11.2026. | https://nova.rs/emisije/pokreni-se-cela-emisija-8112026/ | tags: ["Emisije","pokreni se cela emisija"]
+- Dnevnik - Cela emisija - 8.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-8112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"svet":11,"hronika":2,"sport":12,"kultura":5,"tehnologija":4,"ekonomija":9,"region":6,"zivot":18,"zdravlje":3,"zabava":3,"drustvo":2,"politika":3,"ostalo":2}
-- [svet] Putine, počelo je...
-- [hronika] Veselin Milić prvi put u sudnici – negirao krivicu FOTO
-- [sport] Paunović grmi na konferenciji – niko nije bezbedan, bez dlake na jeziku! VIDEO
-- [svet] "Zmajevi zubi" i rovovi za zaustavljanje Rusa; Putine, spremni su
-- [kultura] Lazar Ristovski nagrađen na festivalu u Moskvi: "Rusija ceni umetnike"
-- [tehnologija] WhatsApp uvodi novu funkciju – kontrolišite ko vidi vaš broj
+Categories: {"ostalo":3,"svet":14,"sport":18,"zivot":13,"politika":6,"drustvo":3,"kultura":4,"zabava":4,"ekonomija":9,"zdravlje":2,"region":1,"tehnologija":2,"hronika":1}
+- [ostalo] Na današnji dan, 10. novembar
+- [svet] Rat – dan 1.719: Nastavljeni žestoki napadi na Ukrajinu; Katastrofalni gubici ruske vojske FOTO/VIDEO
+- [sport] Stevanović pred Ligu šampiona: "Svesni smo da možemo"
+- [svet] Stiže nova ruska pretnja: "Orion" nosi razornu raketu dometa 500 kilometara VIDEO
+- [sport] Sara, Kristina i Natalija predvode Srbiju na Svetskom kupu
+- [svet] Merc: "Nemačka pred istorijskim iskušenjem"
 
 Uncategorized sample (for tuning):
-- Osam navika koje ljudi iz skromnijih porodica imaju i kad odrastu | https://superzena.b92.net/dom-i-porodica/roditeljstvo/283418/osam-navika-koje-ljudi-iz-skromnijih-porodica-imaju-i-kad-odrastu/vest | tags: []
-- Kosa kao ogledalo je novi simbol luksuza: Kako da postignete "glass hair" efekat? FOTO | https://superzena.b92.net/lepa-i-zdrava/lepota-zene/282773/frizura-koja-je-sada-najveci-hit-lako-se-pravi-i-kod-kuce/vest | tags: []
+- Na današnji dan, 10. novembar | https://www.b92.net/info/razno/283657/na-danasnji-dan-10-novembar/vest | tags: ["Najnovije"]
+- Ne treba vam oprema, a sve traje samo osam minuta: Fitnes rutina koja aktivira celo telo VIDEO | https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/283487/efikasan-trening-od-osam-minuta-za-one-koji-nikad-nemaju-vremena/vest | tags: []
+- Šest bjuti saveta kako da imate savršenu kožu lica kao vrhunski modeli | https://superzena.b92.net/lepa-i-zdrava/lepota-zene/283586/bjuti-saveti-kako-imati-savrsenu-kozu-lica-kao-vrhunski-modeli/vest | tags: []
 
 ## Blic
-Categories: {"zivot":6,"svet":11,"ekonomija":13,"zabava":16,"hronika":7,"kultura":5,"drustvo":8,"politika":3,"zdravlje":1}
-- [zivot] Klasični kuhinjski ormarići izlaze iz mode: Ljudi sve više biraju ovaj retro detalj, a puno je povoljniji
-- [svet] KO JE ARON, BRAT VIKTORA ORBANA Pao je u akciji "Čistilište": Imao streljanu izgrađenu parama iz EU, u Hrvatskoj firmu
-- [ekonomija] Šta Studentska lista planira u građevinarstvu, urbanizmu i IT-u: Nema prodaje javnih stanova
-- [zabava] "Skrasio sam se kad su ujaci, tetke i strine prestale da se sekiraju": Srđan Predojević se oženio u 43. godini u ambasadi Srbije u Parizu, ŽENA MU JE VEOMA USPEŠNA
-- [hronika] UHAPŠEN VOZAČ IZ SRBIJE! Bio za volanom autobusa koji se prevrnuo kod Zagreba, evo za šta se tereti
-- [hronika] "MOJ SIN JE MRTAV, A VOZAČ TRENIRA, IZLAZI U DISKOTEKE I ŽIVI NORMALNO" Otac mladića (19) koji je poginuo u nesreći u Skugriću sumnja u regularnost istrage i traži pravdu
-
-## Politika
-Categories: {"svet":7,"ostalo":6,"sport":1,"hronika":3,"kultura":1,"ekonomija":1,"region":1}
-- [svet] Peskov: Evropljani neće učestvovati u pregovorima o Ukrajini
-- [ostalo] Kod Šapca planirana izgradnja dve solarne elektrane
-- [ostalo] Veselin Milić negirao krivicu, odbrana tvrdi da je Kričak nezakonito prikupljao dokaze
-- [svet] Kineski električni automobil dostigao brzinu preko 500 km/h i postavio svetski rekord
-- [ostalo] Kod Novog Sada obustava saobraćaja do 1. decembra zbog radova na nadvožnjaku
-- [sport] Paunović: Vlahović zbog privatne situacije propušta okupljanje reprezentacije Srbije
+Categories: {"svet":14,"zivot":8,"ostalo":2,"ekonomija":5,"zabava":24,"politika":4,"tehnologija":1,"drustvo":5,"hronika":6,"zdravlje":1}
+- [svet] RASTE BROJ MRTVIH U EKSPLOZIJI U TURSKOJ Oglasio se Erdogan: Spasilačke ekipe nastavljaju potragu za radnicima
+- [zivot] Plastične posude mirišu na luk i posle pranja? Jedan sastojak iz kuhinje može da reši problem za pola sata
+- [svet] Papa Lav održao misu u Argentini pred 2,5 miliona vernika (FOTO)
+- [ostalo] Naslovna strana za 10.11.
+- [ekonomija] Cene nafte pale na najniži nivo od 31. avgusta, barel Brenta ispod 94 dolara
+- [zivot] "Nemačka više nije zlatna zemlja" Nemica napustila sve i došla da živi u Srbiji - tvrdi da je ovde pronašla ono što je godinama tražila (VIDEO)
 
 Uncategorized sample (for tuning):
-- Kod Šapca planirana izgradnja dve solarne elektrane | https://www.politika.rs/scc/clanak/801199/kod-sapca-planirana-izgradnja-dve-solarne-elektrane | tags: []
-- Veselin Milić negirao krivicu, odbrana tvrdi da je Kričak nezakonito prikupljao dokaze | https://www.politika.rs/scc/clanak/801115/veselin-milic-negirao-krivicu-odbrana-tvrdi-da-je-kricak-nezakonito-prikupljao-dokaze | tags: []
-- Kod Novog Sada obustava saobraćaja do 1. decembra zbog radova na nadvožnjaku | https://www.politika.rs/scc/clanak/801196/kod-novog-sada-obustava-saobracaja-do-1-decembra-zbog-radova-na-nadvoznjaku | tags: []
-- U Srbiji sutra oblačno i kišovito, od nedelje zahlađenje i suvo vreme | https://www.politika.rs/scc/clanak/801191/u-srbiji-sutra-oblacno-i-kisovito-od-nedelje-zahladenje-i-suvo-vreme | tags: []
-- Veletržnica Beograd radiće 24 časa tokom Dana primirja | https://www.politika.rs/scc/clanak/801186/veletrznica-beograd-radice-24-casa-tokom-dana-primirja | tags: []
-- Orban o istrazi protiv brata: Ja sam meta, on je samo oruđe | https://www.politika.rs/scc/clanak/801185/orban-o-istrazi-protiv-brata-ja-sam-meta-on-je-samo-orude | tags: []
+- Naslovna strana za 10.11. | https://www.blic.rs/print/naslovna-strana-za-1011/zgsn704 | tags: []
+- BLIC STRIP Crta i piše: Marko Somborac | https://www.blic.rs/blicstrip/blic-strip-crta-i-pise-marko-somborac/ydg38eh | tags: []
+
+## Politika
+Categories: {"svet":8,"ostalo":2,"drustvo":2,"politika":2,"ekonomija":3,"region":1,"hronika":1,"sport":1}
+- [svet] Oluja „Čarls” u Portugalu i Španiji
+- [ostalo] Maskirani u crne časne sestre plašili decu
+- [svet] Sebastijan Kurc upozorava na velike promene u Evropi
+- [svet] Kanal 12: Netanjahuov pritisak na ultraortodoksne Jevreje
+- [ostalo] Inspektori ponovo upali u srpske lokale u Mitrovici
+- [drustvo] Jovanov: Demokrate preuzimaju studentsku listu
+
+Uncategorized sample (for tuning):
+- Maskirani u crne časne sestre plašili decu | https://www.politika.rs/scc/clanak/801400/maskirani-u-crne-casne-sestre-plasili-decu | tags: []
+- Inspektori ponovo upali u srpske lokale u Mitrovici | https://www.politika.rs/scc/clanak/801395/inspektori-ponovo-upali-u-srpske-lokale-u-mitrovici | tags: []
 
 ## RTS
-Categories: {"hronika":7,"ekonomija":3,"svet":2,"region":3,"politika":3,"drustvo":2}
-- [hronika] NUNS traži procesuiranje odgovornih za pretnje novinarki Brankici Stanković
-- [ekonomija] Forbs Srbija: Pokrenuta prva izvršenja za naplatu dugovanja Idea marketa
-- [svet] Eksplozija u fabrici čelika u Turskoj – troje poginulih, traga se za nestalima
-- [region] JANAF obustavio transport nafte zbog havarije
-- [politika] Stanarević: Otvaranje dosijea mora biti prioritet
-- [hronika] Milić na početku suđenja negirao krivicu za krivična dela u vezi sa ubistvom na Senjaku
+Categories: {"hronika":5,"politika":4,"ekonomija":4,"drustvo":4,"svet":1,"zivot":1,"ostalo":1}
+- [hronika] Tužilaštvo o zlostavljanju u garaži Vlade: Nadležni svesno čekali da snimci budu obrisani
+- [politika] RIK objavio preliminarne rezultate za izbore za članove nacionalnih saveta manjina
+- [ekonomija] Sloga: Dogovorena zaštita najugroženijih radnika, pogon kompanije "Valy" u Valjevu ostaje
+- [politika] Studentska lista: Nova Vlada će hitno predstaviti mere za stabilizaciju poslovanja IDEA Marketa
+- [drustvo] Prvi ugovori za oko 300 roditelja-negovatelja, isplate naknada počinju narednih dana
+- [drustvo] Deo zaposlenih u Muzičkoj školi "Mokranjac“ traži ostavku direktorke
+
+Uncategorized sample (for tuning):
+- Leskovac: Budžet za sport | https://www.rts.rs/vesti/srbija-danas/6079987/leskovac-budzet-za-sport.html | tags: ["Srbija danas"]
