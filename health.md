@@ -1,98 +1,104 @@
 # Vesti health report
 
-Run: 2026-11-10T00:00:53.347Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-10T11:27:50.260Z  |  items: 287  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [B92] Possible ads NOT flagged: "Malo poznata banja krije se nadomak Niša: Voda ima 30 stepeni, a kupanje je besplatno VIDEO"; "AI bi mogao ostaviti građane bez jeftine struje: Norveška povukla ručnu"
+1. **MED** [Politika] 35% of stories are uncategorized ("Ostalo"). Common words in them: zabranio(1), emitovanje(1), dnevnika(1), vesti(1), kurir(1), reklama(1), prvoj(1), sutra(1). Add section names / keyword stems in lib/classify.js.
+2. **LOW** [Blic] Possible ads NOT flagged: "Povlači se poznati "Ford" automobil sa tržišta Srbije: Vlasnicima besplatna provera, rizik veliki"
+3. **LOW** [RTS] Icon address unreachable (The operation was aborted due to timeout); the app shows a colored dot instead.
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 46 | 1.0h | 100% | 15% | 2 |
-| Nova.rs | yes | 50 | 0.3h | 100% | 2% | 0 |
-| B92 | yes | 80 | 1.0h | 95% | 4% | 0 |
-| Blic | yes | 70 | 0.1h | 100% | 3% | 0 |
-| Politika | yes | 20 | 0.2h | 100% | 10% | 0 |
-| RTS | yes | 20 | 1.9h | 100% | 5% | 0 |
+| N1 | yes | 47 | 0.1h | 100% | 17% | 1 |
+| Nova.rs | yes | 50 | 0.0h | 100% | 6% | 0 |
+| B92 | yes | 80 | 0.1h | 95% | 3% | 0 |
+| Blic | yes | 70 | 0.1h | 100% | 1% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 35% | 0 |
+| RTS | yes | 20 | 0.0h | 100% | 5% | 0 |
 
 ## Front page right now
-1. [multi, 6 outlets, score 68.2] RIK objavio preliminarne rezultate za izbore za članove nacionalnih saveta manjina
-   - also (b92): RIK objavio preliminarne rezultate za izbore za članove nacionalnih saveta manjina
-   - also (politika): RIK objavio preliminarne rezultate izbora za članove nacionalnih saveta manjina
-   - also (nova): RIK utvrdio preliminarne rezultate izbora za savete nacionalnih manjina: Glasalo 30 do 40 odsto
-   - also (n1): RIK utvrdio preliminarne rezultate izbora za savete nacionalnih manjina
-   - also (blic): RIK: Slab odziv na izborima za nacionalne savete, Bošnjaci i Mađari najviše glasali (VIDEO)
-2. [multi, 5 outlets, score 55.8] Predsedniku opštine Inđija Marku Gašiću i još jednom uhapšenom određen pritvor do 30 dana
-   - also (b92): Određen pritvor od 30 dana predsedniku opštine Inđija Marku Gašiću i direktoru JP "Inđija put"
-   - also (n1): Viši sud u Novom Sadu odredio pritvor predsedniku Opštine Inđija i direktoru JP "Inđija put"
-   - also (nova): Viši sud u Novom Sadu odredio pritvor predsedniku Opštine Inđija i direktoru JP "Inđija put"
-   - also (blic): Određen pritvor bivšem i aktuelnom direktoru JP "Inđija put"
-3. [multi, 4 outlets, score 48.7] Tužilaštvo o zlostavljanju u garaži Vlade: Nadležni svesno čekali da snimci budu obrisani
-   - also (n1): Tužilaštvo objavilo hronologiju postupanja u slučaju garaže Vlade: Nadležni svesno čekali da snimci budu obrisani
-   - also (nova): Tužilaštvo: Pokrenuta istraga protiv devet policajaca zbog zlostavljanja studenata u garaži Vlade, svima određen pritvor
-   - also (blic): Prvo osnovno javno tužilaštvo u Beogradu: "Nije tačno da nismo preduzimali radnje povodom slučaja zlostavljanja studenata u garaži Vlade Srbije"
-4. [multi, 4 outlets, score 47.6] Studentska lista: Nova Vlada će hitno predstaviti mere za stabilizaciju poslovanja IDEA Marketa
-   - also (n1): Studentski pokret: Nova Vlada će po formiranju hitno predstaviti mere za stabilizaciju poslovanja Idea marketa
-   - also (b92): Najavljene mere za stabilizaciju poslovanja Idea marketa i zaštitu dobavljača
-   - also (nova): Studentski pokret: Nova Vlada će po formiranju hitno predstaviti mere za stabilizaciju poslovanja Idea marketa
-5. [multi, 3 outlets, score 38.4] Inspekcijska kontrola u Severnoj Mitrovici: Zatvoren kafić "Trezor", provere u toku u lokalu "Sindikat"
-   - also (n1): U Severnoj Mitrovici inspekcijski nadzor više ugostiteljskih objekata
-   - also (politika): Inspektori ponovo upali u srpske lokale u Mitrovici
-6. [multi, 3 outlets, score 37.3] Merc: "Nemačka pred istorijskim iskušenjem"
-   - also (politika): Merc: Porast antisemitizma u Nemačkoj
-   - also (blic): MERC ZAPRETIO BLOKADOM BUDŽETA EU Nemačka postavila ultimatum svim članicama zbog finansiranja Ukrajine
-   - also (politika): Merc zapretio blokadom budžeta EU ako sve članice ne pristanu da finansiraju Ukrajinu
-7. [multi, 3 outlets, score 33.5] Vladislav Dajković osuđen na zatvorsku kaznu u Albaniji
-   - also (politika): Sud u Albaniji osudio Vladislava Dajkovića, najavljena vanredna konferencija
-   - also (blic): Vladislav Dajković osuđen na zatvorsku kaznu u Albaniji, sutra se obraća javnosti
-8. [multi, 3 outlets, score 33.4] Nisu privedene, samo su bile u policiji na ispitivanju
-   - also (n1): Novosadsko tužilaštvo: Nisu privedene i saslušane spremačice u Skupštini Vojvodine, već je policija prikupljala izjave
-   - also (nova): Spremačice zaposlene u pokrajinskoj skupštini napustile policijsku stanicu nakon davanja izjava
-9. [multi, 3 outlets, score 33.3] Šoškić: Kurs dinara ostaje fiksan, rešenje za NIS treba tražiti u pregovorima sa ruskim vlasnicima
-   - also (nova): Šoškić (Studentska lista): Nema razloga za zabrinutost, kurs dinara ostaje fiksan
-   - also (blic): "BIĆE STABILAN ONOG TRENUTKA KADA SE PREUZME IZVRŠNA VLAST U SRBIJI" Šoškić o kursu dinara: "Nema nikakvog razloga da bude drugačije"
-10. [multi, 2 outlets, score 29] RASTE BROJ MRTVIH U EKSPLOZIJI U TURSKOJ Oglasio se Erdogan: Spasilačke ekipe nastavljaju potragu za radnicima
-   - also (b92): Porastao broj mrtvih u eksploziji u Turskoj; Spasilačke aktivnosti se nastavljaju VIDEO
+1. [multi, 5 outlets, score 58.5] Savet REM-a izrekao više mera, Kuriru jednodnevna zabrana Dnevnika i dvodnevna zabrana Vesti
+   - also (politika): REM zabranio emitovanje „Dnevnika” i „Vesti” na TV Kurir i reklama na Prvoj TV
+   - also (blic): REM izrekao mere protiv TV Kurir i TV Prva: Jedna televizija dobila upozorenje
+   - also (nova): Savet REM-a televiziji Prva zabranio oglašavanje na jedan dan zbog uvreda koje je izrekao Milomir Marić
+   - also (n1): Savet REM-a televiziji Prva zabranio oglašavanje na jedan dan zbog uvreda koje je izrekao Milomir Marić
+   - also (nova): Savet REM-a televiziji Kurir zabranio emitovanje Dnevnika na jedan dan, a Vesti na dva dana
+   - also (n1): Savet REM-a televiziji Kurir zabranio emitovanje Dnevnika na jedan dan, a Vesti na dva dana
+2. [multi, 4 outlets, score 49] Veliki lančani sudar na auto-putu u Bugarskoj, najmanje 10 poginulih
+   - also (blic): (VIDEO) Vozila ZDROBLJENA i naslagana jedna na druga, nadleću helikopteri, CRNI DIM GUTA NEBO: Jezivi snimci stravične nesreće u kojoj je učestvovalo 70 vozila u Bugarskoj, 11 mrtvih
+   - also (blic): (VIDEO) 11 MRTVIH, 70 VOZILA UČESTVOVALO U NESREĆI! Horor u Bugarskoj, VOZILA SMRSKANA, ima zarobljenih u automobilima
+   - also (nova): FOTO, VIDEO Stravičan lančani sudar u Bugarskoj: Najmanje 12 mrtvih, u smrskanim kolima zarobljena i deca
+   - also (n1): Najmanje 10 poginulih u lančanim sudarima u Bugarskoj, učestvovalo oko 50 vozila (FOTO)
+3. [multi, 4 outlets, score 48.5] Potpisano; Oružje kreće ka Ukrajini; Danas je dan "D"; Sve oči uprte u Abu Dabi FOTO/VIDEO
+   - also (n1): EU, SAD i Ukrajina usaglasili stavove pred trilateralne pregovore sa Rusijom u Abu Dabiju
+   - also (rts): Pregovori Ukrajine, Rusije i SAD iza zatvorenih vrata u Abu Dabiju
+   - also (blic): SVE OČI UPRTE U ABU DABI "Rusija i Ukrajina utvrdile tačke neslaganja": Počeli pregovori o ratu, Amerikanci izneli JEDAN ZAHTEV
+   - also (blic): Delegacija Ukrajine doputovala u Abu Dabi na pregovore sa Rusijom: "Pred nama je mnogo posla"
+4. [multi, 4 outlets, score 43.7] Beograd dobija 29 remontovanih i modernizovanih tramvaja
+   - also (blic): BEOGRAD DOBIJA 29 NOVIH TRAMVAJA! Oglasio se Šapić: "U javni prevoz glavnog grada investiraće se više od 100 miliona evra"
+   - also (nova): Šapić: Beograd dobija 29 potpuno remontovanih i modernizovanih tramvaja
+   - also (n1): Šapić najavio 29 remontovanih tramvaja: Finansijsko stanje Beograda daleko od onoga što se predstavlja u javnosti
+5. [multi, 3 outlets, score 39] Privremeno obustaviljen prijem zahteva za stambene kredite za mlade
+   - also (b92): Subvencionisani krediti za mlade "na pauzi" u Banci Poštanska štedionica
+   - also (nova): Poštanska štedionica privremeno obustavila prijem zahteva za subvencionisane kredite za mlade
+6. [multi, 3 outlets, score 38] Uhapšen osumnjičeni za razbojništvo kod Niša: Taksisti pretio i izbacio ga iz vozila, pa automobilom udario u ogradu
+   - also (blic): FILMSKA POTERA KOD NIŠA Nišlija (30) osumnjičen da je pretio taksisti, OTEO MU AUTO, pa se slupao o ogradu kuće!
+   - also (n1): Uhapšen muškarac u Nišu: Taksisti oteo vozilo, pa udario u ogradu kuće i pobegao
+7. [multi, 3 outlets, score 35.8] U Boru 18 obolelih od malih boginja – epidemiolozi pozivaju roditelje da vakcinišu decu
+   - also (n1): Batut: U Srbiji od oktobra 22 slučaja malih boginja
+   - also (blic): HITNO OGLAŠAVANJE "BATUTA" ZBOG MALIH BOGINJA Epidemija u Boru, broj obolelih skočio u oktobru, od pacijenta se zarazio i zdravstveni radnik
+8. [multi, 3 outlets, score 35.5] "OSTAVKU DAJEM MOŽDA AKO BUDEM MRTAV" Goran Cvetanović: "I dalje sam gradonačelnik Leskovca, nema ništa od ostavke, ne pomišljajte na to"
+   - also (n1): Gradonačelnik Leskovca: Nema ništa od ostavke, možda ako budem mrtav
+   - also (nova): Gradonačelnik Leskovca Cvetanović: Siniša Mali i ministarstvo naredili da smanjimo budžet, ostavku dajem samo ako sam mrtav
+9. [multi, 3 outlets, score 33.7] Eksplozija u centru Zagreba: Pronađeno telo
+   - also (nova): Eksplozija u centru Zagreba: Pronađeno beživotno telo ispred muzeja Mimara
+   - also (n1): Eksplozija u centru Zagreba, nađeno telo
+10. [multi, 2 outlets, score 29] Merc postavio ultimatum koji trese Evropu: Nema dogovora o budžetu EU dok se ne reši pitanje Ukrajine
+   - also (n1): Francusko predsedništvo: Nema dogovora o Ukrajini bez Evropljana
 
 ## Details
 ### N1
-Categories: {"svet":15,"ostalo":7,"zivot":5,"politika":4,"region":1,"drustvo":3,"ekonomija":3,"hronika":6,"sport":1,"kultura":1}
+Categories: {"ostalo":8,"svet":13,"hronika":5,"zivot":6,"politika":6,"sport":1,"drustvo":2,"ekonomija":4,"region":2}
 Flagged:
-- (self) Global fokus: Tramp i Netanjahu u problemu? <https://n1info.rs/najave-emisija/global-fokus-ponedeljak-u-20h-tramp-i-netanjahu-u-problemu/>
-- (self) Gledajte UŽIVO Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
+- (self) Gledajte UŽIVO N1 Studio Live: Kako do pravde? <https://n1info.rs/najave-emisija/n1-studio-live-kako-do-pravde/>
 Uncategorized sample:
-- U Severnoj Mitrovici inspekcijski nadzor više ugostiteljskih objekata <https://n1info.rs/vesti/u-severnoj-mitrovici-inspekcijski-nadzor-vise-ugostiteljskih-objekata/> tags=["Vesti","ugostiteljski objekti","severna mitrovica","inspekcijski nadzor"]
-- Utisak nedelje: Ivan Ninić, Vesna Mališić i Dejan Šoškić (9.11.2026) <https://n1info.rs/video/utisak-nedelje-ivan-ninic-vesna-malisic-i-dejan-soskic-9112026/> tags=["Video","video","utisak nedelje","utisak video"]
-- Dnevnik u 19 (8.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-8112026/> tags=["Dnevnik","n1","dnevnik","video"]
-- Beogradski vodovod: Sutra deo Ripnja bez vode, kao i deo Zemuna oko Batajničkog druma <https://n1info.rs/vesti/beogradski-vodovod-sutra-deo-ripnja-bez-vode-kao-i-deo-zemuna-oko-batajnickog-druma/> tags=["Vesti","zemun","beogradski vodovod","ripanj","nestanak vode"]
-- Gledajte UŽIVO Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
-- Idemo dalje: Milica Branković i Aleksandra Stanković (8.11.2026) <https://n1info.rs/video/idemo-dalje/idemo-dalje-milica-brankovic-i-aleksandra-stankovic-8112026/> tags=["Idemo dalje","milica branković","aleksandra stanković"]
+- Janković: Političarke u Srbiji pitaju "čija si ljubavnica", vređaju ih, diskriminišu... <https://n1info.rs/vesti/jankovic-politicarke-u-srbiji-pitaju-cija-si-ljubavnica-vredjaju-ih-diskriminisu/> tags=["Vesti","diskriminacija žena","žene u politici","žene","rodna ravnopravnost"]
+- Štrajk upozorenja Nezavisnog sindikata Gradske uprave grada Zrenjanina <https://n1info.rs/vesti/strajk-upozorenja-nezavisnog-sindikata-gradske-uprave-grada-zrenjanina/> tags=["Vesti","zrenjanin","nezavisni sindikat","gradska uprava","štrajk upozorenja"]
+- Gledajte UŽIVO N1 Studio Live: Kako do pravde? <https://n1info.rs/najave-emisija/n1-studio-live-kako-do-pravde/> tags=["Najave emisija","najave emisija"]
+- Savet REM-a televiziji Prva zabranio oglašavanje na jedan dan zbog uvreda koje je izrekao Milomir Marić <https://n1info.rs/vesti/savet-rem-a-televiziji-prva-zabranio-oglasavanje-na-jedan-dan-zbog-uvreda-koje-je-izrekao-milomir-maric/> tags=["Vesti","savet rem","tv prva","milomir marić"]
+- Martinoli o Informeru: Ovo nije odmazda, svi smo malo zbunjeni činjenicom da REM radi svoj posao <https://n1info.rs/vesti/ana-martinoli-informer-savet-rem-mere/> tags=["Vesti","regulatorno telo za elektronske medije","rem","dragan j vučićević","nacionalne frekvencije","ana martinoli"]
+- Savet REM-a televiziji Kurir zabranio emitovanje Dnevnika na jedan dan, a Vesti na dva dana <https://n1info.rs/vesti/savet-rem-a-televiziji-kurir-zabranio-emitovanje-dnevnika-na-jedan-dan-a-vesti-na-dva-dana/> tags=["Vesti","savet rem","kurir"]
 
 ### Nova.rs
-Categories: {"zivot":2,"politika":5,"sport":17,"hronika":7,"svet":3,"drustvo":8,"kultura":1,"zabava":4,"ekonomija":2,"ostalo":1}
+Categories: {"svet":7,"politika":7,"hronika":7,"zabava":7,"kultura":3,"drustvo":7,"sport":6,"zivot":2,"ostalo":3,"ekonomija":1}
 Uncategorized sample:
-- Dnevnik - Cela emisija - 8.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-8112026/> tags=["Emisije","dnevnik cela emisija"]
+- Priče jednog običnog Stanimira: Uapsili Miška Golju, ne mož drugačije zemljače <https://nova.rs/kolumne/price-jednog-obicnog-stanimira-uapsili-miska-golju-ne-moz-drugacije-zemljace/> tags=["Kolumne","kolumna","bratislav marković"]
+- Piše Ivan Mrđen: “Exegi monumentum” Slaviše Lekića <https://nova.rs/kolumne/pise-ivan-mrdjen-exegi-monumentum-slavise-lekica/> tags=["Kolumne","napoleon bonaparta","slaviša lekić","novak đoković","aleksadar dima ml.","“danas”"]
+- Mentalno razgibavanje: Sad nas vide svi! <https://nova.rs/emisije/mentalno-razgibavanje-sad-nas-vide-svi/> tags=["Emisije","mentalno razgibavanje cela emisija"]
 
 ### B92
-Categories: {"ostalo":3,"svet":14,"sport":18,"zivot":13,"politika":6,"drustvo":3,"kultura":4,"zabava":4,"ekonomija":9,"zdravlje":2,"region":1,"tehnologija":2,"hronika":1}
+Categories: {"svet":13,"sport":13,"ostalo":2,"zdravlje":4,"ekonomija":9,"zivot":20,"tehnologija":3,"kultura":5,"politika":4,"region":4,"zabava":2,"drustvo":1}
 Uncategorized sample:
-- Na današnji dan, 10. novembar <https://www.b92.net/info/razno/283657/na-danasnji-dan-10-novembar/vest> tags=["Najnovije"]
-- Ne treba vam oprema, a sve traje samo osam minuta: Fitnes rutina koja aktivira celo telo VIDEO <https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/283487/efikasan-trening-od-osam-minuta-za-one-koji-nikad-nemaju-vremena/vest> tags=[]
-- Šest bjuti saveta kako da imate savršenu kožu lica kao vrhunski modeli <https://superzena.b92.net/lepa-i-zdrava/lepota-zene/283586/bjuti-saveti-kako-imati-savrsenu-kozu-lica-kao-vrhunski-modeli/vest> tags=[]
+- Stari trik naših baka: Ovo je prava mera soli i vode za savršen rasol <https://superzena.b92.net/kuhinja/prakticni-saveti/283744/ovo-je-prava-mera-soli-i-vode-za-savrsen-rasol/vest> tags=["Najnovije"]
+- Ako ste najstarije dete, prepoznaćete se u ovih šest navika <https://superzena.b92.net/dom-i-porodica/roditeljstvo/283692/najstarija-deca-imaju-ovih-6-navika-kad-odrastu/vest> tags=[]
 
 ### Blic
-Categories: {"svet":14,"zivot":8,"ostalo":2,"ekonomija":5,"zabava":24,"politika":4,"tehnologija":1,"drustvo":5,"hronika":6,"zdravlje":1}
+Categories: {"drustvo":8,"zabava":16,"hronika":4,"kultura":5,"zivot":7,"ekonomija":13,"politika":6,"svet":9,"ostalo":1,"zdravlje":1}
 Uncategorized sample:
-- Naslovna strana za 10.11. <https://www.blic.rs/print/naslovna-strana-za-1011/zgsn704> tags=[]
-- BLIC STRIP Crta i piše: Marko Somborac <https://www.blic.rs/blicstrip/blic-strip-crta-i-pise-marko-somborac/ydg38eh> tags=[]
+- 'Kraj svega': M. Džon Harison najstariji dobitnik Bukerove nagrade u istoriji <https://www.blic.rs/bbc/kraj-svega-m-dzon-harison-najstariji-dobitnik-bukerove-nagrade-u-istoriji/zney2x6> tags=[]
 
 ### Politika
-Categories: {"svet":8,"ostalo":2,"drustvo":2,"politika":2,"ekonomija":3,"region":1,"hronika":1,"sport":1}
+Categories: {"ekonomija":1,"ostalo":7,"sport":4,"svet":5,"hronika":1,"kultura":2}
 Uncategorized sample:
-- Maskirani u crne časne sestre plašili decu <https://www.politika.rs/scc/clanak/801400/maskirani-u-crne-casne-sestre-plasili-decu> tags=[]
-- Inspektori ponovo upali u srpske lokale u Mitrovici <https://www.politika.rs/scc/clanak/801395/inspektori-ponovo-upali-u-srpske-lokale-u-mitrovici> tags=[]
+- REM zabranio emitovanje „Dnevnika” i „Vesti” na TV Kurir i reklama na Prvoj TV <https://www.politika.rs/scc/clanak/801486/rem-zabranio-emitovanje-dnevnika-i-vesti-na-tv-kurir-i-reklama-na-prvoj-tv> tags=[]
+- Sutra oblačno sa kišom, u petak do 25 stepeni <https://www.politika.rs/scc/clanak/801497/sutra-oblacno-sa-kisom-u-petak-do-25-stepeni> tags=[]
+- Kamioni na Batrovcima i Šidu čekaju tri sata, za putnička vozila nema dužih zadržavanja <https://www.politika.rs/scc/clanak/801495/kamioni-na-batrovcima-i-sidu-cekaju-tri-sata-za-putnicka-vozila-nema-duzih-zadrzavanja> tags=[]
+- Užice beleži pet slučajeva šuge, prijavljen i novi oboleli <https://www.politika.rs/scc/clanak/801490/uzice-belezi-pet-slucajeva-suge-prijavljen-i-novi-oboleli> tags=[]
+- Viz er ukida pojedine letove <https://www.politika.rs/scc/clanak/801488/viz-er-ukida-pojedine-letove> tags=[]
+- Beogradske pijace na Dan primirja rade redovno, prodavnice skraćeno <https://www.politika.rs/scc/clanak/801482/beogradske-pijace-na-dan-primirja-rade-redovno-prodavnice-skraceno> tags=[]
 
 ### RTS
-Categories: {"hronika":5,"politika":4,"ekonomija":4,"drustvo":4,"svet":1,"zivot":1,"ostalo":1}
+Categories: {"region":2,"drustvo":4,"svet":4,"politika":4,"ekonomija":3,"ostalo":1,"zivot":1,"hronika":1}
 Uncategorized sample:
-- Leskovac: Budžet za sport <https://www.rts.rs/vesti/srbija-danas/6079987/leskovac-budzet-za-sport.html> tags=["Srbija danas"]
+- RTS: Kome odgovara javni servis <https://www.rts.rs/vesti/podkast/6079978/rts-kome-odgovara-javni-servis-.html> tags=["Podkast"]
