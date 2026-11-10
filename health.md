@@ -1,111 +1,98 @@
 # Vesti health report
 
-Run: 2026-11-09T11:53:18.873Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-10T00:00:53.347Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **MED** [Politika] 30% of stories are uncategorized ("Ostalo"). Common words in them: sapca(1), planirana(1), izgradnja(1), solarne(1), elektrane(1), veselin(1), milic(1), negirao(1). Add section names / keyword stems in lib/classify.js.
-2. **LOW** [Nova.rs] Possible ads NOT flagged: "Akademska knjiga slavi 20. rođendan: Na Našem sajmu na Kolarcu 14. novembra druženje s piscima, razgovori i veliki popusti"
-3. **LOW** [B92] Possible ads NOT flagged: "Najpovoljnije destinacije za putovanja u 2027. godini: Avionske karte jeftinije i do 66 odsto FOTO"; "Besplatno skijanje na Kopaoniku: Poznato kada počinje nova sezona"
-4. **LOW** [Blic] Possible ads NOT flagged: "Klasični kuhinjski ormarići izlaze iz mode: Ljudi sve više biraju ovaj retro detalj, a puno je povoljniji"
+1. **LOW** [B92] Possible ads NOT flagged: "Malo poznata banja krije se nadomak Niša: Voda ima 30 stepeni, a kupanje je besplatno VIDEO"; "AI bi mogao ostaviti građane bez jeftine struje: Norveška povukla ručnu"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 46 | 0.0h | 100% | 17% | 3 |
-| Nova.rs | yes | 50 | 0.0h | 100% | 6% | 2 |
-| B92 | yes | 80 | 0.1h | 95% | 3% | 0 |
-| Blic | yes | 70 | 0.0h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.0h | 100% | 30% | 0 |
-| RTS | yes | 20 | 0.0h | 100% | 0% | 0 |
+| N1 | yes | 46 | 1.0h | 100% | 15% | 2 |
+| Nova.rs | yes | 50 | 0.3h | 100% | 2% | 0 |
+| B92 | yes | 80 | 1.0h | 95% | 4% | 0 |
+| Blic | yes | 70 | 0.1h | 100% | 3% | 0 |
+| Politika | yes | 20 | 0.2h | 100% | 10% | 0 |
+| RTS | yes | 20 | 1.9h | 100% | 5% | 0 |
 
 ## Front page right now
-1. [multi, 6 outlets, score 68] Veselin Milić prvi put u sudnici – negirao krivicu FOTO
-   - also (rts): Milić na početku suđenja negirao krivicu za krivična dela u vezi sa ubistvom na Senjaku
-   - also (politika): Veselin Milić negirao krivicu, odbrana tvrdi da je Kričak nezakonito prikupljao dokaze
-   - also (n1): Milić odbacio optužbe, advokat tvrdi da je postupak posledica nezakonitog postupanja pripadnika MUP-a
-   - also (blic): "NISAM KRIV NI ZA JEDNO KRIVIČNO DELO" Veselin Milić prvi put u sudnici, oglasio se njegov advokat: "Optužnica je rezultat malicioznog postupanja Krička i Sekulovića" (FOTO, VIDEO)
-   - also (nova): Veselin Milić na početku suđenja izjavio da nije kriv, njegov advokat tvrdi da krivična prijava nije zasnovana na činjenicama
-2. [multi, 6 outlets, score 67.5] Indeks: Uhapšen vozač autobusa "Niš-ekspresa" zbog nesreće kod Zagreba
-   - also (blic): UHAPŠEN VOZAČ IZ SRBIJE! Bio za volanom autobusa koji se prevrnuo kod Zagreba, evo za šta se tereti
-   - also (n1): Uhapšen vozač autobusa Niš ekspresa koji se prevrnuo u Hrvatskoj
-   - also (b92): Uhapšen vozač autobusa nakon nereće u Hrvatskoj
-   - also (rts): U prevrtanju autobusa u Hrvatskoj poginula učenica Umetničke škole u Kraljevu
-   - also (politika): Uhapšen vozač autobusa koji se prevrnuo na autoputu kod Ivanić-Grada
-   - also (nova): Uhapšen vozač autobusa iz Srbije posle tragedije kod Zagreba: Poginule dve osobe, tužilaštvo traži pritvor
-3. [multi, 5 outlets, score 58.5] KO JE ARON, BRAT VIKTORA ORBANA Pao je u akciji "Čistilište": Imao streljanu izgrađenu parama iz EU, u Hrvatskoj firmu
-   - also (rts): Mađar: Priveden brat Viktora Orbana zbog sumnje na trgovinu ljudima
-   - also (b92): Uhapšen brat Viktora Orbana?
-   - also (blic): Oglasio se Viktor Orban nakon što mu je BRAT UHAPŠEN: "Ovo je prljava igra"
-   - also (n1): Priveden brat Viktora Orbana, osumnjičen da je umešan u krijumčarenje ljudi
-   - also (nova): Priveden brat Viktora Orbana zbog sumnje na trgovinu ljudima
-   - also (blic): UHAPŠEN BRAT VIKTORA ORBANA! Evo za šta je osumnjičen: Oglasio se Peter Mađar
-4. [multi, 5 outlets, score 54.3] VJT u Beogradu odustao od optužnice protiv studenata uhapšenih posle Vidovdanskog protesta
-   - also (b92): VJT odustalo od optužbe protiv devetoro okrivljenih za pripremu dela protiv ustavnog uređenja
-   - also (n1): VJT obustavilo postupak protiv devetoro studenata optuženih za navodnu pripremu nasilne promene ustavnog uređenja
-   - also (nova): VJT odustalo od optužbe protiv devetoro studenata zbog navodnog pripremanja nasilne promene ustavnog uređenja
-   - also (blic): VJT odustalo od optužbe protiv 9 okrivljenih za pripremu dela protiv ustavnog uređenja
-5. [multi, 3 outlets, score 38.4] Hitno se oglasio Orban: "Meta sam bio ja"
-   - also (nova): Oglasio se Viktor Orban nakon vesti o privođenju njegovog brata: "Ja sam meta"
-   - also (politika): Orban o istrazi protiv brata: Ja sam meta, on je samo oruđe
-6. [multi, 3 outlets, score 38] Peskov: Evropljani neće učestvovati u pregovorima o Ukrajini
-   - also (n1): Kremlj negira prisustvo evropskih zvaničnika na pregovorima sa Ukrajinom u Abu Dabiju
-   - also (nova): Mond: Evropu će na pregovorima o Ukrajini predstavljati Francuska, Nemačka i Velika Britanija
-7. [multi, 3 outlets, score 36.4] ZLF: BIA ulazila u stan Radomira Lazovića
-   - also (n1): ZLF: Radomir Lazović bio pod tajnim nadzorom BIA, uhapsiti Orlića i rasformirati Agenciju
-   - also (nova): BIA prisluškivala i Radomira Lazovića: "Agenti su mi ulazili u stan i automobil"
-8. [multi, 3 outlets, score 34.7] Grupa roditelja Pete beogradske gimnazije traže smenu direktora, podneli i krivičnu prijavu
-   - also (n1): Roditelji učenika Pete beogradske gimnazije podneli krivičnu prijavu protiv direktora te škole
-   - also (nova): Roditelji učenika Pete beogradske gimnazije podneli krivičnu prijavu protiv direktora te škole Ognjena Mrvaljevića
-9. [multi, 3 outlets, score 33.8] Fabris: Kurs dinara nije ugrožen, ali NBS mora da proveri menjačnice – kada se mogu očekivati niže kamate
-   - also (n1): Ekonomista: Kurs dinara nije ugrožen, ali NBS mora da proveri menjačnice
-   - also (b92): Ekonomista: "Kurs dinara nije ugrožen, ali NBS mora da proveri menjačnice"
-10. [multi, 3 outlets, score 33.8] Besplatno skijanje na Kopaoniku: Poznato kada počinje nova sezona
-   - also (blic): Objavljeno kada počinje ski sezona na Kopaoniku: Prvi dan besplatan
-   - also (n1): Skijališta Srbije objavila kad počinje sezona
+1. [multi, 6 outlets, score 68.2] RIK objavio preliminarne rezultate za izbore za članove nacionalnih saveta manjina
+   - also (b92): RIK objavio preliminarne rezultate za izbore za članove nacionalnih saveta manjina
+   - also (politika): RIK objavio preliminarne rezultate izbora za članove nacionalnih saveta manjina
+   - also (nova): RIK utvrdio preliminarne rezultate izbora za savete nacionalnih manjina: Glasalo 30 do 40 odsto
+   - also (n1): RIK utvrdio preliminarne rezultate izbora za savete nacionalnih manjina
+   - also (blic): RIK: Slab odziv na izborima za nacionalne savete, Bošnjaci i Mađari najviše glasali (VIDEO)
+2. [multi, 5 outlets, score 55.8] Predsedniku opštine Inđija Marku Gašiću i još jednom uhapšenom određen pritvor do 30 dana
+   - also (b92): Određen pritvor od 30 dana predsedniku opštine Inđija Marku Gašiću i direktoru JP "Inđija put"
+   - also (n1): Viši sud u Novom Sadu odredio pritvor predsedniku Opštine Inđija i direktoru JP "Inđija put"
+   - also (nova): Viši sud u Novom Sadu odredio pritvor predsedniku Opštine Inđija i direktoru JP "Inđija put"
+   - also (blic): Određen pritvor bivšem i aktuelnom direktoru JP "Inđija put"
+3. [multi, 4 outlets, score 48.7] Tužilaštvo o zlostavljanju u garaži Vlade: Nadležni svesno čekali da snimci budu obrisani
+   - also (n1): Tužilaštvo objavilo hronologiju postupanja u slučaju garaže Vlade: Nadležni svesno čekali da snimci budu obrisani
+   - also (nova): Tužilaštvo: Pokrenuta istraga protiv devet policajaca zbog zlostavljanja studenata u garaži Vlade, svima određen pritvor
+   - also (blic): Prvo osnovno javno tužilaštvo u Beogradu: "Nije tačno da nismo preduzimali radnje povodom slučaja zlostavljanja studenata u garaži Vlade Srbije"
+4. [multi, 4 outlets, score 47.6] Studentska lista: Nova Vlada će hitno predstaviti mere za stabilizaciju poslovanja IDEA Marketa
+   - also (n1): Studentski pokret: Nova Vlada će po formiranju hitno predstaviti mere za stabilizaciju poslovanja Idea marketa
+   - also (b92): Najavljene mere za stabilizaciju poslovanja Idea marketa i zaštitu dobavljača
+   - also (nova): Studentski pokret: Nova Vlada će po formiranju hitno predstaviti mere za stabilizaciju poslovanja Idea marketa
+5. [multi, 3 outlets, score 38.4] Inspekcijska kontrola u Severnoj Mitrovici: Zatvoren kafić "Trezor", provere u toku u lokalu "Sindikat"
+   - also (n1): U Severnoj Mitrovici inspekcijski nadzor više ugostiteljskih objekata
+   - also (politika): Inspektori ponovo upali u srpske lokale u Mitrovici
+6. [multi, 3 outlets, score 37.3] Merc: "Nemačka pred istorijskim iskušenjem"
+   - also (politika): Merc: Porast antisemitizma u Nemačkoj
+   - also (blic): MERC ZAPRETIO BLOKADOM BUDŽETA EU Nemačka postavila ultimatum svim članicama zbog finansiranja Ukrajine
+   - also (politika): Merc zapretio blokadom budžeta EU ako sve članice ne pristanu da finansiraju Ukrajinu
+7. [multi, 3 outlets, score 33.5] Vladislav Dajković osuđen na zatvorsku kaznu u Albaniji
+   - also (politika): Sud u Albaniji osudio Vladislava Dajkovića, najavljena vanredna konferencija
+   - also (blic): Vladislav Dajković osuđen na zatvorsku kaznu u Albaniji, sutra se obraća javnosti
+8. [multi, 3 outlets, score 33.4] Nisu privedene, samo su bile u policiji na ispitivanju
+   - also (n1): Novosadsko tužilaštvo: Nisu privedene i saslušane spremačice u Skupštini Vojvodine, već je policija prikupljala izjave
+   - also (nova): Spremačice zaposlene u pokrajinskoj skupštini napustile policijsku stanicu nakon davanja izjava
+9. [multi, 3 outlets, score 33.3] Šoškić: Kurs dinara ostaje fiksan, rešenje za NIS treba tražiti u pregovorima sa ruskim vlasnicima
+   - also (nova): Šoškić (Studentska lista): Nema razloga za zabrinutost, kurs dinara ostaje fiksan
+   - also (blic): "BIĆE STABILAN ONOG TRENUTKA KADA SE PREUZME IZVRŠNA VLAST U SRBIJI" Šoškić o kursu dinara: "Nema nikakvog razloga da bude drugačije"
+10. [multi, 2 outlets, score 29] RASTE BROJ MRTVIH U EKSPLOZIJI U TURSKOJ Oglasio se Erdogan: Spasilačke ekipe nastavljaju potragu za radnicima
+   - also (b92): Porastao broj mrtvih u eksploziji u Turskoj; Spasilačke aktivnosti se nastavljaju VIDEO
 
 ## Details
 ### N1
-Categories: {"region":4,"ekonomija":4,"zdravlje":1,"hronika":4,"svet":7,"ostalo":8,"zivot":5,"politika":10,"sport":1,"drustvo":2}
+Categories: {"svet":15,"ostalo":7,"zivot":5,"politika":4,"region":1,"drustvo":3,"ekonomija":3,"hronika":6,"sport":1,"kultura":1}
 Flagged:
-- (self) Dan uživo: Izazovi tranzicije vlasti <https://n1info.rs/najave-emisija/dan-uzivo-izazovi-tranzicije-vlasti/>
-- (self) Gledajte UŽIVO N1 Studio Live: Tužilaštvo se probudilo <https://n1info.rs/najave-emisija/n1-studio-live-tuzilastvo-se-probudilo/>
-- (self) Bez granica sa Andrejem, utorak od 23.30h: Pravi život na ulicama Etiopije <https://n1info.rs/najave-emisija/bez-granica-sa-andrejem-utorak-od-2330h-pravi-zivot-na-ulicama-etiopije/>
+- (self) Global fokus: Tramp i Netanjahu u problemu? <https://n1info.rs/najave-emisija/global-fokus-ponedeljak-u-20h-tramp-i-netanjahu-u-problemu/>
+- (self) Gledajte UŽIVO Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
 Uncategorized sample:
-- Dan uživo: Izazovi tranzicije vlasti <https://n1info.rs/najave-emisija/dan-uzivo-izazovi-tranzicije-vlasti/> tags=["Najave emisija","najave emisija"]
-- NUNS: Zahtevamo da odgovorni za ponovljene pretnje Brankici Stanković budu procesuirani <https://n1info.rs/vesti/nuns-zahtevamo-da-odgovorni-za-ponovljene-pretnje-brankici-stankovic-budu-procesuirani/> tags=["Vesti","brankica stanković","nuns","pretnje","kk partizan","navijači"]
-- Udruženja traže da Ustavni sud hitno odgovori na žalbu Danijele Štajnfeld: Pet godina čekanja na odluku da li će istraga silovanja biti nastavljena <https://n1info.rs/vesti/udruzenja-traze-da-ustavni-sud-hitno-odgovori-na-zalbu-danijele-stajnfeld-pet-godina-cekanja-na-odluku-da-li-ce-istraga-silovanja-biti-nastavljena/> tags=["Vesti","branislav lečić","danijela štajnfeld","ustavni sud srbije","ustavni sud","silovanje"]
-- ZLF: Radomir Lazović bio pod tajnim nadzorom BIA, uhapsiti Orlića i rasformirati Agenciju <https://n1info.rs/vesti/zlf-radomir-lazovic-bia-prisluskivanje/> tags=["Vesti","pegazus","zeleno-levi front","bia","zlf","prisluškivanje"]
-- VJT obustavilo postupak protiv devetoro studenata optuženih za navodnu pripremu nasilne promene ustavnog uređenja <https://n1info.rs/vesti/vjt-obustavilo-postupak-protiv-devetoro-studenata-optuzenih-za-pripremu-nasilne-promene-ustavnog-uredjenja/> tags=["Vesti","rušenje ustavnog poretka","više javno tužilaštvo u beogradu","pionirski park","građevinski fakultet u beogradu"]
-- Bez granica sa Andrejem: U afro-selu šampiona <https://n1info.rs/video/bez-granica-sa-andrejem-u-afro-selu-sampiona/> tags=["Video","bez granica sa andrejem","video"]
+- U Severnoj Mitrovici inspekcijski nadzor više ugostiteljskih objekata <https://n1info.rs/vesti/u-severnoj-mitrovici-inspekcijski-nadzor-vise-ugostiteljskih-objekata/> tags=["Vesti","ugostiteljski objekti","severna mitrovica","inspekcijski nadzor"]
+- Utisak nedelje: Ivan Ninić, Vesna Mališić i Dejan Šoškić (9.11.2026) <https://n1info.rs/video/utisak-nedelje-ivan-ninic-vesna-malisic-i-dejan-soskic-9112026/> tags=["Video","video","utisak nedelje","utisak video"]
+- Dnevnik u 19 (8.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-8112026/> tags=["Dnevnik","n1","dnevnik","video"]
+- Beogradski vodovod: Sutra deo Ripnja bez vode, kao i deo Zemuna oko Batajničkog druma <https://n1info.rs/vesti/beogradski-vodovod-sutra-deo-ripnja-bez-vode-kao-i-deo-zemuna-oko-batajnickog-druma/> tags=["Vesti","zemun","beogradski vodovod","ripanj","nestanak vode"]
+- Gledajte UŽIVO Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
+- Idemo dalje: Milica Branković i Aleksandra Stanković (8.11.2026) <https://n1info.rs/video/idemo-dalje/idemo-dalje-milica-brankovic-i-aleksandra-stankovic-8112026/> tags=["Idemo dalje","milica branković","aleksandra stanković"]
 
 ### Nova.rs
-Categories: {"ostalo":3,"ekonomija":4,"zabava":4,"zivot":3,"sport":9,"svet":10,"kultura":3,"hronika":5,"politika":7,"drustvo":2}
-Flagged:
-- (sponsored) Sakupljaj zvezdice i biraj proizvode uz "Moj Maxi" aplikaciju <https://nova.rs/vesti/biznis/sakupljaj-zvezdice-i-biraj-proizvode-uz-moj-maxi-aplikaciju/>
-- (betting) Srbija ima šampionku sveta i prvu kvotu za Olimpijske igre 2028. <https://nova.rs/sport/sport-ostalo/srbija-olimpijske-igre-los-andjeles-2028-aleksandra-stojadinovic-zlato-svetsko-prvenstvo/>
+Categories: {"zivot":2,"politika":5,"sport":17,"hronika":7,"svet":3,"drustvo":8,"kultura":1,"zabava":4,"ekonomija":2,"ostalo":1}
 Uncategorized sample:
-- Kuća sa 1000 vrata - gost Goran Kovačević, snimatelj i direktor fotografije <https://nova.rs/emisije/kuca-sa-1000-vrata-gost-goran-kovacevic-snimatelj-i-direktor-fotografije/> tags=["Emisije","kuća sa 1000 vrata cela emisija","goran kovačević"]
-- Muka podanika: vođa je pao, šta ćemo sad mi? Piše Ranko Pivljanin <https://nova.rs/kolumne/muka-podanika-vodja-je-pao-sta-cemo-sad-mi-pise-ranko-pivljanin/> tags=["Kolumne","kolumne","kolumna","ranko pivljanin"]
-- Pokreni se - Cela emisija - 8.11.2026. <https://nova.rs/emisije/pokreni-se-cela-emisija-8112026/> tags=["Emisije","pokreni se cela emisija"]
+- Dnevnik - Cela emisija - 8.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-8112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"svet":11,"hronika":2,"sport":12,"kultura":5,"tehnologija":4,"ekonomija":9,"region":6,"zivot":18,"zdravlje":3,"zabava":3,"drustvo":2,"politika":3,"ostalo":2}
+Categories: {"ostalo":3,"svet":14,"sport":18,"zivot":13,"politika":6,"drustvo":3,"kultura":4,"zabava":4,"ekonomija":9,"zdravlje":2,"region":1,"tehnologija":2,"hronika":1}
 Uncategorized sample:
-- Osam navika koje ljudi iz skromnijih porodica imaju i kad odrastu <https://superzena.b92.net/dom-i-porodica/roditeljstvo/283418/osam-navika-koje-ljudi-iz-skromnijih-porodica-imaju-i-kad-odrastu/vest> tags=[]
-- Kosa kao ogledalo je novi simbol luksuza: Kako da postignete "glass hair" efekat? FOTO <https://superzena.b92.net/lepa-i-zdrava/lepota-zene/282773/frizura-koja-je-sada-najveci-hit-lako-se-pravi-i-kod-kuce/vest> tags=[]
+- Na današnji dan, 10. novembar <https://www.b92.net/info/razno/283657/na-danasnji-dan-10-novembar/vest> tags=["Najnovije"]
+- Ne treba vam oprema, a sve traje samo osam minuta: Fitnes rutina koja aktivira celo telo VIDEO <https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/283487/efikasan-trening-od-osam-minuta-za-one-koji-nikad-nemaju-vremena/vest> tags=[]
+- Šest bjuti saveta kako da imate savršenu kožu lica kao vrhunski modeli <https://superzena.b92.net/lepa-i-zdrava/lepota-zene/283586/bjuti-saveti-kako-imati-savrsenu-kozu-lica-kao-vrhunski-modeli/vest> tags=[]
 
 ### Blic
-Categories: {"zivot":6,"svet":11,"ekonomija":13,"zabava":16,"hronika":7,"kultura":5,"drustvo":8,"politika":3,"zdravlje":1}
+Categories: {"svet":14,"zivot":8,"ostalo":2,"ekonomija":5,"zabava":24,"politika":4,"tehnologija":1,"drustvo":5,"hronika":6,"zdravlje":1}
+Uncategorized sample:
+- Naslovna strana za 10.11. <https://www.blic.rs/print/naslovna-strana-za-1011/zgsn704> tags=[]
+- BLIC STRIP Crta i piše: Marko Somborac <https://www.blic.rs/blicstrip/blic-strip-crta-i-pise-marko-somborac/ydg38eh> tags=[]
 
 ### Politika
-Categories: {"region":2,"svet":7,"ostalo":6,"sport":1,"hronika":2,"kultura":1,"ekonomija":1}
+Categories: {"svet":8,"ostalo":2,"drustvo":2,"politika":2,"ekonomija":3,"region":1,"hronika":1,"sport":1}
 Uncategorized sample:
-- Kod Šapca planirana izgradnja dve solarne elektrane <https://www.politika.rs/scc/clanak/801199/kod-sapca-planirana-izgradnja-dve-solarne-elektrane> tags=[]
-- Veselin Milić negirao krivicu, odbrana tvrdi da je Kričak nezakonito prikupljao dokaze <https://www.politika.rs/scc/clanak/801115/veselin-milic-negirao-krivicu-odbrana-tvrdi-da-je-kricak-nezakonito-prikupljao-dokaze> tags=[]
-- Kod Novog Sada obustava saobraćaja do 1. decembra zbog radova na nadvožnjaku <https://www.politika.rs/scc/clanak/801196/kod-novog-sada-obustava-saobracaja-do-1-decembra-zbog-radova-na-nadvoznjaku> tags=[]
-- U Srbiji sutra oblačno i kišovito, od nedelje zahlađenje i suvo vreme <https://www.politika.rs/scc/clanak/801191/u-srbiji-sutra-oblacno-i-kisovito-od-nedelje-zahladenje-i-suvo-vreme> tags=[]
-- Veletržnica Beograd radiće 24 časa tokom Dana primirja <https://www.politika.rs/scc/clanak/801186/veletrznica-beograd-radice-24-casa-tokom-dana-primirja> tags=[]
-- Orban o istrazi protiv brata: Ja sam meta, on je samo oruđe <https://www.politika.rs/scc/clanak/801185/orban-o-istrazi-protiv-brata-ja-sam-meta-on-je-samo-orude> tags=[]
+- Maskirani u crne časne sestre plašili decu <https://www.politika.rs/scc/clanak/801400/maskirani-u-crne-casne-sestre-plasili-decu> tags=[]
+- Inspektori ponovo upali u srpske lokale u Mitrovici <https://www.politika.rs/scc/clanak/801395/inspektori-ponovo-upali-u-srpske-lokale-u-mitrovici> tags=[]
 
 ### RTS
-Categories: {"hronika":7,"ekonomija":3,"svet":2,"region":3,"politika":3,"drustvo":2}
+Categories: {"hronika":5,"politika":4,"ekonomija":4,"drustvo":4,"svet":1,"zivot":1,"ostalo":1}
+Uncategorized sample:
+- Leskovac: Budžet za sport <https://www.rts.rs/vesti/srbija-danas/6079987/leskovac-budzet-za-sport.html> tags=["Srbija danas"]
