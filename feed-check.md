@@ -1,96 +1,94 @@
 # Feed check
 
-Run: 2026-11-10T00:00:17.329Z
+Run: 2026-11-10T11:27:07.481Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 2 |
+| N1 | yes | 47 | https://n1info.rs/feed/ | 47 | 1 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +80) | 76 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +73) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
-| RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
+| RTS | **NO** | 0 | - | 0 | 0 |
 
 ## N1
-Categories: {"svet":15,"ostalo":7,"zivot":5,"politika":4,"region":1,"drustvo":3,"ekonomija":3,"hronika":6,"sport":1,"kultura":1}
-- [svet] Kurc: Za deset godina ćemo živeti u potpuno drugačijem svetu
-- [ostalo] U Severnoj Mitrovici inspekcijski nadzor više ugostiteljskih objekata
-- [zivot] Britanski pank bend Anti-Nowhere League nastupiće na Arsenal festu 2027. u Kragujevcu
-- [svet] Južnoafrička policija uhapsila strance zbog pokušaja pridruživanja rusko-ukrajinskom ratu
-- [svet] Orbanov brat pod istragom zbog krijumčarenja ljudi, Peter Mađar poručuje: Kako seješ, tako žanješ
-- [svet] Francuska krivi Iran za prošlomesečne sajber napade na frižidere u supermarketima
-  - flagged (self): Global fokus: Tramp i Netanjahu u problemu? https://n1info.rs/najave-emisija/global-fokus-ponedeljak-u-20h-tramp-i-netanjahu-u-problemu/
-  - flagged (self): Gledajte UŽIVO Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+Categories: {"ostalo":8,"svet":13,"hronika":5,"zivot":6,"politika":6,"sport":1,"drustvo":2,"ekonomija":4,"region":2}
+- [ostalo] Janković: Političarke u Srbiji pitaju "čija si ljubavnica", vređaju ih, diskriminišu...
+- [svet] EU, SAD i Ukrajina usaglasili stavove pred trilateralne pregovore sa Rusijom u Abu Dabiju
+- [svet] Mobilni telefoni biće zabranjeni u džepovima i rančevima đaka dok su u školi: Nova pravila u Engleskoj
+- [hronika] CINS: REM tražio krticu zbog curenja informacija - tužilaštvo odbacilo prijavu
+- [svet] Tramp nominovao Kristi Mekormik za ambasadorku u Severnoj Makedoniji
+- [hronika] Uhapšen muškarac u Nišu: Taksisti oteo vozilo, pa udario u ogradu kuće i pobegao
+  - flagged (self): Gledajte UŽIVO N1 Studio Live: Kako do pravde? https://n1info.rs/najave-emisija/n1-studio-live-kako-do-pravde/
 
 Uncategorized sample (for tuning):
-- U Severnoj Mitrovici inspekcijski nadzor više ugostiteljskih objekata | https://n1info.rs/vesti/u-severnoj-mitrovici-inspekcijski-nadzor-vise-ugostiteljskih-objekata/ | tags: ["Vesti","ugostiteljski objekti","severna mitrovica","inspekcijski nadzor"]
-- Utisak nedelje: Ivan Ninić, Vesna Mališić i Dejan Šoškić (9.11.2026) | https://n1info.rs/video/utisak-nedelje-ivan-ninic-vesna-malisic-i-dejan-soskic-9112026/ | tags: ["Video","video","utisak nedelje","utisak video"]
-- Dnevnik u 19 (8.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-8112026/ | tags: ["Dnevnik","n1","dnevnik","video"]
-- Beogradski vodovod: Sutra deo Ripnja bez vode, kao i deo Zemuna oko Batajničkog druma | https://n1info.rs/vesti/beogradski-vodovod-sutra-deo-ripnja-bez-vode-kao-i-deo-zemuna-oko-batajnickog-druma/ | tags: ["Vesti","zemun","beogradski vodovod","ripanj","nestanak vode"]
-- Gledajte UŽIVO Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
-- Idemo dalje: Milica Branković i Aleksandra Stanković (8.11.2026) | https://n1info.rs/video/idemo-dalje/idemo-dalje-milica-brankovic-i-aleksandra-stankovic-8112026/ | tags: ["Idemo dalje","milica branković","aleksandra stanković"]
-- Putevi Srbije upozoravaju: Magla na putu Kopaonik - Jaram, odroni kod Zaječara | https://n1info.rs/vesti/putevi-srbije-upozoravaju-magla-na-putu-kopaonik-jaram-odroni-kod-zajecara/ | tags: ["Vesti","kopaonik","prohodnost puteva","zaječar","putevi srbije","magla"]
+- Janković: Političarke u Srbiji pitaju "čija si ljubavnica", vređaju ih, diskriminišu... | https://n1info.rs/vesti/jankovic-politicarke-u-srbiji-pitaju-cija-si-ljubavnica-vredjaju-ih-diskriminisu/ | tags: ["Vesti","diskriminacija žena","žene u politici","žene","rodna ravnopravnost"]
+- Štrajk upozorenja Nezavisnog sindikata Gradske uprave grada Zrenjanina | https://n1info.rs/vesti/strajk-upozorenja-nezavisnog-sindikata-gradske-uprave-grada-zrenjanina/ | tags: ["Vesti","zrenjanin","nezavisni sindikat","gradska uprava","štrajk upozorenja"]
+- Gledajte UŽIVO N1 Studio Live: Kako do pravde? | https://n1info.rs/najave-emisija/n1-studio-live-kako-do-pravde/ | tags: ["Najave emisija","najave emisija"]
+- Savet REM-a televiziji Prva zabranio oglašavanje na jedan dan zbog uvreda koje je izrekao Milomir Marić | https://n1info.rs/vesti/savet-rem-a-televiziji-prva-zabranio-oglasavanje-na-jedan-dan-zbog-uvreda-koje-je-izrekao-milomir-maric/ | tags: ["Vesti","savet rem","tv prva","milomir marić"]
+- Martinoli o Informeru: Ovo nije odmazda, svi smo malo zbunjeni činjenicom da REM radi svoj posao | https://n1info.rs/vesti/ana-martinoli-informer-savet-rem-mere/ | tags: ["Vesti","regulatorno telo za elektronske medije","rem","dragan j vučićević","nacionalne frekvencije","ana martinoli"]
+- Savet REM-a televiziji Kurir zabranio emitovanje Dnevnika na jedan dan, a Vesti na dva dana | https://n1info.rs/vesti/savet-rem-a-televiziji-kurir-zabranio-emitovanje-dnevnika-na-jedan-dan-a-vesti-na-dva-dana/ | tags: ["Vesti","savet rem","kurir"]
+- Urugvaj: Zemlja gotovo nezavisna od nafte i gasa | https://n1info.rs/zeleni-kutak/urugvaj-zemlja-gotovo-nezavisna-od-nafte-i-gasa/ | tags: ["Zeleni kutak","obnovljivi izvori energije","urugvaj"]
+- Tri ugostiteljska objekta, koja je inspekcija sinoć kontrolisala u Severnoj Mitrovici, privremeno zatvorena | https://n1info.rs/vesti/tri-ugostiteljska-objekta-u-severnoj-mitrovici-zatvorena/ | tags: ["Vesti","ugostiteljski objekti","kosovo","severna mitrovica"]
 
 ## Nova.rs
-Categories: {"zivot":2,"politika":5,"sport":17,"hronika":7,"svet":3,"drustvo":8,"kultura":1,"zabava":4,"ekonomija":2,"ostalo":1}
-- [zivot] I Srbiji danas oblačno, mestimično sa kišom
-- [politika] Inspekcijska kontrola u Severnoj Mitrovici: Zatvoren kafić "Trezor", provere u toku u lokalu "Sindikat"
-- [sport] "Jedva sam čekao da pravim skauting za Zvezdu - Slovan cilja i evropsko takmičenje"
-- [sport] Problemi za Alimpijevića i Bešiktaš i još jedan neočekivan poraz
-- [sport] Sabalenka slavila u drami i krenula po poslednju titulu u sezoni
-- [hronika] Tanasije Marinković predao inicijativu za poništavanje odluka bivšeg predsednika Srbije o pomilovanju
+Categories: {"politika":7,"hronika":7,"zabava":7,"svet":6,"kultura":3,"drustvo":7,"sport":6,"zivot":3,"ostalo":3,"ekonomija":1}
+- [politika] SAZNAJEMO Haos na sednici SPS: Tončev i BG odbor na čelu sa Nikodijevićem tražili ostavke rukovodstva i objašnjenje za ostanak ispod cenzusa
+- [hronika] Uhapšen osumnjičeni za razbojništvo kod Niša: Taksisti pretio i izbacio ga iz vozila, pa automobilom udario u ogradu
+- [zabava] Ovako je novi voditelj RTS-a Vukašin Katić izveštavao iz ćacilenda (VIDEO)
+- [zabava] Naši reperi napravili haos na pijaci, ljudi se otimali i mahali parama (FOTO)
+- [svet] Tramp sprema veliki dogovor sa Putinom: Amerika predlaže novi bezbednosni poredak u Evropi, strahuje se od ozbiljnih ustupaka Rusiji
+- [svet] „Ne želim unutra, prošli put ste me gušili i vezali za krevet“: Otkriveno zašto je sportista koji je preminuo u zagrebačkoj psihijatrijskoj bolnici završio na lečenju
 
 Uncategorized sample (for tuning):
-- Dnevnik - Cela emisija - 8.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-8112026/ | tags: ["Emisije","dnevnik cela emisija"]
+- Priče jednog običnog Stanimira: Uapsili Miška Golju, ne mož drugačije zemljače | https://nova.rs/kolumne/price-jednog-obicnog-stanimira-uapsili-miska-golju-ne-moz-drugacije-zemljace/ | tags: ["Kolumne","kolumna","bratislav marković"]
+- Piše Ivan Mrđen: “Exegi monumentum” Slaviše Lekića | https://nova.rs/kolumne/pise-ivan-mrdjen-exegi-monumentum-slavise-lekica/ | tags: ["Kolumne","napoleon bonaparta","slaviša lekić","novak đoković","aleksadar dima ml.","“danas”"]
+- Mentalno razgibavanje: Sad nas vide svi! | https://nova.rs/emisije/mentalno-razgibavanje-sad-nas-vide-svi/ | tags: ["Emisije","mentalno razgibavanje cela emisija"]
 
 ## B92
-Categories: {"ostalo":3,"svet":14,"sport":18,"zivot":13,"politika":6,"drustvo":3,"kultura":4,"zabava":4,"ekonomija":9,"zdravlje":2,"region":1,"tehnologija":2,"hronika":1}
-- [ostalo] Na današnji dan, 10. novembar
-- [svet] Rat – dan 1.719: Nastavljeni žestoki napadi na Ukrajinu; Katastrofalni gubici ruske vojske FOTO/VIDEO
-- [sport] Stevanović pred Ligu šampiona: "Svesni smo da možemo"
-- [svet] Stiže nova ruska pretnja: "Orion" nosi razornu raketu dometa 500 kilometara VIDEO
-- [sport] Sara, Kristina i Natalija predvode Srbiju na Svetskom kupu
-- [svet] Merc: "Nemačka pred istorijskim iskušenjem"
+Categories: {"svet":13,"sport":13,"ostalo":2,"zdravlje":4,"ekonomija":9,"zivot":20,"tehnologija":3,"kultura":5,"politika":4,"region":4,"zabava":2,"drustvo":1}
+- [svet] Stiže razorna oluja; Popaljeni svi alarmi; Očekuju su najteži vremenski uslovi FOTO
+- [sport] Selektor Srbije: "Nisam siguran da smo favoriti u ovom sastavu" VIDEO
+- [sport] "Kad kročimo na parket Jokić je samo protivnik" VIDEO
+- [svet] Da li je karambol već počeo? Spremljena neverovatna podvala; Pola delegacije u šoku
+- [svet] Rusija već slavi: Putin je dobio ono što je godinama želeo FOTO
+- [sport] Srbija na novom startu: "Željne smo Evropskog prvenstva" VIDEO
 
 Uncategorized sample (for tuning):
-- Na današnji dan, 10. novembar | https://www.b92.net/info/razno/283657/na-danasnji-dan-10-novembar/vest | tags: ["Najnovije"]
-- Ne treba vam oprema, a sve traje samo osam minuta: Fitnes rutina koja aktivira celo telo VIDEO | https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/283487/efikasan-trening-od-osam-minuta-za-one-koji-nikad-nemaju-vremena/vest | tags: []
-- Šest bjuti saveta kako da imate savršenu kožu lica kao vrhunski modeli | https://superzena.b92.net/lepa-i-zdrava/lepota-zene/283586/bjuti-saveti-kako-imati-savrsenu-kozu-lica-kao-vrhunski-modeli/vest | tags: []
+- Stari trik naših baka: Ovo je prava mera soli i vode za savršen rasol | https://superzena.b92.net/kuhinja/prakticni-saveti/283744/ovo-je-prava-mera-soli-i-vode-za-savrsen-rasol/vest | tags: ["Najnovije"]
+- Ako ste najstarije dete, prepoznaćete se u ovih šest navika | https://superzena.b92.net/dom-i-porodica/roditeljstvo/283692/najstarija-deca-imaju-ovih-6-navika-kad-odrastu/vest | tags: []
 
 ## Blic
-Categories: {"svet":14,"zivot":8,"ostalo":2,"ekonomija":5,"zabava":24,"politika":4,"tehnologija":1,"drustvo":5,"hronika":6,"zdravlje":1}
-- [svet] RASTE BROJ MRTVIH U EKSPLOZIJI U TURSKOJ Oglasio se Erdogan: Spasilačke ekipe nastavljaju potragu za radnicima
-- [zivot] Plastične posude mirišu na luk i posle pranja? Jedan sastojak iz kuhinje može da reši problem za pola sata
-- [svet] Papa Lav održao misu u Argentini pred 2,5 miliona vernika (FOTO)
-- [ostalo] Naslovna strana za 10.11.
-- [ekonomija] Cene nafte pale na najniži nivo od 31. avgusta, barel Brenta ispod 94 dolara
-- [zivot] "Nemačka više nije zlatna zemlja" Nemica napustila sve i došla da živi u Srbiji - tvrdi da je ovde pronašla ono što je godinama tražila (VIDEO)
+Categories: {"zabava":16,"politika":5,"zivot":7,"kultura":4,"svet":10,"ekonomija":14,"drustvo":8,"ostalo":1,"hronika":3,"zdravlje":2}
+- [zabava] "Vaspitačica je rekla da nam ćerka ima naznake blagog autizma, POZVANI SMO HITNO NA RAZGOVOR" Muzičar progovorio o ćerki koju je dobio sa sa 18 godina mlađom
+- [politika] REM izrekao mere protiv TV Kurir i TV Prva: Jedna televizija dobila upozorenje
+- [zivot] Pista ispletena tradicijom: Trenutak kad su obične žene iz Papue Nove Gvineje postale nosioci visoke mode
+- [zabava] IGOR KOJIĆ JE OVU VODITELJKU OSTAVIO ZBOG INTIMNOG SNIMKA Nakon skandala napustila Srbiju: "Mnogo me je razočarao"
+- [kultura] Pupinov njujorški dom u Paraćinu, a koledž "Kolumbija" u Somboru: Serija na RTS-u snimana na 45 lokacija, sa više od 100 GLUMACA i 1.500 STATISTA
+- [svet] (VIDEO) Vozila ZDROBLJENA i naslagana jedna na druga, nadleću helikopteri, CRNI DIM GUTA NEBO: Jezivi snimci stravične nesreće u kojoj je učestvovalo 70 vozila u Bugarskoj, 11 mrtvih
 
 Uncategorized sample (for tuning):
-- Naslovna strana za 10.11. | https://www.blic.rs/print/naslovna-strana-za-1011/zgsn704 | tags: []
-- BLIC STRIP Crta i piše: Marko Somborac | https://www.blic.rs/blicstrip/blic-strip-crta-i-pise-marko-somborac/ydg38eh | tags: []
+- 'Kraj svega': M. Džon Harison najstariji dobitnik Bukerove nagrade u istoriji | https://www.blic.rs/bbc/kraj-svega-m-dzon-harison-najstariji-dobitnik-bukerove-nagrade-u-istoriji/zney2x6 | tags: []
 
 ## Politika
-Categories: {"svet":8,"ostalo":2,"drustvo":2,"politika":2,"ekonomija":3,"region":1,"hronika":1,"sport":1}
-- [svet] Oluja „Čarls” u Portugalu i Španiji
-- [ostalo] Maskirani u crne časne sestre plašili decu
-- [svet] Sebastijan Kurc upozorava na velike promene u Evropi
-- [svet] Kanal 12: Netanjahuov pritisak na ultraortodoksne Jevreje
-- [ostalo] Inspektori ponovo upali u srpske lokale u Mitrovici
-- [drustvo] Jovanov: Demokrate preuzimaju studentsku listu
+Categories: {"ekonomija":1,"ostalo":7,"sport":4,"svet":5,"hronika":1,"kultura":2}
+- [ekonomija] Privremeno obustaviljen prijem zahteva za stambene kredite za mlade
+- [ostalo] REM zabranio emitovanje „Dnevnika” i „Vesti” na TV Kurir i reklama na Prvoj TV
+- [ostalo] Sutra oblačno sa kišom, u petak do 25 stepeni
+- [sport] Ruska teniserka Mira Andrejeva pobedila Elinu Svitolinu
+- [ostalo] Kamioni na Batrovcima i Šidu čekaju tri sata, za putnička vozila nema dužih zadržavanja
+- [sport] Miljan Krpić ostvario san: suze radosnice posle poziva selektora Veljka Paunovića
 
 Uncategorized sample (for tuning):
-- Maskirani u crne časne sestre plašili decu | https://www.politika.rs/scc/clanak/801400/maskirani-u-crne-casne-sestre-plasili-decu | tags: []
-- Inspektori ponovo upali u srpske lokale u Mitrovici | https://www.politika.rs/scc/clanak/801395/inspektori-ponovo-upali-u-srpske-lokale-u-mitrovici | tags: []
+- REM zabranio emitovanje „Dnevnika” i „Vesti” na TV Kurir i reklama na Prvoj TV | https://www.politika.rs/scc/clanak/801486/rem-zabranio-emitovanje-dnevnika-i-vesti-na-tv-kurir-i-reklama-na-prvoj-tv | tags: []
+- Sutra oblačno sa kišom, u petak do 25 stepeni | https://www.politika.rs/scc/clanak/801497/sutra-oblacno-sa-kisom-u-petak-do-25-stepeni | tags: []
+- Kamioni na Batrovcima i Šidu čekaju tri sata, za putnička vozila nema dužih zadržavanja | https://www.politika.rs/scc/clanak/801495/kamioni-na-batrovcima-i-sidu-cekaju-tri-sata-za-putnicka-vozila-nema-duzih-zadrzavanja | tags: []
+- Užice beleži pet slučajeva šuge, prijavljen i novi oboleli | https://www.politika.rs/scc/clanak/801490/uzice-belezi-pet-slucajeva-suge-prijavljen-i-novi-oboleli | tags: []
+- Viz er ukida pojedine letove | https://www.politika.rs/scc/clanak/801488/viz-er-ukida-pojedine-letove | tags: []
+- Beogradske pijace na Dan primirja rade redovno, prodavnice skraćeno | https://www.politika.rs/scc/clanak/801482/beogradske-pijace-na-dan-primirja-rade-redovno-prodavnice-skraceno | tags: []
+- Nikola Radosavljević dobitnik nagrade „Vladimir Veličković” za crtež | https://www.politika.rs/scc/clanak/801481/nikola-radosavljevic-dobitnik-nagrade-vladimir-velickovic-za-crtez | tags: []
 
 ## RTS
-Categories: {"hronika":5,"politika":4,"ekonomija":4,"drustvo":4,"svet":1,"zivot":1,"ostalo":1}
-- [hronika] Tužilaštvo o zlostavljanju u garaži Vlade: Nadležni svesno čekali da snimci budu obrisani
-- [politika] RIK objavio preliminarne rezultate za izbore za članove nacionalnih saveta manjina
-- [ekonomija] Sloga: Dogovorena zaštita najugroženijih radnika, pogon kompanije "Valy" u Valjevu ostaje
-- [politika] Studentska lista: Nova Vlada će hitno predstaviti mere za stabilizaciju poslovanja IDEA Marketa
-- [drustvo] Prvi ugovori za oko 300 roditelja-negovatelja, isplate naknada počinju narednih dana
-- [drustvo] Deo zaposlenih u Muzičkoj školi "Mokranjac“ traži ostavku direktorke
-
-Uncategorized sample (for tuning):
-- Leskovac: Budžet za sport | https://www.rts.rs/vesti/srbija-danas/6079987/leskovac-budzet-za-sport.html | tags: ["Srbija danas"]
+FAILED: too slow
+Tried: 
+Categories: {}
