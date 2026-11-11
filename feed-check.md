@@ -1,85 +1,97 @@
 # Feed check
 
-Run: 2026-11-10T21:42:16.531Z
+Run: 2026-11-11T11:15:27.314Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 1 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 1 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +74) | 76 | 0 |
+| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 3 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +76) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":10,"hronika":8,"zivot":5,"region":2,"politika":5,"ekonomija":3,"kultura":1,"zdravlje":1,"ostalo":7,"drustvo":3,"sport":1}
-- [svet] "Bila je veoma gusta magla": Svedoci o dva teška lančana sudara više desetina vozila u Bugarskoj
-- [hronika] Pritvor i zabrana prilaska za preostalo troje uhapšenih s predsednikom Opštine Inđija
-- [zivot] "Kada sam prvi put bio u Novom Sadu, pomislio sam da ću se preseliti tamo": Glumac Džon Sevidž o Srbiji, politici i filmu
-- [region] Detalji istrage o smrti sportiste u Hrvatskoj: Četvorica tehničara u zatvoru zbog sumnje na teško ubistvo
-- [politika] Pokajanje posle izbora: Upravnik zatvora u Nišu priznao da je pratio kapilarne glasove za SNS
-- [zivot] Greška sa automatskim menjačem koju prave i iskusni vozači - popravka može da bude skupa
-  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+Categories: {"ostalo":9,"kultura":2,"region":1,"zivot":7,"hronika":8,"politika":7,"svet":7,"drustvo":2,"tehnologija":2,"ekonomija":1}
+- [ostalo] Stevanović: Zakasnelo ispravljanje decenije i po nerada REM
+- [kultura] Zvaničnik: Odlaganje izložbe Expo 2027 u Beogradu praktično više nije moguće
+- [ostalo / AD:self] Gledajte UŽIVO N1 Studio Live: Primirje
+- [region] Brat Viktora Orbana u lisicama priveden na glavni ulaz suda
+- [zivot] Delić upozorava na širenje malih boginja: Jedna zaražena osoba može da inficira čak 15 ljudi
+- [hronika] Uhapšen u Novom Pazaru zbog sumnje da je prodao gvožđe na crno za više od milion dinara
+  - flagged (self): Gledajte UŽIVO N1 Studio Live: Primirje https://n1info.rs/najave-emisija/n1-studio-live-primirje/
+  - flagged (self): Dan uživo: Ko je sledeći uhapšeni? https://n1info.rs/najave-emisija/dan-uzivo-ko-je-sledeci-uhapseni/
+  - flagged (self): Novi dan: Pod tajnim nadzorom https://n1info.rs/najave-emisija/novi-dan-pod-tajnim-nadzorom/
 
 Uncategorized sample (for tuning):
-- ANEM pozdravio privođenje osumnjičenih za pretnje Brankici Stanković: Važno da se procesuiraju i ostale prijave | https://n1info.rs/vesti/anem-pozdravio-privodjenje-osumnjicenih-za-pretnje-brankici-stankovic-vazno-da-se-procesuiraju-i-ostale-prijave/ | tags: ["Vesti","brankica stanković","anem","pretnje novinarima"]
-- Đurić: Mere REM-a Informeru ozbiljne, ali trebalo je da budu izrečene ranije | https://n1info.rs/vesti/djuric-mere-rem-a-informeru-ozbiljne-ali-trebalo-je-da-budu-izrecene-ranije/ | tags: ["Vesti","informer","savet rem-a","savet rem","nuns","rade đurić"]
-- Dnevnik u 19 (9.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-9112026/ | tags: ["Dnevnik","video","vesti","dnevnik u 19","dnevnik"]
-- AMSS: Vozite oprezno i sporije zbog mokrih kolovoza | https://n1info.rs/vesti/amss-vozite-oprezno-i-sporije-zbog-mokrih-kolovoza/ | tags: ["Vesti","kiša","kolovoz","vožnja","vozači","amss"]
-- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
-- V. d. glavnog urednika Informativnog programa RTS-a: Prvi put radimo bez političkog pritiska | https://n1info.rs/vesti/v-d-glavnog-urednika-informativnog-programa-rts-a-prvi-put-radimo-bez-politickog-pritiska/ | tags: ["Vesti","radio-televizija srbije","radio televizija srbije","borivoje uskoković","informativni program","rts"]
-- Smederevac: Dve zabrane emitovanja za "Kolegijum" na Informeru, u svih devet predmeta smo izrekli ozbiljne mere | https://n1info.rs/vesti/smederevac-u-svih-devet-predmeta-smo-danas-izrekli-ozbiljne-mere-zabrana-emitovanja-za-kolegijum-na-informeru/ | tags: ["Vesti","mere","kurir tv","stevica smederevac","informer tv","kolegijum"]
+- Stevanović: Zakasnelo ispravljanje decenije i po nerada REM | https://n1info.rs/vesti/stevanovic-zakasnelo-ispravljanje-decenije-i-po-nerada-rem/ | tags: ["Vesti","mediji","savet rem","fondacija slavko ćuruvija","ivana stevanović","informer"]
+- Gledajte UŽIVO N1 Studio Live: Primirje | https://n1info.rs/najave-emisija/n1-studio-live-primirje/ | tags: ["Najave emisija","najave emisija"]
+- Pokrenuta proizvodnja novog domaćeg borbenog oklopnog vozila Miloš 2 | https://n1info.rs/vesti/pokrenuta-proizvodnja-novog-domaceg-borbenog-oklopnog-vozila-milos-2/ | tags: ["Vesti","oklopno vozilo","miloš 2","vojska","vojska srbije"]
+- Sindikat Sloga: Nismo svi pod lupom, RTS čine svi zaposleni, a ne samo Informativni program | https://n1info.rs/vesti/sindikat-sloga-rts-cine-svi-zaposleni/ | tags: ["Vesti","sindikat sloga","rts","borivoje uskoković"]
+- Ljiljana iz Niša jedina je žena časovničar u Srbiji: Popravlja satove više od pola veka | https://n1info.rs/vesti/ljiljana-iz-nisa-zena-casovnicar-popravlja-satove-vise-od-pola-veka/ | tags: ["Vesti","časovnik","sajdžije","sat","zanat","niš"]
+- Jovanović (CLS): Knez Petrol zvanično postao suvlasnik u javnom prevozu Beograđana | https://n1info.rs/vesti/jovanovic-cls-knez-petrol-zvanicno-postao-suvlasnik-u-javnom-prevozu-beogradjana/ | tags: ["Vesti","knez petrol","nikola jovanović","javni prevoz","cls"]
+- Psihološkinja o uticaju influensera na decu: Kako se stvara privid bliskosti i šta mladi ne prepoznaju | https://n1info.rs/vesti/psiholoskinja-o-uticaju-influensera-na-decu-kako-se-stvara-privid-bliskosti-i-sta-mladi-ne-prepoznaju/ | tags: ["Vesti","influenseri","psihološkinja","naše priče","mladi","društvene mreže"]
+- N1 pokucao na vrata Centra za društvenu stabilnost, nisu nam otvorili: Šta ostaje iza NVO koja uklanja spisak svojih saradnika sa sajta? | https://n1info.rs/vesti/centar-za-drustvenu-stabilnost-saradnici/ | tags: ["Vesti","portal 021","saradnici","marija bulić","021.rs","predrag rava"]
 
 ## Nova.rs
-Categories: {"politika":2,"zivot":1,"sport":13,"zabava":9,"svet":2,"hronika":7,"kultura":1,"ekonomija":3,"ostalo":3,"drustvo":9}
-- [politika] „Krenuli su na Vučića“: Ruski list o demontaži bivšeg sistema u Srbiji i vezama sa kriminalom
-- [zivot] Kako se greju Skandinavci kada temperature padnu na minus 30 stepeni: Njihov način zagrevanja domova potpuno je drugačiji od našeg
-- [sport] Vlasnici „Milenijum tima“ duboko povezani sa Zvezdom i OKS: Za njima izdat nalog za hapšenje
-- [zabava] Varao je skoro svaku ženu, voleo je srpsku princezu, a sa čuvenom lepoticom se venčavao dva puta: Buran život jednog od najvećih holivudskih zavodnika
-- [sport] Preminuo legendarni fudbalski reprezentativac Jugoslavije i član čuvene generacije "plavih"
-- [svet] AP: Sastanak Trampa, Sija i Putina iduće nedelje istorijski, ili samo prilika za fotografisanje
-  - flagged (sponsored): Sala je utihnula dok je naš poznati glumac Branimir Brstina čitao priče o laureatima Nagrade za ljudskost „Sve je u nama“ https://nova.rs/vesti/drustvo/branimir-brstina-citao-price-o-laureatima-nagrade-za-ljudskost/
+Categories: {"zabava":7,"hronika":8,"sport":6,"ekonomija":2,"drustvo":8,"svet":5,"politika":3,"zivot":8,"kultura":2,"ostalo":1}
+- [zabava] Poginuo srpski pevač na autoputu kod Lapova
+- [hronika] Majić: Tužilaštvo je svojim nečinjenjem bilo saučesnik onoga što nam se dešavalo
+- [sport] FOTO Lepotica sa Pala piše novu stranicu istorije sporta i izlazi na svetsku scenu
+- [ekonomija] Jerinić: Više od 20.000 volontera iz 145 zemalja sveta želi da bude deo izložbe Ekspo 2027
+- [drustvo] Studentska lista odbila da gostuje na Informeru: "Nećemo učestvovati u programima vaše televizije"
+- [ekonomija] Odlaganje izložbe Expo 2027 u Beogradu praktično više nije moguće
 
 Uncategorized sample (for tuning):
-- Dnevnik - Cela emisija - 9.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-9112026/ | tags: ["Emisije","dnevnik cela emisija"]
-- Podcast DLZ i Andrej Tanko: Bunite se uvek! | https://nova.rs/podcast/podcast-dlz-i-andrej-tanko-bunite-se-uvek/ | tags: ["Podcast","dlz cela emisija"]
-- Među nama - Cela emisija - 9.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-9112026/ | tags: ["Emisije","među nama cela emisija"]
+- Mentalno razgibavanje: Ja garantujem za ovog dečka | https://nova.rs/emisije/mentalno-razgibavanje-ja-garantujem-za-ovog-decka/ | tags: ["Emisije","mentalno razgibavanje cela emisija"]
 
 ## B92
-Categories: {"sport":10,"drustvo":5,"zivot":21,"svet":12,"zabava":5,"ekonomija":11,"region":3,"hronika":2,"zdravlje":3,"kultura":4,"politika":2,"tehnologija":2}
-- [sport] Stevanovićev Radnički srušio evropskog giganta za prvo mesto u LŠ!
-- [drustvo] RTS traži hitnu istragu zbog objavljivanja snimka internog sastanka na Informeru
-- [zivot] Otac Megan Markl odsekao nanogicu nakon puštanja iz pritvora?
-- [svet] Pentagon objavio bilans operacije "Epski bes"; Više od 13.000 meta pogođeno
-- [sport] "Luda" završnica u Subotici – Drobnjak pogodio za pobedu Spartaka! VIDEO
-- [sport] Velika analiza CIES i FIBA – istorijske migracije Evropljana u NCAA
-
-## Blic
-Categories: {"politika":7,"drustvo":7,"zivot":7,"svet":9,"zabava":21,"hronika":8,"tehnologija":1,"zdravlje":3,"ekonomija":5,"kultura":2}
-- [politika] (VIDEO) "SRBIJA MOŽE DA RAČUNA NA MAĐARSKU" Peter Mađar: "Pomoći ćemo oko procesa pristupa EU"
-- [politika] (FOTO,VIDEO) Makron dočekao Brnabićevu u Jelisejskoj palati: Sledi svečana večera, prisustvovali Pariskom mirovnom forumu
-- [drustvo] Preminuo bivši narodni poslanik Čedomir Trajković: Bio je direktor moćnog jugoslovenskog giganta
-- [zivot] "OGROMNA TRAGEDIJA I TUGA ZA MLAD ŽIVOT" Rada Manojlović potresena nakon tragične smrti bivšeg sportiste u psihijatrijskoj ustanovi: "Okrutno i nehumano"
-- [svet] BUKTI SUKOB DVE VELESILE NA GRANICI! Izbili novi incidenti, general poslao jezivo upozorenje: "Daleko su jači od nas"
-- [zabava] GO STOMAK U PRVOM PLANU! Luna Đogani stegla grudi u WC-u, pored nje veš mašine jedna na drugoj: Pobednica rijalitija zavodi preko kamere (FOTO)
-
-## Politika
-Categories: {"svet":9,"hronika":3,"drustvo":1,"politika":2,"ekonomija":2,"sport":2,"ostalo":1}
-- [svet] Lavrov o Evropljanima u Abu Dabiju — „Neka malo posede u hotelu“
-- [svet] Japan isporučuje Filipinima obalske radare i dronove za pomorski nadzor
-- [svet] Brnabićeva razgovarala sa Makronom na Pariskom mirovnom forumu, večeras nastavak susreta
-- [hronika] Uhapšen osamnaestogodišnjak u Pančevu osumnjičen za nanošenje teških telesnih povreda
-- [svet] Rubio: Uspešne sankcije Iranu, vojne operacije nepotrebne
-- [drustvo] Mađar upozorava na energetski udar, cene izazivaju očaj građana
+Categories: {"zivot":21,"ekonomija":10,"sport":13,"drustvo":4,"svet":13,"politika":3,"hronika":4,"zabava":3,"tehnologija":3,"kultura":2,"region":2,"ostalo":1,"zdravlje":1}
+- [zivot] Poginuo poznati muzičar na auto-putu kod Lapova
+- [ekonomija] Gorivo pojeftinilo u Sloveniji: Benzin i dizel najjeftiniji od marta
+- [sport] Živković dobio najveći ugovor u istoriji PAOK-a
+- [zivot] Zašto na fotografiji za pasoš ne smete da se smejete?
+- [zivot] Krenule ka jednom od najviših vrhova sveta, ali je usledio preokret: Upoznajte pet hrabrih planinarki FOTO
+- [zivot] Spremate se za skijanje? Jedna greška sa osiguranjem može vas koštati hiljade evra VIDEO
 
 Uncategorized sample (for tuning):
-- Sutra polaganje venaca na Novom groblju povodom Dana primirja | https://www.politika.rs/scc/clanak/801676/sutra-polaganje-venaca-na-novom-groblju-povodom-dana-primirja | tags: []
+- Kako izgleda odrastanje uz majku koja ne pokazuje ljubav? | https://superzena.b92.net/dom-i-porodica/roditeljstvo/283974/kako-izgleda-odrastanje-uz-mamu-koja-ne-pokazuje-ljubav/vest | tags: []
+
+## Blic
+Categories: {"zivot":6,"politika":9,"hronika":7,"kultura":5,"ekonomija":14,"svet":8,"tehnologija":2,"zabava":9,"drustvo":6,"zdravlje":1,"ostalo":3}
+- [zivot] Više od 20.000 kandidata iz preko 145 zemalja sveta želi da bude deo Ekspa 2027
+- [politika] DODIKOV SIN JEDAN OD KANDIDATA ZA PREMIJERA RS Nova vlada očekuje se do sredine decembra, evo ko ima poslednju reč
+- [zivot] TRAGEDIJA NA AUTO-PUTU KOD LAPOVA: Poginuo pevač Vladan Jovković Rolinac
+- [hronika] UŽAS KOD SMEDEREVA! U bunaru nađene LJUDSKE KOSTI: Sumnja se da su u pitanju ostaci čoveka koji je nestao pre 8 godina!
+- [kultura] NAGRADA OD MILION EVRA Tokom renoviranja otkrio fasadu renesansne crkve u svojoj kući: Deset godina kasnije nema ni kuću, ni novac (VIDEO)
+- [ekonomija] Afera koja može da sruši AI revoluciju: Šef Nvidije pod istragom FBI, a cela industrija strepi jer za njega nema zamene
+
+Uncategorized sample (for tuning):
+- Milioni živeli u amazonskoj civilizaciji, a laseri otkrivaju njene razmere | https://www.blic.rs/bbc/milioni-ziveli-u-amazonskoj-civilizaciji-a-laseri-otkrivaju-njene-razmere/epx81v6 | tags: []
+- Haljine koje su obeležile karijeru Anne Hathaway. Šljokice, sjaj i misteriozna inspiracija | https://www.blic.rs/good-life/lookbook/modni-stil-anne-hathaway-nezaboravne-haljine-sa-oskara-i-met-gale/q75qr6d | tags: []
+- BRABUS P 900 ROCKET EDITION: Luksuz, snaga i ekskluzivnost u samo 10 primeraka | https://www.blic.rs/good-life/automobili-i-jahte/brabus-p-900-rocket-edition-luksuzni-pikap-sa-900-ks-i-limitiranom-serijom/kfcvn1d | tags: []
+
+## Politika
+Categories: {"hronika":5,"svet":6,"region":1,"ostalo":5,"sport":1,"drustvo":1,"zabava":1}
+- [hronika] Bivši pripadnik Crvenih brigada pobegao iz kućnog pritvora u Argentini
+- [svet] Moskva, Vašington i Kijev završili razgovore u Abu Dabiju: Evropljani nisu učestvovali u pregovorima
+- [svet] Pretnja otmicom na ogledalu u toaletu zaustavila poletanje aviona „Er Indije”
+- [svet] Nemačka vojska prestaje da koristi kineske dronove, menja ih modelima iz Evrope
+- [region] Umesto da preveze skoro 24 tone gvožđa u Hrvatsku, prodao ga na crno
+- [svet] Novi udari na energetsku mrežu Ukrajine: jedna osoba poginula, delovi osam regiona bez struje
+
+Uncategorized sample (for tuning):
+- Gorela trafostanica, deo naselja ostao bez struje | https://www.politika.rs/scc/clanak/801780/gorela-trafostanica-deo-naselja-ostao-bez-struje | tags: []
+- Bjelajac: Da se Srbija nije odbranila 1914. godine, danas je ne bi bilo | https://www.politika.rs/scc/clanak/801779/bjelajac-da-se-srbija-nije-odbranila-1914-godine-danas-je-ne-bi-bilo | tags: []
+- Antonijević osudio napade na novinare: Jedno je zahtev za odgovornošću, a sasvim drugo hajka i linč | https://www.politika.rs/scc/clanak/801772/antonijevic-osudio-napade-na-novinare-jedno-je-zahtev-za-odgovornoscu-a-sasvim-drugo-hajka-i-linc | tags: []
+- Postignut dogovor o budžetu EU za 2027. godinu, predviđeno 211,5 milijardi evra | https://www.politika.rs/scc/clanak/801771/postignut-dogovor-o-budzetu-eu-za-2027-godinu-predvideno-211-5-milijardi-evra | tags: []
+- VJT: Izveštaj Komisije predstavlja najbrutalniji vid zastrašivanja tužilaca | https://www.politika.rs/scc/clanak/801770/vjt-izvestaj-komisije-predstavlja-najbrutalniji-vid-zastrasivanja-tuzilaca | tags: []
 
 ## RTS
-Categories: {"politika":4,"hronika":6,"ekonomija":2,"svet":1,"drustvo":5,"zivot":1,"region":1}
-- [politika] Brnabićeva sa Makronom na Pariskom mirovnom forumu
-- [politika] Vasalo: Kreće novo poglavlje u evrointegracijama, Srbija će morati da premosti podele u društvu
-- [politika] Odluke tehničke vlade pod lupom – Transparentnost Srbija izdvojila 152 akta za dodatnu proveru
-- [hronika] Odluka suda posle hapšenja u Inđiji – jednom osumnjičenom pritvor, ostalima mere zabrane
-- [ekonomija] Budimčević za RTS: Srbiji je potrebna nova strategija privrednog razvoja
-- [svet] Svetski lideri u Parizu traže pravila za veštačku inteligenciju – bezbednost dece u prvom planu
+Categories: {"svet":4,"politika":2,"drustvo":5,"ekonomija":2,"hronika":6,"zivot":1}
+- [svet] Završeni pregovori Rusije, SAD i Ukrajine u Abu Dabiju
+- [politika] Premijer u tehničkom mandatu uputio saučešće povodom nesreće u Bugarskoj
+- [drustvo] Antonijević: Prestati sa targetiranjem i zastrašivanjem novinara i novinarki
+- [drustvo] Banka Poštanska štedionica: Redovno obezbeđujemo novac za penzije, Pošta Srbije odgovorna za distribuciju
+- [ekonomija] Ratari bez subvencija pred setvu - stručnjaci: Tehnička vlada nije opravdanje za neispunjene obaveze
+- [hronika] Treće osnovno tužilaštvo o slučaju “Milenijum tima“
