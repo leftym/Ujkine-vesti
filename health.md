@@ -1,98 +1,107 @@
 # Vesti health report
 
-Run: 2026-11-12T11:32:39.279Z  |  items: 287  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-12T22:08:25.660Z  |  items: 282  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [B92] Possible ads NOT flagged: "Bezosova draga se "kupa" u parama, a i dalje "izgleda jeftino": Opet je hit na mrežama FOTO"
-2. **LOW** [Blic] Possible ads NOT flagged: "ITALIJA DELI BESPLATNE KUĆE I STANOVE STRANCIMA NA 10 GODINA Troškove renoviranja do 280.000 evra plaća država, ali postoji jedan USLOV: Evo ko ima prednost"
-3. **LOW** [RTS] Possible ads NOT flagged: "Ekspo prilika za promociju Srbije, turistički radnici pripremaju aranžmane za goste iz celog sveta"
+1. **MED** [B92] Feed links point to another website: 6 links to other websites dropped. The outlet may have moved domains (lib/sources.js).
+2. **LOW** [Front page] Cluster "Pomoćnik državnog sekretara SAD sa predstavnicima Studentskog pokreta i Studentske liste" has 11 items: chained matches may have merged related but different stories.
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 47 | 0.0h | 100% | 17% | 2 |
-| Nova.rs | yes | 50 | 0.2h | 100% | 4% | 0 |
-| B92 | yes | 80 | 0.0h | 99% | 3% | 0 |
-| Blic | yes | 70 | 0.0h | 100% | 4% | 0 |
-| Politika | yes | 20 | 0.0h | 100% | 20% | 0 |
+| N1 | yes | 42 | 0.0h | 100% | 17% | 2 |
+| Nova.rs | yes | 50 | 0.1h | 100% | 4% | 0 |
+| B92 | yes | 80 | 0.1h | 95% | 3% | 0 |
+| Blic | yes | 70 | 0.1h | 100% | 0% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 25% | 0 |
 | RTS | yes | 20 | 0.8h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 5 outlets, score 58.4] Goran Puzović podneo neopozivu ostavku na funkciju direktora "Srbijavoda"
-   - also (b92): Goran Puzović podneo neopozivu ostavku na funkciju direktora Srbijavoda
-   - also (nova): Direktor Srbijavoda Goran Puzović podneo ostavku posle 14 godina
-   - also (n1): Direktor "Srbijavoda" podneo ostavku
-   - also (nova): Direktorka psihijatrijske bolnice u Zagrebu podnela ostavku posle smrti sportiste: Inspekcija otkrila niz propusta, snimak pregledan tek nakon dve nedelje
-   - also (blic): Goran Puzović podneo neopozivu ostavku na funkciju direktora Srbijavoda
-   - also (n1): Posle smrti pacijenta na psihijatriji u Zagrebu, inspekcija utvrdila niz nepravilnosti
-2. [multi, 4 outlets, score 49] Ministarstvo pravde: Upitan Izveštaj Komisije Vrhovnog tužilaštva iz više razloga
-   - also (n1): Ministarstvo pravde o izveštaju Komisije VJT: Tužiocima nije omogućeno da se izjasne o nalazima
-   - also (b92): Ministarstvo pravde: "Upitan Izveštaj Komisije Vrhovnog tužilaštva iz više razloga"
-   - also (blic): Ministarstvo pravde: Upitan izveštaj komisije Vrhovnog tužilaštva iz više razloga
-3. [multi, 4 outlets, score 47.6] Uhapšeni vlasnici firme u Novom Sadu zbog utaje poreza, pranja novca i poreske prevare
-   - also (rts): Uhapšeno više osoba zbog sumnje na poreske prevare i pranje novca u Novom Sadu
-   - also (nova): Dve osobe uhapšene u Novom Sadu zbog poreske prevare: Oštetili državu za više od 27 miliona dinara
-   - also (n1): VJT u Novom Sadu: Uhapšeno još dvoje zbog poreske prevare, utaje i pranja novca
-4. [multi, 4 outlets, score 46.7] Zastupnik udruženja građana uhapšen zbog sumnje na zloupotrebu položaja
-   - also (nova): Za fiktivne projekte od Novog Sada uzeo 2.750.000 dinara: Uhapšen još jedan osnivač fantomskog udruženja građana
-   - also (b92): Uhapšen zastupnik udruženja građana u Novom Sadu: Osumnjičen za zloupotrebu položaja
-   - also (n1): Uhapšen zastupnik udruženja građana "Signum" zbog sumnje da je oštetio budžet Novog Sada za 2,75 miliona dinara
-5. [multi, 3 outlets, score 33.9] "IZ POKRETA ĆE NASTATI NAJMANJE DVE ILI TRI STRANKE" Đorđe Vukadinović: "Studenti sada zauzimaju gotovo čitav pozicioni prostor, ali to je privremeno stanje"
-   - also (nova): "Studentski pokret u boljoj poziciji u odnosu na DOS"
-   - also (n1): Vukadinović: Studentski pokret u boljoj poziciji u odnosu na DOS
-6. [multi, 3 outlets, score 33.8] Počelo zakazivanje termina za isplatu osiguranih depozita iz Alta banke, šta je potrebno od dokumenata
-   - also (b92): Više od 7.700 klijenata Alta banke zakazalo isplatu za samo 12 sati
-   - also (nova): Počelo zakazivanje termina za isplatu osiguranih depozita iz Alta banke
-7. [multi, 3 outlets, score 33.6] Američki izaslanici Vitkof i Kušner u Moskvi na sastanku sa Putinom
-   - also (n1): Američki izaslanici Vitkof i Kušner u Moskvi na sastanku sa Putinom
-   - also (blic): Vitkof i Kušner stigli u Moskvu: Čeka ih sastanak sa Putinom
-8. [multi, 2 outlets, score 29] NBS podigla referentnu kamatnu stopu
-   - also (blic): NBS ZAOŠTRILA POLITIKU: Povećala referentnu kamatnu stopu, prvi put posle dužeg vremena
-9. [multi, 2 outlets, score 29] Kreni-Promeni: Sudski veštak potvrdio da je Šapić naneo teške telesne povrede Tanji Mićić
-   - also (n1): Kreni-promeni: Sudski veštak potvrdio da je Šapić naneo teške telesne povrede Tanji Mićić
-10. [multi, 2 outlets, score 28] Dvoje poginulih u urušavanju zgrade u Njujorku, među povređenima i trudnica
-   - also (rts): Srušila se trospratnica u Njujorku, ima poginulih i povređenih
+1. [multi, 6 outlets, score 67.9] Mario Reljanović i Aleksandar Čupić sutra na konsultacijama u Skupštini
+   - also (b92): U Skupštini Srbije sutra konsultacije uoči konstitutivne sednice; Poznati predstavnici Studentske liste
+   - also (politika): Iz Studentske liste na konsultacijama u Skupštini biće Reljanović i Čupić
+   - also (nova): Studentska lista učestvuje u konsultacijama pred konstitutivnu sednicu Skupštine: Odbacuje političke pregovore iza zatvorenih vrata
+   - also (blic): "UČESTVOVAĆEMO NA KONSULTACIJAMA" Studentska lista objavila imena predstavnika koji sutra idu u Skupštinu: "Naše učešće ograničeno je na pitanja tehničke i organizacione prirode"
+   - also (n1): Reljanović i Čupić (Studentska lista) sutra na konsultacijama u Skupštini Srbije
+2. [multi, 6 outlets, score 64.7] RIK utvrdio rezultate izbora za 18 nacionalnih manjina, glasanje se ponavlja na pet biračkih mesta
+   - also (b92): RIK objavio ukupne rezultate za izbore za članove 18 saveta nacionalnih manjina
+   - also (politika): RIK objavio ukupne rezultate za članove 18 saveta nacionalnih manjina
+   - also (blic): RIK objavio ukupne rezultate za izbore za članove 18 saveta nacionalnih manjina
+   - also (n1): RIK utvrdio rezultate izbora za 18 nacionalnih manjina, glasanje se ponavlja na pet biračkih mesta
+   - also (nova): RIK utvrdio rezultate izbora za 18 nacionalnih manjina, glasanje se ponavlja na pet biračkih mesta
+   - also (blic): Na pet biračkih mesta ponavljanje izbora za članove saveta nacionalnih manjina
+3. [multi, 5 outlets, score 58.9] Pomoćnik državnog sekretara SAD sa predstavnicima Studentskog pokreta i Studentske liste
+   - also (b92): Predstavnici Studentske liste sa ruskim ambasadorom i pomoćnikom američkog državnog sekretara FOTO
+   - also (nova): Ruski ambasador se sastao sa predstavnicima studentske liste: Razgovarali o odnosima Srbije i Rusije i Kosovu
+   - also (rts): Bocan-Harčenko sa predstavnicima Studentske liste o odnosima dve zemlje
+   - also (n1): Bocan-Harčenko sa predstavnicima Studentske liste o odnosima dve zemlje
+   - also (nova): Visoki američki zvaničnik Brendan Hanrahan sastao se sa predstavnicima Studentske liste FOTO
+   - also (blic): Predstavnici Studentske liste se sastali sa pomoćnikom državnog sekretara SAD
+   - also (n1): Pomoćnik državnog sekretara Brendan Hanrahan sastao se sa predstavnicima Studentske liste
+   - also (rts): Pomoćnik državnog sekretara SAD Brendan Hanrahan u višednevnoj poseti Beogradu
+   - also (blic): ŠOŠKIĆ I KRMAR SE SASTALI SA BOCAN-HARČENKOM Oglasila se Ambasada Rusije: "Razgovor posvećen daljem razvoju odnosa"
+   - also (n1): Ambasada SAD saopštila da je pomoćnik državnog sekretara došao u Beograd, nije navela sa kim će razgovarati
+4. [multi, 5 outlets, score 58.3] Ministarstvo finansija: Lažan dokument o navodnom oduzimanju penzija građanima
+   - also (b92): Tvrdnje o oduzimanju penzija zbog stavova o protestima izazvale buru: Oglasilo se Ministarstvo
+   - also (nova): Oglasilo se Ministarstvo finansija: Dokument o navodnom oduzimanju penzija građanima lažan
+   - also (blic): HITNO SE OGLASILO MINISTARSTVO FINANSIJA "Oštro demantujemo sadržaj lažnog dokumenta sa navodima o oduzimanju penzija"
+   - also (n1): Ministarstvo finansija demantuje navode o oduzimanju penzija zbog podrške protestima: Dokument je lažan
+5. [multi, 5 outlets, score 53.5] NIS traži naftu iz državnih rezervi: Prekinuta isporuka preko JANAF-a
+   - also (rts): NIS traži korišćenje sirove nafte iz državnih rezervi, pumpe zasad uredno snabdevene
+   - also (n1): NIS traži odobrenje za korišćenje nafte iz državnih rezervi zbog prekida rada naftovoda JANAF
+   - also (nova): Oglasio se NIS: Traže od države naftu iz rezervi zbog prekida rada JANAF-a
+   - also (blic): NIS zatražio od države naftu i dizel iz rezervi zbog prekida dopremanja sirove nafte preko JANAF-a
+6. [multi, 3 outlets, score 38.5] Ansambl Ateljea 212 zatražio smenu Ljubiše Ristića i utvrđivanje odgovornosti za "finansijsko urušavanje"
+   - also (n1): Ansambl Ateljea 212 zatražio smenu Ljubiše Ristića i utvrđivanje odgovornosti za "finansijsko urušavanje"
+   - also (politika): Atelje 212: zatražena smena v.d. direktora Ljubiše Ristića na obeležavanju 70. godina
+7. [multi, 3 outlets, score 33.4] Pucnjava u Vašingtonu nedaleko od Bele kuće – dvoje poginulih, uključujući i napadača, više ranjenih
+   - also (blic): Dvoje mrtvih u pucnjavi u Vašingtonu, policija eliminisala napadača
+   - also (n1): Pucnjava u Vašingtonu: Jedna osoba ubijena, više ranjeno - mrtav i napadač koji je ranije postavio barikadu u zradi
+8. [multi, 3 outlets, score 33.3] Srušio se vojni helikopter u Turskoj, poginula četvorica
+   - also (n1): Srušio se vojni helikopter u Turskoj, poginulo četvoro ljudi
+   - also (blic): VOJNI HELIKOPTER SE SRUŠIO I ZAPALIO Čuo se jak PRASAK, a onda je usledio horor u Turskoj: Ima mrtvih
+9. [multi, 2 outlets, score 29] Debakl Zvezde u Madridu, moćni Real prekinuo seriju crveno-belih
+   - also (b92): Real pregazio Zvezdu u Madridu – debakl crveno-belih
+10. [multi, 2 outlets, score 28.5] Žestok udar: Lansirane su dve rakete; Zelenski sa Vitkofom i Kušnerom; Putin: "Legitimna su meta" FOTO/VIDEO
+   - also (politika): Zelenski sa Kušnerom i Vitkofom u Irskoj nakon njihove posete Moskvi
 
 ## Details
 ### N1
-Categories: {"ekonomija":6,"politika":4,"drustvo":4,"sport":1,"ostalo":8,"zivot":5,"region":5,"svet":10,"zdravlje":1,"hronika":3}
+Categories: {"svet":9,"zivot":4,"kultura":2,"drustvo":4,"ostalo":7,"region":1,"ekonomija":5,"politika":7,"hronika":3}
 Flagged:
-- (self) Gledajte UŽIVO N1 Studio live: Sukobi tužilaštava <https://n1info.rs/najave-emisija/n/>
-- (self) Dan uživo: Koji TOK dobija nadzor VJT? <https://n1info.rs/najave-emisija/dan-uzivo-koji-tok-dobija-nadzor-vjt/>
+- (self) Crvena linija, petak u 20h: O prisluškivanju u zemljama regiona <https://n1info.rs/najave-emisija/pisanje-kao-saveznik-u-teskim-trenucima-kako-reci-pomazu-da-razumemo-sopstvene-emocije/>
+- (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
 Uncategorized sample:
-- Gledajte UŽIVO N1 Studio live: Sukobi tužilaštava <https://n1info.rs/najave-emisija/n/> tags=["Najave emisija","studio live","najave emisija"]
-- Direktor "Srbijavoda" podneo ostavku <https://n1info.rs/vesti/goran-puzovic-podneo-neopozivu-ostavku-na-mesto-direktora-srbijavoda/> tags=["Vesti","srbijavode","goran puzović","ostavka"]
-- Ekošum: Zabraniti izdavanje novih dozvola za rudarstvo dok se ne reši pitanje otpada <https://n1info.rs/zeleni-kutak/ekosum-zabraniti-izdavanje-novih-dozvola-za-rudarstvo-dok-se-ne-resi-pitanje-otpada/> tags=["Zeleni kutak","Vesti","rudarstvo","evropska unija","katastar rudarskog otpada","rudarske dozvole"]
-- Nova ekonomija: Kupovinom hotela Jugoslavija, Milenijum tim prate mnoge kontroverze <https://n1info.rs/vesti/kupovina-hotela-jugoslavija-milenijum-tim-kontroverze/> tags=["Vesti","milenijum tim","ivan bošnjak","danube riverside","stojan vujko","hotel jugoslavija"]
-- UNS: Pronaći i kazniti odgovorne za pretnje bivšim novinarima Euronews Srbija <https://n1info.rs/vesti/uns-pronaci-i-kazniti-odgovorne-za-pretnje-bivsim-novinarima-euronews-srbija/> tags=["Vesti","novinari","pretnje","uns","euronews"]
-- Institut za neonatologiju: Više od 4.000 beba godišnje se rodi prevremeno u Srbiji <https://n1info.rs/vesti/institut-za-neonatologiju-vise-od-4000-beba-godisnje-se-rodi-prevremeno-u-srbiji/> tags=["Vesti","bebe","neonatologija","prevremeno rođenje"]
+- Dnevnik u 19 (12.11.2026) <https://n1info.rs/video/dnevnik-u-19-12112026/> tags=["Video","Dnevnik","dnevnik u 19","video"]
+- Crvena linija, petak u 20h: O prisluškivanju u zemljama regiona <https://n1info.rs/najave-emisija/pisanje-kao-saveznik-u-teskim-trenucima-kako-reci-pomazu-da-razumemo-sopstvene-emocije/> tags=["Najave emisija","najava emisije","crvena linija"]
+- Novobeograđani tvrde da je gradilište Milenijum tima na mestu hotela Jugoslavija aktivno - posebno noću <https://n1info.rs/vesti/milenijum-tim-gradnja-hotel-jugoslavija/> tags=["Vesti","hotel jugoslavija","gradnja","gradilište","milenijum tim"]
+- Nenad Stefanović: Nema dokaza da je 15. marta korišćen zvučni top <https://n1info.rs/vesti/nenad-stefanovic-nema-dokaza-da-je-15-marta-koriscen-zvucni-top/> tags=["Vesti","zvučni top","banjska","nenad stefanović","više javno tužilaštvo"]
+- Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
+- AMSS upozorio vozače na mokre kolovoze <https://n1info.rs/vesti/amss-upozorio-vozace-na-mokre-kolovoze/> tags=["Vesti","amss","mokri kolovozi"]
 
 ### Nova.rs
-Categories: {"hronika":11,"zabava":6,"drustvo":4,"svet":6,"ekonomija":3,"zivot":6,"kultura":2,"sport":5,"ostalo":2,"politika":5}
+Categories: {"sport":15,"kultura":4,"zivot":1,"politika":5,"zabava":8,"drustvo":5,"hronika":6,"svet":3,"ostalo":2,"ekonomija":1}
 Uncategorized sample:
-- Mentalno razgibavanje: Firma za rad sa državom <https://nova.rs/emisije/mentalno-razgibavanje-firma-za-rad-sa-drzavom/> tags=["Emisije","mentalno razgibavanje cela emisija"]
-- Probudi se - Cela emisija - 11.11.2026. <https://nova.rs/emisije/probudi-se-cela-emisija-11112026/> tags=["Emisije","probudi se cela emisija"]
+- Dnevnik - Cela emisija - 11.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-11112026/> tags=["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 11.11.2026. <https://nova.rs/emisije/medju-nama-cela-emisija-11112026/> tags=["Emisije","među nama cela emisija"]
 
 ### B92
-Categories: {"drustvo":6,"svet":12,"ekonomija":11,"kultura":3,"sport":12,"zivot":12,"ostalo":2,"tehnologija":3,"zabava":4,"hronika":5,"zdravlje":6,"region":2,"politika":2}
+Categories: {"sport":14,"svet":13,"zivot":22,"zdravlje":2,"politika":5,"tehnologija":4,"ekonomija":9,"ostalo":2,"hronika":3,"kultura":3,"zabava":2,"drustvo":1}
 Uncategorized sample:
-- Kada Bananica izađe iz omota i uđe u svet nege <https://superzena.b92.net/lepa-i-zdrava/lepota-zene/284310/kada-bananica-izadje-iz-omota-i-udje-u-svet-nege/vest> tags=["Najnovije"]
-- Pet najjačih bolova koje čovek može doživeti: Porođaj nije na prvom mestu <https://superzena.b92.net/lepa-i-zdrava/zdravlje-zene/284268/5-najjacih-bolova-koje-covek-moze-doziveti-porodjaj-nije-na-prvom-mestu/vest> tags=["Najnovije"]
+- Novine: "Najava rastakanja sektora odbrane i bezbednosti"; "Bukte sukobi unutar sistema" <https://www.b92.net/info/razno/284510/prelistavanje-stampe-za-13-novembar-2026-godine/vest> tags=["Info"]
+- Pet pitanja koja će vam pomoći da izgradite bolji i dublji odnos sa detetom <https://superzena.b92.net/dom-i-porodica/roditeljstvo/284317/5-pitanja-koja-ce-vam-pomoci-da-izgradite-bolji-i-dublji-odnos-sa-detetom/vest> tags=[]
 
 ### Blic
-Categories: {"svet":9,"zivot":5,"hronika":5,"drustvo":8,"zabava":12,"ekonomija":14,"kultura":5,"politika":7,"ostalo":3,"tehnologija":1,"zdravlje":1}
-Uncategorized sample:
-- Tajanstvena veza vina i mode: Šta krije luksuzna boca koja menja živote žena? <https://www.blic.rs/good-life/hedonizam/ekskluzivno-vino-frank-family-i-simkhai-dizajnerska-boca-iz-snova/gzn4qx7> tags=[]
-- Triumph Bonneville T40 krije više nego što se vidi na prvi pogled. Da li je ovo povratak legende? <https://www.blic.rs/good-life/automobili-i-jahte/triumph-bonneville-t40-spoj-britanske-tradicije-i-moderne-tehnologije/dh341h1> tags=[]
-- Milijardu obroka dnevno: Kako da bacamo manje hrane <https://www.blic.rs/bbc/milijardu-obroka-dnevno-kako-da-bacamo-manje-hrane/lljhdq7> tags=[]
+Categories: {"politika":11,"zabava":21,"svet":12,"drustvo":3,"zivot":8,"ekonomija":4,"hronika":8,"zdravlje":2,"kultura":1}
 
 ### Politika
-Categories: {"svet":5,"sport":4,"hronika":2,"ostalo":4,"politika":3,"region":1,"zabava":1}
+Categories: {"politika":3,"kultura":1,"hronika":2,"ostalo":5,"svet":4,"sport":3,"drustvo":1,"zivot":1}
 Uncategorized sample:
-- Vodeći indeks Frankfurtske berze oborio rekord <https://www.politika.rs/scc/clanak/802096/vodeci-indeks-frankfurtske-berze-oborio-rekord> tags=[]
-- Međunarodni humanitarni bazar 6. decembra u Sava centru <https://www.politika.rs/scc/clanak/802094/medunarodni-humanitarni-bazar-6-decembra-u-sava-centru> tags=[]
-- Sutra i do 25 stepeni, ali stižu pljuskovi i osetno zahlađenje <https://www.politika.rs/scc/clanak/802089/sutra-i-do-25-stepeni-ali-stizu-pljuskovi-i-osetno-zahladenje> tags=[]
-- Prijavljeni radovi za drugu fazu Linijskog parka, rok za završetak avgust 2027. godine <https://www.politika.rs/scc/clanak/802082/prijavljeni-radovi-za-drugu-fazu-linijskog-parka-rok-za-zavrsetak-avgust-2027-godine> tags=[]
+- Rusi će morati da odsluže zatvorsku kaznu u SAD pre deportacije <https://www.politika.rs/scc/clanak/802310/rusi-ce-morati-da-odsluze-zatvorsku-kaznu-u-sad-pre-deportacije> tags=[]
+- Viktor Orban: Sto odsto sam siguran da je moj brat nevin <https://www.politika.rs/scc/clanak/802303/viktor-orban-sto-odsto-sam-siguran-da-je-moj-brat-nevin> tags=[]
+- Atelje 212: zatražena smena v.d. direktora Ljubiše Ristića na obeležavanju 70. godina <https://www.politika.rs/scc/clanak/802266/atelje-212-zatrazena-smena-v-d-direktora-ljubise-ristica-na-obelezavanju-70-godina> tags=[]
+- Lav Šlosberg ostaje u zatvoru 11 godina i mesec dana <https://www.politika.rs/scc/clanak/802286/lav-slosberg-ostaje-u-zatvoru-11-godina-i-mesec-dana> tags=[]
+- RIK objavio ukupne rezultate za članove 18 saveta nacionalnih manjina <https://www.politika.rs/scc/clanak/802284/rik-objavio-ukupne-rezultate-za-clanove-18-saveta-nacionalnih-manjina> tags=[]
 
 ### RTS
-Categories: {"drustvo":6,"politika":4,"hronika":3,"ekonomija":3,"svet":3,"zivot":1}
+Categories: {"politika":9,"ekonomija":4,"svet":3,"drustvo":2,"zivot":1,"hronika":1}
