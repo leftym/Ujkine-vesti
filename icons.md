@@ -1,6 +1,6 @@
 # Outlet icons
 
-Run: 2026-11-13T11:16:41.933Z
+Run: 2026-11-13T21:50:09.354Z
 
 ## N1  (https://n1info.rs)
 - OK  200 image/png 485B 16x16 | icon sizes=16x16 | https://n1info.rs/media/images/n1_fav_icon.2e16d0ba.fill-16x16.png
@@ -32,9 +32,9 @@ Run: 2026-11-13T11:16:41.933Z
 - OK  200 image/png 10755B 144x144 | apple-touch-icon sizes=- | https://www.b92.net/files/b92/img/icons/apple-icon-144x144.png
 - OK  200 image/png 13159B 192x192 | icon sizes=- | https://www.b92.net/files/b92/img/icons/android-icon-192x192.png
 - OK  200 image/x-icon 15406B ico[16x16,32x32,48x48] | icon sizes=- | https://www.b92.net/files/b92/favicon.ico
-- bad 404 text/html 251334B  | guess /apple-touch-icon.png | https://www.b92.net/apple-touch-icon.png
+- bad 404 text/html 252654B  | guess /apple-touch-icon.png | https://www.b92.net/apple-touch-icon.png
 - OK  200 image/x-icon 15406B ico[16x16,32x32,48x48] | guess /favicon.ico | https://www.b92.net/favicon.ico
-- bad 404 text/html 251298B  | guess /favicon.png | https://www.b92.net/favicon.png
+- bad 404 text/html 252618B  | guess /favicon.png | https://www.b92.net/favicon.png
 
 ## Blic  (https://www.blic.rs)
 - OK  200 image/png 12724B 180x180 | apple-touch-icon sizes=180x180 | https://ocdn.eu/ucs/static/blicperun/3655e5f35801ace2228b7928bf7c83e7/v3/img/favicons/apple-touch-icon.png
@@ -42,7 +42,7 @@ Run: 2026-11-13T11:16:41.933Z
 - OK  200 image/png 642B 16x16 | icon sizes=16x16 | https://ocdn.eu/ucs/static/blicperun/3655e5f35801ace2228b7928bf7c83e7/v3/img/favicons/favicon-16x16.png
 - OK  200 image/png 1749B 60x60 | guess /apple-touch-icon.png | https://www.blic.rs/apple-touch-icon.png
 - OK  200 image/vnd.microsoft.icon 15406B ico[16x16,32x32,48x48] | guess /favicon.ico | https://www.blic.rs/favicon.ico
-- bad 404 text/html 75386B  | guess /favicon.png | https://www.blic.rs/favicon.png
+- bad 404 text/html 75394B  | guess /favicon.png | https://www.blic.rs/favicon.png
 
 ## Politika  (https://www.politika.rs)
 - OK  200 image/png 1201B 57x57 | apple-touch-icon sizes=57x57 | https://www.politika.rs/themed/politika/img/favicon/apple-icon-57x57.png
