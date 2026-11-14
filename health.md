@@ -1,97 +1,93 @@
 # Vesti health report
 
-Run: 2026-11-14T10:43:19.764Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-14T20:30:46.802Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **MED** [B92] Feed links point to another website: 5 links to other websites dropped. The outlet may have moved domains (lib/sources.js).
-2. **LOW** [Blic] Possible ads NOT flagged: "Sedam uljara preti prekidom rada: Dok Španija od komine pravi gorivo i jeftino ulje, komšije pred ekološkim kolapsom"
+1. **LOW** [B92] Possible ads NOT flagged: "UKC Kragujevac organizuje besplatne preglede na selu: Evo tačnih datuma i lokacija"
+2. **LOW** [Blic] Possible ads NOT flagged: "Pre nego što kupite nove peškire, proverite ovu oznaku na etiketi: Najmekši u prodavnici nije uvek najbolji izbor"; ""OBJASNITE ZAŠTO SAM SPONZORUŠA?" Anica Lazić javno odbrusila na šok poruku, pa pobesnela: "Možete da obrazložite to malo dublje, JA NEMA ŠTA DA KRIJEM""; "U ovoj banji u Srbiji kupanje je potpuno besplatno: Voda ima oko 30 stepeni, a za ulazak ne treba ni dinar"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 50 | 0.3h | 100% | 12% | 1 |
-| Nova.rs | yes | 50 | 0.1h | 100% | 2% | 0 |
-| B92 | yes | 80 | 0.0h | 95% | 1% | 0 |
+| N1 | yes | 46 | 0.1h | 100% | 17% | 1 |
+| Nova.rs | yes | 50 | 0.0h | 100% | 4% | 0 |
+| B92 | yes | 80 | 0.2h | 95% | 1% | 0 |
 | Blic | yes | 70 | 0.1h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.1h | 100% | 25% | 0 |
-| RTS | yes | 20 | 0.8h | 100% | 5% | 0 |
+| Politika | yes | 20 | 0.0h | 100% | 20% | 0 |
+| RTS | yes | 20 | 0.1h | 100% | 5% | 0 |
 
 ## Front page right now
-1. [multi, 5 outlets, score 57.9] Poštanska štedionica u petak isplatila nešto manje od 1.300 deponenata Alta banke
-   - also (nova): Poštanska štedionica: Prvog dana isplaćeni svi klijenti Alta banke sa zakazanim terminima
-   - also (n1): Poštanska štedionica: U petak isplaćeni svi zakazani klijenti, poslednji dobio novac oko ponoći
-   - also (b92): Oglasila se Banka Poštanska štedionica: Isplaćeni u petak svi zakazani klijenti Alta banke
-   - also (blic): ISPLATA TRAJALA DO PONOĆI! Šalteri radili do 23.47 uprkos padu sistema: Poštanska štedionica isplatila sve zakazane klijente Alta banke, danas nastavak isplate
-2. [multi, 5 outlets, score 54.9] Osetno hladnije – kiša u pojedinim krajevima, na planinama slab sneg
-   - also (politika): Todorović: Od ponedeljka rast temperatura, sredinom sedmice i preko 18 stepeni
-   - also (nova): Hladno, toplo, hladno, pljuskovi i ledeni vetar: Od ovog datuma temperatura će ponovo skočiti na 20 stepeni, a onda sledi pravi potop
-   - also (n1): Danas osetno hladnije, temperatura do 10 stepeni
-   - also (blic): VRAĆA SE 20 STEPENI, A ONDA SLEDI NOVI SUNOVRAT TEMPERATURE Vremenska prognoza RHMZ za ostatak novembra
-   - also (nova): Danas osetno hladnije, temperatura od 1 do 11 stepeni: Na planinama slab sneg
-3. [multi, 5 outlets, score 53.7] Odlaže se uspostavljanje putničkog saobraćaja na pruzi Beograd-Budimpešta: Ovo je razlog
-   - also (rts): Odložen početak putničkog saobraćaja na pruzi Budimpešta–Beograd, otkrivene softverske greške
-   - also (n1): Odložen početak putničkog saobraćaja na pruzi Budimpešta–Beograd, otkrivene softverske greške
-   - also (nova): Odložen početak putničkog saobraćaja na pruzi Budimpešta–Beograd, otkrivene softverske greške
-   - also (blic): Odlažu se vozovi do Budimpešte! Putnički saobraćaj neće krenuti iz Beograda 13. decembra, evo šta se dešava
-4. [multi, 4 outlets, score 46.4] Poginuli pešak na Novom Beogradu i žena u požaru u Sremčici
-   - also (b92): Hitna pomoć: Muškarac poginuo u saobraćajnoj nesreći; Žena stradala u požaru
-   - also (n1): Pešak poginuo na Novom Beogradu, ženska osoba u požaru u Sremčici
-   - also (nova): Pešak poginuo na Novom Beogradu, jedna osoba u požaru u Sremčici
-5. [multi, 3 outlets, score 38.5] Uhapšene dve osobe na graničnom prelazu Šid, zaplenjeno 34.000 tableta sa liste psihoaktivnih supstanci
-   - also (n1): Dve osobe uhapšene na prelazu Šid, zaplenjeno više od 34.000 tableta sa liste psihoaktivnih supstanci
-   - also (politika): Na prelazu Šid pronađeno 34.150 tableta, uhapšene dve osobe
-6. [multi, 3 outlets, score 38.3] Košta potvrdio: "Šaljemo tim na pregovore"
-   - also (n1): Evropa šalje tim od šest članica na narednu rundu pregovora o Ukrajini
-   - also (blic): NEMAJU POVERENJA U TRAMPA? Predstavnici EU i pet država članica ulaze u PREGOVORE O UKRAJINI: Evropa ne želi da Moskva i Vašington odlučuju bez nje
-7. [multi, 3 outlets, score 37.9] Milioni dolara pronađeni zakopani u šumama u okviru istrage protiv bivšeg Orbanovog ministra
-   - also (blic): (VIDEO) Neverovatni snimci iz Mađarske: Policajci lopatama iskopavali milione Orbanovog ministra, NOVAC BROJALI 8 SATI
-   - also (nova): Nađeno 18 miliona dolara tokom istrage protiv ministra iz Orbanove ere, novac bio zakopan u šumi
-8. [multi, 3 outlets, score 36.2] Letovi u SAD ponovo dozvoljeni – haos na aerodromima se nastavlja, oko 1,5 miliona putnika pogođeno poremećajima
-   - also (n1): Letovi u SAD ponovo dozvoljeni – haos na aerodromima se nastavlja, oko 1,5 miliona putnika pogođeno poremećajima
-   - also (rts): Obustavljeni svi letovi u SAD – problem u kontroli letenja paralisao avio-saobraćaj
-   - also (blic): AVIO PARALIZA U SAD! Nastavljeni letovi nakon višečasovne obustave: Otkazano više od 2.000 polazaka, putnici i dalje zaglavljeni na aerodromu
-9. [multi, 2 outlets, score 29] OBJAVLJENA ODLUKA O POVEĆANJU PENZIJA! Od decembra rast od 7,5 odsto, na svakih 10.000 dinara dobijate 750 dinara više: Evo koliko će iznositi vaše nove penzije
-   - also (politika): Od decembra naknada pogrebnih troškova iznosiće 92.112 dinara
-   - also (blic): PIO Fond doneo odluku! Od decembra se isplaćuje 92.112 dinara: Evo na koga se odnosi nova naknada
-10. [multi, 2 outlets, score 29] Putin potpisao ukaz; Pomilovana ruska blogerka
-   - also (politika): Putin pomilovao blogerku koja boluje od raka u četvrtom stadijumu
+1. [multi, 4 outlets, score 46.7] Vučić: Izabran sam za šefa poslaničke grupe u Skupštini Srbije
+   - also (b92): Vučić: "Izabran sam za šefa naše poslaničke grupe u Skupštini Srbije"
+   - also (n1): Vučić kaže da će biti šef poslaničke grupe i da će se možda zvati "Srbija protiv terora"
+   - also (nova): Vučić najavio da će biti šef poslaničke grupe u Skupštini Srbije: "Mi ćemo se ponašati civilizovano i bićemo onakvi kakvi jesmo"
+2. [multi, 4 outlets, score 44.4] Mojsilović i komandant Kfora: Bezbednosna situacija na Kosovu i Metohiji izuzetno osetljiva
+   - also (n1): Mojsilović sa komandantom Kfora razgovarao o stanju bezbednosti na Kosovu i Metohiji
+   - also (blic): "BEZBEDNOSNA SITUACIJA NA KIM IZUZETNO OSETLJIVA" Mojsilović razgovarao sa komandantom Kfora
+   - also (nova): Mojsilović i komandant KFOR: Bezbednosna situacija na Kosovu i Metohiji izuzetno osetljiva
+3. [multi, 4 outlets, score 43.4] MGSI: Raskidom ugovora sa Kušnerovom firmom o Generalštabu neće biti potraživanja, formalizacija sledeće nedelje
+   - also (b92): Sofronijević: "Zaključak o raskidu ugovora za Generalštab donet u avgustu"
+   - also (n1): Sofronijević: Zaključak o raskidu ugovora sa Kušnerom donet u avgustu, završetak formalizacije iduće nedelje
+   - also (nova): Ministarka Sofronijević: Raskidom ugovora sa Kušnerovom firmom o Generalštabu neće biti potraživanja, formalizacija sledeće nedelje
+4. [multi, 3 outlets, score 39] Partizan pao u Zadru, prvi poraz crno-belih u ABA ligi
+   - also (b92): Partizanov prvi neuspeh u ABA ligi: Zadar kaznio loš napad i probleme u skoku
+   - also (nova): Poraz Partizana protiv Zadra, crno-beli nisu mogli do velikog preokreta u ABA ligi
+5. [multi, 3 outlets, score 38] Studentska lista: Subvencije poljoprivrednicima moraju da se isplaćuju, tehnički mandat Vladu ne oslobađa odgovornosti
+   - also (n1): Studentski pokret reaguje na Glamočića: Subvencije moraju biti isplaćene
+   - also (nova): Studentski pokret reagovao na izjavu Glamočića: Subvencije moraju da se plate
+6. [multi, 3 outlets, score 35.7] Osam minuta tišine za Periša širom Hrvatske; Plenković: Nema potrebe za ostavkom ministarke zdravlja
+   - also (nova): Premijer Hrvatske: Uprkos smrti pacijenta nema potrebe za ostavkom ministarke zdravstva
+   - also (n1): Premijer Hrvatske: Uprkos smrti pacijenta nema potrebe za ostavkom ministarke zdravstva
+7. [multi, 3 outlets, score 35.3] Studentska lista objavila svoj program za privredu i finansije
+   - also (nova): Studentska lista objavila svoj program za privredu i finansije
+   - also (b92): Studenti objavili glavne stavke programa za privredu i finansije
+8. [multi, 3 outlets, score 34.9] Više javno tužilaštvo: "Zlonamerne neistine da prisluškujemo 154 građana zbog "zvučnog topa"
+   - also (politika): VJT demantuje navode o prisluškivanju građana: neistine usmerene protiv Tužilaštva
+   - also (nova): Tužilac Nenad Stefanović i zvučni top: Tvrdi da za ovaj slučaj nema dokaza, ali ipak prisluškuje 154 građana koji su se žalili na tegobe
+9. [multi, 3 outlets, score 33.8] Ministarstvo: Odluku o iseljavanju Klinike za neurologiju i psihijatriju za decu donela direktorka, na osnovu sopstvene procene
+   - also (b92): Ministarstvo zdravlja: "Odluku o iseljavanju donela direktorka, na osnovu sopstvene procene"
+   - also (n1): Ministarstvo zdravlja: Direktorka sama donela odluku o iseljenju Klinike za neurologiju i psihijatriju za decu
+10. [multi, 3 outlets, score 33.8] Isplaćeno više od sedam odsto sredstava klijentima Alta banke
+   - also (blic): Poštanska štedionica isplatila više od sedam odsto osiguranih depozita klijentima Alta banke za manje od dva dana
+   - also (rts): Poštanska štedionica u petak isplatila nešto manje od 1.300 deponenata Alta banke
+   - also (blic): "Kupili smo stanove, a novac stoji na računu!" Ispovest Rusa koji su štedište Alta banke: Isplata im u toku (VIDEO)
 
 ## Details
 ### N1
-Categories: {"zivot":7,"politika":5,"region":6,"hronika":7,"ostalo":6,"zdravlje":1,"svet":10,"ekonomija":7,"drustvo":1}
+Categories: {"svet":6,"ostalo":8,"hronika":4,"politika":10,"ekonomija":6,"region":8,"zivot":3,"drustvo":1}
 Flagged:
-- (self) Gledajte UŽIVO Novi dan: Energetska kriza - šta će poskupeti i ko će to platiti? <https://n1info.rs/najave-emisija/novi-dan-energetska-kriza-sta-ce-poskupeti-i-ko-ce-to-platiti/>
+- (self) Gledajte UŽIVO Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
 Uncategorized sample:
-- NVO: Legitimitet novoizabranih saveta nacionalnih manjina zahteva širu javnu raspravu <https://n1info.rs/vesti/nvo-legitimitet-novoizabranih-saveta-nacionalnih-manjina-zahteva-siru-javnu-raspravu/> tags=["Vesti","legitimitet","saveti za nacionalne manjine","institut za socijalnu inkluziju","kuća ljudskih prava","javna rasprava"]
-- AMSS upozorio na mokre kolovoze, maglu i odrone <https://n1info.rs/vesti/amss-upozorio-na-mokre-kolovoze-maglu-i-odrone/> tags=["Vesti","amss","vlažni kolovozi","putevi"]
-- U jednom uglu Dolovac, u drugom Stefanović: Struka kaže da je od okršaja važnije šta će biti sa predmetima <https://n1info.rs/vesti/u-jednom-uglu-dolovac-u-drugom-stefanovic-struka-kaze-da-je-od-okrsaja-vaznije-sta-ce-biti-sa-predmetima/> tags=["Vesti","vrhovno javno tužilaštvo","nenad stefanović","zagorka dolovac"]
-- Na današnji dan, 14. novembar: Rođeni Klod Mone i Džavaharlal Nehru, objavljena nova dokumenta o Epstajnu <https://n1info.rs/vesti/na-danasnji-dan-14-novembar-2026/> tags=["Vesti","na današnji dan"]
-- Crvena linija: O prisluškivanju u zemljama regiona (13.11.2026) <https://n1info.rs/video/crvena-linija-o-prisluskivanju-u-zemljama-regiona/> tags=["Video","Crvena linija","video","berislav jerinić","vuk cvijić","azem kurtić"]
-- Dnevnik u 19 (13.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-13112026/> tags=["Dnevnik","vesti","dnevnik","dnevnik u 19","video"]
+- Beogradski vodovod: Od 16. do 20. novembra radovi na Vračaru <https://n1info.rs/vesti/beogradski-vodovod-od-16-do-20-novembra-radovi-na-vracaru/> tags=["Vesti","radovi","beogradski vodovod","vračar"]
+- "Zvučni top" i dalje odjekuje, ali sada među tužiocima: Ko je istraživao slučaj, a ko one koji su o njemu govorili? <https://n1info.rs/vesti/zvucni-top-i-dalje-odjekuje-ali-sada-medju-tuziocima-ko-je-istrazivao-slucaj-a-ko-one-koji-su-o-njemu-govorili/> tags=["Vesti","vrhovno javno tužilaštvo","zvučni top","nenad stefanović","više javno tužilaštvo","izveštaj komisije"]
+- Gledajte UŽIVO Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
+- Dan uživo (13.11.2026) <https://n1info.rs/video/dan-uzivo/dan-uzivo-13112026/> tags=["Dan uživo","dan uživo","video","emisija"]
+- DS: Usvojena Beogradska deklaracija kojom se pozivaju žene da oblikuju političke prioritete <https://n1info.rs/vesti/ds-usvojena-beogradska-deklaracija-kojom-se-pozivaju-zene-da-oblikuju-politicke-prioritete/> tags=["Vesti","deklaracija","demokratska stranka"]
+- "Male bebe, veliki potencijal": Institut za neonatologiju u nedelju obeležava Dan prevremeno rođene dece <https://n1info.rs/vesti/male-bebe-veliki-potencijal-institut-za-neonatologiju-u-nedelju-obelezava-dan-prevremeno-rodjene-dece/> tags=["Vesti","svetski dan prevremeno rođene dece","bebe","prevremeno rođene bebe","institut za neonatologiju"]
 
 ### Nova.rs
-Categories: {"zivot":10,"hronika":4,"svet":4,"zabava":6,"politika":1,"ekonomija":5,"sport":12,"drustvo":6,"ostalo":1,"kultura":1}
+Categories: {"sport":13,"svet":9,"zabava":6,"politika":9,"ostalo":2,"drustvo":4,"hronika":3,"ekonomija":3,"kultura":1}
 Uncategorized sample:
-- Probudi se - Cela emisija - 13.11.2026. <https://nova.rs/emisije/probudi-se-cela-emisija-13112026/> tags=["Emisije","probudi se cela emisija"]
+- Dnevnik - Cela emisija - 13.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-13112026/> tags=["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 13.11.2026. <https://nova.rs/emisije/medju-nama-cela-emisija-13112026/> tags=["Emisije","među nama cela emisija"]
 
 ### B92
-Categories: {"zivot":17,"kultura":4,"sport":16,"svet":13,"ekonomija":10,"drustvo":3,"tehnologija":4,"zabava":1,"zdravlje":6,"politika":2,"hronika":2,"region":1,"ostalo":1}
+Categories: {"sport":13,"zivot":20,"svet":15,"zabava":2,"ekonomija":9,"kultura":4,"region":1,"zdravlje":5,"tehnologija":2,"politika":3,"ostalo":1,"drustvo":3,"hronika":2}
 Uncategorized sample:
-- Na današnji dan, 14. novembar <https://www.b92.net/info/razno/284854/na-danasnji-dan-14-novembar/vest> tags=["Info"]
+- Iz bojlera čujete različite zvukove? Evo kada je vreme da zovete majstora <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/284700/sta-znace-razliciti-zvukovi-iz-bojlera-i-kada-treba-reagovati/vest> tags=[]
 
 ### Blic
-Categories: {"ekonomija":21,"hronika":3,"zabava":16,"kultura":4,"politika":4,"svet":9,"zivot":6,"drustvo":4,"zdravlje":2,"tehnologija":1}
+Categories: {"zabava":20,"kultura":4,"zivot":7,"svet":9,"ekonomija":7,"hronika":5,"drustvo":9,"politika":7,"zdravlje":2}
 
 ### Politika
-Categories: {"sport":2,"ostalo":5,"ekonomija":2,"region":1,"svet":7,"hronika":2,"politika":1}
+Categories: {"sport":3,"svet":6,"hronika":2,"drustvo":2,"ostalo":4,"politika":1,"region":1,"ekonomija":1}
 Uncategorized sample:
-- Vulin i Lihačov razgovarali o saradnji sa Rosatomom i ulaganjima u nuklearnu energiju <https://www.politika.rs/scc/clanak/802717/vulin-i-lihacov-razgovarali-o-saradnji-sa-rosatomom-i-ulaganjima-u-nuklearnu-energiju> tags=[]
-- Vatrena kugla presekla noćno nebo iznad Čilea, moguće da je reč o bolidu <https://www.politika.rs/scc/clanak/802713/vatrena-kugla-presekla-nocno-nebo-iznad-cilea-moguce-da-je-rec-o-bolidu> tags=[]
-- Todorović: Od ponedeljka rast temperatura, sredinom sedmice i preko 18 stepeni <https://www.politika.rs/scc/clanak/802709/todorovic-od-ponedeljka-rast-temperatura-sredinom-sedmice-i-preko-18-stepeni> tags=[]
-- „SpejsIks” lansirao letilicu „Staršip” u orbitu, pokušaće istorijski povratak na Zemlju <https://www.politika.rs/scc/clanak/802704/spejsiks-lansirao-letilicu-starsip-u-orbitu-pokusace-istorijski-povratak-na-zemlju> tags=[]
-- Američki izviđački avion ARTEMIS 2 leti iznad Crnog mora <https://www.politika.rs/scc/clanak/802703/americki-izvidacki-avion-artemis-2-leti-iznad-crnog-mora> tags=[]
+- Finska pravi električnu ogradu dugu 83 km kako bi sprečila širenje afričke svinjske kuge <https://www.politika.rs/scc/clanak/802892/finska-pravi-elektricnu-ogradu-dugu-83-km-kako-bi-sprecila-sirenje-africke-svinjske-kuge> tags=[]
+- Maja Gojković: Srbija u političkoj situaciji kakva do sada nije zabeležena <https://www.politika.rs/scc/clanak/802890/maja-gojkovic-srbija-u-politickoj-situaciji-kakva-do-sada-nije-zabelezena> tags=[]
+- Guvernerka Njujorka traži smenu ministra saobraćaja <https://www.politika.rs/scc/clanak/802887/guvernerka-njujorka-trazi-smenu-ministra-saobracaja> tags=[]
+- Vojadžer 1 postaje prva letelica udaljena jedan svetlosni dan od Zemlje <https://www.politika.rs/scc/clanak/802880/vojadzer-1-postaje-prva-letelica-udaljena-jedan-svetlosni-dan-od-zemlje> tags=[]
 
 ### RTS
-Categories: {"ostalo":1,"ekonomija":3,"politika":2,"svet":5,"hronika":4,"drustvo":4,"zivot":1}
+Categories: {"drustvo":4,"politika":6,"svet":3,"region":1,"zivot":1,"hronika":2,"ostalo":1,"ekonomija":2}
 Uncategorized sample:
 - Havarija na vodovodnoj cevi na Voždovcu – ulice pod vodom, saobraćaj otežan <https://www.rts.rs/vesti/servisne-informacije/6083591/havarija-na-vodovodnoj-cevi-na-vozdovcu--ulice-pod-vodom-saobracaj-otezan.html> tags=["Servisne vesti"]
