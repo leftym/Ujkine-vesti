@@ -1,88 +1,89 @@
 # Vesti health report
 
-Run: 2026-11-15T11:17:12.308Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-15T20:54:10.110Z  |  items: 287  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **MED** [Politika] 30% of stories are uncategorized ("Ostalo"). Common words in them: drzavni(1), izostao(1), svecanosti(1), povodom(1), njegosevog(1), filipini(1), australija(1), potpisali(1). Add section names / keyword stems in lib/classify.js.
-2. **LOW** [B92] Possible ads NOT flagged: "UKC Kragujevac organizuje besplatne preglede na selu: Evo tačnih datuma i lokacija"
-3. **LOW** [Blic] Possible ads NOT flagged: "Kupio kamenu kuću za 3.000 evra: Šokirao se kada je video šta je pronašao ispod poda, i shvatio zašto je bila toliko jeftina (VIDEO)"
+- All checks passed. Nothing to do.
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 50 | 0.1h | 100% | 12% | 1 |
-| Nova.rs | yes | 50 | 0.0h | 100% | 2% | 0 |
-| B92 | yes | 80 | 0.0h | 96% | 4% | 0 |
-| Blic | yes | 70 | 0.0h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.1h | 100% | 30% | 0 |
-| RTS | yes | 20 | 0.3h | 100% | 0% | 0 |
+| N1 | yes | 47 | 0.2h | 100% | 19% | 5 |
+| Nova.rs | yes | 50 | 0.2h | 100% | 2% | 0 |
+| B92 | yes | 80 | 0.1h | 95% | 4% | 0 |
+| Blic | yes | 70 | 0.2h | 100% | 1% | 0 |
+| Politika | yes | 20 | 0.0h | 100% | 15% | 0 |
+| RTS | yes | 20 | 1.5h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 4 outlets, score 46.2] Počeli lokalni izbori u Sloveniji: Sve oči uprte u Ljubljanu
-   - also (n1): Danas lokalni izbori u Sloveniji, najveća neizvesnost u Ljubljani
-   - also (nova): Danas lokalni izbori u Sloveniji, najveća neizvesnost u Ljubljani
-   - also (blic): SLOVENCI GLASAJU NA LOKALNIM IZBORIMA Sve oči uprte u Ljubljanu: Zoran Janković juri sedmi uzastopni mandat, posle 20 godina prvi put mu se smeši DRUGI KRUG
-2. [multi, 4 outlets, score 44.3] Automobil udario u konja u Tutinu – poginuo mladić, drugi teško povređen
-   - also (n1): Automobil udario u konja u Tutinu – poginuo mladić, drugi teško povređen
-   - also (nova): Novi detalji teške saobraćajne nezgode kod Tutina: Tinejdžer nastradao kad je automobil naleteo na konje na putu
-   - also (b92): Tragedija kod Tutina: Nastradao mladić u saobraćajnoj nesreći; Udarili konje na putu
-   - also (nova): Automobil udario u konja u Tutinu: Jedan mladić nastradao, drugi teško povređen
-3. [multi, 3 outlets, score 37.3] Vojska se povlači; Preuzimaju Bab el Mandeb?
-   - also (blic): KLJUČANJE Vojska Vlade u Jemenu se POVLAČI iz područja strateškog moreuza, HUTI PREUZIMAJU KONTROLU
-   - also (politika): Vladine snage se povlače iz oblasti moreuza Bab el Mandeb, kontrolu preuzimaju Huti
-4. [multi, 3 outlets, score 33.5] Bitka za Generalštab – raskid sa Kušnerom nije kraj, sporni zakoni ostaju
-   - also (n1): Generalštab ostaje spomenik kulture: Ugovor sa Kušnerom raskinut, stručnjaci traže odgovarajuću obnovu
-   - also (blic): Vlada Srbije raskida ugovor sa Džaredom Kušnerom za Generalštab
-5. [multi, 2 outlets, score 29] Porodila se verenica Marka Gačića: Pevač dobio dete sa devojkom zbog koje se razveo
-   - also (blic): PORODILA SE VERENICA MARKA GAČIĆA Pevač dobio treće dete, na svet stigao naslednik
-6. [multi, 2 outlets, score 27.9] Milovančević sa portala Nova.rs: Pred izbore su pokušali da nas ućutkaju, sada strahujemo od gašenja
-   - also (nova): Vojislav Milovančević u Dnevniku na RTS 1: Pritisci na Nova.rs ne prestaju, redakcija strahuje od gašenja portala, odlazeća vlast pokušala da utiče na uređivačku politiku
-7. [multi, 2 outlets, score 27.3] Sedamnaest godina od smrti patrijarha Pavla, u narodu omiljenog zbog skromnosti, mudrosti i istinoljubivosti
-   - also (rts): Sedamnaest godina od smrti patrijarha Pavla – život bez privilegija i poruke o čovečnosti
-8. [multi, 2 outlets, score 26.8] Glamočić odgovorio Studentskoj listi: Nema para za subvencije i blokade imaju posledice po proizvođače
-   - also (nova): Ministar Glamočić poručio Studentskoj listi: Nema para za subvencije
-9. [multi, 2 outlets, score 26.8] U SAD za danas otkazano više od 900 letova
+1. [multi, 3 outlets, score 39] Nastavak haosa u američkom vazdušnom saobraćaju: Samo tokom prepodneva otkazano 1600 letova, 3600 kasnilo
+   - also (rts): U SAD za danas otkazano više od 900 letova
    - also (b92): Haos na nebu iznad SAD: Otkazano više od 16.000 letova, poznato šta je izazvalo kolaps
-10. [multi, 2 outlets, score 26.4] Poziv Vrhovnom tužilaštvu da se povuče poternica za Aleksandrom Radićem
-   - also (n1): Poziv tužilaštvu i sudu da povuku poternicu za vojnim analitičarom Aleksandrom Radićem
+2. [multi, 3 outlets, score 36.5] Sprečen pokušaj primopredaje droge u Zemunu, uhapšen pripadnik granične policije
+   - also (n1): Granični policajac iz Prijepolja uhapšen zbog sumnje na trgovinu drogom
+   - also (blic): BIVŠI MINISTAR KULTURE U PRIŠTINI UHAPŠEN ZBOG TRGOVINE DROGOM! Velika akcija policije: Zaplenjeni kokain, marihuana, ekstazi, luksuzni automobili, satovi, nakit...
+3. [multi, 3 outlets, score 33.4] Radikalna odluka: "Zatvaramo sve granice sa Rusijom"
+   - also (nova): Estonija zatvara sve granice sa Rusijom: U tri sata ujutru dogodila se kap koja je prelila čašu
+   - also (blic): OVA EVROPSKA ZEMLJA ZATVARA GRANICE SA RUSIJOM Eskalacija posle optužbi za sabotažu! U tri sata ujutru desila se kap koja je prelila čašu: "Nećete nas zastrašiti!"
+4. [multi, 3 outlets, score 33.4] Tri broda pogođena blizu ušća Dunava u Rumuniji; Kijev: Napadnuti aerodrom i luka za dronove u Rusiji
+   - also (n1): Premijer Rumunije: Tri broda napadnuta dronovima na Crnom moru
+   - also (nova): Dronovima napadnuta tri broda u Crnom moru: Rumunija podigla borbene avione
+5. [multi, 3 outlets, score 33.2] MUP: Osoba koja je sinoć nestala kod Negotina pronađena pomoću drona
+   - also (n1): Policija pronašla osobu koja je juče nestala na području Negotina
+   - also (nova): Jedna osoba nestala kod Negotina: Locirana uz pomoć drona, vatrogasci je prevezli do Hitne pomoći
+   - also (blic): HITNO SE OGLASIO MUP! Dignut dron, vatrogasci izašli na teren: Pronađena osoba koja je nestala na teritoriji Negotina!
+6. [multi, 3 outlets, score 33] Poglavar SPC služio pomen patrijarhu Pavlu povodom 17 godina od njegove smrti
+   - also (nova): U manastiru Rakovica služen pomen povodom 17 godina od smrti patrijarha Pavla
+   - also (blic): "BUDIMO LJUDI, TO JE SMISAO PORUKE PATRIJARHA PAVLA!" Porfirije služio pomen u Rakovici, podsetio na reči koje i danas odzvanjaju
+7. [multi, 2 outlets, score 28.2] Masovni protest u Pragu protiv vlade Andreja Babiša, okupljenima se obratila studentkinja iz Srbije
+   - also (nova): "Studenti u Srbiji su pobedili, došao je red na vas": Dešavanja u Srbiji ideja vodilja Česima na protestu protiv vlade Andreja Babiša
+8. [multi, 2 outlets, score 27.9] Majstorović (CEP): Do 2030. bi mogli da dostignemo današnju poziciju Crne Gore u evrointegracijama
+   - also (nova): "Srbija bi do 2030. bi mogla da dostignemo današnju poziciju Crne Gore": Srđan Majstorović o daljim evrointegracijama
+9. [multi, 2 outlets, score 27.5] Auto-put paralisan; Ogromne kolone na prilazu Beogradu VIDEO
+   - also (blic): (VIDEO) POTPUNI KOLAPS NA AUTO-PUTU "MILOŠ VELIKI" Formirane ogromne kolone vozila u smeru ka Beogradu: Vozila mile zbog saobraćajne nesreće kod Lajkovca
+10. [multi, 2 outlets, score 27.4] Banki naoštrio Olimpiju pred Zvezdu!
+   - also (politika): Košarkaši Crvene zvezde pobedili Cedevita Olimpiju u ABA ligi
 
 ## Details
 ### N1
-Categories: {"zivot":14,"drustvo":5,"politika":7,"ekonomija":5,"ostalo":6,"svet":7,"hronika":5,"region":1}
+Categories: {"politika":2,"region":6,"kultura":3,"ostalo":9,"svet":10,"zivot":5,"drustvo":5,"hronika":6,"ekonomija":1}
 Flagged:
-- (self) Novi dan: Diplomatska ofanziva Studentske liste <https://n1info.rs/najave-emisija/novi-dan-diplomatska-ofanziva-studentske-liste/>
+- (self) Gledajte UŽIVO Utisak nedelje: Gosti Borivoje Uskoković, Miloš Pavlović i Rade Đurić <https://n1info.rs/najave-emisija/gosti-utiska-nedelje-borivoje-uskokovic-milos-pavlovic-i-rade-djuric/>
+- (self) Global fokus, ponedeljak u 20h: Pobunjena Evropa <https://n1info.rs/najave-emisija/global-fokus-ponedeljak-u-20h-pobunjena-evropa/>
+- (self) Gledajte UŽIVO Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
+- (self) N1 Studio live, ponedeljak u 12: "Tužilački obračun" <https://n1info.rs/najave-emisija/n1-studio-live-ponedeljak-u-12-tuzilacki-obracun/>
+- (sponsored) Kako prepoznati italijanski kroj odela i proveriti kako Vam stoji <https://n1info.rs/magazin/lifestyle/kako-prepoznati-italijanski-kroj-odela-i-proveriti-kako-vam-stoji/>
 Uncategorized sample:
-- Ćuta o Generalštabu: Još jedno od mnogobrojnih mesta u Srbiji pod koje može da se postavi oznaka i lupi pečat - odbranjeno <https://n1info.rs/vesti/cuta-o-generalstabu-jos-jedno-od-mnogobrojnih-mesta-u-srbiji-pod-koje-moze-da-se-postavi-oznaka-i-lupi-pecat-odbranjeno/> tags=["Vesti","rio tinto","džared kušner","generalštab","aleksandar jovanović ćuta"]
-- Stanari se vratili u zgradu koja ima zabranu korišćenja nakon urušavanja potpornog zida na susednom gradilištu <https://n1info.rs/vesti/stanari-se-vratili-u-zgradu-koja-ima-zabranu-koriscenja-nakon-urusavanja-potpornog-zida-na-susednom-gradilistu/> tags=["Vesti","urušavanje","potporni zid","stanari","zgrada","ulica vojvode vlahovića"]
-- Dnevnik u 19 (14.11.2026) <https://n1info.rs/video/dnevnik-u-19-14112026/> tags=["Video","Dnevnik","dnevnik u 19","video"]
-- Konzervatorka: Zgradi Generalštaba treba dodeliti status kulturnog dobra od izuzetnog značaja <https://n1info.rs/vesti/konzervatorka-zgradu-generalstaba-treba-dodeliti-status-kulturnog-dobra-od-izuzetnog-znacaja/> tags=["Vesti","estela radonjić živkov","generalštab"]
-- Beogradski vodovod: Od 16. do 20. novembra radovi na Vračaru <https://n1info.rs/vesti/beogradski-vodovod-od-16-do-20-novembra-radovi-na-vracaru/> tags=["Vesti","radovi","beogradski vodovod","vračar"]
-- "Zvučni top" i dalje odjekuje, ali sada među tužiocima: Ko je istraživao slučaj, a ko one koji su o njemu govorili? <https://n1info.rs/vesti/zvucni-top-i-dalje-odjekuje-ali-sada-medju-tuziocima-ko-je-istrazivao-slucaj-a-ko-one-koji-su-o-njemu-govorili/> tags=["Vesti","izveštaj komisije","vrhovno javno tužilaštvo","zvučni top","nenad stefanović","više javno tužilaštvo"]
+- Od Generalštaba do EXPO-a: Koji projekti bivše vlasti će opstati, a koji će biti preispitani? <https://n1info.rs/vesti/od-generalstaba-do-expo-a-koji-projekti-bivse-vlasti-ce-opstati-a-koji-ce-biti-preispitani/> tags=["Vesti","akvarijum","novi sad na vodi","ksenija đorđević","expo 2027","metro"]
+- Gledajte UŽIVO Utisak nedelje: Gosti Borivoje Uskoković, Miloš Pavlović i Rade Đurić <https://n1info.rs/najave-emisija/gosti-utiska-nedelje-borivoje-uskokovic-milos-pavlovic-i-rade-djuric/> tags=["Najave emisija","utisak nedelje"]
+- Idemo dalje: Miša Relić, Mirjana Laušević i Prljavi Inspektor Blaža <https://n1info.rs/video/idemo-dalje/idemo-dalje-misa-relic-mirjana-lausevic-i-prljavi-inspektor-blaza/> tags=["Idemo dalje","prljavi inspektor blaža","dr mirjana laušević","idemo dalje","miša relić"]
+- Posle 20 meseci ponovo kod kuće: Doroteja i Branislav u Novom Sadu, ali se i dalje ne osećaju potpuno bezbedno <https://n1info.rs/vesti/posle-20-meseci-ponovo-kod-kuce-doroteja-i-branislav-u-novom-sadu-ali-se-i-dalje-ne-osecaju-potpuno-bezbedno/> tags=["Vesti","branislav đorđević","psg","novosadski aktivisti","pomilovanja","doroteja antić"]
+- Gledajte UŽIVO Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
+- Nema gužva na granicama, kraj praznika i raspusta donosi pojačan saobraćaj <https://n1info.rs/vesti/nema-guzva-na-granicama-kraj-praznika-i-raspusta-donosi-pojacan-saobracaj/> tags=["Vesti","auto-moto savez srbije","amss","gužva u saobraćaju","saobraćaj gužva"]
 
 ### Nova.rs
-Categories: {"zabava":7,"politika":4,"zivot":10,"svet":8,"drustvo":5,"hronika":7,"sport":7,"ekonomija":1,"ostalo":1}
+Categories: {"svet":8,"sport":19,"politika":3,"drustvo":4,"zabava":5,"hronika":8,"ostalo":1,"zivot":2}
 Uncategorized sample:
-- Pokreni se - Cela emisija - 14.11.2026. <https://nova.rs/emisije/pokreni-se-cela-emisija-14112026/> tags=["Emisije","pokreni se cela emisija"]
+- Dnevnik - Cela emisija - 14.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-14112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"sport":12,"ekonomija":9,"zivot":22,"drustvo":3,"zdravlje":4,"politika":2,"hronika":2,"tehnologija":3,"svet":15,"ostalo":3,"kultura":4,"zabava":1}
+Categories: {"svet":13,"sport":13,"zivot":19,"zdravlje":4,"politika":4,"ekonomija":10,"zabava":2,"kultura":4,"drustvo":4,"ostalo":3,"tehnologija":3,"hronika":1}
 Uncategorized sample:
-- Ne trošite novac na skupa sredstva protiv vlage: Potreban vam je samo komad aluminijumske folije <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/285093/trik-sa-folijom-da-otkrijete-vlagu-u-kuci/vest> tags=["Najnovije"]
-- Ako planirate da skratite kosu, tražite baš ovu frizuru: Izgleda skupo, ženstveno i šik FOTO <https://superzena.b92.net/lepa-i-zdrava/lepota-zene/285079/nova-verzija-bob-frizure-je-pravi-hit-ove-sezone-i-stoji-svakoj-zeni/vest> tags=["Najnovije"]
-- Na današnji dan, 15. novembar <https://www.b92.net/info/razno/285060/na-danasnji-dan-15-novembar/vest> tags=["Info"]
+- Uz dva trika perjana jakna će biti kao nova: Ovu grešku nakon pranja svi pravimo <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/285171/kako-se-pravilno-pere-perjana-jakna-u-masini/vest> tags=[]
+- Riba kupatilo od poda do plafona: Jedna stvar iz kuhinje je dovoljna da cela kuća blista <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/284693/sta-sve-mozete-da-ocistite-tabletom-za-pranje-posudja/vest> tags=[]
+- "Ma nije on takav": Jeste, samo još nije naišla prilika da ti to i pokaže <https://superzena.b92.net/superstav/marija/284609/da-li-verujete-da-postoji-veran-muskarac/vest> tags=[]
 
 ### Blic
-Categories: {"politika":6,"ekonomija":22,"zabava":15,"hronika":4,"svet":5,"zivot":5,"kultura":4,"drustvo":8,"zdravlje":1}
+Categories: {"politika":8,"zabava":20,"hronika":6,"drustvo":6,"zivot":9,"svet":8,"tehnologija":1,"kultura":4,"ostalo":1,"ekonomija":4,"zdravlje":3}
+Uncategorized sample:
+- 'Baka je šestomesečnu ćerku obrezala iza mojih leđa' <https://www.blic.rs/bbc/baka-je-sestomesecnu-cerku-obrezala-iza-mojih-ledja/pmxd9bp> tags=[]
 
 ### Politika
-Categories: {"drustvo":2,"svet":4,"ostalo":6,"hronika":2,"politika":2,"tehnologija":1,"sport":2,"ekonomija":1}
+Categories: {"svet":9,"sport":2,"ostalo":3,"politika":2,"hronika":2,"region":1,"drustvo":1}
 Uncategorized sample:
-- Državni vrh Crne Gore izostao sa svečanosti povodom Njegoševog dana <https://www.politika.rs/scc/clanak/803022/drzavni-vrh-crne-gore-izostao-sa-svecanosti-povodom-njegosevog-dana> tags=[]
-- Filipini i Australija potpisali sporazum o vojnoj saradnji <https://www.politika.rs/scc/clanak/803021/filipini-i-australija-potpisali-sporazum-o-vojnoj-saradnji> tags=[]
-- Poskupljuju komunalne takse za registraciju vozila <https://www.politika.rs/scc/clanak/803017/poskupljuju-komunalne-takse-za-registraciju-vozila> tags=[]
-- U košavskom području jak vetar i temperatura do 14 stepeni <https://www.politika.rs/scc/clanak/803014/u-kosavskom-podrucju-jak-vetar-i-temperatura-do-14-stepeni> tags=[]
-- Obezbediti i rezerve mazuta za zamenu gasa <https://www.politika.rs/scc/clanak/802917/obezbediti-i-rezerve-mazuta-za-zamenu-gasa> tags=[]
-- Planirana isključenja struje u Beogradu 17. i 18. novembra <https://www.politika.rs/scc/clanak/803011/planirana-iskljucenja-struje-u-beogradu-17-i-18-novembra> tags=[]
+- Poreskim savetnicima veća odgovornost u Crnoj Gori, obavezno 40 sati usavršavanja godišnje <https://www.politika.rs/scc/clanak/803165/poreskim-savetnicima-veca-odgovornost-u-crnoj-gori-obavezno-40-sati-usavrsavanja-godisnje> tags=[]
+- Sajam zapošljavanja u Velikoj Plani 19. novembra <https://www.politika.rs/scc/clanak/803162/sajam-zaposljavanja-u-velikoj-plani-19-novembra> tags=[]
+- Tajna masovne grobnice u Belgiji: Šta se dogodilo sa 16 muškaraca pre četiri veka <https://www.politika.rs/scc/clanak/803153/tajna-masovne-grobnice-u-belgiji-sta-se-dogodilo-sa-16-muskaraca-pre-cetiri-veka> tags=[]
 
 ### RTS
-Categories: {"svet":5,"politika":7,"drustvo":3,"ekonomija":1,"zivot":2,"hronika":1,"region":1}
+Categories: {"politika":5,"svet":6,"zivot":2,"hronika":3,"drustvo":3,"ekonomija":1}
