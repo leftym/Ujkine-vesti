@@ -1,93 +1,91 @@
 # Feed check
 
-Run: 2026-11-14T20:30:19.143Z
+Run: 2026-11-15T11:16:48.511Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 1 |
+| N1 | yes | 50 | https://n1info.rs/feed/ | 50 | 1 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +75) | 76 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +79) | 77 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":6,"ostalo":8,"hronika":4,"politika":10,"ekonomija":6,"region":8,"zivot":3,"drustvo":1}
-- [svet] Italijanski evroposlanik se sastao sa Studentskom listom, kritikovao stav EU prema Srbiji
-- [svet] Gde je Milan Radoičić: Sud kaže da ne sme da napušta Srbiju, bivši inspektor BIA da je u Rusiji
-- [ostalo] Beogradski vodovod: Od 16. do 20. novembra radovi na Vračaru
-- [hronika] Pritvor za 17-godišnjaka: Sumnja se da je zapalio automobil u Novom Sadu, vatra zahvatila još dva vozila i lokal
-- [politika] Generalštab ostaje spomenik kulture: Ugovor sa Kušnerom raskinut, stručnjaci traže odgovarajuću obnovu
-- [politika] Od RTS-a do TikToka: Kako SNS javno komunicira nakon izbornog poraza?
-  - flagged (self): Gledajte UŽIVO Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+Categories: {"zivot":14,"drustvo":5,"politika":7,"ekonomija":5,"ostalo":6,"svet":7,"hronika":5,"region":1}
+- [zivot] Naučnici otkrili biološki pokazatelj tinitusa - nalazi se u krvi
+- [drustvo] Danas se obeležava dan prevremeno rođene dece: "Problemi roditelja iz godine u godinu isti"
+- [politika] Vlajić: Pred novim vlastima mnogo izazova, ali su dosad pokazali da imaju ozbiljnu koncentraciju znanja i pameti
+- [drustvo] Sedamnaest godina od smrti patrijarha Pavla, u narodu omiljenog zbog skromnosti, mudrosti i istinoljubivosti
+- [ekonomija] Glamočić odgovorio Studentskoj listi: Nema para za subvencije i blokade imaju posledice po proizvođače
+- [ostalo] Ćuta o Generalštabu: Još jedno od mnogobrojnih mesta u Srbiji pod koje može da se postavi oznaka i lupi pečat - odbranjeno
+  - flagged (self): Novi dan: Diplomatska ofanziva Studentske liste https://n1info.rs/najave-emisija/novi-dan-diplomatska-ofanziva-studentske-liste/
 
 Uncategorized sample (for tuning):
+- Ćuta o Generalštabu: Još jedno od mnogobrojnih mesta u Srbiji pod koje može da se postavi oznaka i lupi pečat - odbranjeno | https://n1info.rs/vesti/cuta-o-generalstabu-jos-jedno-od-mnogobrojnih-mesta-u-srbiji-pod-koje-moze-da-se-postavi-oznaka-i-lupi-pecat-odbranjeno/ | tags: ["Vesti","rio tinto","džared kušner","generalštab","aleksandar jovanović ćuta"]
+- Stanari se vratili u zgradu koja ima zabranu korišćenja nakon urušavanja potpornog zida na susednom gradilištu | https://n1info.rs/vesti/stanari-se-vratili-u-zgradu-koja-ima-zabranu-koriscenja-nakon-urusavanja-potpornog-zida-na-susednom-gradilistu/ | tags: ["Vesti","urušavanje","potporni zid","stanari","zgrada","ulica vojvode vlahovića"]
+- Dnevnik u 19 (14.11.2026) | https://n1info.rs/video/dnevnik-u-19-14112026/ | tags: ["Video","Dnevnik","dnevnik u 19","video"]
+- Konzervatorka: Zgradi Generalštaba treba dodeliti status kulturnog dobra od izuzetnog značaja | https://n1info.rs/vesti/konzervatorka-zgradu-generalstaba-treba-dodeliti-status-kulturnog-dobra-od-izuzetnog-znacaja/ | tags: ["Vesti","estela radonjić živkov","generalštab"]
 - Beogradski vodovod: Od 16. do 20. novembra radovi na Vračaru | https://n1info.rs/vesti/beogradski-vodovod-od-16-do-20-novembra-radovi-na-vracaru/ | tags: ["Vesti","radovi","beogradski vodovod","vračar"]
-- "Zvučni top" i dalje odjekuje, ali sada među tužiocima: Ko je istraživao slučaj, a ko one koji su o njemu govorili? | https://n1info.rs/vesti/zvucni-top-i-dalje-odjekuje-ali-sada-medju-tuziocima-ko-je-istrazivao-slucaj-a-ko-one-koji-su-o-njemu-govorili/ | tags: ["Vesti","vrhovno javno tužilaštvo","zvučni top","nenad stefanović","više javno tužilaštvo","izveštaj komisije"]
-- Gledajte UŽIVO Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
-- Dan uživo (13.11.2026) | https://n1info.rs/video/dan-uzivo/dan-uzivo-13112026/ | tags: ["Dan uživo","dan uživo","video","emisija"]
-- DS: Usvojena Beogradska deklaracija kojom se pozivaju žene da oblikuju političke prioritete | https://n1info.rs/vesti/ds-usvojena-beogradska-deklaracija-kojom-se-pozivaju-zene-da-oblikuju-politicke-prioritete/ | tags: ["Vesti","deklaracija","demokratska stranka"]
-- "Male bebe, veliki potencijal": Institut za neonatologiju u nedelju obeležava Dan prevremeno rođene dece | https://n1info.rs/vesti/male-bebe-veliki-potencijal-institut-za-neonatologiju-u-nedelju-obelezava-dan-prevremeno-rodjene-dece/ | tags: ["Vesti","svetski dan prevremeno rođene dece","bebe","prevremeno rođene bebe","institut za neonatologiju"]
-- N1 Studio Live (13.11.2026) | https://n1info.rs/video/n1-studio-live/n/ | tags: ["N1 Studio Live","n1 studio live","emisija","video"]
-- Sneg pao na Divčibarama | https://n1info.rs/vesti/sneg-pao-na-divcibarama/ | tags: ["Vesti","divčibare","sneg"]
+- "Zvučni top" i dalje odjekuje, ali sada među tužiocima: Ko je istraživao slučaj, a ko one koji su o njemu govorili? | https://n1info.rs/vesti/zvucni-top-i-dalje-odjekuje-ali-sada-medju-tuziocima-ko-je-istrazivao-slucaj-a-ko-one-koji-su-o-njemu-govorili/ | tags: ["Vesti","izveštaj komisije","vrhovno javno tužilaštvo","zvučni top","nenad stefanović","više javno tužilaštvo"]
 
 ## Nova.rs
-Categories: {"sport":13,"svet":9,"zabava":6,"politika":9,"ostalo":2,"drustvo":4,"hronika":3,"ekonomija":3,"kultura":1}
-- [sport] Norvežani konačno pobedili, Holan postigao novi gol
-- [sport] Penjaroja objasnio poraz protiv Zadra: "Nismo poštovali osnovne stvari"
-- [svet] Procurili tajni podaci o ruskim gubicima: Više od 400.000 mrtvih u Ukrajini, stvarni broj mogao bi da bude još veći
-- [sport] Ređaju se maleri za Partizan, ali i pobede u Evroligi
-- [zabava] Pamtimo je kao hladnu majku iz „Titanika“, sa Klintom Istvudom dobila je dete: Evo kako danas izgleda (FOTO
-- [politika] Od RTS-a do TikToka: Kako SNS javno komunicira nakon izbornog poraza?
+Categories: {"zabava":7,"politika":4,"zivot":10,"svet":8,"drustvo":5,"hronika":7,"sport":7,"ekonomija":1,"ostalo":1}
+- [zabava] Porodila se verenica Marka Gačića: Pevač dobio dete sa devojkom zbog koje se razveo
+- [politika] Konstitutivna sednica novog saziva Skupštine Srbije: Šta nas čeka 17. novembra
+- [zivot] Tri anegdote iz života patrijarha Pavla koje govore kakav je čovek bio
+- [svet] Iran objavio da je napao američku bazu: Pogođen ključni radarski sistem?
+- [zabava] Kako je slavna glumica pristala da snimi 18+ scenu u crkvi: U odluci joj pomogla majka
+- [drustvo] I Putevi Srbije upozorili na gužve ne kraju raspusta i pozvali da se vozi pažljivo
 
 Uncategorized sample (for tuning):
-- Dnevnik - Cela emisija - 13.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-13112026/ | tags: ["Emisije","dnevnik cela emisija"]
-- Među nama - Cela emisija - 13.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-13112026/ | tags: ["Emisije","među nama cela emisija"]
+- Pokreni se - Cela emisija - 14.11.2026. | https://nova.rs/emisije/pokreni-se-cela-emisija-14112026/ | tags: ["Emisije","pokreni se cela emisija"]
 
 ## B92
-Categories: {"sport":13,"zivot":20,"svet":15,"zabava":2,"ekonomija":9,"kultura":4,"region":1,"zdravlje":5,"tehnologija":2,"politika":3,"ostalo":1,"drustvo":3,"hronika":2}
-- [sport] "Ovo nema ni u Severnoj Koreji": Nameštena utakmica u Srbiji? FSS krenuo u istraživanje!
-- [zivot] Arheolozi naišli na misterioznu grobnicu iz 16. veka: Tela muškaraca bila naslagana jedno preko drugog
-- [svet] Evropa strahuje od nuklearnog rata: "Jedan pogrešan potez i gotovo je"
-- [zabava] Zategnuta do savršenstva: Seksi plavuša "gori" u bikiniju usred zime FOTO
-- [sport] Partizanov prvi neuspeh u ABA ligi: Zadar kaznio loš napad i probleme u skoku
-- [ekonomija] Čuvaju zlato vredno 72 milijarde evra, ali ne znaju šta s njim u slučaju krize
+Categories: {"sport":12,"ekonomija":9,"zivot":22,"drustvo":3,"zdravlje":4,"politika":2,"hronika":2,"tehnologija":3,"svet":15,"ostalo":3,"kultura":4,"zabava":1}
+- [sport] MadMax učvrstio vrh – samo dva boda dele tri tima u borbi za peto mesto
+- [ekonomija] "Kraljevo postaje čvorište drumskog saobraćaja": Do kraja godine završeni radovi na koridoru
+- [zivot] Proveren recept za dobar dan
+- [drustvo] Srbiju čeka vremenski rolerkoster: RHMZ najavio veliki preokret
+- [zivot] "MasterChef Srbija": Ako ste propustili spektakl, gledajte reprize danas na TV Prva
+- [sport] Dubai razbio šampiona Srbije!
 
 Uncategorized sample (for tuning):
-- Iz bojlera čujete različite zvukove? Evo kada je vreme da zovete majstora | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/284700/sta-znace-razliciti-zvukovi-iz-bojlera-i-kada-treba-reagovati/vest | tags: []
+- Ne trošite novac na skupa sredstva protiv vlage: Potreban vam je samo komad aluminijumske folije | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/285093/trik-sa-folijom-da-otkrijete-vlagu-u-kuci/vest | tags: ["Najnovije"]
+- Ako planirate da skratite kosu, tražite baš ovu frizuru: Izgleda skupo, ženstveno i šik FOTO | https://superzena.b92.net/lepa-i-zdrava/lepota-zene/285079/nova-verzija-bob-frizure-je-pravi-hit-ove-sezone-i-stoji-svakoj-zeni/vest | tags: ["Najnovije"]
+- Na današnji dan, 15. novembar | https://www.b92.net/info/razno/285060/na-danasnji-dan-15-novembar/vest | tags: ["Info"]
 
 ## Blic
-Categories: {"zabava":20,"kultura":4,"zivot":7,"svet":9,"ekonomija":7,"hronika":5,"drustvo":9,"politika":7,"zdravlje":2}
-- [zabava] RUSKA SALATA, PEČENI KROMPIRIĆI, LOSOS I KOLAČ SA SVEĆOM Zvezdan Slavnić ovako slavi krsnu slavu: Pohvalio se bogatom trpezom iz porodičnog doma
-- [kultura] Pre Katnis, on je preživeo arenu: Nove "Igre gladi" otkrivaju prošlost jednog od najzagonetnijih junaka - evo vraća li se Dženifer Lorens u čuvenu franšizu
-- [zivot] Ceo komšiluk čeka u redu kod malog Donovana (5): Nisu znali šta će sa povrćem iz bašte, sad se utrkuju ko će pre da kupi njegov proizvod (FOTO)
-- [zabava] TRI SLAVLJA U PORODICI NENADA KNEŽEVIĆA KNEZA! I on i ćerka prave SVADBE, a evo koji je još veliki povod za veselje: "Sve u kompletu!" (VIDEO)
-- [svet] ZEMLJA SE TRESE PRED IZBORE! Vlast uzdrmana, NAROD BESAN, desnica čeka svoju šansu: "Nemoguće je živeti ovako, radimo mnogo"
-- [ekonomija] POVLAČI SE 178 KILOGRAMA SUHOMESNATIH PROIZVODA! Haos na jugu Srbije: Odmah urađeni laboratorijski nalazi
+Categories: {"ekonomija":22,"zabava":14,"politika":6,"hronika":4,"svet":6,"zivot":5,"kultura":4,"drustvo":8,"zdravlje":1}
+- [ekonomija] Ljilja prodaje kuću 82 kvadrata sa placem od 5 ari za 43.000 evra: Nalazi se nadomak Zrenjanina, a moguće je i cenkanje (FOTO)
+- [zabava] "Krio sam od porodice da sam bolestan, NISAM ŽELEO DA ME ŽALE" Pevač (47) imao rak, prošao kroz pakao: "Išao sam na hemioterapije"
+- [politika] Poziv Vrhovnom tužilaštvu da se povuče poternica za Aleksandrom Radićem
+- [ekonomija] Ilon Mask podržao peticiju za povratak Džensena Huanga na čelo Nvidije: Spreman je i da mu ponudi posao
+- [hronika] PIJAN I BEZ DOZVOLE IZAZVAO NESREĆU?! Ovo je tinejdžer (19) iz Žitišta osumnjičen za udes u kojem je poginuo Miroslav (23): Kolima se ZAKUCAO u drvo, pa pobegao sa lica mesta?
+- [svet] (FOTO) SKANDAL TRESE BRITANIJU Saradnik premijera SNIMLJEN U VOZU sa čašom proseka, kako uz ChatGPT sprema Beranmov govor
 
 ## Politika
-Categories: {"svet":6,"hronika":2,"drustvo":2,"ostalo":4,"politika":1,"sport":3,"region":1,"ekonomija":1}
-- [svet] Kalas: Gaza pred novom humanitarnom krizom, Izrael da otvori sve prelaze
-- [hronika] Ugasili TikTok kanal za vrbovanje ljudi u internet prevare: dve osobe uhapšene
-- [drustvo] Masovni protest u Ženevi zbog mera štednje: na udaru zdravstvo, obrazovanje i kultura
-- [ostalo] Finska pravi električnu ogradu dugu 83 km kako bi sprečila širenje afričke svinjske kuge
-- [svet] Automobil sleteo sa puta kod Čačka, povređeno troje državljana Turske
-- [ostalo] Maja Gojković: Srbija u političkoj situaciji kakva do sada nije zabeležena
+Categories: {"drustvo":2,"svet":4,"ostalo":6,"hronika":2,"politika":2,"tehnologija":1,"sport":2,"ekonomija":1}
+- [drustvo] U manastiru Rakovica služen pomen povodom 17 godina od upokojenja patrijarha Pavla
+- [svet] Pariz stavlja katanac na prodaju opasne pirotehnike
+- [ostalo] Državni vrh Crne Gore izostao sa svečanosti povodom Njegoševog dana
+- [ostalo] Filipini i Australija potpisali sporazum o vojnoj saradnji
+- [hronika] Preminuo i peti kanadski vojnik povređen u požaru
+- [svet] Tvorac srpske vojske iz oslobodilačkih ratova 1912–1918.
 
 Uncategorized sample (for tuning):
-- Finska pravi električnu ogradu dugu 83 km kako bi sprečila širenje afričke svinjske kuge | https://www.politika.rs/scc/clanak/802892/finska-pravi-elektricnu-ogradu-dugu-83-km-kako-bi-sprecila-sirenje-africke-svinjske-kuge | tags: []
-- Maja Gojković: Srbija u političkoj situaciji kakva do sada nije zabeležena | https://www.politika.rs/scc/clanak/802890/maja-gojkovic-srbija-u-politickoj-situaciji-kakva-do-sada-nije-zabelezena | tags: []
-- Guvernerka Njujorka traži smenu ministra saobraćaja | https://www.politika.rs/scc/clanak/802887/guvernerka-njujorka-trazi-smenu-ministra-saobracaja | tags: []
-- Vojadžer 1 postaje prva letelica udaljena jedan svetlosni dan od Zemlje | https://www.politika.rs/scc/clanak/802880/vojadzer-1-postaje-prva-letelica-udaljena-jedan-svetlosni-dan-od-zemlje | tags: []
+- Državni vrh Crne Gore izostao sa svečanosti povodom Njegoševog dana | https://www.politika.rs/scc/clanak/803022/drzavni-vrh-crne-gore-izostao-sa-svecanosti-povodom-njegosevog-dana | tags: []
+- Filipini i Australija potpisali sporazum o vojnoj saradnji | https://www.politika.rs/scc/clanak/803021/filipini-i-australija-potpisali-sporazum-o-vojnoj-saradnji | tags: []
+- Poskupljuju komunalne takse za registraciju vozila | https://www.politika.rs/scc/clanak/803017/poskupljuju-komunalne-takse-za-registraciju-vozila | tags: []
+- U košavskom području jak vetar i temperatura do 14 stepeni | https://www.politika.rs/scc/clanak/803014/u-kosavskom-podrucju-jak-vetar-i-temperatura-do-14-stepeni | tags: []
+- Obezbediti i rezerve mazuta za zamenu gasa | https://www.politika.rs/scc/clanak/802917/obezbediti-i-rezerve-mazuta-za-zamenu-gasa | tags: []
+- Planirana isključenja struje u Beogradu 17. i 18. novembra | https://www.politika.rs/scc/clanak/803011/planirana-iskljucenja-struje-u-beogradu-17-i-18-novembra | tags: []
 
 ## RTS
-Categories: {"drustvo":4,"politika":6,"svet":3,"region":1,"zivot":1,"hronika":2,"ostalo":1,"ekonomija":2}
-- [drustvo] Bitka za Generalštab – raskid sa Kušnerom nije kraj, sporni zakoni ostaju
-- [politika] Novo normalno u srpskoj politici – parlament ne trpi anonimnost, može li da podnese novu radikalizaciju
-- [politika] Studentska lista: Subvencije poljoprivrednicima moraju da se isplaćuju, tehnički mandat Vladu ne oslobađa odgovornosti
-- [svet] AFD kandiduje bivšeg fudbalera reprezentacije za predsednika Nemačke
-- [svet] Protesti širom Francuske – više od 200 privedenih, policija upotrebila suzavac i vodene topove
-- [drustvo] Ministarstvo: Odluku o iseljavanju Klinike za neurologiju i psihijatriju za decu donela direktorka, na osnovu sopstvene procene
-
-Uncategorized sample (for tuning):
-- Havarija na vodovodnoj cevi na Voždovcu – ulice pod vodom, saobraćaj otežan | https://www.rts.rs/vesti/servisne-informacije/6083591/havarija-na-vodovodnoj-cevi-na-vozdovcu--ulice-pod-vodom-saobracaj-otezan.html | tags: ["Servisne vesti"]
+Categories: {"svet":5,"politika":7,"drustvo":3,"ekonomija":1,"zivot":2,"hronika":1,"region":1}
+- [svet] Napadi na Rusiju, ima poginulih; Makron: Manje pomoći Kijevu vodi u novi sukob
+- [politika] Glamočić: Iznos od 17.000 nije bio obećan kao zagarantovana isplata
+- [drustvo] Milovančević sa portala Nova.rs: Pred izbore su pokušali da nas ućutkaju, sada strahujemo od gašenja
+- [svet] "Džudoka" iznenadnom kandidaturom uzdrmao francusku predsedničku trku
+- [svet] U SAD za danas otkazano više od 900 letova
+- [ekonomija] Ratari bez očekivanih subvencija – prof. Bogdanov: Šteta je već načinjena, biće manji prinosi
