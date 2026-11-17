@@ -1,103 +1,90 @@
 # Vesti health report
 
-Run: 2026-11-16T11:49:12.654Z  |  items: 288  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-17T00:03:55.667Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [Nova.rs] Possible ads NOT flagged: "Posle kraha u Srbiji, kreće rasprodaja Alta banke u Severnoj Makedoniji: Poznata početna cena"
-2. **LOW** [Blic] Possible ads NOT flagged: "RESTORAN IM IZGOREO DOK SU BILI NA MEDENOM MESECU! Krenuli od nule, a uprkos troškovima svima dele besplatnu čorbu i čaj: "Mogu da ponesu i kući!""
+1. **LOW** [Nova.rs] Possible ads NOT flagged: "VIDEO Ništa novo, Srbija ponovo primila jeftin gol: Ovako je Grčka povela"
+2. **LOW** [B92] Possible ads NOT flagged: "Besplatna popravka za vlasnike Škode: Ova četiri modela obuhvaćena su kampanjom"
+3. **LOW** [Blic] Possible ads NOT flagged: "Besplatno kod privatnog zubara: Većina analiza u domu zdravlja, ukidanje v. d. direktora - detaljan program Studentske liste za zdravstvo"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 48 | 0.0h | 100% | 19% | 4 |
-| Nova.rs | yes | 50 | 0.0h | 100% | 2% | 1 |
-| B92 | yes | 80 | 0.1h | 95% | 5% | 1 |
-| Blic | yes | 70 | 0.1h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.1h | 100% | 10% | 0 |
-| RTS | yes | 20 | 0.1h | 100% | 10% | 0 |
+| N1 | yes | 46 | 1.1h | 100% | 17% | 2 |
+| Nova.rs | yes | 50 | 0.3h | 100% | 2% | 0 |
+| B92 | yes | 80 | 1.1h | 95% | 1% | 0 |
+| Blic | yes | 70 | 0.0h | 100% | 1% | 0 |
+| Politika | yes | 20 | 0.0h | 100% | 20% | 0 |
+| RTS | yes | 20 | 2.5h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 5 outlets, score 57.9] Penzionisan načelnik Generalštaba Vojske Srbije; Poznato ko preuzima dužnost
-   - also (rts): Načelnik Generalštaba Milan Mojsilović penzionisan na sopstveni zahtev
-   - also (blic): NA ČELU GENERALŠTABA ČOVEK KOJI JE OBORIO PONOS AMERIČKE AVIJACIJE Milan Mojsilović penzionisan, menja ga general Tiosav Janković
-   - also (n1): Penzionisan načelnik Generalštaba Milan Mojsilović
-   - also (nova): Penzionisan načelnik Generalštaba Milan Mojsilović
-   - also (blic): Načelnik Generalštaba Milan Mojsilović penzionisan na sopstveni zahtev, poznato ko preuzima dužnost
-2. [multi, 4 outlets, score 47.4] Niš, uhapšen osumnjičeni da je nožem ubo muškarca u stomak
-   - also (blic): Pokušaj ubistva u Nišu: Muškarac (45) nožem ubo sugrađanina (44) u stomak
-   - also (n1): Uhapšen osumnjičeni da je nožem ubo muškarca na ulici u Nišu
-   - also (nova): Uhapšen Nišlija zbog pokušaja ubistva: Zabio nož u stomak suparniku nakon svađe oko devojke
-3. [multi, 4 outlets, score 43.9] Više javno tužilaštvo objavilo analizu izveštaja Komisije Vrhovnog javnog tužilaštva
-   - also (blic): Analiza VJT u Beogradu povodom izveštaja Vrhovnog tužilaštva
-   - also (n1): VJT smatra da je izveštaj Komisije Vrhovnog javnog tužilaštva skandalozan i sporan, da je ugrožena samostalnost javnih tužilaca
-   - also (nova): VJT objavilo analizu Izveštaja Komisije Vrhovnog tužilaštva: Tvrde da su ukinute garancije samostalnosti javnih tužilaca
-4. [multi, 4 outlets, score 43.9] U dvorištu bolnice u Pančevu pronađeno telo pacijentkinje, naložena obdukcija
-   - also (politika): Telo žene (84) pronađeno u dvorištu bolnice u Pančevu, naložena obdukcija
-   - also (blic): Užas u Pančevu: Telo pacijentkinje nađeno u dvorištu bolnice, tužilaštvo naložilo obdukciju
-   - also (nova): Telo pacijentkinje pronađeno u dvorištu bolnice u Pančevu: Tužilaštvo prikuplja dokaze kako je došlo do smrti
-5. [multi, 4 outlets, score 43.8] Uhapšen Patrik Drid, dekan Fakulteta sporta i fizičkog vaspitanja u Novom Sadu
-   - also (n1): (VIDEO) Uhapšeni Patrik Drid i bivši dekan Fakulteta za sport u Novom Sadu
-   - also (nova): Ovako je uhapšen Patrik Drid zbog sumnje da je zloupotrebio položaj VIDEO
-   - also (blic): OVAKO JE UHAPŠEN PATRIK DRID Dekan DIF-a u Novom Sadu osumnjičen da je oštetio budžet ZA 19 MILIONA (VIDEO)
-   - also (blic): Uhapšen Patrik Drid, dekan Fakulteta sporta i fizičkog vaspitanja u Novom Sadu
-   - also (blic): KO JE PATRIK DRID Dekan DIF-a u Novom Sadu uhapšen zbog sumnje na zloupotrebu položaja, široj javnosti postao poznat nakon blokada
-6. [multi, 3 outlets, score 36.4] Poznato kada će biti prva aukcija za prodaju Alta banke
-   - also (nova): Posle kraha u Srbiji, kreće rasprodaja Alta banke u Severnoj Makedoniji: Poznata početna cena
-   - also (n1): Prva aukcija za prodaju Alta banke Bitolj 30. novembra
-7. [multi, 3 outlets, score 33.7] VJT u Novom Sadu: Hapšenja zbog pranja novca, pokušali da u Srbiju ilegalno unesu 40.930 evra
-   - also (nova): Pokušali da unesu u Srbiju više od 40.000 evra: Uhapšeni zbog pranja novca na graničnom prelazu Bogojevo
-   - also (blic): PALI NA GRANICI SA VIŠE OD 40.000 EVRA PRLJAVOG KEŠA! Velika akcija u Novom Sadu: Uhapšene tri osobe, evo šta su pokušale da urade na prelazu "Bogojevo"
-8. [multi, 2 outlets, score 28] Otkriveno ko danas ide kod Marte Kos i ko je bio na prvom sastanku: Studentska lista u diplomatskoj ofanzivi dan pred konstituisanje Skupštine
-   - also (politika): Studentska lista ponovo kod Marte Kos
-9. [multi, 2 outlets, score 28] Netfliksova serija razbesnela vernike: Peticiju za uklanjanje potpisalo više od 90.000 ljudi VIDEO
-   - also (blic): Nova Netfliksova serija razbesnela vernike: Više od 90.000 ljudi potpisalo peticiju i traži ZABRANU emitovanja (VIDEO)
-10. [multi, 2 outlets, score 27.5] Drama kod obala Bugarske: Tone teretni brod, nestalo 12 članova posade
-   - also (politika): Teretni brod tone u Crnom moru, sudbina 12 članova posade nepoznata
+1. [multi, 5 outlets, score 57.4] Forenzičar: Epstin najverovatnije zadavljen s leđa
+   - also (b92): Forenzičar smatra da je Džefri Epstajn ubijen u zatvoru: "Nisam teoretičar zavere, pogledajte dokaze"
+   - also (nova): Forenzički stručnjak: Džefri Epstajn je ubijen u zatvoru, zadavljen je najverovatnije s leđa
+   - also (n1): Forenzičar za BBC: Džefri Epstin ubijen u zatvoru
+   - also (blic): "Džefri Epstajn je zadavljen" Forenzičar tvrdi da se osuđeni pedofil nije ubio: Otkrio koji su tragovi pronađeni na njegovom vratu
+2. [multi, 5 outlets, score 56.3] Uskoković pozvan na informativni razgovor u policiju zbog intervjua sa Aleksandrom Radićem
+   - also (b92): Glavni urednik RTS-a pozvan na razgovor u policiju zbog intervjua sa Aleksandrom Radićem
+   - also (nova): RTS: Borivoje Uskoković pozvan u policiju zbog intervjua sa Aleksandrom Radićem
+   - also (n1): RTS: Borivoje Uskoković pozvan u policiju zbog intervjua sa Aleksandrom Radićem
+   - also (blic): Glavni urednik RTS-a pozvan na razgovor u policiju: UKP mu uručio poziv na radnom mestu
+3. [multi, 4 outlets, score 43.4] Delegacija Studentske liste na forumu o proširenju EU; Baucal: "Evropski put – put reformi"
+   - also (nova): Marta Kos: Srpski evropski put je i put reformi
+   - also (n1): Marta Kos: Srpski evropski put je i put reformi
+   - also (blic): Sve poruke Studentske liste iz Brisela: Evo ko je u ime Srbije govorio na Forumu o proširenju
+4. [multi, 3 outlets, score 34.7] „Njujork tajms“ o srpskim studentima: Pobedili su snažnog lidera, ali mogu li da vode zemlju?
+   - also (n1): Njujork tajms o srpskim studentima: Pobedili su snažnog lidera, ali mogu li da vode zemlju?
+   - also (nova): Srušili su Vučića, ali mogu li da vode Srbiju? Njujork tajms o velikom izazovu pred studentskim pokretom - „Jedina prava pobeda biće trajna promena sistema“
+5. [multi, 3 outlets, score 33.5] Izdat još jedan nalog za hapšenje Ivana Bošnjaka i Stojana Vujka iz "Milenijum tima", tužilaštvo objasnilo razloge
+   - also (n1): Tužilaštvo podnosi prijavu protiv policajaca koji su odbili da uhapse zastupnika "Beograda na vodi" i odgovorne iz "Milenijum tima"
+   - also (blic): Izdat još jedan nalog za hapšenje odgovornih lica "Milenijum tima" i zastupnika "Beograda na vodi": Oglasilo se Treće osnovno javno tužilaštvo
+6. [multi, 2 outlets, score 29] Makron priznao greške: Dao sam sve od sebe za Francusku
+   - also (n1): Makron: Dao sam sve od sebe uprkos greškama
+7. [multi, 2 outlets, score 28.5] "Radar" objavio svedočenje Veselina Milića: Uhapšen sam jer sam odbio da intervenišem 15. marta
+   - also (n1): Radar objavio Milićevo svedočenje protiv Krička: Tvrdi da mu je slučaj "Senjak" namešten zbog odbijanja da naredi policijsku intervenciju 15. marta
+8. [multi, 2 outlets, score 27.3] Prvi intervju Mile Pajić nakon povratka iz egzila: Postupak protiv nas počeo i završio se farsom
+   - also (n1): Prvi intervju Mile Pajić nakon povratka iz egzila: Postupak protiv nas počeo i završio se farsom
+9. [multi, 2 outlets, score 26.8] Studenti VGGŠ kandidatima: Postupajte u duhu Studentskog pokreta i naroda koji vas je izabrao
+   - also (n1): Studenti VGGŠ kandidatima: Postupajte u duhu Studentskog pokreta i naroda koji vas je izabrao
+10. [multi, 2 outlets, score 26.7] Skupštini Crne Gore podneta peticija da se srpski jezik izjednači sa crnogorskim - šta piše u obrazloženju
+   - also (nova): Podneta peticija da srpski jezik u Crnoj Gori bude izjednačen sa crnogorskim
 
 ## Details
 ### N1
-Categories: {"svet":3,"ostalo":9,"drustvo":3,"politika":13,"zivot":7,"hronika":7,"zdravlje":1,"ekonomija":2,"kultura":1,"region":2}
+Categories: {"zivot":10,"svet":10,"ekonomija":2,"ostalo":8,"drustvo":4,"hronika":4,"politika":7,"sport":1}
 Flagged:
-- (self) Gledajte UŽIVO N1 Studio live: "Tužilački obračun" <https://n1info.rs/najave-emisija/n1-studio-live-ponedeljak-u-12-tuzilacki-obracun/>
-- (self) N1 intervju: Mila Pajić - 20 meseci egzila <https://n1info.rs/najave-emisija/n1-intervju-mila-pajic-20-meseci-egzila/>
-- (self) Dan uživo: Izazovi koji ostaju <https://n1info.rs/najave-emisija/dan-uzivo-izazovi-koji-ostaju/>
-- (self) Bez granica sa Andrejem, utorak od 23.30: Noć na ulicama greha Etiopije <https://n1info.rs/najave-emisija/bez-granica-sa-andrejem-utorak-od-2330-noc-na-ulicama-greha-etiopije/>
+- (self) Global fokus: Pobunjena Evropa <https://n1info.rs/najave-emisija/global-fokus-ponedeljak-u-20h-pobunjena-evropa/>
+- (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
 Uncategorized sample:
-- Zatvoreno isključenje sa auto-puta kod Vrnjačke Banje zbog radova: Zašto skidaju asfalt posle nepune dve godine <https://n1info.rs/vesti/zatvoreno-iskljucenje-sa-auto-puta-kod-vrnjacke-banje-zbog-radova-zasto-skidaju-asfalt-posle-nepune-dve-godine/> tags=["Vesti","vrnjačka banja","popravka","kruševac","radovi","moravski koridor"]
-- Konzervatorka: Generalštab odbranjen 25. oktobra, ali ne možemo biti potpuno spokojni dok se ne reši pravno <https://n1info.rs/vesti/konzervatorka-generalstab-odbranjen-25-oktobra-ali-ne-mozemo-biti-potpuno-spokojni-dok-se-ne-resi-pravno/> tags=["Vesti","generalštab","slučaj generalštab","lex specialis","konzervatorka","estela radonjić živkov"]
-- JKP „Zelenilo i groblja”: Smederevo ostalo bez deponije, skupljeno smeće čuvamo u kamionima <https://n1info.rs/vesti/jkp-zelenilo-i-groblja-smederevo-ostalo-bez-deponije-skupljeno-smece-cuvamo-u-kamionima/> tags=["Vesti","jkp zelenilo i groblja","komunalna inspekcija","smeće","smederevo","jasmina vojinović"]
-- Gledajte UŽIVO N1 Studio live: "Tužilački obračun" <https://n1info.rs/najave-emisija/n1-studio-live-ponedeljak-u-12-tuzilacki-obracun/> tags=["Najave emisija","studio live","najave emisije"]
-- Press: Đorđe Vlajić (15.11.2026) <https://n1info.rs/video/novi-dan/press-djordje-vlajic-15112026/> tags=["Novi dan","đorđe vlajić"]
-- N1 intervju: Mila Pajić - 20 meseci egzila <https://n1info.rs/najave-emisija/n1-intervju-mila-pajic-20-meseci-egzila/> tags=["Najave emisija","mila pajić","n1 intervju"]
+- Od utorka izmene linija gradskog prevoza zbog radova u nekoliko ulica na Novom Beogradu <https://n1info.rs/vesti/izmene-linija-prevoza-na-novom-beogradu-od-17-novembra/> tags=["Vesti","izmene u saobraćaju","izmene saobraćaja","novi beograd","gsp"]
+- Prvi intervju Mile Pajić nakon povratka iz egzila: Postupak protiv nas počeo i završio se farsom <https://n1info.rs/vesti/prvi-intervju-mila-pajic-povratak/> tags=["Vesti","stav","pomilovanje","mila pajić","pomilovani","aktivistkinja"]
+- Dnevnik u 19 (15.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-15112026/> tags=["Dnevnik","vesti","video","dnevnik","dnevnik u 19"]
+- Vasalo: Borba protiv korupcije i vladavina prava ključni za predvidivo poslovno okruženje <https://n1info.rs/vesti/vasalo-kljuc-borbe-protiv-korupcije-za-stabilno-poslovanje/> tags=["Vesti","evropska unija","korupci","džulijan vasalo","borba protiv korupcije"]
+- Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
+- Marta Kos: Srpski evropski put je i put reformi <https://n1info.rs/vesti/marta-kos-srpski-evropski-put-je-i-put-reformi/> tags=["Vesti","marta kos","aleksandar baucal","studentska lista","evropska unija"]
 
 ### Nova.rs
-Categories: {"zivot":6,"kultura":3,"zabava":6,"svet":7,"politika":6,"sport":6,"hronika":11,"drustvo":4,"ostalo":1}
-Flagged:
-- (self) Nova.rs nominovana za najbolji news portal u regionu: Podržite nas svojim glasom na izboru Media Daily 2026 <https://nova.rs/vesti/drustvo/novars-nominovana-za-najbolji-news-portal-u-regionu-podrzite-nas-svojim-glasom-na-izboru-media-daily-2026/>
+Categories: {"zivot":2,"sport":17,"drustvo":6,"politika":4,"zabava":7,"hronika":6,"ekonomija":2,"svet":5,"ostalo":1}
 Uncategorized sample:
-- Pokreni se - Cela emisija - 15.11.2026. <https://nova.rs/emisije/pokreni-se-cela-emisija-15112026/> tags=["Emisije","pokreni se cela emisija"]
+- Dnevnik - Cela emisija - 15.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-15112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"zabava":2,"svet":15,"kultura":4,"sport":11,"ostalo":4,"ekonomija":11,"zivot":21,"zdravlje":4,"tehnologija":3,"politika":2,"drustvo":2,"hronika":1}
-Flagged:
-- (sponsored) Somboled Lactalis preradi 80 miliona litara domaćeg sirovog mleka, od kog nastaje Dukat sveže mleko i jogurt <https://www.b92.net/biz/promo/promo/285329/somboled-lactalis-preradi-80-miliona-litara-domaceg-sirovog-mleka-od-kog-nastaje-dukat-sveze-mleko-i-jogurt/vest>
+Categories: {"ostalo":1,"sport":15,"svet":16,"zivot":18,"hronika":4,"drustvo":3,"zdravlje":3,"kultura":4,"ekonomija":8,"politika":4,"zabava":3,"tehnologija":1}
 Uncategorized sample:
-- Kfor: "Kontinuirano pratimo bezbednosnu situaciju" <https://www.b92.net/info/kosovo/285375/kfor-kontinuirano-pratimo-bezbednosnu-situaciju/vest> tags=["Najnovije"]
-- Saša Kovačević postao otac <https://superzena.b92.net/dom-i-porodica/roditeljstvo/285370/sasa-kovacevic-postao-otac/vest> tags=["Najnovije"]
-- Poznata voditeljka otkrila da u 60. čeka treće dete FOTO/VIDEO <https://superzena.b92.net/dom-i-porodica/roditeljstvo/285306/voditeljka-rene-honderkemp-u-60-ceka-trece-dete/vest> tags=[]
-- Danas slavimo Đurđic, a ove srpske običaje morate da znate <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/285283/danas-je-djurdjic-slava-posvecena-svetom-georgiju/vest> tags=[]
+- Na današnji dan, 17. novembar <https://www.b92.net/info/razno/285588/na-danasnji-dan-17-novembar/vest> tags=["Najnovije"]
 
 ### Blic
-Categories: {"zabava":11,"drustvo":10,"politika":8,"svet":7,"zivot":4,"kultura":2,"hronika":13,"ekonomija":14,"tehnologija":1}
+Categories: {"svet":14,"ekonomija":10,"ostalo":1,"zivot":6,"zabava":24,"politika":7,"hronika":5,"drustvo":3}
+Uncategorized sample:
+- Naslovna strana za 17.11. <https://www.blic.rs/print/naslovna-strana-za-1711/dvmt55h> tags=[]
 
 ### Politika
-Categories: {"region":2,"politika":6,"svet":3,"ekonomija":3,"hronika":1,"ostalo":2,"sport":2,"zdravlje":1}
+Categories: {"svet":9,"ostalo":4,"sport":2,"drustvo":2,"hronika":2,"politika":1}
 Uncategorized sample:
-- Sutra u Srbiji do 21 stepen, uveče se vreme menja <https://www.politika.rs/scc/clanak/803303/sutra-u-srbiji-do-21-stepen-uvece-se-vreme-menja> tags=[]
-- Teretni brod tone u Crnom moru, sudbina 12 članova posade nepoznata <https://www.politika.rs/scc/clanak/803292/teretni-brod-tone-u-crnom-moru-sudbina-12-clanova-posade-nepoznata> tags=[]
+- Forenzičar: Epstin najverovatnije zadavljen s leđa <https://www.politika.rs/scc/clanak/803521/forenzicar-epstin-najverovatnije-zadavljen-s-leda> tags=[]
+- Lukašenko naredio iznenadnu proveru graničnih jedinica, na vežbama simuliraju napade diverzanata <https://www.politika.rs/scc/clanak/803514/lukasenko-naredio-iznenadnu-proveru-granicnih-jedinica-na-vezbama-simuliraju-napade-diverzanata> tags=[]
+- Poslodavci se zalažu za smanjenje troškova poslovanja <https://www.politika.rs/scc/clanak/803501/poslodavci-se-zalazu-za-smanjenje-troskova-poslovanja> tags=[]
+- Ana Trišić Babić: Visoki predstavnik više ne bi trebalo da ima nikakvu ulogu u BiH <https://www.politika.rs/scc/clanak/803480/ana-trisic-babic-visoki-predstavnik-vise-ne-bi-trebalo-da-ima-nikakvu-ulogu-u-bih> tags=[]
 
 ### RTS
-Categories: {"svet":1,"drustvo":5,"hronika":4,"region":2,"politika":5,"ostalo":2,"ekonomija":1}
-Uncategorized sample:
-- Analogija: RTS kao Bi-Bi-Si <https://www.rts.rs/vesti/podkast/6083094/analogija-rts-kao-bi-bi-si.html> tags=["Podkast"]
-- Više mesta u Zapadnoj Srbiji bez struje zbog radova na mreži <https://www.rts.rs/vesti/servisne-informacije/6084403/iskljucenje-struja-zapad-srbija-.html> tags=["Servisne vesti"]
+Categories: {"politika":4,"hronika":5,"drustvo":6,"region":3,"zivot":1,"ekonomija":1}
