@@ -1,99 +1,93 @@
 # Feed check
 
-Run: 2026-11-16T11:48:47.084Z
+Run: 2026-11-17T00:03:21.691Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 48 | https://n1info.rs/feed/ | 48 | 4 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 1 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +74) | 76 | 1 |
+| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 2 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +81) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"ostalo":9,"drustvo":3,"politika":13,"zivot":7,"hronika":7,"zdravlje":1,"ekonomija":2,"kultura":1,"region":2,"svet":3}
-- [ostalo] Zatvoreno isključenje sa auto-puta kod Vrnjačke Banje zbog radova: Zašto skidaju asfalt posle nepune dve godine
-- [drustvo] Studenti ispred Fakulteta sporta čekaju glasanje o poverenju dekanu Patriku Dridu, u toku sednica NNV
-- [politika] Sudija Terzić: TOK zaobišao ljude iz pravosuđa koji su pomagali Šariću, sve maske će pasti kada se otvori neotvoreni Skaj
-- [zivot] "Children" Roberta Majlsa 31 godinu kasnije: Klasika inspirisana decom Jugoslavije
-- [zivot] Počela turneja rok benda Buč Kesidi - uskoro koncert u Beogradu
-- [ostalo] Konzervatorka: Generalštab odbranjen 25. oktobra, ali ne možemo biti potpuno spokojni dok se ne reši pravno
-  - flagged (self): Gledajte UŽIVO N1 Studio live: "Tužilački obračun" https://n1info.rs/najave-emisija/n1-studio-live-ponedeljak-u-12-tuzilacki-obracun/
-  - flagged (self): N1 intervju: Mila Pajić - 20 meseci egzila https://n1info.rs/najave-emisija/n1-intervju-mila-pajic-20-meseci-egzila/
-  - flagged (self): Dan uživo: Izazovi koji ostaju https://n1info.rs/najave-emisija/dan-uzivo-izazovi-koji-ostaju/
-  - flagged (self): Bez granica sa Andrejem, utorak od 23.30: Noć na ulicama greha Etiopije https://n1info.rs/najave-emisija/bez-granica-sa-andrejem-utorak-od-2330-noc-na-ulicama-greha-etiopije/
+Categories: {"zivot":10,"svet":10,"ekonomija":2,"ostalo":8,"drustvo":4,"hronika":4,"politika":7,"sport":1}
+- [zivot] Dosadno vam je? To je dobro za vaš mozak
+- [svet] Evropska unija sankcionisala ruske trolove
+- [zivot] Doping dece u sportu - zločin bez kazne
+- [zivot] Met Dejmon: Ben Aflek mi je posle gledanja „Odiseje“ 20 minuta govorio o jednom kolegi
+- [svet] Hiljade ljudi u Češkoj protestuje zbog finansiranja javnog servisa: Promene u Srbiji i Mađarskoj kao inspiracija
+- [zivot] Koliko poznate ličnosti mogu da zarade jednom objavom na Instagramu?
+  - flagged (self): Global fokus: Pobunjena Evropa https://n1info.rs/najave-emisija/global-fokus-ponedeljak-u-20h-pobunjena-evropa/
+  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
 
 Uncategorized sample (for tuning):
-- Zatvoreno isključenje sa auto-puta kod Vrnjačke Banje zbog radova: Zašto skidaju asfalt posle nepune dve godine | https://n1info.rs/vesti/zatvoreno-iskljucenje-sa-auto-puta-kod-vrnjacke-banje-zbog-radova-zasto-skidaju-asfalt-posle-nepune-dve-godine/ | tags: ["Vesti","vrnjačka banja","popravka","kruševac","radovi","moravski koridor"]
-- Konzervatorka: Generalštab odbranjen 25. oktobra, ali ne možemo biti potpuno spokojni dok se ne reši pravno | https://n1info.rs/vesti/konzervatorka-generalstab-odbranjen-25-oktobra-ali-ne-mozemo-biti-potpuno-spokojni-dok-se-ne-resi-pravno/ | tags: ["Vesti","generalštab","slučaj generalštab","lex specialis","konzervatorka","estela radonjić živkov"]
-- JKP „Zelenilo i groblja”: Smederevo ostalo bez deponije, skupljeno smeće čuvamo u kamionima | https://n1info.rs/vesti/jkp-zelenilo-i-groblja-smederevo-ostalo-bez-deponije-skupljeno-smece-cuvamo-u-kamionima/ | tags: ["Vesti","jkp zelenilo i groblja","komunalna inspekcija","smeće","smederevo","jasmina vojinović"]
-- Gledajte UŽIVO N1 Studio live: "Tužilački obračun" | https://n1info.rs/najave-emisija/n1-studio-live-ponedeljak-u-12-tuzilacki-obracun/ | tags: ["Najave emisija","studio live","najave emisije"]
-- Press: Đorđe Vlajić (15.11.2026) | https://n1info.rs/video/novi-dan/press-djordje-vlajic-15112026/ | tags: ["Novi dan","đorđe vlajić"]
-- N1 intervju: Mila Pajić - 20 meseci egzila | https://n1info.rs/najave-emisija/n1-intervju-mila-pajic-20-meseci-egzila/ | tags: ["Najave emisija","mila pajić","n1 intervju"]
-- Kvadratura života: Konoplja biljka budućnosti | https://n1info.rs/video/kvadratura-zivota-konoplja-biljka-buducnosti/ | tags: ["Video","video","kvadratura života"]
-- Dan uživo: Izazovi koji ostaju | https://n1info.rs/najave-emisija/dan-uzivo-izazovi-koji-ostaju/ | tags: ["Najave emisija","dan uživo"]
+- Od utorka izmene linija gradskog prevoza zbog radova u nekoliko ulica na Novom Beogradu | https://n1info.rs/vesti/izmene-linija-prevoza-na-novom-beogradu-od-17-novembra/ | tags: ["Vesti","izmene u saobraćaju","izmene saobraćaja","novi beograd","gsp"]
+- Prvi intervju Mile Pajić nakon povratka iz egzila: Postupak protiv nas počeo i završio se farsom | https://n1info.rs/vesti/prvi-intervju-mila-pajic-povratak/ | tags: ["Vesti","stav","pomilovanje","mila pajić","pomilovani","aktivistkinja"]
+- Dnevnik u 19 (15.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-15112026/ | tags: ["Dnevnik","vesti","video","dnevnik","dnevnik u 19"]
+- Vasalo: Borba protiv korupcije i vladavina prava ključni za predvidivo poslovno okruženje | https://n1info.rs/vesti/vasalo-kljuc-borbe-protiv-korupcije-za-stabilno-poslovanje/ | tags: ["Vesti","evropska unija","korupci","džulijan vasalo","borba protiv korupcije"]
+- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
+- Marta Kos: Srpski evropski put je i put reformi | https://n1info.rs/vesti/marta-kos-srpski-evropski-put-je-i-put-reformi/ | tags: ["Vesti","marta kos","aleksandar baucal","studentska lista","evropska unija"]
+- Utisak nedelje: Borivoje Uskoković, Miloš Pavlović i Rade Đurić (15.11.2026) | https://n1info.rs/video/utisak-nedelje-borivoje-uskokovic-milos-pavlovic-i-rade-djuric-15112026/ | tags: ["Video","utisak nedelje","borivoje uskoković","video","rade đurić","miloš pavlović"]
+- Savet REM-a zabranio Informeru "Info jutro" na 15, a "Srpski dnevnik" na 10 dana | https://n1info.rs/vesti/savet-rem-a-zabranio-informeru-info-jutro-na-15-asrpski-dnevnik-na-10-dana/ | tags: ["Vesti","zabrana","savet rem-a","rem","oglašavanje","emisije"]
 
 ## Nova.rs
-Categories: {"zabava":6,"svet":8,"politika":6,"sport":6,"hronika":11,"zivot":5,"drustvo":4,"kultura":2,"ostalo":1,"ekonomija":1}
-- [zabava] Saša Matić oduševio Sidnej i Melburn: „Kad je publika zapevala, zaboravio sam da sam na drugom kraju sveta“
-- [svet] Drama kod obala Bugarske: Tone teretni brod, nestalo 12 članova posade
-- [politika] Studentska lista: Slučaj Ribnikar veoma važno pitanje, bavićemo se njime i sudbinom ubice K.K. nakon formiranja nove vlade
-- [sport] Šeici obasipaju Novaka milionima: Biće na terenu i pre nego što bilo ko očekuje
-- [zabava] Tri čina, posebno veče i pesme koje ostaju: Boris Režak zakazao koncert za Dan žena u Beogradu
-- [hronika] Uhapšen muškarac u Zaječaru: Kamenicama razbio prozore gradskog Centra za socijalni rad
-  - flagged (self): Nova.rs nominovana za najbolji news portal u regionu: Podržite nas svojim glasom na izboru Media Daily 2026 https://nova.rs/vesti/drustvo/novars-nominovana-za-najbolji-news-portal-u-regionu-podrzite-nas-svojim-glasom-na-izboru-media-daily-2026/
+Categories: {"zivot":2,"sport":17,"drustvo":6,"politika":4,"zabava":7,"hronika":6,"ekonomija":2,"svet":5,"ostalo":1}
+- [zivot] U Srbiji ujutru magla, tokom dana toplije
+- [sport] Medvedev pobedom započćeo Završni masters, sledi spektakl sa Karlosom Alkarazom
+- [sport] VIDEO Strašna Nemačka pregazila Holandiju, sa pet golova ugasili sve nade Grčke
+- [drustvo] Prvi intervju Mile Pajić nakon povratka iz egzila: Postupak protiv nas počeo i završio se farsom
+- [politika] Studenti VGGŠ kandidatima: Postupajte u duhu Studentskog pokreta i naroda koji vas je izabrao
+- [sport] Paunović izneo prve utiske posle poraza od Grčke: "Pred sobom imam dobru dijagnozu"
 
 Uncategorized sample (for tuning):
-- Pokreni se - Cela emisija - 15.11.2026. | https://nova.rs/emisije/pokreni-se-cela-emisija-15112026/ | tags: ["Emisije","pokreni se cela emisija"]
+- Dnevnik - Cela emisija - 15.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-15112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"zabava":2,"svet":15,"kultura":4,"sport":11,"ostalo":4,"ekonomija":11,"zivot":21,"zdravlje":4,"tehnologija":3,"politika":2,"drustvo":2,"hronika":1}
-- [zabava] Najlepša glumica blista u jednostavnoj haljini – dekolte ipak "puca" FOTO
-- [svet] Netanjahu pušta Ben-Gvira niz vodu?
-- [kultura] Netfliksova serija razbesnela vernike: Peticiju za uklanjanje potpisalo više od 90.000 ljudi VIDEO
-- [sport] Rajaković: "U Srbiji imamo jednu izreku..." VIDEO
-- [ostalo] Kfor: "Kontinuirano pratimo bezbednosnu situaciju"
-- [ekonomija] Ovo voće plaćaju kao da je od zlata: Daju hiljade i hiljade evra; Jedan grozd – 6.000 evra
-  - flagged (sponsored): Somboled Lactalis preradi 80 miliona litara domaćeg sirovog mleka, od kog nastaje Dukat sveže mleko i jogurt https://www.b92.net/biz/promo/promo/285329/somboled-lactalis-preradi-80-miliona-litara-domaceg-sirovog-mleka-od-kog-nastaje-dukat-sveze-mleko-i-jogurt/vest
+Categories: {"ostalo":1,"sport":15,"svet":16,"zivot":18,"kultura":4,"hronika":4,"drustvo":3,"zdravlje":3,"zabava":3,"ekonomija":8,"politika":4,"tehnologija":1}
+- [ostalo] Na današnji dan, 17. novembar
+- [sport] Šampion Lige konferencije imenovao novog menadžera
+- [svet] Rat – dan 1.726: Ukrajinski dronovi stigli do Moskve; Rusija traži povlačenje NATO-a FOTO/VIDEO
+- [sport] Ni bod, ni gol u Volosu – Srbija u baražu: Pale teške reči, Paunović "zna dijagnozu"
+- [sport] Paunović: "Nismo ispali – situacija nije sjajna"
+- [svet] Novi haos u SAD: Putnici zaglavljeni u avionima; Bankarske transakcije ne prolaze
 
 Uncategorized sample (for tuning):
-- Kfor: "Kontinuirano pratimo bezbednosnu situaciju" | https://www.b92.net/info/kosovo/285375/kfor-kontinuirano-pratimo-bezbednosnu-situaciju/vest | tags: ["Najnovije"]
-- Saša Kovačević postao otac | https://superzena.b92.net/dom-i-porodica/roditeljstvo/285370/sasa-kovacevic-postao-otac/vest | tags: ["Najnovije"]
-- Poznata voditeljka otkrila da u 60. čeka treće dete FOTO/VIDEO | https://superzena.b92.net/dom-i-porodica/roditeljstvo/285306/voditeljka-rene-honderkemp-u-60-ceka-trece-dete/vest | tags: []
-- Danas slavimo Đurđic, a ove srpske običaje morate da znate | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/285283/danas-je-djurdjic-slava-posvecena-svetom-georgiju/vest | tags: []
+- Na današnji dan, 17. novembar | https://www.b92.net/info/razno/285588/na-danasnji-dan-17-novembar/vest | tags: ["Najnovije"]
 
 ## Blic
-Categories: {"zabava":11,"drustvo":10,"politika":8,"svet":7,"zivot":4,"kultura":2,"hronika":13,"ekonomija":14,"tehnologija":1}
-- [zabava] Ovaj pevač je bio velika ljubav Božen Žumbor: Godinama nije mogla da ga preboli, posle njega se nikad nije udala (FOTO)
-- [drustvo] Preventiva je najbolja odbrana: dm tokom kampanje Movember podseća muškarce na važnost prevencije
-- [politika] Otkriveno ko danas ide kod Marte Kos i ko je bio na prvom sastanku: Studentska lista u diplomatskoj ofanzivi dan pred konstituisanje Skupštine
-- [drustvo] Gala Svetog Save prikupila više od 500.000 dolara na rasprodatoj svečanosti povodom 25 godina Akademije Svetog Save
-- [drustvo] (FOTIO) POSLEDNJU DEVOJKU IMAO SA 92 GODINE Deda Dragoslav gazi desetu deceniju života i otkriva tajnu dugovečnosti: "Kad žene nema, nemaš ništa u životu"
-- [svet] "Ubij bolesnika": U Zagrebu osvanuli jezivi grafiti nakon smrti Periša koja je potresla region
+Categories: {"svet":14,"ekonomija":10,"ostalo":1,"zivot":6,"zabava":24,"politika":7,"hronika":5,"drustvo":3}
+- [svet] Muškarac (73) osumnjičen da je ubio suprugu (71) u Hrvatskoj: Sumnja se na dugogodišnje psihičko nasilje
+- [ekonomija] U novoj zgradi u Dubrovniku sa 41 stanom živi samo jedna porodica: Kako je to moguće?
+- [ekonomija] Made in Yugoslavia: Tri istinite priče o uspehu na zapadnom tržištu
+- [ostalo] Naslovna strana za 17.11.
+- [svet] Posle 26 godina male boginje ponovo van kontrole u SAD: Od uspešno iskorenjene bolesti do novih epidemija
+- [zivot] Mačka vam urinira po stanu? Pravilo "N+1" može da spase stvar
+
+Uncategorized sample (for tuning):
+- Naslovna strana za 17.11. | https://www.blic.rs/print/naslovna-strana-za-1711/dvmt55h | tags: []
 
 ## Politika
-Categories: {"region":2,"politika":6,"svet":3,"ekonomija":3,"hronika":1,"ostalo":2,"sport":2,"zdravlje":1}
-- [region] Dodik: Koalicioni sporazum i dvotrećinska većina u skuštini garancija stabilnosti
-- [politika] Lazović: ZLF ostaje van Skupštine, ali je na raspolaganju Studentskoj listi
-- [svet] „Njujork tajms“: Mosad otimao iranske generale i mučio ih kako bi otkrio sudbinu Rona Arada
-- [ekonomija] Godišnja inflacija u Hrvatskoj za oktobar 4,9 odsto
-- [politika] ANS: Danas traže zabranu rada Vučićeviću, sutra će ućutkivati druge novinare
-- [svet] Supermarketi novi front sukoba Francuske i Irana: Pariz traži sankcije zbog sajber napada
+Categories: {"svet":9,"ostalo":4,"sport":2,"drustvo":2,"hronika":2,"politika":1}
+- [svet] Makron priznao greške: Dao sam sve od sebe za Francusku
+- [svet] MMF sprema novih 1,6 milijardi dolara za Kijev
+- [svet] Bernam: Podrška Ukrajini i protiv Rusije su u interesu Britanije
+- [ostalo] Forenzičar: Epstin najverovatnije zadavljen s leđa
+- [sport] Paunović: Nedostajala nam igra u protivničkom šesnaestercu, momci dali sve od sebe
+- [drustvo] Skandal u Sijeni, pod istragom 16 profesora
 
 Uncategorized sample (for tuning):
-- Sutra u Srbiji do 21 stepen, uveče se vreme menja | https://www.politika.rs/scc/clanak/803303/sutra-u-srbiji-do-21-stepen-uvece-se-vreme-menja | tags: []
-- Teretni brod tone u Crnom moru, sudbina 12 članova posade nepoznata | https://www.politika.rs/scc/clanak/803292/teretni-brod-tone-u-crnom-moru-sudbina-12-clanova-posade-nepoznata | tags: []
+- Forenzičar: Epstin najverovatnije zadavljen s leđa | https://www.politika.rs/scc/clanak/803521/forenzicar-epstin-najverovatnije-zadavljen-s-leda | tags: []
+- Lukašenko naredio iznenadnu proveru graničnih jedinica, na vežbama simuliraju napade diverzanata | https://www.politika.rs/scc/clanak/803514/lukasenko-naredio-iznenadnu-proveru-granicnih-jedinica-na-vezbama-simuliraju-napade-diverzanata | tags: []
+- Poslodavci se zalažu za smanjenje troškova poslovanja | https://www.politika.rs/scc/clanak/803501/poslodavci-se-zalazu-za-smanjenje-troskova-poslovanja | tags: []
+- Ana Trišić Babić: Visoki predstavnik više ne bi trebalo da ima nikakvu ulogu u BiH | https://www.politika.rs/scc/clanak/803480/ana-trisic-babic-visoki-predstavnik-vise-ne-bi-trebalo-da-ima-nikakvu-ulogu-u-bih | tags: []
 
 ## RTS
-Categories: {"svet":1,"drustvo":5,"hronika":4,"region":2,"politika":5,"ostalo":2,"ekonomija":1}
-- [svet] Tramp putuje u Aziju, ali više ne diktira pravila – šta donose susreti sa svetskim liderima
-- [drustvo] Slankamenac: Subvencije zavisile od dobre volje vlasti, poljoprivrednike muka naterala da uđu u politiku
-- [hronika] Državljanki Srbije zaplenjeno vozilo, austrijske vlasti potražuju automobil
-- [region] Novac u kućicama za ptice - u kom pravcu ide istraga korupcijske afere u Mađarskoj
-- [politika] Pesma "Oj Kosovo, Kosovo" na Forumu EU u Briselu
-- [politika] Uoči konstituisanja nove Skupštine – Biševac: Očekujem sudar dve Srbije, dva viđenja političkog sistema
-
-Uncategorized sample (for tuning):
-- Analogija: RTS kao Bi-Bi-Si | https://www.rts.rs/vesti/podkast/6083094/analogija-rts-kao-bi-bi-si.html | tags: ["Podkast"]
-- Više mesta u Zapadnoj Srbiji bez struje zbog radova na mreži | https://www.rts.rs/vesti/servisne-informacije/6084403/iskljucenje-struja-zapad-srbija-.html | tags: ["Servisne vesti"]
+Categories: {"politika":4,"hronika":5,"drustvo":6,"region":3,"zivot":1,"ekonomija":1}
+- [politika] Predstavnici Srba sa KiM podneli krivičnu prijavu protiv Vučića, Dačića, Brnabićeve, Petkovića i Rakića
+- [politika] Beogradska bezbednosna konferencija – u fokusu demokratska obnova Srbije i budućnost evropske bezbednosti
+- [hronika] "Radar" objavio svedočenje Veselina Milića: Uhapšen sam jer sam odbio da intervenišem 15. marta
+- [hronika] Uhapšen maloletnik koji je nožem napao građane ispred sedišta REM-a
+- [drustvo] Investitor tvrdi da se dogovorio sa inspekcijom, a stanari se vratili u stanove - ko garantuje bezbednost u naselju Vojvode Vlahović
+- [politika] Šta su za Studentsku listu pitanja od nacionalnog interesa
