@@ -1,94 +1,97 @@
 # Feed check
 
-Run: 2026-11-18T11:58:42.324Z
+Run: 2026-11-18T22:52:49.140Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 1 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 1 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +76) | 77 | 2 |
+| N1 | yes | 45 | https://n1info.rs/feed/ | 45 | 2 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +78) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"politika":14,"zivot":8,"ostalo":4,"svet":5,"ekonomija":8,"region":2,"drustvo":1,"sport":1,"hronika":2,"zdravlje":1}
-- [politika] (BLOG) Nastavljena konstitutivna sednica: "Prvi od zadataka SL da promene način rada Skupštine"
-- [politika] Poslanica SL Sanja Belić kaže da će Čupić biti i na čelu Odbora za prava deteta
-- [zivot] RHMZ upozorio na veliku kišu i jak vetar popodne i uveče
-- [politika] Bešić: Skupštinu obeležila zloupotreba poslovnika kako bi se držao politički govor
-- [ostalo] Uverenje o prebivalištu, boravištu i prijava boravka preko eUprave
-- [svet] EU predložila dodatnu finansijsku podršku Ukrajini za 2027. od 45 milijardi evra
-  - flagged (self): Dan uživo: Nova lica Skupštine Srbije https://n1info.rs/najave-emisija/dan-uzivo-nova-lica-skupstine-srbije/
+Categories: {"svet":8,"zivot":6,"region":4,"politika":7,"ostalo":10,"kultura":1,"drustvo":2,"ekonomija":2,"hronika":4,"tehnologija":1}
+- [svet] Severna Koreja proširuje nuklearno postrojenje za obogaćivanje uranijuma
+- [svet] SAD i Venecuela potpisale su sporazum o ponovnom uspostavljanju vojnih veza
+- [zivot] Danijel Krejg otkrio zašto više ne želi da bude Džejms Bond i šta mu je sada važnije
+- [region] Albanija kupuje sisteme HIMARS
+- [zivot] Netfliksova hit serija "Black Doves" inspirisana stvarnim policijskim špijunskim skandalom
+- [zivot] Šta se dešava sa krvnim sudovima nakon samo jedne cigarete - kardiolog upozorava na rizike
+  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+  - flagged (self): Studio live, četvrtak u 12h: Čekajući predsednika https://n1info.rs/najave-emisija/studio-live-cetvrtak-u-12h-cekajuci-predsednika/
 
 Uncategorized sample (for tuning):
-- Uverenje o prebivalištu, boravištu i prijava boravka preko eUprave | https://n1info.rs/vesti/uverenje-o-prebivalistu-boravistu-i-prijava-boravka-preko-euprave/ | tags: ["Vesti","mup srbije","prebivalište","euprava","boravište"]
-- Novinar Jutarnjeg programa Radio Beograda: Više puta nam bilo zabranjeno da u goste pozivamo predstavnike UNS | https://n1info.rs/vesti/novinar-jutarnjeg-programa-radio-beograda-vise-puta-nam-bilo-zabranjeno-da-u-goste-pozivamo-predstavnike-uns/ | tags: ["Vesti","miša stojiljković","novinari","medijski stručnjaci","uns","rts"]
-- Zapaljena još jedna teretana Ahilej u Beogradu, četvrta za mesec dana | https://n1info.rs/vesti/zapaljena-teretana-ahilej-na-banovom-brdu/ | tags: ["Vesti","podmetanje požara","teretana","ahilej"]
-- Bivši tužilac Rakić: Dolovac ne bi slala komisiju u VJT da nije došlo do promene vlasti | https://n1info.rs/vesti/bivsi-tuzilac-rakic-dolovac-ne-bi-slala-komisiju-u-vjt-da-nije-doslo-do-promene-vlasti/ | tags: ["Vesti","zagorka dolovac","veljko rakić","nenad stefanović","više javno tužilaštvo","vjt"]
+- Slučaj Asomakum: Falsifikovanim rešenjima Poreske uprave vraćani PIB-ovi fantomskim firmama | https://n1info.rs/vesti/slucaj-asomakum-falsifikovanim-resenjima-poreske-uprave-vracani-pib-ovi-fantomskim-firmama/ | tags: ["Vesti","pib","jmbg","asomakum","birn"]
+- N1 Direktno: Beogradska bezbednosna konferencija (17.11.2026) | https://n1info.rs/video/n1-direktno-beogradska-bezbednosna-konferencija-17112026/ | tags: ["Video","video","emisija","n1 direktno","beogradska bezbednosna konferencija"]
+- Grad Smederevo: Očekujemo da u toku sledeće nedelje bude uspostavljeno normalno odvoženje smeća | https://n1info.rs/vesti/nadlezne-sluzbe-gradske-uprave-smedereva-i-jkp-zelenilo-i-groblja-ocekuju-da-ce-u-toku-sledece-nedelje-biti-uspostavljeno-normalno-funkcionisanje-odvozenja-komunalnog-otpada/ | tags: ["Vesti","odlaganje otpada","smeće","odlaganje smeća","smederevo","grad smederevo"]
+- Nova.rs: Obustavljen disciplinski postupak protiv tužiteljke Bojane Savović | https://n1info.rs/vesti/novars-obustavljen-disciplinski-postupak-protiv-tuziteljke-bojane-savovic/ | tags: ["Vesti","disciplinski postupak","miodrag marković","nenad stefanović","disciplinska komisija","bojana savović"]
+- Ulice u Beogradu pod vodom zbog kiše, problemi u saobraćaju: Iz RHMZ navode da su najveći pljuskovi prošli | https://n1info.rs/vesti/ulice-u-beogradu-pod-vodom-zbog-kise-potopljene-vojvodjanska-i-juzni-bulevar/ | tags: ["Vesti","kiša","poplavljene ulice","gandijeva ulica","vojvođanska ulica"]
+- Dnevnik u 19 (17.10.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-17102026n1/ | tags: ["Dnevnik","dnevnik u 19","video","dnevnik","vesti"]
+- RIK: Na pet biračkih mesta, 22. novembra, ponavlja se glasanje za tri saveta nacionalnih manjina | https://n1info.rs/vesti/rik-na-pet-birackih-mesta-22-novembra-ponavlja-se-glasanje-za-tri-saveta-nacionalnih-manjina/ | tags: ["Vesti","izbori za nacionalne savete","rik","republička izborna komisija"]
+- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
 
 ## Nova.rs
-Categories: {"politika":7,"sport":4,"ekonomija":5,"svet":8,"drustvo":5,"zivot":6,"zabava":6,"hronika":5,"kultura":3,"ostalo":1}
-- [politika] BLOG UŽIVO Usame Zukorlić podržao Aleksandra Čupića za predsednika Skupštine: "To ne znači da ćemo glasati za svaku odluku vladajuće većine"
-- [sport] "Ne zanima me politika, svi znate odakle je moja žena": Reprezentativac Bosne i Hercegovine održao lekciju o poštovanju pred potencijalni duel sa Srbijom
-- [ekonomija] Jorgovanka Tabaković odbila da drži konferenciju za novinare
-- [svet] FOTO Tramp i Putin se rukovali pred Si Đinpingom: Trojica svetskih lidera na istom mestu, sutra trilateralni sastanak
-- [drustvo] Nova.rs najčitaniji portal u Srbiji kad je najvažnije: Opet prvi na Gemiusovoj listi, i to na dan konstitutivne sednice Skupštine
-- [zivot] "Konačno doručak u restoranu koji mogu da platim": Jelovnik iz Narodne skupštine ponovo je završio na mrežama i pogledajte te cene
-  - flagged (sponsored): WPP Media: YouTube Premium među pet najvećih plaćenih striming servisa u regionu CEE (Centralna i istočna Evropa), SVOD tržište se otvara za oglašavanje i dodatna partnerstva sa kablovskim operaterima https://nova.rs/vesti/drustvo/wpp-media-youtube-premium-medju-pet-najvecih-placenih-striming-servisa-u-regionu-cee-centralna-i-istocna-evropa-svod-trziste-se-otvara-za-oglasavanje-i-dodatna-partnerstva-sa-kablovskim-operaterima/
+Categories: {"sport":12,"svet":3,"zabava":11,"hronika":5,"politika":9,"zivot":1,"drustvo":6,"ekonomija":1,"ostalo":2}
+- [sport] Preminuo legendarni sportski novinar Majk Vajz
+- [svet] Albanija kupuje sisteme HIMARS
+- [zabava] "To se ubrizga, i onda sve nestane": Emina Jahović o estetskim korekcijama - "Izgledala sam katastrofalno"
+- [sport] "Pobedio tata Real Madrid": Prelepa scena sa Alimpijevićem i sinovima obišla svet VIDEO
+- [sport] Alimpijević posle istorijske pobede nad Realom: „Bila je to najbolja i najzrelija utakmica otkako sam u Bešiktašu"
+- [hronika] Slučaj Asomakum: Falsifikovanim rešenjima Poreske uprave vraćani PIB-ovi fantomskim firmama
 
 Uncategorized sample (for tuning):
-- Priče jednog običnog Stanimira: Danas se smučio i kome do sad nije | https://nova.rs/kolumne/price-jednog-obicnog-stanimira-danas-se-smucio-i-kome-do-sad-nije/ | tags: ["Kolumne","kolumna","skupština srbije","bratislav marković","stanimir"]
+- Dnevnik - Cela emisija - 17.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-17112026/ | tags: ["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 17.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-17112026/ | tags: ["Emisije","među nama cela emisija"]
 
 ## B92
-Categories: {"drustvo":3,"zivot":17,"sport":13,"zabava":3,"svet":9,"kultura":5,"politika":7,"ostalo":3,"region":1,"ekonomija":10,"tehnologija":4,"hronika":4,"zdravlje":1}
-- [drustvo] Beograd dodeljuje 215 stipendija: Evo ko može da dobije do 30.000 dinara mesečno
-- [zivot] Istorijska prekretnica u svemiru: Voyager 1 udaljen od Zemlje jedan svetlosni dan
-- [sport] Realova najlakša odluka – sa Gulerom do 2032.
-- [zabava] Neće da se ženi, ali hoće da se provodi: Bred Pit uživa pored 29 godina mlađe devojke FOTO
-- [svet] Evo ih; Sva trojica na istom mestu i za trenutak sve je stalo VIDEO
-- [kultura] Film "Crna truba" Bojana Stijovića na 32. Festivalu autorskog filma u Beogradu
-  - flagged (sponsored): Priča koja se plete polako, baš kao i dobar ukus https://www.b92.net/zivot/promo/286017/prica-koja-se-plete-polako-bas-kao-i-dobar-ukus/vest
-  - flagged (sponsored): Milioni fanova i povratak u Vice City: Šta sve donosi GTA 6, najiščekivanija igra decenije https://www.b92.net/tehnopolis/promo/285981/milioni-fanova-i-povratak-u-vice-city-sta-sve-donosi-gta-6-najiscekivanija-igra-decenije/vest
+Categories: {"svet":14,"sport":14,"zivot":17,"zdravlje":4,"politika":4,"tehnologija":3,"ekonomija":9,"hronika":2,"kultura":3,"zabava":5,"drustvo":4,"ostalo":1}
+- [svet] Rat – dan 1.728: Krimski most ponovo na udaru; Onesposobljeno 15 ruskih rafinerija; Otvoren tajni front? FOTO
+- [sport] Gudurić emotivan: "Ovo je za mene posebna utakmica"
+- [sport] Dorsija ipak neko želi
+- [svet] Si Đinping ponizio Putina pred Trampom?
+- [sport] "To je najbolji klub u Evroligi za jednog trenera"
+- [sport] PAOK se vratio iz ponora i šokirao Špance: Trinkijeri režirao čudo u Manresi
 
 Uncategorized sample (for tuning):
-- Vozači, oprez na auto-putu Miloš Veliki: Usled izvođenja radova trake zatvorene i na Moravskom koridoru | https://www.b92.net/lokal/cacak/servisne-informacije/286028/vozaci-oprez-na-auto-putu-milos-veliki-usled-izvodjenja-radova-trake-zatvorene-i-na-moravskom-koridoru/vest | tags: ["Najnovije"]
-- Imate beživotnu kosu bez sjaja? Možda pravite ovih pet grešaka sa regeneratorom | https://superzena.b92.net/lepa-i-zdrava/lepota-zene/286011/ovih-5-gresaka-sa-regeneratorom-unistava-izgled-kose/vest | tags: []
-- Najlepša žena sveta se porodila u 45. godini: Njene fotke se šire mrežama FOTO | https://superzena.b92.net/dom-i-porodica/roditeljstvo/285957/porodila-se-en-hatavej-i-u-45-docekala-trece-dete/vest | tags: []
+- U 52. godini ima telo na kom joj zavide i duplo mlađe: U šest ujutru već je u teretani VIDEO | https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/286100/eva-longorija-pokazala-svoju-fitnes-rutinu/vest | tags: []
 
 ## Blic
-Categories: {"zabava":11,"svet":8,"ekonomija":10,"kultura":5,"hronika":10,"politika":12,"zdravlje":1,"zivot":5,"drustvo":6,"ostalo":1,"region":1}
-- [zabava] OTKRIVAMO DETALJE SERIJE "PUPIN" Mićanović kaže da se spremao četiri godine za Mihajla, Raša o liku Tesle, a evo šta radi Marko Kon: "Rekao je, ovo mora da ostane"
-- [svet] (VIDEO) Putin, Tramp i Si Đinping razgovarali na marginama samita APEK-a u Šendženu: Susret snimile kamere
-- [ekonomija] Goran ima zanat koji izumire, a čuva glavu na ramenima: Dimničar otkriva koje je najgore drvo za ogrev
-- [ekonomija] Šta se trenutno dešava sa pripremama za Ekspo? Siniša Mali: Usporeno je
-- [kultura] Berlin zvanično ušao u "krug poverenja": De Niro i Ben Stiler sinoć na svečanoj premijeri filma "Fokerovi - stiže snajka" (FOTO)
-- [hronika] Opsadno stanje u Nemačkoj zbog Srpkinje Tamare! Majka četvoro dece uzrujana napustila stan, pa nestala bez traga: "Da sam joj prišla..."
-
-Uncategorized sample (for tuning):
-- Povratak džentlmena: Zašto je dobar manir ponovo najprivlačnija osobina muškarca | https://www.blic.rs/good-life/hedonizam/dzentlmenstvo-danas-pristojnost-integritet-i-licni-stil-u-fokusu/4844wp6 | tags: []
+Categories: {"svet":7,"zabava":22,"drustvo":9,"politika":10,"hronika":9,"zivot":7,"zdravlje":1,"ekonomija":3,"kultura":1,"tehnologija":1}
+- [svet] (FOTO) Da li je Si Đinping ovim potezom poručio Putinu da je prijateljstvu kraj?! Ceo svet primetio je jedan detalj, a umešan je i Tramp
+- [zabava] Recept za izvajano telo u četvrtoj deceniji: Pevačica otkrila kako se hrani, a bez ovog napitka ne može ni dana
+- [svet] Vitkof i Kušner sutra u Berlinu sa ukrajinskim i evropskim zvaničnicima o ratu u Ukrajini
+- [zabava] "Dobio bi nogom u drob njegov" Anelina majka oplela po Filipu Caru: "Ćerka će mi ovog puta istrajati u onom što je zamislila"
+- [drustvo] "Zagušenja na nekoliko kritičnih tačaka", Oglasio se Beogradski vodovod: Hitna intervencija ekipa na odgušenju ulične kanalizacije
+- [politika] Sandžačka demokratska partija podržala Čupića za predsednika Skupštine
 
 ## Politika
-Categories: {"region":3,"svet":3,"ostalo":5,"politika":4,"sport":4,"hronika":1}
-- [region] Suđenje Bobanu Toniću u Prištini: advokat tvrdi da svedok nije pomenuo optuženog
-- [svet] Rusija dobila novu seriju lovaca-bombardera Su-34
-- [ostalo] Flautistkinja Iva Vujanić nastupa u „Gvarnerijusu”
-- [politika] Antonijević: Besplatna pravna pomoć nije dobročinstvo, već važan mehanizam pristupa pravdi
-- [region] Crna Gora potpisala sa SAD memorandum o energetskoj infrastrukturi u Evropi
-- [ostalo] Obilni pljuskovi i grmljavina u Srbiji, moguće i do 50 litara kiše po kvadratnom metru
+Categories: {"ostalo":7,"tehnologija":1,"politika":1,"svet":6,"sport":1,"drustvo":1,"hronika":2,"ekonomija":1}
+- [ostalo] Hitna intervencija ekipa na odgušenju ulične kanalizacije
+- [ostalo] Najstarija Dankinja ikada bila istaknuta članica nacističke partije
+- [tehnologija] SAD: Vanredna situacija zbog prekida letova i aplikacija
+- [politika] Rusko Ministarstvo odbrane oprema jedinice robotima za evakuaciju ranjenih
+- [ostalo] Kragujevac spreman za zimu, obezbeđeno održavanje 985 kilometara puteva
+- [svet] Sud produžio zabranu izgradnje Trampovog slavoluka u Vašingtonu
 
 Uncategorized sample (for tuning):
-- Flautistkinja Iva Vujanić nastupa u „Gvarnerijusu” | https://www.politika.rs/scc/clanak/803929/flautistkinja-iva-vujanic-nastupa-u-gvarnerijusu | tags: []
-- Obilni pljuskovi i grmljavina u Srbiji, moguće i do 50 litara kiše po kvadratnom metru | https://www.politika.rs/scc/clanak/803925/obilni-pljuskovi-i-grmljavina-u-srbiji-moguce-i-do-50-litara-kise-po-kvadratnom-metru | tags: []
-- Nema opasnosti od nestašice goriva, država spremna da pusti dodatne rezerve | https://www.politika.rs/scc/clanak/803922/nema-opasnosti-od-nestasice-goriva-drzava-spremna-da-pusti-dodatne-rezerve | tags: []
-- Američki vojnici i agenti CIA više nisu pod istragom Haškog suda za zločine u Avganistanu | https://www.politika.rs/scc/clanak/803921/americki-vojnici-i-agenti-cia-vise-nisu-pod-istragom-haskog-suda-za-zlocine-u-avganistanu | tags: []
-- Hitan sastanak tima za krizne situacije u OŠ „Despot Stefan Lazarević” nakon nezgode u „Galeriji” | https://www.politika.rs/scc/clanak/803917/hitan-sastanak-tima-za-krizne-situacije-u-os-despot-stefan-lazarevic-nakon-nezgode-u-galeriji | tags: []
+- Hitna intervencija ekipa na odgušenju ulične kanalizacije | https://www.politika.rs/scc/clanak/804143/hitna-intervencija-ekipa-na-odgusenju-ulicne-kanalizacije | tags: []
+- Najstarija Dankinja ikada bila istaknuta članica nacističke partije | https://www.politika.rs/scc/clanak/804140/najstarija-dankinja-ikada-bila-istaknuta-clanica-nacisticke-partije | tags: []
+- Kragujevac spreman za zimu, obezbeđeno održavanje 985 kilometara puteva | https://www.politika.rs/scc/clanak/804133/kragujevac-spreman-za-zimu-obezbedeno-odrzavanje-985-kilometara-puteva | tags: []
+- Huti raketirali aerodrom i finansijski centar u Rijadu | https://www.politika.rs/scc/clanak/804123/huti-raketirali-aerodrom-i-finansijski-centar-u-rijadu | tags: []
+- Više od 285.000 Kanađana traži opoziv američkog ambasadora Pita Hekstre | https://www.politika.rs/scc/clanak/804111/vise-od-285-000-kanadana-trazi-opoziv-americkog-ambasadora-pita-hekstre | tags: []
+- Tri naftna tankera naletela na mine kod Ormuskog moreuza | https://www.politika.rs/scc/clanak/804109/tri-naftna-tankera-naletela-na-mine-kod-ormuskog-moreuza | tags: []
+- SAD i Venecuela postigle sporazum o vojnoj saradnji | https://www.politika.rs/scc/clanak/804106/sad-i-venecuela-postigle-sporazum-o-vojnoj-saradnji | tags: []
 
 ## RTS
-Categories: {"zivot":1,"drustvo":6,"ekonomija":5,"region":1,"hronika":4,"politika":2,"svet":1}
-- [zivot] Upozorenje RHMZ-a na obilne pljuskove i jak olujni vetar
-- [drustvo] OŠ "Despot Stefan Lazarević": Ministarstvo obavešteno o incidentu u "Galeriji", poseta bioskopu predviđena planom
-- [ekonomija] Ministarstvo energetike: Tržište Srbije uredno snabdeveno naftnim derivatima
-- [ekonomija] NBS: Prosečna inflacija u ovoj godini 3,2 odsto – sledeće 4,9 odsto umesto prognoziranih 4,3
-- [region] Državljanin Srbije poginuo u saobraćajnoj nesreći na Žabljaku
-- [drustvo] Četiri nove elektronske usluge MUP-a dostupne na portalu eUprava
+Categories: {"politika":9,"region":1,"ekonomija":2,"zivot":1,"drustvo":4,"hronika":1,"ostalo":1,"svet":1}
+- [politika] Studentski pokret traži da se leks specijalis za Generalštab stavi van snage
+- [region] Špijunska zavera na Balkanu - hapšenja posle akcije Mosada, Makedonaca i Grka
+- [politika] SDP podržava Čupića za predsednika Skupštine
+- [politika] Studentska lista sa predstavnicima Nemačke, Saveta Evrope i Francuske
+- [politika] Čupić: Veliki broj povreda poslovnika u Skupštini, podneću izveštaj o imovini po zakonu
+- [politika] Lopandić za RTS: Mora da se istraži šta se dešavalo u izbornoj noći, dobro je što je izbegnuta eskalacija nasilja
+
+Uncategorized sample (for tuning):
+- Potvrđena afrička kuga svinja u selu Brnjica, kod Knića; u jednom domaćinstvu 120 grla eutanazirano | https://www.rts.rs/vesti/srbija-danas/6086873/potvrdjena-africka-kuga-svinja-u-selu-brnjica-kod-knica-u-jednom-domacinstvu-120-grla-eutanazirano.html | tags: ["Srbija danas"]
