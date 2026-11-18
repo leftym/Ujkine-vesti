@@ -1,102 +1,108 @@
 # Vesti health report
 
-Run: 2026-11-17T23:24:42.441Z  |  items: 285  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-18T11:59:06.474Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
 1. **LOW** [B92] Possible ads NOT flagged: "Produžen popust na ski-karte u Srbiji, poznato do kada traju niže cene"
-2. **LOW** [Blic] Possible ads NOT flagged: "Više od pola tegle je čist šećer: Kako je jeftiniji krem iz prodavnice pobedio veliku Nutelu"; "Poznati na promociji Filipa Mitrovića: Jovan Pantić se provodi nakon raskida sa Majom Ognjenović, Rađenova bivša prvi put u javnost posle porođaja"; ""DOSADILO MI JE DA MI NUDE LOŠE PESME" Filip Mitrović na promociji albuma progovorio o krizi na estradi i podršci Cece Ražnatović (Video)"
+2. **LOW** [Blic] Possible ads NOT flagged: ""Ti si jeftina zabava": Isplivali šokantni detalji razgovora žene i ljubavnice Miroslava Ilića dok je bila u 8. mesecu trudnoće, pale žestoke pretnje"
+3. **LOW** [Politika] Possible ads NOT flagged: "Antonijević: Besplatna pravna pomoć nije dobročinstvo, već važan mehanizam pristupa pravdi"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 45 | 0.5h | 100% | 11% | 1 |
-| Nova.rs | yes | 50 | 0.4h | 100% | 4% | 0 |
-| B92 | yes | 80 | 0.4h | 95% | 3% | 1 |
-| Blic | yes | 70 | 0.1h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.1h | 100% | 20% | 0 |
-| RTS | yes | 20 | 2.5h | 100% | 0% | 0 |
+| N1 | yes | 46 | 0.0h | 100% | 9% | 1 |
+| Nova.rs | yes | 50 | 0.0h | 100% | 2% | 1 |
+| B92 | yes | 80 | 0.0h | 96% | 4% | 2 |
+| Blic | yes | 70 | 0.1h | 100% | 1% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 25% | 0 |
+| RTS | yes | 20 | 0.2h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 6 outlets, score 64.8] Poznato stanje dece koja su pala sa pokretnih stepenica u TC "Galerija": Zadobila teške povrede glave i tela, među njima i sin voditelja
-   - also (politika): Tužilaštvo naložilo prikupljanje dokaza posle povređivanja desetoro dece u Galeriji
-   - also (rts): Incident na pokretnim stepenicama u TC "Galerija", desetoro dece povređeno
-   - also (n1): Desetoro dece povređeno u TC "Galerija", sedmoro sa teškim povredama - tužilac obavio razgovor s predstavnicima škole i TC-a
-   - also (nova): Oglasilo se tužilaštvo o povređenoj deci iz Galerije: Naloženo prikupljanje dokaza nakon incidenta na pokretnim stepenicama
-   - also (blic): Oglasilo se tužilaštvo nakon što su deca pala sa pokretnih stepenica u TC "Galerija": "Naloženo pribavljanje snimaka kamera i dokumentacije"
-   - also (nova): Sin voditelja RTS-a povređen u incidentu u TC "Galerija": "U Urgentnom centru su mu sanirali povrede"
-   - also (blic): SA OVOM GLUMICOM VODITELJ RTS-A IMA DVOJE DECE Sin im završio u Urgentnom nakon pada sa pokretnih stepenica u TC "Galerija" (FOTO)
-   - also (blic): U TC "GALERIJA" POVREĐEN SIN VODITELJA RTS-A Vladimir Jelić se oglasio i otkrio u kakvom je stanju: "U Urgentnom centu su mu sanirali povrede"
-   - also (b92): Oglasilo se tužilaštvo nakon pada dece na pokretnim stepenicama u Galeriji
-2. [multi, 5 outlets, score 58.6] Određen pritvor Kričku, osumnjičenom za zlostavljanje i mučenje u garaži Vlade Srbije
-   - also (n1): Novi pritvor za Marka Krička zbog sumnje da je učestvovao u zlostavljanju u garaži Vlade Srbije
-   - also (rts): Marko Kričak saslušan u slučaju zlostavljanja u garaži Vlade Srbije
-   - also (b92): Prvi osnovni sud: Kričku određen pritvor do 30 dana
-   - also (nova): Još jedan pritvor za Marka Krička: Sumnja se da je učestvovao u zlostavljanju i mučenju studenata i građana u garaži Vlade Srbije
-   - also (blic): Određen pritvor Kričku: Osumnjičen za zlostavljanje i mučenje u garaži Vlade Srbije
-3. [multi, 4 outlets, score 44.8] Saslušan Patrik Drid, tužilaštvo traži pritvor
-   - also (n1): Više javno tužilaštvo traži pritvor za Patrika Drida i Nebojšu Maksimovića
-   - also (nova): Tužilaštvo traži pritvor za dekana Patrika Drida, osumnjičenog za zloupotrebu službenog položaja u Novom Sadu
-   - also (blic): Tužilaštvo traži pritvor za dekana Patrika Drida: Evo koji su razlozi
-4. [multi, 3 outlets, score 38.9] Predsednik Finske pozvao evropske lidere da direktno pregovaraju sa Putinom
-   - also (blic): (FOTO) HILJADE LJUDI NA ULICI EVROPSKOM LIDERU UZVIKIVALO "IDI DOĐAVOLA" Veliki protest u blizini Srbije, opozicija se ujedinila: Građani besni zbog jednog poteza vlasti, a ima veze s Putinom
-   - also (nova): Predsednik Finske pozvao evropske lidere da direktno pregovaraju sa Putinom
-5. [multi, 3 outlets, score 38.4] Penjaroja objasnio poraz od Valensije, ovo je glavni razlog
-   - also (politika): Košarkaši Partizana izgubili od Valensije
-   - also (b92): Partizan srušen u Beogradu – Valensija na vrhu Evrolige! Penjaroja objasnio kako su izgubili
-   - also (nova): Partizan ostao bez pobede protiv Valensije, ni Karlikova luda partija nije bila dovoljna
-   - also (b92): Partizan sve promašio – Valensija kaznila crno-bele
-6. [multi, 3 outlets, score 38.3] MUP: U slučaju napada na Lidiju Vukićević nema elemenata krivičnog dela
-   - also (b92): MUP se oglasio o napadu na Lidiju Vukićević: "Nema elemenata krivičnog dela"
-   - also (n1): MUP o slučaju Lidije Vukićević: Nema elemenata krivičnog dela, biće preduzete mere u skladu sa Zakonom o javnom redu i miru
-7. [multi, 3 outlets, score 37.9] Francuska na nogama: Više od pola miliona ljudi izašlo na ulice, traže veće plate FOTO
-   - also (politika): Više od 146.000 demonstranata tražilo veće plate i bolji životni standard
-   - also (n1): U Francuskoj više od 100.000 ljudi na ulicama tražilo veće plate
-8. [multi, 3 outlets, score 36.3] Letonija dobila novu vladu: Premijer najavio da će pet odsto BDP-a izdvajati za odbranu
-   - also (politika): Letonija dobila novu vladu premijera Andrisa Kulbergsa
-   - also (blic): Letonija dobila novu vladu premijera Andrisa Kulbergsa
-9. [multi, 3 outlets, score 33.7] Oglasili se iz "Studentske liste": Otkriveno ko će biti potpredsednik Skupštine Srbije
-   - also (blic): Jovo Bakić otkrio ko je kandidat Studentske liste za potpredsednika Skupštine Srbije
-   - also (nova): Bakić (SL): Potpredsednička mesta Skupštine, predstavnicima manjina sa Studentske liste
-10. [multi, 3 outlets, score 33.5] Emina Jahović prvi put progovorila o skandalu koji trese Tursku: "Mustafa nema veze sa tim"
-   - also (nova): "Znam da on nema nikakve veze sa tim": Emina Jahović prokomentarisala to što se žena Mustafe Sandala tereti za proneveru novca
-   - also (blic): EKSKLUZIVNO! Emina Jahović prvi put o skandalu koji trese Tursku zbog pronevere 200 miliona evra: "Mustafa nema veze sa tim"
+1. [multi, 5 outlets, score 55.2] Viši sud u Nišu odredio pritvor od 30 dana sedmorici policajaca iz Bora
+   - also (b92): Optuženi za ubistvo Danke Ilić prvi put iznose odbranu
+   - also (b92): Određen pritvor policajcima osumnjičenim da su mučili osumnjičene za ubistvo Danke Ilić
+   - also (rts): Patriku Dridu određen pritvor do 30 dana
+   - also (b92): Određen pritvor Patriku Dridu
+   - also (blic): Sedmorici policajaca iz Bora određen pritvor zbog sumnje da su mučili osumnjičene za ubistvo Danke Ilić
+   - also (n1): Pritvor policajcima iz Bora zbog sumnje da su mučili osumnjičene za ubistvo Danke Ilić
+   - also (nova): Viši sud u Nišu odredio pritvor od 30 dana sedmorici policajaca iz Bora
+   - also (nova): Kako hapšenje policajaca može da utiče na suđenje za nestanak i ubistvo Danke Ilić: Advokat Ćorda objašnjava šta je ključno za rasvetljavanje celog slučaja
+2. [multi, 5 outlets, score 53.7] NBS oduzela dozvolu za obavljanje poslova finansijskog lizinga društvu "Alta lizing"
+   - also (b92): NBS oduzela dozvolu društvu ALTA Leasing
+   - also (n1): NBS oduzela dozvolu za rad Alta lizingu
+   - also (nova): NBS oduzela dozvolu Alta lizingu
+   - also (blic): NBS oduzela još jednu dozvolu od Alte: Šta to znači za klijente koji plaćaju lizing
+3. [multi, 4 outlets, score 48.5] BLOG UŽIVO Posle Saveza vojvođanskih Mađara i Usame Zukorlić najavljuje glasanje za Aleksandra Čupića
+   - also (b92): Pastor: "Samo jedan od kandidata za predsednika Skupštine ispunjava politički kriterijum" VIDEO
+   - also (n1): Pastor: SVM će glasati za kandidata Studentske liste za predsednika Skupštine
+   - also (blic): Balint Pastor: Glasaćemo za izbor Aleksandra Čupića za predsednika Skupštine Srbije
+4. [multi, 4 outlets, score 46.9] Državljanin Srbije poginuo u saobraćajnoj nesreći na Žabljaku
+   - also (nova): Srbin (43) poginuo u Crnoj Gori: Stravična nesreća na putu Žabljak-Tara: Sudarili se auto i autobus
+   - also (n1): Državljanin Srbije poginuo u saobraćajnoj nesreći u Crnoj Gori
+   - also (blic): Srbin (43) poginuo u Crnoj Gori! Stravična nesreća na putu Žabljak-Tara: Sudarili se auto i autobus
+5. [multi, 4 outlets, score 43.8] Za ponedeljak sazvana nova sednica skupštine Beograda
+   - also (blic): Zakazana Sednica Skupštine grada Beograda za 23. novembar
+   - also (nova): Nova sednica Skupštine grada Beograda u ponedeljak
+   - also (n1): Nova sednica Skupštine grada Beograda u ponedeljak
+6. [multi, 4 outlets, score 43.8] I, Tramp je stigao VIDEO
+   - also (n1): Tramp stigao u Kinu, dočekao ga predsednik Si
+   - also (nova): VIDEO Nesvakidašnji potez kineskog predsednika: Si lično dočekao Trampa, sutra istorijski sastanak sa Putinom
+   - also (blic): Tramp stigao u Šendžen na sastanak APEK-a, Si Đinping odstupio od protokola
+7. [multi, 3 outlets, score 39] Sanja Belić sa Studentske liste: Parlament, kao i amfiteatar, mora da bude mesto gde se čuje različito mišljenje
+   - also (n1): Poslanica SL Sanja Belić kaže da će Čupić biti i na čelu Odbora za prava deteta
+   - also (blic): "Čupić je gorostas koji nikada više neće dozvoliti da neko dete bude žrtva ravnodušnosti institucija" Poslanica Studentske liste Sanja Belić objasnila predlog za predsednika Skupštine
+8. [multi, 3 outlets, score 39] Upozorenje RHMZ-a na obilne pljuskove i jak olujni vetar
+   - also (n1): RHMZ upozorio na veliku kišu i jak vetar popodne i uveče
+   - also (blic): RHMZ upalio najviši stepen upozorenja zbog obilnih padavina: Posle podne i grmljavina, a velika kiša sručiće se i na Beograd za samo 12 sati
+9. [multi, 3 outlets, score 38.5] Evo ih; Sva trojica na istom mestu i za trenutak sve je stalo VIDEO
+   - also (nova): FOTO Tramp i Putin se rukovali pred Si Đinpingom: Trojica svetskih lidera na istom mestu, sutra trilateralni sastanak
+   - also (politika): Tramp u Kini sa svetskim liderima: U fokusu susreti sa Putinom i Sijem
+10. [multi, 3 outlets, score 37.9] OŠ "Despot Stefan Lazarević": Ministarstvo obavešteno o incidentu u "Galeriji", poseta bioskopu predviđena planom
+   - also (politika): Hitan sastanak tima za krizne situacije u OŠ „Despot Stefan Lazarević” nakon nezgode u „Galeriji”
+   - also (blic): Sastaje se Tim za krizne situacije: Oglasilo se Ministarstvo prosvete o padu učenika sa stepenica u TC "Galeriji"
+   - also (blic): Oglasila se OŠ "Despot Stefan Lazarević" o đacima koji su povređeni u TC "Galerija: Ovo je bio razlog posete
 
 ## Details
 ### N1
-Categories: {"svet":12,"zivot":7,"region":4,"politika":9,"hronika":5,"drustvo":3,"ostalo":5}
+Categories: {"politika":14,"zivot":8,"ostalo":4,"svet":5,"ekonomija":8,"region":2,"drustvo":1,"sport":1,"hronika":2,"zdravlje":1}
 Flagged:
-- (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
+- (self) Dan uživo: Nova lica Skupštine Srbije <https://n1info.rs/najave-emisija/dan-uzivo-nova-lica-skupstine-srbije/>
 Uncategorized sample:
-- Džensen Huang kaže da bi mu bila „čast“ da se vrati na mesto generalnog direktora Envidije <https://n1info.rs/vesti/dzensen-huang-generalni-direktor-nvdia-saopstenje/> tags=["Vesti","džensen huang","envidia","envidija","nvidia"]
-- Manojlović: Ko je omogućio Radoičiću da pobegne iz Srbije i ko će odgovarati za Banjsku? <https://n1info.rs/vesti/manojlovic-ko-je-omogucio-radoicicu-da-pobegne-iz-srbije-i-ko-ce-odgovarati-za-banjsku/> tags=["Vesti","kreni-promeni","slučaj banjska","sukob u banjskoj","milan radoičić","incident u banjskoj"]
-- Dnevnik u 19 (16.10.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-16102026n1/> tags=["Dnevnik","vesti","dnevnik u 19","dnevnik","video"]
-- Nekoliko ruskih dronova narušilo vazdušni prostor Moldavije, tvrdi predsednica Sandu <https://n1info.rs/vesti/nekoliko-ruskih-dronova-narusilo-vazdusni-prostor-moldavije-tvrdi-predsednica-sandu/> tags=["Vesti","ruski dronovi","maja sandu","moldavija"]
-- Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
+- Uverenje o prebivalištu, boravištu i prijava boravka preko eUprave <https://n1info.rs/vesti/uverenje-o-prebivalistu-boravistu-i-prijava-boravka-preko-euprave/> tags=["Vesti","mup srbije","prebivalište","euprava","boravište"]
+- Novinar Jutarnjeg programa Radio Beograda: Više puta nam bilo zabranjeno da u goste pozivamo predstavnike UNS <https://n1info.rs/vesti/novinar-jutarnjeg-programa-radio-beograda-vise-puta-nam-bilo-zabranjeno-da-u-goste-pozivamo-predstavnike-uns/> tags=["Vesti","miša stojiljković","novinari","medijski stručnjaci","uns","rts"]
+- Zapaljena još jedna teretana Ahilej u Beogradu, četvrta za mesec dana <https://n1info.rs/vesti/zapaljena-teretana-ahilej-na-banovom-brdu/> tags=["Vesti","podmetanje požara","teretana","ahilej"]
+- Bivši tužilac Rakić: Dolovac ne bi slala komisiju u VJT da nije došlo do promene vlasti <https://n1info.rs/vesti/bivsi-tuzilac-rakic-dolovac-ne-bi-slala-komisiju-u-vjt-da-nije-doslo-do-promene-vlasti/> tags=["Vesti","zagorka dolovac","veljko rakić","nenad stefanović","više javno tužilaštvo","vjt"]
 
 ### Nova.rs
-Categories: {"zabava":12,"sport":15,"hronika":8,"svet":3,"ekonomija":1,"politika":6,"zivot":1,"drustvo":2,"ostalo":2}
+Categories: {"politika":8,"sport":4,"ekonomija":5,"svet":8,"drustvo":5,"zivot":6,"zabava":5,"hronika":5,"kultura":3,"ostalo":1}
+Flagged:
+- (sponsored) WPP Media: YouTube Premium među pet najvećih plaćenih striming servisa u regionu CEE (Centralna i istočna Evropa), SVOD tržište se otvara za oglašavanje i dodatna partnerstva sa kablovskim operaterima <https://nova.rs/vesti/drustvo/wpp-media-youtube-premium-medju-pet-najvecih-placenih-striming-servisa-u-regionu-cee-centralna-i-istocna-evropa-svod-trziste-se-otvara-za-oglasavanje-i-dodatna-partnerstva-sa-kablovskim-operaterima/>
 Uncategorized sample:
-- Dnevnik - Cela emisija - 16.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-16112026/> tags=["Emisije","probudi se cela emisija"]
-- Među nama - Cela emisija - 16.11.2026. <https://nova.rs/emisije/medju-nama-cela-emisija-16112026/> tags=["Emisije","među nama cela emisija"]
+- Priče jednog običnog Stanimira: Danas se smučio i kome do sad nije <https://nova.rs/kolumne/price-jednog-obicnog-stanimira-danas-se-smucio-i-kome-do-sad-nije/> tags=["Kolumne","kolumna","skupština srbije","bratislav marković","stanimir"]
 
 ### B92
-Categories: {"ostalo":2,"svet":17,"zivot":16,"sport":16,"hronika":4,"ekonomija":9,"politika":5,"drustvo":1,"kultura":6,"zdravlje":2,"zabava":1,"tehnologija":1}
+Categories: {"politika":7,"drustvo":3,"zivot":17,"sport":13,"zabava":3,"svet":9,"kultura":5,"ostalo":3,"region":1,"ekonomija":10,"tehnologija":4,"hronika":4,"zdravlje":1}
 Flagged:
-- (sponsored) Zašto je popularna psihologija osvojila svet? Najtraženiji naslovi na popustu do 50 odsto <https://www.b92.net/kultura/promo/285792/zasto-je-popularna-psihologija-osvojila-svet-najtrazeniji-naslovi-na-popustu-do-50-odsto/vest>
+- (sponsored) Priča koja se plete polako, baš kao i dobar ukus <https://www.b92.net/zivot/promo/286017/prica-koja-se-plete-polako-bas-kao-i-dobar-ukus/vest>
+- (sponsored) Milioni fanova i povratak u Vice City: Šta sve donosi GTA 6, najiščekivanija igra decenije <https://www.b92.net/tehnopolis/promo/285981/milioni-fanova-i-povratak-u-vice-city-sta-sve-donosi-gta-6-najiscekivanija-igra-decenije/vest>
 Uncategorized sample:
-- Na današnji dan, 18. novembar <https://www.b92.net/info/razno/285905/na-danasnji-dan-18-novembar/vest> tags=["Najnovije"]
-- Rešite se stenica iz kuće i prtljaga: Šta stvarno deluje, a šta ne smete da radite <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/284182/kako-da-se-resite-stenica-iz-kuce-i-iz-prtljaga/vest> tags=[]
+- Vozači, oprez na auto-putu Miloš Veliki: Usled izvođenja radova trake zatvorene i na Moravskom koridoru <https://www.b92.net/lokal/cacak/servisne-informacije/286028/vozaci-oprez-na-auto-putu-milos-veliki-usled-izvodjenja-radova-trake-zatvorene-i-na-moravskom-koridoru/vest> tags=["Najnovije"]
+- Imate beživotnu kosu bez sjaja? Možda pravite ovih pet grešaka sa regeneratorom <https://superzena.b92.net/lepa-i-zdrava/lepota-zene/286011/ovih-5-gresaka-sa-regeneratorom-unistava-izgled-kose/vest> tags=[]
+- Najlepša žena sveta se porodila u 45. godini: Njene fotke se šire mrežama FOTO <https://superzena.b92.net/dom-i-porodica/roditeljstvo/285957/porodila-se-en-hatavej-i-u-45-docekala-trece-dete/vest> tags=[]
 
 ### Blic
-Categories: {"ekonomija":7,"drustvo":8,"zivot":10,"svet":9,"zabava":21,"politika":7,"hronika":7,"zdravlje":1}
+Categories: {"zabava":11,"svet":8,"ekonomija":10,"kultura":5,"hronika":10,"politika":12,"zdravlje":1,"zivot":5,"drustvo":6,"ostalo":1,"region":1}
+Uncategorized sample:
+- Povratak džentlmena: Zašto je dobar manir ponovo najprivlačnija osobina muškarca <https://www.blic.rs/good-life/hedonizam/dzentlmenstvo-danas-pristojnost-integritet-i-licni-stil-u-fokusu/4844wp6> tags=[]
 
 ### Politika
-Categories: {"sport":5,"svet":5,"tehnologija":1,"politika":3,"ostalo":4,"ekonomija":1,"hronika":1}
+Categories: {"region":3,"svet":3,"ostalo":5,"politika":4,"sport":4,"hronika":1}
 Uncategorized sample:
-- REM stigao do SANU – dve decenije pritisaka, spornih odluka i pitanja nezavisnosti <https://www.politika.rs/scc/clanak/803804/rem-stigao-do-sanu-dve-decenije-pritisaka-spornih-odluka-i-pitanja-nezavisnosti> tags=[]
-- Brent premašio 93 dolara za barel, WTI blizu 86 dolara <https://www.politika.rs/scc/clanak/803785/brent-premasio-93-dolara-za-barel-wti-blizu-86-dolara> tags=[]
-- Afrička kuga svinja na farmi u Brnjici, zabranjen promet svinja u delu Knića <https://www.politika.rs/scc/clanak/803784/africka-kuga-svinja-na-farmi-u-brnjici-zabranjen-promet-svinja-u-delu-knica> tags=[]
-- Uganda razmatra prihvatni centar za migrante koje EU vraća iz Evrope <https://www.politika.rs/scc/clanak/803783/uganda-razmatra-prihvatni-centar-za-migrante-koje-eu-vraca-iz-evrope> tags=[]
+- Flautistkinja Iva Vujanić nastupa u „Gvarnerijusu” <https://www.politika.rs/scc/clanak/803929/flautistkinja-iva-vujanic-nastupa-u-gvarnerijusu> tags=[]
+- Obilni pljuskovi i grmljavina u Srbiji, moguće i do 50 litara kiše po kvadratnom metru <https://www.politika.rs/scc/clanak/803925/obilni-pljuskovi-i-grmljavina-u-srbiji-moguce-i-do-50-litara-kise-po-kvadratnom-metru> tags=[]
+- Nema opasnosti od nestašice goriva, država spremna da pusti dodatne rezerve <https://www.politika.rs/scc/clanak/803922/nema-opasnosti-od-nestasice-goriva-drzava-spremna-da-pusti-dodatne-rezerve> tags=[]
+- Američki vojnici i agenti CIA više nisu pod istragom Haškog suda za zločine u Avganistanu <https://www.politika.rs/scc/clanak/803921/americki-vojnici-i-agenti-cia-vise-nisu-pod-istragom-haskog-suda-za-zlocine-u-avganistanu> tags=[]
+- Hitan sastanak tima za krizne situacije u OŠ „Despot Stefan Lazarević” nakon nezgode u „Galeriji” <https://www.politika.rs/scc/clanak/803917/hitan-sastanak-tima-za-krizne-situacije-u-os-despot-stefan-lazarevic-nakon-nezgode-u-galeriji> tags=[]
 
 ### RTS
-Categories: {"hronika":8,"drustvo":5,"politika":4,"svet":1,"ekonomija":1,"zivot":1}
+Categories: {"zivot":1,"drustvo":6,"ekonomija":5,"region":1,"hronika":4,"politika":2,"svet":1}
