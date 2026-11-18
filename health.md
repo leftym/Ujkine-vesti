@@ -1,108 +1,94 @@
 # Vesti health report
 
-Run: 2026-11-18T11:59:06.474Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-18T22:53:24.511Z  |  items: 285  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [B92] Possible ads NOT flagged: "Produžen popust na ski-karte u Srbiji, poznato do kada traju niže cene"
-2. **LOW** [Blic] Possible ads NOT flagged: ""Ti si jeftina zabava": Isplivali šokantni detalji razgovora žene i ljubavnice Miroslava Ilića dok je bila u 8. mesecu trudnoće, pale žestoke pretnje"
-3. **LOW** [Politika] Possible ads NOT flagged: "Antonijević: Besplatna pravna pomoć nije dobročinstvo, već važan mehanizam pristupa pravdi"
+1. **MED** [Politika] 35% of stories are uncategorized ("Ostalo"). Common words in them: hitna(1), intervencija(1), ekipa(1), odgusenju(1), ulicne(1), kanalizacije(1), najstarija(1), dankinja(1). Add section names / keyword stems in lib/classify.js.
+2. **LOW** [B92] Possible ads NOT flagged: "Jeftini električni Volkswagen nas čeka u 2027 – znamo li kako će da se zove?"
+3. **LOW** [Blic] Possible ads NOT flagged: "TORBA OD 8.000 EVRA I OGRLICA OD 3.300! Ceca u moćnom stajlingu stigla na promociju, a Sara Jo beži od novinara (Video)"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 46 | 0.0h | 100% | 9% | 1 |
-| Nova.rs | yes | 50 | 0.0h | 100% | 2% | 1 |
-| B92 | yes | 80 | 0.0h | 96% | 4% | 2 |
-| Blic | yes | 70 | 0.1h | 100% | 1% | 0 |
-| Politika | yes | 20 | 0.1h | 100% | 25% | 0 |
-| RTS | yes | 20 | 0.2h | 100% | 0% | 0 |
+| N1 | yes | 45 | 0.2h | 100% | 22% | 2 |
+| Nova.rs | yes | 50 | 0.2h | 100% | 4% | 0 |
+| B92 | yes | 80 | 0.1h | 95% | 1% | 0 |
+| Blic | yes | 70 | 0.1h | 100% | 0% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 35% | 0 |
+| RTS | yes | 20 | 1.1h | 100% | 5% | 0 |
 
 ## Front page right now
-1. [multi, 5 outlets, score 55.2] Viši sud u Nišu odredio pritvor od 30 dana sedmorici policajaca iz Bora
-   - also (b92): Optuženi za ubistvo Danke Ilić prvi put iznose odbranu
-   - also (b92): Određen pritvor policajcima osumnjičenim da su mučili osumnjičene za ubistvo Danke Ilić
-   - also (rts): Patriku Dridu određen pritvor do 30 dana
-   - also (b92): Određen pritvor Patriku Dridu
-   - also (blic): Sedmorici policajaca iz Bora određen pritvor zbog sumnje da su mučili osumnjičene za ubistvo Danke Ilić
-   - also (n1): Pritvor policajcima iz Bora zbog sumnje da su mučili osumnjičene za ubistvo Danke Ilić
-   - also (nova): Viši sud u Nišu odredio pritvor od 30 dana sedmorici policajaca iz Bora
-   - also (nova): Kako hapšenje policajaca može da utiče na suđenje za nestanak i ubistvo Danke Ilić: Advokat Ćorda objašnjava šta je ključno za rasvetljavanje celog slučaja
-2. [multi, 5 outlets, score 53.7] NBS oduzela dozvolu za obavljanje poslova finansijskog lizinga društvu "Alta lizing"
-   - also (b92): NBS oduzela dozvolu društvu ALTA Leasing
-   - also (n1): NBS oduzela dozvolu za rad Alta lizingu
-   - also (nova): NBS oduzela dozvolu Alta lizingu
-   - also (blic): NBS oduzela još jednu dozvolu od Alte: Šta to znači za klijente koji plaćaju lizing
-3. [multi, 4 outlets, score 48.5] BLOG UŽIVO Posle Saveza vojvođanskih Mađara i Usame Zukorlić najavljuje glasanje za Aleksandra Čupića
-   - also (b92): Pastor: "Samo jedan od kandidata za predsednika Skupštine ispunjava politički kriterijum" VIDEO
-   - also (n1): Pastor: SVM će glasati za kandidata Studentske liste za predsednika Skupštine
-   - also (blic): Balint Pastor: Glasaćemo za izbor Aleksandra Čupića za predsednika Skupštine Srbije
-4. [multi, 4 outlets, score 46.9] Državljanin Srbije poginuo u saobraćajnoj nesreći na Žabljaku
-   - also (nova): Srbin (43) poginuo u Crnoj Gori: Stravična nesreća na putu Žabljak-Tara: Sudarili se auto i autobus
-   - also (n1): Državljanin Srbije poginuo u saobraćajnoj nesreći u Crnoj Gori
-   - also (blic): Srbin (43) poginuo u Crnoj Gori! Stravična nesreća na putu Žabljak-Tara: Sudarili se auto i autobus
-5. [multi, 4 outlets, score 43.8] Za ponedeljak sazvana nova sednica skupštine Beograda
-   - also (blic): Zakazana Sednica Skupštine grada Beograda za 23. novembar
-   - also (nova): Nova sednica Skupštine grada Beograda u ponedeljak
-   - also (n1): Nova sednica Skupštine grada Beograda u ponedeljak
-6. [multi, 4 outlets, score 43.8] I, Tramp je stigao VIDEO
-   - also (n1): Tramp stigao u Kinu, dočekao ga predsednik Si
-   - also (nova): VIDEO Nesvakidašnji potez kineskog predsednika: Si lično dočekao Trampa, sutra istorijski sastanak sa Putinom
-   - also (blic): Tramp stigao u Šendžen na sastanak APEK-a, Si Đinping odstupio od protokola
-7. [multi, 3 outlets, score 39] Sanja Belić sa Studentske liste: Parlament, kao i amfiteatar, mora da bude mesto gde se čuje različito mišljenje
-   - also (n1): Poslanica SL Sanja Belić kaže da će Čupić biti i na čelu Odbora za prava deteta
-   - also (blic): "Čupić je gorostas koji nikada više neće dozvoliti da neko dete bude žrtva ravnodušnosti institucija" Poslanica Studentske liste Sanja Belić objasnila predlog za predsednika Skupštine
-8. [multi, 3 outlets, score 39] Upozorenje RHMZ-a na obilne pljuskove i jak olujni vetar
-   - also (n1): RHMZ upozorio na veliku kišu i jak vetar popodne i uveče
-   - also (blic): RHMZ upalio najviši stepen upozorenja zbog obilnih padavina: Posle podne i grmljavina, a velika kiša sručiće se i na Beograd za samo 12 sati
-9. [multi, 3 outlets, score 38.5] Evo ih; Sva trojica na istom mestu i za trenutak sve je stalo VIDEO
-   - also (nova): FOTO Tramp i Putin se rukovali pred Si Đinpingom: Trojica svetskih lidera na istom mestu, sutra trilateralni sastanak
-   - also (politika): Tramp u Kini sa svetskim liderima: U fokusu susreti sa Putinom i Sijem
-10. [multi, 3 outlets, score 37.9] OŠ "Despot Stefan Lazarević": Ministarstvo obavešteno o incidentu u "Galeriji", poseta bioskopu predviđena planom
-   - also (politika): Hitan sastanak tima za krizne situacije u OŠ „Despot Stefan Lazarević” nakon nezgode u „Galeriji”
-   - also (blic): Sastaje se Tim za krizne situacije: Oglasilo se Ministarstvo prosvete o padu učenika sa stepenica u TC "Galeriji"
-   - also (blic): Oglasila se OŠ "Despot Stefan Lazarević" o đacima koji su povređeni u TC "Galerija: Ovo je bio razlog posete
+1. [multi, 5 outlets, score 58.9] SDP podržava Čupića za predsednika Skupštine
+   - also (b92): SDP podržava Aleksandra Čupića za predsednika Skupštine
+   - also (blic): Sandžačka demokratska partija podržala Čupića za predsednika Skupštine
+   - also (n1): Podrška Sandžačke demokratske partije Čupiću stigla posle završetka sednice Skupštine
+   - also (nova): Podrška SDP-a Aleksandru Čupiću stigla posle završetka današnje sednice Skupštine
+2. [multi, 4 outlets, score 45] Čupić: Veliki broj povreda poslovnika u Skupštini, podneću izveštaj o imovini po zakonu
+   - also (nova): Čupić: Podneću izveštaj o imovini Agenciji i dati priliku svima koji su spekulisali i klevetali da mi se izvine
+   - also (n1): Čupić: Podneću izveštaj o imovini Agenciji i dati priliku svima koji su spekulisali i klevetali da mi se izvine
+   - also (blic): "Podneću izveštaj o svojoj imovini" Oglasio se Čupić sa Studentske liste posle sednice: "Vučić govorio pet sati, sa tom praksom će se prestati"
+3. [multi, 3 outlets, score 38.3] Studentski pokret traži da se leks specijalis za Generalštab stavi van snage
+   - also (n1): Studentski pokret: Bez odlaganja staviti javnosti na uvid dokumentaciju o projektu Generalštab
+   - also (nova): Studentski pokret: Bez odlaganja staviti javnosti na uvid dokumentaciju o projektu Generalštab i ukinuti leks specijalis
+4. [multi, 3 outlets, score 37.1] Studentska lista sa predstavnicima Nemačke, Saveta Evrope i Francuske
+   - also (nova): Studentska lista nastavlja razgovore sa međunarodnim partnerima: Sastanci sa predstavnicima Francuske, Nemačke i Saveta Evrope
+   - also (blic): Studentska lista sastaje se sa predstavnicima Francuske, Nemačke i Saveta Evrope
+5. [multi, 3 outlets, score 35.8] Tijafo pregazio Kobolija, Italijanov debakl koji će dugo boleti
+   - also (politika): Tijafo bolji od Kobolija
+   - also (b92): Tijafo ugasio italijansku nadu: Koboli doživeo debakl u Torinu!
+6. [multi, 3 outlets, score 35.3] Ponavljanje izbora za članove saveta nacionalnih manjina na pet biračkih mesta
+   - also (nova): RIK: Na pet biračkih mesta, 22. novembra, ponavlja se glasanje za tri saveta nacionalnih manjina
+   - also (n1): RIK: Na pet biračkih mesta, 22. novembra, ponavlja se glasanje za tri saveta nacionalnih manjina
+7. [multi, 3 outlets, score 35.2] Drama na Zelenom vencu: Muškarac izboden nožem
+   - also (nova): Muškarac (35) izboden nožem u grudi na Zelenom vencu u Beogradu, hitno prevezen na VMA
+   - also (blic): Muškarac (35) izboden u centru Beograda: Sa teškim povredama prevezen na VMA
+8. [multi, 2 outlets, score 29] Hitna intervencija ekipa na odgušenju ulične kanalizacije
+   - also (blic): "Zagušenja na nekoliko kritičnih tačaka", Oglasio se Beogradski vodovod: Hitna intervencija ekipa na odgušenju ulične kanalizacije
+9. [multi, 2 outlets, score 28.9] Huti udarili na Rijad: Napadnuti aerodrom i finansijski centar
+   - also (politika): Huti raketirali aerodrom i finansijski centar u Rijadu
+10. [multi, 2 outlets, score 28.5] Si Đinping ponizio Putina pred Trampom?
+   - also (blic): (FOTO) Da li je Si Đinping ovim potezom poručio Putinu da je prijateljstvu kraj?! Ceo svet primetio je jedan detalj, a umešan je i Tramp
+   - also (blic): POLITIČKE IGRE POČINJU! Otkriven plan za sastanak Trampa, Putina i Si Đinpinga: Svako ima svoj tajni motiv
 
 ## Details
 ### N1
-Categories: {"politika":14,"zivot":8,"ostalo":4,"svet":5,"ekonomija":8,"region":2,"drustvo":1,"sport":1,"hronika":2,"zdravlje":1}
+Categories: {"svet":8,"zivot":6,"region":4,"politika":7,"ostalo":10,"kultura":1,"drustvo":2,"ekonomija":2,"hronika":4,"tehnologija":1}
 Flagged:
-- (self) Dan uživo: Nova lica Skupštine Srbije <https://n1info.rs/najave-emisija/dan-uzivo-nova-lica-skupstine-srbije/>
+- (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
+- (self) Studio live, četvrtak u 12h: Čekajući predsednika <https://n1info.rs/najave-emisija/studio-live-cetvrtak-u-12h-cekajuci-predsednika/>
 Uncategorized sample:
-- Uverenje o prebivalištu, boravištu i prijava boravka preko eUprave <https://n1info.rs/vesti/uverenje-o-prebivalistu-boravistu-i-prijava-boravka-preko-euprave/> tags=["Vesti","mup srbije","prebivalište","euprava","boravište"]
-- Novinar Jutarnjeg programa Radio Beograda: Više puta nam bilo zabranjeno da u goste pozivamo predstavnike UNS <https://n1info.rs/vesti/novinar-jutarnjeg-programa-radio-beograda-vise-puta-nam-bilo-zabranjeno-da-u-goste-pozivamo-predstavnike-uns/> tags=["Vesti","miša stojiljković","novinari","medijski stručnjaci","uns","rts"]
-- Zapaljena još jedna teretana Ahilej u Beogradu, četvrta za mesec dana <https://n1info.rs/vesti/zapaljena-teretana-ahilej-na-banovom-brdu/> tags=["Vesti","podmetanje požara","teretana","ahilej"]
-- Bivši tužilac Rakić: Dolovac ne bi slala komisiju u VJT da nije došlo do promene vlasti <https://n1info.rs/vesti/bivsi-tuzilac-rakic-dolovac-ne-bi-slala-komisiju-u-vjt-da-nije-doslo-do-promene-vlasti/> tags=["Vesti","zagorka dolovac","veljko rakić","nenad stefanović","više javno tužilaštvo","vjt"]
+- Slučaj Asomakum: Falsifikovanim rešenjima Poreske uprave vraćani PIB-ovi fantomskim firmama <https://n1info.rs/vesti/slucaj-asomakum-falsifikovanim-resenjima-poreske-uprave-vracani-pib-ovi-fantomskim-firmama/> tags=["Vesti","pib","jmbg","asomakum","birn"]
+- N1 Direktno: Beogradska bezbednosna konferencija (17.11.2026) <https://n1info.rs/video/n1-direktno-beogradska-bezbednosna-konferencija-17112026/> tags=["Video","video","emisija","n1 direktno","beogradska bezbednosna konferencija"]
+- Grad Smederevo: Očekujemo da u toku sledeće nedelje bude uspostavljeno normalno odvoženje smeća <https://n1info.rs/vesti/nadlezne-sluzbe-gradske-uprave-smedereva-i-jkp-zelenilo-i-groblja-ocekuju-da-ce-u-toku-sledece-nedelje-biti-uspostavljeno-normalno-funkcionisanje-odvozenja-komunalnog-otpada/> tags=["Vesti","odlaganje otpada","smeće","odlaganje smeća","smederevo","grad smederevo"]
+- Nova.rs: Obustavljen disciplinski postupak protiv tužiteljke Bojane Savović <https://n1info.rs/vesti/novars-obustavljen-disciplinski-postupak-protiv-tuziteljke-bojane-savovic/> tags=["Vesti","disciplinski postupak","miodrag marković","nenad stefanović","disciplinska komisija","bojana savović"]
+- Ulice u Beogradu pod vodom zbog kiše, problemi u saobraćaju: Iz RHMZ navode da su najveći pljuskovi prošli <https://n1info.rs/vesti/ulice-u-beogradu-pod-vodom-zbog-kise-potopljene-vojvodjanska-i-juzni-bulevar/> tags=["Vesti","kiša","poplavljene ulice","gandijeva ulica","vojvođanska ulica"]
+- Dnevnik u 19 (17.10.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-17102026n1/> tags=["Dnevnik","dnevnik u 19","video","dnevnik","vesti"]
 
 ### Nova.rs
-Categories: {"politika":8,"sport":4,"ekonomija":5,"svet":8,"drustvo":5,"zivot":6,"zabava":5,"hronika":5,"kultura":3,"ostalo":1}
-Flagged:
-- (sponsored) WPP Media: YouTube Premium među pet najvećih plaćenih striming servisa u regionu CEE (Centralna i istočna Evropa), SVOD tržište se otvara za oglašavanje i dodatna partnerstva sa kablovskim operaterima <https://nova.rs/vesti/drustvo/wpp-media-youtube-premium-medju-pet-najvecih-placenih-striming-servisa-u-regionu-cee-centralna-i-istocna-evropa-svod-trziste-se-otvara-za-oglasavanje-i-dodatna-partnerstva-sa-kablovskim-operaterima/>
+Categories: {"sport":12,"svet":3,"zabava":11,"hronika":5,"politika":9,"zivot":1,"drustvo":6,"ekonomija":1,"ostalo":2}
 Uncategorized sample:
-- Priče jednog običnog Stanimira: Danas se smučio i kome do sad nije <https://nova.rs/kolumne/price-jednog-obicnog-stanimira-danas-se-smucio-i-kome-do-sad-nije/> tags=["Kolumne","kolumna","skupština srbije","bratislav marković","stanimir"]
+- Dnevnik - Cela emisija - 17.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-17112026/> tags=["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 17.11.2026. <https://nova.rs/emisije/medju-nama-cela-emisija-17112026/> tags=["Emisije","među nama cela emisija"]
 
 ### B92
-Categories: {"politika":7,"drustvo":3,"zivot":17,"sport":13,"zabava":3,"svet":9,"kultura":5,"ostalo":3,"region":1,"ekonomija":10,"tehnologija":4,"hronika":4,"zdravlje":1}
-Flagged:
-- (sponsored) Priča koja se plete polako, baš kao i dobar ukus <https://www.b92.net/zivot/promo/286017/prica-koja-se-plete-polako-bas-kao-i-dobar-ukus/vest>
-- (sponsored) Milioni fanova i povratak u Vice City: Šta sve donosi GTA 6, najiščekivanija igra decenije <https://www.b92.net/tehnopolis/promo/285981/milioni-fanova-i-povratak-u-vice-city-sta-sve-donosi-gta-6-najiscekivanija-igra-decenije/vest>
+Categories: {"svet":14,"sport":14,"zivot":17,"zdravlje":4,"politika":4,"tehnologija":3,"ekonomija":9,"hronika":2,"kultura":3,"zabava":5,"drustvo":4,"ostalo":1}
 Uncategorized sample:
-- Vozači, oprez na auto-putu Miloš Veliki: Usled izvođenja radova trake zatvorene i na Moravskom koridoru <https://www.b92.net/lokal/cacak/servisne-informacije/286028/vozaci-oprez-na-auto-putu-milos-veliki-usled-izvodjenja-radova-trake-zatvorene-i-na-moravskom-koridoru/vest> tags=["Najnovije"]
-- Imate beživotnu kosu bez sjaja? Možda pravite ovih pet grešaka sa regeneratorom <https://superzena.b92.net/lepa-i-zdrava/lepota-zene/286011/ovih-5-gresaka-sa-regeneratorom-unistava-izgled-kose/vest> tags=[]
-- Najlepša žena sveta se porodila u 45. godini: Njene fotke se šire mrežama FOTO <https://superzena.b92.net/dom-i-porodica/roditeljstvo/285957/porodila-se-en-hatavej-i-u-45-docekala-trece-dete/vest> tags=[]
+- U 52. godini ima telo na kom joj zavide i duplo mlađe: U šest ujutru već je u teretani VIDEO <https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/286100/eva-longorija-pokazala-svoju-fitnes-rutinu/vest> tags=[]
 
 ### Blic
-Categories: {"zabava":11,"svet":8,"ekonomija":10,"kultura":5,"hronika":10,"politika":12,"zdravlje":1,"zivot":5,"drustvo":6,"ostalo":1,"region":1}
-Uncategorized sample:
-- Povratak džentlmena: Zašto je dobar manir ponovo najprivlačnija osobina muškarca <https://www.blic.rs/good-life/hedonizam/dzentlmenstvo-danas-pristojnost-integritet-i-licni-stil-u-fokusu/4844wp6> tags=[]
+Categories: {"drustvo":10,"svet":7,"zabava":22,"politika":10,"hronika":9,"zivot":7,"zdravlje":1,"ekonomija":3,"kultura":1}
 
 ### Politika
-Categories: {"region":3,"svet":3,"ostalo":5,"politika":4,"sport":4,"hronika":1}
+Categories: {"ostalo":7,"tehnologija":1,"politika":1,"svet":6,"sport":1,"drustvo":1,"hronika":2,"ekonomija":1}
 Uncategorized sample:
-- Flautistkinja Iva Vujanić nastupa u „Gvarnerijusu” <https://www.politika.rs/scc/clanak/803929/flautistkinja-iva-vujanic-nastupa-u-gvarnerijusu> tags=[]
-- Obilni pljuskovi i grmljavina u Srbiji, moguće i do 50 litara kiše po kvadratnom metru <https://www.politika.rs/scc/clanak/803925/obilni-pljuskovi-i-grmljavina-u-srbiji-moguce-i-do-50-litara-kise-po-kvadratnom-metru> tags=[]
-- Nema opasnosti od nestašice goriva, država spremna da pusti dodatne rezerve <https://www.politika.rs/scc/clanak/803922/nema-opasnosti-od-nestasice-goriva-drzava-spremna-da-pusti-dodatne-rezerve> tags=[]
-- Američki vojnici i agenti CIA više nisu pod istragom Haškog suda za zločine u Avganistanu <https://www.politika.rs/scc/clanak/803921/americki-vojnici-i-agenti-cia-vise-nisu-pod-istragom-haskog-suda-za-zlocine-u-avganistanu> tags=[]
-- Hitan sastanak tima za krizne situacije u OŠ „Despot Stefan Lazarević” nakon nezgode u „Galeriji” <https://www.politika.rs/scc/clanak/803917/hitan-sastanak-tima-za-krizne-situacije-u-os-despot-stefan-lazarevic-nakon-nezgode-u-galeriji> tags=[]
+- Hitna intervencija ekipa na odgušenju ulične kanalizacije <https://www.politika.rs/scc/clanak/804143/hitna-intervencija-ekipa-na-odgusenju-ulicne-kanalizacije> tags=[]
+- Najstarija Dankinja ikada bila istaknuta članica nacističke partije <https://www.politika.rs/scc/clanak/804140/najstarija-dankinja-ikada-bila-istaknuta-clanica-nacisticke-partije> tags=[]
+- Kragujevac spreman za zimu, obezbeđeno održavanje 985 kilometara puteva <https://www.politika.rs/scc/clanak/804133/kragujevac-spreman-za-zimu-obezbedeno-odrzavanje-985-kilometara-puteva> tags=[]
+- Huti raketirali aerodrom i finansijski centar u Rijadu <https://www.politika.rs/scc/clanak/804123/huti-raketirali-aerodrom-i-finansijski-centar-u-rijadu> tags=[]
+- Više od 285.000 Kanađana traži opoziv američkog ambasadora Pita Hekstre <https://www.politika.rs/scc/clanak/804111/vise-od-285-000-kanadana-trazi-opoziv-americkog-ambasadora-pita-hekstre> tags=[]
+- Tri naftna tankera naletela na mine kod Ormuskog moreuza <https://www.politika.rs/scc/clanak/804109/tri-naftna-tankera-naletela-na-mine-kod-ormuskog-moreuza> tags=[]
 
 ### RTS
-Categories: {"zivot":1,"drustvo":6,"ekonomija":5,"region":1,"hronika":4,"politika":2,"svet":1}
+Categories: {"politika":9,"region":1,"ekonomija":2,"zivot":1,"drustvo":4,"hronika":1,"ostalo":1,"svet":1}
+Uncategorized sample:
+- Potvrđena afrička kuga svinja u selu Brnjica, kod Knića; u jednom domaćinstvu 120 grla eutanazirano <https://www.rts.rs/vesti/srbija-danas/6086873/potvrdjena-africka-kuga-svinja-u-selu-brnjica-kod-knica-u-jednom-domacinstvu-120-grla-eutanazirano.html> tags=["Srbija danas"]
