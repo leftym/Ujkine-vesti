@@ -1,97 +1,91 @@
 # Feed check
 
-Run: 2026-11-20T11:57:00.640Z
+Run: 2026-11-20T22:32:06.937Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 4 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 2 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net (homepage, +81) | 76 | 0 |
+| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 1 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +78) | 76 | 2 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"ostalo":7,"hronika":5,"ekonomija":5,"svet":4,"sport":1,"zivot":4,"drustvo":1,"region":3,"politika":13,"zdravlje":2,"tehnologija":1}
-- [ostalo] ANEM: Tajni nadzor BIA nad našim članicama, Ozonpressom i Cemaforumom, tražimo hitnu istragu
-- [hronika] Šešelj saslušan u svojstvu građanina zbog izjave da bi Rada Trajković mogla da bude ubijena
-- [ekonomija] Objavljene nove cene goriva: Pojeftinio benzin
-- [svet] Kancelarija za KiM o rušenju na Gazivodama: Obavestićemo sve međunarodne predstavnike
-- [sport] Srbija saznala rivala za baraž Lige nacija: Bitka za A diviziju počinje u martu
-- [zivot] Zlatni volan 2026: Najbolji automobili po izboru nemačkih stručnjaka
-  - flagged (self): Gledajte UŽIVO N1 Studio live: Tranzicija vlasti https://n1info.rs/najave-emisija/n1-studio-live-petak-od-12h-tranzicija-vlasti/
-  - flagged (self): Dan uživo: Najava raspisivanja predsedničkih izbora https://n1info.rs/najave-emisija/dan-uzivo-najava-raspisivanja-predsednickih-izbora/
-  - flagged (self): "Utisak nedelje": Gosti Aleksandar Čupić, Ivanka Popović i Stefan Surlić https://n1info.rs/najave-emisija/utisak-nedelje-gosti-aleksandar-cupic-ivanka-popovic-i-stefan-surlic/
-  - flagged (self): Crvena linija o parlamentima u regionu i njihovoj snazi https://n1info.rs/najave-emisija/crvena-linija-o-parlamentima-u-regionu-i-njihovoj-snazi/
+Categories: {"svet":11,"zivot":8,"sport":2,"ostalo":6,"ekonomija":1,"region":4,"kultura":1,"politika":9,"zdravlje":1,"hronika":2,"drustvo":1}
+- [svet] Tramp brani to što naziva Putina prijateljem
+- [zivot] Filadelfija u znaku Rokija: Stotine obožavalaca kultnog filma oborile Ginisov rekord
+- [sport] Partizan pobedio ekipu Bešiktaša
+- [svet] Mamdani predstavio plan zatvaranja zloglasnog njujorškog zatvora na Rajkerovom ostrvu do 2032.
+- [sport] Košarkaši Zvezde pobedili Barselonu posle produžetka
+- [svet] Tramp kaže uvešće visoke namete kompanijama koje grade data centre van zemlje
+  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
 
 Uncategorized sample (for tuning):
-- ANEM: Tajni nadzor BIA nad našim članicama, Ozonpressom i Cemaforumom, tražimo hitnu istragu | https://n1info.rs/vesti/anem-tajni-nadzor-bia-nad-nasim-clanicama-ozonpressom-i-cemaforumom-trazimo-hitnu-istragu/ | tags: ["Vesti","bezbednosno informativna agencija","čačak","afera prisluškivanje","prisluškivanje novinara","cemaforum"]
-- Kancelarija za IT: Ujedinjene nacije Srbiju svrstale na 22. mesto po razvoju elektronske uprave | https://n1info.rs/vesti/srbija-elektronska-uprava-22-na-svetu/ | tags: ["Vesti","kancelarija za it","euprava","elektronska uprava"]
-- Zavod za biocide i medicinsku ekologiju nije uključen u posao sanitarne zaštite na lokaciji Ekspa | https://n1info.rs/vesti/iskljucivo-pravo-zavoda-za-biocide-i-medicinsku-ekologiju-da-sprovodi-mere-dezinfekcije-dezinsekcije-i-deratizacije/ | tags: ["Vesti","ekologija","batut","ekspo 2027","deratizacija","zavod za biocide i medicinsku ekologiju"]
-- "Utisak nedelje": Gosti Aleksandar Čupić, Ivanka Popović i Stefan Surlić | https://n1info.rs/najave-emisija/utisak-nedelje-gosti-aleksandar-cupic-ivanka-popovic-i-stefan-surlic/ | tags: ["Najave emisija"]
-- Rupa ispunjena ambrozijom koja služi kao javni WC: Novi "ukras" centra Beograda koji ne smeta nikom osim stanarima | https://n1info.rs/vesti/terazijska-terasa-rupa-ambrozija/ | tags: ["Vesti","terazijska terasa","grad beograd","rupa","park","ambrozija"]
-- Zapalio se magacin fabrike u Prijepolju | https://n1info.rs/vesti/zapalila-se-fabrika-u-prijepolju-nema-informacija-o-povredjenima/ | tags: ["Vesti","fabrika","prijepolje","požar"]
-- Pomozimo Đurđini slanjem 357 na 2407 | https://n1info.rs/vesti/brojke-upozoravaju-da-svako-peto-od-desetoro-dece-u-srbiji-trpi-neki-oblik-nasilja/ | tags: ["Vesti","humanitarna akcija"]
+- Munja pogodila avion "Er Srbije" na letu za Mostar: Otkazan povratak, letelica upućena na pregled | https://n1info.rs/vesti/munja-pogodila-avion-er-srbije-na-letu-za-mostar/ | tags: ["Vesti","er srbija","avion","mostar","munja"]
+- Dnevnik u 19 (19.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-19112026/ | tags: ["Dnevnik","video","dnevnik u 19","dnevnik","vesti"]
+- Reakcija JKP "Javno osvetljenje" na prilog N1: Oboreni stub u vlasništvu EDS | https://n1info.rs/vesti/reakcija-jkp-javno-osvetljenje-na-prilog-n1-oboreni-stub-u-vlasnistvu-eds/ | tags: ["Vesti","javno osvetljenje","struja","jkp","rasveta","reakcija"]
+- Aktivisti na Trgu republike obeležili Dan sećanja na žrtve transfobije | https://n1info.rs/vesti/aktivisti-na-trgu-republike-obelezili-dan-secanja-na-zrtve-transfobije/ | tags: ["Vesti","međunarodni dan","sećanje","lgbti+","transfobija"]
+- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
+- Autobus na Dorćolu udario tinejdžera | https://n1info.rs/vesti/autobus-na-dorcolu-udario-tinejdzera/ | tags: ["Vesti","tiršova","tinejdžeri","dečak","dorćol","autobus"]
 
 ## Nova.rs
-Categories: {"zabava":7,"hronika":6,"ekonomija":3,"zivot":5,"politika":9,"sport":7,"svet":6,"kultura":3,"drustvo":3,"ostalo":1}
-- [zabava] Preminuo otac Bruna Marsa: Pevač objavio poslednju zajedničku fotografiju (FOTO)
-- [hronika] Tužilaštvo o slučaju Aleksandra Šapića: Agencija za sprečavanje korupcije krivičnu prijavu podnela još 2025. godine
-- [ekonomija] Objavljene nove cene goriva: Benzin pojeftinio
-- [zivot] SNS-ovci napravili račun od skoro 100.000 dinara u Skupštini: Evo koliko bi mogli da izgube od plate zbog opomena
-- [politika] Pogačar: Brat Dine Vučinić dobio otkaz nakon što se 10 godina nije pojavio na poslu
-- [sport] Spektakl u četvrtfinalu Lige nacija, sudar fudbalskih "titana"
-  - flagged (sponsored): Nevidljiva fiksna proteza: Do lepog osmeha bez ružnih bravica https://nova.rs/magazin/zdravlje/nevidljiva-fiksna-proteza-do-lepog-osmeha-bez-ruznih-bravica/
-  - flagged (sponsored): Nevidljiva fiksna proteza: Do lepog osmeha bez ružnih bravica https://nova.rs/vesti/drustvo/nevidljiva-fiksna-proteza-do-lepog-osmeha-bez-ruznih-bravica/
+Categories: {"sport":17,"drustvo":7,"zivot":1,"politika":4,"zabava":11,"svet":3,"hronika":5,"ostalo":2}
+- [sport] VIDEO Karlik Džons doneo pobedu Partizanu posle produžetaka: Ludnica u "Pioniru" kakva se ne pamti
+- [sport] Zvezda srušila Barselonu posle produžetka, Koloko blokadom rešio meč
+- [drustvo] Munja pogodila avion "Er Srbije" na letu za Mostar: Otkazan povratak, letelica upućena na pregled
+- [zivot] Reč "televizija" 1931. izazivala je veliki strah u Beogradu: Mislili su da je to đavo, okultizam ili nešto jako opasno
+- [politika] Novi šef Delegacije EU u Srbiji ugostio Čupića: "Narodna skupština ima čvrstog saveznika u Uniji"
+- [zabava] Pozivao ju je u sobu svaki put kada majka ode: Čuvena oskarovka posle 50 godina otkrila jezive detalje zlostavljanja koje je trpela u detinjstvu
 
 Uncategorized sample (for tuning):
-- Mentalno razgibavanje: Zli matorac | https://nova.rs/emisije/mentalno-razgibavanje-zli-matorac/ | tags: ["Emisije","mentalno razgibavanje cela emisija"]
+- Dnevnik - Cela emisija - 19.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-19112026/ | tags: ["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 19.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-19112026/ | tags: ["Emisije","među nama cela emisija"]
 
 ## B92
-Categories: {"sport":13,"svet":7,"zivot":22,"drustvo":2,"hronika":3,"ekonomija":12,"region":2,"kultura":6,"politika":2,"zabava":4,"tehnologija":4,"zdravlje":3}
-- [sport] Selektor Mađarske o Srbiji: "Moglo je i gore"
-- [sport] Vembanjama šokirao NBA potezom, a onda otkrio šta se krije iza svega VIDEO
-- [svet] To je to, zatvaraju granicu
-- [sport] Srbija saznala rivala – težak posao za "Orlove"
-- [zivot] Ova greška ga je koštala kuće: Nije overio kartu za voz, sada mora da plati 148.000 evra
-- [drustvo] Gazela i 800 pijanih vozača: Jedan alkoholisan prelazi most na manje od dva minuta
+Categories: {"sport":15,"zivot":17,"svet":14,"ekonomija":10,"region":1,"politika":2,"kultura":4,"drustvo":3,"hronika":3,"zdravlje":5,"zabava":3,"ostalo":2,"tehnologija":1}
+- [sport] Tajson "nokautirao" Barsu! "Nebo je granica"
+- [sport] Alimpijević: "Nismo mogli da se prilagodimo na atmosferu"; Đoan: "Nisu izgovori, ali..."
+- [zivot] Rim ove godine sprema božićni spektakl: Jelka u Vatikanu zasijaće istovremeno sa najvećom na svetu VIDEO
+- [svet] Na nebu iznad Japana se pojavio američki "avion sudnjeg dana"
+- [sport] Kao nekad: Drama u Pioniru, buka "grobara" i pobeda Partizana!; Džons: "Kada je tako – teško je protiv nas"
+- [sport] Partizanova pobeda za infarkt
+  - flagged (promo): Svetski dan deteta uz Vulkančić: 20% popusta na sve dečje knjige i besplatna dostava! https://www.b92.net/kultura/knjigestripovi/286721/svetski-dan-deteta-uz-vulkancic-20-popusta-na-sve-decje-knjige-i-besplatna-dostava/vest
+  - flagged (sponsored): Prihodi od poreza u industriji igara na sreću porasli 11 puta za 15 godina: Državi 220 miliona evra godišnje https://www.b92.net/zivot/promo/286716/prihodi-od-poreza-u-industriji-igara-na-srecu-porasli-11-puta-za-15-godina-drzavi-220-miliona-evra-godisnje/vest
+
+Uncategorized sample (for tuning):
+- Zašto su bakine supe imale poseban ukus? Ove korake često preskačemo tokom pripreme | https://superzena.b92.net/kuhinja/prakticni-saveti/286776/pet-tajni-za-ukusnu-domacu-supu-kao-kod-bake/vest | tags: []
+- Koru od banane više nikada nećete baciti: Ove površine u kući čisti "kao luda" | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/285485/pasta-od-banane-i-sode-bikarbone-riba-sve-po-kuci-i-vrlo-je-efikasna/vest | tags: []
 
 ## Blic
-Categories: {"drustvo":7,"kultura":4,"politika":9,"svet":6,"zabava":12,"ekonomija":16,"hronika":8,"zivot":5,"tehnologija":2,"ostalo":1}
-- [drustvo] (Mapa) Zatvara se deo Novog Beograda i Zemuna: Ovo je trasa dve trke u nedelju, pogledajte kompletan spisak ulica
-- [kultura] Plasido Domingo dolazi u Beograd: Najavljen gala koncert u Sava centru
-- [politika] Kancelarija za KiM: Obavestićemo međunarodnu javnost o rušenju srpske imovine na Kosovu i Metohiji (Video)
-- [svet] Pucnjava u Zagrebu: NN osoba pucala u muškarca, potom ga lupala po glavi, pa pobegla
-- [drustvo] Meri se nivo zračenja u Nišu: Kreće kontrola baznih stanica na ovih 11 lokacija, biće poznat uticaj na zdravlje ljudi
-- [zabava] "Ona je nestvarna, osetio sam da bismo mogli da napravimo nešto lepo": Jakov Jozinović i Džejla Ramović o trenutku kada je sve počelo
-
-Uncategorized sample (for tuning):
-- Sve više ljudi bira samoću, a psiholozi objašnjavaju zašto to ne mora da bude znak usamljenosti | https://www.blic.rs/good-life/hedonizam/zasto-sve-vise-ljudi-bira-mir-i-samocu-umesto-drustvenih-okupljanja/d1989v7 | tags: []
+Categories: {"svet":4,"zabava":25,"ekonomija":4,"zivot":9,"politika":12,"drustvo":7,"hronika":7,"zdravlje":1,"kultura":1}
+- [svet] (Video) Tuče snažan grad, sve se zabelelo kao usred zime! Snažno nevreme pogodilo Hrvatsku, izazvalo probleme u saobraćaju
+- [zabava] PRAVO UMETNIČKO DELO NA SLAVSKOJ TRPEZI! Pogledajte kakvo žito i kolače je spremila Bojana Ristivojević za sutrašnji Aranđelovdan
+- [ekonomija] Fitch potvrdio pozitivne izglede Srbije za dobijanje investicionog kreditnog rejtinga
+- [zabava] KAKVO EMOTIVNO VEČE! Luka otpevao pesmu Džeja Ramadanovskog - Nataša, Relja i Seka oduševljeni: "Zaigralo mi je srce, bilo je emotivno"
+- [zivot] Podigli ste otirač, a ispod ostala fleka? Kod vinilnih i PVC podova problem se često krije u samoj poleđini prostirke
+- [zabava] "MNOGIMA TEŠKO PADA TO ŠTO JE SEKA OŠTRA" Bojana Srdanović o takmičenju i hejterima: "Prija mi kad kažu da sam prirodna lepotica" (VIDEO)
 
 ## Politika
-Categories: {"ostalo":9,"svet":4,"ekonomija":1,"hronika":2,"sport":1,"drustvo":1,"region":1,"politika":1}
-- [ostalo] SAD prvi put prodale zakup morskog dna za dubokomorsko rudarenje: ekolozi upozoravaju na opasnost po Pacifik
-- [ostalo] Kruševac u zimsku sezonu ulazi sa 40 tona soli i pet kamiona za održavanje puteva
-- [svet] Makron ugostio Kamalu Haris u Parizu na privatnom sastanku
-- [ostalo] Od Novog Sada do publike širom sveta: 23 miliona pregleda tribina KCNS-a
-- [svet] Nova rušenja srpske imovine na Gazivodama: Kancelarija za KiM zahteva reakciju EU i OEBS
-- [ekonomija] Nove cene goriva u Srbiji
+Categories: {"sport":6,"ekonomija":1,"svet":4,"politika":3,"ostalo":4,"hronika":1,"zdravlje":1}
+- [sport] Partizan posle produžetka savladao Bešiktaš sa 91:87
+- [ekonomija] Agencija Fič potvrdila kreditni rejting Srbije na nivou BB+
+- [sport] Zvezda preživela triler i slavila u Barseloni
+- [svet] Beljajev: Strana diplomatska predstavništva nisu mete Rusije
+- [sport] Medvedev savladao Tijafoa za plasman u polufinale Završnog turnira u Torinu
+- [politika] Vasalo ugostio Čupića: Skupština Srbije ima pouzdanog partnera u EU
 
 Uncategorized sample (for tuning):
-- SAD prvi put prodale zakup morskog dna za dubokomorsko rudarenje: ekolozi upozoravaju na opasnost po Pacifik | https://www.politika.rs/scc/clanak/804562/sad-prvi-put-prodale-zakup-morskog-dna-za-dubokomorsko-rudarenje-ekolozi-upozoravaju-na-opasnost-po-pacifik | tags: []
-- Kruševac u zimsku sezonu ulazi sa 40 tona soli i pet kamiona za održavanje puteva | https://www.politika.rs/scc/clanak/804560/krusevac-u-zimsku-sezonu-ulazi-sa-40-tona-soli-i-pet-kamiona-za-odrzavanje-puteva | tags: []
-- Od Novog Sada do publike širom sveta: 23 miliona pregleda tribina KCNS-a | https://www.politika.rs/scc/clanak/804559/od-novog-sada-do-publike-sirom-sveta-23-miliona-pregleda-tribina-kcns-a | tags: []
-- Obustavljen postupak protiv studenata za pripremanje nasilne promene ustavnog poretka | https://www.politika.rs/scc/clanak/804537/obustavljen-postupak-protiv-studenata-za-pripremanje-nasilne-promene-ustavnog-poretka | tags: []
-- Niška „Sofka” gostuje u Beogradu | https://www.politika.rs/scc/clanak/804552/niska-sofka-gostuje-u-beogradu | tags: []
-- Društvo za zaštitu ptica traži odbacivanje plana za solarnu elektranu kod Opova i Barande | https://www.politika.rs/scc/clanak/804551/drustvo-za-zastitu-ptica-trazi-odbacivanje-plana-za-solarnu-elektranu-kod-opova-i-barande | tags: []
-- Razbijena mreža trgovine ljudima: Više od 70 žena iz Rumunije eksploatisano u devet evropskih zemalja | https://www.politika.rs/scc/clanak/804549/razbijena-mreza-trgovine-ljudima-vise-od-70-zena-iz-rumunije-eksploatisano-u-devet-evropskih-zemalja | tags: []
-- Majkl Fransis: Rahmanjinovljeve „Simfonijske igre” najruskija su melodija na najameričkijem instrumentu | https://www.politika.rs/scc/clanak/804547/majkl-fransis-rahmanjinovljeve-simfonijske-igre-najruskija-su-melodija-na-najamerickijem-instrumentu | tags: []
+- Španski centri podataka moraće 80 odsto struje da dobijaju iz obnovljivih izvora | https://www.politika.rs/scc/clanak/804782/spanski-centri-podataka-morace-80-odsto-struje-da-dobijaju-iz-obnovljivih-izvora | tags: []
+- Politiko: sindikat zaposlenih u EK kritikovao ćutanje o velikom sajber napadu | https://www.politika.rs/scc/clanak/804762/politiko-sindikat-zaposlenih-u-ek-kritikovao-cutanje-o-velikom-sajber-napadu | tags: []
+- Počeo postupak za razrešenje dekana DIF-a Patrika Drida | https://www.politika.rs/scc/clanak/804749/poceo-postupak-za-razresenje-dekana-dif-a-patrika-drida | tags: []
+- Brend priznao da ga je kod Kel Brajan privukla boja kože | https://www.politika.rs/scc/clanak/804744/brend-priznao-da-ga-je-kod-kel-brajan-privukla-boja-koze | tags: []
 
 ## RTS
-Categories: {"ekonomija":4,"hronika":6,"svet":1,"politika":5,"drustvo":2,"zivot":2}
-- [ekonomija] Objavljene nove cene goriva
-- [hronika] Iz luke u Sremskoj Mitrovici otkačilo se šest barži i elevator, plovila stigla do Šapca
-- [svet] Rusija pokrenula masovni napad na Ukrajinu; oštećena tri mosta u Kijevu, izbili požari, ima žrtava
-- [hronika] Viši sud u Beogradu osudio muškarca zbog ubistva transrodne osobe na 14 godina zatvora, tužilaštvo najavilo žalbu
-- [politika] Čupić: Raspisaću predsedničke izbore u narednih nekoliko dana
-- [hronika] Postupak za pozivanje na promenu ustavnog poretka i formalno okončan; studenti: Proces bio pravno neodrživ
+Categories: {"ekonomija":3,"hronika":5,"drustvo":8,"politika":1,"svet":2,"zivot":1}
+- [ekonomija] Fič potvrdio pozitivne izglede Srbije za dobijanje investicionog kreditnog rejtinga
+- [hronika] Trojica pravosnažno osuđena na pet godina i tri meseca zbog dogovaranja ubistva Luke Bojovića
+- [drustvo] Patrijarh Porfirije u Moskvi sasluživao u liturgiji povodom 80. rođendana patrijarha Kirila
+- [politika] Vasalo sa Čupićem: U sprovođenju reformi Skupština ima pouzdanog partnera u EU
+- [drustvo] Mediji na prekretnici - ko i kako može da vrati poverenje građana
+- [drustvo] Munja pogodila avion "Er Srbije" na letu za Mostar - letelica upućena na tehnički pregled
