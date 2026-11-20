@@ -1,90 +1,97 @@
 # Feed check
 
-Run: 2026-11-19T22:57:00.929Z
+Run: 2026-11-20T11:57:00.640Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 45 | https://n1info.rs/feed/ | 45 | 1 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +83) | 76 | 1 |
+| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 4 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 2 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net (homepage, +81) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":11,"politika":9,"zivot":6,"hronika":4,"region":4,"zabava":1,"drustvo":4,"sport":1,"ostalo":4,"ekonomija":1}
-- [svet] AI plišana igračka - namenjena deci od tri godine - pričala o pogubljenjima i grupnim silovanjima
-- [politika] (BLOG) Skupština Srbije dobila predsednika i šest potpredsednika
-- [svet] Tramp poručio Evropi da bi okončanjem rata u Ukrajini mogla da sačuva živote i uštedi novac
-- [zivot] "Uloga koju je bilo nemoguće odigrati": Tarantino umalo odustao od "Inglourious Basterds" jer nije mogao da pronađe savršenog Landu
-- [zivot] Tržišna vrednost kompanije Antropik oko dva biliona dolara
-- [politika] Bakić: Studentska lista pobedila među manjinskim narodima, zato predlaže svih šest potpredsednika
-  - flagged (self): Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+Categories: {"ostalo":7,"hronika":5,"ekonomija":5,"svet":4,"sport":1,"zivot":4,"drustvo":1,"region":3,"politika":13,"zdravlje":2,"tehnologija":1}
+- [ostalo] ANEM: Tajni nadzor BIA nad našim članicama, Ozonpressom i Cemaforumom, tražimo hitnu istragu
+- [hronika] Šešelj saslušan u svojstvu građanina zbog izjave da bi Rada Trajković mogla da bude ubijena
+- [ekonomija] Objavljene nove cene goriva: Pojeftinio benzin
+- [svet] Kancelarija za KiM o rušenju na Gazivodama: Obavestićemo sve međunarodne predstavnike
+- [sport] Srbija saznala rivala za baraž Lige nacija: Bitka za A diviziju počinje u martu
+- [zivot] Zlatni volan 2026: Najbolji automobili po izboru nemačkih stručnjaka
+  - flagged (self): Gledajte UŽIVO N1 Studio live: Tranzicija vlasti https://n1info.rs/najave-emisija/n1-studio-live-petak-od-12h-tranzicija-vlasti/
+  - flagged (self): Dan uživo: Najava raspisivanja predsedničkih izbora https://n1info.rs/najave-emisija/dan-uzivo-najava-raspisivanja-predsednickih-izbora/
+  - flagged (self): "Utisak nedelje": Gosti Aleksandar Čupić, Ivanka Popović i Stefan Surlić https://n1info.rs/najave-emisija/utisak-nedelje-gosti-aleksandar-cupic-ivanka-popovic-i-stefan-surlic/
+  - flagged (self): Crvena linija o parlamentima u regionu i njihovoj snazi https://n1info.rs/najave-emisija/crvena-linija-o-parlamentima-u-regionu-i-njihovoj-snazi/
 
 Uncategorized sample (for tuning):
-- N1 Direktno: Beogradska bezbednosna konferencija (18.11.2026) | https://n1info.rs/video/n1-direktno-beogradska-bezbednosna-konferencija-18112026/ | tags: ["Video","n1 direktno","emisija","beogradska bezbednosna konferencija","video"]
-- Dnevnik u 19 (18.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-18112026/ | tags: ["Dnevnik","vesti","dnevnik","dnevnik u 19","video"]
-- Dan uživo (18.11.2026) | https://n1info.rs/video/dan-uzivo/dan-uzivo-18112026/ | tags: ["Dan uživo","video","emisija","dan uživo"]
-- Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
+- ANEM: Tajni nadzor BIA nad našim članicama, Ozonpressom i Cemaforumom, tražimo hitnu istragu | https://n1info.rs/vesti/anem-tajni-nadzor-bia-nad-nasim-clanicama-ozonpressom-i-cemaforumom-trazimo-hitnu-istragu/ | tags: ["Vesti","bezbednosno informativna agencija","čačak","afera prisluškivanje","prisluškivanje novinara","cemaforum"]
+- Kancelarija za IT: Ujedinjene nacije Srbiju svrstale na 22. mesto po razvoju elektronske uprave | https://n1info.rs/vesti/srbija-elektronska-uprava-22-na-svetu/ | tags: ["Vesti","kancelarija za it","euprava","elektronska uprava"]
+- Zavod za biocide i medicinsku ekologiju nije uključen u posao sanitarne zaštite na lokaciji Ekspa | https://n1info.rs/vesti/iskljucivo-pravo-zavoda-za-biocide-i-medicinsku-ekologiju-da-sprovodi-mere-dezinfekcije-dezinsekcije-i-deratizacije/ | tags: ["Vesti","ekologija","batut","ekspo 2027","deratizacija","zavod za biocide i medicinsku ekologiju"]
+- "Utisak nedelje": Gosti Aleksandar Čupić, Ivanka Popović i Stefan Surlić | https://n1info.rs/najave-emisija/utisak-nedelje-gosti-aleksandar-cupic-ivanka-popovic-i-stefan-surlic/ | tags: ["Najave emisija"]
+- Rupa ispunjena ambrozijom koja služi kao javni WC: Novi "ukras" centra Beograda koji ne smeta nikom osim stanarima | https://n1info.rs/vesti/terazijska-terasa-rupa-ambrozija/ | tags: ["Vesti","terazijska terasa","grad beograd","rupa","park","ambrozija"]
+- Zapalio se magacin fabrike u Prijepolju | https://n1info.rs/vesti/zapalila-se-fabrika-u-prijepolju-nema-informacija-o-povredjenima/ | tags: ["Vesti","fabrika","prijepolje","požar"]
+- Pomozimo Đurđini slanjem 357 na 2407 | https://n1info.rs/vesti/brojke-upozoravaju-da-svako-peto-od-desetoro-dece-u-srbiji-trpi-neki-oblik-nasilja/ | tags: ["Vesti","humanitarna akcija"]
 
 ## Nova.rs
-Categories: {"politika":9,"sport":13,"svet":7,"hronika":4,"drustvo":7,"zabava":5,"zivot":1,"ostalo":2,"kultura":1,"ekonomija":1}
-- [politika] Poslanici Studentske liste izabrani za potpredsednike Narodne skupštine: Čak tri nacionalne manjine rame uz rame sa Aleksandrom Čupićem
-- [politika] BLOG UŽIVO Izabrano šest potpredsednika Narodne skupštine sa Studentske liste, naprednjaci ljutito napustili salu
-- [sport] Ostoja Mijailović se hitno oglasio zbog Karlika Džonsa
-- [politika] Pokret za novi početak vojvođanskih Mađara podneo krivičnu prijavu i tri predstavke zbog snimka
-- [sport] Poznat prvi polufinalni par na Završnom mastersu u Torinu, Zverev pokazao da nije slučajno prvi na svetu i sad čeka rivala
-- [politika] Američka ambasada čestitala Čupiću izbor za predsednika Skupštine
+Categories: {"zabava":7,"hronika":6,"ekonomija":3,"zivot":5,"politika":9,"sport":7,"svet":6,"kultura":3,"drustvo":3,"ostalo":1}
+- [zabava] Preminuo otac Bruna Marsa: Pevač objavio poslednju zajedničku fotografiju (FOTO)
+- [hronika] Tužilaštvo o slučaju Aleksandra Šapića: Agencija za sprečavanje korupcije krivičnu prijavu podnela još 2025. godine
+- [ekonomija] Objavljene nove cene goriva: Benzin pojeftinio
+- [zivot] SNS-ovci napravili račun od skoro 100.000 dinara u Skupštini: Evo koliko bi mogli da izgube od plate zbog opomena
+- [politika] Pogačar: Brat Dine Vučinić dobio otkaz nakon što se 10 godina nije pojavio na poslu
+- [sport] Spektakl u četvrtfinalu Lige nacija, sudar fudbalskih "titana"
+  - flagged (sponsored): Nevidljiva fiksna proteza: Do lepog osmeha bez ružnih bravica https://nova.rs/magazin/zdravlje/nevidljiva-fiksna-proteza-do-lepog-osmeha-bez-ruznih-bravica/
+  - flagged (sponsored): Nevidljiva fiksna proteza: Do lepog osmeha bez ružnih bravica https://nova.rs/vesti/drustvo/nevidljiva-fiksna-proteza-do-lepog-osmeha-bez-ruznih-bravica/
 
 Uncategorized sample (for tuning):
-- Dnevnik - Cela emisija - 18.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-18112026/ | tags: ["Emisije","dnevnik cela emisija"]
-- Među nama - Cela emisija - 18.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-18112026/ | tags: ["Emisije","među nama cela emisija"]
+- Mentalno razgibavanje: Zli matorac | https://nova.rs/emisije/mentalno-razgibavanje-zli-matorac/ | tags: ["Emisije","mentalno razgibavanje cela emisija"]
 
 ## B92
-Categories: {"sport":17,"svet":12,"politika":4,"drustvo":4,"kultura":4,"zivot":15,"tehnologija":4,"ekonomija":10,"zdravlje":4,"zabava":1,"region":2,"hronika":2,"ostalo":1}
-- [sport] Srpske košarkašice pozvane na prestižni kamp FIBA i NBA
-- [svet] Poplave napravile haos u Francuskoj: Stotine ljudi evakuisano; Škole zatvorene, putevi pod vodom VIDEO
-- [politika] Skupština odlučila nakon višečasovne rasprave; Ovo su potpredsednici parlamenta
-- [politika] Traje zasedanje Skupštine; Zaključeno glasanje – odabrani potpredsednici parlamenta FOTO/VIDEO
-- [sport] Radnički i Novi Beograd potencijalno tek u finalu
-- [drustvo] Vetar prevrnuo prikolicu kamiona kod Beograda; Izdato upozorenje: "Ostanite u kućama i udaljite se od prozora"
-  - flagged (sponsored): Dvocifren rast prometa uz više od 190 miliona prodatih proizvoda: dm beleži još jednu rekordnu godinu https://www.b92.net/zivot/promo/286416/dvocifren-rast-prometa-uz-vise-od-190-miliona-prodatih-proizvoda-dm-belezi-jos-jednu-rekordnu-godinu/vest
-
-Uncategorized sample (for tuning):
-- Trikovi kako da vam pire krompir uvek bude kremast i sočan | https://superzena.b92.net/kuhinja/prakticni-saveti/285994/trikovi-kako-da-vam-pire-krompir-uvek-bude-kremast-i-socan/vest | tags: []
+Categories: {"sport":13,"svet":7,"zivot":22,"drustvo":2,"hronika":3,"ekonomija":12,"region":2,"kultura":6,"politika":2,"zabava":4,"tehnologija":4,"zdravlje":3}
+- [sport] Selektor Mađarske o Srbiji: "Moglo je i gore"
+- [sport] Vembanjama šokirao NBA potezom, a onda otkrio šta se krije iza svega VIDEO
+- [svet] To je to, zatvaraju granicu
+- [sport] Srbija saznala rivala – težak posao za "Orlove"
+- [zivot] Ova greška ga je koštala kuće: Nije overio kartu za voz, sada mora da plati 148.000 evra
+- [drustvo] Gazela i 800 pijanih vozača: Jedan alkoholisan prelazi most na manje od dva minuta
 
 ## Blic
-Categories: {"ekonomija":2,"politika":17,"zabava":20,"hronika":8,"svet":7,"drustvo":5,"zivot":8,"tehnologija":1,"zdravlje":1,"kultura":1}
-- [ekonomija] Kako da radijator ove zime greje još jače: Vodoinstalater otkrio 3 jednostavna trika za koje vam ne treba majstor
-- [politika] Skupština Srbije izabrala nove potpredsednike: Svi su sa Studentske liste
-- [zabava] "TO SU JAKO STRESNE SITUACIJE, NE BIH POŽELELA NIKOME" Seka Aleksić o paljenju automobila na estradi, a evo šta kaže o korekciji grudi: "Imam dobar brusthalter" (Video)
-- [politika] Izabrani potpredsednici Skupštine! Vučić napustio salu, Brnabić odbila da se izjasni: "Neću da učestvujem u ovoj farsi!" (FOTO, VIDEO)
-- [politika] Zbog ovog poteza Usame Zukorlić je dobio aplauz u parlamentu
-- [hronika] Lopovi prerušeni u radnike ukrali gomilu novca i skupih satova: Oglasio se vlasnik ukradenog sefa u centru Beograda- "Komšije su im nudile vodu"
+Categories: {"drustvo":7,"kultura":4,"politika":9,"svet":6,"zabava":12,"ekonomija":16,"hronika":8,"zivot":5,"tehnologija":2,"ostalo":1}
+- [drustvo] (Mapa) Zatvara se deo Novog Beograda i Zemuna: Ovo je trasa dve trke u nedelju, pogledajte kompletan spisak ulica
+- [kultura] Plasido Domingo dolazi u Beograd: Najavljen gala koncert u Sava centru
+- [politika] Kancelarija za KiM: Obavestićemo međunarodnu javnost o rušenju srpske imovine na Kosovu i Metohiji (Video)
+- [svet] Pucnjava u Zagrebu: NN osoba pucala u muškarca, potom ga lupala po glavi, pa pobegla
+- [drustvo] Meri se nivo zračenja u Nišu: Kreće kontrola baznih stanica na ovih 11 lokacija, biće poznat uticaj na zdravlje ljudi
+- [zabava] "Ona je nestvarna, osetio sam da bismo mogli da napravimo nešto lepo": Jakov Jozinović i Džejla Ramović o trenutku kada je sve počelo
+
+Uncategorized sample (for tuning):
+- Sve više ljudi bira samoću, a psiholozi objašnjavaju zašto to ne mora da bude znak usamljenosti | https://www.blic.rs/good-life/hedonizam/zasto-sve-vise-ljudi-bira-mir-i-samocu-umesto-drustvenih-okupljanja/d1989v7 | tags: []
 
 ## Politika
-Categories: {"politika":4,"svet":7,"zabava":1,"hronika":2,"ostalo":4,"drustvo":1,"sport":1}
-- [politika] Završeno glasanje o potrpedsednicima, Čupić odredio pauzu od deset minuta
-- [svet] Kušner: Preneću Rusiji stav Evrope o Ukrajini
-- [svet] Iran: Amerika sprema lažni scenario, isti kao u Iraku, tvrdnjama o nekakvom hemijskom oružju
-- [svet] Pistorijus posetio memorijalni centar Aušvic tokom posete Poljskoj
-- [svet] Rat protiv Irana koštao američke oružane snage više od 44 milijarde evra
-- [zabava] Holandski violinista Andre Riju oduševio publiku koncertom u Beogradskoj areni
+Categories: {"ostalo":9,"svet":4,"ekonomija":1,"hronika":2,"sport":1,"drustvo":1,"region":1,"politika":1}
+- [ostalo] SAD prvi put prodale zakup morskog dna za dubokomorsko rudarenje: ekolozi upozoravaju na opasnost po Pacifik
+- [ostalo] Kruševac u zimsku sezonu ulazi sa 40 tona soli i pet kamiona za održavanje puteva
+- [svet] Makron ugostio Kamalu Haris u Parizu na privatnom sastanku
+- [ostalo] Od Novog Sada do publike širom sveta: 23 miliona pregleda tribina KCNS-a
+- [svet] Nova rušenja srpske imovine na Gazivodama: Kancelarija za KiM zahteva reakciju EU i OEBS
+- [ekonomija] Nove cene goriva u Srbiji
 
 Uncategorized sample (for tuning):
-- Jak vetar i pljusak u Novom Sadu, palo drvo, kontejneri na ulicama | https://www.politika.rs/scc/clanak/804441/jak-vetar-i-pljusak-u-novom-sadu-palo-drvo-kontejneri-na-ulicama | tags: []
-- SL: Sumnjamo u partijska zapošljavanja u javnim preduzećima, zaustaviti konkurse | https://www.politika.rs/scc/clanak/804435/sl-sumnjamo-u-partijska-zaposljavanja-u-javnim-preduzecima-zaustaviti-konkurse | tags: []
-- Tri smrtne kazne izvršene u jednom danu u tri američke savezne države | https://www.politika.rs/scc/clanak/804429/tri-smrtne-kazne-izvrsene-u-jednom-danu-u-tri-americke-savezne-drzave | tags: []
-- Niški tim najuspešniji u Srbiji, broj prijava sumnje na trgovinu ljudima premašio prošlogodišnji | https://www.politika.rs/scc/clanak/804422/niski-tim-najuspesniji-u-srbiji-broj-prijava-sumnje-na-trgovinu-ljudima-premasio-proslogodisnji | tags: []
+- SAD prvi put prodale zakup morskog dna za dubokomorsko rudarenje: ekolozi upozoravaju na opasnost po Pacifik | https://www.politika.rs/scc/clanak/804562/sad-prvi-put-prodale-zakup-morskog-dna-za-dubokomorsko-rudarenje-ekolozi-upozoravaju-na-opasnost-po-pacifik | tags: []
+- Kruševac u zimsku sezonu ulazi sa 40 tona soli i pet kamiona za održavanje puteva | https://www.politika.rs/scc/clanak/804560/krusevac-u-zimsku-sezonu-ulazi-sa-40-tona-soli-i-pet-kamiona-za-odrzavanje-puteva | tags: []
+- Od Novog Sada do publike širom sveta: 23 miliona pregleda tribina KCNS-a | https://www.politika.rs/scc/clanak/804559/od-novog-sada-do-publike-sirom-sveta-23-miliona-pregleda-tribina-kcns-a | tags: []
+- Obustavljen postupak protiv studenata za pripremanje nasilne promene ustavnog poretka | https://www.politika.rs/scc/clanak/804537/obustavljen-postupak-protiv-studenata-za-pripremanje-nasilne-promene-ustavnog-poretka | tags: []
+- Niška „Sofka” gostuje u Beogradu | https://www.politika.rs/scc/clanak/804552/niska-sofka-gostuje-u-beogradu | tags: []
+- Društvo za zaštitu ptica traži odbacivanje plana za solarnu elektranu kod Opova i Barande | https://www.politika.rs/scc/clanak/804551/drustvo-za-zastitu-ptica-trazi-odbacivanje-plana-za-solarnu-elektranu-kod-opova-i-barande | tags: []
+- Razbijena mreža trgovine ljudima: Više od 70 žena iz Rumunije eksploatisano u devet evropskih zemalja | https://www.politika.rs/scc/clanak/804549/razbijena-mreza-trgovine-ljudima-vise-od-70-zena-iz-rumunije-eksploatisano-u-devet-evropskih-zemalja | tags: []
+- Majkl Fransis: Rahmanjinovljeve „Simfonijske igre” najruskija su melodija na najameričkijem instrumentu | https://www.politika.rs/scc/clanak/804547/majkl-fransis-rahmanjinovljeve-simfonijske-igre-najruskija-su-melodija-na-najamerickijem-instrumentu | tags: []
 
 ## RTS
-Categories: {"politika":6,"drustvo":6,"svet":3,"hronika":3,"zivot":1,"ostalo":1}
-- [politika] Čestitke povodom izbora Aleksandra Čupića za predsednika Narodne skupštine
-- [politika] Studentska lista: Sumnjamo u partijska zapošljavanja u javnim ustanovama, tražimo obustavu novih konkursa
-- [drustvo] Nagrada "Svetionik" studentskom aktivisti Lazaru Diniću – od borbe na ulici do priznanja za hrabrost
-- [svet] Tri mesta za stolom moćnih u Šendženu – nova podela sveta ili samo politički spektakl
-- [politika] Doktori nauka u poslaničkim klupama – da li visok stepen obrazovanja donosi i visok stepen argumentacije
-- [drustvo] Porodice stradalih u "Ribnikaru" traže garancije o nadzoru K. K. – šta će biti kada postane punoletan
-
-Uncategorized sample (for tuning):
-- Smeće se uklanja, ali kriza u Smederevu i dalje traje – kako do sanitarne deponije | https://www.rts.rs/vesti/srbija-danas/6087772/smederevo-otpad-kriza-vanredna-situacija.html | tags: ["Srbija danas"]
+Categories: {"ekonomija":4,"hronika":6,"svet":1,"politika":5,"drustvo":2,"zivot":2}
+- [ekonomija] Objavljene nove cene goriva
+- [hronika] Iz luke u Sremskoj Mitrovici otkačilo se šest barži i elevator, plovila stigla do Šapca
+- [svet] Rusija pokrenula masovni napad na Ukrajinu; oštećena tri mosta u Kijevu, izbili požari, ima žrtava
+- [hronika] Viši sud u Beogradu osudio muškarca zbog ubistva transrodne osobe na 14 godina zatvora, tužilaštvo najavilo žalbu
+- [politika] Čupić: Raspisaću predsedničke izbore u narednih nekoliko dana
+- [hronika] Postupak za pozivanje na promenu ustavnog poretka i formalno okončan; studenti: Proces bio pravno neodrživ
