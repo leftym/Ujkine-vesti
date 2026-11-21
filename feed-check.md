@@ -1,87 +1,94 @@
 # Feed check
 
-Run: 2026-11-21T11:28:56.659Z
+Run: 2026-11-21T21:30:01.015Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 49 | https://n1info.rs/feed/ | 49 | 1 |
+| N1 | yes | 50 | https://n1info.rs/feed/ | 50 | 1 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +74) | 77 | 1 |
-| Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 1 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +76) | 76 | 0 |
+| Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"hronika":3,"politika":10,"region":3,"svet":12,"ekonomija":5,"zivot":9,"drustvo":2,"ostalo":3,"sport":2}
-- [hronika] Policija dronovima otkriva prekršaje kamiondžija, za pet dana više od 6.000 prekršaja
-- [politika] Šapić izgubio spor protiv BIRN-a: Sud utvrdio da je prijavio bitno drugačiju imovinu od one koju je kupio u Trstu
-- [politika] Popović: Najveći izazov novoj vlasti biće to što nema opoziciju, SNS je dokazani neprijatelj demokratije
-- [politika] Beširević o Vučićevom pomilovanju Stojića uprkos mišljenju suda: Zbog odnosa prema institucijama ima ovakve izborne rezultate
-- [region] Ubijen Miloš Đuričković: Telo pripadnika škaljarskog klana pronađeno kod Cetinja
-- [svet] Fon der Lajen osudila napad američko-ukrajinskog državljanina u Danskoj
-  - flagged (self): Novi dan: Plan Studentske liste za EXPO https://n1info.rs/najave-emisija/novi-dan-plan-studentske-liste-za-expo/
+Categories: {"ostalo":9,"svet":11,"region":4,"zivot":5,"politika":6,"ekonomija":2,"hronika":7,"drustvo":4,"zdravlje":1,"kultura":1}
+- [ostalo] (VIDEO) Meštani Panonije i doseljeni Rusi zajedno uređuju ovo selo kod Bačke Topole
+- [svet] Žair Bolsonaro na intenzivnoj nezi
+- [region] Hiljade građana u Zagrebu odale počast Kristianu Perišu: "Nećete nas ugušiti"
+- [ostalo] Regionalni centar "Kalenić" radi sa tek 35 odsto kapaciteta - otpad i dalje završava na divljoj deponiji
+- [zivot] Zašto telo višak masnoće taloži u predelu zadnjice?
+- [region] Jedna osoba poginula, više povređenih u sudaru autobusa i automobila u Brčkom
+  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
 
 Uncategorized sample (for tuning):
-- ANEM: Zahtevamo istragu o postupanju unutrašnje kontrole MUP-a nakon napada na ekipu N1 | https://n1info.rs/vesti/anem-zahtevamo-istragu-o-postupanju-unutrasnje-kontrole-mup-a-nakon-napada-na-ekipu-n1/ | tags: ["Vesti","n1","mup","anem","napad na ekipu n1","vladan sretenović"]
-- Na današnji dan, 21. novembar: Rođen Volter, parafiran Dejtonski sporazum... | https://n1info.rs/vesti/na-danasnji-dan-21-novembar-2026-godine/ | tags: ["Vesti","na današnji dan"]
-- Munja pogodila avion "Er Srbije" na letu za Mostar: Otkazan povratak, letelica upućena na pregled | https://n1info.rs/vesti/munja-pogodila-avion-er-srbije-na-letu-za-mostar/ | tags: ["Vesti","er srbija","avion","mostar","munja"]
+- (VIDEO) Meštani Panonije i doseljeni Rusi zajedno uređuju ovo selo kod Bačke Topole | https://n1info.rs/vesti/panonija-backa-topola-srednjivanje-priroda/ | tags: ["Vesti","rusi","uređenje","bačka topola","panonija"]
+- Regionalni centar "Kalenić" radi sa tek 35 odsto kapaciteta - otpad i dalje završava na divljoj deponiji | https://n1info.rs/zeleni-kutak/regionalni-centar-kalenic-problem-otpad-deponije/ | tags: ["Zeleni kutak","smeće","deponije","otpad","regionalni centar kalenić","ub"]
+- Dnevnik u 19 (20.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-20112026/ | tags: ["Dnevnik","vesti","dnevnik u 19","dnevnik"]
+- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
+- PRESS: Dragan Popović (21.11.2026) | https://n1info.rs/video/novi-dan/press-dragan-popovic-21112026/ | tags: ["Novi dan","novi dan","video","press"]
+- Dan uživo (20.11.2026) | https://n1info.rs/video/dan-uzivo/dan-uzivo-20112026/ | tags: ["Dan uživo","dan uživo","emisija","video"]
+- Subotičani se organizovali da očiste grad | https://n1info.rs/vesti/suboticani-se-organizovali-da-ociste-grad/ | tags: ["Vesti","subotica","čišćenje"]
+- Pokret Bogoljuba Karića podneće predlog da se biračko pravo stiče sa 16 godina | https://n1info.rs/vesti/bogoljub-karic-predlog-biracko-pravo-stice-sa-16-godina/ | tags: ["Vesti","pokret snaga srbije","biračko pravo","bogoljub karić","narodna skupština"]
 
 ## Nova.rs
-Categories: {"zivot":9,"hronika":4,"svet":5,"zabava":6,"sport":14,"drustvo":1,"ostalo":2,"politika":5,"kultura":2,"ekonomija":2}
-- [zivot] Velika iluzija Crnog petka u Srbiji: Na reklamama popusti do 70 odsto, ali jedna računica otkriva sasvim drugu sliku
-- [hronika] Eksplozija u naselju Braće Jerković: Bačena bomba na kafić, kamere snimile napadača
-- [svet] VIDEO Pakao na ulicama Meksika: Uhapšen jedan od najtraženijih narkobosova, helikopteri seju smrt, ljudi beže sa stadiona
-- [zabava] Naš pevač za 20 evra kupio sliku na buvljaku, pa shvatio da u rukama ima bogatstvo
-- [sport] VIDEO Ovo nikad pre niste videli: Najbolja ikada ima pločice na leđima, frapirala snimkom koji je podelila sa milionima
-- [zivot] Da li je moguće da ljudi ne znaju čemu služe tri pregrade u veš-mašini? Istraživanje otkrilo poražavajuće rezultate među mladima
+Categories: {"svet":9,"zivot":1,"zabava":7,"sport":14,"drustvo":6,"hronika":4,"ostalo":2,"politika":6,"ekonomija":1}
+- [svet] VIDEO Hiljade ljudi u Zagrebu podigle bele jastuke za Kristiana Periša: „Dosta je prebacivanja odgovornosti“
+- [zivot] Ko je sve živeo u Užičkoj 15: Od najlepše vile predratnog Beograda do potpune propasti
+- [zabava] Zbog kožnog oboljenja godinama je trpela uvrede, a onda je vitiligo pretvorila u prednost: Životna priča manekenke koja se izborila sa surovim standardima modne industrije
+- [sport] Tajsonov nokaut pogurao Zvezdu u pravo vreme: Koloko "ugasio svetlo" u Barseloni, a Navara tek čekaju ispiti
+- [svet] Jedna osoba poginula, više povređenih u sudaru autobusa i automobila u Brčkom
+- [svet] Zbog protesta u Belgiji otkazana većina letova na briselskom aerodromu
 
 Uncategorized sample (for tuning):
-- Mentalno razgibavanje: Istorijski dan | https://nova.rs/emisije/mentalno-razgibavanje-istorijski-dan/ | tags: ["Emisije","mentalno razgibavanje cela emisija"]
-- Probudi se - Cela emisija - 20.11.2026. | https://nova.rs/emisije/probudi-se-cela-emisija-20112026/ | tags: ["Emisije","probudi se cela emisija"]
+- Dnevnik - Cela emisija - 20.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-20112026/ | tags: ["Emisije","dnevnik cela emisija"]
+- Među nama - Cela emisija - 20.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-20112026/ | tags: ["Emisije","među nama cela emisija"]
 
 ## B92
-Categories: {"politika":4,"zivot":17,"sport":15,"region":4,"ekonomija":10,"zabava":3,"svet":11,"tehnologija":1,"kultura":4,"ostalo":2,"zdravlje":6,"drustvo":2,"hronika":1}
-- [politika] Ilić: "Sud u Strazburu dao Srbiji rok do 15. januara da se izjasni o zvučnom topu"
-- [zivot] Novi aerodrom otvara vrata jednoj od najneobičnijih destinacija sveta FOTO
-- [zivot] Rim ove godine sprema božićni spektakl: Jelka u Vatikanu zasijaće istovremeno sa najvećom na svetu VIDEO
-- [zivot] Ovaj evropski grad osvojio je prestižnu turističku titulu: Posebno pohvaljen jedan detalj
-- [sport] Real završio još jedan važan potpis
-- [region] Dan kada je zaustavljen rat u BiH; Dejtonski sporazum parafiran pre 31 godinu
-  - flagged (sponsored): Prihodi od poreza u industriji igara na sreću porasli 11 puta za 15 godina: Državi 220 miliona evra godišnje https://www.b92.net/zivot/promo/286716/prihodi-od-poreza-u-industriji-igara-na-srecu-porasli-11-puta-za-15-godina-drzavi-220-miliona-evra-godisnje/vest
+Categories: {"sport":16,"region":2,"ekonomija":10,"svet":13,"zivot":18,"kultura":5,"ostalo":3,"zdravlje":5,"zabava":3,"hronika":1,"drustvo":1,"politika":2,"tehnologija":1}
+- [sport] Paskval pred Partizan: "Svesni smo koliko je teško igrati u Beogradu"
+- [region] Novi protesti u Tirani: Demonstranti ispred kancelarije Edija Rame VIDEO
+- [sport] Zverev zakazao finale koje su svi čekali!
+- [ekonomija] Rusija i Ukrajina se otimaju za ovu sirovinu, Kina trlja ruke: Šestostruki skok cena
+- [svet] Putinu će možda trebati i do godinu dana da se oporavi od samo jednog ukrajinskog napada
+- [sport] Novi Beograd posustao u finišu
 
 Uncategorized sample (for tuning):
-- Ne zahtevaju konstantnu pažnju: Tri sobne biljke koje je najbolje imati u kući tokom zime | https://superzena.b92.net/dom-i-porodica/uredjenje-doma/286878/tri-sobne-biljke-koje-je-najbolje-imati-u-kuci-tokom-zime/vest | tags: ["Najnovije"]
-- Danas slavimo Aranđelovdan: Jedan običaj bi trebalo ispoštovati | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/286850/danas-slavimo-arandjelovdan-a-ovaj-obicaj-treba-ispostovati/vest | tags: []
+- Novine: "Nova vlast, stari ring"; "Srpska neće biti kamen oko vrata Beogradu" | https://www.b92.net/info/razno/287018/novine-nova-vlast-stari-ring-srpska-nece-biti-kamen-oko-vrata-beogradu/vest | tags: ["Najnovije"]
+- Kako je izgledala ishrana Grejs Keli? Nije držala stroge dijete, a bila je prelepa | https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/286806/ishrana-grejs-keli-zbog-koje-je-bila-prelepa-i-vitka/vest | tags: []
+- Alarm za meštane Moravičkog okruga: Struja nestaje u ponedeljak, evo ko sve ostaje bez napajanja | https://www.b92.net/lokal/cacak/servisne-informacije/286915/alarm-za-mestane-moravickog-okruga-struja-nestaje-u-ponedeljak-evo-ko-sve-ostaje-bez-napajanja/vest | tags: []
 
 ## Blic
-Categories: {"zabava":13,"drustvo":4,"kultura":4,"politika":12,"svet":10,"zivot":5,"hronika":4,"ekonomija":17,"zdravlje":1}
-- [zabava] "PLAKALI SMO I MILOŠ I JA" Prvi intervju Jovane Jeremić nakon venčanja sa Tigrom, otkrila detalje sa ceremonije, BURMA SA DIJAMANTIMA sija na ruci: "Vreme je za još jedno dete" (VIDEO)
-- [drustvo] Opština u Srbiji daje do 150.000 dinara parovima za program vantelesne oplodnje: Ovo su uslovi, evo i kako do prijave
-- [kultura] Nikol Kidman je snimanje filma iz 2010. emocionalno slomilo: "Suočila sam se sa jednim od najvećih strahova"
-- [politika] Čedomir Antić piše za "Blic": Tridesetogodišnjica
-- [politika] "Nećemo doći da glasamo na zvonce!" Štimac o tri burna dana u Skupštini, odgovorila političkim protivnicima na tvrdnje da u Studentskoj listi "ima njihovih"
-- [zabava] "Zabranili su Južni vetar jer je smatran šundom, plaćali smo porez": Pevač otkrio sa čim se folk grupa susretala
-  - flagged (betting): Ne trebaju vam konzole! Na SVOM TELEFONU možete zaigrati NEON HEIST, najnoviju slot igru INSPIRISANU GTA https://www.blic.rs/slobodno-vreme/ne-trebaju-vam-konzole-na-svom-telefonu-mozete-zaigrati-neon-heist/8hde21x
-
-## Politika
-Categories: {"ostalo":3,"sport":5,"svet":6,"hronika":3,"politika":3}
-- [ostalo] Zbog neslaganja produženo trajanje COP31 u Antaliji
-- [sport] Vreme je za reformu našeg boksa
-- [sport] Kejn uspešno operisan, pauzira najmanje tri meseca
-- [svet] Evropska i japanska sonda spremna za istorijsko istraživanje planete
-- [hronika] Na Cetinju ubijen Miloš Đuričković, pripadnk škaljarskog klana
-- [svet] Evropski duel „južnjaka” i „severnjaka” u Frankfurtu
+Categories: {"zabava":20,"drustvo":8,"hronika":8,"politika":9,"tehnologija":2,"ekonomija":2,"zivot":9,"svet":8,"zdravlje":2,"ostalo":1,"kultura":1}
+- [zabava] SRPSKA STARLETA SLAVI SINU 12. ROĐENDAN Dobila ga je u braku sa 19 godina starijim Sinišom: Pogledajte gejmersku tortu i ogromne balone
+- [drustvo] Ljubav na kruzeru Kubanku Dajanu dovela u Kruševac, sad joj se pridružila i koleginica sa fakulteta
+- [hronika] Stravična autobuska nesreća u Brčkom: Ima mrtvih i povređenih
+- [politika] "Poslovnik treba menjati": Ko su tri doktorke koje će biti desna ruka Aleksandra Čupića u Skupštini
+- [drustvo] (Video) Dečak izvodi stoj na rukama na ivici krova solitera u Beogradu: Uznemirujući snimak ledi krv u žilama
+- [tehnologija] SSD diskovi bi konačno mogli da pojeftine, ali cene u prodavnicama neće odmah pasti
 
 Uncategorized sample (for tuning):
-- Zbog neslaganja produženo trajanje COP31 u Antaliji | https://www.politika.rs/scc/clanak/804856/zbog-neslaganja-produzeno-trajanje-cop31-u-antaliji | tags: []
-- Deset osoba hospitalizovano, među njima troje dece zbog curenja hlora na bazenu | https://www.politika.rs/scc/clanak/804846/deset-osoba-hospitalizovano-medu-njima-troje-dece-zbog-curenja-hlora-na-bazenu | tags: []
-- Hakeri upali u sistem za isplate američkim poljoprivrednicima | https://www.politika.rs/scc/clanak/804844/hakeri-upali-u-sistem-za-isplate-americkim-poljoprivrednicima | tags: []
+- Ko će biti nova 'Bond devojka' i treba li ta uloga da se promeni | https://www.blic.rs/bbc/ko-ce-biti-nova-bond-devojka-i-treba-li-ta-uloga-da-se-promeni/nem0ljv | tags: []
+
+## Politika
+Categories: {"sport":4,"ostalo":3,"politika":1,"hronika":3,"svet":7,"ekonomija":1,"region":1}
+- [sport] Fajfrić: Imamo tešku grupu, ali sada razmišljamo samo o Slovačkoj
+- [ostalo] Demonstranti ispred kancelarije Edija Rame posle marša ulicama Tirane
+- [politika] Netanjahuova stranka postavila uslove za novu vladu: bez palestinske države i arapskih stranaka
+- [hronika] Jedna osoba poginula, 14 povređeno u sudaru autobusa i automobila kod Brčkog
+- [svet] Britanski komandosi pobedili ukrajinski tim na takmičenju dronova u Nemačkoj
+- [hronika] Krvavi sukobi posle hapšenja narko-bosa u Meksiku, najmanje 11 mrtvih
+
+Uncategorized sample (for tuning):
+- Demonstranti ispred kancelarije Edija Rame posle marša ulicama Tirane | https://www.politika.rs/scc/clanak/805023/demonstranti-ispred-kancelarije-edija-rame-posle-marsa-ulicama-tirane | tags: []
+- Prsten preživele putnice „Titanika” prodat za 110.000 funti | https://www.politika.rs/scc/clanak/805001/prsten-prezivele-putnice-titanika-prodat-za-110-000-funti | tags: []
+- Ruska mornarica ponovo u Sredozemlju prati teretne brodove | https://www.politika.rs/scc/clanak/804995/ruska-mornarica-ponovo-u-sredozemlju-prati-teretne-brodove | tags: []
 
 ## RTS
-Categories: {"politika":4,"drustvo":8,"region":2,"svet":4,"zivot":1,"ekonomija":1}
-- [politika] Vučić: U ovakvim uslovima besmisleno učestvovati na predsedničkim izborima
-- [politika] Jovo Bakić: Imamo kandidata za predsedničke izbore, ali još ne izlazimo sa imenom
-- [drustvo] Eparhija raško-prizrenska: SPC nije konsultovana o Nacrtu zakona o Centralnom inspektoratu za kulturno nasleđe
-- [region] Na Cetinju ubijen pripadnik škaljarskog klana, policija traga za počiniocem
-- [drustvo] V. d. status – privremeno po zakonu, trajno u praksi - kako su konkursi za direktore postali izuzetak u Srbiji
-- [region] Dejtonski mirovni sporazum parafiran pre 31 godinu
+Categories: {"region":3,"politika":4,"ekonomija":1,"hronika":4,"drustvo":5,"svet":2,"zivot":1}
+- [region] Peter Mađar: Orbanovom bivšem ministru zaplenjena imovina od 24 miliona evra
+- [politika] SNS pisao međunarodnim institucijama: Studentska lista nedemokratski preuzima pozicije u parlamentu
+- [ekonomija] Alta lizing u likvidaciji, ugovori ostaju – šta to znači za klijente
+- [hronika] U Hrtkovcima uhapšena šestorica zbog napada na bajkere na dan izbora
+- [drustvo] Profesorka Krstić: Bez javnosti, transparentnosti i autonomije nema pravog javnog servisa
+- [drustvo] Pronađen sedamnaestogodišnji dečak
