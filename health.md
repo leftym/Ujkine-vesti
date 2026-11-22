@@ -1,96 +1,93 @@
 # Vesti health report
 
-Run: 2026-11-22T11:43:57.728Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-22T21:37:34.673Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [B92] Possible ads NOT flagged: "Traže nove stanovnike, a mogu da se prijave i stranci: Besplatne kuće na 10 godina, ovo su uslovi"
-2. **LOW** [Blic] Possible ads NOT flagged: "Noćenje 32 evra, a kupanje samo 5; Banja u srcu Karpata nudi wellness za malo para: Voda lekovita više od dva veka, a priroda potpuno besplatna"
-3. **LOW** [Politika] Possible ads NOT flagged: "Pelet se ne prodaje jeftinije zbog velikih zaliha kod trgovaca"
+1. **MED** [Politika] 30% of stories are uncategorized ("Ostalo"). Common words in them: demokrate(1), ostvarile(1), najbolji(1), rezultat(1), predstavnickom(1), borbe(1), blizini(1), podrucja(1). Add section names / keyword stems in lib/classify.js.
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 50 | 0.0h | 100% | 10% | 1 |
-| Nova.rs | yes | 50 | 0.3h | 100% | 2% | 0 |
-| B92 | yes | 80 | 0.1h | 95% | 3% | 0 |
-| Blic | yes | 70 | 0.0h | 100% | 0% | 0 |
-| Politika | yes | 20 | 0.1h | 100% | 25% | 0 |
-| RTS | yes | 20 | 0.2h | 100% | 0% | 0 |
+| N1 | yes | 50 | 0.1h | 100% | 16% | 3 |
+| Nova.rs | yes | 50 | 0.1h | 100% | 2% | 0 |
+| B92 | yes | 80 | 0.3h | 96% | 1% | 0 |
+| Blic | yes | 70 | 0.1h | 100% | 1% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 30% | 0 |
+| RTS | yes | 20 | 1.6h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 5 outlets, score 59] Igor Dodik mandatar za sastav nove Vlade Republike Srpske
-   - also (b92): Igor Dodik biće novi premijer Republike Srpske
-   - also (nova): Igor Dodik biće novi premijer Republike Srpske
-   - also (n1): Igor Dodik novi mandatar za sastav Vlade RS
-   - also (nova): Hoće li Igor Dodik postati premijer Republike Srpske? Danas se saopštava ime mandatara
-   - also (blic): Igor Dodik biće novi premijer Republike Srpske! SNSD doneo odluku da vlast ostane u krugu porodice
-   - also (b92): Minić danas saopštava ime mandatara za sastav nove vlade
-2. [multi, 4 outlets, score 45.1] Uhapšeni direktor PIO fonda u Bačkoj Palanci i rukovodilac u Opštinskoj upravi Bač
-   - also (b92): VJT u Novom Sadu: "Uhapšeni osumnjičeni za zloupotrebu službenog položaja u Bačkoj Palanci i Baču"
-   - also (n1): Uhapšen direktor PIO fonda u Bačkoj Palanci zbog sumnje na zloupotrebu službenog položaja
-   - also (nova): Uhapšen direktor PIO Fonda u Bačkoj Palanci, osumnjičen za zloupotrebu službenog položaja
-3. [multi, 4 outlets, score 43.9] Pronađeno telo šestogodišnjeg deteta koje je upalo u Ribnicu
-   - also (b92): Tragičan kraj potrage za detetom koje je upalo u reku; Ronioci pronašli telo
-   - also (n1): Ronioci pronašli telo šestogodišnjeg deteta koje je upalo u reku u Podgorici
-   - also (nova): Ronioci pronašli telo deteta koje je upalo u reku Ribnicu
-4. [multi, 3 outlets, score 37.8] Brnabićeva: Tokom noći dobila sam pretnje upućene mom detetu
-   - also (b92): Brnabić navodi da je dobila pretnje: "Pozvali ste ih da nam pišu i vređaju nas"
-   - also (blic): Ana Brnabić u toku noći dobila stravičnu pretnju upućenu njenom detetu: Objavila fotografiju i broj telefona pošiljaoca
-5. [multi, 3 outlets, score 35.4] Patrijarh Porfirije u Moskvi u poseti ruskom patrijarhu Kirilu
-   - also (rts): Patrijarh Porfirije se sastao sa patrijarhom Kirilom u Moskvi
-   - also (blic): (FOTO) Sastali se patrijarh Porfirije i patrijarh Kiril u Moskvi: Poslata snažna poruka o jedinstvu pravoslavlja, razmenjeni i darovi
-6. [multi, 3 outlets, score 34.8] "Vreme odgovornosti dolazi": Studenti pozvali na okupljanje u ponedeljak ispred Specijalnog suda zbog suđenja u slučaju "Generalštab"
-   - also (rts): Dve godine od napada na studente i profesore ispred FDU
-   - also (n1): Dve godine od napada na studente i profesore FDU uoči prve blokade fakulteta
-   - also (nova): Dve godine od napada na studente i profesore FDU: Kako su počele blokade fakulteta
-   - also (n1): Na današnji dan, 22. novembar: Napad ispred FDU tokom održavanja tišine, Vasko da Gama postao prvi moreplovac...
-7. [multi, 3 outlets, score 33.9] Program Studentske liste o socijalnoj zaštiti, ovo su svi noviteti: Veći dečji dodatak, socijalne penzije i nova prava za roditelje-negovatelje
-   - also (n1): Program Studentske liste o socijalnoj zaštiti: Veći dečji dodatak, socijalne penzije i nova prava za roditelje-negovatelje
-   - also (nova): Program Studentske liste o socijalnoj zaštiti: Veći dečji dodatak, socijalne penzije i nova prava za roditelje-negovatelje
-8. [multi, 3 outlets, score 33.9] Udala se Majli Sajrus
-   - also (b92): Udala se Majli Sajrus, pa zaplakala: Snimak se širi mrežama FOTO/VIDEO
-   - also (nova): Udala se Majli Sajrus: Pevačica izgovorila sudbonosno „da“ pred 140 zvanica, pa poručila - "Jedva čekam da dobijemo bebu!"
-9. [multi, 3 outlets, score 33.8] Požar u fabrici slatkiša u Indoneziji, troje poginulih
-   - also (nova): Stravičan požar u fabrici slatkiša u Indoneziji: Troje mrtvih, traga se za još 36 radnika
-   - also (blic): Buknuo požar u fabrici slatkiša: Najmanje sedam mrtvih, 50 radnika nestalo u Indoneziji! Strahuje se da ima još mnogo žrtava
-10. [multi, 3 outlets, score 33.5] Haos u Belgiji: Sutra se otkazuju gotovo svi letovi, aerodromi upozoravaju na katastrofalne posledice
-   - also (n1): Otkazana većina letova na aerodromu u Briselu za ponedeljak
-   - also (b92): Otkazani apsolutno svi letovi na aerodromima za ponedeljak
+1. [multi, 5 outlets, score 59] Novi detalji napada u tržnom centru u Beogradu! Pištoljem pretio bivšoj devojci, pa je izbo nožem: Lekari joj se bore za život
+   - also (rts): Napadnuta devojka u garaži TC "Galerija", sa teškim povredama prevezena u Urgentni centar
+   - also (b92): Drama u beogradskom tržnom centru: Devojka ubodena nožem
+   - also (n1): Devojka teško povređena u napadu u garaži tržnog centra "Galerija"
+   - also (nova): Devojka napadnuta nožem u TC "Galerija": Sa teškim povredama prevezena u Urgentni centar
+   - also (blic): Pratio bivšu devojku, pa je ubo nožem, građani ga savladali! Detalji drame u garaži tržnog centra u Beogradu: Policija obezbedila jedno vozilo
+2. [multi, 4 outlets, score 48.7] Čupić za RTS: Kada sam izabran osetio sam odgovornost, a ne trijumf; važnije je imati dobru vladu nego je brzo formirati
+   - also (b92): Čupić: "Kada sam izabran, osetio sam odgovornost"; Otkrio kada će biti raspisani predsednički izbori
+   - also (politika): Čupić za RTS: Kada sam izabran osetio sam odgovornost, a ne trijumf
+   - also (nova): Predsednički izbori moraju biti raspisani do 27. novembra: Ovo su mogući kandidati, oglasili se Dačić i Karić
+3. [multi, 4 outlets, score 47.2] Studentski pokret: Zabrinuti smo zbog nacrta zakona o kulturnom nasleđu na KiM jer nije konsultovana SPC
+   - also (b92): Studentski pokret zabrinut zbog položaja srpskog kulturnog i verskog nasleđa na KiM
+   - also (nova): Studentski pokret zabrinut zbog novog zakona u Prištini: Bez konsultacija sa SPC o zaštiti srpskog kulturnog nasleđa
+   - also (blic): Studentski pokret izrazio zabrinutost za položaj SPC i njenih svetinja na KiM: Zakon o kulturnom nasleđu usvojen u prvom čitanju u Prištini
+4. [multi, 3 outlets, score 37.5] Saslušan osumnjičeni za silovanje, tužilaštvo predložilo određivanje pritvora
+   - also (nova): Saslušan osumnjičeni za silovanje u Beogradu: Tužilaštvo traži pritvor
+   - also (blic): Preti mu do 15 godina robije! Saslušan muškarac osumnjičen da je u stanu na Voždovcu silovao partnerku: Evo kako se branio
+5. [multi, 3 outlets, score 36.4] Čupić o navodima da poseduje sedam stanova: "Zaista bih voleo da ih imam"
+   - also (n1): Čupić odbacio tvrdnje SNS-a da poseduje sedam stanova: Imam šestoro dece, voleo bih da ih imam, ali ih nemam
+   - also (nova): Predsednik Skupštine o optužbama SNS da ima sedam stanova: „Daleko od realnog stanja, imam šestoro dece, voleo bih da je istina, ali nije“
+6. [multi, 3 outlets, score 33.3] Predsednik SDS-a Branko Blanuša podneo neopozivu ostavku na tu funkciju
+   - also (nova): Predsednik SDS-a Branko Blanuša podneo neopozivu ostavku na tu funkciju
+   - also (blic): Predsednik Srpske demokratske stranke (SDS) podneo neopozivu ostavku: "Članovi su me vređali i lagali"
+7. [multi, 3 outlets, score 33.2] Tri medalje za srpske gimnazijalce na takmičenju iz informatike u Bukureštu
+   - also (n1): Učenik Matematičke gimnazije u Beogadu pobedio na takmičenju iz informatike u Rumuniji
+   - also (blic): Tri medalje za srpske gimnazijalce na takmičenju iz informatike u Bukureštu
+8. [multi, 2 outlets, score 28.5] NPS: Vanredni izbori jedino rešenje za izlazak Beograda iz krize
+   - also (n1): NPS: Vanredni izbori jedino rešenje za izlazak Beograda iz krize
+9. [multi, 2 outlets, score 28.4] Razneta ruska raketna korveta "Merkuri"?
+   - also (politika): Ukrajinski portal tvrdi da je u luci Bengazi uništena ruska raketna korveta „Merkur”
+10. [multi, 2 outlets, score 27.4] Predsednica Skupštine grada Novog Sada: Moj brat je dobio otkaz samo zato što je moj brat
+   - also (nova): Predsednica Skupštine Novog Sada Dina Vučinić: Moj brat je dobio otkaz samo zato što je moj brat
 
 ## Details
 ### N1
-Categories: {"region":7,"ostalo":5,"svet":12,"politika":4,"zivot":8,"drustvo":7,"ekonomija":4,"kultura":1,"hronika":2}
+Categories: {"ekonomija":1,"zivot":5,"politika":11,"svet":9,"sport":2,"region":7,"ostalo":8,"drustvo":3,"zabava":1,"hronika":2,"kultura":1}
 Flagged:
-- (self) Novi dan: Gen Z na ulicama kao inspiracija <https://n1info.rs/najave-emisija/novi-dan-gen-z-na-ulicama-kao-inspiracija/>
+- (self) "Utisak nedelje": Gosti Aleksandar Čupić, Ivanka Popović i Stefan Surlić <https://n1info.rs/najave-emisija/utisak-nedelje-gosti-aleksandar-cupic-ivanka-popovic-i-stefan-surlic/>
+- (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
+- (self) N1 Studio live: Šapić na dnevnom redu <https://n1info.rs/najave-emisija/n1-studio-live-sapic-na-dnevnom-redu/>
 Uncategorized sample:
-- Objavljen nacrt pregovora UN u Antaliji o klimi: Bez većih rešenja o fosilnim gorivima <https://n1info.rs/zeleni-kutak/objavljen-nacrt-pregovora-un-u-antaliji-o-klimi-bez-vecih-resenja-o-fosilnim-gorivima/> tags=["Zeleni kutak","pregovori","antalija","klima","fosilna goriva","cop31"]
-- AMSS: Gužve na putevima moguće popodne, nema čekanja na granicama <https://n1info.rs/vesti/amss-guzve-na-putevima-moguce-popodne-nema-cekanja-na-granicama/> tags=["Vesti","naplatne rampe","amss","granica","gužve","putevi"]
-- Na današnji dan, 22. novembar: Napad ispred FDU tokom održavanja tišine, Vasko da Gama postao prvi moreplovac... <https://n1info.rs/vesti/na-danasnji-dan-22-novembar-napad-ispred-fdu-u-tokom-odrzavanja-tisine-vasko-da-gama-postao-prvi-moreplovac/> tags=["Vesti","beta kalendar","na današnji dan"]
-- (VIDEO) Meštani Panonije i doseljeni Rusi zajedno uređuju ovo selo kod Bačke Topole <https://n1info.rs/vesti/panonija-backa-topola-srednjivanje-priroda/> tags=["Vesti","uređenje","bačka topola","panonija","rusi"]
-- Regionalni centar "Kalenić" radi sa tek 35 odsto kapaciteta - otpad i dalje završava na divljoj deponiji <https://n1info.rs/zeleni-kutak/regionalni-centar-kalenic-problem-otpad-deponije/> tags=["Zeleni kutak","deponije","otpad","regionalni centar kalenić","ub","smeće"]
+- Kreni-Promeni predložio sedam mera za bolju zaštitu životinja: Umesto uklanjanja životinja sa ulica, rešavati uzroke njihovog napuštanja <https://n1info.rs/vesti/kreni-promeni-predlozio-sedam-mera-za-bolju-zastitu-zivotinja/> tags=["Vesti","napuštene životinje","životinje","kreni-promeni","zoolog"]
+- "Utisak nedelje": Gosti Aleksandar Čupić, Ivanka Popović i Stefan Surlić <https://n1info.rs/najave-emisija/utisak-nedelje-gosti-aleksandar-cupic-ivanka-popovic-i-stefan-surlic/> tags=["Najave emisija"]
+- Press: Dušan Čavić (22.11.2026) <https://n1info.rs/video/novi-dan/press-dusan-cavic-22112026/> tags=["Novi dan","video","dušan čavić","press","novi dan"]
+- Dnevnik u 19 (21. 11. 2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-21-11-2026/> tags=["Dnevnik","video","dnevnik u 19"]
+- Od optužbi za laž do predmeta od posebnog značaja pred Evropskim sudom: Da li je 15. marta korišćen zvučni top? <https://n1info.rs/vesti/evropski-sud-15-mart-zvucni-top/> tags=["Vesti","vjt","zvučni top","miodrag marković","nenad stefanović","tužilaštvo"]
+- Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
 
 ### Nova.rs
-Categories: {"zabava":7,"svet":11,"hronika":4,"zivot":11,"drustvo":3,"sport":10,"politika":2,"ostalo":1,"ekonomija":1}
+Categories: {"sport":14,"politika":10,"svet":9,"zabava":5,"kultura":1,"zivot":1,"drustvo":4,"ostalo":1,"hronika":3,"ekonomija":2}
 Uncategorized sample:
-- Pokreni se - Cela emisija - 21.11.2026. <https://nova.rs/emisije/pokreni-se-cela-emisija-21112026/> tags=["Emisije","pokreni se cela emisija"]
+- Dnevnik - Cela emisija - 21.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-21112026/> tags=["Emisije","dnevnik cela emisija"]
 
 ### B92
-Categories: {"sport":11,"ekonomija":10,"politika":4,"region":5,"svet":10,"zivot":22,"tehnologija":3,"ostalo":2,"kultura":4,"drustvo":4,"zdravlje":3,"zabava":1,"hronika":1}
+Categories: {"svet":15,"sport":13,"zivot":23,"drustvo":2,"ekonomija":10,"zdravlje":5,"politika":3,"zabava":2,"hronika":3,"ostalo":1,"tehnologija":3}
 Uncategorized sample:
-- Poznati kuvar otkrio grešku koju gotovo svi prave prilikom kuvanja krompira <https://superzena.b92.net/kuhinja/prakticni-saveti/287116/poznati-kuvar-otkrio-gresku-koju-gotovo-svi-prave-prilikom-kuvanja-krompira/vest> tags=["Najnovije"]
-- Da li perete zajedno posteljinu i odeću u veš-mašini? Evo kakvu štetu pravite <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/287106/da-li-posteljina-i-odeca-treba-zajedno-da-se-peru-u-ves-masini/vest> tags=["Najnovije"]
+- Detetu nije potrebna mlada majka, već emocionalno stabilno ljudsko biće <https://superzena.b92.net/superstav/jana/286792/detetu-nije-potrebna-mlada-majka-vec-emocionalno-stabilno-ljudsko-bice/vest> tags=[]
 
 ### Blic
-Categories: {"drustvo":6,"ekonomija":17,"svet":8,"politika":10,"hronika":8,"zivot":5,"zabava":11,"kultura":3,"zdravlje":2}
+Categories: {"hronika":8,"zabava":22,"tehnologija":2,"politika":11,"drustvo":5,"svet":7,"zivot":7,"ekonomija":4,"kultura":3,"ostalo":1}
+Uncategorized sample:
+- Muž ju je drogirao, a nepoznati muškarci je silovali 13 godina <https://www.blic.rs/bbc/muz-ju-je-drogirao-a-nepoznati-muskarci-je-silovali-13-godina/5614byc> tags=[]
 
 ### Politika
-Categories: {"ekonomija":2,"politika":2,"region":1,"svet":3,"hronika":4,"kultura":1,"sport":2,"ostalo":5}
+Categories: {"drustvo":1,"sport":3,"ostalo":6,"svet":8,"ekonomija":1,"hronika":1}
 Uncategorized sample:
-- Ugovor NIS-a i JANAF-a ističe krajem godine, u toku pregovori o produženju <https://www.politika.rs/scc/clanak/805107/ugovor-nis-a-i-janaf-a-istice-krajem-godine-u-toku-pregovori-o-produzenju> tags=[]
-- Ilegalna kazina ukrala identitete naučnika koji istražuju štetnost kockanja <https://www.politika.rs/scc/clanak/805104/ilegalna-kazina-ukrala-identitete-naucnika-koji-istrazuju-stetnost-kockanja> tags=[]
-- Macura: Devojčice sve izloženije nerealnim standardima lepote i uspeha <https://www.politika.rs/scc/clanak/805105/macura-devojcice-sve-izlozenije-nerealnim-standardima-lepote-i-uspeha> tags=[]
-- „Bajer” plaća 7,25 milijardi dolara zbog tužbi da njegov herbicid izaziva rak <https://www.politika.rs/scc/clanak/805103/bajer-placa-7-25-milijardi-dolara-zbog-tuzbi-da-njegov-herbicid-izaziva-rak> tags=[]
-- Pelet se ne prodaje jeftinije zbog velikih zaliha kod trgovaca <https://www.politika.rs/scc/clanak/805101/pelet-se-ne-prodaje-jeftinije-zbog-velikih-zaliha-kod-trgovaca> tags=[]
+- Demokrate ostvarile najbolji rezultat u Predstavničkom domu od 1992. godine <https://www.politika.rs/scc/clanak/805272/demokrate-ostvarile-najbolji-rezultat-u-predstavnickom-domu-od-1992-godine> tags=[]
+- SZO: borbe u blizini područja zahvaćenih ebolom u DR Kongu ometaju suzbijanje epidemije <https://www.politika.rs/scc/clanak/805274/szo-borbe-u-blizini-podrucja-zahvacenih-ebolom-u-dr-kongu-ometaju-suzbijanje-epidemije> tags=[]
+- U Ajovi planirana hitna detonacija 68 buradi opasnog olovnog jedinjenja <https://www.politika.rs/scc/clanak/805266/u-ajovi-planirana-hitna-detonacija-68-buradi-opasnog-olovnog-jedinjenja> tags=[]
+- U Istanbulu veliki skup podrške medijima protiv zatvaranja <https://www.politika.rs/scc/clanak/805249/u-istanbulu-veliki-skup-podrske-medijima-protiv-zatvaranja> tags=[]
+- Klejton: Sajber pretnje po SAD realne <https://www.politika.rs/scc/clanak/805242/klejton-sajber-pretnje-po-sad-realne> tags=[]
+- Čupić za RTS: Kada sam izabran osetio sam odgovornost, a ne trijumf <https://www.politika.rs/scc/clanak/805238/cupic-za-rts-kada-sam-izabran-osetio-sam-odgovornost-a-ne-trijumf> tags=[]
 
 ### RTS
-Categories: {"region":3,"drustvo":5,"hronika":4,"svet":4,"politika":1,"ekonomija":2,"zivot":1}
+Categories: {"politika":4,"region":1,"drustvo":6,"hronika":6,"svet":2,"zivot":1}
