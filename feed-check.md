@@ -1,88 +1,96 @@
 # Feed check
 
-Run: 2026-11-22T11:43:29.084Z
+Run: 2026-11-22T21:37:08.397Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 50 | https://n1info.rs/feed/ | 50 | 1 |
+| N1 | yes | 50 | https://n1info.rs/feed/ | 50 | 3 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +74) | 76 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +71) | 77 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"region":7,"ostalo":5,"svet":12,"politika":4,"zivot":8,"drustvo":7,"ekonomija":4,"kultura":1,"hronika":2}
-- [region] Popov: Beograd okrenuo leđa Sarajevu, a susedima slao uvrede
-- [ostalo] Objavljen nacrt pregovora UN u Antaliji o klimi: Bez većih rešenja o fosilnim gorivima
-- [svet] FT o Generalštabu: Vučić vršio pritisak na zvaničnike da uklone prepreke za izgradnju Tramp hotela
-- [region] Igor Dodik novi mandatar za sastav Vlade RS
-- [politika] Dimitrijević: Poslovnik Skupštine treba promeniti kako bi se sprečile zloupotrebe, SNS ne možemo da smatramo opozicijom
-- [zivot] Naučnici razvili posebne čarape koje smanjuju napor pri hodanju
-  - flagged (self): Novi dan: Gen Z na ulicama kao inspiracija https://n1info.rs/najave-emisija/novi-dan-gen-z-na-ulicama-kao-inspiracija/
+Categories: {"ekonomija":1,"zivot":5,"politika":11,"svet":9,"sport":2,"region":7,"ostalo":8,"drustvo":3,"zabava":1,"hronika":2,"kultura":1}
+- [ekonomija] Koliko dugo domaći privrednici mogu da drže korak sa novim pravilima EU: Odiseja srpskog izvoza
+- [zivot] Mislite da je stres, a može biti demencija: Pogađa i ljude u 40-im
+- [politika] NPS: Vanredni izbori jedino rešenje za izlazak Beograda iz krize
+- [politika] Predsednica Skupštine grada Novog Sada: Moj brat je dobio otkaz samo zato što je moj brat
+- [politika] Pred izbore pregledao građane po selima, sada je nedostupan: Milanu Lazareviću istekao v.d. status, a i dalje je na čelu niškog UKC-a
+- [svet] Papa Lav XIV pod pritiskom da pokaže odlučnost u borbi protiv seksualnog zlostavljanja u Crkvi
+  - flagged (self): Gledajte UŽIVO "Utisak nedelje": Gosti Aleksandar Čupić, Ivanka Popović i Stefan Surlić https://n1info.rs/najave-emisija/utisak-nedelje-gosti-aleksandar-cupic-ivanka-popovic-i-stefan-surlic/
+  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+  - flagged (self): N1 Studio live: Šapić na dnevnom redu https://n1info.rs/najave-emisija/n1-studio-live-sapic-na-dnevnom-redu/
 
 Uncategorized sample (for tuning):
-- Objavljen nacrt pregovora UN u Antaliji o klimi: Bez većih rešenja o fosilnim gorivima | https://n1info.rs/zeleni-kutak/objavljen-nacrt-pregovora-un-u-antaliji-o-klimi-bez-vecih-resenja-o-fosilnim-gorivima/ | tags: ["Zeleni kutak","pregovori","antalija","klima","fosilna goriva","cop31"]
-- AMSS: Gužve na putevima moguće popodne, nema čekanja na granicama | https://n1info.rs/vesti/amss-guzve-na-putevima-moguce-popodne-nema-cekanja-na-granicama/ | tags: ["Vesti","naplatne rampe","amss","granica","gužve","putevi"]
-- Na današnji dan, 22. novembar: Napad ispred FDU tokom održavanja tišine, Vasko da Gama postao prvi moreplovac... | https://n1info.rs/vesti/na-danasnji-dan-22-novembar-napad-ispred-fdu-u-tokom-odrzavanja-tisine-vasko-da-gama-postao-prvi-moreplovac/ | tags: ["Vesti","beta kalendar","na današnji dan"]
-- (VIDEO) Meštani Panonije i doseljeni Rusi zajedno uređuju ovo selo kod Bačke Topole | https://n1info.rs/vesti/panonija-backa-topola-srednjivanje-priroda/ | tags: ["Vesti","uređenje","bačka topola","panonija","rusi"]
-- Regionalni centar "Kalenić" radi sa tek 35 odsto kapaciteta - otpad i dalje završava na divljoj deponiji | https://n1info.rs/zeleni-kutak/regionalni-centar-kalenic-problem-otpad-deponije/ | tags: ["Zeleni kutak","deponije","otpad","regionalni centar kalenić","ub","smeće"]
+- Kreni-Promeni predložio sedam mera za bolju zaštitu životinja: Umesto uklanjanja životinja sa ulica, rešavati uzroke njihovog napuštanja | https://n1info.rs/vesti/kreni-promeni-predlozio-sedam-mera-za-bolju-zastitu-zivotinja/ | tags: ["Vesti","napuštene životinje","životinje","kreni-promeni","zoolog"]
+- Gledajte UŽIVO "Utisak nedelje": Gosti Aleksandar Čupić, Ivanka Popović i Stefan Surlić | https://n1info.rs/najave-emisija/utisak-nedelje-gosti-aleksandar-cupic-ivanka-popovic-i-stefan-surlic/ | tags: ["Najave emisija"]
+- Press: Dušan Čavić (22.11.2026) | https://n1info.rs/video/novi-dan/press-dusan-cavic-22112026/ | tags: ["Novi dan","video","dušan čavić","press","novi dan"]
+- Dnevnik u 19 (21. 11. 2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-21-11-2026/ | tags: ["Dnevnik","video","dnevnik u 19"]
+- Od optužbi za laž do predmeta od posebnog značaja pred Evropskim sudom: Da li je 15. marta korišćen zvučni top? | https://n1info.rs/vesti/evropski-sud-15-mart-zvucni-top/ | tags: ["Vesti","vjt","zvučni top","miodrag marković","nenad stefanović","tužilaštvo"]
+- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
+- Globalni samit o klimi propao: Zemlje nisu uspele da se dogovore o napuštanju fosilnih goriva | https://n1info.rs/zeleni-kutak/globalni-samit-o-klimi-cop31-turska/ | tags: ["Zeleni kutak","antalija","ujedinjene nacije","fosilna goriva","cop","turska"]
+- Anica Telesković demantuje Čavića: Prećutkuje činjenice i iznosi neistine o mom radu | https://n1info.rs/vesti/anica-teleskovic-demantuje-cavica-precutkuje-cinjenice-i-iznosi-neistine-o-mom-radu/ | tags: ["Vesti","demanti","dušan čavić","napad ispred fdu","anica telesković","rts"]
 
 ## Nova.rs
-Categories: {"zabava":7,"svet":11,"hronika":4,"zivot":11,"drustvo":3,"sport":10,"politika":2,"ostalo":1,"ekonomija":1}
-- [zabava] Rasel Brand skuplja novac kako bi osporio presudu za silovanje: Nakon osude raskinuo saradnju sa advokatom
-- [svet] Igor Dodik biće novi premijer Republike Srpske
-- [hronika] Student FDU o napadu pre dve godine: Tužilaštvo se nije oglašavalo do skoro, slučaj nije zatvoren
-- [zivot] Italijanska "penicilin supa" podiže energiju i vraća snagu u hladnim danima: Pravi se začas, a uključuje nekoliko sastojaka koje vam ne bi palo na pamet da dodate u supu
-- [svet] Branko Blanuša podneo ostavku na mesto predsednika SDS-a: „Svako radi šta hoće, narušeno mi je zdravlje“
-- [zivot] Beč ove godine bez omiljene praznične dekoracije
+Categories: {"sport":14,"politika":10,"svet":9,"zabava":5,"kultura":1,"zivot":1,"drustvo":4,"ostalo":1,"hronika":3,"ekonomija":2}
+- [sport] Alimpijević prvo "srušio" Fenerbahče, pa dobio fantastičnu vest - veliko pojačanje za Srbiju pred meč odluke
+- [politika] NPS: Vanredni izbori jedino rešenje za izlazak Beograda iz krize
+- [sport] Velika pobeda Alimpijevića, Bešiktaš srušio Fenerbahče
+- [svet] Ova ostrva mogla bi da nestanu sa mape sveta: Među ugroženima i rajska destinacija koju obožavaju turisti iz Srbije
+- [politika] Predsednica Skupštine Novog Sada Dina Vučinić: Moj brat je dobio otkaz samo zato što je moj brat
+- [politika] Ivanka Popović o spekulacijama da će biti premijerka
 
 Uncategorized sample (for tuning):
-- Pokreni se - Cela emisija - 21.11.2026. | https://nova.rs/emisije/pokreni-se-cela-emisija-21112026/ | tags: ["Emisije","pokreni se cela emisija"]
+- Dnevnik - Cela emisija - 21.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-21112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"sport":11,"ekonomija":10,"politika":4,"region":5,"svet":10,"zivot":22,"tehnologija":3,"ostalo":2,"kultura":4,"drustvo":4,"zdravlje":3,"zabava":1,"hronika":1}
-- [sport] Zvezda sa Monekeom i Motlijem u sastavu
-- [ekonomija] Srbija traži alternativne pravce za naftu: U toku pregovori NIS-a i JANAF-a
-- [politika] Milivojević: "Za Studentsku listu prema EU prioritet državni interes, kontinuitet postojeće politike"
-- [sport] Panika u Denveru – najbolji igrač povređen
-- [sport] Ferstapen poručio Raselu: "Karma je ku*va"
-- [region] Igor Dodik biće novi premijer Republike Srpske
+Categories: {"svet":15,"sport":13,"zivot":23,"drustvo":2,"ekonomija":10,"zdravlje":5,"politika":3,"hronika":3,"zabava":2,"ostalo":1,"tehnologija":3}
+- [svet] Srušio se borbeni avion u Češkoj
+- [sport] Poćetino posle 0:4 na debiju: "Veoma bolno"
+- [svet] Razneta ruska raketna korveta "Merkuri"?
+- [sport] Penjaroja poslao poruku Alimpijeviću: Prvo Partizan, pa reprezentacija! VIDEO
+- [sport] Partizan srušio šampiona ABA lige – Dubai "pao" posle drame u Areni; Penjaroja hvalio Nakića
+- [zivot] Odmor više neće biti kao nekada: Novi trendovi će obeležiti putovanja u 2027. godini
 
 Uncategorized sample (for tuning):
-- Poznati kuvar otkrio grešku koju gotovo svi prave prilikom kuvanja krompira | https://superzena.b92.net/kuhinja/prakticni-saveti/287116/poznati-kuvar-otkrio-gresku-koju-gotovo-svi-prave-prilikom-kuvanja-krompira/vest | tags: ["Najnovije"]
-- Da li perete zajedno posteljinu i odeću u veš-mašini? Evo kakvu štetu pravite | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/287106/da-li-posteljina-i-odeca-treba-zajedno-da-se-peru-u-ves-masini/vest | tags: ["Najnovije"]
+- Detetu nije potrebna mlada majka, već emocionalno stabilno ljudsko biće | https://superzena.b92.net/superstav/jana/286792/detetu-nije-potrebna-mlada-majka-vec-emocionalno-stabilno-ljudsko-bice/vest | tags: []
 
 ## Blic
-Categories: {"drustvo":6,"ekonomija":17,"svet":8,"politika":10,"hronika":8,"zivot":5,"zabava":11,"kultura":3,"zdravlje":2}
-- [drustvo] Vatrogascima otežan pristup u naseljima sa zbijenim kućama i uskim ulicama: Važno upozorenje za građane, ove greške otežavaju gašenje požara
-- [ekonomija] Pala imperija ruskog Amazona: Najbogatija žena u Rusiji podnela ostavku na čeku čuvene kompanije
-- [svet] Policija otkrila nove detalje ubistva u Zagrebu: Strani državljanin ubijen u smeštaju, na mestu podlegao povredama
-- [politika] Čupić otkriva ime novog premijera: Studentska lista objavila detalje o sastavljanju nove Vlade Srbije
-- [politika] Prvi izazov za Studentsku listu iz inostranstva stiže već u decembru: "Ako se postavi ovo pitanje, narod će morati da izađe na referendum i glasa"
-- [hronika] (Video) Veliki požar izbio u kući u Zemunu: Dim i vatra kuljaju na sve strane
-
-## Politika
-Categories: {"ekonomija":2,"politika":2,"region":1,"svet":3,"hronika":4,"kultura":1,"sport":2,"ostalo":5}
-- [ekonomija] Komercijalna banka Skoplje pokušava da preuzme Alta banku u Bitolju
-- [politika] Branko Blanuša podneo ostavku na mesto predsednika SDS-a
-- [region] Knežević prozvao crnogorsku vlast: Mafija vam je preuzela državu, a vi se grlite s Martom Kos
-- [svet] Linta: Na Gazivodama srušeno 47 objekata u vlasništvu Srba
-- [hronika] Instruktor alpinizma iz Srbije teško povređen prilikom penjanja kod Demir Kapije
-- [ekonomija] Poštanska štedionica: šire se lažne tvrdnje i pokušaji izazivanja panike
+Categories: {"hronika":8,"zabava":22,"tehnologija":2,"politika":11,"drustvo":5,"svet":7,"zivot":7,"ekonomija":4,"kultura":3,"ostalo":1}
+- [hronika] Novi detalji napada u tržnom centru u Beogradu! Pištoljem pretio bivšoj devojci, pa je izbo nožem: Lekari joj se bore za život
+- [zabava] OPTUŽEN DA JE BIO FIKTIVNO ZAPOSLEN U POŠTI SRBIJE Željko Samardžić se oglasio nakon navoda da je primao platu bez odlaska na posao: "Redovno plaćam poreze"
+- [tehnologija] Mnogi su počeli da isključuju televizor iz struje svake večeri: Otkriveno je da mogu da nas prisluškuju čak i preko običnog zvučnika
+- [politika] Čupić otkrio datum održavanja predsedničkih izbora u Srbiji: "To je jedini rok, imamo kandidata"
+- [zabava] Ovako izgleda majka Jovane Jeremić koja joj nije bila na venčanju sa Tigrom! Voditeljka je blokirala, a ovako Olga priča o ćerki: "Ona mora da prikoči"
+- [politika] Čupić o navodima da poseduje sedam stanova: "Zaista bih voleo da ih imam"
 
 Uncategorized sample (for tuning):
-- Ugovor NIS-a i JANAF-a ističe krajem godine, u toku pregovori o produženju | https://www.politika.rs/scc/clanak/805107/ugovor-nis-a-i-janaf-a-istice-krajem-godine-u-toku-pregovori-o-produzenju | tags: []
-- Ilegalna kazina ukrala identitete naučnika koji istražuju štetnost kockanja | https://www.politika.rs/scc/clanak/805104/ilegalna-kazina-ukrala-identitete-naucnika-koji-istrazuju-stetnost-kockanja | tags: []
-- Macura: Devojčice sve izloženije nerealnim standardima lepote i uspeha | https://www.politika.rs/scc/clanak/805105/macura-devojcice-sve-izlozenije-nerealnim-standardima-lepote-i-uspeha | tags: []
-- „Bajer” plaća 7,25 milijardi dolara zbog tužbi da njegov herbicid izaziva rak | https://www.politika.rs/scc/clanak/805103/bajer-placa-7-25-milijardi-dolara-zbog-tuzbi-da-njegov-herbicid-izaziva-rak | tags: []
-- Pelet se ne prodaje jeftinije zbog velikih zaliha kod trgovaca | https://www.politika.rs/scc/clanak/805101/pelet-se-ne-prodaje-jeftinije-zbog-velikih-zaliha-kod-trgovaca | tags: []
+- Muž ju je drogirao, a nepoznati muškarci je silovali 13 godina | https://www.blic.rs/bbc/muz-ju-je-drogirao-a-nepoznati-muskarci-je-silovali-13-godina/5614byc | tags: []
+
+## Politika
+Categories: {"drustvo":1,"sport":3,"ostalo":6,"svet":8,"ekonomija":1,"hronika":1}
+- [drustvo] Potraga za lavicom u stambenom delu Istanbula, građani upozoreni na opasnost
+- [sport] Penjaroja: Raduje me činjenica da sam produžio ugovor sa Partizanom
+- [ostalo] Demokrate ostvarile najbolji rezultat u Predstavničkom domu od 1992. godine
+- [ostalo] SZO: borbe u blizini područja zahvaćenih ebolom u DR Kongu ometaju suzbijanje epidemije
+- [svet] U Nemačkoj 56 osoba otrovano ugljen-monoksidom tokom mise
+- [ostalo] U Ajovi planirana hitna detonacija 68 buradi opasnog olovnog jedinjenja
+
+Uncategorized sample (for tuning):
+- Demokrate ostvarile najbolji rezultat u Predstavničkom domu od 1992. godine | https://www.politika.rs/scc/clanak/805272/demokrate-ostvarile-najbolji-rezultat-u-predstavnickom-domu-od-1992-godine | tags: []
+- SZO: borbe u blizini područja zahvaćenih ebolom u DR Kongu ometaju suzbijanje epidemije | https://www.politika.rs/scc/clanak/805274/szo-borbe-u-blizini-podrucja-zahvacenih-ebolom-u-dr-kongu-ometaju-suzbijanje-epidemije | tags: []
+- U Ajovi planirana hitna detonacija 68 buradi opasnog olovnog jedinjenja | https://www.politika.rs/scc/clanak/805266/u-ajovi-planirana-hitna-detonacija-68-buradi-opasnog-olovnog-jedinjenja | tags: []
+- U Istanbulu veliki skup podrške medijima protiv zatvaranja | https://www.politika.rs/scc/clanak/805249/u-istanbulu-veliki-skup-podrske-medijima-protiv-zatvaranja | tags: []
+- Klejton: Sajber pretnje po SAD realne | https://www.politika.rs/scc/clanak/805242/klejton-sajber-pretnje-po-sad-realne | tags: []
+- Čupić za RTS: Kada sam izabran osetio sam odgovornost, a ne trijumf | https://www.politika.rs/scc/clanak/805238/cupic-za-rts-kada-sam-izabran-osetio-sam-odgovornost-a-ne-trijumf | tags: []
 
 ## RTS
-Categories: {"region":3,"drustvo":5,"hronika":4,"svet":4,"politika":1,"ekonomija":2,"zivot":1}
+Categories: {"politika":4,"region":1,"drustvo":6,"hronika":6,"svet":2,"zivot":1}
+- [politika] Studentski pokret: Zabrinuti smo zbog nacrta zakona o kulturnom nasleđu na KiM jer nije konsultovana SPC
+- [politika] Čupić za RTS: Kada sam izabran osetio sam odgovornost, a ne trijumf; važnije je imati dobru vladu nego je brzo formirati
 - [region] Igor Dodik mandatar za sastav nove Vlade Republike Srpske
-- [drustvo] Banka Poštanska štedionica: Još jedan neuspešan pokušaj uznemiravanja javnosti
-- [hronika] Uhapšeni direktor i vlasnici "Vodogradnje", firme koja radila na održavanju puteva u Nišu
-- [svet] Kijev: Više od 180 ruskih dronova ciljalo mete u Ukrajini, pogođena stambena zgrada; Moskva: Oštećena elektrana u Zaporožju
-- [hronika] Brnabićeva: Tokom noći dobila sam pretnje upućene mom detetu
-- [politika] Ponavljanje izbora za članove saveta nacionalnih manjina – glasa se na pet biračkih mesta u Bujanovcu i Subotici
+- [drustvo] Dijana Hrka za RTS: Obećala sam Stefanu da ću pravdu isterati do kraja
+- [hronika] Saslušan osumnjičeni za silovanje, tužilaštvo predložilo određivanje pritvora
+- [svet] Desetine radnika nestalo posle požara u fabrici slatkiša u Indoneziji
