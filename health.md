@@ -1,94 +1,96 @@
 # Vesti health report
 
-Run: 2026-11-21T21:30:33.388Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-22T11:43:57.728Z  |  items: 290  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [Nova.rs] Possible ads NOT flagged: ""Očekujemo OKS da nas obavesti o svemu što može da utiče na našu saradnju, sve informacije dobijamo iz medija": Prve reakcije sponzora na burna dešavanja u krovnoj sportskoj organizaciji Srbije"
-2. **LOW** [B92] Possible ads NOT flagged: "Traže nove stanovnike, a mogu da se prijave i stranci: Besplatne kuće na 10 godina, ovo su uslovi"
+1. **LOW** [B92] Possible ads NOT flagged: "Traže nove stanovnike, a mogu da se prijave i stranci: Besplatne kuće na 10 godina, ovo su uslovi"
+2. **LOW** [Blic] Possible ads NOT flagged: "Noćenje 32 evra, a kupanje samo 5; Banja u srcu Karpata nudi wellness za malo para: Voda lekovita više od dva veka, a priroda potpuno besplatna"
+3. **LOW** [Politika] Possible ads NOT flagged: "Pelet se ne prodaje jeftinije zbog velikih zaliha kod trgovaca"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 50 | 0.2h | 100% | 18% | 1 |
-| Nova.rs | yes | 50 | 0.2h | 100% | 4% | 0 |
-| B92 | yes | 80 | 0.1h | 95% | 4% | 0 |
-| Blic | yes | 70 | 0.2h | 100% | 1% | 0 |
-| Politika | yes | 20 | 0.0h | 100% | 15% | 0 |
-| RTS | yes | 20 | 1.0h | 100% | 0% | 0 |
+| N1 | yes | 50 | 0.0h | 100% | 10% | 1 |
+| Nova.rs | yes | 50 | 0.3h | 100% | 2% | 0 |
+| B92 | yes | 80 | 0.1h | 95% | 3% | 0 |
+| Blic | yes | 70 | 0.0h | 100% | 0% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 25% | 0 |
+| RTS | yes | 20 | 0.2h | 100% | 0% | 0 |
 
 ## Front page right now
-1. [multi, 4 outlets, score 48] Stravična autobuska nesreća u Brčkom: Ima mrtvih i povređenih
-   - also (politika): Jedna osoba poginula, 14 povređeno u sudaru autobusa i automobila kod Brčkog
-   - also (nova): Jedna osoba poginula, više povređenih u sudaru autobusa i automobila u Brčkom
-   - also (n1): Jedna osoba poginula, više povređenih u sudaru autobusa i automobila u Brčkom
-2. [multi, 4 outlets, score 44.6] Pronađen dečak koji je nestao u Beogradu
-   - also (nova): Pronađen mladić iz Zemuna zbog koga je aktiviran sistem "Pronađi me"
-   - also (n1): Pronađen mladić koji je danas nestao u Zemunu
-   - also (nova): Tinejdžer sa autizmom nestao u Zemunu, aktiviran sistem "Pronađi me"
-   - also (blic): Pronađen dečak Andrej koji je nestao u Beogradu! Oglasio se MUP
-   - also (blic): Aktiviran sistem "Pronađi me": Hitno se oglasio MUP zbog nestalog dečaka u Beogradu
-3. [multi, 4 outlets, score 44.2] Dve osobe uhapšene zbog požara u firmi na Vračaru
-   - also (n1): Dve osobe uhapšene zbog sumnje da su izazvale požar u firmi na Vračaru
-   - also (politika): Uhapšene dve osobe zbog podmetanja požara u firmi u Krunskoj ulici
-   - also (blic): Prišli sa Molotovljevim koktelom, pa izazvali požar na bivšem sedištu DS-a na Vračaru! Oglasio se MUP, uhapšene dve osobe
-4. [multi, 3 outlets, score 39] VIDEO Hiljade ljudi u Zagrebu podigle bele jastuke za Kristiana Periša: „Dosta je prebacivanja odgovornosti“
-   - also (n1): Hiljade građana u Zagrebu odale počast Kristianu Perišu: "Nećete nas ugušiti"
-   - also (politika): Hiljade ljudi u Zagrebu odale počast Kristijanu Perišu: beli jastuci kao simbol sećanja
-5. [multi, 3 outlets, score 37.6] Kreni-promeni najavljuje inicijativu za smenu čelnika Skupštine Beograda
-   - also (nova): Kreni-Promeni traži smenu predsednika Skupštine Beograda i njegovog zamenika: „Neka naprednjačka većina pokaže da li poštuje Vučićeve principe“
-   - also (blic): Pokret Kreni-Promeni pokrenuće inicijativu za smenu predsednika Skupštine grada Beograda i njegovog zamenika
-6. [multi, 3 outlets, score 36.2] U Hrtkovcima uhapšena šestorica zbog napada na bajkere na dan izbora
-   - also (n1): U Hrtkovcima uhapšena šestorica zbog napada na bajkere na dan izbora
-   - also (nova): U Hrtkovcima uhapšena šestorica zbog napada na bajkere na dan izbora
-7. [multi, 3 outlets, score 34.8] SNS pisao međunarodnim institucijama: Studentska lista nedemokratski preuzima pozicije u parlamentu
-   - also (b92): SNS pisala međunarodnim institucijama: "Studentska lista nedemokratski preuzima pozicije u parlamentu"
-   - also (blic): "Izrekao novčanu kaznu svakom poslaniku SNS-a koji se javio za reč!" Brnabićeva poslala pismo međunarodnim institucijama: "Studentska lista nedemokratski preuzima pozicije u Skupštini"
-8. [multi, 3 outlets, score 33.8] Peter Mađar: Orbanovom bivšem ministru zaplenjena imovina od 24 miliona evra
-   - also (n1): Mađar: Orbanovom bivšem ministru zaplenjena imovina od 24 miliona evra
-   - also (nova): Mađar: Orbanovom bivšem ministru zaplenjena imovina od 24 miliona evra
-9. [multi, 3 outlets, score 33.2] Pokret Bogoljuba Karića podneće predlog da se biračko pravo stiče sa 16 godina
-   - also (nova): Pokret Bogoljuba Karića podnosi parlamentu predlog da se biračko pravo stiče sa 16 godina
-   - also (n1): Pokret Bogoljuba Karića podneće predlog da se biračko pravo stiče sa 16 godina
-10. [multi, 2 outlets, score 29] Novi protesti u Tirani: Demonstranti ispred kancelarije Edija Rame VIDEO
-   - also (politika): Demonstranti ispred kancelarije Edija Rame posle marša ulicama Tirane
+1. [multi, 5 outlets, score 59] Igor Dodik mandatar za sastav nove Vlade Republike Srpske
+   - also (b92): Igor Dodik biće novi premijer Republike Srpske
+   - also (nova): Igor Dodik biće novi premijer Republike Srpske
+   - also (n1): Igor Dodik novi mandatar za sastav Vlade RS
+   - also (nova): Hoće li Igor Dodik postati premijer Republike Srpske? Danas se saopštava ime mandatara
+   - also (blic): Igor Dodik biće novi premijer Republike Srpske! SNSD doneo odluku da vlast ostane u krugu porodice
+   - also (b92): Minić danas saopštava ime mandatara za sastav nove vlade
+2. [multi, 4 outlets, score 45.1] Uhapšeni direktor PIO fonda u Bačkoj Palanci i rukovodilac u Opštinskoj upravi Bač
+   - also (b92): VJT u Novom Sadu: "Uhapšeni osumnjičeni za zloupotrebu službenog položaja u Bačkoj Palanci i Baču"
+   - also (n1): Uhapšen direktor PIO fonda u Bačkoj Palanci zbog sumnje na zloupotrebu službenog položaja
+   - also (nova): Uhapšen direktor PIO Fonda u Bačkoj Palanci, osumnjičen za zloupotrebu službenog položaja
+3. [multi, 4 outlets, score 43.9] Pronađeno telo šestogodišnjeg deteta koje je upalo u Ribnicu
+   - also (b92): Tragičan kraj potrage za detetom koje je upalo u reku; Ronioci pronašli telo
+   - also (n1): Ronioci pronašli telo šestogodišnjeg deteta koje je upalo u reku u Podgorici
+   - also (nova): Ronioci pronašli telo deteta koje je upalo u reku Ribnicu
+4. [multi, 3 outlets, score 37.8] Brnabićeva: Tokom noći dobila sam pretnje upućene mom detetu
+   - also (b92): Brnabić navodi da je dobila pretnje: "Pozvali ste ih da nam pišu i vređaju nas"
+   - also (blic): Ana Brnabić u toku noći dobila stravičnu pretnju upućenu njenom detetu: Objavila fotografiju i broj telefona pošiljaoca
+5. [multi, 3 outlets, score 35.4] Patrijarh Porfirije u Moskvi u poseti ruskom patrijarhu Kirilu
+   - also (rts): Patrijarh Porfirije se sastao sa patrijarhom Kirilom u Moskvi
+   - also (blic): (FOTO) Sastali se patrijarh Porfirije i patrijarh Kiril u Moskvi: Poslata snažna poruka o jedinstvu pravoslavlja, razmenjeni i darovi
+6. [multi, 3 outlets, score 34.8] "Vreme odgovornosti dolazi": Studenti pozvali na okupljanje u ponedeljak ispred Specijalnog suda zbog suđenja u slučaju "Generalštab"
+   - also (rts): Dve godine od napada na studente i profesore ispred FDU
+   - also (n1): Dve godine od napada na studente i profesore FDU uoči prve blokade fakulteta
+   - also (nova): Dve godine od napada na studente i profesore FDU: Kako su počele blokade fakulteta
+   - also (n1): Na današnji dan, 22. novembar: Napad ispred FDU tokom održavanja tišine, Vasko da Gama postao prvi moreplovac...
+7. [multi, 3 outlets, score 33.9] Program Studentske liste o socijalnoj zaštiti, ovo su svi noviteti: Veći dečji dodatak, socijalne penzije i nova prava za roditelje-negovatelje
+   - also (n1): Program Studentske liste o socijalnoj zaštiti: Veći dečji dodatak, socijalne penzije i nova prava za roditelje-negovatelje
+   - also (nova): Program Studentske liste o socijalnoj zaštiti: Veći dečji dodatak, socijalne penzije i nova prava za roditelje-negovatelje
+8. [multi, 3 outlets, score 33.9] Udala se Majli Sajrus
+   - also (b92): Udala se Majli Sajrus, pa zaplakala: Snimak se širi mrežama FOTO/VIDEO
+   - also (nova): Udala se Majli Sajrus: Pevačica izgovorila sudbonosno „da“ pred 140 zvanica, pa poručila - "Jedva čekam da dobijemo bebu!"
+9. [multi, 3 outlets, score 33.8] Požar u fabrici slatkiša u Indoneziji, troje poginulih
+   - also (nova): Stravičan požar u fabrici slatkiša u Indoneziji: Troje mrtvih, traga se za još 36 radnika
+   - also (blic): Buknuo požar u fabrici slatkiša: Najmanje sedam mrtvih, 50 radnika nestalo u Indoneziji! Strahuje se da ima još mnogo žrtava
+10. [multi, 3 outlets, score 33.5] Haos u Belgiji: Sutra se otkazuju gotovo svi letovi, aerodromi upozoravaju na katastrofalne posledice
+   - also (n1): Otkazana većina letova na aerodromu u Briselu za ponedeljak
+   - also (b92): Otkazani apsolutno svi letovi na aerodromima za ponedeljak
 
 ## Details
 ### N1
-Categories: {"ostalo":9,"svet":11,"region":4,"zivot":5,"politika":6,"ekonomija":2,"hronika":7,"drustvo":4,"zdravlje":1,"kultura":1}
+Categories: {"region":7,"ostalo":5,"svet":12,"politika":4,"zivot":8,"drustvo":7,"ekonomija":4,"kultura":1,"hronika":2}
 Flagged:
-- (self) Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
+- (self) Novi dan: Gen Z na ulicama kao inspiracija <https://n1info.rs/najave-emisija/novi-dan-gen-z-na-ulicama-kao-inspiracija/>
 Uncategorized sample:
-- (VIDEO) Meštani Panonije i doseljeni Rusi zajedno uređuju ovo selo kod Bačke Topole <https://n1info.rs/vesti/panonija-backa-topola-srednjivanje-priroda/> tags=["Vesti","rusi","uređenje","bačka topola","panonija"]
-- Regionalni centar "Kalenić" radi sa tek 35 odsto kapaciteta - otpad i dalje završava na divljoj deponiji <https://n1info.rs/zeleni-kutak/regionalni-centar-kalenic-problem-otpad-deponije/> tags=["Zeleni kutak","smeće","deponije","otpad","regionalni centar kalenić","ub"]
-- Dnevnik u 19 (20.11.2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-20112026/> tags=["Dnevnik","vesti","dnevnik u 19","dnevnik"]
-- Gledajte Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
-- PRESS: Dragan Popović (21.11.2026) <https://n1info.rs/video/novi-dan/press-dragan-popovic-21112026/> tags=["Novi dan","novi dan","video","press"]
-- Dan uživo (20.11.2026) <https://n1info.rs/video/dan-uzivo/dan-uzivo-20112026/> tags=["Dan uživo","dan uživo","emisija","video"]
+- Objavljen nacrt pregovora UN u Antaliji o klimi: Bez većih rešenja o fosilnim gorivima <https://n1info.rs/zeleni-kutak/objavljen-nacrt-pregovora-un-u-antaliji-o-klimi-bez-vecih-resenja-o-fosilnim-gorivima/> tags=["Zeleni kutak","pregovori","antalija","klima","fosilna goriva","cop31"]
+- AMSS: Gužve na putevima moguće popodne, nema čekanja na granicama <https://n1info.rs/vesti/amss-guzve-na-putevima-moguce-popodne-nema-cekanja-na-granicama/> tags=["Vesti","naplatne rampe","amss","granica","gužve","putevi"]
+- Na današnji dan, 22. novembar: Napad ispred FDU tokom održavanja tišine, Vasko da Gama postao prvi moreplovac... <https://n1info.rs/vesti/na-danasnji-dan-22-novembar-napad-ispred-fdu-u-tokom-odrzavanja-tisine-vasko-da-gama-postao-prvi-moreplovac/> tags=["Vesti","beta kalendar","na današnji dan"]
+- (VIDEO) Meštani Panonije i doseljeni Rusi zajedno uređuju ovo selo kod Bačke Topole <https://n1info.rs/vesti/panonija-backa-topola-srednjivanje-priroda/> tags=["Vesti","uređenje","bačka topola","panonija","rusi"]
+- Regionalni centar "Kalenić" radi sa tek 35 odsto kapaciteta - otpad i dalje završava na divljoj deponiji <https://n1info.rs/zeleni-kutak/regionalni-centar-kalenic-problem-otpad-deponije/> tags=["Zeleni kutak","deponije","otpad","regionalni centar kalenić","ub","smeće"]
 
 ### Nova.rs
-Categories: {"svet":9,"zivot":1,"zabava":7,"sport":14,"drustvo":6,"hronika":4,"ostalo":2,"politika":6,"ekonomija":1}
+Categories: {"zabava":7,"svet":11,"hronika":4,"zivot":11,"drustvo":3,"sport":10,"politika":2,"ostalo":1,"ekonomija":1}
 Uncategorized sample:
-- Dnevnik - Cela emisija - 20.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-20112026/> tags=["Emisije","dnevnik cela emisija"]
-- Među nama - Cela emisija - 20.11.2026. <https://nova.rs/emisije/medju-nama-cela-emisija-20112026/> tags=["Emisije","među nama cela emisija"]
+- Pokreni se - Cela emisija - 21.11.2026. <https://nova.rs/emisije/pokreni-se-cela-emisija-21112026/> tags=["Emisije","pokreni se cela emisija"]
 
 ### B92
-Categories: {"sport":16,"region":2,"ekonomija":10,"svet":13,"zivot":18,"kultura":5,"ostalo":3,"zdravlje":5,"zabava":3,"hronika":1,"drustvo":1,"politika":2,"tehnologija":1}
+Categories: {"sport":11,"ekonomija":10,"politika":4,"region":5,"svet":10,"zivot":22,"tehnologija":3,"ostalo":2,"kultura":4,"drustvo":4,"zdravlje":3,"zabava":1,"hronika":1}
 Uncategorized sample:
-- Novine: "Nova vlast, stari ring"; "Srpska neće biti kamen oko vrata Beogradu" <https://www.b92.net/info/razno/287018/novine-nova-vlast-stari-ring-srpska-nece-biti-kamen-oko-vrata-beogradu/vest> tags=["Najnovije"]
-- Kako je izgledala ishrana Grejs Keli? Nije držala stroge dijete, a bila je prelepa <https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/286806/ishrana-grejs-keli-zbog-koje-je-bila-prelepa-i-vitka/vest> tags=[]
-- Alarm za meštane Moravičkog okruga: Struja nestaje u ponedeljak, evo ko sve ostaje bez napajanja <https://www.b92.net/lokal/cacak/servisne-informacije/286915/alarm-za-mestane-moravickog-okruga-struja-nestaje-u-ponedeljak-evo-ko-sve-ostaje-bez-napajanja/vest> tags=[]
+- Poznati kuvar otkrio grešku koju gotovo svi prave prilikom kuvanja krompira <https://superzena.b92.net/kuhinja/prakticni-saveti/287116/poznati-kuvar-otkrio-gresku-koju-gotovo-svi-prave-prilikom-kuvanja-krompira/vest> tags=["Najnovije"]
+- Da li perete zajedno posteljinu i odeću u veš-mašini? Evo kakvu štetu pravite <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/287106/da-li-posteljina-i-odeca-treba-zajedno-da-se-peru-u-ves-masini/vest> tags=["Najnovije"]
 
 ### Blic
-Categories: {"zabava":20,"drustvo":8,"hronika":8,"politika":9,"tehnologija":2,"ekonomija":2,"zivot":9,"svet":8,"zdravlje":2,"ostalo":1,"kultura":1}
-Uncategorized sample:
-- Ko će biti nova 'Bond devojka' i treba li ta uloga da se promeni <https://www.blic.rs/bbc/ko-ce-biti-nova-bond-devojka-i-treba-li-ta-uloga-da-se-promeni/nem0ljv> tags=[]
+Categories: {"drustvo":6,"ekonomija":17,"svet":8,"politika":10,"hronika":8,"zivot":5,"zabava":11,"kultura":3,"zdravlje":2}
 
 ### Politika
-Categories: {"sport":4,"ostalo":3,"politika":1,"hronika":3,"svet":7,"ekonomija":1,"region":1}
+Categories: {"ekonomija":2,"politika":2,"region":1,"svet":3,"hronika":4,"kultura":1,"sport":2,"ostalo":5}
 Uncategorized sample:
-- Demonstranti ispred kancelarije Edija Rame posle marša ulicama Tirane <https://www.politika.rs/scc/clanak/805023/demonstranti-ispred-kancelarije-edija-rame-posle-marsa-ulicama-tirane> tags=[]
-- Prsten preživele putnice „Titanika” prodat za 110.000 funti <https://www.politika.rs/scc/clanak/805001/prsten-prezivele-putnice-titanika-prodat-za-110-000-funti> tags=[]
-- Ruska mornarica ponovo u Sredozemlju prati teretne brodove <https://www.politika.rs/scc/clanak/804995/ruska-mornarica-ponovo-u-sredozemlju-prati-teretne-brodove> tags=[]
+- Ugovor NIS-a i JANAF-a ističe krajem godine, u toku pregovori o produženju <https://www.politika.rs/scc/clanak/805107/ugovor-nis-a-i-janaf-a-istice-krajem-godine-u-toku-pregovori-o-produzenju> tags=[]
+- Ilegalna kazina ukrala identitete naučnika koji istražuju štetnost kockanja <https://www.politika.rs/scc/clanak/805104/ilegalna-kazina-ukrala-identitete-naucnika-koji-istrazuju-stetnost-kockanja> tags=[]
+- Macura: Devojčice sve izloženije nerealnim standardima lepote i uspeha <https://www.politika.rs/scc/clanak/805105/macura-devojcice-sve-izlozenije-nerealnim-standardima-lepote-i-uspeha> tags=[]
+- „Bajer” plaća 7,25 milijardi dolara zbog tužbi da njegov herbicid izaziva rak <https://www.politika.rs/scc/clanak/805103/bajer-placa-7-25-milijardi-dolara-zbog-tuzbi-da-njegov-herbicid-izaziva-rak> tags=[]
+- Pelet se ne prodaje jeftinije zbog velikih zaliha kod trgovaca <https://www.politika.rs/scc/clanak/805101/pelet-se-ne-prodaje-jeftinije-zbog-velikih-zaliha-kod-trgovaca> tags=[]
 
 ### RTS
-Categories: {"region":3,"politika":4,"ekonomija":1,"hronika":4,"drustvo":5,"svet":2,"zivot":1}
+Categories: {"region":3,"drustvo":5,"hronika":4,"svet":4,"politika":1,"ekonomija":2,"zivot":1}
