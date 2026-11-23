@@ -1,6 +1,6 @@
 # Outlet icons
 
-Run: 2026-11-22T21:37:08.453Z
+Run: 2026-11-23T13:19:24.469Z
 
 ## N1  (https://n1info.rs)
 - OK  200 image/png 485B 16x16 | icon sizes=16x16 | https://n1info.rs/media/images/n1_fav_icon.2e16d0ba.fill-16x16.png
@@ -12,7 +12,7 @@ Run: 2026-11-22T21:37:08.453Z
 - OK  200 image/png 395B 32x32 | apple-touch-icon sizes=120x120 | https://n1info.rs/media/images/n1_fav_icon.2e16d0ba.fill-120x120.png
 - OK  200 image/png 395B 32x32 | icon sizes=192x192 | https://n1info.rs/media/images/n1_fav_icon.2e16d0ba.fill-192x192.png
 - bad 404 text/html 75189B  | guess /apple-touch-icon.png | https://n1info.rs/apple-touch-icon.png
-- bad 404 text/html 555B  | guess /favicon.ico | https://n1info.rs/favicon.ico
+- bad 404 text/html 153B  | guess /favicon.ico | https://n1info.rs/favicon.ico
 - bad 404 text/html 75189B  | guess /favicon.png | https://n1info.rs/favicon.png
 
 ## Nova.rs  (https://nova.rs)
@@ -32,9 +32,9 @@ Run: 2026-11-22T21:37:08.453Z
 - OK  200 image/png 10755B 144x144 | apple-touch-icon sizes=- | https://www.b92.net/files/b92/img/icons/apple-icon-144x144.png
 - OK  200 image/png 13159B 192x192 | icon sizes=- | https://www.b92.net/files/b92/img/icons/android-icon-192x192.png
 - OK  200 image/x-icon 15406B ico[16x16,32x32,48x48] | icon sizes=- | https://www.b92.net/files/b92/favicon.ico
-- bad 404 text/html 252429B  | guess /apple-touch-icon.png | https://www.b92.net/apple-touch-icon.png
+- bad 404 text/html 253698B  | guess /apple-touch-icon.png | https://www.b92.net/apple-touch-icon.png
 - OK  200 image/x-icon 15406B ico[16x16,32x32,48x48] | guess /favicon.ico | https://www.b92.net/favicon.ico
-- bad 404 text/html 252393B  | guess /favicon.png | https://www.b92.net/favicon.png
+- bad 404 text/html 253662B  | guess /favicon.png | https://www.b92.net/favicon.png
 
 ## Blic  (https://www.blic.rs)
 - OK  200 image/png 12724B 180x180 | apple-touch-icon sizes=180x180 | https://ocdn.eu/ucs/static/blicperun/9c6182b2198589dae83be7d696eb1802/v3/img/favicons/apple-touch-icon.png
