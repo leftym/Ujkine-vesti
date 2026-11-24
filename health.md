@@ -1,100 +1,101 @@
 # Vesti health report
 
-Run: 2026-11-24T02:48:26.689Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
+Run: 2026-11-24T14:00:39.318Z  |  items: 286  |  front-page clusters: 10 (10 multi-outlet)
 
 ## Recommendations (priority order)
-1. **LOW** [RTS] 50% of stories landed in "politika": check the classifier is not over-matching.
-2. **LOW** [RTS] Possible ads NOT flagged: "Korenak: Investicioni rejting omogućio bi Srbiji pristup većem kapitalu i jeftinijem zaduživanju"
+1. **MED** [Politika] 30% of stories are uncategorized ("Ostalo"). Common words in them: americki(1), kongresmen(1), dzimi(1), gomez(1), podnosi(1), ostavku(1), izvestaja(1), seksualnom(1). Add section names / keyword stems in lib/classify.js.
+2. **LOW** [B92] Possible ads NOT flagged: "Kejn i Jamal van petog kola: Mbape, Haland ili jeftinije zamene?"
 
 ## Outlet table
 | Outlet | OK | Items | Newest | Images | Ostalo | Ads |
 |---|---|---|---|---|---|---|
-| N1 | yes | 46 | 3.9h | 100% | 13% | 1 |
-| Nova.rs | yes | 50 | 3.3h | 100% | 2% | 0 |
-| B92 | yes | 80 | 3.0h | 96% | 5% | 0 |
-| Blic | yes | 70 | 2.7h | 100% | 1% | 0 |
-| Politika | yes | 20 | 1.7h | 100% | 15% | 0 |
-| RTS | yes | 20 | 4.1h | 100% | 10% | 0 |
+| N1 | yes | 46 | 0.1h | 100% | 11% | 3 |
+| Nova.rs | yes | 50 | 0.2h | 100% | 0% | 0 |
+| B92 | yes | 80 | 0.1h | 95% | 0% | 1 |
+| Blic | yes | 70 | 0.0h | 100% | 3% | 0 |
+| Politika | yes | 20 | 0.1h | 100% | 30% | 0 |
+| RTS | yes | 20 | 0.4h | 100% | 5% | 0 |
 
 ## Front page right now
-1. [multi, 6 outlets, score 68.3] Gujon razrešen sa funkcije v. d. direktora Kancelarije za javnu i kulturnu diplomatiju
-   - also (n1): Vlada razrešila Arnoa Gujona sa mesta v.d. direktora Kancelarije za javnu i kulturnu diplomatiju
-   - also (b92): Gujon razrešen sa funkcije v.d. direktora Kancelarije za javnu i kulturnu diplomatiju
-   - also (politika): Gujon razrešen sa funkcije v.d. direktora Kancelarije za javnu i kulturnu diplomatiju
-   - also (nova): Anro Gujon nije više v.d. direktora Kancelarije za javnu i kulturnu diplomatiju, prelazi na novu dužnost
-   - also (blic): Vlada Srbije razrešila Arnoa Gujona sa mesta direktora Kancelarije za javnu i kulturnu diplomatiju
-2. [multi, 5 outlets, score 55.7] Napadnut gradonačelnik Čačka Milun Todorović
-   - also (nova): Poznat identitet čoveka koji je napao gradonačelnika Čačka
-   - also (b92): Pretučen gradonačelnik Čačka Milun Todorović: Poznati novi detalji i ko ga je napao
-   - also (n1): Ozonpress: Gradonačelnik Čačka Milun Todorović nakon svađe i incidenta primljen u bolnicu
-   - also (blic): Bivši fudbaler pretukao gradonačelnika Čačka: Detalji napada na Miluna Todorovića
-   - also (nova): Ozonpress: Gradonačelnik Čačka Milun Todorović napadnut na ulici, primljen u bolnicu
-3. [multi, 4 outlets, score 43] Direktor Pete beogradske gimnazije podneo ostavku
-   - also (n1): Zemunska gimnazija dobila novog direktora
-   - also (nova): Zemunska gimnazija dobila novog direktora
-   - also (n1): Direktor Pete beogradske gimnazije podneo ostavku na tu funkciju
-   - also (nova): Direktor Pete beogradske gimnazije podneo ostavku
-   - also (blic): Zemunska gimnazija dobila novog direktora: Profesor hemije preuzeo funkciju
-   - also (blic): Direktor Pete beogradske gimnazije podneo ostavku na tu funkciju
-4. [multi, 3 outlets, score 37.8] Vesna Čitaković Đurišić nije izabrana za gradonačelnicu Užica, nedostajao jedan glas
-   - also (blic): Skupština grada Užica nije izabrala novog gradonačelnika
-   - also (n1): Vesna Čitaković Đurišić nije izabrana za gradonačelnicu Užica
-5. [multi, 3 outlets, score 33.6] Ekološki ustanak podržao stav Studentskog pokreta o Vukovaru: Pomirenje mora počivati na istini
-   - also (rts): Studentski pokret o predlogu rezolucije EP o Vukovaru: Istinsko pomirenje nije moguće nametanjem jednostranih tumačenja prošlosti
-   - also (n1): Jedan od inicijatora nacrta rezolucije o Vukovaru odgovorio na stav Studentskog pokreta
-   - also (nova): Jedan od inicijatora nacrta rezolucije o Vukovaru odgovorio na stav Studentskog pokreta
-6. [multi, 3 outlets, score 32.6] U nastavku suđenja u slučaju ubistva Danke Ilić advokati odbrane tražili novo neuropsihijatrijsko veštačenje osumnjičenih
-   - also (n1): Nastavak suđenja u slučaju Danke Ilić: Advokati odbrane tražili novo neuropsihijatrijsko veštačenje optuženih
-   - also (nova): Suđenje u slučaju Danke Ilić: Odbrana traži novo neuropsihijatrijsko veštačenje optužbenih
-7. [multi, 2 outlets, score 28.7] Ujutru slab mraz, preko dana pretežno sunčano, do devet stepeni
-   - also (nova): U Srbiji ujutru slab mraz, tokom dana sunčano
-8. [multi, 2 outlets, score 27.9] Pogledajte tabelu Premijer lige, slavni Junajted u zoni ispadanja - Brentford razbio Everton za kraj 11. kola
-   - also (b92): Remi za kraj 13. kola VIDEO
-9. [multi, 2 outlets, score 26.3] Zukorlić: "Razgovor na konsultacijama konstruktivan, još nije postignut dogovor"
-   - also (n1): Zukorlić: Konsultacije o formiranju odbora protekle u konstruktivnoj atmosferi, konačan dogovor još nije postignut
-10. [multi, 2 outlets, score 25.3] Sindikat SMER uputio zahtev rukovodstvu RTS-a zbog postupanja zaposlenih tokom blokade: Ko je tajno ulazio u zgradu i realizovao program
-   - also (n1): Sindikat SMER uputio zahtev rukovodstvu RTS-a zbog postupanja zaposlenih tokom blokade
+1. [multi, 5 outlets, score 56.4] Savet REM-a obustavio postupak protiv RTS-a, nema elemenata za izricanje mere
+   - also (b92): Savet REM pokrenuo ispitne postupke protiv K1 TV, TV Tanjug i TV Superstar
+   - also (b92): REM doneo odluku: Mera upozorenja i prekršajna prijava za TV Hepi
+   - also (n1): Savet REM-a: TV Hepiju mera upozorenja i prekršajna prijava, obustavljen ispitni postupak za RTS 1
+   - also (b92): Savet REM-a obustavio postupak protiv RTS; "Nema elemenata za izricanje mere"
+   - also (blic): Savet REM pokrenuo ispitne postupke protiv K1 TV, TV Tanjug i TV Superstar
+   - also (nova): Savet REM-a obustavio postupak protiv RTS-a, pokrenuo protiv TV Hepi
+   - also (blic): Savet REM-a: Mera upozorenja i podnošenje prekršajne prijave protiv TV Hepi
+   - also (blic): Savet REM-a obustavio postupak protiv RTS, nema elemenata za izricanje mere
+2. [multi, 4 outlets, score 46.3] Objavljen snimak hapšenja učenika osumnjičenog za pucnjavu u školi u Kragujevcu; Uhapšen i otac dečaka VIDEO
+   - also (n1): MUP objavio snimak hapšenja osumnjičenog za pucnjavu u školi u Kragujevcu
+   - also (nova): Objavljen snimak hapšenja maloletnika osumnjičenog za pucnjavu u školi u Kragujevcu VIDEO
+   - also (blic): (video) Maskirno odelo, lisice na rukama, drže ga dva policajca: MUP objavio snimak hapšenja tinejdžera (17) koji je pucao u školi u Kragujevcu: Ispituje se da li je najavio napad na društvenim mrežama!
+3. [multi, 3 outlets, score 37.4] Uhapšeni osnivači i direktori firmi iz Smedereva i Kovina zbog poreske utaje
+   - also (n1): Uhapšeni osnivači i direktori firmi iz Smedereva i Kovina zbog poreske prevare
+   - also (blic): Hapšenje u Smederevu zbog poreske prevare: Direktori firmi iz Kovina i Smedereva osumnjičeni da su oštetili budžet za više od 1,7 miliona dinara
+4. [multi, 3 outlets, score 37.4] Ovo je spisak predloženih članova skupštinskih odbora; Bakić – unutrašnji poslovi, Šoškić – finansije...
+   - also (n1): Spisak svih predloženih članova skupštinskih odbora: Bakić - unutrašnji poslovi, Šoškić - finansije, Baucal - evropske integracije...
+   - also (nova): Pogledajte spisak svih predloženih članova skupštinskih odbora: Bakić - unutrašnji poslovi, Šoškić - finansije, Baucal - evropske integracije...
+   - also (nova): Objavljena imena poslanika koji su predloženi za članove i zamenike članova odbora Skupštine Srbije FOTO
+5. [multi, 3 outlets, score 36.9] Gradonačelnik Niša ne želi da podnese ostavku, tvrdi da kraj godine nije dobar za smenu vlasti
+   - also (politika): Gradonačelnik Niša: Ne bežim od odlaska sa funkcije, ali sada nije vreme za smenu vlasti
+   - also (nova): Gradonačelnik Niša ne da ostavku, tvrdi da kraj godine nije dobar za smenu vlasti
+6. [multi, 3 outlets, score 34.4] Partizan protiv Teleoptika, Zvezda ponovo ide u Rumu: Poznati parovi osmine finala Kupa Srbije
+   - also (politika): Zvezda gost Slovena, Partizan Teleoptika u osmini finala Kupa Srbije
+   - also (b92): Zvezda ide u Rumu, Partizan protiv filijale u Kupu Srbije
+7. [multi, 3 outlets, score 33.9] "Video sam je u zadnjem delu dvorišta, nastala je panika" Novi detalji sa suđenja za ubistvo Danke Ilić: Komšije otkrile šta se dešavalo pre dolaska policije
+   - also (b92): Nastavljeno suđenje za ubistvo Danke Ilić: Optuženi stigli u Viši sud u Negotinu VIDEO
+   - also (rts): Nastavlja se suđenje u slučaju ubistva Danke Ilić
+   - also (blic): Bivši direktor Vodovoda svedočio na suđenju za ubistvo Danke Ilić: Otkrio kako je radnike odveo u policiju
+8. [multi, 3 outlets, score 33.9] Uhapšen Naser Orić; Opsadno stanje u BiH, pretresi u toku
+   - also (rts): Uhapšen Naser Orić
+   - also (blic): Uhapšeni Naser Orić i bivša poslanica se veselili kod odbeglog Đorđa Ždrala (Video)
+9. [multi, 3 outlets, score 33.8] Uhapšen otac maloletnika koji je pucao u srednjoj školi u Kragujevcu, nije imao dozvolu za oružje
+   - also (nova): Uhapšen otac maloletnika koji je pucao u školi u Kragujevcu
+   - also (blic): Uhapšen otac tinejdžera (17) koji je pucao u školi u Kragujevcu! Imao nelegalno oružje, njegov sin u roku od 6 minuta savladan i uhapšen (video)
+10. [multi, 3 outlets, score 33.5] Preminuo mitropolit bački Irinej
+   - also (b92): Od monaha do jednog od najistaknutijih arhijereja SPC; Ko je bio mitropolit Irinej?
+   - also (n1): Patrijarh Porfirije služio pomen mitropolitu Irineju
 
 ## Details
 ### N1
-Categories: {"svet":13,"zivot":4,"hronika":4,"politika":8,"drustvo":8,"ostalo":6,"ekonomija":2,"region":1}
+Categories: {"politika":12,"drustvo":5,"svet":3,"zivot":6,"ostalo":5,"hronika":7,"ekonomija":5,"region":3}
 Flagged:
-- (self) Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/>
+- (self) Novi dan: Budućnost odnosa Srbije i EU <https://n1info.rs/najave-emisija/novi-dan-buducnost-odnosa-srbije-i-eu/>
+- (self) Dan uživo: Kragujevac - buđenje jedne traume <https://n1info.rs/najave-emisija/dan-uzivo-kragujevac-budjenje-jedne-traume/>
+- (self) N1 Studio live: Na redu odbori <https://n1info.rs/najave-emisija/n1-studio-live-na-redu-odbori/>
 Uncategorized sample:
-- Pratili novinare, angažovali botove, javljali Informeru: Šta je radio "Situacioni centar za hibridne pretnje" u BIA <https://n1info.rs/vesti/situacioni-centar-za-hibridne-pretnje-bia/> tags=["Vesti","srđan milivojević","prisluškivanje novinara","bia","bezbednosno-informativna agencija"]
-- "Dok dišem, boriću se za istinu": Hrabrost i žrtva novinara Milana Jovanovića, koji pravdu nije dočekao <https://n1info.rs/vesti/dok-disem-boricu-se-za-istinu-hrabrost-i-zrtva-novinara-milana-jovanovica-koji-pravdu-nije-docekao/> tags=["Vesti","milan jovanović","grocka","in memoriam","žig info","novinar"]
-- Dnevnik u 19 (22. 11. 2026) <https://n1info.rs/video/dnevnik/dnevnik-u-19-22-11-2026/> tags=["Dnevnik","dnevnik u 19","video"]
-- Dnevnik u 19h <https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/> tags=["Najave emisija","najave emisija"]
-- Sneg u nekoliko gradova, Putevi Srbije i MUP upozoravaju na oprez u vožnji <https://n1info.rs/vesti/sneg-u-nekoliko-gradova-putevi-srbije-upozoravaju-na-oprez-u-voznji/> tags=["Vesti","putevi srbije","sneg"]
-- Vesna Čitaković Đurišić nije izabrana za gradonačelnicu Užica <https://n1info.rs/vesti/uzice-vesna-citakovic-djurisic-nije-izabrana/> tags=["Vesti","užice","vesna čitaković-đurišić"]
+- Savet REM-a: TV Hepiju mera upozorenja i prekršajna prijava, obustavljen ispitni postupak za RTS 1 <https://n1info.rs/vesti/savet-rem-a-tv-hepiju-mera-upozorenja-obustavljen-ispitni-postupak-za-rts-1/> tags=["Vesti","savet rem-a","televizije","rem","mediji","ispitni postupci"]
+- N1 Studio Live (23.11.2026) <https://n1info.rs/video/n1-studio-live/n1-studio-live-23112026/> tags=["N1 Studio Live","n1 studio live","emisija","video"]
+- Balerina i članica UO SNP-a: Nezakonita sednica UO i usvajanje izmena Finansijskog plana bez predstavnika zaposlenih <https://n1info.rs/vesti/balerina-i-clanica-uo-snp-a-nezakonita-sednica-uo-i-usvajanje-izmena-finansijskog-plana-bez-predstavnika-zaposlenih/> tags=["Vesti","upravni odbor","snp","ostavka","srpsko narodno pozorište"]
+- Dan uživo: Kragujevac - buđenje jedne traume <https://n1info.rs/najave-emisija/dan-uzivo-kragujevac-budjenje-jedne-traume/> tags=["Najave emisija"]
+- N1 Studio live: Na redu odbori <https://n1info.rs/najave-emisija/n1-studio-live-na-redu-odbori/> tags=["Najave emisija","studio live"]
 
 ### Nova.rs
-Categories: {"zivot":2,"sport":16,"zabava":11,"drustvo":7,"politika":8,"hronika":3,"ostalo":1,"svet":2}
-Uncategorized sample:
-- Dnevnik - Cela emisija - 22.11.2026. <https://nova.rs/emisije/dnevnik-cela-emisija-22112026/> tags=["Emisije","dnevnik cela emisija"]
+Categories: {"sport":11,"zabava":8,"hronika":8,"zivot":3,"politika":8,"drustvo":5,"kultura":2,"svet":4,"ekonomija":1}
 
 ### B92
-Categories: {"sport":11,"politika":4,"ostalo":4,"svet":12,"zivot":20,"hronika":1,"tehnologija":3,"zabava":4,"ekonomija":13,"zdravlje":4,"kultura":2,"drustvo":2}
-Uncategorized sample:
-- Na današnji dan, 24. novembar <https://www.b92.net/info/razno/287569/na-danasnji-dan-24-novembar/vest> tags=["Info"]
-- Novine: "'Fijat' radi u tri smene, ali šta posle 'pande'"; "Vukovar nije jedna priča" <https://www.b92.net/info/razno/287545/novine-fijat-radi-u-tri-smene-ali-sta-posle-pande-vukovar-nije-jedna-prica/vest> tags=["Info"]
-- Zaboravite na renoviranje: Ove boje i nekoliko detalja potpuno menjaju izgled doma <https://superzena.b92.net/dom-i-porodica/uredjenje-doma/287297/umesto-renoviranja-ove-boje-i-detalji-u-sekundi-menjaju-izgled-doma/vest> tags=["Najnovije"]
-- Kako očistiti zagorele ostatke hrane koji su se taložili na vatrostalnoj posudi? <https://superzena.b92.net/dom-i-porodica/prakticni-saveti/287463/kako-ocistiti-zagorele-ostatke-hrane-koji-su-se-talozili-na-vatrostalnoj-posudi/vest> tags=["Najnovije"]
+Categories: {"zivot":20,"ekonomija":14,"sport":11,"svet":3,"kultura":3,"politika":5,"hronika":6,"tehnologija":4,"zabava":5,"drustvo":6,"region":2,"zdravlje":1}
+Flagged:
+- (sponsored) Samsung predstavio novi koncept Experience Store prodavnice u Beogradu <https://www.b92.net/tehnopolis/promo/287624/samsung-predstavio-novi-koncept-experience-store-prodavnice-u-beogradu/vest>
 
 ### Blic
-Categories: {"zivot":7,"svet":10,"ostalo":1,"ekonomija":8,"zabava":21,"politika":11,"hronika":5,"zdravlje":3,"drustvo":4}
+Categories: {"svet":7,"drustvo":6,"ekonomija":13,"tehnologija":2,"zabava":11,"kultura":5,"politika":9,"hronika":10,"zivot":3,"ostalo":2,"zdravlje":2}
 Uncategorized sample:
-- Naslovna strana za 24.11. <https://www.blic.rs/print/naslovna-strana-za-2411/2qry4y1> tags=[]
+- Dnevnik pape Franje: 'Tri puta video đavola i bio pred vratima pakla' <https://www.blic.rs/bbc/dnevnik-pape-franje-tri-puta-video-djavola-i-bio-pred-vratima-pakla/tpchv9x> tags=[]
+- Ljudi koji stalno ugađaju drugima često zaboravljaju jednu važnu osobu – sebe: Psiholozi objašnjavaju zašto je teško reći „ne“ <https://www.blic.rs/good-life/hedonizam/zasto-stalno-ugadjamo-drugima-psihologija-straha-od-odbacivanja/v04010b> tags=[]
 
 ### Politika
-Categories: {"ostalo":3,"svet":6,"hronika":2,"sport":2,"drustvo":4,"politika":1,"ekonomija":2}
+Categories: {"ostalo":6,"sport":2,"svet":6,"politika":4,"zabava":1,"zdravlje":1}
 Uncategorized sample:
-- Ujutru slab mraz, preko dana pretežno sunčano, do devet stepeni <https://www.politika.rs/scc/clanak/805620/ujutru-slab-mraz-preko-dana-pretezno-suncano-do-devet-stepeni> tags=[]
-- Gujon razrešen sa funkcije v.d. direktora Kancelarije za javnu i kulturnu diplomatiju <https://www.politika.rs/scc/clanak/805604/gujon-razresen-sa-funkcije-v-d-direktora-kancelarije-za-javnu-i-kulturnu-diplomatiju> tags=[]
-- Vratio se na čelo Nvidije: Zaposleni Huanga dočekali ovacijama <https://www.politika.rs/scc/clanak/805599/vratio-se-na-celo-nvidije-zaposleni-huanga-docekali-ovacijama> tags=[]
+- Američki kongresmen Džimi Gomez podnosi ostavku posle izveštaja o seksualnom nedoličnom ponašanju <https://www.politika.rs/scc/clanak/805739/americki-kongresmen-dzimi-gomez-podnosi-ostavku-posle-izvestaja-o-seksualnom-nedolicnom-ponasanju> tags=[]
+- Poslanici manje o odborima, više o drugim temama <https://www.politika.rs/scc/clanak/805623/poslanici-manje-o-odborima-vise-o-drugim-temama> tags=[]
+- Ada Kolau traži radikalnu reformu tržišta zakupa i oduzimanje nekretnina fondovima <https://www.politika.rs/scc/clanak/805733/ada-kolau-trazi-radikalnu-reformu-trzista-zakupa-i-oduzimanje-nekretnina-fondovima> tags=[]
+- Istočna i centralna Evropa pred novim talasom ekonomskih rizika <https://www.politika.rs/scc/clanak/805732/istocna-i-centralna-evropa-pred-novim-talasom-ekonomskih-rizika> tags=[]
+- Kamioni na Horgošu i Kelebiji čekaju po tri sata <https://www.politika.rs/scc/clanak/805726/kamioni-na-horgosu-i-kelebiji-cekaju-po-tri-sata> tags=[]
+- Pentagon pregovara sa „Dženeral motorsom” i „Fordom” o masovnoj proizvodnji dronova <https://www.politika.rs/scc/clanak/805725/pentagon-pregovara-sa-dzeneral-motorsom-i-fordom-o-masovnoj-proizvodnji-dronova> tags=[]
 
 ### RTS
-Categories: {"politika":10,"hronika":4,"svet":2,"ekonomija":1,"zivot":1,"ostalo":2}
+Categories: {"ekonomija":1,"politika":5,"region":2,"drustvo":4,"hronika":7,"ostalo":1}
 Uncategorized sample:
-- Tkačka radionica "Stari zanati" angažuje osobe sa invaliditetom <https://www.rts.rs/vesti/srbija-danas/6090484/tkacka-radionica-stari-zanati-angazuje-osobe-sa-invaliditetom.html> tags=["Srbija danas"]
-- Vlasinski mrmoljak <https://www.rts.rs/vesti/srbija-danas/6090462/vlasinski-mrmoljak.html> tags=["Srbija danas"]
+- Uručene Medalje pravednika - potomcima onih koji su spasavali Jevreje u Drugom svetskom ratu u Pirotu, Leskovcu i Nišu <https://www.rts.rs/vesti/srbija-danas/6091355/urucene-medalje-pravednika---potomcima-onih-koji-su-spasavali-jevreje-u-drugom-svetskom-ratu-u-pirotu-leskovcu-i-nisu.html> tags=["Srbija danas"]
