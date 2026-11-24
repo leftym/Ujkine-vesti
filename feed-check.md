@@ -1,96 +1,92 @@
 # Feed check
 
-Run: 2026-11-24T02:47:53.654Z
+Run: 2026-11-24T14:00:10.892Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 1 |
+| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 3 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +76) | 77 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +73) | 76 | 1 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":13,"zivot":4,"hronika":4,"politika":8,"drustvo":8,"ostalo":6,"ekonomija":2,"region":1}
-- [svet] Vlada u Bengaziju zatražila od UN-a da istraži navodno prisustvo ukrajinskih snaga
-- [svet] Babiš: Najnoviji predlog budžeta EU je potpuno neprihvatljiv
-- [zivot] Novo istraživanje: Većina pasa oseća strah ili teskobu u svakodnevnim situacijama
-- [svet] Nemačka vojska želi da koristi ukrajinski analitički alat Delta
-- [hronika] Ivanović: Otvoriti arhive bezbednosnih službi i otkriti istinu za ubistvo Olivera Ivanovića
-- [politika] Vlada razrešila Arnoa Gujona sa mesta v.d. direktora Kancelarije za javnu i kulturnu diplomatiju
-  - flagged (self): Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+Categories: {"politika":12,"drustvo":5,"svet":3,"zivot":6,"ostalo":5,"hronika":7,"ekonomija":5,"region":3}
+- [politika] Zaposleni u Radio Beogradu: Ako se pravni čvor ne razreši, program će i dalje škripati, a bes javnosti biće sve jači
+- [drustvo] Gradski centar za socijalni rad tvrdi da je napadnuta radnica na Voždovcu tokom skupa građana
+- [politika] Đajić: Administrativni odbor će imati najviše posla, mnogima ćemo morati da skidamo imunitet
+- [politika] Gradonačelnik Niša ne želi da podnese ostavku, tvrdi da kraj godine nije dobar za smenu vlasti
+- [svet] Mirjana Karanović oslobođena optužbi da je nanela teške telesne povrede jednoj ženi
+- [zivot] Medvedica na Jadovniku odbranila mladunče od čopora vukova (VIDEO)
+  - flagged (self): Novi dan: Budućnost odnosa Srbije i EU https://n1info.rs/najave-emisija/novi-dan-buducnost-odnosa-srbije-i-eu/
+  - flagged (self): Dan uživo: Kragujevac - buđenje jedne traume https://n1info.rs/najave-emisija/dan-uzivo-kragujevac-budjenje-jedne-traume/
+  - flagged (self): N1 Studio live: Na redu odbori https://n1info.rs/najave-emisija/n1-studio-live-na-redu-odbori/
 
 Uncategorized sample (for tuning):
-- Pratili novinare, angažovali botove, javljali Informeru: Šta je radio "Situacioni centar za hibridne pretnje" u BIA | https://n1info.rs/vesti/situacioni-centar-za-hibridne-pretnje-bia/ | tags: ["Vesti","srđan milivojević","prisluškivanje novinara","bia","bezbednosno-informativna agencija"]
-- "Dok dišem, boriću se za istinu": Hrabrost i žrtva novinara Milana Jovanovića, koji pravdu nije dočekao | https://n1info.rs/vesti/dok-disem-boricu-se-za-istinu-hrabrost-i-zrtva-novinara-milana-jovanovica-koji-pravdu-nije-docekao/ | tags: ["Vesti","milan jovanović","grocka","in memoriam","žig info","novinar"]
-- Dnevnik u 19 (22. 11. 2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-22-11-2026/ | tags: ["Dnevnik","dnevnik u 19","video"]
-- Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","najave emisija"]
-- Sneg u nekoliko gradova, Putevi Srbije i MUP upozoravaju na oprez u vožnji | https://n1info.rs/vesti/sneg-u-nekoliko-gradova-putevi-srbije-upozoravaju-na-oprez-u-voznji/ | tags: ["Vesti","putevi srbije","sneg"]
-- Vesna Čitaković Đurišić nije izabrana za gradonačelnicu Užica | https://n1info.rs/vesti/uzice-vesna-citakovic-djurisic-nije-izabrana/ | tags: ["Vesti","užice","vesna čitaković-đurišić"]
+- Savet REM-a: TV Hepiju mera upozorenja i prekršajna prijava, obustavljen ispitni postupak za RTS 1 | https://n1info.rs/vesti/savet-rem-a-tv-hepiju-mera-upozorenja-obustavljen-ispitni-postupak-za-rts-1/ | tags: ["Vesti","savet rem-a","televizije","rem","mediji","ispitni postupci"]
+- N1 Studio Live (23.11.2026) | https://n1info.rs/video/n1-studio-live/n1-studio-live-23112026/ | tags: ["N1 Studio Live","n1 studio live","emisija","video"]
+- Balerina i članica UO SNP-a: Nezakonita sednica UO i usvajanje izmena Finansijskog plana bez predstavnika zaposlenih | https://n1info.rs/vesti/balerina-i-clanica-uo-snp-a-nezakonita-sednica-uo-i-usvajanje-izmena-finansijskog-plana-bez-predstavnika-zaposlenih/ | tags: ["Vesti","upravni odbor","snp","ostavka","srpsko narodno pozorište"]
+- Dan uživo: Kragujevac - buđenje jedne traume | https://n1info.rs/najave-emisija/dan-uzivo-kragujevac-budjenje-jedne-traume/ | tags: ["Najave emisija"]
+- N1 Studio live: Na redu odbori | https://n1info.rs/najave-emisija/n1-studio-live-na-redu-odbori/ | tags: ["Najave emisija","studio live"]
 
 ## Nova.rs
-Categories: {"zivot":2,"sport":16,"zabava":11,"drustvo":7,"politika":8,"hronika":3,"ostalo":1,"svet":2}
-- [zivot] U Srbiji ujutru slab mraz, tokom dana sunčano
-- [sport] Pogledajte tabelu Premijer lige, slavni Junajted u zoni ispadanja - Brentford razbio Everton za kraj 11. kola
-- [sport] Kad Srbija opet igra na Svetskom prvenstvu u Kataru i gde gledati prenos utakmice?
-- [zabava] Robert de Niro i Arijana Grande zajedno glume u novom filmu, a sada je on otkrio da li sluša njenu muziku
-- [sport] Navaro i Dobrić pred Virtus: "Moramo da se borimo protiv očekivanja, dolazimo iscrpljeni - pobeda nije upisana unapred"
-- [zabava] Lena Kovačević: "Zbog njega sam plakala prvi put"
-
-Uncategorized sample (for tuning):
-- Dnevnik - Cela emisija - 22.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-22112026/ | tags: ["Emisije","dnevnik cela emisija"]
+Categories: {"sport":11,"zabava":8,"hronika":8,"zivot":3,"politika":8,"drustvo":5,"kultura":2,"svet":4,"ekonomija":1}
+- [sport] Srbija odbija napade Japana: "Orlići" vode, ali se sada grčevito brane
+- [zabava] "Ovakav 'šljam' se voli do sudnjeg dana": Ovaj poznati glumac je bio kum Vesni Trivalić na venčanju
+- [zabava] Producentkinja Snežana van Houvelingen o četiri filma koja otvaraju važne društvene teme: „Najlakše je da ono što ne možemo da rešimo stavimo pod tepih“
+- [hronika] Uhapšeni osnivači i direktori firmi iz Smedereva i Kovina zbog poreske utaje
+- [hronika] Višestruki povratnik silovatelj na sve načine pokušava da izbegne kaznu: Zbog napastvovanja taksistkinje u Nišu traže 20 godina zatvora, suđenje sada u ćorsokaku
+- [zivot] Vučić došao u Skupštinu sa zavijenim prstom i modricom - šta se desilo? Ljudi su sigurni da znaju uzrok: "Pokušao je da otvori flašicu vode"
 
 ## B92
-Categories: {"sport":11,"politika":4,"ostalo":4,"svet":12,"zivot":20,"hronika":1,"tehnologija":3,"zabava":4,"ekonomija":13,"zdravlje":4,"kultura":2,"drustvo":2}
-- [sport] Ženski fudbal gleda u SAD, Meksiko, Kostariku i Jamajku
-- [politika] Danas nastavak konstitutivne sednice Skupštine Srbije; Održane konsultacije – ističe rok za izjašnjavanje
-- [ostalo] Na današnji dan, 24. novembar
-- [svet] Rat – dan 1.733: "Rusija sprema nove napade"; Zastrašujući bilans rata; Stiže novo primirje? FOTO/VIDEO
-- [sport] Remi za kraj 13. kola VIDEO
-- [sport] Dva gola za dva minuta – Brentford preskočio Everton
-
-Uncategorized sample (for tuning):
-- Na današnji dan, 24. novembar | https://www.b92.net/info/razno/287569/na-danasnji-dan-24-novembar/vest | tags: ["Info"]
-- Novine: "'Fijat' radi u tri smene, ali šta posle 'pande'"; "Vukovar nije jedna priča" | https://www.b92.net/info/razno/287545/novine-fijat-radi-u-tri-smene-ali-sta-posle-pande-vukovar-nije-jedna-prica/vest | tags: ["Info"]
-- Zaboravite na renoviranje: Ove boje i nekoliko detalja potpuno menjaju izgled doma | https://superzena.b92.net/dom-i-porodica/uredjenje-doma/287297/umesto-renoviranja-ove-boje-i-detalji-u-sekundi-menjaju-izgled-doma/vest | tags: ["Najnovije"]
-- Kako očistiti zagorele ostatke hrane koji su se taložili na vatrostalnoj posudi? | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/287463/kako-ocistiti-zagorele-ostatke-hrane-koji-su-se-talozili-na-vatrostalnoj-posudi/vest | tags: ["Najnovije"]
+Categories: {"zivot":22,"ekonomija":12,"sport":11,"svet":3,"kultura":3,"politika":5,"hronika":6,"tehnologija":4,"zabava":5,"drustvo":6,"region":2,"zdravlje":1}
+- [zivot] Ne u Hrvatskoj, ali da u Crnoj Gori: Dino Merlin peva u Baru za Novu godinu
+- [zivot] Policija angažovala pse tragače, dronove i helikoptere: Uhapšeni provlanici koji su upali na kraljevski posed
+- [zivot] Slavni Džejms Bond stigao na premijeru sa suprugom, ona u crnoj čipki pokazala "novo telo" FOTO
+- [ekonomija] Niko neće Prvu srpsku fabriku šećera: Nije bilo zaintersovanih kupaca za šećeranu Dimitrije Tucović 1898
+- [sport] Tenzija na Dejvis kupu – tihi sukob Italijana
+- [svet] Žestok kontraudar: Pogođen vojni aerodrom; Hiljade oborenih dronova FOTO/VIDEO
+  - flagged (sponsored): Samsung predstavio novi koncept Experience Store prodavnice u Beogradu https://www.b92.net/tehnopolis/promo/287624/samsung-predstavio-novi-koncept-experience-store-prodavnice-u-beogradu/vest
 
 ## Blic
-Categories: {"zivot":7,"svet":10,"ostalo":1,"ekonomija":8,"zabava":21,"politika":11,"hronika":5,"zdravlje":3,"drustvo":4}
-- [zivot] Ukras koji smo nekada svi imali na novogodišnjoj jelki ponovo je hit: Mnogi su ga do skoro smatrali kičem
-- [svet] "Nema više katastrofalnih predviđanja!" Tramp jednom objavom "rešio" klimatsku krizu
-- [zivot] Gosti sedeli, muzika svirala, a onda su dvojica muškaraca ustala i uradila nešto nečuveno! Snimak sa slave nasmejao region: "Ovo ni AI ne može!" (Video)
-- [ostalo] Naslovna strana za 24.11.
-- [ekonomija] Kako je Neven uspeo da uštedeti više od 100.000 eura: Sagradio montažnu kuću na ivici šume, ovo je njegovo iskustvo
-- [svet] Haker koji je ukrao snimke GTA 6 osuđen na sedam godina zatvora, pa pušten na slobodu
+Categories: {"drustvo":6,"ekonomija":13,"tehnologija":2,"zabava":12,"kultura":5,"politika":9,"hronika":10,"zivot":3,"svet":6,"ostalo":2,"zdravlje":2}
+- [drustvo] Više opština sutra bez struje: Većina isključenja od 9 do 15 časova, najviše adresa u Sopotu
+- [ekonomija] Još jedan jednorog, istorijski uspeh naših stručnjaka: Američki gigant kupio firmu ljudi iz Srbije i regiona za neverovatnih 2,9 milijardi dolara
+- [tehnologija] Kina pokrenula testiranje 6G mreže u osam oblasti: Poznato šta želi da razvije do 2029. godine
+- [ekonomija] Turkiš erlajns ukinuo više od 330 letova nedeljno! Seča u celom regionu, a evo kakva sudbina čeka Beograd
+- [ekonomija] Kvadrat za 1.000 evra umesto novog naselja: Projekat "Stan za sve" planiraju u Crnoj gori
+- [ekonomija] Najpoznatija svetska banja izašla na berzu i prikupila 110 miliona dolara: Zaboravite Antropik, Plava laguna sada vredi skoro 800 miliona dolara
 
 Uncategorized sample (for tuning):
-- Naslovna strana za 24.11. | https://www.blic.rs/print/naslovna-strana-za-2411/2qry4y1 | tags: []
+- Dnevnik pape Franje: 'Tri puta video đavola i bio pred vratima pakla' | https://www.blic.rs/bbc/dnevnik-pape-franje-tri-puta-video-djavola-i-bio-pred-vratima-pakla/tpchv9x | tags: []
+- Ljudi koji stalno ugađaju drugima često zaboravljaju jednu važnu osobu – sebe: Psiholozi objašnjavaju zašto je teško reći „ne“ | https://www.blic.rs/good-life/hedonizam/zasto-stalno-ugadjamo-drugima-psihologija-straha-od-odbacivanja/v04010b | tags: []
 
 ## Politika
-Categories: {"ostalo":3,"svet":6,"hronika":2,"sport":2,"drustvo":4,"politika":1,"ekonomija":2}
-- [ostalo] Ujutru slab mraz, preko dana pretežno sunčano, do devet stepeni
-- [svet] Melanija Tramp: Novi predlozi za primirje u Ukrajini
-- [hronika] IRGC: požar na tri tankera nakon udara u mine
-- [sport] Hamilton: Mogao sam da osvojim titulu da mi je Ferari dao prednost u odnosu na Leklera
-- [svet] Nemačke fabrike stale, 150.000 radnika obustavilo proizvodnju, traže veće plate
-- [svet] Severna Koreja uzvraća Švajcarskoj
+Categories: {"ostalo":6,"sport":2,"svet":6,"politika":4,"zabava":1,"zdravlje":1}
+- [ostalo] Američki kongresmen Džimi Gomez podnosi ostavku posle izveštaja o seksualnom nedoličnom ponašanju
+- [sport] Jan Urban ostaje selektor fudbalera Poljske
+- [svet] Libija negira tajni dogovor sa Ukrajinom o napadima na ruske brodove
+- [ostalo] Poslanici manje o odborima, više o drugim temama
+- [politika] Barzani: Odluka iračke vlade o stavljanju naftnih polja i graničnih prelaza pod centralnu upravu potpuno je neprihvatljiva
+- [svet] Brisel od Zapadnog Balkana očekuje sankcije Rusiji, od Srbije novi zamah ka EU
 
 Uncategorized sample (for tuning):
-- Ujutru slab mraz, preko dana pretežno sunčano, do devet stepeni | https://www.politika.rs/scc/clanak/805620/ujutru-slab-mraz-preko-dana-pretezno-suncano-do-devet-stepeni | tags: []
-- Gujon razrešen sa funkcije v.d. direktora Kancelarije za javnu i kulturnu diplomatiju | https://www.politika.rs/scc/clanak/805604/gujon-razresen-sa-funkcije-v-d-direktora-kancelarije-za-javnu-i-kulturnu-diplomatiju | tags: []
-- Vratio se na čelo Nvidije: Zaposleni Huanga dočekali ovacijama | https://www.politika.rs/scc/clanak/805599/vratio-se-na-celo-nvidije-zaposleni-huanga-docekali-ovacijama | tags: []
+- Američki kongresmen Džimi Gomez podnosi ostavku posle izveštaja o seksualnom nedoličnom ponašanju | https://www.politika.rs/scc/clanak/805739/americki-kongresmen-dzimi-gomez-podnosi-ostavku-posle-izvestaja-o-seksualnom-nedolicnom-ponasanju | tags: []
+- Poslanici manje o odborima, više o drugim temama | https://www.politika.rs/scc/clanak/805623/poslanici-manje-o-odborima-vise-o-drugim-temama | tags: []
+- Ada Kolau traži radikalnu reformu tržišta zakupa i oduzimanje nekretnina fondovima | https://www.politika.rs/scc/clanak/805733/ada-kolau-trazi-radikalnu-reformu-trzista-zakupa-i-oduzimanje-nekretnina-fondovima | tags: []
+- Istočna i centralna Evropa pred novim talasom ekonomskih rizika | https://www.politika.rs/scc/clanak/805732/istocna-i-centralna-evropa-pred-novim-talasom-ekonomskih-rizika | tags: []
+- Kamioni na Horgošu i Kelebiji čekaju po tri sata | https://www.politika.rs/scc/clanak/805726/kamioni-na-horgosu-i-kelebiji-cekaju-po-tri-sata | tags: []
+- Pentagon pregovara sa „Dženeral motorsom” i „Fordom” o masovnoj proizvodnji dronova | https://www.politika.rs/scc/clanak/805725/pentagon-pregovara-sa-dzeneral-motorsom-i-fordom-o-masovnoj-proizvodnji-dronova | tags: []
 
 ## RTS
-Categories: {"politika":10,"hronika":4,"svet":2,"ekonomija":1,"zivot":1,"ostalo":2}
-- [politika] Gujon razrešen sa funkcije v. d. direktora Kancelarije za javnu i kulturnu diplomatiju
-- [hronika] Napadnut gradonačelnik Čačka Milun Todorović
-- [politika] Vesna Čitaković Đurišić nije izabrana za gradonačelnicu Užica, nedostajao jedan glas
-- [politika] Spoljna politika buduće vlade – šta su prve poruke, a šta je ostalo za kasnije
-- [politika] Nacrt zakona u Prištini zabrinuo SPC – strah od novih ovlašćenja inspektora nad srpskim svetinjama
-- [svet] Zašto se današnja omladina u Nemačkoj oseća nesigurno
+Categories: {"ekonomija":1,"politika":5,"region":2,"drustvo":4,"hronika":7,"ostalo":1}
+- [ekonomija] Komisija za zaštitu konkurencije održala sastanak sa dobavljačima kompanije IDEA
+- [politika] Rakočević i Ćirić: Nacrt zakona o Centralnom inspektoratu ugrožava srpske svetinje i njihov istorijski identitet na KiM
+- [region] Uhapšen Naser Orić
+- [drustvo] Savet REM-a obustavio postupak protiv RTS-a, nema elemenata za izricanje mere
+- [hronika] Pucnjava u školi u Kragujevcu - dve osobe povređene, uhapšeni napadač i njegov otac
+- [hronika] Tužilaštvo u Nišu traži hapšenje Vladimira Mandića, utvrđeno da nije na teritoriji Srbije
 
 Uncategorized sample (for tuning):
-- Tkačka radionica "Stari zanati" angažuje osobe sa invaliditetom | https://www.rts.rs/vesti/srbija-danas/6090484/tkacka-radionica-stari-zanati-angazuje-osobe-sa-invaliditetom.html | tags: ["Srbija danas"]
-- Vlasinski mrmoljak | https://www.rts.rs/vesti/srbija-danas/6090462/vlasinski-mrmoljak.html | tags: ["Srbija danas"]
+- Uručene Medalje pravednika - potomcima onih koji su spasavali Jevreje u Drugom svetskom ratu u Pirotu, Leskovcu i Nišu | https://www.rts.rs/vesti/srbija-danas/6091355/urucene-medalje-pravednika---potomcima-onih-koji-su-spasavali-jevreje-u-drugom-svetskom-ratu-u-pirotu-leskovcu-i-nisu.html | tags: ["Srbija danas"]
