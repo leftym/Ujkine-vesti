@@ -1,94 +1,97 @@
 # Feed check
 
-Run: 2026-11-26T00:02:37.338Z
+Run: 2026-11-26T12:55:34.101Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 47 | https://n1info.rs/feed/ | 47 | 2 |
-| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +82) | 76 | 0 |
-| Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
+| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 4 |
+| Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 2 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +77) | 76 | 1 |
+| Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 1 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":9,"zivot":5,"region":7,"ostalo":7,"ekonomija":3,"hronika":8,"drustvo":2,"politika":6}
-- [svet] Gde Advent? Ovo je 10 najpopularnijih evropskih destinacija
-- [zivot] Kako nastaju psihosomatske bolesti i na koji način emocije utiču na telo
-- [svet] Borba protiv ebole u Kongu duboko narušena oružanim okršajima, medicinske ekipe se evakuisale
-- [zivot] Preminuo Endi Tejlor - bivši gitarista grupe Duran Duran
-- [region] Mickoski: Očekujemo da i u decembarskom izveštajnom periodu budemo frontraneri
-- [zivot] Objavljen trejler za dokumentarnu seriju o životu Džastina Timberlejka
-  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
-  - flagged (self): N1 Studio live, četvrtak u 12 sati: Čekajući predsednika https://n1info.rs/najave-emisija/n1-studio-live-cetvrtak-u-12-sati-cekajuci-predsednika/
+Categories: {"zivot":8,"ostalo":7,"hronika":4,"ekonomija":7,"region":5,"politika":10,"drustvo":2,"sport":1,"svet":2}
+- [zivot] Savremene terapije menjaju lečenje muških karcinoma, ali nisu svima dostupne u Srbiji
+- [ostalo] Rediteljka Jasmila Žbanić: Spremna sam da svedočim u postupku protiv Informera
+- [hronika] Uhapšen muškarac iz Varvarina zbog napada na policajace koji su intervenisali zbog nasilja u porodici
+- [ekonomija] Mali i Vujić preuzimaju još dva ministarstva
+- [region] Čupić danas i sutra na sastanku lidera Zapadnog Balkana u Ohridu
+- [ekonomija] "Niš, moj grad" traži hitan razgovor sa "Džonson elektrikom“ zbog slanja 50 radnika na plaćeno odsustvo
+  - flagged (sponsored): U Beogradu otvoren treći Hemofarmov ESG festival https://n1info.rs/biznis/u-beogradu-otvoren-treci-hemofarmov-esg-festival/
+  - flagged (self): N1 Direktno: Kumovi - Veselinović i Radoičić https://n1info.rs/najave-emisija/n1-direktno-kumovi-veselinovic-i-radoicic/
+  - flagged (sponsored): Kupujte kvalitetnije, a ne više: zašto je Dreame tehnologija pravi izbor za Black Friday https://n1info.rs/magazin/lifestyle/kupujte-kvalitetnije-a-ne-vise-zasto-je-dreame-tehnologija-pravi-izbor-za-black-friday/
+  - flagged (self): Gledajte UŽIVO N1 Studio live: Čekajući predsednika https://n1info.rs/najave-emisija/n1-studio-live-cetvrtak-u-12-sati-cekajuci-predsednika/
 
 Uncategorized sample (for tuning):
-- Dodeljena druga regionalna nagrada Fondacije „Milenija i Darko Marušić” | https://n1info.rs/vesti/dodeljena-druga-regionalna-nagrada-fondacije-milenija-i-darko-marusic/ | tags: ["Vesti","arhitektura stanovanja","arhitektura","nagrada fondacije milenija i darko marušić","regionalna nagrada"]
-- Košta: Biće još prilika za kontakte sa srpskim vlastima | https://n1info.rs/vesti/kosta-bice-jos-prilika-za-kontakte-sa-srpskim-vlastima/ | tags: ["Vesti","samit eu-zapadni balkan","evropska unija","evropski savet","antonio košta"]
-- Fon der Lajen najavila preraspodelu sredstava iz Plana rasta: Novac trima državama koje su najviše napredovale | https://n1info.rs/vesti/fon-der-lajen-najavila-preraspodelu-sredstava-iz-plana-rasta-novac-trima-drzavama-koje-su-najvise-napredovale/ | tags: ["Vesti","samit eu - zapadni balkan","samit eu i zapadnog balkana","samit eu-zapadni balkan","ursula fon der lajen","plan rasta"]
-- Dekan PMF o smeni Madića: Članovi Senata glasali suprotno odlukama fakulteta, problem u etici i integritetu | https://n1info.rs/vesti/dekan-pmf-o-smeni-madica-clanovi-senata-glasali-suprotno-odlukama-fakulteta-problem-u-etici-i-integritetu/ | tags: ["Vesti","rektor","senat univerziteta u novom sadu","dejan madić","smena rektora","srđan rončević"]
-- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","dnevnik","najave emisija","dnevnik u 19"]
-- Dan uživo (24.11.2026) | https://n1info.rs/video/dan-uzivo/dan-uzivo-24112026/ | tags: ["Dan uživo","dan uživo","emisija","video"]
-- ANEM osudio vređanje novinarke N1 u Beogradu i ometanje ekipe N1 u Obrenovcu | https://n1info.rs/vesti/anem-osudio-vredjanje-novinarke-n1-u-beogradu-i-ometanje-ekipe-n1-u-obrenovcu/ | tags: ["Vesti","napadi","ometanje novinara","anem","n1"]
+- Rediteljka Jasmila Žbanić: Spremna sam da svedočim u postupku protiv Informera | https://n1info.rs/vesti/rediteljka-jasmila-zbanic-spremna-sam-da-svedocim-u-postupku-protiv-informera/ | tags: ["Vesti","hapšenje","dragan j. vučićević","informer","jasmila žbanić","mediji"]
+- Goci uzdržan o rezoluciji o Vukovaru: Ne smemo da ugrozimo demokratsku obnovu u Srbiji | https://n1info.rs/vesti/goci-uzdrzan-o-rezoluciji-o-vukovaru-ne-smemo-da-ugrozimo-demokratsku-obnovu-u-srbiji/ | tags: ["Vesti","vukovar","rezolucija","pomirenje"]
+- Raspisana poternica za Vladimirom Mandićem | https://n1info.rs/vesti/raspisana-poternica-za-vladimirom-mandicem/ | tags: ["Vesti","vladimir mandić"]
+- N1 Direktno: Kumovi - Veselinović i Radoičić | https://n1info.rs/najave-emisija/n1-direktno-kumovi-veselinovic-i-radoicic/ | tags: ["Najave emisija","najava emisije","n1 direktno"]
+- NUNS osudio napade na novinare N1 i posthumno targetiranje Milana Jovanovića | https://n1info.rs/vesti/nuns-osudio-napade-na-novinare-n1-i-posthumno-targetiranje-milana-jovanovica/ | tags: ["Vesti","nuns","tamara ognjanović","vjerica radeta","anđela čolanić","osuda"]
+- Šta je sa vodom u Zrenjaninu i da li je ispravna | https://n1info.rs/vesti/sta-je-sa-vodom-u-zrenjaninu-i-da-li-je-ispravna/ | tags: ["Vesti","Zeleni kutak","zrenjanin","voda","pijaća voda"]
+- Odbrana struke traži ostavke članova Visokog saveta sudstva | https://n1info.rs/vesti/odbrana-struke-trazi-ostavke-clanova-visokog-saveta-sudstva/ | tags: ["Vesti","odbrana struke","ostavke","visoki savet sudstva"]
 
 ## Nova.rs
-Categories: {"sport":14,"zivot":2,"zabava":8,"drustvo":2,"politika":9,"hronika":7,"svet":4,"ekonomija":3,"ostalo":1}
-- [sport] Veliki problem: Alimpijević na duže vreme ostao bez važnog igrača
-- [zivot] Danas oblačno, mestimično s kišom
-- [sport] Italija ide po četvrti uzastopni Dejvis kup
-- [sport] Džaba Hapoelu dobar Micić, Olimpijakos razbio Izraelce VIDEO
-- [zabava] Slavna manekenka uspešnija je neko ikada, ali želi što pre da pobegne iz javnosti: Evo o kakvom životu mašta
-- [zabava] Nakon razvoda od muzičara, Ana Bekuta je ostala bez novca i krova nad glavom: Pomoć joj je pružio poznati estradni par
-
-Uncategorized sample (for tuning):
-- Dnevnik - Cela emisija - 24.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-24112026/ | tags: ["Emisije","dnevnik cela emisija"]
+Categories: {"zabava":12,"ekonomija":2,"svet":8,"politika":5,"zivot":5,"sport":5,"hronika":10,"drustvo":2,"kultura":1}
+- [zabava] "Ona će biti velika zvezda": Jelena Tomašević pred publikom pohvalila Bojanu Srdanović, njihov duet izazvao ovacije
+- [ekonomija / AD:sponsored] Jedan recept, devet poslastičara i potpuno različite kreacije: Pogledajte tri pobednička plazma kolača
+- [svet] Kim Džong Un obećava izgradnju još nuklearnog oružja
+- [politika] Mali i Vujić preuzimaju još dva ministarstva
+- [zivot] Studenti FDU jedva dočekali raspisivanje predsedničkih izbora da puste ovaj video: "Ajmo opet"
+- [politika] Čupić sutra na sastanku lidera procesa Brdo-Brioni sutra u Ohridu
+  - flagged (sponsored): Jedan recept, devet poslastičara i potpuno različite kreacije: Pogledajte tri pobednička plazma kolača https://nova.rs/vesti/biznis/jedan-recept-devet-poslasticara-i-potpuno-razlicite-kreacije-pogledajte-tri-pobednicka-plazma-kolaca/
+  - flagged (sponsored): U Beogradu otvoren treći Hemofarmov ESG festival https://nova.rs/vesti/drustvo/u-beogradu-otvoren-treci-hemofarmov-esg-festival/
 
 ## B92
-Categories: {"ostalo":1,"sport":16,"zivot":19,"svet":12,"politika":4,"ekonomija":8,"zabava":6,"kultura":3,"tehnologija":3,"region":1,"hronika":5,"zdravlje":2}
-- [ostalo] Na današnji dan, 26. novembar
-- [sport] Italijanski velikani prate Krstovića
-- [zivot] Gde ćemo leteti iz Beograda ove zime? Uvode se nove linije, a neke dobijaju više letova
-- [zivot] Neprijatno iznenađenje za putnike: Više nećete odmah znati gde sedite
-- [zivot] Nenajavljen štrajk: Poremećen saobraćaj između evropskih metropola
-- [svet] Rat – 1.735. dan: NATO žestoko preti; Moskva čeka odgovor; "Pokazaćemo Rusiji gde su joj granice" FOTO/VIDEO
+Categories: {"hronika":6,"svet":9,"zivot":16,"kultura":3,"sport":12,"politika":7,"ekonomija":13,"drustvo":1,"zabava":3,"region":2,"ostalo":3,"zdravlje":3,"tehnologija":2}
+- [hronika] Uhapšena žena kod Vlasotinca: Dve godine prisvajala robu i pazar, osumnjičena za prevaru
+- [svet] Objavljeni uznemirujući snimci; Totalno uništavanje; Kreće novi napad FOTO/VIDEO
+- [zivot] Srpkinja izdala stan turistima, pa ostala u šoku: "Ostavili buđavu hranu, ceo stan smrdi..." VIDEO
+- [zivot] Zaboravljena banja nadomak Srbije krije 40 mineralnih izvora: Noćenje već od 15 evra FOTO
+- [zivot] Ovaj znak horoskopa ostvariće svoju najveću želju do kraja godine
+- [kultura] Specijalno vođenje kroz dela impresionista 5. decembra u Narodnom muzeju u Beogradu
+  - flagged (sponsored): Šest godina kasnije, Zvezda ponovo u Gentu: Mogu li crveno-beli da ponove evropski podvig? https://www.b92.net/sport/promo/promo/288217/sest-godina-kasnije-zvezda-ponovo-u-gentu-mogu-li-crveno-beli-da-ponove-evropski-podvig/vest
 
 Uncategorized sample (for tuning):
-- Na današnji dan, 26. novembar | https://www.b92.net/info/razno/288162/na-danasnji-dan-26-novembar/vest | tags: ["Najnovije"]
+- Ovo je idealna temperatura u domu tokom zime: Jedini način da uvek bude toplo, a računi niski | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/288267/nizi-racuni-i-toplo-ovo-je-idealna-temperatura-u-domu-tokom-zime/vest | tags: []
+- Koju veštinu svako dete treba da nauči kod kuće? | https://superzena.b92.net/dom-i-porodica/roditeljstvo/288212/najvaznija-vestina-koju-svako-dete-mora-da-nauci-kod-kuce/vest | tags: []
+- Kako da kupovni majonez dobije ukus domaćeg? Trik je u sastojku koji imate u frižideru | https://superzena.b92.net/kuhinja/prakticni-saveti/287798/kako-da-kupovni-majonez-bude-ukusan-kao-domaci/vest | tags: []
 
 ## Blic
-Categories: {"hronika":14,"ekonomija":5,"svet":9,"zabava":23,"ostalo":1,"kultura":1,"politika":8,"zivot":5,"drustvo":3,"zdravlje":1}
-- [hronika] Uhapšena Vlasotinčanka zbog krađe pazara i robe vrednosti više od 3,5 miliona dinara
-- [ekonomija] Ovako štede milenijalci: "Dvoje zaposlenih, deca i kredit - nemoguće je bilo šta ostaviti sa strane"
-- [svet] Krater veličine stadiona na asteroidu u koji je NASA zakucala letelicu! Prve slike otkrile razmere sudara: "Ovo je spektakularno"
-- [zabava] "DIGLA SAM KREDIT, ZIDAM KUĆU" Edita Aradinović prvi put nakon porođaja o bivšem partneru: "Zabrinuta sam"
-- [ostalo] Naslovna strana za 26.11.
-- [svet] Kim Džong Un najavio širenje nuklearnog arsenala, pa poslao jasnu poruku svetu: "Severna Koreja je nepovrediva"
-
-Uncategorized sample (for tuning):
-- Naslovna strana za 26.11. | https://www.blic.rs/print/naslovna-strana-za-2611/1sn7pj4 | tags: []
+Categories: {"ekonomija":12,"zabava":15,"kultura":6,"hronika":7,"politika":14,"svet":7,"zivot":5,"zdravlje":1,"drustvo":3}
+- [ekonomija] U srcu Vrnjačke Banje niče luksuzni stambeni kompleks - 42 nova stana i zelena oaza
+- [zabava] ZAVEJANA U SNEGU, PA PRAVO U TOPLI KUTAK: Teodora Džehverović pobegla od gradske vreve i uživa u zimskoj idili (FOTO)
+- [kultura] Od psihodelije do folka: Altin Gun i Momo 28. novembra u Beogradu
+- [hronika] Advokati Dragana J. Vučićevića: Izneo je odbranu, protiv njega podneto više krivičnih prijava
+- [ekonomija] U Beogradu otvoren treći Hemofarmov ESG festival: Prvog dana dodeljena priznanja ESG Stars
+- [politika] U "Službenom glasniku" objavljena odluka o raspisivanju izbora za predsednika Republike
+  - flagged (promo): Počela podela vaučera od 10.000 dinara za decu Beograda: Evo gde da ih preuzmete ako još ne idu u vrtić ili školu i u kojim radnjama važe https://www.blic.rs/vesti/beograd/pocela-podela-novogodisnjih-poklon-vaucera-deci-spisak-prodavnica/rhd2q2y
 
 ## Politika
-Categories: {"svet":5,"sport":3,"ostalo":6,"drustvo":1,"ekonomija":2,"hronika":2,"politika":1}
-- [svet] Ukrajina nema dobre vesti iz Amerike povodom isporuka raketa
-- [svet] Da li će Netanjahu ipak pred sud
-- [svet] Kina prvi put predstavlja protivpodmornički helikopter Z-20F
-- [sport] Teniseri Italije u polufinalu Dejvis kupa
-- [svet] Dejvis upozorio Sikorskog na posledice izjava: Shvatićemo da Rusija nije tako slaba kao što tvrdite
-- [ostalo] Gitarista Djuran – Djuran Endi Tejlor preminuo u 65. godini
+Categories: {"politika":5,"svet":3,"sport":3,"drustvo":1,"ostalo":7,"hronika":1}
+- [politika] Šestomesečna beba na sednici australijskog parlamenta podelila javnost
+- [svet] Akcije Kijeva u Mediteranu zabrinule vlast u Rimu
+- [sport] Predrag Danilović biće primljen u „Kuću slavnih” Virtusa
+- [drustvo] Panika među roditeljima u Velikoj Gorici zbog poruke o spisku učenika i oružju, reagovala policija
+- [politika] Siniša Mali preuzima ovlašćenja ministra privrede do izbora novog ministra
+- [ostalo] Srbija bi 2027. mogla da se priključi tržištu električne energije EU
 
 Uncategorized sample (for tuning):
-- Gitarista Djuran – Djuran Endi Tejlor preminuo u 65. godini | https://www.politika.rs/scc/clanak/806275/gitarista-djuran-djuran-endi-tejlor-preminuo-u-65-godini | tags: []
-- Pohvale za sirijske snage zbog zaplene droge i oružja | https://www.politika.rs/scc/clanak/806273/pohvale-za-sirijske-snage-zbog-zaplene-droge-i-oruzja | tags: []
-- Direktor ruske avio-industrije: Su-57 i Su-35 najtraženiji ruski lovci među stranim kupcima | https://www.politika.rs/scc/clanak/806269/direktor-ruske-avio-industrije-su-57-i-su-35-najtrazeniji-ruski-lovci-medu-stranim-kupcima | tags: []
-- Vens sa porodicom služio praznični ručak američkim vojnicima | https://www.politika.rs/scc/clanak/806128/vens-sa-porodicom-sluzio-praznicni-rucak-americkim-vojnicima | tags: []
-- Kim Džong Un najavio širenje nuklearnih kapaciteta i raspoređivanje taktičkog oružja | https://www.politika.rs/scc/clanak/806259/kim-dzong-un-najavio-sirenje-nuklearnih-kapaciteta-i-rasporedivanje-taktickog-oruzja | tags: []
-- Akcije Antropika u padu, investitori sve više sumnjaju u isplativost AI | https://www.politika.rs/scc/clanak/806255/akcije-antropika-u-padu-investitori-sve-vise-sumnjaju-u-isplativost-ai | tags: []
+- Srbija bi 2027. mogla da se priključi tržištu električne energije EU | https://www.politika.rs/scc/clanak/806406/srbija-bi-2027-mogla-da-se-prikljuci-trzistu-elektricne-energije-eu | tags: []
+- Čupić na dvodnevnom sastanku lidera Zapadnog Balkana u Ohridu | https://www.politika.rs/scc/clanak/806405/cupic-na-dvodnevnom-sastanku-lidera-zapadnog-balkana-u-ohridu | tags: []
+- Pet evropskih zemalja zajednički kupuje više od 430 borbenih vozila CV90 | https://www.politika.rs/scc/clanak/806404/pet-evropskih-zemalja-zajednicki-kupuje-vise-od-430-borbenih-vozila-cv90 | tags: []
+- Vojni aerodromi korišćeni za šverc tri tone droge | https://www.politika.rs/scc/clanak/806402/vojni-aerodromi-korisceni-za-sverc-tri-tone-droge | tags: []
+- RHMZ upozorava na ledenu kišu i jaku košavu | https://www.politika.rs/scc/clanak/806400/rhmz-upozorava-na-ledenu-kisu-i-jaku-kosavu | tags: []
+- U Srbiji sutra oblačno, mestimično sa kišom | https://www.politika.rs/scc/clanak/806395/u-srbiji-sutra-oblacno-mestimicno-sa-kisom | tags: []
+- Naselje Petrovčić u Surčinu sutra bez vode od 9 do 18 sati | https://www.politika.rs/scc/clanak/806392/naselje-petrovcic-u-surcinu-sutra-bez-vode-od-9-do-18-sati | tags: []
 
 ## RTS
-Categories: {"drustvo":4,"politika":3,"hronika":7,"svet":3,"ekonomija":1,"region":1,"zivot":1}
-- [drustvo] Posle deset dana, ekipe odnose smeće sa ulica Smedereva
-- [politika] Košta: Razumemo odsustvo Srbije sa samita, nastavićemo razgovore sa Beogradom
-- [hronika] Skup podrške ispred PS Voždovac, Dragan J. Vučićević čeka saslušanje
-- [svet] "Lukoil" potpisao sporazum sa američkom kompanijom o prodaji svoje međinarodne imovine
-- [hronika] Bratu vlasnika Alta banke određen pritvor
-- [svet] Najmanje 30 poginulih u Egiptu nakon prevrtanja cisterne na obilaznici oko Kaira
+Categories: {"hronika":6,"politika":5,"ekonomija":1,"drustvo":7,"region":1}
+- [hronika] Raspisana poternica za Vladimirom Mandićem, osumnjičen za zloupotrebu položaja
+- [politika] Demokratska stranka će podržati predsedničkog kandidata Studentske liste
+- [ekonomija] Od sigurnosti snabdevanja do energetske nezavisnosti – šta Srbija mora da menja u energetici
+- [politika] Predsednik Skupštine Aleksandar Čupić raspisao predsedničke izbore za 27. decembar
+- [politika] Evropski parlament usvojio rezoluciju o Vukovaru
+- [hronika] Uhapšen osumnjičeni za nasilje u porodici u Smederevu, pretresom kuće pronađen spid
