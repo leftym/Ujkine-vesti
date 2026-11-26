@@ -1,97 +1,94 @@
 # Feed check
 
-Run: 2026-11-25T13:15:01.697Z
+Run: 2026-11-26T00:02:37.338Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 44 | https://n1info.rs/feed/ | 44 | 2 |
+| N1 | yes | 47 | https://n1info.rs/feed/ | 47 | 2 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +76) | 76 | 1 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +82) | 76 | 0 |
 | Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
-| RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 1 |
+| RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"politika":18,"svet":3,"ostalo":6,"region":1,"hronika":4,"zivot":5,"drustvo":4,"ekonomija":2,"kultura":1}
-- [politika] UNS: Vučić da prestane s izjavama kojima vređa RTS i novinare Javnog servisa
-- [svet] Tramp: SAD obezbedile sredstva za rat protiv Irana do kraja januara
-- [ostalo] N1 Studio Live (24.11.2026)
-- [region] Srpski državljanin pokušao da prošvercuje 5.000 boksova cigareta na ulazu u Severnu Makedoniju
-- [politika] Kovačević: Formiranje Skupštine važnije od odlaska na samit EU-Zapadni Balkan
-- [hronika] Ivan Todorović (DS) podneo krivičnu prijavu protiv Bojovića i Repca
-  - flagged (self): Slike života, nedelja u 15.15h: Braničevske noći https://n1info.rs/najave-emisija/slike-zivota-nedelja-u-1515h-branicevske-noci/
-  - flagged (self): N1 Studio live: Bez Srbije na Samitu u Briselu https://n1info.rs/najave-emisija/n1-studio-live-bez-srbije-na-samitu-u-briselu/
+Categories: {"svet":9,"zivot":5,"region":7,"ostalo":7,"ekonomija":3,"hronika":8,"drustvo":2,"politika":6}
+- [svet] Gde Advent? Ovo je 10 najpopularnijih evropskih destinacija
+- [zivot] Kako nastaju psihosomatske bolesti i na koji način emocije utiču na telo
+- [svet] Borba protiv ebole u Kongu duboko narušena oružanim okršajima, medicinske ekipe se evakuisale
+- [zivot] Preminuo Endi Tejlor - bivši gitarista grupe Duran Duran
+- [region] Mickoski: Očekujemo da i u decembarskom izveštajnom periodu budemo frontraneri
+- [zivot] Objavljen trejler za dokumentarnu seriju o životu Džastina Timberlejka
+  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+  - flagged (self): N1 Studio live, četvrtak u 12 sati: Čekajući predsednika https://n1info.rs/najave-emisija/n1-studio-live-cetvrtak-u-12-sati-cekajuci-predsednika/
 
 Uncategorized sample (for tuning):
-- N1 Studio Live (24.11.2026) | https://n1info.rs/video/n1-studio-live/n1-studio-live-24112026/ | tags: ["N1 Studio Live","video","emisija","studio live"]
-- Slike života, nedelja u 15.15h: Braničevske noći | https://n1info.rs/najave-emisija/slike-zivota-nedelja-u-1515h-branicevske-noci/ | tags: ["Najave emisija","najava emisije","slike života"]
-- Počinje projekat zaštite pataka ronilica | https://n1info.rs/zeleni-kutak/pocinje-projekat-zastite-pataka-ronilica/ | tags: ["Zeleni kutak","ugrožene vrste","vlažna staništa","zaštita prirode","patke","patke ronilice"]
-- Ikea u Beogradu bila nakratko evakuisana: Nakon detaljne provere utvrđeno da nema opasnosti | https://n1info.rs/vesti/ikea-u-beogradu-bila-nakratko-evakuisana-nakon-detaljne-provere-utvrdjeno-da-nema-opasnosti/ | tags: ["Vesti","ikea","alarm","evakuacija"]
-- U Srbiji manje rođenih i umrlih u odnosu na isti period u 2025. | https://n1info.rs/vesti/u-srbiji-manje-rodjenih-i-umrlih-u-odnosu-na-isti-period-u-2025/ | tags: ["Vesti","rsz","umrli","republički zavod za statistiku","rođeni"]
-- Ekipa N1 ometana ispred kuće direktora Pro Tenta na koju je bačena bomba | https://n1info.rs/vesti/ekipa-n1-ometana-ispred-kuce-direktora-pro-tenta-na-koju-je-bacena-bomba/ | tags: ["Vesti","obrenovac","pro tent","ekipa n1","bomba","slobodan vujičić"]
+- Dodeljena druga regionalna nagrada Fondacije „Milenija i Darko Marušić” | https://n1info.rs/vesti/dodeljena-druga-regionalna-nagrada-fondacije-milenija-i-darko-marusic/ | tags: ["Vesti","arhitektura stanovanja","arhitektura","nagrada fondacije milenija i darko marušić","regionalna nagrada"]
+- Košta: Biće još prilika za kontakte sa srpskim vlastima | https://n1info.rs/vesti/kosta-bice-jos-prilika-za-kontakte-sa-srpskim-vlastima/ | tags: ["Vesti","samit eu-zapadni balkan","evropska unija","evropski savet","antonio košta"]
+- Fon der Lajen najavila preraspodelu sredstava iz Plana rasta: Novac trima državama koje su najviše napredovale | https://n1info.rs/vesti/fon-der-lajen-najavila-preraspodelu-sredstava-iz-plana-rasta-novac-trima-drzavama-koje-su-najvise-napredovale/ | tags: ["Vesti","samit eu - zapadni balkan","samit eu i zapadnog balkana","samit eu-zapadni balkan","ursula fon der lajen","plan rasta"]
+- Dekan PMF o smeni Madića: Članovi Senata glasali suprotno odlukama fakulteta, problem u etici i integritetu | https://n1info.rs/vesti/dekan-pmf-o-smeni-madica-clanovi-senata-glasali-suprotno-odlukama-fakulteta-problem-u-etici-i-integritetu/ | tags: ["Vesti","rektor","senat univerziteta u novom sadu","dejan madić","smena rektora","srđan rončević"]
+- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","dnevnik","najave emisija","dnevnik u 19"]
+- Dan uživo (24.11.2026) | https://n1info.rs/video/dan-uzivo/dan-uzivo-24112026/ | tags: ["Dan uživo","dan uživo","emisija","video"]
+- ANEM osudio vređanje novinarke N1 u Beogradu i ometanje ekipe N1 u Obrenovcu | https://n1info.rs/vesti/anem-osudio-vredjanje-novinarke-n1-u-beogradu-i-ometanje-ekipe-n1-u-obrenovcu/ | tags: ["Vesti","napadi","ometanje novinara","anem","n1"]
 
 ## Nova.rs
-Categories: {"drustvo":3,"ekonomija":2,"hronika":9,"sport":7,"politika":13,"zabava":5,"zivot":6,"svet":4,"kultura":1}
-- [drustvo] ANEM ALARM: Nedopustivo posthumno targetiranje novinara Žig info Milana Jovanovića u Skupštini Srbije
-- [ekonomija] Jevrosimović dobio od Microsofta nagradu Hall of Fame
-- [hronika] Advokat otkriva kolika kazna preti vlasniku "Informera"
-- [sport] "Kao partneri sa pažnjom pratimo dešavanja u OKS i očekujemo da budemo informisani o svim okolnostima - dalja saradnja u skladu sa razvojem okolnosti": Partneri OKS još nemaju odgovore, poslali jasnu poruku
-- [politika] Dragana Đorđević imenovana za generalnog sekretara predsednika Republike
-- [zabava] Udaje se Rada Manojlović? Pevačica otkrila planove sa partnerom
+Categories: {"sport":14,"zivot":2,"zabava":8,"drustvo":2,"politika":9,"hronika":7,"svet":4,"ekonomija":3,"ostalo":1}
+- [sport] Veliki problem: Alimpijević na duže vreme ostao bez važnog igrača
+- [zivot] Danas oblačno, mestimično s kišom
+- [sport] Italija ide po četvrti uzastopni Dejvis kup
+- [sport] Džaba Hapoelu dobar Micić, Olimpijakos razbio Izraelce VIDEO
+- [zabava] Slavna manekenka uspešnija je neko ikada, ali želi što pre da pobegne iz javnosti: Evo o kakvom životu mašta
+- [zabava] Nakon razvoda od muzičara, Ana Bekuta je ostala bez novca i krova nad glavom: Pomoć joj je pružio poznati estradni par
+
+Uncategorized sample (for tuning):
+- Dnevnik - Cela emisija - 24.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-24112026/ | tags: ["Emisije","dnevnik cela emisija"]
 
 ## B92
-Categories: {"sport":14,"hronika":6,"svet":10,"ekonomija":10,"zdravlje":3,"ostalo":4,"tehnologija":4,"drustvo":4,"zivot":15,"zabava":4,"politika":4,"kultura":2}
-- [sport] Hamilton tvrdi da nije imao podršku: "Mogao sam da budem prvak"
-- [hronika] Oglasio se UKC Kragujevac: Ovo je stanje povređenih radnica Prve tehničke škole
-- [svet] Novi napadi; Putine, gore "kindžali"; Bes u Kremlju: "Neprihvatljivo" FOTO/VIDEO
-- [ekonomija] Jedan programer – četiri konobara: Ko sastavlja kraj s krajem, a ko u Srbiji zarađuje najviše
-- [sport] Petrović: "Nema trzavica u upravi – nisam došao da kupujem vreme" VIDEO
-- [svet] Ovaj potez bi mogao da dovede do sveopšteg haosa; Rizikuju direktan sukob sa Rusijom
-  - flagged (sponsored): Jevrosimović dobio od Microsofta nagradu Hall of Fame https://www.b92.net/tehnopolis/promo/287995/jevrosimovic-dobio-od-microsofta-nagradu-hall-of-fame/vest
+Categories: {"ostalo":1,"sport":16,"zivot":19,"svet":12,"politika":4,"ekonomija":8,"zabava":6,"kultura":3,"tehnologija":3,"region":1,"hronika":5,"zdravlje":2}
+- [ostalo] Na današnji dan, 26. novembar
+- [sport] Italijanski velikani prate Krstovića
+- [zivot] Gde ćemo leteti iz Beograda ove zime? Uvode se nove linije, a neke dobijaju više letova
+- [zivot] Neprijatno iznenađenje za putnike: Više nećete odmah znati gde sedite
+- [zivot] Nenajavljen štrajk: Poremećen saobraćaj između evropskih metropola
+- [svet] Rat – 1.735. dan: NATO žestoko preti; Moskva čeka odgovor; "Pokazaćemo Rusiji gde su joj granice" FOTO/VIDEO
 
 Uncategorized sample (for tuning):
-- Mali trik za ukusniju palentu: Jedan dodatak tokom kuvanja učiniće je kremastom | https://superzena.b92.net/kuhinja/prakticni-saveti/287958/trik-kako-da-palenta-bude-kremasta-i-socna-dodajte-jedan-sastojak/vest | tags: ["Najnovije"]
-- Od danas izmene saobraćaja na auto-putu kod Kruševca: Zatvaraju se dve trake | https://www.b92.net/lokal/krusevac/servisne-informacije/287969/radovi-na-auto-putu-kod-krusevca-izmene-saobracaja-do-1-decembra/vest | tags: []
-- Ovo je jedino sigurno mesto za orhideju: Samo ovde neće uvenuti, čak ni zimi | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/287968/ovo-je-jedino-mesto-u-stanu-na-kom-orhideja-nece-uvenuti/vest | tags: []
-- Skratite sebi muke: Pet stvari koje perete na ruke, a mogu da idu u mašinu za veš | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/287496/5-stvari-koje-perete-na-ruke-a-mogu-da-idu-u-masinu-za-ves/vest | tags: []
+- Na današnji dan, 26. novembar | https://www.b92.net/info/razno/288162/na-danasnji-dan-26-novembar/vest | tags: ["Najnovije"]
 
 ## Blic
-Categories: {"zdravlje":2,"svet":7,"zivot":7,"zabava":14,"kultura":6,"drustvo":10,"hronika":5,"ekonomija":7,"tehnologija":2,"politika":9,"sport":1}
-- [zdravlje] Podivljali virusi u Beogradu: Gradski zavod objavio najnoviji epidemiološki izveštaj
-- [svet] Ukrajinsko ministarstvo: "Pogodili smo 5 aviona kojima Rusija granatira Ukrajinu, NEĆE MOĆI DA LETE NEKO VREME"
-- [zivot] Reka duga samo 61 metar ušla je u Ginisovu knjigu rekorda, a onda je zbog spora dva grada ukinuta cela kategorija
-- [zabava] KUHINJA PO MERI SVAKE DOMAĆICE Udala se za 15 godina starijeg, i napustila Srbiju, sad pokazala kako živi u Dubaiju: Poznata Srpkinja sa stomakom do zuba snima doručak i sređuje frizuru (Foto)
-- [kultura] Ćerka Adama Sendlera igra ambicioznu glumicu u Netfliksovom hororu: Slavni otac producent filma
-- [drustvo] (Video) Hitno evakuisana "Ikea", sa razglasa poručeno svima da izađu: "Deca iz igraonice već su na putu prema izlazu, čekaju vas"; Evo šta je bio razlog
+Categories: {"hronika":14,"ekonomija":5,"svet":9,"zabava":23,"ostalo":1,"kultura":1,"politika":8,"zivot":5,"drustvo":3,"zdravlje":1}
+- [hronika] Uhapšena Vlasotinčanka zbog krađe pazara i robe vrednosti više od 3,5 miliona dinara
+- [ekonomija] Ovako štede milenijalci: "Dvoje zaposlenih, deca i kredit - nemoguće je bilo šta ostaviti sa strane"
+- [svet] Krater veličine stadiona na asteroidu u koji je NASA zakucala letelicu! Prve slike otkrile razmere sudara: "Ovo je spektakularno"
+- [zabava] "DIGLA SAM KREDIT, ZIDAM KUĆU" Edita Aradinović prvi put nakon porođaja o bivšem partneru: "Zabrinuta sam"
+- [ostalo] Naslovna strana za 26.11.
+- [svet] Kim Džong Un najavio širenje nuklearnog arsenala, pa poslao jasnu poruku svetu: "Severna Koreja je nepovrediva"
+
+Uncategorized sample (for tuning):
+- Naslovna strana za 26.11. | https://www.blic.rs/print/naslovna-strana-za-2611/1sn7pj4 | tags: []
 
 ## Politika
-Categories: {"ostalo":10,"hronika":1,"ekonomija":1,"svet":5,"politika":3}
-- [ostalo] Treća osoba preminula od malih boginja u Viskonsinu, zaraženo 920 ljudi
-- [ostalo] Janković sa admiralom Vajkofom u Beogradu: Kfor jedina legitimna oružana formacija na KiM
-- [ostalo] Prijatelj Aide Ćorović predložen za člana delegacije za saradnju sa Republikom Srpskom
-- [hronika] Požar u srednjoj školi u Kragujevcu, evakuisani svi đaci i zaposleni
-- [ekonomija] Tokom zimske sezone 23 kompanije leteće ka 92 destinacije iz Beograda
-- [svet] Kanada poručila SAD da ne polaže račune Vašingtonu nakon kritika Pentagona
+Categories: {"svet":5,"sport":3,"ostalo":6,"drustvo":1,"ekonomija":2,"hronika":2,"politika":1}
+- [svet] Ukrajina nema dobre vesti iz Amerike povodom isporuka raketa
+- [svet] Da li će Netanjahu ipak pred sud
+- [svet] Kina prvi put predstavlja protivpodmornički helikopter Z-20F
+- [sport] Teniseri Italije u polufinalu Dejvis kupa
+- [svet] Dejvis upozorio Sikorskog na posledice izjava: Shvatićemo da Rusija nije tako slaba kao što tvrdite
+- [ostalo] Gitarista Djuran – Djuran Endi Tejlor preminuo u 65. godini
 
 Uncategorized sample (for tuning):
-- Treća osoba preminula od malih boginja u Viskonsinu, zaraženo 920 ljudi | https://www.politika.rs/scc/clanak/806057/treca-osoba-preminula-od-malih-boginja-u-viskonsinu-zarazeno-920-ljudi | tags: []
-- Janković sa admiralom Vajkofom u Beogradu: Kfor jedina legitimna oružana formacija na KiM | https://www.politika.rs/scc/clanak/806056/jankovic-sa-admiralom-vajkofom-u-beogradu-kfor-jedina-legitimna-oruzana-formacija-na-kim | tags: []
-- Prijatelj Aide Ćorović predložen za člana delegacije za saradnju sa Republikom Srpskom | https://www.politika.rs/scc/clanak/806058/prijatelj-aide-corovic-predlozen-za-clana-delegacije-za-saradnju-sa-republikom-srpskom | tags: []
-- Trišić Babić odgovorila Bećiroviću: Dejtonom je potvrđena Srpska i uspostavljen mir | https://www.politika.rs/scc/clanak/806052/trisic-babic-odgovorila-becirovicu-dejtonom-je-potvrdena-srpska-i-uspostavljen-mir | tags: []
-- U Novom Sadu održana konferencija posvećena manjinskim jezicima u Srbiji | https://www.politika.rs/scc/clanak/806049/u-novom-sadu-odrzana-konferencija-posvecena-manjinskim-jezicima-u-srbiji | tags: []
-- RAF noću premešta avione u hangare zbog pretnji dronovima | https://www.politika.rs/scc/clanak/806048/raf-nocu-premesta-avione-u-hangare-zbog-pretnji-dronovima | tags: []
-- Balet „Krcko Oraščić” 25. decembra ponovo pred beogradskom publikom | https://www.politika.rs/scc/clanak/806045/balet-krcko-orascic-25-decembra-ponovo-pred-beogradskom-publikom | tags: []
-- Rubio čestitao Dan državnosti BiH i najavio saradnju sa novim liderima | https://www.politika.rs/scc/clanak/806042/rubio-cestitao-dan-drzavnosti-bih-i-najavio-saradnju-sa-novim-liderima | tags: []
+- Gitarista Djuran – Djuran Endi Tejlor preminuo u 65. godini | https://www.politika.rs/scc/clanak/806275/gitarista-djuran-djuran-endi-tejlor-preminuo-u-65-godini | tags: []
+- Pohvale za sirijske snage zbog zaplene droge i oružja | https://www.politika.rs/scc/clanak/806273/pohvale-za-sirijske-snage-zbog-zaplene-droge-i-oruzja | tags: []
+- Direktor ruske avio-industrije: Su-57 i Su-35 najtraženiji ruski lovci među stranim kupcima | https://www.politika.rs/scc/clanak/806269/direktor-ruske-avio-industrije-su-57-i-su-35-najtrazeniji-ruski-lovci-medu-stranim-kupcima | tags: []
+- Vens sa porodicom služio praznični ručak američkim vojnicima | https://www.politika.rs/scc/clanak/806128/vens-sa-porodicom-sluzio-praznicni-rucak-americkim-vojnicima | tags: []
+- Kim Džong Un najavio širenje nuklearnih kapaciteta i raspoređivanje taktičkog oružja | https://www.politika.rs/scc/clanak/806259/kim-dzong-un-najavio-sirenje-nuklearnih-kapaciteta-i-rasporedivanje-taktickog-oruzja | tags: []
+- Akcije Antropika u padu, investitori sve više sumnjaju u isplativost AI | https://www.politika.rs/scc/clanak/806255/akcije-antropika-u-padu-investitori-sve-vise-sumnjaju-u-isplativost-ai | tags: []
 
 ## RTS
-Categories: {"hronika":8,"politika":4,"ostalo":1,"ekonomija":2,"drustvo":4,"region":1}
-- [hronika] Vlasniku Informera Draganu J. Vučićeviću određeno zadržavanje
-- [politika] Srdanović: Očekuje nas raspisivanje predsedničkih izbora; Bakić: Hapšenje Vučićevića doživljavam kao blagu vest
-- [politika] Brnabić: Studentska lista krši dostojanstvo Skupštine; Jovanov: Niz presedana tokom zasedanja
-- [ostalo] Kako generacije Strnjavčevića žive od proizvodnje mleka
-- [ekonomija] Studentski pokret: Institucije da odgovore šta se dogodilo sa dokumentacijom Alta banke
-- [drustvo] Preminuo Aleksandar Crkvenjakov, novinar i nekadašnji generalni direktor RTS-a
-  - flagged (promo): Šapić: Sutra kreće podela novogodišnjih vaučera deci do 19 godina i zaposlenima u obrazovnom sistemu https://www.rts.rs/vesti/politika/6092036/sapic-sutra-krece-podela-novogodisnjih-vaucera-deci-do-19-godina-i-zaposlenima-u-obrazovnom-sistemu.html
-
-Uncategorized sample (for tuning):
-- Kako generacije Strnjavčevića žive od proizvodnje mleka | https://www.rts.rs/vesti/srbija-danas/6076150/kako-generacije-strnjavcevica-zive-od-proizvodnje-mleka.html | tags: ["Srbija danas"]
+Categories: {"drustvo":4,"politika":3,"hronika":7,"svet":3,"ekonomija":1,"region":1,"zivot":1}
+- [drustvo] Posle deset dana, ekipe odnose smeće sa ulica Smedereva
+- [politika] Košta: Razumemo odsustvo Srbije sa samita, nastavićemo razgovore sa Beogradom
+- [hronika] Skup podrške ispred PS Voždovac, Dragan J. Vučićević čeka saslušanje
+- [svet] "Lukoil" potpisao sporazum sa američkom kompanijom o prodaji svoje međinarodne imovine
+- [hronika] Bratu vlasnika Alta banke određen pritvor
+- [svet] Najmanje 30 poginulih u Egiptu nakon prevrtanja cisterne na obilaznici oko Kaira
