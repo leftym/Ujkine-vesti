@@ -1,97 +1,90 @@
 # Feed check
 
-Run: 2026-11-27T23:56:34.594Z
+Run: 2026-11-28T12:02:07.019Z
 
 | Outlet | OK | Items | Feed used | With image | Ads flagged |
 |---|---|---|---|---|---|
-| N1 | yes | 46 | https://n1info.rs/feed/ | 46 | 2 |
+| N1 | yes | 50 | https://n1info.rs/feed/ | 50 | 1 |
 | Nova.rs | yes | 50 | https://nova.rs/feed/ | 50 | 0 |
-| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +81) | 76 | 1 |
-| Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 0 |
+| B92 | yes | 80 | https://www.b92.net/feed/ + https://www.b92.net/info/rss/vesti.xml + https://www.b92.net (homepage, +72) | 76 | 0 |
+| Blic | yes | 70 | https://www.blic.rs/rss/danasnje-vesti | 70 | 1 |
 | Politika | yes | 20 | https://www.politika.rs/rss | 20 | 0 |
 | RTS | yes | 20 | https://www.rts.rs/vesti/rss.html | 20 | 0 |
 
 ## N1
-Categories: {"svet":8,"ostalo":6,"sport":2,"region":3,"zivot":4,"drustvo":4,"kultura":2,"politika":11,"zdravlje":1,"ekonomija":5}
-- [svet] Vojska SAD tvrdi da je onesposobila još jedan brod koji je probijao njenu blokadu iranskih luka
-- [svet] Zelenski: Devetoro ukrajinske dece vraćeno iz okupiranih teritorija i Rusije
-- [svet] Norveška čarter aviokompanija Nors atlantik ervejz odlazi u stečaj
-- [ostalo] ANEM: Lokalni funkcioner targetira redakciju portala Bujanovačke
-- [sport] Teniseri Italije u finalu Dejvis kupa pobedom protiv Češke
-- [region] KFOR: Sastanak u Prištini sa pripadnicima Vojske Srbije deo redovnih aktivnosti zasnovanih na Rezoluciji 1244
-  - flagged (self): Crvenu linija: Bezbednost dece u školama u zemljama regiona https://n1info.rs/najave-emisija/crvena-linija-u-20h-bezbednost-dece-u-skolama-u-zemljama-regiona/
-  - flagged (self): Gledajte Dnevnik u 19h https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/
+Categories: {"svet":13,"hronika":5,"politika":8,"region":6,"drustvo":3,"zdravlje":1,"ostalo":3,"ekonomija":3,"zivot":5,"kultura":1,"sport":2}
+- [svet] U bombardovanju Gaze poginulo dvoje zaposlenih u Lekarima bez granica
+- [hronika] Apel Puteva Srbije: Bez zimske opreme ne krećite na put
+- [politika] Jovanović: SNS u teškoj situaciji, da su imali dobrog kandidata - raspisali bi predsedničke izbore i pre
+- [politika] Monarhisti neće učestvovati na predsedničkim izborima: Smatramo da na čelu države treba da bude kralj
+- [region] Igor Dodik: Svi funkcioneri, ministri, direktori, članovi kabineta proći će bezbednosne provere
+- [politika] Romska partija podržava Radomira Saičića: Sa jednakim razumevanjem predstavlja intelektualnu elitu i ljude sa margine
+  - flagged (self): Novi dan: Kampanja za izbor predsednika https://n1info.rs/najave-emisija/novi-dan-kampanja-za-izbor-predsednika/
 
 Uncategorized sample (for tuning):
-- ANEM: Lokalni funkcioner targetira redakciju portala Bujanovačke | https://n1info.rs/vesti/anem-lokalni-funkcioner-targetira-redakciju-portala-bujanovacke/ | tags: ["Vesti","targetiranje medija","bujanovačke","anem","asocijacija nezavisnih elektronskih medija","targetiranje novinara"]
-- N1 Direktno: Kumovi - Veselinović i Radoičić (26.11.2026) | https://n1info.rs/video/n1-direktno-kumovi-veselinovic-i-radoicic-26112026/ | tags: ["Video","n1 direktno","video","emisija"]
-- Kako je protekao sastanak lidera na samitu Brdo-Brioni (VIDEO) | https://n1info.rs/vesti/kako-je-protekao-sastanak-lidera-na-samitu-brdo-brioni-video/ | tags: ["Vesti","zapadni balkan","ohrid","aleksandar čupić","brdo-brioni"]
-- Dnevnik u 19 (26.11.2026) | https://n1info.rs/video/dnevnik/dnevnik-u-19-26112026/ | tags: ["Dnevnik","dnevnik","video","dnevnik u 19","vesti"]
-- PUF i Dveri podržali predsedničku kandidaturu Radomira Saičića | https://n1info.rs/vesti/puf-i-dveri-podrzali-predsednicku-kandidaturu-radomira-saicica/ | tags: ["Vesti","radomir saičić","predsednički izbori","dveri","predsednički izbori 2026","izbori 2026"]
-- Gledajte Dnevnik u 19h | https://n1info.rs/najave-emisija/gledajte-uzivo-dnevnik-u-19-ponedeljak-19-maj/ | tags: ["Najave emisija","dnevnik","najave emisija","dnevnik u 19"]
+- Tužilac Stamenković: Tužioci su sve aktivniji, ali ne svi, narod je rekao da hoće pravdu | https://n1info.rs/vesti/tuzilac-stamenkovic-tuzioci-su-sve-aktivniji-ali-ne-svi-narod-je-rekao-da-hoce-pravdu/ | tags: ["Vesti","branko stamenković","tužioci","tužilac","pravosuđe"]
+- Na današnji dan, 28. novembar: Magelan uplovio u Pacifik, umro Ante Marković... | https://n1info.rs/vesti/na-danasnji-dan-28-novembar-2026-godine/ | tags: ["Vesti","na današnji dan"]
+- ANEM: Lokalni funkcioner targetira redakciju portala Bujanovačke | https://n1info.rs/vesti/anem-lokalni-funkcioner-targetira-redakciju-portala-bujanovacke/ | tags: ["Vesti","bujanovačke","targetiranje novinara","novinari","targetiranje","targetiranje medija"]
 
 ## Nova.rs
-Categories: {"sport":16,"zivot":2,"ekonomija":3,"kultura":1,"svet":2,"politika":9,"zabava":7,"drustvo":4,"hronika":4,"ostalo":2}
-- [sport] VIDEO Spektakl za pamćenje i šest golova, pogodak u nadoknadi izavao delirijum
-- [zivot] Danas oblačno i hladno, povremeno sa kišom
-- [sport] VIDEO Čekali su ovo 19 godina: Milenković i Notingem Forest srušili Čelsi
-- [ekonomija] Ćulibrk o Ekspu: Ne znam da li će biti izložbe, stara vlast ulagala u projekat, a nisu znali ni da li se isplati
-- [kultura] "Privid beskrajnog leta" najbolji film: Dodelom nagrada i domaćom premijerom "Oče naš" završen 32. Festival autorskog filma
-- [sport] Hrvatska posle 13 godina izborila plasman na Svetsko prvenstvo
+Categories: {"zabava":9,"sport":17,"hronika":7,"zivot":11,"svet":1,"drustvo":2,"zdravlje":1,"politika":1,"ostalo":1}
+- [zabava] Slavni italijanski zavodnik ponovo srećan u ljubavi: Uslikan sa 27 godina mlađom lepoticom (FOTO)
+- [sport] Slavna sportistkinja otkrila šokantne detalje o nasilju u srpskom sportu: Ovo je pet tačaka Studentske liste za promene
+- [hronika] Miroslav Filipović Fiki i još dve osobe uhapšene u Loznici: Sumnjiče se za paljenje vozila u Lozničkom Polju
+- [sport] Jago srušio Amerikance i naneo im bolan poraz u kvalifikacijama za Mundobasket
+- [zivot] Džejn Fonda došla u Beograd i oduševljeno priča o studentima, a direktorka Blica je intervjuiše i kiselo se smeška: Od slave kod Cece, preko Vučića u NIN-u do oskarovke, kratak je put
+- [svet] Veliki protivnik Makrona održao govor u kom je spomenuo poraze Vučića i Orbana: Najavio šta sve čeka Francusku ako postane predsednik
 
 Uncategorized sample (for tuning):
-- Dnevnik - Cela emisija - 26.11.2026. | https://nova.rs/emisije/dnevnik-cela-emisija-26112026/ | tags: ["Emisije","dnevnik cela emisija"]
-- Među nama - Cela emisija - 26.11.2026. | https://nova.rs/emisije/medju-nama-cela-emisija-26112026/ | tags: ["Emisije","među nama cela emisija"]
+- Probudi se - Cela emisija - 27.11.2026. | https://nova.rs/emisije/probudi-se-cela-emisija-27112026/ | tags: ["Emisije","probudi se cela emisija"]
 
 ## B92
-Categories: {"ostalo":3,"svet":11,"zivot":13,"sport":17,"politika":6,"hronika":4,"ekonomija":10,"zdravlje":4,"zabava":4,"kultura":5,"region":1,"tehnologija":2}
-- [ostalo] Na današnji dan, 28. novembar
-- [svet] Rat – dan 1.737: Rusi se povukli; NATO podigao avione; Ukrajina predložila prekid vatre FOTO/VIDEO
-- [zivot] Hrvati otkrili koji je grad kod njih nemoguć za život: "Jedino možeš da se smeješ ovome"
-- [zivot] Ako sada odlučite gde ćete se sunčati, možete dobro da uštedite: Popusti na sve strane, evo šta se nudi
-- [zivot] Kako do povoljnijih avionskih karata? Ovo je najbolje vreme za rezervaciju
-- [sport] "Haland u narednih 18 meseci stiže u Real Madrid"
-  - flagged (promo): Sivi jesenji dani idealni su za beg među korice omiljenih knjiga: Black Friday u Vulkanu! https://www.b92.net/kultura/knjigestripovi/288692/sivi-jesenji-dani-idealni-su-za-beg-medju-korice-omiljenih-knjiga-black-friday-u-vulkanu/vest
+Categories: {"zivot":16,"ostalo":2,"sport":12,"drustvo":5,"ekonomija":10,"politika":6,"svet":11,"kultura":6,"zdravlje":6,"zabava":2,"tehnologija":1,"hronika":3}
+- [zivot] Amerikanka se javila srpskoj ambasadi zbog Radomira Saičića: "Gde se prijavljuje za boravak?" VIDEO
+- [ostalo] Džej Lo ima savršenu frizuru za prazničnu sezonu – neka vam bude inspiracija FOTO/VIDEO
+- [sport] Henman ne veruje u Đokovića: "Najveći je svih vremena, ali..."
+- [drustvo] Stigle nove doze vakcina protiv gripa u Novi Sad: Građani mogu da zakažu vakcinaciju
+- [ekonomija] Drastično poskupljenje: Skuplja struja za milione domaćinstava za čak 85 odsto
+- [politika] PSG podržao kandidaturu Radomira Saičića
 
 Uncategorized sample (for tuning):
-- Na današnji dan, 28. novembar | https://www.b92.net/info/razno/288792/na-danasnji-dan-28-novembar/vest | tags: ["Najnovije"]
-- Ima 81 godinu, a telo joj je i dalje za medalju: Goldi Hon ovo radi već 50 godina | https://superzena.b92.net/lepa-i-zdrava/fitnes-i-dijeta/288377/goldi-hon-otkrila-tajnu-savrsenog-izgleda/vest | tags: []
-- Novine: "Treba da gradimo bolji svet za naše potomstvo"; "Suverena Srbija je moj cilj" | https://www.b92.net/info/razno/288753/pregled-stampe-za-subotu-28-novembar/vest | tags: ["Info"]
+- Džej Lo ima savršenu frizuru za prazničnu sezonu – neka vam bude inspiracija FOTO/VIDEO | https://superzena.b92.net/lepa-i-zdrava/lepota-zene/288861/dzenifer-lopez-ima-savrsenu-frizuru-za-praznicnu-sezonu/vest | tags: ["Najnovije"]
+- Danas počinje Božićni post: Koliko traje i koja su osnovna pravila? | https://superzena.b92.net/dom-i-porodica/prakticni-saveti/288804/danas-pocinje-bozicni-post/vest | tags: []
 
 ## Blic
-Categories: {"ekonomija":7,"politika":16,"zabava":24,"ostalo":1,"drustvo":5,"zivot":6,"svet":4,"hronika":6,"zdravlje":1}
-- [ekonomija] Poznata avio-kompanija obustavila sve letove, korisnička podrška više ne radi: Nors Atlantik Ervejs proglasio stečaj
-- [politika] Odbrana Hašima Tačija traži od Haga da produži rok za žalbu na presudu
-- [zabava] "BILA SAM U PANICI ZBOG TOGA" Nikolija nakon koncerta progovorila o drami iza scene, Vesni Zmijanac i Relji: "On je toliko muževan da može da nosi i roze i leopard" (Video)
-- [ostalo] Naslovna strana za 28.11.
-- [ekonomija] Povećana kamatna stopa: Krediti poskupljuju, a evo koga ova mera sve pogađa
-- [zabava] NJIH DVOJICA SU NAPUSTILI "IDJ PEPSI SHOW" Imali su najmanje poena! Svi ostali u šoku kada su voditelji saopštili NJEGOVO IME
-
-Uncategorized sample (for tuning):
-- Naslovna strana za 28.11. | https://www.blic.rs/print/naslovna-strana-za-2811/jvnbcj8 | tags: []
+Categories: {"svet":8,"kultura":5,"ekonomija":19,"zabava":13,"drustvo":6,"zivot":6,"hronika":4,"politika":8,"zdravlje":1}
+- [svet] "NESTAJU" Uznemirujuća studija: Neki od najvećih gradova u Africi tonu brže nego što se ranije mislilo, ugroženo 7 miliona ljudi
+- [kultura] Jedan od najcenjenijih holivudskih reditelja najavio kraj karijere: "Više nemam strpljenja kao nekada"
+- [ekonomija] Od januara novi iznosi naknada za auto-puteve u Srbiji: Evo računice za 100, 200 i 300 kilometara (tabele)
+- [zabava] Ovo je nova voditeljka RTS-a: Marija Kuzmanović se pojavila u jutarnjem programu, bila je student generacije
+- [drustvo] (VIDEO) ČAS JE LEVO, ČAS DESNO Dramatičan snimak kod Valjeva: Proklizavanje na opasnom prevoju i sa zimskim gumama, vozač pokušava da održi kontrolu
+- [zabava] "USRED NOĆI JE BAČENO NEŠTO JAČE OD PETARDE" Aca Kos o incidentu u zgradi u kojoj živi sa Čedom Jovanovićem: "Postoji video nadzor, ne plašim se"
+  - flagged (betting): MaxBet omogućio nastup Džanana Muse protiv Litvanije: Uz Zmajeve kada je najpotrebnije https://www.blic.rs/slobodno-vreme/maxbet-omogucio-nastup-dzanana-muse-protiv-litvanije/rgfxnwk
 
 ## Politika
-Categories: {"svet":9,"sport":1,"region":1,"politika":3,"hronika":1,"kultura":1,"ostalo":3,"drustvo":1}
-- [svet] Sporazum EU i Britanije o hrani mogao bi da bude poništen zbog drugog dogovora
-- [svet] Putinova nova pretnja NATO-u zahteva drugačiji pristup odvraćanju
-- [svet] Neslaganje u izraelskom vrhu o napadu na Iran bez učešća SAD
-- [svet] Ukrajina ponudila Rusiji primirje radi obnove izvoza žitarica
-- [sport] Lučić kapiten košarkaške reprezentacije u utakmici protiv Italije
-- [region] Austrijski kancelar nudi posredovanje u sporu Hrvatske i Crne Gore
+Categories: {"hronika":6,"kultura":1,"ostalo":8,"sport":1,"ekonomija":1,"svet":3}
+- [hronika] U poplavama u Peruu i Ekvadoru poginule 34 osobe
+- [kultura] Izložba „Doba vere” od 3. decembra u Narodnom muzeju Srbije
+- [hronika] Više od 400 udesa u Bavarskoj zbog snega, prevrtali se kamioni
+- [ostalo] Grlić Radman: Obeštećenje bivših logoraša iz Morinja korak ka rešavanju otvorenih pitanja
+- [ostalo] Omaž Aleksandru Beliću u SANU
+- [ostalo] Dron zaustavio saobraćaj na aerodromu Keln–Bon
 
 Uncategorized sample (for tuning):
-- Fric: Mala verovatnoća da Ekspo bude otkazan, proverićemo bezbednost objekata | https://www.politika.rs/scc/clanak/806892/fric-mala-verovatnoca-da-ekspo-bude-otkazan-provericemo-bezbednost-objekata | tags: []
-- Čile traži kaznu od 80 miliona dolara za Epl zbog ograničenja konkurencije | https://www.politika.rs/scc/clanak/806883/cile-trazi-kaznu-od-80-miliona-dolara-za-epl-zbog-ogranicenja-konkurencije | tags: []
-- Šta piše u zajedničkoj deklaraciji iz Ohrida koju Čupić nije potpisao | https://www.politika.rs/scc/clanak/806881/sta-pise-u-zajednickoj-deklaraciji-iz-ohrida-koju-cupic-nije-potpisao | tags: []
+- Grlić Radman: Obeštećenje bivših logoraša iz Morinja korak ka rešavanju otvorenih pitanja | https://www.politika.rs/scc/clanak/807014/grlic-radman-obestecenje-bivsih-logorasa-iz-morinja-korak-ka-resavanju-otvorenih-pitanja | tags: []
+- Omaž Aleksandru Beliću u SANU | https://www.politika.rs/scc/clanak/807013/omaz-aleksandru-belicu-u-sanu | tags: []
+- Dron zaustavio saobraćaj na aerodromu Keln–Bon | https://www.politika.rs/scc/clanak/807012/dron-zaustavio-saobracaj-na-aerodromu-keln-bon | tags: []
+- IDF se vraća obuci kako bi ispravio propuste od 7. oktobra | https://www.politika.rs/scc/clanak/807010/idf-se-vraca-obuci-kako-bi-ispravio-propuste-od-7-oktobra | tags: []
+- U Srbiji sutra oblačno i hladno, do tri stepena | https://www.politika.rs/scc/clanak/807008/u-srbiji-sutra-oblacno-i-hladno-do-tri-stepena | tags: []
+- Talibani u provinciji Balk zabranili upotrebu ženskih imena u dokumentima | https://www.politika.rs/scc/clanak/807004/talibani-u-provinciji-balk-zabranili-upotrebu-zenskih-imena-u-dokumentima | tags: []
+- Milijarder kupuje „Lukoil” bez gotovine, za NIS to ne može da bude slučaj | https://www.politika.rs/scc/clanak/806918/milijarder-kupuje-lukoil-bez-gotovine-za-nis-to-ne-moze-da-bude-slucaj | tags: []
+- Jubilej Andžeja Vajde | https://www.politika.rs/scc/clanak/807003/jubilej-andzeja-vajde | tags: []
 
 ## RTS
-Categories: {"hronika":1,"svet":1,"politika":12,"drustvo":3,"zivot":1,"region":1,"ostalo":1}
-- [hronika] Dolovac traži od tužioca Nenadića da postupa po prijavi protiv tužioca Stefanovića
-- [svet] Dosije Mandelson, čin treći – objavljeni novi dokumenti, među njima i pravi biser
-- [politika] Vučić: Odluku o učešću na predsedničkim izborima donećemo do 6. decembra
-- [drustvo] Pet godina od napada na šabačkom mostu – odgovarao samo čovek koji je zaustavio bager, advokat izneo nove detalje
-- [politika] Sanja Fric: Ekspo ćemo vratiti u zakonske okvire i proveriti bezbednost objekata
-- [politika] Poziv dijaspori da se što pre prijavi za glasanje na predsedničkim izborima 27. decembra
-
-Uncategorized sample (for tuning):
-- I ove sezone Niš među najzagađenijim gradovima | https://www.rts.rs/vesti/srbija-danas/6094242/i-ove-sezone-nis-medju-najzagadjenijim-gradovima-.html | tags: ["Srbija danas"]
+Categories: {"ekonomija":3,"svet":4,"drustvo":5,"politika":4,"zivot":2,"hronika":2}
+- [ekonomija] Izveštaj Komisije o biračkom spisku – 879.000 birača više nego punoletnih stanovnika, uočeni obrasci organizovanih upisa
+- [svet] Eksplozija u blizini škole u Avganistanu - sedam učenika poginulo, 97 povređeno
+- [drustvo] Pomozimo petogodišnjem Viktoru da pobedi tumor, porodici potrebna sredstva za nastavak lečenja u Kini
+- [svet] Gazi preti nova humanitarna katastrofa, 1,3 miliona Palestinaca na udaru nevremena
+- [ekonomija] Pošta, Poštanska štedionica i uloga MMF-a – šta se dešavalo iza kulisa isplate penzija
+- [politika] Vukadinović: Saičić ubedljivi favorit, SNS rizikuje i ako izađe na izbore i ako od njih odustane
